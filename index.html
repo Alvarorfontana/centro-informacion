@@ -11,32 +11,22 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Barlow+Condensed:wght@500;600;700&display=swap">
 <style>
 /* Layout: mesa de redacción en tres columnas — módulos a la izquierda, trabajo al centro, expediente a la derecha; en celular, una sola columna */
+/* Una sola apariencia, oscura a propósito: sala de control de una agencia */
 :root {
-  --papel: #f4f4f2; --superficie: #ffffff; --hundido: #ecebe8; --tinta: #17171b; --tinta-2: #5a5a62; --tinta-3: #8b8b92;
-  --linea: #e1e0dc; --rojo: #c8102e; --rojo-suave: #fbe8ea; --rojo-tinta: #9b0c23;
-  --v0: #8b8b92; --v1: #b7791f; --v2: #2f7d6b; --v3: #1f6b3a; --v0-f: #ececea; --v1-f: #fbf1dc; --v2-f: #e0f1ec; --v3-f: #dcefe2;
-  --estatal: #7a4a9a; --estatal-f: #f1e8f7;
-  --tierra: #d9d8d3; --mar: #ecebe8; --borde-mapa: #c9c8c2;
+  --papel: #0c0c0e; --superficie: #141417; --hundido: #1c1c21; --tinta: #eeeef1; --tinta-2: #a9a9b3; --tinta-3: #6e6e79;
+  --linea: #26262d; --rojo: #ff3347; --rojo-suave: #3a1219; --rojo-tinta: #ff7684; --brillo: rgba(255, 51, 71, .35);
+  --v0: #8a8a95; --v1: #f0ad3c; --v2: #3fc9a6; --v3: #5ad17f; --v0-f: #22222a; --v1-f: #33270f; --v2-f: #0f2c26; --v3-f: #123020;
+  --estatal: #c99bf0; --estatal-f: #2a1f36;
+  --tierra: #24242b; --mar: #101013; --borde-mapa: #34343d;
   --display: "Newsreader", Georgia, "Times New Roman", serif;
   --ui: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --cond: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: dark;
 }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --papel: #111114; --superficie: #1a1a1e; --hundido: #222227; --tinta: #ededef; --tinta-2: #a6a6ad; --tinta-3: #77777f;
-  --linea: #2b2b31; --rojo: #ff4f61; --rojo-suave: #3a171c; --rojo-tinta: #ff8a96;
-  --v0: #8f8f97; --v1: #e2a948; --v2: #4fc1a4; --v3: #5fcb84; --v0-f: #26262b; --v1-f: #33291a; --v2-f: #16302a; --v3-f: #17301f;
-  --estatal: #c79be6; --estatal-f: #2e2238;
-  --tierra: #34343b; --mar: #1a1a1e; --borde-mapa: #45454d; color-scheme: dark; } }
-:root[data-theme="dark"] {
-  --papel: #111114; --superficie: #1a1a1e; --hundido: #222227; --tinta: #ededef; --tinta-2: #a6a6ad; --tinta-3: #77777f;
-  --linea: #2b2b31; --rojo: #ff4f61; --rojo-suave: #3a171c; --rojo-tinta: #ff8a96;
-  --v0: #8f8f97; --v1: #e2a948; --v2: #4fc1a4; --v3: #5fcb84; --v0-f: #26262b; --v1-f: #33291a; --v2-f: #16302a; --v3-f: #17301f;
-  --estatal: #c79be6; --estatal-f: #2e2238;
-  --tierra: #34343b; --mar: #1a1a1e; --borde-mapa: #45454d; color-scheme: dark; }
-
 [hidden] { display: none !important; }
 html, body { height: 100%; }
 body { background: var(--papel); color: var(--tinta); font-family: var(--ui); font-size: 14px; line-height: 1.45; }
@@ -381,6 +371,119 @@ h3.sub-titulo { font-size: 10.5px; letter-spacing: .12em; text-transform: upperc
   .exp .lado { grid-column: 2; justify-items: start; grid-auto-flow: column; align-items: center; margin-top: 8px; }
   .titular { grid-template-columns: 1fr; gap: 2px; }
 }
+
+/* ── Versión 3: sala de control de agencia ── */
+body { background: var(--papel); }
+.aviso { background: #000; color: var(--tinta-2); border-bottom: 1px solid var(--linea); font-family: var(--cond); font-size: 13px; letter-spacing: .04em; }
+.aviso b { background: var(--rojo); color: #fff; }
+.lateral { background: #09090b; border-right-color: var(--linea); }
+.marca { border-bottom-color: var(--linea); }
+.marca .nombre { font-size: 23px; }
+.marca .nombre::before { width: 9px; height: 22px; box-shadow: 0 0 14px var(--brillo); }
+.marca small { font-family: var(--cond); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--rojo-tinta); }
+.nav h3 { font-family: var(--cond); font-size: 12px; letter-spacing: .18em; color: var(--tinta-3); }
+.nav a { color: var(--tinta-2); font-weight: 600; border-radius: 3px; }
+.nav a:hover { background: var(--hundido); }
+.nav a[aria-current="page"] { background: linear-gradient(90deg, var(--rojo-suave), transparent); color: #fff; box-shadow: inset 3px 0 0 var(--rojo); }
+.cabeza h2 { font-family: var(--cond); font-weight: 700; font-size: 38px; letter-spacing: .01em; text-transform: uppercase; line-height: 1; }
+.exp, .titulares, .reg, .kpis div, .escala div, .mapa-full, .mapa-ar, .tabla-caja, .conexion, .ramas-grilla .rama, .resumen-fuentes div, .insp-cab, .inspector { background: var(--superficie); }
+.inspector { background: #0f0f12; }
+.filtros select, .filtros input, .btn, .chip { background: var(--hundido); border-color: var(--linea); }
+.btn.primario { box-shadow: 0 0 18px var(--brillo); }
+
+/* Cinta de último momento */
+.cinta { display: flex; align-items: stretch; border: 1px solid var(--linea); border-radius: 4px; overflow: hidden; background: #000; margin-bottom: 18px; }
+.cinta b { flex: none; display: flex; align-items: center; gap: 8px; padding: 0 14px; background: var(--rojo); color: #fff; font-family: var(--cond); font-size: 15px; letter-spacing: .12em; text-transform: uppercase; }
+.cinta b::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #fff; animation: titila 1.2s steps(2) infinite; }
+@keyframes titila { 50% { opacity: .2; } }
+.cinta .pista { overflow: hidden; flex: 1; min-width: 0; mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
+.cinta ul { display: flex; gap: 38px; margin: 0; padding: 10px 0 10px 24px; list-style: none; width: max-content; animation: correr 120s linear infinite; }
+.cinta:hover ul { animation-play-state: paused; }
+.cinta li { white-space: nowrap; font-size: 14px; }
+.cinta li a { color: var(--tinta); text-decoration: none; font-weight: 600; }
+.cinta li a:hover { color: var(--rojo-tinta); }
+.cinta li span { font-family: var(--cond); color: var(--rojo-tinta); letter-spacing: .08em; text-transform: uppercase; margin-right: 8px; font-size: 13px; }
+@keyframes correr { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* Portada */
+.portada-cab { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 10px 20px; margin-bottom: 14px; }
+.portada-cab h2 { font-family: var(--cond); font-weight: 700; font-size: clamp(34px, 5vw, 56px); line-height: .92; text-transform: uppercase; letter-spacing: .005em; }
+.portada-cab h2 em { font-style: normal; color: var(--rojo); }
+.portada-cab p { color: var(--tinta-2); font-size: 13px; margin-top: 6px; }
+.cifras { display: flex; flex-wrap: wrap; gap: 4px 22px; }
+.cifras div { display: grid; }
+.cifras b { font-family: var(--cond); font-size: 30px; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums; }
+.cifras small { font-size: 11px; color: var(--tinta-3); text-transform: uppercase; letter-spacing: .1em; }
+.hero { display: grid; grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.4fr); gap: 16px; margin-bottom: 16px; }
+.hero-mapa { position: relative; background: radial-gradient(120% 90% at 40% 30%, #1a1a20 0%, var(--superficie) 60%); border: 1px solid var(--linea); border-radius: 6px; padding: 16px 12px 10px; overflow: hidden; }
+.hero-mapa::after { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(var(--linea) 1px, transparent 1px), linear-gradient(90deg, var(--linea) 1px, transparent 1px); background-size: 28px 28px; opacity: .25; }
+.hero-mapa svg { position: relative; z-index: 1; width: 100%; height: auto; max-height: 560px; display: block; }
+.hero-mapa .ar { fill: #1d1d23; stroke: #4a4a55; stroke-width: .3; }
+.hero-mapa .burbuja { cursor: pointer; }
+.hero-mapa .burbuja .halo { fill: var(--rojo); opacity: .18; }
+.hero-mapa .burbuja .n { fill: var(--rojo); stroke: #000; stroke-width: .35; }
+.hero-mapa .burbuja.sel .halo { opacity: .35; }
+.hero-mapa .burbuja.sel .n { fill: #fff; }
+.hero-mapa .burbuja text { font-family: var(--cond); font-size: 3.6px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; fill: var(--tinta); paint-order: stroke; stroke: #0c0c0e; stroke-width: 1px; }
+.hero-mapa .burbuja text tspan.c { fill: var(--rojo-tinta); }
+.hero-mapa .rot { position: absolute; z-index: 2; left: 14px; top: 12px; font-family: var(--cond); font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--tinta-3); }
+.hero-mapa .pie-m { position: relative; z-index: 2; font-size: 11.5px; color: var(--tinta-3); margin-top: 4px; }
+@media (prefers-reduced-motion: no-preference) { .hero-mapa .burbuja .halo { animation: respira 3s ease-in-out infinite; } }
+@keyframes respira { 50% { opacity: .05; } }
+
+.region-foco { background: var(--superficie); border: 1px solid var(--linea); border-radius: 6px; padding: 18px 20px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.region-foco .tope { display: flex; justify-content: space-between; align-items: end; gap: 12px; }
+.region-foco .tope span { font-family: var(--cond); letter-spacing: .16em; text-transform: uppercase; color: var(--rojo-tinta); font-size: 13px; }
+.region-foco h3 { font-family: var(--cond); font-weight: 700; font-size: clamp(34px, 4vw, 52px); text-transform: uppercase; line-height: .9; }
+.region-foco .tope b { font-family: var(--cond); font-size: 44px; line-height: .9; font-weight: 600; text-align: right; display: block; }
+.region-foco .tope small { display: block; color: var(--tinta-3); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; text-align: right; }
+.region-foco .spark { height: 64px; }
+.principal { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; padding-bottom: 12px; border-bottom: 1px solid var(--linea); }
+.principal figure { margin: 0 0 6px; aspect-ratio: 16 / 8; border-radius: 4px; overflow: hidden; background: var(--hundido); max-width: 100%; }
+.principal figure img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.principal a.t { font-family: var(--display); font-size: clamp(21px, 2.2vw, 28px); line-height: 1.15; font-weight: 700; color: #fff; text-decoration: none; text-wrap: balance; }
+.principal a.t:hover { color: var(--rojo-tinta); }
+.meta-n { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; font-size: 12px; color: var(--tinta-3); }
+.meta-n .medio { color: var(--tinta-2); font-weight: 700; }
+.meta-n a.llevar, .lista-n a.llevar { color: var(--rojo-tinta); font-weight: 700; text-decoration: none; margin-left: auto; font-size: 12px; white-space: nowrap; }
+.lista-n { list-style: none; margin: 0; padding: 0; display: grid; }
+.lista-n li { padding: 10px 0; border-bottom: 1px solid var(--linea); display: grid; gap: 4px; }
+.lista-n li:last-child { border-bottom: none; }
+.lista-n a.t { color: var(--tinta); text-decoration: none; font-size: 15px; font-weight: 600; line-height: 1.35; }
+.lista-n a.t:hover { color: var(--rojo-tinta); }
+
+.columnas { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px; background: var(--linea); border: 1px solid var(--linea); border-radius: 6px; overflow: hidden; margin-bottom: 16px; }
+.col { background: var(--superficie); padding: 14px 14px 12px; display: grid; gap: 8px; align-content: start; cursor: pointer; min-width: 0; }
+.col:hover { background: #18181c; }
+.col.sel { background: linear-gradient(180deg, var(--rojo-suave), var(--superficie) 70%); box-shadow: inset 0 3px 0 var(--rojo); }
+.col header { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; }
+.col h4 { margin: 0; font-family: var(--cond); font-weight: 700; font-size: 19px; text-transform: uppercase; letter-spacing: .03em; }
+.col header b { font-family: var(--cond); font-size: 22px; font-weight: 600; color: var(--rojo-tinta); }
+.col .spark { height: 30px; }
+.col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+.col li a { color: var(--tinta-2); text-decoration: none; font-size: 12.5px; line-height: 1.35; display: block; }
+.col li a:hover { color: #fff; }
+.mundo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.bloque-z { background: var(--superficie); border: 1px solid var(--linea); border-radius: 6px; padding: 14px 18px; min-width: 0; }
+.bloque-z h4 { margin: 0 0 4px; font-family: var(--cond); font-weight: 700; font-size: 20px; text-transform: uppercase; letter-spacing: .04em; display: flex; justify-content: space-between; }
+.bloque-z h4 span { color: var(--tinta-3); font-size: 14px; font-weight: 600; }
+.sin-datos { color: var(--tinta-3); font-size: 13px; }
+
+
+@media (max-width: 1180px) { .columnas { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 960px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-mapa svg { max-height: 420px; }
+  .mundo { grid-template-columns: 1fr; }
+  .lateral { background: #09090b; }
+  body::before { background: #09090b; }
+}
+@media (max-width: 560px) {
+  .columnas { grid-template-columns: 1fr 1fr; }
+  .cifras b { font-size: 24px; }
+  .region-foco { padding: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .cinta ul { animation: none; } .cinta .pista { overflow-x: auto; } }
 </style>
 <div class="app">
   <div class="aviso" role="note">
@@ -392,6 +495,7 @@ h3.sub-titulo { font-size: 10.5px; letter-spacing: .12em; text-transform: upperc
       <div class="marca"><div class="nombre">Diario Federal</div><small>Centro de Información</small></div>
       <nav class="nav" id="nav">
         <h3>En vivo</h3>
+        <a href="#portada" data-vista="portada">Portada federal <span class="cuenta">●</span></a>
         <a href="#en-vivo" data-vista="en-vivo">Noticias en vivo <span class="cuenta" id="c-viv"></span></a>
         <a href="#regiones" data-vista="regiones">Regiones de Argentina <span class="cuenta">5</span></a>
         <h3>Inteligencia editorial</h3>
@@ -413,6 +517,28 @@ h3.sub-titulo { font-size: 10.5px; letter-spacing: .12em; text-transform: upperc
     </aside>
 
     <main class="centro" id="centro">
+      <!-- PORTADA -->
+      <section class="vista" id="v-portada" aria-labelledby="t-por" hidden>
+        <div class="portada-cab">
+          <div><h2 id="t-por">Argentina <em>federal</em> · en vivo</h2><p id="por-sub">Titulares reales por región del país, del Mercosur y del mundo.</p></div>
+          <div class="cifras" id="por-cifras"></div>
+        </div>
+        <div class="cinta" id="cinta" hidden><b>Último</b><div class="pista"><ul id="cinta-lista"></ul></div></div>
+        <div class="hero">
+          <div class="hero-mapa">
+            <span class="rot">Mapa de regiones</span>
+            <svg viewBox="309.6 322.7 87.8 116" role="img" aria-label="Argentina por regiones: tocá una para ver sus noticias"><path class="ar" d="M339.433,424.926L340.8,426.315L342.737,428.554L346.366,430.341L349.854,431.079L349.326,432.562L347.191,432.707L345.656,431.665L344.233,431.585L341.766,431.58ZM350.409,355.177L350.131,357.708L349.943,360.956L350.474,364.101L350.025,364.807L350.171,366.849L350.275,368.495L353.988,371.198L354.02,373.376L355.847,374.747L355.995,376.288L354.314,380.321L350.906,382.008L345.994,382.662L343.166,382.348L344.097,384.219L344.091,386.566L344.898,388.146L343.646,389.248L341.199,389.683L338.538,388.538L337.761,389.359L338.851,392.465L340.756,393.406L341.877,392.423L342.995,394.044L340.959,395.01L339.461,396.944L339.903,400.073L339.758,401.731L337.456,401.741L335.973,403.323L335.922,405.639L338.947,407.896L341.437,408.516L341.397,411.274L339.075,412.998L338.626,416.568L336.834,417.771L336.329,419.187L338.124,422.326L340.272,424.068L339.233,423.915L336.903,423.442L331.083,423.04L329.495,421.285L328.763,419.018L327.253,419.213L326.039,418.115L324.74,414.894L326.128,413.551L326.258,411.61L325.478,410.059L325.947,407.438L325.601,403.355L324.806,401.537L325.711,400.95L325.112,399.779L323.797,399.159L324.242,397.855L322.796,396.676L321.231,393.078L322.06,392.444L320.639,388.634L320.409,385.425L320.399,382.625L321.629,381.481L320.148,378.415L319.48,375.52L320.947,373.461L320.317,370.824L321.142,367.747L320.57,364.839L319.79,364.261L317.557,358.805L318.561,355.557L317.774,352.495L318.228,349.621L319.46,346.651L321.004,344.686L320.032,343.445L320.428,342.428L319.589,337.159L322.247,335.603L322.735,332.32L322.311,331.529L324.168,328.675L327.735,329.444L329.561,331.727L330.302,329.188L333.333,329.316L333.84,329.995L339.31,335.148L341.524,335.624L345.022,337.961L347.882,339.197L348.43,340.593L346.46,345.398L349.212,346.254L352.214,346.741L354.222,346.233L356.299,343.809L356.394,341.021L357.63,340.411L359.156,342.236L359.396,344.761L357.403,346.506L355.814,347.796L353.268,350.863Z"/><g id="burbujas-p"></g></svg>
+            <p class="pie-m">El tamaño de cada punto es la cantidad de notas de los últimos 3 días.</p>
+          </div>
+          <div class="region-foco" id="region-foco"></div>
+        </div>
+        <div class="columnas" id="columnas"></div>
+        <div class="mundo">
+          <div class="bloque-z"><h4>Mercosur y región <span id="n-merc"></span></h4><ul class="lista-n" id="lista-merc"></ul></div>
+          <div class="bloque-z"><h4>Mundo <span id="n-mundo"></span></h4><ul class="lista-n" id="lista-mundo"></ul></div>
+        </div>
+      </section>
+
       <!-- EN VIVO -->
       <section class="vista" id="v-en-vivo" aria-labelledby="t-viv" hidden>
         <div class="cabeza">
@@ -794,6 +920,61 @@ h3.sub-titulo { font-size: 10.5px; letter-spacing: .12em; text-transform: upperc
   ['v-buscar', 'v-zona', 'v-region', 'v-tema'].forEach(function (id) { $(id).addEventListener('input', function () { estado.limVivo = 60; pintarVivo(); }); });
   $('lista-vivo').addEventListener('click', function (ev) { if (ev.target.id === 'ver-mas') { estado.limVivo = (estado.limVivo || 60) + 60; pintarVivo(); } });
 
+
+  // ── Portada federal ──
+  estado.regionP = null;
+  function notasDe(fn) { return todasLasNotas().filter(fn); }
+  function itemN(n) {
+    return '<li><a class="t" href="' + esc(n.url) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '</a><span class="meta-n"><span class="medio">' + esc(n.medio || '') + '</span><span>' + hace(n.fecha) + '</span>' +
+      '<a class="llevar" target="_blank" rel="noopener" href="' + esc(alDiario({ titulo: n.titulo, medio: n.medio, url: n.url, region: n.region, zona: n.zona, tema: n.tema })) + '">Llevar al diario →</a></span></li>';
+  }
+  function pintarPortada() {
+    var D = estado.datos, todas = todasLasNotas();
+    var cuentas = {}; Object.keys(REG_NOMBRES).forEach(function (k) { cuentas[k] = todas.filter(function (n) { return n.region === k; }).length; });
+    if (!estado.regionP) estado.regionP = Object.keys(cuentas).sort(function (a, b) { return cuentas[b] - cuentas[a]; })[0];
+    var ok = D ? (D.estado || []).filter(function (e) { return e.ok; }).length : 0;
+    $('por-cifras').innerHTML = D ? [[todas.length, 'titulares'], [new Set(todas.map(function (n) { return n.medio; })).size, 'medios'], [ok + '/' + (D.estado || []).length, 'fuentes'], [hace(D.generado).replace('hace ', ''), 'última recolección']]
+      .map(function (c) { return '<div><b>' + esc(c[0]) + '</b><small>' + c[1] + '</small></div>'; }).join('') : '';
+    var ult = todas.slice(0, 18);
+    $('cinta').hidden = !ult.length;
+    var li = ult.map(function (n) { return '<li><span>' + esc(REG_NOMBRES[n.region] || (n.zona === 'mundo' ? 'Mundo' : n.zona === 'mercosur' ? 'Región' : 'País')) + '</span><a href="' + esc(n.url) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '</a></li>'; }).join('');
+    $('cinta-lista').innerHTML = li + li;
+    var max = Math.max.apply(null, Object.keys(cuentas).map(function (k) { return cuentas[k]; }).concat([1]));
+    $('burbujas-p').innerHTML = Object.keys(REG_NOMBRES).map(function (k) {
+      var p = MAPA.regiones[k], r = 1.4 + 3.4 * Math.sqrt(cuentas[k] / max);
+      return '<g class="burbuja' + (estado.regionP === k ? ' sel' : '') + '" data-regp="' + k + '" tabindex="0" role="button" aria-label="' + REG_NOMBRES[k] + ', ' + cuentas[k] + ' notas">' +
+        '<circle class="halo" cx="' + p[0] + '" cy="' + p[1] + '" r="' + (r * 2.1).toFixed(1) + '"/><circle class="n" cx="' + p[0] + '" cy="' + p[1] + '" r="' + r.toFixed(1) + '"/>' +
+        '<text x="' + (p[0] + r * 2.1 + 1).toFixed(1) + '" y="' + (p[1] + 1.3) + '">' + REG_NOMBRES[k] + ' <tspan class="c">' + cuentas[k] + '</tspan></text></g>';
+    }).join('');
+    var k = estado.regionP, reg = (D && D.regiones && D.regiones[k]) || {}, lista = todas.filter(function (n) { return n.region === k; });
+    var conFoto = lista.find(function (n) { return n.imagen; }), principal = conFoto || lista[0], resto = lista.filter(function (n) { return n !== principal; }).slice(0, 5);
+    var vol = (reg.volumen || []).map(function (v) { return v[1]; });
+    $('region-foco').innerHTML = '<div class="tope"><div><span>Región · ' + esc((reg.detalle) || '') + '</span><h3>' + REG_NOMBRES[k] + '</h3></div><div><b>' + cuentas[k] + '</b><small>notas, 3 días</small></div></div>' +
+      (vol.length > 1 ? '<div>' + spark(vol, 64) + '<div class="spark-pie"><span>' + fechaG(reg.volumen[0][0]) + '</span><span>menciones por día</span><span>' + fechaG(reg.volumen[reg.volumen.length - 1][0]) + '</span></div></div>' : '') +
+      (principal ? '<div class="principal">' + (principal.imagen ? '<figure><img src="' + esc(principal.imagen) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></figure>' : '') +
+        '<a class="t" href="' + esc(principal.url) + '" target="_blank" rel="noopener">' + esc(principal.titulo) + '</a><span class="meta-n"><span class="medio">' + esc(principal.medio) + '</span><span>' + hace(principal.fecha) + '</span>' +
+        '<a class="llevar" target="_blank" rel="noopener" href="' + esc(alDiario({ titulo: principal.titulo, medio: principal.medio, url: principal.url, region: principal.region, zona: principal.zona, tema: principal.tema })) + '">Llevar al diario →</a></span></div>' +
+        '<ul class="lista-n">' + resto.map(itemN).join('') + '</ul>'
+      : '<p class="sin-datos">' + (D ? 'Sin titulares de esta región en la última recolección.' : 'Esperando la primera recolección de noticias.') + '</p>');
+    $('columnas').innerHTML = Object.keys(REG_NOMBRES).map(function (r) {
+      var l = todas.filter(function (n) { return n.region === r; }).slice(0, 3), rv = ((D && D.regiones && D.regiones[r]) || {}).volumen || [];
+      return '<div class="col' + (estado.regionP === r ? ' sel' : '') + '" data-regp="' + r + '" tabindex="0" role="button"><header><h4>' + REG_NOMBRES[r] + '</h4><b>' + cuentas[r] + '</b></header>' +
+        (rv.length > 1 ? spark(rv.map(function (v) { return v[1]; }), 30) : '') +
+        '<ul>' + (l.length ? l.map(function (n) { return '<li><a href="' + esc(n.url) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '</a></li>'; }).join('') : '<li class="sin-datos">Sin titulares</li>') + '</ul></div>';
+    }).join('');
+    var merc = todas.filter(function (n) { return n.zona === 'mercosur'; }), mundo = todas.filter(function (n) { return n.zona === 'mundo'; });
+    $('n-merc').textContent = merc.length; $('n-mundo').textContent = mundo.length;
+    $('lista-merc').innerHTML = merc.slice(0, 6).map(itemN).join('') || '<li class="sin-datos">Sin datos todavía</li>';
+    $('lista-mundo').innerHTML = mundo.slice(0, 6).map(itemN).join('') || '<li class="sin-datos">Sin datos todavía</li>';
+  }
+  function elegirP(ev) {
+    var g = ev.target.closest('[data-regp]'); if (!g || ev.target.closest('a')) return;
+    if (ev.type === 'keydown' && ev.key !== 'Enter') return;
+    estado.regionP = g.getAttribute('data-regp'); pintarPortada();
+    if (g.classList.contains('col')) $('region-foco').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  ['click', 'keydown'].forEach(function (t) { $('burbujas-p').addEventListener(t, elegirP); $('columnas').addEventListener(t, elegirP); });
+
   // ── Regiones ──
   function pintarRegiones() {
     var D = estado.datos, R = (D && D.regiones) || {};
@@ -1052,15 +1233,15 @@ h3.sub-titulo { font-size: 10.5px; letter-spacing: .12em; text-transform: upperc
 
   // ── Navegación ──
   $('c-exp').textContent = EXP.length; $('c-cro').textContent = todos.length; $('c-fue').textContent = F.length; $('r-age').textContent = agencias.length;
-  var VISTAS = ['en-vivo', 'regiones', 'expedientes', 'mapa', 'radar', 'fuentes', 'cronologia', 'flujo'];
+  var VISTAS = ['portada', 'en-vivo', 'regiones', 'expedientes', 'mapa', 'radar', 'fuentes', 'cronologia', 'flujo'];
   function columnas() {
     document.querySelector('.cuerpo').style.gridTemplateColumns = $('inspector').hidden && window.matchMedia('(min-width: 961px)').matches ? (window.matchMedia('(max-width: 1180px)').matches ? '210px minmax(0,1fr)' : '236px minmax(0,1fr)') : '';
   }
   function ir() {
-    var v = location.hash.slice(1); if (VISTAS.indexOf(v) < 0) v = 'en-vivo';
+    var v = location.hash.slice(1); if (VISTAS.indexOf(v) < 0) v = 'portada';
     VISTAS.forEach(function (x) { $('v-' + x).hidden = x !== v; });
     document.querySelectorAll('#nav a').forEach(function (a) { if (a.getAttribute('data-vista') === v) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
-    $('inspector').hidden = ['en-vivo', 'regiones', 'fuentes', 'flujo', 'radar'].indexOf(v) >= 0;
+    $('inspector').hidden = ['portada', 'en-vivo', 'regiones', 'fuentes', 'flujo', 'radar'].indexOf(v) >= 0;
     columnas();
     if (v === 'expedientes') pintarLista();
     if (v === 'fuentes') { pintarFuentes(); pintarConexion(); }
@@ -1075,9 +1256,9 @@ h3.sub-titulo { font-size: 10.5px; letter-spacing: .12em; text-transform: upperc
     $('c-viv').textContent = n; $('r-viv').textContent = n; $('r-con').textContent = ok + ' de ' + (D.estado || []).length;
     $('vivo').className = 'vivo'; $('vivo').textContent = 'Actualizado ' + hace(D.generado);
     $('aviso-act').textContent = 'Última recolección: ' + new Date(D.generado).toLocaleString('es-AR', { dateStyle: 'short', timeStyle: 'short' });
-    pintarVivo(); pintarRegiones(); pintarConexion();
+    pintarVivo(); pintarRegiones(); pintarConexion(); pintarPortada();
   }
-  pintarKpisExp(); pintarVivo(); pintarRegiones(); abrir(estado.sel); fijar(MAPA.cajas.mundo); ir();
+  pintarKpisExp(); pintarVivo(); pintarRegiones(); pintarPortada(); abrir(estado.sel); fijar(MAPA.cajas.mundo); ir();
   fetch('datos/noticias.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(conDatos).catch(function () { /* sin recolección todavía */ });
 })();
 </script>

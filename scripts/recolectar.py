@@ -171,7 +171,15 @@ def main():
         reg = {"nombre": r["nombre"], "detalle": r["detalle"], "notas": [], "volumen": []}
         try:
             datos = gdelt(consulta)
-            reg["notas"] = [nota_gdelt(a, region=rid, zona="argentina") for a in datos.get("articles", [])]
+            # GDELT trae notas que nombran la provincia en cualquier parte del texto: solo se
+            # asigna la región si el título la menciona; las demás quedan como nacionales.
+            reg["notas"] = []
+            for a in datos.get("articles", []):
+                n = nota_gdelt(a, zona="argentina")
+                if n["region"] == rid:
+                    reg["notas"].append(n)
+                else:
+                    salida.setdefault("_sueltas", []).append(n)
             salida["estado"].append({"fuente": f"GDELT · {r['nombre']}", "ok": True, "notas": len(reg["notas"])})
         except Exception as e:  # noqa: BLE001
             salida["estado"].append({"fuente": f"GDELT · {r['nombre']}", "ok": False, "error": str(e)[:160]})
@@ -199,6 +207,11 @@ def main():
             salida["zonas"][zid] = {"nombre": z["nombre"], "notas": []}
             salida["estado"].append({"fuente": f"GDELT · {z['nombre']}", "ok": False, "error": str(e)[:160]})
         print(f"zona {zid}: {len(salida['zonas'][zid]['notas'])} notas", flush=True)
+
+    # notas de las búsquedas regionales cuyo título no nombra la región: van a "nacional"
+    sueltas = salida.pop("_sueltas", [])
+    if sueltas:
+        salida["zonas"].setdefault("nacional", {"nombre": ZONAS["nacional"]["nombre"], "notas": []})["notas"].extend(sueltas)
 
     fuentes = json.loads((DATOS / "fuentes-rss.json").read_text(encoding="utf-8"))
     for f in fuentes:
