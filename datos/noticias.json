@@ -1,114 +1,10 @@
 {
- "generado": "2026-11-03T21:25:22+00:00",
+ "generado": "2026-11-03T21:50:47+00:00",
  "regiones": {
   "norte-grande": {
    "nombre": "Norte Grande",
    "detalle": "NEA y NOA",
    "notas": [
-    {
-     "titulo": "Palacio Barolo : el negocio de las visitas guiadas que ayuda a reducir las expensas un 40 %",
-     "url": "https://www.clarin.com/propiedades/palacio-barolo-negocio-visitas-guiadas-ayuda-reducir-expensas-40_0_cHSPot3NH1.html",
-     "medio": "clarin.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://www.clarin.com/img/2026/09/29/eZ-emAnpw_2000x1500__1.jpg",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "El oficialismo negocia con aliados para avanzar con el Presupuesto 2027",
-     "url": "http://www.eldia.com/politica-y-economia/el-oficialismo-negocia-con-aliados-para-avanzar-con-el-presupuesto-2027-politica-y-economia_1793681751",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/6ae9557934bea90014f0443e/1793680559807.jpg?&cw=1200&ch=630",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Cronograma del papa León en la Argentina : días y horarios de todas sus actividades en el país",
-     "url": "https://www.lanacion.com.ar/sociedad/cronograma-del-papa-leon-en-la-argentina-dias-y-horarios-de-todas-sus-actividades-en-el-pais-nid03112026/",
-     "medio": "lanacion.com.ar",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://www.lanacion.com.ar/resizer/v2/cronograma-del-papa-leon-en-la-argentina-dias-y-ULND3O7FCFA5XK77LGAG6XB66I.jpg?auth=050b52e39e53c058f5e897ef075d6840a568cd2919335d70c186dd4a88c7f239&quality=70&smart=true",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Quién es el candidato  outsider  de Boca que se lanzó en la vía pública y busca pelearle las elecciones a Juan Román Riquelme",
-     "url": "https://www.clarin.com/deportes/candidato-outsider-boca-lanzo-via-publica-busca-pelearle-elecciones-juan-roman-riquelme_0_K1q9LV2W93.html",
-     "medio": "clarin.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://www.clarin.com/img/2026/10/05/BDJZVWyr6_2000x1500__1.jpg",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "Política",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Así se juega la última fecha del Torneo Clausura : día y hora confirmados para los partidos de Gimnasia y Estudiantes",
-     "url": "http://www.eldia.com/deportes/asi-se-juega-la-ultima-fecha-del-torneo-clausura-dia-y-hora-confirmados-para-los-partidos-de-gimnasia-y-estudiantes-deportes_1793698320",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/112026/1793698968166.jpg?&cw=1200&ch=630",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Hay alerta amarilla por tormentas en 10 provincias para hoy , martes 3 de noviembre",
-     "url": "https://tn.com.ar/sociedad/2026/11/03/hay-alerta-amarilla-por-tormentas-en-10-provincias-para-hoy-martes-3-de-noviembre/",
-     "medio": "tn.com.ar",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://tn.com.ar/resizer/v2/hay-alerta-amarilla-por-tormentas-las-zonas-afectadas-foto-adobe-stock-FEZUQ3ZXQVCKFK6HLSWFX7EC2U.png?auth=25dcf77212efdffedba99f915320d4e4b9b60fff4395f26857afc0dd654a306c",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Tiene 20 años , es hijo del empresario Fabio Calcaterra y creó una plataforma para combatir la venta informal de papa",
-     "url": "https://www.clarin.com/economia/20-anos-hijo-empresario-fabio-calcaterra-creo-plataforma-combatir-venta-informal-papa_0_mpYAEHKueV.html",
-     "medio": "clarin.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://www.clarin.com/img/2026/11/02/AZ8CSVNRH_2000x1500__1.jpg",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "El panorama de Millo tras la derrota y lo que se le viene",
-     "url": "http://www.eldia.com/deportes/el-panorama-de-millo-tras-la-derrota-y-lo-que-se-le-viene-deportes_1793689433",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/112026/1793689928156.jpg?&cw=1200&ch=630",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
     {
      "titulo": "Variada agenda de espectáculos musicales :: Diario Pregon de Jujuy",
      "url": "https://www.pregon.com.ar/nota/31348/2026/11/variada-agenda-de-espectaculos-musicales",
@@ -136,19 +32,6 @@
      "via": "GDELT"
     },
     {
-     "titulo": "Tierra del Fuego tuvo suba de fondos nacionales en octubre",
-     "url": "https://www.tiemposur.com.ar/politica/tierra-del-fuego-tuvo-suba-de-fondos-nacionales-en-octubre",
-     "medio": "tiemposur.com.ar",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://www.tiemposur.com.ar/uploads/noticia_galeria/2026/11/02/file_261025_zocalo801.jpg",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
      "titulo": "La Fiorentina ganó con goles de Mastantuono y Pellegrino , para salir de zona de descenso en la Serie A :: Diario Pregon de Jujuy",
      "url": "https://www.pregon.com.ar/nota/-74380/2026/11/la-fiorentina-gano-con-goles-de-mastantuono-y-pellegrino-para-salir-de-zona-de-descenso-en-la-serie-a",
      "medio": "pregon.com.ar",
@@ -156,19 +39,6 @@
      "idioma": "Spanish",
      "fecha": "2026-11-03T02:15:00+00:00",
      "imagen": "https://www.pregon.com.ar/img/publicaciones/2026/11/02/alta/6ae91c71fd3588a0f5ce7597_xp.jpg",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Así serán los cruces por el torneo reducido de la Primera Nacional",
-     "url": "https://www.lv12.com.ar/torneo-reducido/asi-seran-los-cruces-el-torneo-reducido-la-primera-nacional-n206037",
-     "medio": "lv12.com.ar",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://media.lv12.com.ar/p/a24ddf3d962b301aa8f49a6735706c2f/adjuntos/261/imagenes/002/066/0002066300/image.png",
      "region": "norte-grande",
      "zona": "argentina",
      "tema": "General",
@@ -195,19 +65,6 @@
      "idioma": "Spanish",
      "fecha": "2026-11-03T02:15:00+00:00",
      "imagen": "https://www.pregon.com.ar/img/publicaciones/2026/11/02/alta/6ae8fa3dfd3588a0f5ccbe11_xp.jpg",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Mercado de pases : Descendió y River lo llamó para que sume en 2027",
-     "url": "https://elintransigente.com/2026/11/02/bautista-dadin-river-descenso-aldosivi-nueva-cesion/",
-     "medio": "elintransigente.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://i0.wp.com/elintransigente.com/wp-content/uploads/2026/11/image-31.webp?fit=1200%2C740&quality=95&ssl=1",
      "region": "norte-grande",
      "zona": "argentina",
      "tema": "General",
@@ -253,19 +110,6 @@
      "via": "GDELT"
     },
     {
-     "titulo": "Jorge Macri , antes de la tormenta",
-     "url": "https://eleconomista.com.ar/politica/jorge-macri-antes-tormenta-n99411",
-     "medio": "eleconomista.com.ar",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://statics.eleconomista.com.ar/2026/11/6ae91c65f2cc9.jpg",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
      "titulo": "No te tengo miedo , una vez más perdiste la cabeza  :: Diario Pregon de Jujuy",
      "url": "https://www.pregon.com.ar/nota/31357/2026/11/no-te-tengo-miedo-una-vez-mas-perdiste-la-cabeza",
      "medio": "pregon.com.ar",
@@ -299,19 +143,6 @@
      "idioma": "Spanish",
      "fecha": "2026-11-03T02:15:00+00:00",
      "imagen": "https://www.pregon.com.ar/img/publicaciones/2026/11/02/alta/237699.webp",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "CyberMonday 2026 : hubo más de 2 millones de visitas en las primeras horas",
-     "url": "https://www.lv12.com.ar/cyber-monday/cybermonday-2026-hubo-mas-2-millones-visitas-las-primeras-horas-n206036",
-     "medio": "lv12.com.ar",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://media.lv12.com.ar/p/60bc46f1c2eb572046023972715fd533/adjuntos/261/imagenes/002/066/0002066287/1200x675/smart/image.png",
      "region": "norte-grande",
      "zona": "argentina",
      "tema": "General",
@@ -370,19 +201,6 @@
      "via": "GDELT"
     },
     {
-     "titulo": "Sorpresa en River por el destino que tendría Tobías Andrada después de diciembre",
-     "url": "https://elintransigente.com/2026/11/02/tobias-andrada-borussia-dortmund-river-clausula-100-millones-euros/",
-     "medio": "elintransigente.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://i0.wp.com/elintransigente.com/wp-content/uploads/2026/11/image-32.webp?fit=1200%2C740&quality=95&ssl=1",
-     "region": "norte-grande",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
      "titulo": "En 2014 , una estancia ganadera de 128 . 000 hectáreas en Chaco se convirtió en un parque nacional : 12 años después , protege yaguaretés y 160 especies de aves",
      "url": "https://tn.com.ar/sociedad/2026/11/02/en-2014-una-estancia-de-128000-hectareas-se-convirtio-en-un-parque-nacional-12-anos-despues-protege-cientos-de-animales/",
      "medio": "tn.com.ar",
@@ -415,40 +233,7 @@
    "nombre": "Centro",
    "detalle": "Córdoba, Santa Fe y Entre Ríos",
    "notas": [],
-   "volumen": [
-    [
-     "20261021",
-     278
-    ],
-    [
-     "20261022",
-     265
-    ],
-    [
-     "20261023",
-     106
-    ],
-    [
-     "20261024",
-     133
-    ],
-    [
-     "20261025",
-     36
-    ],
-    [
-     "20261026",
-     2
-    ],
-    [
-     "20261027",
-     4
-    ],
-    [
-     "20261103",
-     12
-    ]
-   ]
+   "volumen": []
   },
   "cuyo": {
    "nombre": "Cuyo",
@@ -468,32 +253,6 @@
      "via": "GDELT"
     },
     {
-     "titulo": "Argentina – Estados Unidos : una relación bicentenaria en el contexto de una nueva era",
-     "url": "http://www.eldia.com/opinion/argentina-estados-unidos-una-relacion-bicentenaria-en-el-contexto-de-una-nueva-era-opinion_1793682098",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/6ae9557934bea90014f04445/1793680898686.jpg?&cw=1200&ch=630",
-     "region": "cuyo",
-     "zona": "argentina",
-     "tema": "Geopolítica",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Boca ya le apuntó a la  final  contra Defensa",
-     "url": "http://www.eldia.com/deportes/boca-ya-le-apunto-a-la-final-contra-defensa-deportes_1793689493",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/112026/1793689926870.jpg?&cw=1200&ch=630",
-     "region": "cuyo",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
      "titulo": "Alerta amarilla por viento Zonda en Mendoza : las zonas alcanzadas este martes",
      "url": "https://www.losandes.com.ar/sociedad/alerta-amarilla-viento-zonda-mendoza-las-zonas-alcanzadas-este-martes-n6012775",
      "medio": "losandes.com.ar",
@@ -501,32 +260,6 @@
      "idioma": "Spanish",
      "fecha": "2026-11-03T11:15:00+00:00",
      "imagen": "https://media.losandes.com.ar/p/2146d604027ef4b0f8354a85bbac8acf/adjuntos/368/imagenes/100/734/0100734267/1200x675/smart/vista-la-ciudad-mendoza-el-viento-zonda-captada-el-cerro-la-gloria.jpeg",
-     "region": "cuyo",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Tras el fallo de la Corte , Irrigación definió cómo podrán seguir funcionando los pozos de agua en Agrelo",
-     "url": "https://www.losandes.com.ar/politica/tras-el-fallo-la-corte-irrigacion-definio-como-podran-seguir-funcionando-los-pozos-agua-agrelo-n6012778",
-     "medio": "losandes.com.ar",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://media.losandes.com.ar/p/089fbc8f38d0ddb4e90afd5af5742904/adjuntos/368/imagenes/100/762/0100762936/1200x675/smart/pozo-agua.jpg",
-     "region": "cuyo",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Los motociclistas representan más del 60 % de los fallecidos en siniestros viales",
-     "url": "http://www.eldia.com/opinion/los-motociclistas-representan-mas-del-60-de-los-fallecidos-en-siniestros-viales-opinion_1793682038",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/6ae9557934bea90014f04446/1793680970112.jpg?&cw=1200&ch=630",
      "region": "cuyo",
      "zona": "argentina",
      "tema": "General",
@@ -544,6 +277,320 @@
      "zona": "argentina",
      "tema": "General",
      "via": "GDELT"
+    }
+   ],
+   "volumen": []
+  },
+  "patagonia": {
+   "nombre": "Patagonia",
+   "detalle": "De La Pampa a Tierra del Fuego",
+   "notas": [
+    {
+     "titulo": "Encontraron un gato decapitado y un perro muerto en una casa de Neuquén : buscan al principal sospechoso",
+     "url": "https://tn.com.ar/policiales/2026/11/03/encontraron-un-gato-decapitado-y-un-perro-muerto-en-una-casa-de-neuquen-buscan-al-principal-sospechoso/",
+     "medio": "tn.com.ar",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T11:15:00+00:00",
+     "imagen": "https://tn.com.ar/resizer/v2/los-investigadores-aun-intentaban-determinar-como-se-habian-desarrollado-los-hechos-foto-gentileza-lmneuquen-RQOIUGMMRRCYBPLITTTIYJSPC4.jpg?auth=c5590b316d4b24c8c07cb6d41382ec77a0a0fff622a945546baff524ea07b7f6",
+     "region": "patagonia",
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Tierra del Fuego tuvo suba de fondos nacionales en octubre",
+     "url": "https://www.tiemposur.com.ar/politica/tierra-del-fuego-tuvo-suba-de-fondos-nacionales-en-octubre",
+     "medio": "tiemposur.com.ar",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T02:15:00+00:00",
+     "imagen": "https://www.tiemposur.com.ar/uploads/noticia_galeria/2026/11/02/file_261025_zocalo801.jpg",
+     "region": "patagonia",
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Neuquén abrió el Portal de Empleo del Parque Industrial para postularse a los 25 . 000 puestos de trabajo privados",
+     "url": "https://www.anbariloche.com.ar/noticias/2026/11/02/121779-neuquen-abrio-el-portal-de-empleo-del-parque-industrial-para-postularse-a-los-25000-puestos-de-trabajo-privados",
+     "medio": "anbariloche.com.ar",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T02:15:00+00:00",
+     "imagen": "https://anbariloche-s3.cdn.net.ar/s3i233/2026/11/anbariloche/images/02/84/19/2841925_8cab1e52a3c951b5d6cbc598187f5c804839aef58602c3debaf41ef02dd2ae15/lg.webp?_v=v3-380",
+     "region": "patagonia",
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    }
+   ],
+   "volumen": [
+    [
+     "20261021",
+     336
+    ],
+    [
+     "20261022",
+     201
+    ],
+    [
+     "20261023",
+     124
+    ],
+    [
+     "20261024",
+     133
+    ],
+    [
+     "20261025",
+     23
+    ],
+    [
+     "20261026",
+     0
+    ],
+    [
+     "20261027",
+     1
+    ],
+    [
+     "20261103",
+     11
+    ]
+   ]
+  },
+  "buenos-aires": {
+   "nombre": "Buenos Aires",
+   "detalle": "Provincia y Ciudad",
+   "notas": [],
+   "volumen": []
+  }
+ },
+ "zonas": {
+  "nacional": {
+   "nombre": "Argentina · nacional",
+   "notas": [
+    {
+     "titulo": "Palacio Barolo : el negocio de las visitas guiadas que ayuda a reducir las expensas un 40 %",
+     "url": "https://www.clarin.com/propiedades/palacio-barolo-negocio-visitas-guiadas-ayuda-reducir-expensas-40_0_cHSPot3NH1.html",
+     "medio": "clarin.com",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T11:15:00+00:00",
+     "imagen": "https://www.clarin.com/img/2026/09/29/eZ-emAnpw_2000x1500__1.jpg",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "El oficialismo negocia con aliados para avanzar con el Presupuesto 2027",
+     "url": "http://www.eldia.com/politica-y-economia/el-oficialismo-negocia-con-aliados-para-avanzar-con-el-presupuesto-2027-politica-y-economia_1793681751",
+     "medio": "eldia.com",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T11:15:00+00:00",
+     "imagen": "https://cdn1.eldia.com/6ae9557934bea90014f0443e/1793680559807.jpg?&cw=1200&ch=630",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Cronograma del papa León en la Argentina : días y horarios de todas sus actividades en el país",
+     "url": "https://www.lanacion.com.ar/sociedad/cronograma-del-papa-leon-en-la-argentina-dias-y-horarios-de-todas-sus-actividades-en-el-pais-nid03112026/",
+     "medio": "lanacion.com.ar",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T11:15:00+00:00",
+     "imagen": "https://www.lanacion.com.ar/resizer/v2/cronograma-del-papa-leon-en-la-argentina-dias-y-ULND3O7FCFA5XK77LGAG6XB66I.jpg?auth=050b52e39e53c058f5e897ef075d6840a568cd2919335d70c186dd4a88c7f239&quality=70&smart=true",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Quién es el candidato  outsider  de Boca que se lanzó en la vía pública y busca pelearle las elecciones a Juan Román Riquelme",
+     "url": "https://www.clarin.com/deportes/candidato-outsider-boca-lanzo-via-publica-busca-pelearle-elecciones-juan-roman-riquelme_0_K1q9LV2W93.html",
+     "medio": "clarin.com",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T11:15:00+00:00",
+     "imagen": "https://www.clarin.com/img/2026/10/05/BDJZVWyr6_2000x1500__1.jpg",
+     "region": null,
+     "zona": "argentina",
+     "tema": "Política",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Así se juega la última fecha del Torneo Clausura : día y hora confirmados para los partidos de Gimnasia y Estudiantes",
+     "url": "http://www.eldia.com/deportes/asi-se-juega-la-ultima-fecha-del-torneo-clausura-dia-y-hora-confirmados-para-los-partidos-de-gimnasia-y-estudiantes-deportes_1793698320",
+     "medio": "eldia.com",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T11:15:00+00:00",
+     "imagen": "https://cdn1.eldia.com/112026/1793698968166.jpg?&cw=1200&ch=630",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Hay alerta amarilla por tormentas en 10 provincias para hoy , martes 3 de noviembre",
+     "url": "https://tn.com.ar/sociedad/2026/11/03/hay-alerta-amarilla-por-tormentas-en-10-provincias-para-hoy-martes-3-de-noviembre/",
+     "medio": "tn.com.ar",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T11:15:00+00:00",
+     "imagen": "https://tn.com.ar/resizer/v2/hay-alerta-amarilla-por-tormentas-las-zonas-afectadas-foto-adobe-stock-FEZUQ3ZXQVCKFK6HLSWFX7EC2U.png?auth=25dcf77212efdffedba99f915320d4e4b9b60fff4395f26857afc0dd654a306c",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Tiene 20 años , es hijo del empresario Fabio Calcaterra y creó una plataforma para combatir la venta informal de papa",
+     "url": "https://www.clarin.com/economia/20-anos-hijo-empresario-fabio-calcaterra-creo-plataforma-combatir-venta-informal-papa_0_mpYAEHKueV.html",
+     "medio": "clarin.com",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T11:15:00+00:00",
+     "imagen": "https://www.clarin.com/img/2026/11/02/AZ8CSVNRH_2000x1500__1.jpg",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "El panorama de Millo tras la derrota y lo que se le viene",
+     "url": "http://www.eldia.com/deportes/el-panorama-de-millo-tras-la-derrota-y-lo-que-se-le-viene-deportes_1793689433",
+     "medio": "eldia.com",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T11:15:00+00:00",
+     "imagen": "https://cdn1.eldia.com/112026/1793689928156.jpg?&cw=1200&ch=630",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Así serán los cruces por el torneo reducido de la Primera Nacional",
+     "url": "https://www.lv12.com.ar/torneo-reducido/asi-seran-los-cruces-el-torneo-reducido-la-primera-nacional-n206037",
+     "medio": "lv12.com.ar",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T02:15:00+00:00",
+     "imagen": "https://media.lv12.com.ar/p/a24ddf3d962b301aa8f49a6735706c2f/adjuntos/261/imagenes/002/066/0002066300/image.png",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Mercado de pases : Descendió y River lo llamó para que sume en 2027",
+     "url": "https://elintransigente.com/2026/11/02/bautista-dadin-river-descenso-aldosivi-nueva-cesion/",
+     "medio": "elintransigente.com",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T02:15:00+00:00",
+     "imagen": "https://i0.wp.com/elintransigente.com/wp-content/uploads/2026/11/image-31.webp?fit=1200%2C740&quality=95&ssl=1",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Jorge Macri , antes de la tormenta",
+     "url": "https://eleconomista.com.ar/politica/jorge-macri-antes-tormenta-n99411",
+     "medio": "eleconomista.com.ar",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T02:15:00+00:00",
+     "imagen": "https://statics.eleconomista.com.ar/2026/11/6ae91c65f2cc9.jpg",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "CyberMonday 2026 : hubo más de 2 millones de visitas en las primeras horas",
+     "url": "https://www.lv12.com.ar/cyber-monday/cybermonday-2026-hubo-mas-2-millones-visitas-las-primeras-horas-n206036",
+     "medio": "lv12.com.ar",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T02:15:00+00:00",
+     "imagen": "https://media.lv12.com.ar/p/60bc46f1c2eb572046023972715fd533/adjuntos/261/imagenes/002/066/0002066287/1200x675/smart/image.png",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Sorpresa en River por el destino que tendría Tobías Andrada después de diciembre",
+     "url": "https://elintransigente.com/2026/11/02/tobias-andrada-borussia-dortmund-river-clausula-100-millones-euros/",
+     "medio": "elintransigente.com",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T02:15:00+00:00",
+     "imagen": "https://i0.wp.com/elintransigente.com/wp-content/uploads/2026/11/image-32.webp?fit=1200%2C740&quality=95&ssl=1",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Argentina – Estados Unidos : una relación bicentenaria en el contexto de una nueva era",
+     "url": "http://www.eldia.com/opinion/argentina-estados-unidos-una-relacion-bicentenaria-en-el-contexto-de-una-nueva-era-opinion_1793682098",
+     "medio": "eldia.com",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T11:15:00+00:00",
+     "imagen": "https://cdn1.eldia.com/6ae9557934bea90014f04445/1793680898686.jpg?&cw=1200&ch=630",
+     "region": null,
+     "zona": "argentina",
+     "tema": "Geopolítica",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Boca ya le apuntó a la  final  contra Defensa",
+     "url": "http://www.eldia.com/deportes/boca-ya-le-apunto-a-la-final-contra-defensa-deportes_1793689493",
+     "medio": "eldia.com",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T11:15:00+00:00",
+     "imagen": "https://cdn1.eldia.com/112026/1793689926870.jpg?&cw=1200&ch=630",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Tras el fallo de la Corte , Irrigación definió cómo podrán seguir funcionando los pozos de agua en Agrelo",
+     "url": "https://www.losandes.com.ar/politica/tras-el-fallo-la-corte-irrigacion-definio-como-podran-seguir-funcionando-los-pozos-agua-agrelo-n6012778",
+     "medio": "losandes.com.ar",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T11:15:00+00:00",
+     "imagen": "https://media.losandes.com.ar/p/089fbc8f38d0ddb4e90afd5af5742904/adjuntos/368/imagenes/100/762/0100762936/1200x675/smart/pozo-agua.jpg",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
+    },
+    {
+     "titulo": "Los motociclistas representan más del 60 % de los fallecidos en siniestros viales",
+     "url": "http://www.eldia.com/opinion/los-motociclistas-representan-mas-del-60-de-los-fallecidos-en-siniestros-viales-opinion_1793682038",
+     "medio": "eldia.com",
+     "pais": "Argentina",
+     "idioma": "Spanish",
+     "fecha": "2026-11-03T11:15:00+00:00",
+     "imagen": "https://cdn1.eldia.com/6ae9557934bea90014f04446/1793680970112.jpg?&cw=1200&ch=630",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "via": "GDELT"
     },
     {
      "titulo": "Irrigación fijó las condiciones para los pozos de agua en Agrelo tras el fallo de la Corte",
@@ -553,7 +600,7 @@
      "idioma": "Spanish",
      "fecha": "2026-11-03T11:15:00+00:00",
      "imagen": "https://i0.wp.com/www.elsol.com.ar/wp-content/uploads/2026/11/WhatsApp-Image-2019-11-11-at-7.02.32-PM.webp?fit=768%2C383&ssl=1",
-     "region": "cuyo",
+     "region": null,
      "zona": "argentina",
      "tema": "General",
      "via": "GDELT"
@@ -566,7 +613,7 @@
      "idioma": "Spanish",
      "fecha": "2026-11-03T11:15:00+00:00",
      "imagen": "https://media.losandes.com.ar/p/3be4c34c8cfcd4aa0aef6a7889e5393d/adjuntos/368/imagenes/100/762/0100762934/1200x675/smart/clasico-gimnasia-y-esgrima-vs-independiente-rivadavia.png",
-     "region": "cuyo",
+     "region": null,
      "zona": "argentina",
      "tema": "General",
      "via": "GDELT"
@@ -579,7 +626,7 @@
      "idioma": "Spanish",
      "fecha": "2026-11-03T11:15:00+00:00",
      "imagen": "https://i0.wp.com/www.elsol.com.ar/wp-content/uploads/2026/11/INDEPENDIENTE-RIVADAVIA-GIMNASIA.jpg?fit=1200%2C801&ssl=1",
-     "region": "cuyo",
+     "region": null,
      "zona": "argentina",
      "tema": "General",
      "via": "GDELT"
@@ -592,7 +639,7 @@
      "idioma": "Spanish",
      "fecha": "2026-11-03T02:15:00+00:00",
      "imagen": "https://img.lagaceta.com.ar/fotos/notas/2026/11/02/atletico-pierde-10-frente-argentinos-juniors--nicolas-nunez-especial-para-la-gaceta-1160733-215020.jpeg",
-     "region": "cuyo",
+     "region": null,
      "zona": "argentina",
      "tema": "General",
      "via": "GDELT"
@@ -605,579 +652,102 @@
      "idioma": "Spanish",
      "fecha": "2026-11-03T02:15:00+00:00",
      "imagen": "https://tn.com.ar/resizer/v2/su-hija-declaro-haber-descubierto-el-vinculo-entre-su-padre-de-45-anos-en-aquel-momento-y-su-pareja-juninho-virgilio-de-25-anos-foto-facebookjuninho-virgilio-BMEN6VMMU5DHNIRZ5BMXVTHEHQ.jpg?auth=a0ac2932522d593554b06a69324e484c5fb0cf1e4ed582107ccba31b64a15596",
-     "region": "cuyo",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    }
-   ],
-   "volumen": [
-    [
-     "20261021",
-     213
-    ],
-    [
-     "20261022",
-     118
-    ],
-    [
-     "20261023",
-     57
-    ],
-    [
-     "20261024",
-     80
-    ],
-    [
-     "20261025",
-     30
-    ],
-    [
-     "20261026",
-     2
-    ],
-    [
-     "20261027",
-     0
-    ],
-    [
-     "20261103",
-     15
-    ]
-   ]
-  },
-  "patagonia": {
-   "nombre": "Patagonia",
-   "detalle": "De La Pampa a Tierra del Fuego",
-   "notas": [],
-   "volumen": []
-  },
-  "buenos-aires": {
-   "nombre": "Buenos Aires",
-   "detalle": "Provincia y Ciudad",
-   "notas": [
-    {
-     "titulo": "La primavera sigue bajo las nubes : por qué hay tantos días grises en la Región",
-     "url": "http://www.eldia.com/la-ciudad/la-primavera-sigue-bajo-las-nubes-por-que-hay-tantos-dias-grises-en-la-region-la-ciudad_1793681990",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/112026/1793682055479.jpg?&cw=1200&ch=630",
-     "region": "buenos-aires",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "La Plata | Otorgan a la Comuna el uso de los terrenos de 115 para la Ferroautomotor",
-     "url": "http://www.eldia.com/politica-y-economia/otorgan-a-la-comuna-el-uso-de-los-terrenos-de-115-para-la-ferroautomotor-politica-y-economia_1793681931",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/112026/1793682119910.jpg?&cw=1200&ch=630",
-     "region": "buenos-aires",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Las re - re abren nuevas disputas entre el oficialismo y la oposición",
-     "url": "http://www.eldia.com/politica-y-economia/las-re-re-abren-nuevas-disputas-entre-el-oficialismo-y-la-oposicion-politica-y-economia_1793682051",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/112026/1793682114697.jpg?&cw=1200&ch=630",
-     "region": "buenos-aires",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Cristina  candidata : el kicillofismo quiere PASO",
-     "url": "http://www.eldia.com/politica-y-economia/cristina-candidata-el-kicillofismo-quiere-paso-politica-y-economia_1793681991",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/112026/1793682117204.jpg?&cw=1200&ch=630",
-     "region": "buenos-aires",
-     "zona": "argentina",
-     "tema": "Política",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Las expensas siguen en alza y ya suman más del 30 % en este año",
-     "url": "http://www.eldia.com/la-ciudad/las-expensas-siguen-en-alza-y-ya-suman-mas-del-30-en-este-ano-la-ciudad_1793682050",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/112026/1793682051749.jpg?&cw=1200&ch=630",
-     "region": "buenos-aires",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Alegatos en un proceso oral por  lesiones agravadas",
-     "url": "http://www.eldia.com/policiales/alegatos-en-un-proceso-oral-por-lesiones-agravadas-policiales_1793681187",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/6ae9557934bea90014f04447/1793681319357.jpg?&cw=1200&ch=630",
-     "region": "buenos-aires",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Incidentes y detenidos en la cancha de Nueva Chicago tras el descenso a la Primera B Metropolitana",
-     "url": "https://www.pregon.com.ar/nota/-74382/2026/11/incidentes-y-detenidos-en-la-cancha-de-nueva-chicago-tras-el-descenso-a-la-primera-b-metropolitana",
-     "medio": "pregon.com.ar",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://www.pregon.com.ar/img/publicaciones/2026/11/02/alta/6ae914e5fd3588a0f5ce1668_xp.jpg",
-     "region": "buenos-aires",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Mauricio Macri y Ritondo encabezaron la cumbre del Pro para el armado del 2027",
-     "url": "https://www.parlamentario.com/2026/11/02/mauricio-macri-y-ritondo-encabezaron-la-cumbre-del-pro-para-el-armado-del-2027/",
-     "medio": "parlamentario.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://www.parlamentario.com/wp-content/uploads/2026/11/Mauricio-Macri-y-el-Pro-PBA.webp",
-     "region": "buenos-aires",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Estatales bonaerenses podrán solicitar hasta 45 días tras la muerte del otro progenitor",
-     "url": "https://www.diariojunin.com/public/noticias/103034_estatales-bonaerenses-podran-solicitar-hasta-45-dias-tras-la-muerte-del-otro-progenitor.html",
-     "medio": "diariojunin.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://www.diariojunin.com/fotos/2026/11/icjfg810hba7429e635d.webp",
-     "region": "buenos-aires",
-     "zona": "argentina",
-     "tema": "General",
-     "via": "GDELT"
-    }
-   ],
-   "volumen": [
-    [
-     "20261021",
-     130
-    ],
-    [
-     "20261022",
-     95
-    ],
-    [
-     "20261023",
-     66
-    ],
-    [
-     "20261024",
-     66
-    ],
-    [
-     "20261025",
-     31
-    ],
-    [
-     "20261026",
-     4
-    ],
-    [
-     "20261027",
-     0
-    ],
-    [
-     "20261103",
-     16
-    ]
-   ]
-  }
- },
- "zonas": {
-  "nacional": {
-   "nombre": "Argentina · nacional",
-   "notas": []
-  },
-  "mercosur": {
-   "nombre": "Mercosur y región",
-   "notas": [
-    {
-     "titulo": "Estudiantes vs Palmeiras | Tras la bronca por las plateas , el hincha ahora apunta a las generales : quiénes tienen entrada asegurada",
-     "url": "http://www.eldia.com/deportes/bronca-por-el-manejo-en-la-venta-de-entradas-deportes_1793689913",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/112026/1793689914649.jpg?&cw=1200&ch=630",
      "region": null,
-     "zona": "mercosur",
+     "zona": "argentina",
      "tema": "General",
      "via": "GDELT"
     },
     {
-     "titulo": "El New York Times recomendó 8 bares , restaurantes y cafés de Buenos Aires y elogió su encanto nostálgico",
-     "url": "https://www.clarin.com/gourmet/new-york-times-recomendo-8-bares-restaurantes-cafes-buenos-aires-elogio-encanto-nostalgico_0_mlZ4IGY3ef.html",
+     "titulo": "Empleadas domésticas y niñeras : cuánto cobran por hora y por mes en noviembre de 2026",
+     "url": "https://www.clarin.com/economia/empleadas-domesticas-nineras-cobran-hora-mes-noviembre-2026_0_ks1aleqdA7.html",
      "medio": "clarin.com",
      "pais": "Argentina",
      "idioma": "Spanish",
      "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://www.clarin.com/img/2025/04/18/9ROT43hwy_2000x1500__1.jpg",
+     "imagen": "https://www.clarin.com/img/2021/04/22/BGYee71Ht_1256x620__1.jpg",
      "region": null,
-     "zona": "mercosur",
+     "zona": "argentina",
      "tema": "General",
      "via": "GDELT"
     },
     {
-     "titulo": "Mourinho y la meritocracia | Noticias Diario de Ávila",
-     "url": "https://www.diariodeavila.es/noticia/zc7833278-5a4f-4235-ae432ff405b1baa0/202611/mourinho-y-la-meritocracia",
-     "medio": "diariodeavila.es",
-     "pais": "Spain",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://www.diariodeavila.es/media/IMG/2026/1EF8647B-7416-4E6B-8DBF7D90721A3AD1.JPG",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "La Nación / El papa visitará Casavalle , uno de los barrios más pobres y vulnerables de Uruguay",
-     "url": "https://www.lanacion.com.py/mundo/2026/11/03/el-papa-visitara-casavalle-uno-de-los-barrios-mas-pobres-y-vulnerables-de-uruguay/",
-     "medio": "lanacion.com.py",
-     "pais": "Paraguay",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://www.lanacion.com.py/resizer/v2/AW46T2T34FC5DI5K2WOE4OFM4I.jpg?auth=c3e2dc76f5250ef1d88f56605106a2ea9bdfd243747ca7e2a18343a933ef2366&smart=true",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Flamengo no irá al TAS por la venta de entradas",
-     "url": "http://www.eldia.com/deportes/flamengo-no-ira-al-tas-por-la-venta-de-entradas-deportes_1793688653",
-     "medio": "eldia.com",
+     "titulo": "Avanzan con un RIGI para privatizar rutas nacionales",
+     "url": "https://comercioyjusticia.info/negocios/avanzan-con-un-rigi-para-privatizar-rutas-nacionales/",
+     "medio": "comercioyjusticia.info",
      "pais": "Argentina",
      "idioma": "Spanish",
      "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/112026/1793689944195.jpg?&cw=1200&ch=630",
+     "imagen": "https://comercioyjusticia.info/wp-content/uploads/2026/07/rutas-nacionales-.jpg",
      "region": null,
-     "zona": "mercosur",
+     "zona": "argentina",
      "tema": "General",
      "via": "GDELT"
     },
     {
-     "titulo": "La Liga dio a conocer los audios del Superclásico",
-     "url": "http://www.eldia.com/deportes/la-liga-dio-a-conocer-los-audios-del-superclasico-deportes_1793689613",
-     "medio": "eldia.com",
+     "titulo": "Futsal femenino : Las barilochenses ya están en Mar del Plata para disputar los Juegos Evita",
+     "url": "https://www.anbariloche.com.ar/noticias/2026/11/02/121797-futsal-femenino-las-barilochenses-ya-estan-en-mar-del-plata-para-disputar-los-juegos-evita",
+     "medio": "anbariloche.com.ar",
      "pais": "Argentina",
      "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/112026/1793689922733.jpg?&cw=1200&ch=630",
-     "region": null,
-     "zona": "mercosur",
+     "fecha": "2026-11-03T02:15:00+00:00",
+     "imagen": "https://anbariloche-s3.cdn.net.ar/s3i233/2026/11/anbariloche/images/02/84/22/2842278_aa97077671acfc25a65646bd13cab63358ee2794cc87707943624dc8db2ff5a0/lg.webp?_v=v3-380",
+     "region": "buenos-aires",
+     "zona": "argentina",
      "tema": "General",
      "via": "GDELT"
     },
     {
-     "titulo": "¿ A cuánto se cotizará el dólar en el primer día hábil de noviembre ?",
-     "url": "https://eju.tv/2026/11/a-cuanto-se-cotizara-el-dolar-en-el-primer-dia-habil-de-noviembre/",
-     "medio": "eju.tv",
-     "pais": "Bolivia",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://eju.tv/wp-content/uploads/2026/11/zalla3-e1793702139647.jpg",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "Economía",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Ayuso entrega la Medalla Internacional a Kast y elogia su defensa de la libertad y la seguridad",
-     "url": "https://www.estrelladigital.es/espana/madrid/ayuso-medalla-internacional-kast-chile-madrid/20261103114254452809.html",
-     "medio": "estrelladigital.es",
-     "pais": "Spain",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://www.estrelladigital.es/media/estrelladigital/images/2026/11/03/2026110311414547714.jpg",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Capturas de brasileños exponen fallas en controles de identidad en Bolivia",
-     "url": "https://eju.tv/2026/11/capturas-de-brasilenos-exponen-fallas-en-controles-de-identidad-en-bolivia/",
-     "medio": "eju.tv",
-     "pais": "Bolivia",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://eju.tv/wp-content/uploads/2026/11/zalla5-e1793702971272.jpg",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Debates obligatorios : En los encuentros del TSE plantean sancionar a los candidatos que no se presenten a los foros",
-     "url": "https://eju.tv/2026/11/debates-obligatorios-en-los-encuentros-del-tse-plantean-sancionar-a-los-candidatos-que-no-se-presenten-a-los-foros/",
-     "medio": "eju.tv",
-     "pais": "Bolivia",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://eju.tv/wp-content/uploads/2026/11/Uno-de-los-debates-de-las-elecciones-de-2025.-Foto-Unidad-e1793703414121.jpg",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Velasco plantea usar recursos de las empresas deficitarias y la subvención para mejorar la asignación a las regiones",
-     "url": "https://eju.tv/2026/11/velasco-plantea-usar-recursos-de-las-empresas-deficitarias-y-la-subvencion-para-mejorar-la-asignacion-a-las-regiones/",
-     "medio": "eju.tv",
-     "pais": "Bolivia",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://eju.tv/wp-content/uploads/2026/11/El-gobernador-de-Santa-Cruz-Juan-Pablo-Velasco.-Foto-JP-Velasco-e1793700102243.jpg",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Refuerzan la seguridad de las autoridades del Gobierno tras « amenaza » contra un viceministro",
-     "url": "https://eju.tv/2026/11/refuerzan-la-seguridad-de-las-autoridades-del-gobierno-tras-amenaza-contra-un-viceministro/",
-     "medio": "eju.tv",
-     "pais": "Bolivia",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://eju.tv/wp-content/uploads/2026/11/Los-controles-policiales-en-Santa-Cruz.-Foto-El-Deber-e1793701913682.jpg",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "Política",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Santa Cruz : Abogado va preso por la presunta coima a un juez vetado en EEUU",
-     "url": "https://eju.tv/2026/11/santa-cruz-abogado-va-preso-por-la-presunta-coima-a-un-juez-vetado-en-eeuu/",
-     "medio": "eju.tv",
-     "pais": "Bolivia",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://eju.tv/wp-content/uploads/2026/11/zalla8-e1793703584248.jpg",
-     "region": "patagonia",
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Santa Cruz concentra más renuncias de mujeres electas y crece alerta por acoso político",
-     "url": "https://eju.tv/2026/11/santa-cruz-concentra-mas-renuncias-de-mujeres-electas-y-crece-alerta-por-acoso-politico/",
-     "medio": "eju.tv",
-     "pais": "Bolivia",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://eju.tv/wp-content/uploads/2026/11/zalla6-e1793703190737.jpg",
-     "region": "patagonia",
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Nuevas amenazas contra el viceministro Peter Maldonado circulan en Santa Cruz",
-     "url": "https://eju.tv/2026/11/nuevas-amenazas-contra-el-viceministro-peter-maldonado-circulan-en-santa-cruz/",
-     "medio": "eju.tv",
-     "pais": "Bolivia",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://eju.tv/wp-content/uploads/2026/11/Letrero-acribillado-2-e1793703500505.jpg",
-     "region": "patagonia",
-     "zona": "mercosur",
-     "tema": "Política",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "La Nación / El Cottolengo Don Orione de Argentina se prepara para recibir la visita del papa León XIV",
-     "url": "https://www.lanacion.com.py/mundo/2026/11/03/el-cottolengo-don-orione-de-argentina-se-prepara-para-recibir-la-visita-del-papa-leon-xiv/",
-     "medio": "lanacion.com.py",
-     "pais": "Paraguay",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://www.lanacion.com.py/resizer/v2/GN5WCTZRDRBMPIFSKCPCCXS36A.jpg?auth=06bd57c3f2abcdc2ff1d6a0c449eb97bbf8927c441c31b3734cad0f29e8edff7&smart=true",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Otra amenaza contra el viceministro Maldonado aparece en un letrero de Santa Cruz",
-     "url": "https://eju.tv/2026/11/otra-amenaza-contra-el-viceministro-maldonado-aparece-en-un-letrero-de-santa-cruz/",
-     "medio": "eju.tv",
-     "pais": "Bolivia",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://eju.tv/wp-content/uploads/2026/11/Captura-de-video-del-letro-que-aparecio-en-Santa-Cruz.-Foto-red-UNO-e1793700999821.jpg",
-     "region": "patagonia",
-     "zona": "mercosur",
-     "tema": "Política",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "De impacto  incipiente  a  crecimiento notorio : ¿ qué dicen los sectores exportadores a seis meses del acuerdo con la UE ? | la diaria",
-     "url": "https://ladiaria.com.uy/politica/articulo/2026/11/de-impacto-incipiente-a-crecimiento-notorio-que-dicen-los-sectores-exportadores-a-seis-meses-del-acuerdo-con-la-ue/",
-     "medio": "ladiaria.com.uy",
-     "pais": "Uruguay",
+     "titulo": "Murió un joven de Puerto Deseado en Río de Janeiro",
+     "url": "https://www.tiemposur.com.ar/policiales/murio-un-joven-de-puerto-deseado-en-rio-de-janeiro",
+     "medio": "tiemposur.com.ar",
+     "pais": "Argentina",
      "idioma": "Spanish",
      "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://ladiaria.com.uy/media/photologue/photos/cache/RS369634_20260902er_053-lpr_article_main.webp?r=qQWm9QQHe2OdVIdb",
+     "imagen": "https://www.tiemposur.com.ar/uploads/noticia_galeria/2026/11/02/file_261028_zocalo801.jpg",
      "region": null,
-     "zona": "mercosur",
+     "zona": "argentina",
      "tema": "General",
      "via": "GDELT"
     },
     {
-     "titulo": "Lo bueno y lo malo del baremo para evaluar candidatos al TSJ , según Acceso a la Justicia",
-     "url": "https://talcualdigital.com/noticias/lo-bueno-y-lo-malo-del-baremo-para-evaluar-candidatos-al-tsj-segun-acceso-a-la-justicia/",
-     "medio": "talcualdigital.com",
-     "pais": "Venezuela",
+     "titulo": "Benetton vendió 900 . 000 hectáreas y se fue de Argentina : quién se quedó con uno de los mayores imperios rurales del país",
+     "url": "https://eleconomista.com.ar/negocios/benetton-va-argentina-tras-35-anos-vendio-900000-hectareas-conocio-quien-compro-n99410",
+     "medio": "eleconomista.com.ar",
+     "pais": "Argentina",
      "idioma": "Spanish",
      "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://talcualdigital.com/wp-content/uploads/2026/04/TSJ-magistrados-Sala-Politico-Administrativa.jpg",
+     "imagen": "https://statics.eleconomista.com.ar/2026/11/6ae905d3b827f.png",
      "region": null,
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Instituto Antártico Uruguayo impulsa la formación de docentes para  llevar la Antártida a las aulas  | la diaria",
-     "url": "https://ladiaria.com.uy/educacion/articulo/2026/11/instituto-antartico-uruguayo-impulsa-la-formacion-de-docentes-para-llevar-la-antartida-a-las-aulas/",
-     "medio": "ladiaria.com.uy",
-     "pais": "Uruguay",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://ladiaria.com.uy/media/photologue/photos/cache/WhatsApp-Image-2026-10-26-at-12.00.25_article_main.webp?r=i3x2wnyWP7t74RlO",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Fatal accidente afecta a un trabajador del Metro",
-     "url": "https://www.theclinic.cl/2026/11/02/victima-quedo-atrapada-mientras-realizaba-labores-de-desmontaje-que-se-sabe-del-fatal-accidente-que-afecto-a-un-trabajador-del-metro-en-renca/",
-     "medio": "theclinic.cl",
-     "pais": "Chile",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://static.theclinic.cl/media/og-watermarked/20261102-1817315-diseno-sin-titulo-7-85.jpg",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "El Divisadero - El valor de lo que tenemos y no vemos",
-     "url": "http://www.eldivisadero.cl/_noticia/El-valor-de-lo-que-tenemos-y-no-vemos/ODQ4MzE=",
-     "medio": "eldivisadero.cl",
-     "pais": "Chile",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "http://www.eldivisadero.cl/media/Noticias/for_fot26207.jpg",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Inversionistas en Chile se refugian en bonos indexados a la inflación",
-     "url": "https://gestion.pe/mundo/internacional/inversionistas-en-chile-se-refugian-en-bonos-indexados-a-la-inflacion-noticia/",
-     "medio": "gestion.pe",
-     "pais": "Peru",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://gestion.pe/resizer/v2/WHVESSUU7RDNVNTBZU5SNCDCMM.jpg?auth=54f957d12d0fcdd7a1a0957c7db408112ff7b2127f162f08c8ce31477b646e46&quality=75&smart=true",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "Economía",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Sofascore destaca las actuaciones de Patrick Sequeira y Julio Cascante durante el fin de semana",
-     "url": "https://www.nacion.com/puro-deporte/sofascore-destaca-las-actuaciones-de-patrick/WPPHIT5M6JEJJFGVQJMGY3JDGQ/story/",
-     "medio": "nacion.com",
-     "pais": "United States",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://www.nacion.com/resizer/v2/IPYH53ATLVGUHNB6C6JQS43FW4.jpeg?smart=true&auth=aa4e7a6d65eb91f846c61b7e50ac5919a0f24c4ecbf1cfe7843f7d88c4814a67",
-     "region": null,
-     "zona": "mercosur",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Empresa uruguaya desarrolla nanopartículas que logran reducir hasta 40 % los tumores en ensayos preliminares",
-     "url": "https://ladiaria.com.uy/futuro/articulo/2026/11/empresa-uruguaya-desarrolla-nanoparticulas-que-logran-reducir-hasta-40-los-tumores-en-ensayos-preliminares/",
-     "medio": "ladiaria.com.uy",
-     "pais": "Uruguay",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T02:15:00+00:00",
-     "imagen": "https://ladiaria.com.uy/media/photologue/photos/cache/RS364612_20260803_IG_016-lpr_article_main.webp?r=OZ41r2XKdBKsyY4Q",
-     "region": null,
-     "zona": "mercosur",
+     "zona": "argentina",
      "tema": "General",
      "via": "GDELT"
     }
    ]
   },
+  "mercosur": {
+   "nombre": "Mercosur y región",
+   "notas": []
+  },
   "mundo": {
    "nombre": "Mundo",
-   "notas": [
-    {
-     "titulo": "El Rojo empató y depende de sí para clasificar",
-     "url": "http://www.eldia.com/deportes/el-rojo-empato-y-depende-de-si-para-clasificar-deportes_1793689373",
-     "medio": "eldia.com",
-     "pais": "Argentina",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://cdn1.eldia.com/6ae9557934bea90014f04415/1793689159716.jpg?&cw=1200&ch=630",
-     "region": null,
-     "zona": "mundo",
-     "tema": "General",
-     "via": "GDELT"
-    },
-    {
-     "titulo": "Aprobada la limitación de ultraprocesados en hospitales | Noticias Diario de Ávila",
-     "url": "https://www.diariodeavila.es/noticia/z09b843ff-e465-46c5-864366107c7c64c4/202611/aprobada-la-limitacion-de-ultraprocesados-en-hospitales",
-     "medio": "diariodeavila.es",
-     "pais": "Spain",
-     "idioma": "Spanish",
-     "fecha": "2026-11-03T11:15:00+00:00",
-     "imagen": "https://www.diariodeavila.es/media/IMG/2026/90E45526-E54E-453A-B434EC9797129762.JPG",
-     "region": null,
-     "zona": "mundo",
-     "tema": "General",
-     "via": "GDELT"
-    }
-   ]
+   "notas": []
   }
  },
  "rss": [
+  {
+   "titulo": "AGU defende medida provisória que proibiu bets no país",
+   "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/agu-defende-medida-provisoria-que-proibiu-bets-no-pais",
+   "medio": "Agência Brasil",
+   "pais": "Brasil",
+   "idioma": "portugués",
+   "fecha": "2026-11-03T21:25:00+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "mercosur",
+   "tema": "General",
+   "via": "RSS",
+   "tipo": "Agencia pública"
+  },
   {
    "titulo": "Cedae paralisa Sistema Guandu para se preparar para o verão no RJ",
    "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/cedae-paralisa-sistema-guandu-para-se-preparar-para-o-verao-no-rj",
@@ -1305,18 +875,102 @@
    "tipo": "Agencia pública"
   },
   {
-   "titulo": "PF apura ameaças e ataques racistas contra deputada Talíria Petrone",
-   "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/pf-apura-ameacas-e-ataques-racistas-contra-deputada-taliria-petrone",
-   "medio": "Agência Brasil",
-   "pais": "Brasil",
-   "idioma": "portugués",
-   "fecha": "2026-11-03T18:48:00+00:00",
+   "titulo": "Filme Mijaín, una mirada a otras realidades de Cuba",
+   "url": "https://www.prensa-latina.cu/2026/11/03/filme-mijain-una-mirada-a-otras-realidades-de-cuba/",
+   "medio": "Prensa Latina",
+   "pais": "Cuba",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T22:57:25+00:00",
    "imagen": null,
    "region": null,
-   "zona": "mercosur",
+   "zona": "mundo",
    "tema": "General",
    "via": "RSS",
-   "tipo": "Agencia pública"
+   "tipo": "Agencia estatal"
+  },
+  {
+   "titulo": "Resultados innovadores en Neurocirugía del centro de Cuba",
+   "url": "https://www.prensa-latina.cu/2026/11/03/resultados-innovadores-en-neurocirugia-del-centro-de-cuba/",
+   "medio": "Prensa Latina",
+   "pais": "Cuba",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T22:56:24+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "mundo",
+   "tema": "General",
+   "via": "RSS",
+   "tipo": "Agencia estatal"
+  },
+  {
+   "titulo": "Comité dominicano exige liberación de Nicolás Maduro y Cilia Flores",
+   "url": "https://www.prensa-latina.cu/2026/11/03/comite-dominicano-exige-liberacion-de-nicolas-maduro-y-cilia-flores-2/",
+   "medio": "Prensa Latina",
+   "pais": "Cuba",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T22:49:23+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "mundo",
+   "tema": "General",
+   "via": "RSS",
+   "tipo": "Agencia estatal"
+  },
+  {
+   "titulo": "Dedican Jornada del Archivero Cubano en La Habana a la danza",
+   "url": "https://www.prensa-latina.cu/2026/11/03/dedican-jornada-del-archivero-cubano-en-la-habana-a-la-danza/",
+   "medio": "Prensa Latina",
+   "pais": "Cuba",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T22:46:52+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "mundo",
+   "tema": "General",
+   "via": "RSS",
+   "tipo": "Agencia estatal"
+  },
+  {
+   "titulo": "Chile recibe donación de tierras para parque ecológico en extremo sur",
+   "url": "https://www.prensa-latina.cu/2026/11/03/chile-recibe-donacion-de-tierras-para-parque-ecologico-en-extremo-sur/",
+   "medio": "Prensa Latina",
+   "pais": "Cuba",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T22:41:52+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "mundo",
+   "tema": "General",
+   "via": "RSS",
+   "tipo": "Agencia estatal"
+  },
+  {
+   "titulo": "Panamá necesita millonaria inversión para sistema de alerta sísmica",
+   "url": "https://www.prensa-latina.cu/2026/11/03/panama-necesita-millonaria-inversion-para-sistema-de-alerta-sismica/",
+   "medio": "Prensa Latina",
+   "pais": "Cuba",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T22:38:51+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "mundo",
+   "tema": "General",
+   "via": "RSS",
+   "tipo": "Agencia estatal"
+  },
+  {
+   "titulo": "Oposición de Ecuador cuestiona presupuesto social para 2027",
+   "url": "https://www.prensa-latina.cu/2026/11/03/oposicion-de-ecuador-cuestiona-presupuesto-social-para-2027/",
+   "medio": "Prensa Latina",
+   "pais": "Cuba",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T22:34:20+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "mundo",
+   "tema": "General",
+   "via": "RSS",
+   "tipo": "Agencia estatal"
   },
   {
    "titulo": "Kamala Harris confía en triunfo demócrata en elecciones de EEUU",
@@ -1357,104 +1011,6 @@
    "region": null,
    "zona": "mundo",
    "tema": "Geopolítica",
-   "via": "RSS",
-   "tipo": "Agencia estatal"
-  },
-  {
-   "titulo": "Tercera lista de principales temas del día de Prensa Latina",
-   "url": "https://www.prensa-latina.cu/2026/11/03/tercera-lista-de-principales-temas-del-dia-de-prensa-latina-252/",
-   "medio": "Prensa Latina",
-   "pais": "Cuba",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T21:30:30+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "mundo",
-   "tema": "General",
-   "via": "RSS",
-   "tipo": "Agencia estatal"
-  },
-  {
-   "titulo": "MPLA tendrá candidatura única a liderazgo del partido",
-   "url": "https://www.prensa-latina.cu/2026/11/03/mpla-tendra-candidatura-unica-a-liderazgo-del-partido/",
-   "medio": "Prensa Latina",
-   "pais": "Cuba",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T21:26:30+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "mundo",
-   "tema": "General",
-   "via": "RSS",
-   "tipo": "Agencia estatal"
-  },
-  {
-   "titulo": "China obtiene su primer título en Mundial de tiro de Doha 2026",
-   "url": "https://www.prensa-latina.cu/2026/11/03/china-obtiene-su-primer-titulo-en-mundial-de-tiro-de-doha-2026/",
-   "medio": "Prensa Latina",
-   "pais": "Cuba",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T21:21:01+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "mundo",
-   "tema": "Geopolítica",
-   "via": "RSS",
-   "tipo": "Agencia estatal"
-  },
-  {
-   "titulo": "Histórico operativo de seguridad para visita del Papa a Uruguay",
-   "url": "https://www.prensa-latina.cu/2026/11/03/historico-operativo-de-seguridad-para-visita-del-papa-a-uruguay/",
-   "medio": "Prensa Latina",
-   "pais": "Cuba",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T21:17:58+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "mundo",
-   "tema": "General",
-   "via": "RSS",
-   "tipo": "Agencia estatal"
-  },
-  {
-   "titulo": "Canadá busca reforzar vínculos con el Caribe",
-   "url": "https://www.prensa-latina.cu/2026/11/03/canada-busca-reforzar-vinculos-con-el-caribe/",
-   "medio": "Prensa Latina",
-   "pais": "Cuba",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T21:10:57+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "mundo",
-   "tema": "General",
-   "via": "RSS",
-   "tipo": "Agencia estatal"
-  },
-  {
-   "titulo": "Escalada de precios del combustibe bunker se mantendría durante 2027",
-   "url": "https://www.prensa-latina.cu/2026/11/03/escalada-de-precios-del-combustibe-bunker-se-mantendria-durante-2027/",
-   "medio": "Prensa Latina",
-   "pais": "Cuba",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T20:50:56+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "mundo",
-   "tema": "Economía",
-   "via": "RSS",
-   "tipo": "Agencia estatal"
-  },
-  {
-   "titulo": "Bukele y FMI abordaron avances en reformas económicas",
-   "url": "https://www.prensa-latina.cu/2026/11/03/bukele-y-fmi-abordaron-avances-en-reformas-economicas/",
-   "medio": "Prensa Latina",
-   "pais": "Cuba",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T20:44:24+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "mundo",
-   "tema": "Economía",
    "via": "RSS",
    "tipo": "Agencia estatal"
   },
@@ -1823,12 +1379,12 @@
    "tipo": "Agencia privada"
   },
   {
-   "titulo": "Última hora sobre la actualidad política, en directo",
-   "url": "https://www.europapress.es/nacional/noticia-ultima-hora-actualidad-politica-directo-20261103075949.html",
+   "titulo": "Sánchez respalda a Puente por \"dar la cara\" y dimitir \"por las víctimas\": \"Dignifica nuestro país\"",
+   "url": "https://www.europapress.es/nacional/noticia-sanchez-respalda-puente-dar-cara-dimitir-victimas-dignifica-pais-20261103224132.html",
    "medio": "Europa Press",
    "pais": "España",
    "idioma": "castellano",
-   "fecha": "2026-11-03T06:59:49+00:00",
+   "fecha": "2026-11-03T21:41:32+00:00",
    "imagen": null,
    "region": null,
    "zona": "mundo",
@@ -1837,12 +1393,12 @@
    "tipo": "Agencia privada"
   },
   {
-   "titulo": "Colau agradece a Puente la \"dignidad de un gesto difícil\" como dimitir y opta por avanzar en acuerdos",
-   "url": "https://www.europapress.es/catalunya/noticia-colau-agradece-puente-dignidad-gesto-dificil-dimitir-opta-avanzar-acuerdos-20261103215646.html",
+   "titulo": "Última hora sobre la actualidad política, en directo",
+   "url": "https://www.europapress.es/nacional/noticia-ultima-hora-actualidad-politica-directo-20261103075949.html",
    "medio": "Europa Press",
    "pais": "España",
    "idioma": "castellano",
-   "fecha": "2026-11-03T20:56:46+00:00",
+   "fecha": "2026-11-03T06:59:49+00:00",
    "imagen": null,
    "region": null,
    "zona": "mundo",
@@ -1954,11 +1510,39 @@
    "medio": "DW Español",
    "pais": "Alemania",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:00:00+00:00",
+   "fecha": "2026-11-03T21:53:00+00:00",
    "imagen": null,
    "region": null,
    "zona": "mundo",
    "tema": "Política",
+   "via": "RSS",
+   "tipo": "Medio público"
+  },
+  {
+   "titulo": "Eisenkot promete acelerar medidas para formar un Gobierno y desbancar a Netanyahu",
+   "url": "https://www.dw.com/es/eisenkot-promete-acelerar-medidas-para-formar-un-gobierno-y-desbancar-a-netanyahu/a-79848282?maca=spa-rss-sp-all-1122-xml-mrss",
+   "medio": "DW Español",
+   "pais": "Alemania",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T21:40:00+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "mundo",
+   "tema": "General",
+   "via": "RSS",
+   "tipo": "Medio público"
+  },
+  {
+   "titulo": "Así podrían influir las elecciones intermedias en EE. UU. en las guerras de Ucrania e Irán",
+   "url": "https://www.dw.com/es/así-podrían-influir-las-elecciones-intermedias-en-ee-uu-en-las-guerras-de-ucrania-e-irán/a-79844126?maca=spa-rss-sp-all-1122-xml-mrss",
+   "medio": "DW Español",
+   "pais": "Alemania",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T21:23:00+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "mundo",
+   "tema": "Geopolítica",
    "via": "RSS",
    "tipo": "Medio público"
   },
@@ -2099,34 +1683,6 @@
    "region": null,
    "zona": "mundo",
    "tema": "Geopolítica",
-   "via": "RSS",
-   "tipo": "Medio público"
-  },
-  {
-   "titulo": "Así podrían influir las elecciones intermedias en EE. UU. en las guerras de Ucrania e Irán",
-   "url": "https://www.dw.com/es/así-podrían-influir-las-elecciones-intermedias-en-ee-uu-en-las-guerras-de-ucrania-e-irán/a-79844126?maca=spa-rss-sp-all-1122-xml-mrss",
-   "medio": "DW Español",
-   "pais": "Alemania",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T15:58:00+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "mundo",
-   "tema": "Geopolítica",
-   "via": "RSS",
-   "tipo": "Medio público"
-  },
-  {
-   "titulo": "Estadounidenses apuestan casi 2.000 millones de USD en las elecciones intermedias",
-   "url": "https://www.dw.com/es/estadounidenses-apuestan-casi-2-000-millones-de-usd-en-las-elecciones-intermedias/a-79844846?maca=spa-rss-sp-all-1122-xml-mrss",
-   "medio": "DW Español",
-   "pais": "Alemania",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T15:58:00+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "mundo",
-   "tema": "Política",
    "via": "RSS",
    "tipo": "Medio público"
   },
@@ -2677,6 +2233,20 @@
    "tipo": "Medio público"
   },
   {
+   "titulo": "El Banco Central del Paraguay interviene Ueno Bank, uno de los mayores bancos del país, dejando congelados los ahorros de miles de clientes",
+   "url": "https://www.bbc.com/mundo/articles/ckx2qj89lggxo?at_medium=RSS&at_campaign=rss",
+   "medio": "BBC Mundo",
+   "pais": "Reino Unido",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T21:28:19+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "mundo",
+   "tema": "General",
+   "via": "RSS",
+   "tipo": "Medio público"
+  },
+  {
    "titulo": "\"Soy morra, cis y hetero, pero creo que es mejor tener menos novios y más amigas\"",
    "url": "https://www.bbc.com/mundo/articles/cme3xkq104ejo?at_medium=RSS&at_campaign=rss",
    "medio": "BBC Mundo",
@@ -2771,20 +2341,6 @@
    "region": null,
    "zona": "mundo",
    "tema": "Política",
-   "via": "RSS",
-   "tipo": "Medio público"
-  },
-  {
-   "titulo": "\"Es Gaza o nada\": cómo el apoyo a Israel se convirtió en un punto clave de la contienda electoral en EE.UU.",
-   "url": "https://www.bbc.com/mundo/articles/ckgelpgle3lno?at_medium=RSS&at_campaign=rss",
-   "medio": "BBC Mundo",
-   "pais": "Reino Unido",
-   "idioma": "castellano",
-   "fecha": "2026-11-02T03:56:42+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "mundo",
-   "tema": "Geopolítica",
    "via": "RSS",
    "tipo": "Medio público"
   },
@@ -2901,6 +2457,20 @@
    "tipo": "Medio público"
   },
   {
+   "titulo": "\"Es Gaza o nada\": cómo el apoyo a Israel se convirtió en un punto clave de la contienda electoral en EE.UU.",
+   "url": "https://www.bbc.com/mundo/articles/ckgelpgle3lno?at_medium=RSS&at_campaign=rss",
+   "medio": "BBC Mundo",
+   "pais": "Reino Unido",
+   "idioma": "castellano",
+   "fecha": "2026-11-02T03:56:42+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "mundo",
+   "tema": "Geopolítica",
+   "via": "RSS",
+   "tipo": "Medio público"
+  },
+  {
    "titulo": "EE.UU. lanza \"ataques defensivos\" contra Irán antes de las elecciones de medio mandato",
    "url": "https://www.bbc.com/mundo/articles/cvp8gx0p2elno?at_medium=RSS&at_campaign=rss",
    "medio": "BBC Mundo",
@@ -2929,18 +2499,18 @@
    "tipo": "Medio público"
   },
   {
-   "titulo": "\"La pérdida de capacidad del Estado de bienestar en Europa es la clave para entender las protestas lideradas por los jóvenes\"",
-   "url": "https://www.bbc.com/mundo/articles/c3pwgp7jde1wo?at_medium=RSS&at_campaign=rss",
-   "medio": "BBC Mundo",
-   "pais": "Reino Unido",
+   "titulo": "El riesgo país saltó por arriba de los 830 puntos y marcó otro récord, pero el MSCI Merval frenó racha negativa",
+   "url": "https://www.ambito.com/finanzas/los-bonos-soberanos-comienzan-la-rueda-nuevas-bajas-y-el-riesgo-pais-se-afianza-encima-los-800-puntos-n6340884",
+   "medio": "Ámbito",
+   "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-01T03:09:19+00:00",
+   "fecha": "2026-11-03T21:51:00+00:00",
    "imagen": null,
    "region": null,
-   "zona": "mundo",
-   "tema": "Sociedad",
+   "zona": "argentina",
+   "tema": "General",
    "via": "RSS",
-   "tipo": "Medio público"
+   "tipo": "Medio"
   },
   {
    "titulo": "El BCRA no compró dólares en 5 de las últimas 7 ruedas y las reservas bajaron u$s148 millones",
@@ -2971,20 +2541,6 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "La industria nacional reclama incentivos fiscales y capacitación para transformar el talento en competitividad",
-   "url": "https://www.ambito.com/negocios/la-industria-nacional-reclama-incentivos-fiscales-y-capacitacion-transformar-el-talento-competitividad-n6341039",
-   "medio": "Ámbito",
-   "pais": "Argentina",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T20:37:00+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "argentina",
-   "tema": "General",
-   "via": "RSS",
-   "tipo": "Medio"
-  },
-  {
    "titulo": "Cedears: el Gobierno busca cobrar un 15% de Ganancias a quienes inviertan en acciones de empresas extranjeras",
    "url": "https://www.ambito.com/finanzas/cedears-el-gobierno-busca-cobrar-un-15-ganancias-quienes-inviertan-acciones-empresas-extranjeras-n6341153",
    "medio": "Ámbito",
@@ -2999,12 +2555,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "El riesgo país se da vuelta y se dispara a 821 puntos, mientras los ADRs pasan a terreno mixto",
-   "url": "https://www.ambito.com/finanzas/los-bonos-soberanos-comienzan-la-rueda-nuevas-bajas-y-el-riesgo-pais-se-afianza-encima-los-800-puntos-n6340884",
+   "titulo": "La industria nacional reclama incentivos fiscales y capacitación para transformar el talento en competitividad",
+   "url": "https://www.ambito.com/negocios/la-industria-nacional-reclama-incentivos-fiscales-y-capacitacion-transformar-el-talento-competitividad-n6341039",
    "medio": "Ámbito",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T17:43:00+00:00",
+   "fecha": "2026-11-03T20:37:00+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3223,12 +2779,26 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "De Wolverine a Silent Hill: los juegos que rebaja PlayStation este Black Friday",
-   "url": "https://www.infobae.com/tecno/2026/11/03/de-wolverine-a-silent-hill-los-juegos-que-rebaja-playstation-este-black-friday/",
+   "titulo": "EN VIVO | Bloqueos, accidentes y manifestaciones hoy 3 de noviembre: abren circulación en División del Norte tras protesta de estudiantes",
+   "url": "https://www.infobae.com/mexico/2026/11/03/en-vivo-bloqueos-accidentes-y-manifestaciones-hoy-3-de-noviembre/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:32:47+00:00",
+   "fecha": "2026-11-03T22:01:18+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "argentina",
+   "tema": "Sociedad",
+   "via": "RSS",
+   "tipo": "Medio"
+  },
+  {
+   "titulo": "(Previa) Alcaraz llega al alza a su Masters 1000 más adverso",
+   "url": "https://www.infobae.com/america/agencias/2026/11/03/previa-alcaraz-llega-al-alza-a-su-masters-1000-mas-adverso/",
+   "medio": "Infobae",
+   "pais": "Argentina",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T22:01:17+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3237,12 +2807,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "Atlético de Madrid - Bayern de Múnich, en directo: Karl adelanta a la “apisonadora” tras un error clamoroso de Le Normand",
-   "url": "https://www.infobae.com/espana/deportes/2026/11/03/atletico-de-madrid-bayern-de-munich-en-directo-harry-kane-se-estrena-como-visitante-en-un-feudo-maldito-para-los-alemanes/",
+   "titulo": "La promesa del tenis que estuvo casi dos años sin jugar y ganó su primer título profesional: “No podía agarrar la raqueta del dolor”",
+   "url": "https://www.infobae.com/deportes/2026/11/03/la-promesa-del-tenis-que-estuvo-casi-dos-anos-sin-jugar-y-gano-su-primer-titulo-profesional-no-podia-agarrar-la-raqueta-del-dolor/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:32:41+00:00",
+   "fecha": "2026-11-03T22:01:12+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3251,12 +2821,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "El PP cree que la dimisión de Puente no es por las víctimas sino por las encuestas",
-   "url": "https://www.infobae.com/espana/agencias/2026/11/03/el-pp-cree-que-la-dimision-de-puente-no-es-por-las-victimas-sino-por-las-encuestas/",
+   "titulo": "3-0. El Barcelona gana al Aston Villa con gol de Lamine Yamal y doblete de Raphinha",
+   "url": "https://www.infobae.com/america/agencias/2026/11/03/3-0-el-barcelona-gana-al-aston-villa-con-gol-de-lamine-yamal-y-doblete-de-raphinha/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:32:22+00:00",
+   "fecha": "2026-11-03T22:01:11+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3265,12 +2835,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "UGT ve \"gesto de dignidad\" en la dimisión de Puente y CSIF pide renuncias en Renfe y Adif",
-   "url": "https://www.infobae.com/espana/agencias/2026/11/03/ugt-ve-gesto-de-dignidad-en-la-dimision-de-puente-y-csif-pide-renuncias-en-renfe-y-adif/",
+   "titulo": "Vox tras la dimisión de Puente: \"No basta con la marcha de Puente. Sánchez e Illa deben dimitir\"",
+   "url": "https://www.infobae.com/america/agencias/2026/11/03/vox-tras-la-dimision-de-puente-no-basta-con-la-marcha-de-puente-sanchez-e-illa-deben-dimitir/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:32:06+00:00",
+   "fecha": "2026-11-03T22:00:58+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3279,12 +2849,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "FC Barcelona - Aston Villa, en directo el partido de Champions: Raphinha firma el tercero de los azulgranas para sentenciar el duelo",
-   "url": "https://www.infobae.com/espana/deportes/2026/11/03/fc-barcelona-aston-villa-en-directo-previa-y-ultima-hora-del-partido-de-champions/",
+   "titulo": "Resultados Super Astro Sol hoy 3 de noviembre: verifique el signo ganador",
+   "url": "https://www.infobae.com/colombia/2026/11/03/resultados-super-astro-sol-hoy-3-de-noviembre-verifique-el-signo-ganador/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:31:55+00:00",
+   "fecha": "2026-11-03T22:00:57+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3293,12 +2863,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "Galvani asegura que Capitanes presionará en la defensa y será solidario en el ataque",
-   "url": "https://www.infobae.com/america/agencias/2026/11/03/galvani-asegura-que-capitanes-presionara-en-la-defensa-y-sera-solidario-en-el-ataque/",
+   "titulo": "Lamine y Raphinha despachan al Aston Villa y el FC Barcelona firma una nueva victoria en Champions",
+   "url": "https://www.infobae.com/espana/deportes/2026/11/03/lamine-y-raphinha-despachan-al-aston-villa-y-el-fc-barcelona-firma-una-nueva-victoria-en-champions/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:31:48+00:00",
+   "fecha": "2026-11-03T22:00:51+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3307,12 +2877,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "Así fue la vida de Antonio Oseguera, hermano de “El Mencho”: pobreza, trabajo infantil y adicciones hasta llegar al CJNG",
-   "url": "https://www.infobae.com/mexico/2026/11/03/asi-fue-la-vida-de-antonio-oseguera-hermano-de-el-mencho-pobreza-trabajo-infantil-y-adicciones-hasta-llegar-al-cjng/",
+   "titulo": "0-2. El Bayern somete al Atlético",
+   "url": "https://www.infobae.com/america/agencias/2026/11/03/0-2-el-bayern-somete-al-atletico/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:31:31+00:00",
+   "fecha": "2026-11-03T22:00:50+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3321,26 +2891,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "Aramburu y Yangel Herrera, en lista de Venezuela para amistosos ante País Vasco y Rusia",
-   "url": "https://www.infobae.com/espana/agencias/2026/11/03/aramburu-y-yangel-herrera-en-lista-de-venezuela-para-amistosos-ante-pais-vasco-y-rusia/",
+   "titulo": "Medio Ambiente de El Salvador destina fondos a monitoreo sísmico y volcánico en 2027 con un aumento del 7%",
+   "url": "https://www.infobae.com/el-salvador/2026/11/03/medio-ambiente-de-el-salvador-destina-fondos-a-monitoreo-sismico-y-volcanico-en-2027-con-un-aumento-del-7/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:31:29+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "argentina",
-   "tema": "Geopolítica",
-   "via": "RSS",
-   "tipo": "Medio"
-  },
-  {
-   "titulo": "Registrado un ataque con dos proyectiles \"desconocidos\" en un buque cisterna frente a las costas de Omán",
-   "url": "https://www.infobae.com/america/agencias/2026/11/03/registrado-un-ataque-con-dos-proyectiles-desconocidos-en-un-buque-cisterna-frente-a-las-costas-de-oman/",
-   "medio": "Infobae",
-   "pais": "Argentina",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T21:31:13+00:00",
+   "fecha": "2026-11-03T22:00:36+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3349,12 +2905,40 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "99-94. El Unicaja vence a la Reggiana con un festival de triples de Thomas y Noua",
-   "url": "https://www.infobae.com/espana/agencias/2026/11/03/99-94-el-unicaja-vence-a-la-reggiana-con-un-festival-de-triples-de-thomas-y-noua/",
+   "titulo": "Senador José Castillo defiende amnistía para su hermano: “Pedro Castillo debe estar libre porque no ha hecho nada”",
+   "url": "https://www.infobae.com/peru/2026/11/03/senador-jose-castillo-defiende-amnistia-para-su-hermano-pedro-castillo-debe-estar-libre-porque-no-ha-hecho-nada/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:31:12+00:00",
+   "fecha": "2026-11-03T22:00:28+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "argentina",
+   "tema": "Política",
+   "via": "RSS",
+   "tipo": "Medio"
+  },
+  {
+   "titulo": "El ministro del Interior de Francia reconoció un \"fracaso\" en el operativo de seguridad durante los disturbios del 17 de octubre",
+   "url": "https://www.infobae.com/america/mundo/2026/11/03/el-ministro-del-interior-de-francia-reconocio-un-fracaso-en-el-operativo-de-seguridad-durante-los-disturbios-del-17-de-octubre/",
+   "medio": "Infobae",
+   "pais": "Argentina",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T22:00:24+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "argentina",
+   "tema": "Política",
+   "via": "RSS",
+   "tipo": "Medio"
+  },
+  {
+   "titulo": "0-6. El París Saint-Germain arrasa al Villarreal",
+   "url": "https://www.infobae.com/america/agencias/2026/11/03/0-6-el-paris-saint-germain-arrasa-al-villarreal/",
+   "medio": "Infobae",
+   "pais": "Argentina",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T22:00:24+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3363,12 +2947,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "La foto de José Eduardo Derbez que genera controversia en redes sociales: “Paola Dalay le puso los cuernos”",
-   "url": "https://www.infobae.com/mexico/2026/11/03/la-foto-de-jose-eduardo-derbez-que-genera-controversia-en-redes-sociales-paola-dalay-le-puso-los-cuernos/",
+   "titulo": "Diego Melián, portero del Sport Boys, no le teme a Universitario: “Trataremos de hacer un gran partido con la mayor responsabilidad”",
+   "url": "https://www.infobae.com/peru/deportes/2026/11/03/diego-melian-portero-del-sport-boys-no-le-teme-a-universitario-trataremos-de-hacer-un-gran-partido-con-la-mayor-responsabilidad/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:30:58+00:00",
+   "fecha": "2026-11-03T22:00:19+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3377,12 +2961,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "64-81. El Asisa Joventut logra su primer triunfo a domicilio de la temporada en Oporto",
-   "url": "https://www.infobae.com/espana/agencias/2026/11/03/64-81-el-asisa-joventut-logra-su-primer-triunfo-a-domicilio-de-la-temporada-en-oporto/",
+   "titulo": "El Bayern de Múnich rompe el muro del Cholo Simeone: un error grosero de Le Normand condena al Atlético de Madrid y allana el triunfo alemán",
+   "url": "https://www.infobae.com/espana/deportes/2026/11/03/el-bayern-de-munich-rompe-el-muro-del-cholo-simeone-un-error-grosero-de-le-normand-condena-al-atletico-de-madrid-y-allana-el-triunfo-aleman/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:30:56+00:00",
+   "fecha": "2026-11-03T21:59:48+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3391,12 +2975,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "Colau agradece a Puente la \"dignidad de un gesto difícil\" como dimitir y opta por avanzar en acuerdos",
-   "url": "https://www.infobae.com/america/agencias/2026/11/03/colau-agradece-a-puente-la-dignidad-de-un-gesto-dificil-como-dimitir-y-opta-por-avanzar-en-acuerdos/",
+   "titulo": "Último adiós a Antonio Navarro Wolff: familia, líderes políticos y exmilitantes del M-19 acompañaron al exconstituyente en sus exequias",
+   "url": "https://www.infobae.com/colombia/2026/11/03/exequias-de-antonio-navarro-wolff-en-vivo-siga-el-minuto-a-minuto-del-funeral-del-politico-que-participo-en-la-asamblea-constituyente-de-1991/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:30:54+00:00",
+   "fecha": "2026-11-03T21:59:47+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3405,26 +2989,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "¿En dónde se respira el peor oxígeno en CDMX y zona conurbada? Aquí el reporte",
-   "url": "https://www.infobae.com/mexico/2026/11/03/en-donde-se-respira-el-peor-oxigeno-en-cdmx-y-zona-conurbada-aqui-el-reporte/",
+   "titulo": "Partidos de hoy, martes 3 de noviembre de 2026: programación, canales TV y resultados en vivo",
+   "url": "https://www.infobae.com/peru/deportes/2026/11/03/partidos-de-hoy-martes-3-de-noviembre-de-2026-programacion-canales-tv-y-resultados-en-vivo/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:30:47+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "argentina",
-   "tema": "Geopolítica",
-   "via": "RSS",
-   "tipo": "Medio"
-  },
-  {
-   "titulo": "“Tony Montana”, hermano de El Mencho, pide compasión al juez que dictará su sentencia en EEUU",
-   "url": "https://www.infobae.com/mexico/2026/11/03/tony-montana-hermano-de-el-mencho-pide-compasion-al-juez-que-dictara-su-sentencia-en-eeuu/",
-   "medio": "Infobae",
-   "pais": "Argentina",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T21:30:40+00:00",
+   "fecha": "2026-11-03T21:59:39+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3433,68 +3003,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "Jódar se estrella contra Ruud",
-   "url": "https://www.infobae.com/america/agencias/2026/11/03/jodar-se-estrella-contra-ruud/",
+   "titulo": "Daniel Ortega no asistirá a la Cumbre Iberoamericana de Madrid",
+   "url": "https://www.infobae.com/nicaragua/2026/11/03/daniel-ortega-no-asistira-a-la-cumbre-iberoamericana-de-madrid/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:30:38+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "argentina",
-   "tema": "General",
-   "via": "RSS",
-   "tipo": "Medio"
-  },
-  {
-   "titulo": "La CIJ dictará sentencia por presunto genocidio de Birmania contra los rohingyas el 19 de noviembre",
-   "url": "https://www.infobae.com/america/agencias/2026/11/03/la-cij-dictara-sentencia-por-presunto-genocidio-de-birmania-contra-los-rohingyas-el-19-de-noviembre/",
-   "medio": "Infobae",
-   "pais": "Argentina",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T21:30:36+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "argentina",
-   "tema": "General",
-   "via": "RSS",
-   "tipo": "Medio"
-  },
-  {
-   "titulo": "Magaly Medina admira la carrera de Gisela Valcárcel pero la sentencia con una frase: \"Admiro su trayectoria, mas no la admiro a ella\"",
-   "url": "https://www.infobae.com/peru/2026/11/03/magaly-medina-admira-la-carrera-de-gisela-valcarcel-pero-la-sentencia-con-una-frase-admiro-su-trayectoria-mas-no-la-admiro-a-ella/",
-   "medio": "Infobae",
-   "pais": "Argentina",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T21:30:13+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "argentina",
-   "tema": "General",
-   "via": "RSS",
-   "tipo": "Medio"
-  },
-  {
-   "titulo": "La Segura reapareció en redes sociales y contó lo que hay detrás de sus dolores de espalda: \"Es peor si entran a sacarlo\"",
-   "url": "https://www.infobae.com/colombia/2026/11/03/la-segura-reaparecio-en-redes-sociales-y-conto-lo-que-hay-detras-de-sus-dolores-de-espalda-es-peor-si-entran-a-sacarlo/",
-   "medio": "Infobae",
-   "pais": "Argentina",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T21:29:23+00:00",
-   "imagen": null,
-   "region": null,
-   "zona": "argentina",
-   "tema": "General",
-   "via": "RSS",
-   "tipo": "Medio"
-  },
-  {
-   "titulo": "La señal en tus uñas que no siempre es sólo un problema estético",
-   "url": "https://www.infobae.com/mexico/2026/11/03/la-senal-en-tus-unas-que-no-siempre-es-solo-un-problema-estetico/",
-   "medio": "Infobae",
-   "pais": "Argentina",
-   "idioma": "castellano",
-   "fecha": "2026-11-03T21:29:23+00:00",
+   "fecha": "2026-11-03T21:59:22+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3508,7 +3022,7 @@
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:29:04+00:00",
+   "fecha": "2026-11-03T21:57:38+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3517,12 +3031,26 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "Pierce Brosnan tiene a su candidato favorito a James Bond: “He trabajado con él y es muy sólido”",
-   "url": "https://www.infobae.com/entretenimiento/2026/11/03/pierce-brosnan-tiene-a-su-candidato-favorito-a-james-bond-he-trabajado-con-el-y-es-muy-solido/",
+   "titulo": "El régimen de Nicaragua paga un tercer anticipo a empresa china para puerto de Bluefields: los contratos ascienden los USD 210 millones",
+   "url": "https://www.infobae.com/nicaragua/2026/11/03/el-regimen-de-nicaragua-paga-un-tercer-anticipo-a-empresa-china-para-puerto-de-bluefields-los-contratos-ascienden-los-usd-210-millones/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:28:13+00:00",
+   "fecha": "2026-11-03T21:57:22+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "argentina",
+   "tema": "Geopolítica",
+   "via": "RSS",
+   "tipo": "Medio"
+  },
+  {
+   "titulo": "Atlético de Madrid - Bayern de Múnich, en directo: Laimer hace el segundo y pone tierra de por medio",
+   "url": "https://www.infobae.com/espana/deportes/2026/11/03/atletico-de-madrid-bayern-de-munich-en-directo-harry-kane-se-estrena-como-visitante-en-un-feudo-maldito-para-los-alemanes/",
+   "medio": "Infobae",
+   "pais": "Argentina",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T21:57:12+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3531,12 +3059,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "Entró a robar en la casa de Hayden Christensen, reconoció a Anakin Skywalker y terminó pidiéndole disculpas",
-   "url": "https://www.infobae.com/entretenimiento/2026/11/03/entro-a-robar-en-la-casa-de-hayden-christensen-reconocio-a-anakin-skywalker-y-termino-pidiendole-disculpas/",
+   "titulo": "Manchester United dio vuelta un partido electrizante y le ganó 3-2 a la Roma por la Champions League: todos los goles del día",
+   "url": "https://www.infobae.com/deportes/2026/11/03/con-atletico-madrid-bayern-munich-y-manchester-united-roma-se-abre-la-cuarta-fecha-de-la-champions-la-agenda-completa/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:27:27+00:00",
+   "fecha": "2026-11-03T21:57:11+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3545,12 +3073,12 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "Wall Street cierra con ganancias por el repunte de las empresas de inteligencia artificial",
-   "url": "https://www.infobae.com/estados-unidos/2026/11/03/wall-street-cierra-con-ganancias-por-el-repunte-de-las-empresas-de-inteligencia-artificial/",
+   "titulo": "Julián Quiñones tendría problemas para salir de Medio Oriente y reportar con la Selección Mexicana",
+   "url": "https://www.infobae.com/mexico/deportes/2026/11/03/julian-quinones-tendria-problemas-para-salir-de-medio-oriente-y-reportar-con-la-seleccion-mexicana/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:27:23+00:00",
+   "fecha": "2026-11-03T21:56:33+00:00",
    "imagen": null,
    "region": null,
    "zona": "argentina",
@@ -3559,14 +3087,42 @@
    "tipo": "Medio"
   },
   {
-   "titulo": "Riesgo país arriba de 800 puntos y activos en baja: por qué las acciones y los bonos argentinos tocaron mínimos en un año",
-   "url": "https://www.infobae.com/economia/2026/11/03/riesgo-pais-arriba-de-800-puntos-y-activos-en-baja-por-que-las-acciones-y-los-bonos-argentinos-tocaron-minimos-en-un-ano/",
+   "titulo": "Tiendas de barrio podrían verse afectadas por los impuestos saludables, según Fenalco, que pidió al Gobierno revisar esos gravámenes: “Nos sorprende”",
+   "url": "https://www.infobae.com/colombia/2026/11/03/tiendas-de-barrio-podrian-verse-afectadas-por-los-impuestos-saludables-segun-fenalco-que-pidio-al-gobierno-revisar-esos-gravamenes-nos-sorprende/",
    "medio": "Infobae",
    "pais": "Argentina",
    "idioma": "castellano",
-   "fecha": "2026-11-03T21:26:37+00:00",
+   "fecha": "2026-11-03T21:55:48+00:00",
    "imagen": null,
    "region": null,
+   "zona": "argentina",
+   "tema": "Sociedad",
+   "via": "RSS",
+   "tipo": "Medio"
+  },
+  {
+   "titulo": "Tabla de posiciones de la Liga 1 Perú 2026 HOY: así van los equipos en la fecha 15 del Torneo Clausura y Acumulada",
+   "url": "https://www.infobae.com/peru/deportes/2026/10/31/tabla-de-posiciones-liga-1-peru-2026-en-vivo-hoy-partidos-fecha-15-torneo-clausura-acumulada-sporting-cristal-universitario-alianza-lima-melgar-sport-boys/",
+   "medio": "Infobae",
+   "pais": "Argentina",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T21:55:29+00:00",
+   "imagen": null,
+   "region": null,
+   "zona": "argentina",
+   "tema": "General",
+   "via": "RSS",
+   "tipo": "Medio"
+  },
+  {
+   "titulo": "Un policía pateó a una joven a la salida de un boliche en La Pampa: quedó filmado y será imputado por lesiones",
+   "url": "https://www.infobae.com/sociedad/2026/11/03/un-policia-pateo-a-una-joven-a-la-salida-de-un-boliche-en-la-pampa-quedo-filmado-y-sera-imputado-por-lesiones/",
+   "medio": "Infobae",
+   "pais": "Argentina",
+   "idioma": "castellano",
+   "fecha": "2026-11-03T21:54:41+00:00",
+   "imagen": null,
+   "region": "patagonia",
    "zona": "argentina",
    "tema": "General",
    "via": "RSS",
@@ -3577,7 +3133,7 @@
   {
    "fuente": "GDELT · Norte Grande",
    "ok": true,
-   "notas": 31
+   "notas": 17
   },
   {
    "fuente": "GDELT volumen · Norte Grande",
@@ -3590,39 +3146,49 @@
    "error": "HTTP Error 429: Too Many Requests"
   },
   {
+   "fuente": "GDELT volumen · Centro",
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
    "fuente": "GDELT · Cuyo",
    "ok": true,
-   "notas": 15
+   "notas": 3
+  },
+  {
+   "fuente": "GDELT volumen · Cuyo",
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
   },
   {
    "fuente": "GDELT · Patagonia",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
-  },
-  {
-   "fuente": "GDELT volumen · Patagonia",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "notas": 3
   },
   {
    "fuente": "GDELT · Buenos Aires",
-   "ok": true,
-   "notas": 16
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+   "fuente": "GDELT volumen · Buenos Aires",
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
   },
   {
    "fuente": "GDELT · Argentina · nacional",
-   "ok": true,
-   "notas": 0
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
   },
   {
    "fuente": "GDELT · Mercosur y región",
-   "ok": true,
-   "notas": 28
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
   },
   {
    "fuente": "GDELT · Mundo",
-   "ok": true,
-   "notas": 4
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
   },
   {
    "fuente": "Agência Brasil",
