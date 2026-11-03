@@ -270,6 +270,8 @@ td .sub { display: block; color: var(--tinta-3); font-size: 11.5px; }
 .pill { font-size: 10.5px; font-weight: 800; letter-spacing: .04em; padding: 2px 7px; border-radius: 3px; background: var(--hundido); color: var(--tinta-2); text-transform: uppercase; }
 .pill.reg { background: var(--rojo-suave); color: var(--rojo-tinta); }
 .pill.est { background: var(--estatal-f); color: var(--estatal); }
+.titular a.llevar { margin-left: auto; color: var(--rojo-tinta); font-family: var(--ui); font-weight: 700; font-size: 12px; line-height: 1.4; text-decoration: none; white-space: nowrap; }
+.titular a.llevar:hover { text-decoration: underline; }
 .mas { margin-top: 10px; }
 .vacio-vivo { padding: 28px 22px; border: 1px dashed var(--linea); border-radius: 6px; background: var(--superficie); display: grid; gap: 8px; max-width: 70ch; }
 .vacio-vivo b { font-family: var(--display); font-size: 20px; }
@@ -722,7 +724,7 @@ h3.sub-titulo { font-size: 10.5px; letter-spacing: .12em; text-transform: upperc
     ['Verificación', 'Confirma con dos fuentes independientes o un documento oficial.', 'a crear: verificación de fuentes', 0],
     ['Propuesta de nota', 'Solo con evidencia suficiente.', 'a crear', 0],
     ['Edición y aprobación humana', 'Una persona del diario decide si se publica.', 'Siempre una persona', 2],
-    ['Publicación en Diario Federal', 'Nota, flash o boletín desde el panel /admin.', 'diario-federal-manager', 1]
+    ['Publicación en Diario Federal', 'Botón "Llevar al diario": abre el /admin con un borrador armado; una persona escribe y publica.', 'diario-federal-manager', 1]
   ];
 
   var $ = function (id) { return document.getElementById(id); };
@@ -775,12 +777,19 @@ h3.sub-titulo { font-size: 10.5px; letter-spacing: .12em; text-transform: upperc
     $('lista-vivo').innerHTML = l.length ? '<div class="titulares">' + l.slice(0, lim).map(titular).join('') + '</div>' +
       (l.length > lim ? '<button class="btn mas" id="ver-mas">Ver más (' + (l.length - lim) + ')</button>' : '') : '<div class="vacio">No hay titulares con esos filtros.</div>';
   }
+  var ADMIN = 'https://www.diariofederal.com.ar/admin/';
+  function alDiario(d) {
+    var q = new URLSearchParams({ centro: '1' });
+    Object.keys(d).forEach(function (k) { if (d[k]) q.set(k, String(d[k]).slice(0, 500)); });
+    return ADMIN + '?' + q.toString();
+  }
   function titular(n) {
     var est = n.tipo === 'Agencia estatal';
     return '<article class="titular"><time>' + (n.fecha ? hace(n.fecha) : '') + '</time><div><a href="' + esc(n.url) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '</a>' +
       '<div class="pie"><span class="medio">' + esc(n.medio || '') + '</span>' + (n.pais ? '<span>' + esc(n.pais) + '</span>' : '') +
       (n.region ? '<span class="pill reg">' + esc(REG_NOMBRES[n.region] || n.region) + '</span>' : '') + (n.tema && n.tema !== 'General' ? '<span class="pill">' + esc(n.tema) + '</span>' : '') +
-      (est ? '<span class="pill est">Agencia estatal</span>' : '') + '<span>vía ' + esc(n.via) + '</span></div></div></article>';
+      (est ? '<span class="pill est">Agencia estatal</span>' : '') + '<span>vía ' + esc(n.via) + '</span>' +
+      '<a class="llevar" target="_blank" rel="noopener" href="' + esc(alDiario({ titulo: n.titulo, medio: n.medio, url: n.url, region: n.region, zona: n.zona, tema: n.tema })) + '">Llevar al diario →</a></div></div></article>';
   }
   ['v-buscar', 'v-zona', 'v-region', 'v-tema'].forEach(function (id) { $(id).addEventListener('input', function () { estado.limVivo = 60; pintarVivo(); }); });
   $('lista-vivo').addEventListener('click', function (ev) { if (ev.target.id === 'ver-mas') { estado.limVivo = (estado.limVivo || 60) + 60; pintarVivo(); } });
@@ -878,6 +887,7 @@ h3.sub-titulo { font-size: 10.5px; letter-spacing: .12em; text-transform: upperc
         return '<li><span class="' + (v[2] ? 'ok' : 'pend') + '" aria-label="' + (v[2] ? 'verificada' : 'pendiente') + '">' + (v[2] ? '✓' : '…') + '</span><span>' + esc(v[0]) + '<small>' + esc(v[1]) + (v[2] ? '' : ' · pendiente') + '</small></span></li>'; }).join('') + '</ul></div>' +
       '<div class="insp-sec"><h4>Quién lo trabajaría</h4><div class="tags"><span class="tag mono">' + esc(e.skill) + '</span></div></div>' +
       '<div class="acciones"><button class="btn primario" data-acc="redaccion"' + (e.verif < 2 || e.estado === 'red' ? ' disabled' : '') + '>Enviar a redacción</button>' +
+      '<a class="btn" target="_blank" rel="noopener" href="' + esc(alDiario({ titulo: e.titulo, bajada: e.proximo ? '' : '', region: e.reg, zona: e.region === 'Argentina' ? 'argentina' : e.region === 'Mundo' ? 'mundo' : 'mercosur', tema: e.tema })) + '">Llevar al diario como borrador</a>' +
       '<button class="btn" data-acc="profundizar">Profundizar investigación</button><button class="btn" data-acc="archivar">Archivar</button>' +
       '<p class="nota-accion">' + (e.estado === 'red' ? 'Ya está en redacción.' : e.verif < 2 ? 'Para pasar a redacción hacen falta dos fuentes independientes o un documento oficial.' : 'Es un ejemplo: los cambios no se guardan.') + '</p></div>';
     pintarLista(); pintarCapas();
