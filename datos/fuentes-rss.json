@@ -1,13 +1,180 @@
 [
-  { "nombre": "Agência Brasil", "url": "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml", "pais": "Brasil", "idioma": "portugués", "tipo": "Agencia pública", "zona": "mercosur" },
-  { "nombre": "Anadolu (castellano)", "url": "https://www.aa.com.tr/es/rss/default?cat=actualidad", "pais": "Turquía", "idioma": "castellano", "tipo": "Agencia estatal", "zona": "mundo" },
-  { "nombre": "Prensa Latina", "url": "https://www.prensa-latina.cu/feed/", "pais": "Cuba", "idioma": "castellano", "tipo": "Agencia estatal", "zona": "mundo" },
-  { "nombre": "Yonhap (castellano)", "url": "https://sp.yna.co.kr/RSS/news.xml", "pais": "Corea del Sur", "idioma": "castellano", "tipo": "Agencia pública", "zona": "mundo" },
-  { "nombre": "Europa Press", "url": "https://www.europapress.es/rss/rss.aspx", "pais": "España", "idioma": "castellano", "tipo": "Agencia privada", "zona": "mundo" },
-  { "nombre": "DW Español", "url": "https://rss.dw.com/xml/rss-sp-all", "pais": "Alemania", "idioma": "castellano", "tipo": "Medio público", "zona": "mundo" },
-  { "nombre": "France 24 Español", "url": "https://www.france24.com/es/rss", "pais": "Francia", "idioma": "castellano", "tipo": "Medio público", "zona": "mundo" },
-  { "nombre": "BBC Mundo", "url": "https://feeds.bbci.co.uk/mundo/rss.xml", "pais": "Reino Unido", "idioma": "castellano", "tipo": "Medio público", "zona": "mundo" },
-  { "nombre": "Página/12", "url": "https://www.pagina12.com.ar/rss/portada", "pais": "Argentina", "idioma": "castellano", "tipo": "Medio", "zona": "argentina" },
-  { "nombre": "Ámbito", "url": "https://www.ambito.com/rss/pages/home.xml", "pais": "Argentina", "idioma": "castellano", "tipo": "Medio", "zona": "argentina" },
-  { "nombre": "Infobae", "url": "https://www.infobae.com/arc/outboundfeeds/rss/", "pais": "Argentina", "idioma": "castellano", "tipo": "Medio", "zona": "argentina" }
+  {
+    "nombre": "Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml",
+    "pais": "Brasil",
+    "idioma": "portugués",
+    "tipo": "Agencia pública",
+    "zona": "mercosur"
+  },
+  {
+    "nombre": "Anadolu (castellano)",
+    "url": "https://www.aa.com.tr/es/rss/default?cat=actualidad",
+    "pais": "Turquía",
+    "idioma": "castellano",
+    "tipo": "Agencia estatal",
+    "zona": "mundo"
+  },
+  {
+    "nombre": "Prensa Latina",
+    "url": "https://www.prensa-latina.cu/feed/",
+    "pais": "Cuba",
+    "idioma": "castellano",
+    "tipo": "Agencia estatal",
+    "zona": "mundo"
+  },
+  {
+    "nombre": "Yonhap (castellano)",
+    "url": "https://sp.yna.co.kr/RSS/news.xml",
+    "pais": "Corea del Sur",
+    "idioma": "castellano",
+    "tipo": "Agencia pública",
+    "zona": "mundo"
+  },
+  {
+    "nombre": "Europa Press",
+    "url": "https://www.europapress.es/rss/rss.aspx",
+    "pais": "España",
+    "idioma": "castellano",
+    "tipo": "Agencia privada",
+    "zona": "mundo"
+  },
+  {
+    "nombre": "DW Español",
+    "url": "https://rss.dw.com/xml/rss-sp-all",
+    "pais": "Alemania",
+    "idioma": "castellano",
+    "tipo": "Medio público",
+    "zona": "mundo"
+  },
+  {
+    "nombre": "France 24 Español",
+    "url": "https://www.france24.com/es/rss",
+    "pais": "Francia",
+    "idioma": "castellano",
+    "tipo": "Medio público",
+    "zona": "mundo"
+  },
+  {
+    "nombre": "BBC Mundo",
+    "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+    "pais": "Reino Unido",
+    "idioma": "castellano",
+    "tipo": "Medio público",
+    "zona": "mundo"
+  },
+  {
+    "nombre": "Página/12",
+    "url": "https://www.pagina12.com.ar/rss/portada",
+    "pais": "Argentina",
+    "idioma": "castellano",
+    "tipo": "Medio",
+    "zona": "argentina"
+  },
+  {
+    "nombre": "Ámbito",
+    "url": "https://www.ambito.com/rss/pages/home.xml",
+    "pais": "Argentina",
+    "idioma": "castellano",
+    "tipo": "Medio",
+    "zona": "argentina"
+  },
+  {
+    "nombre": "Infobae",
+    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
+    "pais": "Argentina",
+    "idioma": "castellano",
+    "tipo": "Medio",
+    "zona": "argentina"
+  },
+  {
+    "nombre": "El Litoral (Corrientes)",
+    "url": "https://www.ellitoral.com.ar/rss",
+    "region": "norte-grande",
+    "pais": "Argentina",
+    "idioma": "castellano",
+    "tipo": "Medio regional",
+    "zona": "argentina"
+  },
+  {
+    "nombre": "La Gaceta (Tucumán)",
+    "url": "https://www.lagaceta.com.ar/rss/",
+    "region": "norte-grande",
+    "pais": "Argentina",
+    "idioma": "castellano",
+    "tipo": "Medio regional",
+    "zona": "argentina"
+  },
+  {
+    "nombre": "El Tribuno (Salta)",
+    "url": "https://www.eltribuno.com/salta/rss",
+    "region": "norte-grande",
+    "pais": "Argentina",
+    "idioma": "castellano",
+    "tipo": "Medio regional",
+    "zona": "argentina"
+  },
+  {
+    "nombre": "La Voz (Córdoba)",
+    "url": "https://www.lavoz.com.ar/arc/outboundfeeds/rss/",
+    "region": "centro",
+    "pais": "Argentina",
+    "idioma": "castellano",
+    "tipo": "Medio regional",
+    "zona": "argentina"
+  },
+  {
+    "nombre": "El Litoral (Santa Fe)",
+    "url": "https://www.ellitoral.com/rss",
+    "region": "centro",
+    "pais": "Argentina",
+    "idioma": "castellano",
+    "tipo": "Medio regional",
+    "zona": "argentina"
+  },
+  {
+    "nombre": "Los Andes (Mendoza)",
+    "url": "https://www.losandes.com.ar/arc/outboundfeeds/rss/",
+    "region": "cuyo",
+    "pais": "Argentina",
+    "idioma": "castellano",
+    "tipo": "Medio regional",
+    "zona": "argentina"
+  },
+  {
+    "nombre": "Diario de Cuyo (San Juan)",
+    "url": "https://www.diariodecuyo.com.ar/rss",
+    "region": "cuyo",
+    "pais": "Argentina",
+    "idioma": "castellano",
+    "tipo": "Medio regional",
+    "zona": "argentina"
+  },
+  {
+    "nombre": "Río Negro",
+    "url": "https://www.rionegro.com.ar/feed/",
+    "region": "patagonia",
+    "pais": "Argentina",
+    "idioma": "castellano",
+    "tipo": "Medio regional",
+    "zona": "argentina"
+  },
+  {
+    "nombre": "La Mañana de Neuquén",
+    "url": "https://www.lmneuquen.com/rss",
+    "region": "patagonia",
+    "pais": "Argentina",
+    "idioma": "castellano",
+    "tipo": "Medio regional",
+    "zona": "argentina"
+  },
+  {
+    "nombre": "El Día (La Plata)",
+    "url": "https://www.eldia.com/rss",
+    "region": "buenos-aires",
+    "pais": "Argentina",
+    "idioma": "castellano",
+    "tipo": "Medio regional",
+    "zona": "argentina"
+  }
 ]

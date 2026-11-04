@@ -69,7 +69,8 @@ def sin_acentos(t):
 
 
 def region_de(texto):
-    t = sin_acentos(texto)
+    # "calle/avenida Corrientes" es Buenos Aires, no la provincia
+    t = re.sub(r"\b(calle|avenida|av\.)\s+Corrientes", "Buenos Aires", sin_acentos(texto), flags=re.I)
     mejor, puntos = None, 0
     for r, claves in CLAVES.items():
         n = sum(len(re.findall(r"\b" + re.escape(c) + r"\w*", t)) for c in claves)
@@ -122,8 +123,27 @@ def fecha_gdelt(s):
         return None
 
 
+# Deportes y espectáculos no sirven para la agenda del diario: se descartan.
+RUIDO = re.compile(r"\b(f[uú]tbol|torneo|goles?|gan[oó] \d|partido de|copa (argentina|libertadores|sudamericana)|selecci[oó]n argentina de|"
+                   r"tenis|f[oó]rmula 1|automovilismo|boca juniors|river plate|clausura|apertura 20\d\d|playoffs?|serie a|premier league|la liga|nba|"
+                   r"espect[aá]culos?|far[aá]ndula|reality|telenovela|famos[oa]s?|cantante|show en vivo|recital|hor[oó]scopo|receta|musical|taquilla|estreno|pel[ií]cula|netflix|streaming)\b", re.I)
+
+
+def limpiar_titulo(t):
+    """Saca el nombre del medio pegado al título ("Titular :: Diario X", "Titular - Medio", "Titular | Medio")."""
+    t = re.sub(r"\s+", " ", t or "").strip()
+    t = re.sub(r"\s+(::|\||–|—)\s+[^:|–—]{2,60}$", "", t)
+    t = re.sub(r"\s*::\s*[^:]{2,60}$", "", t)
+    t = re.sub(r"\s+-\s+[A-ZÁÉÍÓÚ][^-]{1,40}$", "", t)
+    return t.strip()
+
+
+def es_ruido(titulo):
+    return bool(RUIDO.search(sin_acentos(titulo).replace("ó", "o")) or RUIDO.search(titulo))
+
+
 def nota_gdelt(a, region=None, zona=None):
-    titulo = (a.get("title") or "").strip()
+    titulo = limpiar_titulo(a.get("title") or "")
     return {
         "titulo": titulo,
         "url": a.get("url"),
@@ -152,11 +172,13 @@ def leer_rss(fuente):
             if getattr(e, k, None):
                 fecha = datetime(*getattr(e, k)[:6], tzinfo=timezone.utc).isoformat()
                 break
-        titulo = re.sub(r"\s+", " ", getattr(e, "title", "") or "").strip()
+        titulo = limpiar_titulo(getattr(e, "title", "") or "")
+        if es_ruido(titulo):
+            continue
         notas.append({
             "titulo": titulo, "url": getattr(e, "link", None), "medio": fuente["nombre"], "pais": fuente.get("pais"),
             "idioma": fuente.get("idioma"), "fecha": fecha, "imagen": None,
-            "region": region_de(titulo), "zona": fuente.get("zona"), "tema": tema_de(titulo),
+            "region": region_de(titulo) or fuente.get("region"), "zona": fuente.get("zona"), "tema": tema_de(titulo),
             "via": "RSS", "tipo": fuente.get("tipo"),
         })
     return notas
@@ -176,6 +198,8 @@ def main():
             reg["notas"] = []
             for a in datos.get("articles", []):
                 n = nota_gdelt(a, zona="argentina")
+                if es_ruido(n["titulo"]):
+                    continue
                 if n["region"] == rid:
                     reg["notas"].append(n)
                 else:
@@ -200,7 +224,7 @@ def main():
     for zid, z in ZONAS.items():
         try:
             datos = gdelt(z["consulta"], maximo=50)
-            notas = [nota_gdelt(a, zona=zid) for a in datos.get("articles", [])]
+            notas = [n for n in (nota_gdelt(a, zona=zid) for a in datos.get("articles", [])) if not es_ruido(n["titulo"])]
             salida["zonas"][zid] = {"nombre": z["nombre"], "notas": notas}
             salida["estado"].append({"fuente": f"GDELT · {z['nombre']}", "ok": True, "notas": len(notas)})
         except Exception as e:  # noqa: BLE001
