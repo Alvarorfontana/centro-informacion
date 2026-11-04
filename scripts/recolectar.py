@@ -175,8 +175,15 @@ def leer_rss(fuente):
         titulo = limpiar_titulo(getattr(e, "title", "") or "")
         if es_ruido(titulo):
             continue
+        # resumen corto que el propio medio publica en su RSS (sin HTML, hasta 400 caracteres)
+        resumen = re.sub(r"<[^>]+>", " ", getattr(e, "summary", "") or "")
+        resumen = re.sub(r"\s+", " ", resumen).strip()
+        if resumen.lower().startswith(titulo.lower()[:40]):
+            resumen = resumen[len(titulo):].strip(" .:-")
+        if len(resumen) > 400:
+            resumen = resumen[:400].rsplit(" ", 1)[0] + "…"
         notas.append({
-            "titulo": titulo, "url": getattr(e, "link", None), "medio": fuente["nombre"], "pais": fuente.get("pais"),
+            "titulo": titulo, "resumen": resumen or None, "url": getattr(e, "link", None), "medio": fuente["nombre"], "pais": fuente.get("pais"),
             "idioma": fuente.get("idioma"), "fecha": fecha, "imagen": None,
             "region": region_de(titulo) or fuente.get("region"), "zona": fuente.get("zona"), "tema": tema_de(titulo),
             "via": "RSS", "tipo": fuente.get("tipo"),

@@ -502,6 +502,9 @@ body { background: var(--papel); }
 .fuente-m .acc-m { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 12px; color: var(--tinta-3); }
 .fuente-m button { background: none; border: none; color: var(--tinta-3); font-size: 12px; padding: 0; margin-left: auto; }
 .fuente-m button:hover { color: var(--rojo-tinta); }
+.resumen-m { margin: 2px 0 0; font-size: 13px; color: var(--tinta-2); line-height: 1.45; }
+.fuente-m .insertar-m { justify-self: start; margin: 4px 0 0; background: var(--hundido); border: 1px solid var(--linea); color: var(--tinta); border-radius: 3px; padding: 5px 10px; font-size: 12.5px; font-weight: 700; }
+.fuente-m .insertar-m:hover { border-color: var(--rojo); color: #fff; }
 .mesa-vacia { color: var(--tinta-2); font-size: 14px; display: grid; gap: 8px; }
 .mesa-editor { display: grid; gap: 12px; }
 .mesa-editor label { display: grid; gap: 5px; font-size: 12px; font-weight: 700; color: var(--tinta-2); text-transform: uppercase; letter-spacing: .06em; }
@@ -1097,7 +1100,7 @@ body { background: var(--papel); }
     var b = ev.target.closest && ev.target.closest('[data-mesa]'); if (!b) return;
     var url = b.getAttribute('data-mesa');
     if (enMesa(url)) { mesa = mesa.filter(function (m) { return m.url !== url; }); }
-    else { var n = REGISTRO[url]; if (!n) return; mesa.push({ titulo: n.titulo, url: n.url, medio: n.medio, pais: n.pais, idioma: n.idioma, fecha: n.fecha, tipo: n.tipo, via: n.via, region: n.region, zona: n.zona, tema: n.tema }); toast('Sumada a la mesa (' + mesa.length + ')'); }
+    else { var n = REGISTRO[url]; if (!n) return; mesa.push({ titulo: n.titulo, resumen: n.resumen || '', url: n.url, medio: n.medio, pais: n.pais, idioma: n.idioma, fecha: n.fecha, tipo: n.tipo, via: n.via, region: n.region, zona: n.zona, tema: n.tema }); toast('Sumada a la mesa (' + mesa.length + ')'); }
     guardarMesa();
     document.querySelectorAll('[data-mesa]').forEach(function (x) { var e = enMesa(x.getAttribute('data-mesa')); x.classList.toggle('en', e); x.textContent = e ? '✓ En la mesa' : '+ A la mesa'; });
     pintarMesa();
@@ -1161,15 +1164,34 @@ body { background: var(--papel); }
     $('m-fuentes').innerHTML = mesa.length ? mesa.map(function (m, i) {
       return '<div class="fuente-m"><a class="t" href="' + esc(m.url) + '" target="_blank" rel="noopener">' + esc(m.titulo) + '</a><span class="acc-m"><b style="color:var(--tinta-2)">' + esc(m.medio || '') + '</b>' +
         (m.pais ? '<span>' + esc(m.pais) + '</span>' : '') + (m.fecha ? '<span>' + hace(m.fecha) + '</span>' : '') + (m.tipo === 'Agencia estatal' ? '<span class="pill est">Voz de un gobierno</span>' : '') +
-        '<button type="button" data-quitar-m="' + i + '">Quitar</button></span></div>';
-    }).join('') : '<div class="mesa-vacia"><b style="color:var(--tinta)">La mesa está vacía.</b><span>En la portada o en Noticias en vivo, tocá "+ A la mesa" en los titulares que quieras usar como fuente.</span></div>';
+        '<button type="button" data-quitar-m="' + i + '">Quitar</button></span>' +
+        (m.resumen ? '<p class="resumen-m">' + esc(m.resumen) + '</p>' : '') +
+        '<button type="button" class="insertar-m" data-insertar-m="' + i + '">↳ Insertar en el texto</button></div>';
+    }).join('') + (mesa.length > 1 ? '<button type="button" class="btn" id="m-insertar-todas" style="margin-top:10px;width:100%">↳ Insertar todas en el texto</button>' : '') : '<div class="mesa-vacia"><b style="color:var(--tinta)">La mesa está vacía.</b><span>En la portada o en Noticias en vivo, tocá "+ A la mesa" en los titulares que quieras usar como fuente.</span></div>';
     var medios = []; mesa.forEach(function (m) { if (medios.indexOf(m.medio) < 0) medios.push(m.medio); });
     $('m-cita').innerHTML = '<b>Fuentes consultadas (van al final de la nota)</b>' + (mesa.length ? '<ol>' + mesa.map(function (m) { return '<li>' + esc(m.medio) + ': ' + esc(m.titulo) + '</li>'; }).join('') + '</ol>' : 'Todavía ninguna.');
     if (!$('m-region').value && mesa.length) { var r = mesa.find(function (m) { return m.region; }); if (r) $('m-region').value = r.region; }
     if (!$('m-tema').value && mesa.length) { var t = mesa.find(function (m) { return m.tema && m.tema !== 'General'; }); if (t && Array.prototype.some.call($('m-tema').options, function (o) { return o.value === t.tema; })) $('m-tema').value = t.tema; }
     actualizarEnvio();
   }
-  $('m-fuentes').addEventListener('click', function (ev) { var b = ev.target.closest('[data-quitar-m]'); if (!b) return; mesa.splice(+b.getAttribute('data-quitar-m'), 1); guardarMesa(); pintarMesa(); });
+  function parrafoDe(m) {
+    return '<p>Según <a href="' + esc(m.url) + '">' + esc(m.medio || 'la fuente') + '</a>: «' + esc(m.titulo) + '».' + (m.resumen ? ' ' + esc(m.resumen) : '') + '</p>';
+  }
+  function insertarEnTexto(html) {
+    // Va donde está el cursor; si el cursor no está en el texto, al final
+    var t = document.createElement('template'); t.innerHTML = html; var ultimo = t.content.lastChild;
+    var n = rango && ed.contains(rango.startContainer) ? rango.startContainer : null;
+    while (n && n.parentNode !== ed) n = n.parentNode;
+    if (n && n.nodeType === 3) { var p0 = document.createElement('p'); ed.insertBefore(p0, n); p0.appendChild(n); n = p0; }
+    if (n) ed.insertBefore(t.content, n.nextSibling); else ed.appendChild(t.content);
+    if (ultimo) { var r = document.createRange(); r.selectNodeContents(ultimo); r.collapse(false); rango = r; }
+    guardarRango(); actualizarEnvio(); toast('Insertado en el texto: ahora reescribilo con tus palabras');
+  }
+  $('m-fuentes').addEventListener('click', function (ev) {
+    var q = ev.target.closest('[data-quitar-m]'); if (q) { mesa.splice(+q.getAttribute('data-quitar-m'), 1); guardarMesa(); pintarMesa(); return; }
+    var ins = ev.target.closest('[data-insertar-m]'); if (ins) { insertarEnTexto(parrafoDe(mesa[+ins.getAttribute('data-insertar-m')])); return; }
+    if (ev.target.id === 'm-insertar-todas') insertarEnTexto(mesa.map(parrafoDe).join(''));
+  });
   function reporte() {
     var reg = $('m-region').value;
     return { titulo: $('m-titulo').value.trim(), bajada: $('m-bajada').value.trim(), cuerpo: ed.innerText.trim(), cuerpoHtml: limpiarHtml(ed.innerHTML), region: reg, zona: reg ? 'argentina' : (mesa[0] && mesa[0].zona) || '', tema: $('m-tema').value,
