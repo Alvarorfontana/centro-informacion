@@ -484,6 +484,39 @@ body { background: var(--papel); }
   .region-foco { padding: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { .cinta ul { animation: none; } .cinta .pista { overflow-x: auto; } }
+
+/* Mesa de edición */
+.a-mesa { background: none; border: 1px solid var(--linea); color: var(--tinta-2); border-radius: 3px; padding: 2px 8px; font-size: 11.5px; font-weight: 700; white-space: nowrap; }
+.a-mesa:hover { border-color: var(--rojo); color: #fff; }
+.a-mesa.en { background: var(--rojo-suave); border-color: var(--rojo); color: var(--rojo-tinta); }
+.mesa { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.35fr); gap: 16px; align-items: start; }
+.mesa-fuentes, .mesa-editor { background: var(--superficie); border: 1px solid var(--linea); border-radius: 6px; padding: 16px 18px; min-width: 0; }
+.mesa h3.rot { font-family: var(--cond); font-size: 14px; letter-spacing: .16em; text-transform: uppercase; color: var(--tinta-3); margin: 0 0 10px; display: flex; justify-content: space-between; }
+.fuente-m { border-bottom: 1px solid var(--linea); padding: 10px 0; display: grid; gap: 4px; }
+.fuente-m:last-child { border-bottom: none; }
+.fuente-m a.t { color: var(--tinta); text-decoration: none; font-weight: 600; font-size: 14.5px; line-height: 1.35; }
+.fuente-m a.t:hover { color: var(--rojo-tinta); }
+.fuente-m .acc-m { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 12px; color: var(--tinta-3); }
+.fuente-m button { background: none; border: none; color: var(--tinta-3); font-size: 12px; padding: 0; margin-left: auto; }
+.fuente-m button:hover { color: var(--rojo-tinta); }
+.mesa-vacia { color: var(--tinta-2); font-size: 14px; display: grid; gap: 8px; }
+.mesa-editor { display: grid; gap: 12px; }
+.mesa-editor label { display: grid; gap: 5px; font-size: 12px; font-weight: 700; color: var(--tinta-2); text-transform: uppercase; letter-spacing: .06em; }
+.mesa-editor input, .mesa-editor textarea, .mesa-editor select { background: var(--hundido); border: 1px solid var(--linea); border-radius: 4px; padding: 9px 11px; color: var(--tinta); font-size: 15px; text-transform: none; letter-spacing: 0; font-weight: 400; width: 100%; }
+.mesa-editor #m-titulo { font-family: var(--display); font-size: 22px; font-weight: 700; }
+.mesa-editor textarea { font-family: var(--display); font-size: 17px; line-height: 1.55; resize: vertical; }
+.mesa-editor .fila { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.mesa-editor .contador { font-size: 12px; color: var(--tinta-3); text-transform: none; letter-spacing: 0; font-weight: 500; }
+.fuentes-cita { background: var(--hundido); border-radius: 4px; padding: 10px 12px; font-size: 13px; color: var(--tinta-2); }
+.fuentes-cita b { display: block; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--tinta-3); margin-bottom: 4px; }
+.fuentes-cita ol { margin: 0; padding-left: 18px; }
+.mesa-acc { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.mesa-acc .btn { text-decoration: none; color: var(--tinta); }
+.mesa-acc .btn.primario { color: #fff; }
+.mesa-acc .btn[aria-disabled="true"] { opacity: .4; pointer-events: none; }
+.mesa-nota { font-size: 12.5px; color: var(--tinta-3); }
+@media (max-width: 960px) { .mesa { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .mesa-editor .fila { grid-template-columns: 1fr; } }
 </style>
 <div class="app">
   <div class="aviso" role="note">
@@ -498,6 +531,8 @@ body { background: var(--papel); }
         <a href="#portada" data-vista="portada">Portada federal <span class="cuenta">●</span></a>
         <a href="#en-vivo" data-vista="en-vivo">Noticias en vivo <span class="cuenta" id="c-viv"></span></a>
         <a href="#regiones" data-vista="regiones">Regiones de Argentina <span class="cuenta">5</span></a>
+        <h3>Redacción</h3>
+        <a href="#mesa" data-vista="mesa">Mesa de edición <span class="cuenta" id="c-mesa">0</span></a>
         <h3>Inteligencia editorial</h3>
         <a href="#expedientes" data-vista="expedientes">Expedientes <span class="cuenta" id="c-exp"></span></a>
         <a href="#cronologia" data-vista="cronologia">Cronología <span class="cuenta" id="c-cro"></span></a>
@@ -536,6 +571,31 @@ body { background: var(--papel); }
         <div class="mundo">
           <div class="bloque-z"><h4>Mercosur y región <span id="n-merc"></span></h4><ul class="lista-n" id="lista-merc"></ul></div>
           <div class="bloque-z"><h4>Mundo <span id="n-mundo"></span></h4><ul class="lista-n" id="lista-mundo"></ul></div>
+        </div>
+      </section>
+
+      <!-- MESA DE EDICIÓN -->
+      <section class="vista" id="v-mesa" aria-labelledby="t-mes" hidden>
+        <div class="cabeza"><div><h2 id="t-mes">Mesa de edición</h2><p>Juntá varias notas sobre un tema, compará qué dice cada fuente y escribí el reporte propio. Lo que sale de acá es texto de la redacción, con sus fuentes citadas.</p></div></div>
+        <div class="mesa">
+          <div class="mesa-fuentes"><h3 class="rot">Fuentes en la mesa <span id="m-cuenta">0</span></h3><div id="m-fuentes"></div></div>
+          <form class="mesa-editor" id="m-form" autocomplete="off">
+            <h3 class="rot">Reporte propio</h3>
+            <label for="m-titulo">Título<input id="m-titulo" maxlength="160" placeholder="Tu título, no el de la fuente"></label>
+            <label for="m-bajada">Bajada<textarea id="m-bajada" rows="2" maxlength="300" placeholder="En una o dos líneas, qué pasó y por qué importa"></textarea></label>
+            <label for="m-cuerpo">Texto <span class="contador" id="m-contador">0 palabras</span><textarea id="m-cuerpo" rows="14" placeholder="Escribí con tus palabras. Cruzá las fuentes, marcá en qué coinciden y en qué no, y sumá el contexto federal."></textarea></label>
+            <div class="fila">
+              <label for="m-region">Región<select id="m-region"></select></label>
+              <label for="m-tema">Tema<select id="m-tema"></select></label>
+            </div>
+            <div class="fuentes-cita" id="m-cita"></div>
+            <div class="mesa-acc">
+              <a class="btn primario" id="m-enviar" target="_blank" rel="noopener" href="#" aria-disabled="true">Enviar al diario como borrador</a>
+              <button type="button" class="btn" id="m-copiar">Copiar texto con fuentes</button>
+              <button type="button" class="btn" id="m-vaciar">Vaciar la mesa</button>
+            </div>
+            <p class="mesa-nota" id="m-nota">Para enviar hacen falta un título y un texto propios.</p>
+          </form>
         </div>
       </section>
 
@@ -915,7 +975,7 @@ body { background: var(--papel); }
       '<div class="pie"><span class="medio">' + esc(n.medio || '') + '</span>' + (n.pais ? '<span>' + esc(n.pais) + '</span>' : '') +
       (n.region ? '<span class="pill reg">' + esc(REG_NOMBRES[n.region] || n.region) + '</span>' : '') + (n.tema && n.tema !== 'General' ? '<span class="pill">' + esc(n.tema) + '</span>' : '') +
       (est ? '<span class="pill est">Agencia estatal</span>' : '') + '<span>vía ' + esc(n.via) + '</span>' +
-      '<a class="llevar" target="_blank" rel="noopener" href="' + esc(alDiario({ titulo: n.titulo, medio: n.medio, url: n.url, region: n.region, zona: n.zona, tema: n.tema })) + '">Llevar al diario →</a></div></div></article>';
+      botonMesa(n) + '</div></div></article>';
   }
   ['v-buscar', 'v-zona', 'v-region', 'v-tema'].forEach(function (id) { $(id).addEventListener('input', function () { estado.limVivo = 60; pintarVivo(); }); });
   $('lista-vivo').addEventListener('click', function (ev) { if (ev.target.id === 'ver-mas') { estado.limVivo = (estado.limVivo || 60) + 60; pintarVivo(); } });
@@ -926,7 +986,7 @@ body { background: var(--papel); }
   function notasDe(fn) { return todasLasNotas().filter(fn); }
   function itemN(n) {
     return '<li><a class="t" href="' + esc(n.url) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '</a><span class="meta-n"><span class="medio">' + esc(n.medio || '') + '</span><span>' + hace(n.fecha) + '</span>' +
-      '<a class="llevar" target="_blank" rel="noopener" href="' + esc(alDiario({ titulo: n.titulo, medio: n.medio, url: n.url, region: n.region, zona: n.zona, tema: n.tema })) + '">Llevar al diario →</a></span></li>';
+      botonMesa(n) + '</span></li>';
   }
   function pintarPortada() {
     var D = estado.datos, todas = todasLasNotas();
@@ -953,7 +1013,7 @@ body { background: var(--papel); }
       (vol.length > 1 ? '<div>' + spark(vol, 64) + '<div class="spark-pie"><span>' + fechaG(reg.volumen[0][0]) + '</span><span>menciones por día</span><span>' + fechaG(reg.volumen[reg.volumen.length - 1][0]) + '</span></div></div>' : '') +
       (principal ? '<div class="principal">' + (principal.imagen ? '<figure><img src="' + esc(principal.imagen) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></figure>' : '') +
         '<a class="t" href="' + esc(principal.url) + '" target="_blank" rel="noopener">' + esc(principal.titulo) + '</a><span class="meta-n"><span class="medio">' + esc(principal.medio) + '</span><span>' + hace(principal.fecha) + '</span>' +
-        '<a class="llevar" target="_blank" rel="noopener" href="' + esc(alDiario({ titulo: principal.titulo, medio: principal.medio, url: principal.url, region: principal.region, zona: principal.zona, tema: principal.tema })) + '">Llevar al diario →</a></span></div>' +
+        botonMesa(principal) + '</span></div>' +
         '<ul class="lista-n">' + resto.map(itemN).join('') + '</ul>'
       : '<p class="sin-datos">' + (D ? 'Sin titulares de esta región en la última recolección.' : 'Esperando la primera recolección de noticias.') + '</p>');
     $('columnas').innerHTML = Object.keys(REG_NOMBRES).map(function (r) {
@@ -974,6 +1034,76 @@ body { background: var(--papel); }
     if (g.classList.contains('col')) $('region-foco').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
   ['click', 'keydown'].forEach(function (t) { $('burbujas-p').addEventListener(t, elegirP); $('columnas').addEventListener(t, elegirP); });
+
+
+  // ── Mesa de edición ──
+  // Las notas elegidas y el borrador se guardan en este navegador (no se comparten ni se suben).
+  var mesa = [];
+  try { mesa = JSON.parse(localStorage.getItem('centro-mesa') || '[]') || []; } catch (e) { mesa = []; }
+  function guardarMesa() { try { localStorage.setItem('centro-mesa', JSON.stringify(mesa)); } catch (e) {} }
+  function enMesa(url) { return mesa.some(function (m) { return m.url === url; }); }
+  var REGISTRO = {};
+  function botonMesa(n) {
+    REGISTRO[n.url] = n; var en = enMesa(n.url);
+    return '<button type="button" class="a-mesa' + (en ? ' en' : '') + '" data-mesa="' + esc(n.url) + '" style="margin-left:auto">' + (en ? '✓ En la mesa' : '+ A la mesa') + '</button>';
+  }
+  document.addEventListener('click', function (ev) {
+    var b = ev.target.closest && ev.target.closest('[data-mesa]'); if (!b) return;
+    var url = b.getAttribute('data-mesa');
+    if (enMesa(url)) { mesa = mesa.filter(function (m) { return m.url !== url; }); }
+    else { var n = REGISTRO[url]; if (!n) return; mesa.push({ titulo: n.titulo, url: n.url, medio: n.medio, pais: n.pais, idioma: n.idioma, fecha: n.fecha, tipo: n.tipo, via: n.via, region: n.region, zona: n.zona, tema: n.tema }); toast('Sumada a la mesa (' + mesa.length + ')'); }
+    guardarMesa();
+    document.querySelectorAll('[data-mesa]').forEach(function (x) { var e = enMesa(x.getAttribute('data-mesa')); x.classList.toggle('en', e); x.textContent = e ? '✓ En la mesa' : '+ A la mesa'; });
+    pintarMesa();
+  });
+  opciones('m-region', 'Sin región', Object.keys(REG_NOMBRES).map(function (k) { return [k, REG_NOMBRES[k]]; }));
+  opciones('m-tema', 'Sin tema', ['Política', 'Economía', 'Energía', 'Agro y clima', 'Sociedad', 'Geopolítica', 'Congreso', 'Elecciones']);
+  var CAMPOS_M = ['m-titulo', 'm-bajada', 'm-cuerpo', 'm-region', 'm-tema'];
+  try { var bor = JSON.parse(localStorage.getItem('centro-borrador') || '{}'); CAMPOS_M.forEach(function (id) { if (bor[id]) $(id).value = bor[id]; }); } catch (e) {}
+  function pintarMesa() {
+    $('c-mesa').textContent = mesa.length; $('m-cuenta').textContent = mesa.length;
+    $('m-fuentes').innerHTML = mesa.length ? mesa.map(function (m, i) {
+      return '<div class="fuente-m"><a class="t" href="' + esc(m.url) + '" target="_blank" rel="noopener">' + esc(m.titulo) + '</a><span class="acc-m"><b style="color:var(--tinta-2)">' + esc(m.medio || '') + '</b>' +
+        (m.pais ? '<span>' + esc(m.pais) + '</span>' : '') + (m.fecha ? '<span>' + hace(m.fecha) + '</span>' : '') + (m.tipo === 'Agencia estatal' ? '<span class="pill est">Voz de un gobierno</span>' : '') +
+        '<button type="button" data-quitar-m="' + i + '">Quitar</button></span></div>';
+    }).join('') : '<div class="mesa-vacia"><b style="color:var(--tinta)">La mesa está vacía.</b><span>En la portada o en Noticias en vivo, tocá "+ A la mesa" en los titulares que quieras usar como fuente.</span></div>';
+    var medios = []; mesa.forEach(function (m) { if (medios.indexOf(m.medio) < 0) medios.push(m.medio); });
+    $('m-cita').innerHTML = '<b>Fuentes consultadas (van al final de la nota)</b>' + (mesa.length ? '<ol>' + mesa.map(function (m) { return '<li>' + esc(m.medio) + ': ' + esc(m.titulo) + '</li>'; }).join('') + '</ol>' : 'Todavía ninguna.');
+    if (!$('m-region').value && mesa.length) { var r = mesa.find(function (m) { return m.region; }); if (r) $('m-region').value = r.region; }
+    if (!$('m-tema').value && mesa.length) { var t = mesa.find(function (m) { return m.tema && m.tema !== 'General'; }); if (t && Array.prototype.some.call($('m-tema').options, function (o) { return o.value === t.tema; })) $('m-tema').value = t.tema; }
+    actualizarEnvio();
+  }
+  $('m-fuentes').addEventListener('click', function (ev) { var b = ev.target.closest('[data-quitar-m]'); if (!b) return; mesa.splice(+b.getAttribute('data-quitar-m'), 1); guardarMesa(); pintarMesa(); });
+  function reporte() {
+    var reg = $('m-region').value;
+    return { titulo: $('m-titulo').value.trim(), bajada: $('m-bajada').value.trim(), cuerpo: $('m-cuerpo').value.trim(), region: reg, zona: reg ? 'argentina' : (mesa[0] && mesa[0].zona) || '', tema: $('m-tema').value,
+      fuentes: mesa.map(function (m) { return { medio: m.medio, url: m.url, titulo: m.titulo }; }) };
+  }
+  function actualizarEnvio() {
+    var r = reporte(), palabras = r.cuerpo ? r.cuerpo.split(/\s+/).length : 0, listo = r.titulo.length > 5 && palabras >= 30;
+    $('m-contador').textContent = palabras + (palabras === 1 ? ' palabra' : ' palabras');
+    $('m-enviar').setAttribute('aria-disabled', listo ? 'false' : 'true');
+    $('m-enviar').href = listo ? ADMIN + '#centro=' + encodeURIComponent(JSON.stringify(r)) : '#';
+    $('m-nota').textContent = listo ? 'Se abre el panel del diario con tu reporte cargado como borrador. Nada se publica hasta que lo apruebes ahí.'
+      : 'Para enviar hacen falta un título y un texto propios (al menos 30 palabras).';
+    var bor = {}; CAMPOS_M.forEach(function (id) { bor[id] = $(id).value; }); try { localStorage.setItem('centro-borrador', JSON.stringify(bor)); } catch (e) {}
+  }
+  CAMPOS_M.forEach(function (id) { $(id).addEventListener('input', actualizarEnvio); });
+  $('m-form').addEventListener('submit', function (ev) { ev.preventDefault(); });
+  $('m-copiar').addEventListener('click', function () {
+    var r = reporte();
+    var txt = r.titulo + '\n\n' + (r.bajada ? r.bajada + '\n\n' : '') + r.cuerpo + (r.fuentes.length ? '\n\nFuentes consultadas:\n' + r.fuentes.map(function (f) { return '- ' + f.medio + ': ' + f.url; }).join('\n') : '');
+    var listo = function () { toast('Texto copiado'); };
+    try { navigator.clipboard.writeText(txt).then(listo, function () { $('m-cuerpo').select(); toast('Seleccioné el texto: copialo con Ctrl+C'); }); } catch (e) { $('m-cuerpo').select(); toast('Seleccioné el texto: copialo con Ctrl+C'); }
+  });
+  var confirmarVaciar = false;
+  $('m-vaciar').addEventListener('click', function () {
+    if (!confirmarVaciar) { confirmarVaciar = true; this.textContent = '¿Seguro? Tocá de nuevo'; var b = this; setTimeout(function () { confirmarVaciar = false; b.textContent = 'Vaciar la mesa'; }, 3000); return; }
+    confirmarVaciar = false; this.textContent = 'Vaciar la mesa';
+    mesa = []; guardarMesa(); CAMPOS_M.forEach(function (id) { $(id).value = ''; }); pintarMesa();
+    document.querySelectorAll('[data-mesa]').forEach(function (x) { x.classList.remove('en'); x.textContent = '+ A la mesa'; });
+    toast('Mesa vacía');
+  });
 
   // ── Regiones ──
   function pintarRegiones() {
@@ -1233,7 +1363,7 @@ body { background: var(--papel); }
 
   // ── Navegación ──
   $('c-exp').textContent = EXP.length; $('c-cro').textContent = todos.length; $('c-fue').textContent = F.length; $('r-age').textContent = agencias.length;
-  var VISTAS = ['portada', 'en-vivo', 'regiones', 'expedientes', 'mapa', 'radar', 'fuentes', 'cronologia', 'flujo'];
+  var VISTAS = ['portada', 'mesa', 'en-vivo', 'regiones', 'expedientes', 'mapa', 'radar', 'fuentes', 'cronologia', 'flujo'];
   function columnas() {
     document.querySelector('.cuerpo').style.gridTemplateColumns = $('inspector').hidden && window.matchMedia('(min-width: 961px)').matches ? (window.matchMedia('(max-width: 1180px)').matches ? '210px minmax(0,1fr)' : '236px minmax(0,1fr)') : '';
   }
@@ -1241,7 +1371,7 @@ body { background: var(--papel); }
     var v = location.hash.slice(1); if (VISTAS.indexOf(v) < 0) v = 'portada';
     VISTAS.forEach(function (x) { $('v-' + x).hidden = x !== v; });
     document.querySelectorAll('#nav a').forEach(function (a) { if (a.getAttribute('data-vista') === v) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
-    $('inspector').hidden = ['portada', 'en-vivo', 'regiones', 'fuentes', 'flujo', 'radar'].indexOf(v) >= 0;
+    $('inspector').hidden = ['portada', 'mesa', 'en-vivo', 'regiones', 'fuentes', 'flujo', 'radar'].indexOf(v) >= 0;
     columnas();
     if (v === 'expedientes') pintarLista();
     if (v === 'fuentes') { pintarFuentes(); pintarConexion(); }
@@ -1258,7 +1388,7 @@ body { background: var(--papel); }
     $('aviso-act').textContent = 'Última recolección: ' + new Date(D.generado).toLocaleString('es-AR', { dateStyle: 'short', timeStyle: 'short' });
     pintarVivo(); pintarRegiones(); pintarConexion(); pintarPortada();
   }
-  pintarKpisExp(); pintarVivo(); pintarRegiones(); pintarPortada(); abrir(estado.sel); fijar(MAPA.cajas.mundo); ir();
+  pintarKpisExp(); pintarVivo(); pintarRegiones(); pintarPortada(); pintarMesa(); abrir(estado.sel); fijar(MAPA.cajas.mundo); ir();
   fetch('datos/noticias.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(conDatos).catch(function () { /* sin recolección todavía */ });
 })();
 </script>
