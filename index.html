@@ -385,6 +385,8 @@ body { background: var(--papel); }
 .nav h3 { font-family: var(--cond); font-size: 12px; letter-spacing: .18em; color: var(--tinta-3); }
 .nav a { color: var(--tinta-2); font-weight: 600; border-radius: 3px; }
 .nav a:hover { background: var(--hundido); }
+.nav a.ir-admin { color: var(--rojo-tinta); }
+.nav a.ir-admin .cuenta { color: var(--rojo-tinta); }
 .nav a[aria-current="page"] { background: linear-gradient(90deg, var(--rojo-suave), transparent); color: #fff; box-shadow: inset 3px 0 0 var(--rojo); }
 .cabeza h2 { font-family: var(--cond); font-weight: 700; font-size: 38px; letter-spacing: .01em; text-transform: uppercase; line-height: 1; }
 .exp, .titulares, .reg, .kpis div, .escala div, .mapa-full, .mapa-ar, .tabla-caja, .conexion, .ramas-grilla .rama, .resumen-fuentes div, .insp-cab, .inspector { background: var(--superficie); }
@@ -552,6 +554,7 @@ body { background: var(--papel); }
         <a href="#regiones" data-vista="regiones">Regiones de Argentina <span class="cuenta">5</span></a>
         <h3>Redacción</h3>
         <a href="#mesa" data-vista="mesa">Mesa de edición <span class="cuenta" id="c-mesa">0</span></a>
+        <a href="https://www.diariofederal.com.ar/admin/" target="_blank" rel="noopener" class="ir-admin">Administrador de noticias <span class="cuenta">↗</span></a>
         <h3>Inteligencia editorial</h3>
         <a href="#expedientes" data-vista="expedientes">Expedientes <span class="cuenta" id="c-exp"></span></a>
         <a href="#cronologia" data-vista="cronologia">Cronología <span class="cuenta" id="c-cro"></span></a>
@@ -630,6 +633,7 @@ body { background: var(--papel); }
             <div class="fuentes-cita" id="m-cita"></div>
             <div class="mesa-acc">
               <a class="btn primario" id="m-enviar" target="_blank" rel="noopener" href="#" aria-disabled="true">Enviar al diario como borrador</a>
+              <a class="btn" href="https://www.diariofederal.com.ar/admin/" target="_blank" rel="noopener">Abrir el administrador ↗</a>
               <button type="button" class="btn" id="m-copiar">Copiar texto con fuentes</button>
               <button type="button" class="btn" id="m-vaciar">Vaciar la mesa</button>
             </div>
