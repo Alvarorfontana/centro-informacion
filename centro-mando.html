@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1422">
+<title>Centro de Información General · Diario Federal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#091321;--panel:#101e30;--panel2:#14263b;--line:#263b54;--muted:#8fa2b9;--text:#edf3fa;--red:#ed3f50;--amber:#e6b45d;--green:#54c6a0;--blue:#78aee8;--serif:"Newsreader",Georgia,serif;--sans:"DM Sans",Arial,sans-serif;--mono:"DM Mono",monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 var(--sans)}button,input,select,textarea{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{color:inherit;cursor:pointer}
+.topline{height:4px;background:linear-gradient(90deg,var(--red) 0 18%,#b62c42 18% 25%,#203b5a 25% 100%)}
+header{height:66px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 24px;background:#0b1727;position:sticky;top:0;z-index:20}
+.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:28px;height:28px;background:var(--red);display:grid;place-items:center;font-weight:900;color:white;clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%)}.brand strong{font:700 19px var(--serif);letter-spacing:.01em}.brand small{display:block;color:var(--muted);font:10px var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.head-right{display:flex;align-items:center;gap:18px}.live{display:flex;align-items:center;gap:7px;color:#d7e4f1;font:11px var(--mono);letter-spacing:.08em}.pulse{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px #ed3f5020}.clock{font:12px var(--mono);color:var(--muted)}.head-button{border:1px solid var(--line);background:var(--panel2);padding:8px 12px;border-radius:3px;font-size:12px;font-weight:700}
+.shell{display:grid;grid-template-columns:218px minmax(0,1fr);min-height:calc(100vh - 70px)}
+aside{background:#0d1a2b;border-right:1px solid var(--line);padding:18px 12px;position:sticky;top:66px;height:calc(100vh - 66px);overflow:auto}
+.nav-label{font:10px var(--mono);letter-spacing:.16em;color:#6f849d;padding:14px 10px 7px;text-transform:uppercase}
+.nav a{display:flex;align-items:center;gap:11px;padding:9px 10px;border-radius:3px;color:#a9b9cb;font-weight:600;font-size:12px;margin:2px 0;border-left:2px solid transparent}
+.nav a:hover,.nav a.active{background:#1b2d43;color:white}.nav a.active{border-left-color:var(--red);color:#fff}.nav-icon{width:17px;text-align:center;color:#8196af;font-size:14px}
+.side-foot{margin-top:26px;padding:13px 10px;border-top:1px solid var(--line);color:var(--muted);font-size:11px}.side-foot b{color:var(--text);font:12px var(--mono)}
+main{min-width:0;padding:22px 26px 60px;max-width:1700px;width:100%;margin:auto}
+.eyebrow{font:10px var(--mono);letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+.page-title{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:17px}.page-title h1{font:600 clamp(27px,3vw,38px)/1.05 var(--serif);margin:5px 0 0;letter-spacing:-.02em}.page-title p{color:var(--muted);margin:7px 0 0;font-size:12px}.date-stamp{font:11px var(--mono);color:var(--muted);text-align:right}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:0 0 16px}.metric{border:1px solid var(--line);background:var(--panel);padding:11px 14px;min-height:68px}.metric label{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.1em}.metric strong{font:600 22px var(--serif);display:inline-block;margin-top:2px}.metric span{font:10px var(--mono);color:var(--green);margin-left:8px}
+.grid-main{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(270px,.85fr);gap:12px;align-items:stretch}
+.lead{position:relative;min-height:340px;overflow:hidden;border:1px solid #35465b;background:#101b2a}
+.lead-img{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(5,12,21,.93) 0%,rgba(5,12,21,.72) 45%,rgba(5,12,21,.08) 100%),linear-gradient(0deg,rgba(5,12,21,.88),transparent 60%),url("https://cdn.openart.ai/watermarked_images/pI01BQFVyAnFXuA50Wxl/thumbnail_3cb10696_1793999037068.webp");background-size:cover;background-position:center}
+.lead-content{position:relative;z-index:1;padding:26px;max-width:690px;min-height:340px;display:flex;flex-direction:column;justify-content:flex-end}
+.kicker{display:inline-flex;align-items:center;gap:7px;color:#ff929c;font:10px var(--mono);letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}.kicker:before{content:"";width:16px;height:2px;background:var(--red)}
+.lead h2{font:600 clamp(27px,3vw,39px)/1.06 var(--serif);max-width:610px;margin:0 0 11px}.lead p{color:#c6d2df;max-width:550px;font-size:12px;margin:0 0 16px}.lead-actions{display:flex;gap:8px;flex-wrap:wrap}
+.btn{border:1px solid #49617c;background:#15283d;padding:8px 12px;border-radius:2px;font-size:11px;font-weight:700}.btn.primary{background:var(--red);border-color:var(--red);color:white}.btn:hover{filter:brightness(1.15)}
+.feed-panel,.panel{border:1px solid var(--line);background:var(--panel);min-width:0}
+.panel-head{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:1px solid var(--line)}.panel-head h3{margin:0;font:600 17px var(--serif)}.panel-head span{font:10px var(--mono);color:var(--muted)}
+.feed-list{padding:3px 14px}.feed-item{padding:11px 0;border-bottom:1px solid #20334a}.feed-item:last-child{border:0}.feed-meta{display:flex;justify-content:space-between;gap:10px;color:#8298b2;font:9px var(--mono);text-transform:uppercase}.feed-item h4{font:600 13px/1.3 var(--sans);margin:5px 0 3px}.feed-item p{margin:0;color:#9eb0c3;font-size:10px}.feed-item a:hover h4{color:#fff}
+.lower{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:12px;margin-top:12px}
+.map-panel{padding:13px}.map-wrap{height:175px;background:radial-gradient(ellipse at center,#172c45,#0c1828 70%);border:1px solid #253b55;margin-top:10px;overflow:hidden}.map-wrap svg{width:100%;height:100%}.map-caption{display:flex;justify-content:space-between;color:var(--muted);font:9px var(--mono);margin-top:7px}
+.map-land{fill:#29425e;stroke:#4c6785;stroke-width:1}.map-grid{stroke:#39506c;stroke-width:.6;opacity:.5;fill:none}.map-dot{fill:var(--red);stroke:#ffadb5;stroke-width:2}.map-dot.alt{fill:var(--amber);stroke:#ffe1a5}
+.indicator-list{padding:7px 13px}.indicator{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid #20334a}.indicator:last-child{border:0}.indicator b{font-size:11px}.indicator small{display:block;color:var(--muted);font-size:9px}.indicator strong{font:12px var(--mono);white-space:nowrap}
+.broadcast{padding:13px}.broadcast-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.broadcast-card{background:#0b1727;border:1px solid #293e57;padding:10px;min-height:78px}.broadcast-card .screen{height:35px;background:linear-gradient(135deg,#203b58,#0e1b2d);display:flex;align-items:center;justify-content:center;color:#8ca3bc;font:9px var(--mono);margin-bottom:7px}.broadcast-card b{font-size:11px;display:block}.broadcast-card small{color:var(--muted);font-size:9px}
+.command{margin-top:13px;border:1px solid #49303c;background:linear-gradient(110deg,#171d2a,#111e30 65%)}.command .panel-head{border-color:#49303c}.command .panel-head h3{display:flex;align-items:center;gap:9px}.command .panel-head h3:before{content:"";width:7px;height:7px;background:var(--red);border-radius:50%;box-shadow:0 0 0 4px #ed3f5020}
+.command-body{display:grid;grid-template-columns:1.1fr 1fr;gap:16px;padding:14px}.command-form label{display:block;color:var(--muted);font:9px var(--mono);letter-spacing:.1em;text-transform:uppercase;margin:0 0 5px}.command-form select,.command-form input,.command-form textarea{width:100%;border:1px solid #344a64;background:#0b1727;color:var(--text);padding:9px;margin-bottom:9px;border-radius:2px;font-size:11px}.command-form textarea{min-height:62px;resize:vertical}.queue{border-left:1px solid #344054;padding-left:15px}.queue-head{display:flex;justify-content:space-between;color:var(--muted);font:9px var(--mono);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}.queue-item{padding:8px 9px;border:1px solid #2b4058;background:#0e1b2b;margin-bottom:6px}.queue-item b{font-size:11px;display:block}.queue-item small{color:var(--muted);font-size:9px}.queue-item .pending{color:var(--amber);font:9px var(--mono)}
+.section{margin-top:16px;scroll-margin-top:85px}.section-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.module-card{background:var(--panel);border:1px solid var(--line);padding:14px;min-height:120px}.module-card h3{font:600 17px var(--serif);margin:6px 0}.module-card p{font-size:11px;color:var(--muted);margin:0 0 10px}.module-card .state{font:9px var(--mono);color:var(--amber);text-transform:uppercase;letter-spacing:.08em}
+.agents{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;padding:12px}.agent{border:1px solid #2b4058;background:#0d1a2b;padding:9px}.agent b{font-size:10px;display:block}.agent small{color:var(--muted);font-size:9px}.agent em{display:block;color:var(--green);font:9px var(--mono);font-style:normal;margin-top:5px}
+.news-tools{display:flex;gap:7px;padding:10px 13px;border-bottom:1px solid var(--line)}.news-tools input,.news-tools select{background:#0b1727;border:1px solid #30445c;padding:7px;color:var(--text);font-size:10px;min-width:0}.news-tools input{flex:1}.news-table{width:100%;border-collapse:collapse}.news-table td{padding:9px 12px;border-bottom:1px solid #20334a;font-size:10px;vertical-align:top}.news-table td:last-child{white-space:nowrap;color:var(--muted);font:9px var(--mono)}.news-table a:hover{color:#fff;text-decoration:underline}.news-status{padding:9px 13px;color:var(--muted);font:9px var(--mono)}
+footer{margin-top:25px;border-top:1px solid var(--line);padding-top:12px;color:#70849c;font:9px var(--mono);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#eef3f8;color:#0b1727;padding:10px 16px;border-radius:3px;font-size:11px;font-weight:700;z-index:50;display:none;box-shadow:0 8px 30px #0008}
+@media(max-width:1100px){.shell{grid-template-columns:185px minmax(0,1fr)}main{padding:20px 16px}.grid-main{grid-template-columns:1fr}.lower{grid-template-columns:1fr 1fr}.broadcast{grid-column:span 2}}
+@media(max-width:760px){header{padding:0 14px;height:58px}.brand strong{font-size:16px}.head-right{gap:8px}.clock{display:none}.shell{display:block}aside{position:relative;top:auto;height:auto;padding:7px 9px;border-right:0;border-bottom:1px solid var(--line)}.nav{display:flex;overflow:auto;gap:4px}.nav-label,.side-foot{display:none}.nav a{white-space:nowrap;padding:8px 9px;font-size:10px}.nav-icon{display:none}main{padding:17px 12px 40px}.page-title{align-items:start}.date-stamp{display:none}.metrics{grid-template-columns:repeat(2,1fr)}.lead,.lead-content{min-height:310px}.lead-content{padding:18px}.lower{grid-template-columns:1fr}.broadcast{grid-column:auto}.command-body{grid-template-columns:1fr}.queue{border-left:0;border-top:1px solid #344054;padding:12px 0 0}.section-grid{grid-template-columns:1fr 1fr}.agents{grid-template-columns:repeat(2,1fr)}.news-table td:nth-child(2){display:none}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="brand"><div class="brand-mark">DF</div><div><strong>DIARIO FEDERAL</strong><small>CENTRO DE INFORMACIÓN GENERAL</small></div></div>
+  <div class="head-right"><div class="live"><i class="pulse"></i> MESA DE DIRECCIÓN</div><div class="clock" id="clock">--:--:--</div><button class="head-button" id="refreshNews">↻ ACTUALIZAR</button></div>
+</header>
+<div class="shell">
+<aside>
+  <nav class="nav">
+    <div class="nav-label">Centro de mando</div>
+    <a class="active" href="#inicio"><span class="nav-icon">◈</span>Vista general</a>
+    <a href="#actualidad"><span class="nav-icon">▤</span>Actualidad</a>
+    <a href="#mapa"><span class="nav-icon">◎</span>Mapa regional</a>
+    <a href="#consola"><span class="nav-icon">⌘</span>Consola de dirección</a>
+    <div class="nav-label">Unidades operativas</div>
+    <a href="#agencia"><span class="nav-icon">▣</span>Agencia de noticias</a>
+    <a href="#diario"><span class="nav-icon">▤</span>Diario Federal</a>
+    <a href="#tv-radio"><span class="nav-icon">▻</span>TV en vivo</a>
+    <a href="#tv-radio"><span class="nav-icon">◖</span>Radio</a>
+    <div class="nav-label">Inteligencia</div>
+    <a href="#especialistas"><span class="nav-icon">⌘</span>Perfiles especializados</a>
+    <a href="#indicadores"><span class="nav-icon">▥</span>Datos e indicadores</a>
+    <a href="#fuentes"><span class="nav-icon">⌁</span>Fuentes y señales</a>
+  </nav>
+  <div class="side-foot">SISTEMA<br><b>DF-CIG / v1.0</b><br><br>Consola local · revisión humana obligatoria</div>
+</aside>
+<main id="inicio">
+  <div class="page-title"><div><div class="eyebrow">Dirección editorial · Argentina / Mercosur / Mundo</div><h1>Centro de Información General</h1><p>Una mesa central para detectar, verificar, producir y distribuir información.</p></div><div class="date-stamp" id="dateStamp">BUENOS AIRES · --</div></div>
+  <div class="metrics">
+    <div class="metric"><label>Noticias recolectadas</label><strong id="metricNews">—</strong><span>RSS / GDELT</span></div>
+    <div class="metric"><label>Fuentes con respuesta</label><strong id="metricSources">—</strong><span>última captura</span></div>
+    <div class="metric"><label>Perfiles especializados</label><strong>55</strong><span>estructura prevista</span></div>
+    <div class="metric"><label>Publicación automática</label><strong>0</strong><span style="color:var(--amber)">aprobación humana</span></div>
+  </div>
+  <div class="grid-main">
+    <section class="lead" aria-label="Titular principal">
+      <div class="lead-img"></div><div class="lead-content">
+        <div class="kicker">Internacional · Mercosur · Seguimiento editorial</div>
+        <h2>Lula y Milei: la agenda del Mercosur bajo seguimiento</h2>
+        <p>La fotografía de referencia define el lenguaje visual de la mesa central. El sistema separa la imagen de maqueta de los hechos y titulares verificados que se incorporen desde las fuentes.</p>
+        <div class="lead-actions"><a class="btn primary" href="#actualidad">VER ACTUALIDAD</a><a class="btn" href="#consola">ABRIR CONSOLA</a></div>
+      </div>
+    </section>
+    <section class="feed-panel">
+      <div class="panel-head"><h3>Señales en desarrollo</h3><span id="feedCount">CARGANDO</span></div>
+      <div class="feed-list" id="liveFeed"><div class="feed-item"><h4>Consultando el último lote de noticias…</h4><p>Se mostrarán títulos y enlaces procedentes del recolector del proyecto.</p></div></div>
+    </section>
+  </div>
+  <div class="lower">
+    <section class="panel map-panel" id="mapa"><div class="panel-head" style="padding:0 0 9px;border:0"><h3>Radar regional</h3><span>VISTA DE REFERENCIA</span></div>
+      <div class="map-wrap"><svg viewBox="0 0 480 220" role="img" aria-label="Mapa esquemático de América del Sur"><path class="map-grid" d="M0 55H480M0 110H480M0 165H480M80 0V220M160 0V220M240 0V220M320 0V220M400 0V220"/><path class="map-land" d="M142 14L184 18 207 33 224 43 235 60 254 68 259 87 249 105 257 121 245 138 237 159 225 174 215 195 199 211 186 204 181 184 165 170 156 148 143 130 133 109 122 88 124 67 112 49 122 30Z"/><path class="map-land" d="M92 21L118 20 130 33 121 46 100 48 83 38Z"/><circle class="map-dot" cx="204" cy="170" r="5"/><circle class="map-dot alt" cx="231" cy="105" r="4"/><circle class="map-dot" cx="178" cy="128" r="4"/><circle class="map-dot alt" cx="155" cy="83" r="4"/><circle class="map-dot" cx="224" cy="191" r="4"/><g fill="#a9bed4" font-family="DM Mono" font-size="9"><text x="214" y="168">BA</text><text x="239" y="103">BR</text><text x="184" y="125">PY</text><text x="139" y="79">BO</text><text x="230" y="205">UY</text></g></svg></div>
+      <div class="map-caption"><span>ARGENTINA · CONO SUR · MERCOSUR</span><span>ESQUEMA, NO GIS EN VIVO</span></div>
+    </section>
+    <section class="panel" id="indicadores"><div class="panel-head"><h3>Indicadores de contexto</h3><span>DEMO / CONECTORES</span></div><div class="indicator-list">
+      <div class="indicator"><div><b>Economía y mercados</b><small>Series oficiales / mercados</small></div><strong>EN CONEXIÓN</strong></div>
+      <div class="indicator"><div><b>Clima y territorio</b><small>Alertas meteorológicas</small></div><strong>EN CONEXIÓN</strong></div>
+      <div class="indicator"><div><b>Energía e infraestructura</b><small>Electricidad / combustibles</small></div><strong>EN CONEXIÓN</strong></div>
+      <div class="indicator"><div><b>Política y gestión pública</b><small>Boletines / organismos</small></div><strong>EN CONEXIÓN</strong></div>
+    </div></section>
+    <section class="panel broadcast" id="tv-radio"><div class="panel-head" style="padding:0 0 9px;border:0"><h3>Señales audiovisuales</h3><span>ESTUDIO</span></div><div class="broadcast-grid">
+      <a class="broadcast-card" href="https://github.com/Alvarorfontana/diario-federal-studio" target="_blank" rel="noopener"><div class="screen">TV · CONTROL DE ESTUDIO</div><b>Canal Diario Federal</b><small>Conectar estado de emisión</small></a>
+      <a class="broadcast-card" href="https://github.com/Alvarorfontana/diario-federal-studio" target="_blank" rel="noopener"><div class="screen">RADIO · STREAM</div><b>Radio Diario Federal</b><small>Conectar señal y programación</small></a>
+    </div></section>
+  </div>
+  <section class="command" id="consola">
+    <div class="panel-head"><h3>Consola de dirección</h3><span>ORDENES · BORRADOR / APROBACIÓN HUMANA</span></div>
+    <div class="command-body">
+      <form class="command-form" id="commandForm">
+        <label for="target">Unidad de destino</label><select id="target"><option>Coordinación general</option><option>Agencia de Noticias</option><option>Diario Federal</option><option>TV / Producción audiovisual</option><option>Radio / Producción sonora</option><option>Investigación y datos</option><option>Corresponsalías</option></select>
+        <label for="priority">Prioridad</label><select id="priority"><option>Alta · urgente</option><option selected>Normal · agenda</option><option>Seguimiento · monitoreo</option></select>
+        <label for="instruction">Instrucción editorial</label><textarea id="instruction" required placeholder="Ej.: verificar declaraciones, contrastar fuentes y preparar un informe con enlaces originales…"></textarea>
+        <button class="btn primary" type="submit">＋ CREAR ORDEN DE TRABAJO</button>
+      </form>
+      <div class="queue"><div class="queue-head"><span>Cola de trabajo</span><span id="queueCount">0 ÓRDENES</span></div><div id="queueList"><div class="queue-item"><b>Sin órdenes cargadas</b><small>Las instrucciones creadas aparecerán aquí para revisión.</small></div></div></div>
+    </div>
+  </section>
+  <section class="section" id="actualidad">
+    <div class="panel-head"><h3>Actualidad · flujo de fuentes</h3><span>DATOS REALES DEL RECOLECTOR</span></div>
+    <div class="news-tools"><input id="newsSearch" type="search" placeholder="Buscar titular o medio…"><select id="newsFilter"><option value="">Todas las áreas</option><option>Política</option><option>Economía</option><option>Sociedad</option><option>Energía</option><option>Agro y clima</option><option>Internacional</option><option>General</option></select></div>
+    <div style="overflow:auto"><table class="news-table"><tbody id="newsRows"><tr><td>Esperando datos de noticias.json…</td></tr></tbody></table></div><div class="news-status" id="newsStatus">Fuente: datos/noticias.json · sin validar la veracidad de cada artículo</div>
+  </section>
+  <section class="section" id="agencia">
+    <div class="panel-head"><h3>Agencia de Noticias</h3><span>UNIDAD DE PRODUCCIÓN</span></div>
+    <div class="section-grid">
+      <div class="module-card"><div class="eyebrow">01 · Detección</div><h3>Radar de noticias</h3><p>Recolección RSS y GDELT, detección de temas, duplicados y señales regionales.</p><div class="state">Conector de titulares activo</div></div>
+      <div class="module-card"><div class="eyebrow">02 · Verificación</div><h3>Chequeo de fuentes</h3><p>Contraste de fuentes primarias, cronología, documentos y atribución.</p><div class="state">Revisión editorial requerida</div></div>
+      <div class="module-card"><div class="eyebrow">03 · Distribución</div><h3>Despacho de agencia</h3><p>Preparación de cables, alertas, resúmenes y paquetes para los demás canales.</p><div class="state">Publicación bloqueada sin aprobación</div></div>
+    </div>
+  </section>
+  <section class="section" id="diario">
+    <div class="panel-head"><h3>Diario Federal · conexión editorial</h3><span>DESTINO DE CONTENIDOS</span></div>
+    <div class="section-grid">
+      <div class="module-card"><div class="eyebrow">Sitio público</div><h3>Diario Federal</h3><p>La central prepara y deriva materiales; no publica por su cuenta en el sitio.</p><a class="btn" href="https://diariofederal.com.ar" target="_blank" rel="noopener">ABRIR SITIO PÚBLICO ↗</a></div>
+      <div class="module-card"><div class="eyebrow">Mesa editorial</div><h3>Paquetes de publicación</h3><p>Los borradores deben llevar título, fuente, enlaces, autoría y estado de verificación.</p><div class="state">Flujo preparado · API pendiente</div></div>
+      <div class="module-card"><div class="eyebrow">Archivo</div><h3>Memoria informativa</h3><p>Conservar antecedentes, cronologías, documentos y versiones aprobadas.</p><div class="state">Conector pendiente</div></div>
+    </div>
+  </section>
+  <section class="section" id="especialistas">
+    <div class="panel-head"><h3>Perfiles especializados</h3><span>55 ROLES PREVISTOS · NO SIMULA EJECUCIÓN EN VIVO</span></div>
+    <div class="agents" id="agents"></div>
+  </section>
+  <section class="section" id="fuentes">
+    <div class="panel-head"><h3>Fuentes y señales</h3><span>ESTADO DEL ÚLTIMO LOTE</span></div>
+    <div class="news-status" id="sourceStatus">Leyendo estado de fuentes…</div>
+  </section>
+  <footer><span>DIARIO FEDERAL · CENTRO DE INFORMACIÓN GENERAL</span><span>MAQUETA FUNCIONAL · DATOS CON PROCEDENCIA · APROBACIÓN HUMANA</span></footer>
+</main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const $=s=>document.querySelector(s);
+const roles=["Dirección editorial","Jefatura de información","Editor de política","Editor de economía","Editor de sociedad","Editor internacional","Editor de agro","Editor de energía","Periodista político","Periodista económico","Periodista judicial","Periodista parlamentario","Periodista internacional","Periodista regional","Periodista de investigación","Periodista de datos","Periodista científico","Periodista deportivo","Periodista cultural","Corresponsal Brasil","Corresponsal Uruguay","Corresponsal Paraguay","Corresponsal Chile","Corresponsal Bolivia","Corresponsal Europa","Corresponsal EE.UU.","Analista geopolítico","Analista económico","Analista electoral","Analista legislativo","Analista de políticas públicas","Analista de riesgo","Verificador de datos","Verificador audiovisual","Documentalista","Archivista","Curador de fuentes","Monitor RSS","Monitor de redes","Productor ejecutivo","Productor de TV","Productor de radio","Realizador audiovisual","Operador de streaming","Editor de video","Editor de audio","Diseñador gráfico","Infografista","Fotoperiodista","Coordinador de corresponsales","Coordinador de datos","Responsable de archivo","Responsable de audiencias","SEO editorial","Distribución multiplataforma"];
+const agents=$("#agents");roles.forEach((r,i)=>{const el=document.createElement("div");el.className="agent";el.innerHTML="<b>"+String(i+1).padStart(2,"0")+" · "+r+"</b><small>Perfil definido</small><em>○ A demanda</em>";agents.append(el)});
+function toast(t){const el=$("#toast");el.textContent=t;el.style.display="block";clearTimeout(window.__toastTimer);window.__toastTimer=setTimeout(()=>el.style.display="none",2800)}
+function tick(){const d=new Date();$("#clock").textContent=d.toLocaleTimeString("es-AR",{hour12:false});$("#dateStamp").textContent="BUENOS AIRES · "+d.toLocaleDateString("es-AR",{weekday:"short",day:"2-digit",month:"short",year:"numeric"}).toUpperCase()}tick();setInterval(tick,1000);
+document.querySelectorAll(".nav a").forEach(a=>a.addEventListener("click",()=>{document.querySelectorAll(".nav a").forEach(x=>x.classList.remove("active"));a.classList.add("active")}));
+const escapeHTML=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let allNews=[];
+function renderNews(){const q=$("#newsSearch").value.toLowerCase(),f=$("#newsFilter").value;const rows=allNews.filter(n=>(!f||n.tema===f)&&(!q||((n.titulo||"")+" "+(n.medio||"")).toLowerCase().includes(q))).slice(0,100);$("#newsRows").innerHTML=rows.length?rows.map(n=>'<tr><td><a href="'+escapeHTML(n.url||"#")+'" target="_blank" rel="noopener">'+escapeHTML(n.titulo||"Sin título")+'</a><div style="color:#7f93aa;font-size:9px;margin-top:3px">'+escapeHTML(n.resumen||"")+'</div></td><td>'+escapeHTML(n.medio||"Fuente sin identificar")+'<br><span style="color:#71869e">'+escapeHTML(n.tema||"General")+'</span></td><td>'+escapeHTML(n.fecha||"")+'</td></tr>').join(""):'<tr><td>No hay resultados para ese filtro.</td></tr>';$("#newsStatus").textContent=rows.length+" noticias visibles · "+allNews.length+" recibidas · títulos y enlaces, no texto completo."}
+async function loadNews(){try{const res=await fetch("./datos/noticias.json?ts="+Date.now(),{cache:"no-store"});if(!res.ok)throw new Error("HTTP "+res.status);const data=await res.json();allNews=Array.isArray(data)?data:(data.noticias||data.items||[]);const states=data.estado||[];$("#metricNews").textContent=allNews.length;$("#metricSources").textContent=states.filter(s=>s.ok).length+"/"+states.length;$("#feedCount").textContent=allNews.length+" TITULARES";$("#liveFeed").innerHTML=allNews.slice(0,5).map(n=>'<article class="feed-item"><div class="feed-meta"><span>'+escapeHTML(n.medio||n.pais||"FUENTE")+'</span><span>'+escapeHTML(n.tema||"GENERAL")+'</span></div><a href="'+escapeHTML(n.url||"#")+'" target="_blank" rel="noopener"><h4>'+escapeHTML(n.titulo||"Sin título")+'</h4></a><p>'+escapeHTML(n.fecha||"")+'</p></article>').join("")||'<div class="feed-item">No hay titulares en el archivo.</div>';$("#sourceStatus").innerHTML=states.length?states.map(s=>'<span style="display:inline-block;margin:3px 12px 3px 0;color:'+(s.ok?'var(--green)':'var(--amber)')+'">'+(s.ok?'● ':'○ ')+escapeHTML(s.fuente||"Fuente")+(s.ok?' · '+(s.notas||0)+' notas':' · '+escapeHTML(s.error||"sin respuesta"))+'</span>').join(""):"El archivo no contiene estado de fuentes.";renderNews()}catch(e){$("#metricNews").textContent="—";$("#metricSources").textContent="—";$("#feedCount").textContent="SIN DATOS";$("#liveFeed").innerHTML='<div class="feed-item"><h4>No se pudo leer el último lote</h4><p>'+escapeHTML(e.message)+' · revisá datos/noticias.json</p></div>';$("#newsRows").innerHTML='<tr><td>El archivo de noticias no está disponible.</td></tr>';$("#sourceStatus").textContent="No se pudo consultar el estado del recolector: "+e.message}}
+$("#refreshNews").addEventListener("click",()=>loadNews().then(()=>toast("Se volvió a consultar el archivo de noticias.")));$("#newsSearch").addEventListener("input",renderNews);$("#newsFilter").addEventListener("change",renderNews);
+let queue=[];try{queue=JSON.parse(localStorage.getItem("df_cig_queue")||"[]")}catch{}
+function renderQueue(){$("#queueCount").textContent=queue.length+" ÓRDENES";$("#queueList").innerHTML=queue.length?queue.slice().reverse().map((x,i)=>'<div class="queue-item"><b>'+escapeHTML(x.target)+'</b><small>'+escapeHTML(x.priority)+' · '+escapeHTML(x.when)+'</small><p style="margin:5px 0;color:#c1cedc;font-size:10px">'+escapeHTML(x.text)+'</p><span class="pending">● PENDIENTE DE APROBACIÓN</span></div>').join(""):'<div class="queue-item"><b>Sin órdenes cargadas</b><small>Las instrucciones creadas aparecerán aquí para revisión.</small></div>'}
+$("#commandForm").addEventListener("submit",e=>{e.preventDefault();const text=$("#instruction").value.trim();if(!text)return;queue.push({id:Date.now(),target:$("#target").value,priority:$("#priority").value,text,when:new Date().toLocaleString("es-AR")});try{localStorage.setItem("df_cig_queue",JSON.stringify(queue))}catch{}$("#instruction").value="";renderQueue();toast("Orden guardada como borrador. No se envió a ningún sistema externo.")});renderQueue();
+loadNews();
+</script>
+</body>
+</html>
