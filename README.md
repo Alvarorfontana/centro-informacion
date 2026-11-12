@@ -9,5 +9,9 @@ Herramienta interna de inteligencia periodística, separada del sitio público d
 Solo se guarda título, medio, fecha y enlace de cada nota, nunca el texto.
 Los expedientes de la página son ejemplos hasta que se conecte la verificación.
 
+Guías para redactar y verificar (para personas y agentes):
+- `guias/estandares-editoriales.md`: fuentes, controles antes del /admin, estilo y correcciones.
+- `guias/periodismo-de-investigacion.md`: método de expedientes, fuentes argentinas y acceso a la información.
+
 Para sumar una fuente RSS: agregarla en `datos/fuentes-rss.json` y correr el workflow a mano
 (pestaña Actions → Recolectar noticias → Run workflow). En "Fuentes y agencias" se ve si respondió.
