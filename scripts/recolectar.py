@@ -263,6 +263,16 @@ def main():
                 vistos.add(n["url"]); unicas.append(n)
         grupo[:] = unicas
 
+    # "Lo más cubierto": el mismo hecho contado por varios medios, ordenado por importancia (scripts/agrupar.py)
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from agrupar import agrupar, todas_las_notas
+        salida["cubierto"] = agrupar(todas_las_notas(salida))
+        print(f"lo más cubierto: {len(salida['cubierto'])} hechos con 2 o más medios", flush=True)
+    except Exception as e:  # noqa: BLE001
+        salida["cubierto"] = []
+        print(f"lo más cubierto: falló ({e})", flush=True)
+
     (DATOS / "noticias.json").write_text(json.dumps(salida, ensure_ascii=False, indent=1), encoding="utf-8")
     ok = sum(1 for e in salida["estado"] if e["ok"])
     print(f"Listo: {ok} de {len(salida['estado'])} fuentes respondieron, {len(vistos)} notas.")

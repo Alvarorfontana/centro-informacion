@@ -4383,5 +4383,488 @@
    "tipo": "Medio regional",
    "via": "RSS"
   }
+ ],
+ "cubierto": [
+  {
+   "titulo": "Nvidia evalúa la continuidad de Jensen Huang como CEO tras el escándalo por sus vínculos con una presunta espía china",
+   "puntaje": 23.0,
+   "detalle": {
+    "medios": 15,
+    "paises": 8,
+    "agencias": 0,
+    "region": 0,
+    "antiguedad": -0.0
+   },
+   "n_medios": 5,
+   "paises": [
+    "Alemania",
+    "Argentina",
+    "Francia",
+    "Reino Unido"
+   ],
+   "region": null,
+   "zona": "argentina",
+   "tema": "Geopolítica",
+   "ultima": "2026-11-12T11:12:00+00:00",
+   "notas": [
+    {
+     "titulo": "Nvidia evalúa la continuidad de Jensen Huang como CEO tras el escándalo por sus vínculos con una presunta espía china",
+     "url": "https://www.ambito.com/mundo/nvidia-evalua-la-continuidad-jensen-huang-como-ceo-el-escandalo-sus-vinculos-una-presunta-espia-china-n6344294",
+     "medio": "Ámbito",
+     "pais": "Argentina",
+     "fecha": "2026-11-12T11:12:00+00:00",
+     "tipo": "Medio",
+     "via": "RSS",
+     "region": null,
+     "zona": "argentina",
+     "tema": "Geopolítica",
+     "idioma": "castellano",
+     "resumen": "El directorio convocó a una reunión para definir el futuro del cofundador, investigado tras conocerse sus relaciones extramatrimoniales. El sector tecnológico sigue de cerca el desenlace del conflicto."
+    },
+    {
+     "titulo": "Nvidia y el futuro de Jensen Huang: ¿cómo su romance con una presunta espía china podría sacudir a Washington?",
+     "url": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261112-nvidia-y-el-futuro-de-jensen-huang-c%C3%B3mo-su-romance-con-una-presunta-esp%C3%ADa-china-podr%C3%ADa-sacudir-a-washington",
+     "medio": "France 24 Español",
+     "pais": "Francia",
+     "fecha": "2026-11-12T10:33:36+00:00",
+     "tipo": "Medio público",
+     "via": "RSS",
+     "region": null,
+     "zona": "mundo",
+     "tema": "Geopolítica",
+     "idioma": "castellano",
+     "resumen": "El consejo de administración de Nvidia se reunió para evaluar la continuidad de Jensen Huang al frente de la compañía, después de que salieran a la luz informaciones sobre sus presuntas relaciones extramatrimoniales, una de ellas con una empresaria china investigada por sus posibles vínculos con el espionaje de Beijing. El caso ha dejado de ser un asunto privado: amenaza con abrir una crisis de…"
+    },
+    {
+     "titulo": "Jensen Huang, el rey de los chips de IA, al borde de ser destituido de Nvidia",
+     "url": "https://www.dw.com/es/jensen-huang-el-rey-de-los-chips-de-ia-al-borde-de-ser-destituido-de-nvidia/a-79926415?maca=spa-rss-sp-all-1122-xml-mrss",
+     "medio": "DW Español",
+     "pais": "Alemania",
+     "fecha": "2026-11-12T08:38:00+00:00",
+     "tipo": "Medio público",
+     "via": "RSS",
+     "region": null,
+     "zona": "mundo",
+     "tema": "General",
+     "idioma": "castellano",
+     "resumen": "La junta de Nvidia debate la destitución de Jensen Huang tras el escándalo por sus relaciones extramatrimoniales y los presuntos vínculos de una de sus amantes con el espionaje chino."
+    },
+    {
+     "titulo": "La junta de Nvidia se reunió para discutir la destitución de Jensen Huang tras su infidelidad",
+     "url": "https://www.lagaceta.com.ar/nota/1162203/mundo/junta-nvidia-se-reunio-para-discutir-destitucion-jensen-huang-tras-infidelidad.html",
+     "medio": "La Gaceta (Tucumán)",
+     "pais": "Argentina",
+     "fecha": "2026-11-12T07:10:00+00:00",
+     "tipo": "Medio regional",
+     "via": "RSS",
+     "region": "norte-grande",
+     "zona": "argentina",
+     "tema": "General",
+     "idioma": "castellano",
+     "resumen": "Los medios estadounidenses indicaron que el encuentro se hizo en Santa Clara y que por el momento no hay un sucesor definido."
+    },
+    {
+     "titulo": "Quién es la supuesta espía china que tuvo una relación con el director de Nvidia, el gigante tecnológico de la IA (y otras claves del caso)",
+     "url": "https://www.bbc.com/mundo/articles/cked3dy4ynjxo?at_medium=RSS&at_campaign=rss",
+     "medio": "BBC Mundo",
+     "pais": "Reino Unido",
+     "fecha": "2026-11-09T23:31:27+00:00",
+     "tipo": "Medio público",
+     "via": "RSS",
+     "region": null,
+     "zona": "mundo",
+     "tema": "Geopolítica",
+     "idioma": "castellano",
+     "resumen": "El multimillonario de la industria tecnológica está inmerso en un escándalo de seguridad personal y nacional."
+    }
+   ]
+  },
+  {
+   "titulo": "Multitudinarias manifestaciones y algunos disturbios: así transcurrió la primera huelga general en España en 14 años",
+   "puntaje": 14.3,
+   "detalle": {
+    "medios": 9,
+    "paises": 6,
+    "agencias": 0,
+    "region": 0,
+    "antiguedad": -0.7
+   },
+   "n_medios": 3,
+   "paises": [
+    "Alemania",
+    "Francia",
+    "Reino Unido"
+   ],
+   "region": null,
+   "zona": "mundo",
+   "tema": "Política",
+   "ultima": "2026-11-12T07:14:45+00:00",
+   "notas": [
+    {
+     "titulo": "Multitudinarias manifestaciones y algunos disturbios: así transcurrió la primera huelga general en España en 14 años",
+     "url": "https://www.france24.com/es/europa/20261112-multitudinarias-manifestaciones-y-algunos-disturbios-as%C3%AD-transcurri%C3%B3-la-primera-huelga-general-en-espa%C3%B1a-en-14-a%C3%B1os",
+     "medio": "France 24 Español",
+     "pais": "Francia",
+     "fecha": "2026-11-12T07:14:45+00:00",
+     "tipo": "Medio público",
+     "via": "RSS",
+     "region": null,
+     "zona": "mundo",
+     "tema": "General",
+     "idioma": "castellano",
+     "resumen": "Millones de trabajadores secundaron una jornada de huelga general para exigir salarios dignos y medidas urgentes frente a la crisis de vivienda, en una movilización que paralizó parcialmente sectores estratégicos y reunió a miles de personas en las principales ciudades. La protesta transcurrió mayoritariamente de forma pacífica, aunque terminó con enfrentamientos entre manifestantes y fuerzas…"
+    },
+    {
+     "titulo": "En imágenes: graves disturbios en Barcelona y decenas de detenidos en la primera huelga general en España en 14 años",
+     "url": "https://www.bbc.com/mundo/articles/ckx28e5lj300o?at_medium=RSS&at_campaign=rss",
+     "medio": "BBC Mundo",
+     "pais": "Reino Unido",
+     "fecha": "2026-11-11T23:30:52+00:00",
+     "tipo": "Medio público",
+     "via": "RSS",
+     "region": null,
+     "zona": "mundo",
+     "tema": "General",
+     "idioma": "castellano",
+     "resumen": "Con un seguimiento de la huelga dispar, los españoles protestaron este miércoles por la crisis de la vivienda y el alto costo de la vida en el país europeo."
+    },
+    {
+     "titulo": "España vive huelga general y protestas por la vivienda antes de elecciones",
+     "url": "https://www.dw.com/es/españa-vive-huelga-general-y-protestas-por-la-vivienda-antes-de-elecciones/a-79924314?maca=spa-rss-sp-all-1122-xml-mrss",
+     "medio": "DW Español",
+     "pais": "Alemania",
+     "fecha": "2026-11-11T20:50:00+00:00",
+     "tipo": "Medio público",
+     "via": "RSS",
+     "region": null,
+     "zona": "mundo",
+     "tema": "Política",
+     "idioma": "castellano",
+     "resumen": "En Madrid, unas 120.000 personas marcharon y otras miles también salieron a las calles en numerosas ciudades del país."
+    }
+   ]
+  },
+  {
+   "titulo": "El mensaje completo del Papa León XIV durante el encuentro con los jóvenes en Palermo",
+   "puntaje": 14.0,
+   "detalle": {
+    "medios": 12,
+    "paises": 2,
+    "agencias": 0,
+    "region": 0,
+    "antiguedad": -0.0
+   },
+   "n_medios": 4,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "zona": "argentina",
+   "tema": "General",
+   "ultima": "2026-11-12T11:21:05+00:00",
+   "notas": [
+    {
+     "titulo": "Agenda de hoy, jueves 12 de noviembre del Papa León XIV en Lima: encuentro con los obispos y jóvenes en el Estadio Nacional",
+     "url": "https://www.infobae.com/peru/2026/11/12/agenda-de-hoy-jueves-12-de-noviembre-del-papa-leon-xiv-en-lima-encuentro-con-los-obispos-y-jovenes-en-el-estadio-nacional/",
+     "medio": "Infobae",
+     "pais": "Argentina",
+     "fecha": "2026-11-12T11:21:05+00:00",
+     "tipo": "Medio",
+     "via": "RSS",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "idioma": "castellano",
+     "resumen": "La agenda del jueves incluye una parada en Las Nazarenas, un acto sobre el futuro peruano y una actividad multitudinaria desde las 18:00 horas"
+    },
+    {
+     "titulo": "Cuatro jóvenes llevaron la compleja voz de una generación ante el papa León XIV en Palermo",
+     "url": "https://www.minutouno.com/sociedad/cuatro-jovenes-llevaron-la-compleja-voz-una-generacion-el-papa-leon-xiv-palermo-n6343773",
+     "medio": "minutouno.com",
+     "pais": "Argentina",
+     "fecha": "2026-11-11T05:00:00+00:00",
+     "tipo": null,
+     "via": "GDELT",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "idioma": "Spanish",
+     "resumen": null
+    },
+    {
+     "titulo": "El mensaje completo del Papa León XIV durante el encuentro con los jóvenes en Palermo",
+     "url": "https://www.clarin.com/politica/mensaje-completo-papa-leon-xiv-encuentro-jovenes-palermo_0_7DsyD7DFmh.html",
+     "medio": "clarin.com",
+     "pais": "Argentina",
+     "fecha": "2026-11-11T04:00:00+00:00",
+     "tipo": null,
+     "via": "GDELT",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "idioma": "Spanish",
+     "resumen": null
+    },
+    {
+     "titulo": "Si han caído , ¡ levántense !: el fuerte mensaje del Papa León XIV a los jóvenes",
+     "url": "https://diariolaprovinciasj.com/el-pais/si-han-caido-levantense-el-fuerte-mensaje-del-papa-leon-xiv-a-los-jovenes-396444/",
+     "medio": "diariolaprovinciasj.com",
+     "pais": "Argentina",
+     "fecha": "2026-11-11T02:30:00+00:00",
+     "tipo": null,
+     "via": "GDELT",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "idioma": "Spanish",
+     "resumen": null
+    }
+   ]
+  },
+  {
+   "titulo": "Falleció Ricardo Negro Rodríguez , referente de clubes como All Boys y Defensa y Justicia , a sus 72 años",
+   "puntaje": 7.3,
+   "detalle": {
+    "medios": 6,
+    "paises": 2,
+    "agencias": 0,
+    "region": 0,
+    "antiguedad": -0.7
+   },
+   "n_medios": 2,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "zona": "argentina",
+   "tema": "General",
+   "ultima": "2026-11-12T07:00:00+00:00",
+   "notas": [
+    {
+     "titulo": "Falleció Ricardo Negro Rodríguez , referente de clubes como All Boys y Defensa y Justicia , a sus 72 años",
+     "url": "https://www.perfil.com/sociedad/fallecio-ricardo-negro-rodriguez-referente-de-clubes-como-all-boys-y-defensa-y-justicia-a-sus-72-anos-aEPT07b5APEX",
+     "medio": "perfil.com",
+     "pais": "Argentina",
+     "fecha": "2026-11-12T07:00:00+00:00",
+     "tipo": null,
+     "via": "GDELT",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "idioma": "Spanish",
+     "resumen": null
+    },
+    {
+     "titulo": "Murió Ricardo el Negro Rodríguez , histórico entrenador del Ascenso y símbolo de All Boys",
+     "url": "https://www.clarin.com/deportes/murio-ricardo-negro-rodriguez-historico-entrenador-ascenso-simbolo-all-boys_0_s56axzm7ka.html",
+     "medio": "clarin.com",
+     "pais": "Argentina",
+     "fecha": "2026-11-12T01:30:00+00:00",
+     "tipo": null,
+     "via": "GDELT",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "idioma": "Spanish",
+     "resumen": null
+    }
+   ]
+  },
+  {
+   "titulo": "El Gobierno posterga las nuevas privatizaciones hidroeléctricas hasta 2027",
+   "puntaje": 6.8,
+   "detalle": {
+    "medios": 6,
+    "paises": 2,
+    "agencias": 0,
+    "region": 0,
+    "antiguedad": -1.2
+   },
+   "n_medios": 2,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "zona": "argentina",
+   "tema": "General",
+   "ultima": "2026-11-12T04:00:00+00:00",
+   "notas": [
+    {
+     "titulo": "El Gobierno posterga las nuevas privatizaciones hidroeléctricas hasta 2027",
+     "url": "https://www.clarin.com/energia-y-mineria/gobierno-posterga-nuevas-privatizaciones-hidroelectricas-2027_0_EU0KtRjkfI.html",
+     "medio": "clarin.com",
+     "pais": "Argentina",
+     "fecha": "2026-11-12T04:00:00+00:00",
+     "tipo": null,
+     "via": "GDELT",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "idioma": "Spanish",
+     "resumen": null
+    },
+    {
+     "titulo": "El Gobierno extendió hasta 2027 las concesiones de las represas hidroeléctricas",
+     "url": "https://www.rionegro.com.ar/economia/el-gobierno-extendio-hasta-2027-las-concesiones-de-las-represas-hidroelectricas-4794974/",
+     "medio": "rionegro.com.ar",
+     "pais": "Argentina",
+     "fecha": "2026-11-12T00:30:00+00:00",
+     "tipo": null,
+     "via": "GDELT",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "idioma": "Spanish",
+     "resumen": null
+    }
+   ]
+  },
+  {
+   "titulo": "Ezeiza abre nueva terminal para contener la lluvia de importaciones de Shein y Temu",
+   "puntaje": 6.7,
+   "detalle": {
+    "medios": 6,
+    "paises": 2,
+    "agencias": 0,
+    "region": 0,
+    "antiguedad": -1.3
+   },
+   "n_medios": 2,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "zona": "argentina",
+   "tema": "General",
+   "ultima": "2026-11-12T03:45:00+00:00",
+   "notas": [
+    {
+     "titulo": "Ezeiza abre nueva terminal para contener la lluvia de importaciones de Shein y Temu",
+     "url": "https://www.iprofesional.com/actualidad/468858-aeropuerto-ezeiza-abre-nueva-terminal-para-contener-lluvia-de-importaciones-de-shein-y-temu",
+     "medio": "iprofesional.com",
+     "pais": "Argentina",
+     "fecha": "2026-11-12T03:45:00+00:00",
+     "tipo": null,
+     "via": "GDELT",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "idioma": "Spanish",
+     "resumen": null
+    },
+    {
+     "titulo": "Shein y Temu cambian Ezeiza : La terminal que prepara Argentina para recibir los pedidos",
+     "url": "https://urgente24.com/zona-/shein-y-temu-cambian-ezeiza-la-terminal-que-prepara-argentina-recibir-los-pedidos-n636547",
+     "medio": "urgente24.com",
+     "pais": "Argentina",
+     "fecha": "2026-11-12T01:30:00+00:00",
+     "tipo": null,
+     "via": "GDELT",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "idioma": "Spanish",
+     "resumen": null
+    }
+   ]
+  },
+  {
+   "titulo": "Balearon en la cabeza a un joven de 19 años en barrio Echeverría y pelea por su vida : hay dos hombres detenidos",
+   "puntaje": 2.5,
+   "detalle": {
+    "medios": 6,
+    "paises": 2,
+    "agencias": 0,
+    "region": 0,
+    "antiguedad": -5.5
+   },
+   "n_medios": 2,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "zona": "argentina",
+   "tema": "General",
+   "ultima": "2026-11-11T02:30:00+00:00",
+   "notas": [
+    {
+     "titulo": "Balearon en la cabeza a un joven de 19 años en barrio Echeverría y pelea por su vida : hay dos hombres detenidos",
+     "url": "https://www.contextotucuman.com/nota/428028/balearon-en-la-cabeza-a-un-joven-de-19-anos-en-barrio-echeverria-y-pelea-por-su-vida-hay-dos-hombres-detenidos.html",
+     "medio": "contextotucuman.com",
+     "pais": "Argentina",
+     "fecha": "2026-11-11T02:30:00+00:00",
+     "tipo": null,
+     "via": "GDELT",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "idioma": "Spanish",
+     "resumen": null
+    },
+    {
+     "titulo": "Balearon en la cabeza a un joven de 19 años en el barrio Echeverría",
+     "url": "https://www.primerafuente.com.ar/noticias/133484/balearon-cabeza-joven-19-anos-barrio-echeverria",
+     "medio": "primerafuente.com.ar",
+     "pais": "Argentina",
+     "fecha": "2026-11-11T00:00:00+00:00",
+     "tipo": null,
+     "via": "GDELT",
+     "region": null,
+     "zona": "argentina",
+     "tema": "General",
+     "idioma": "Spanish",
+     "resumen": null
+    }
+   ]
+  },
+  {
+   "titulo": "Artista correntino obsequia al Papa León XIV una Virgen de Itatí elaborada con barro del Paraná",
+   "puntaje": 2.3,
+   "detalle": {
+    "medios": 6,
+    "paises": 2,
+    "agencias": 0,
+    "region": 0,
+    "antiguedad": -5.7
+   },
+   "n_medios": 2,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "zona": "argentina",
+   "tema": "Agro y clima",
+   "ultima": "2026-11-11T01:00:00+00:00",
+   "notas": [
+    {
+     "titulo": "Artista correntino obsequia al Papa León XIV una Virgen de Itatí elaborada con barro del Paraná",
+     "url": "https://www.cadena3.com/noticia/espectaculos/artista-correntino-obsequia-al-papa-leon-xiv-una-virgen-de-itati-elaborada-con-barro-del-parana_611903",
+     "medio": "cadena3.com",
+     "pais": "Argentina",
+     "fecha": "2026-11-11T01:00:00+00:00",
+     "tipo": null,
+     "via": "GDELT",
+     "region": null,
+     "zona": "argentina",
+     "tema": "Agro y clima",
+     "idioma": "Spanish",
+     "resumen": null
+    },
+    {
+     "titulo": "Un artista argentino le regaló al papa León XIV una Virgen de Itatí hecha con barro del Paraná",
+     "url": "https://www.ellitoral.com/nacionales/richardeitati-virgendeitati-leonxiv-rioparana-ceramicaguarani-corrientes-vaticano-alfareriaguarani_0_EweLhRunWo.html",
+     "medio": "ellitoral.com",
+     "pais": "Argentina",
+     "fecha": "2026-11-11T01:00:00+00:00",
+     "tipo": null,
+     "via": "GDELT",
+     "region": null,
+     "zona": "argentina",
+     "tema": "Agro y clima",
+     "idioma": "Spanish",
+     "resumen": null
+    }
+   ]
+  }
  ]
 }
