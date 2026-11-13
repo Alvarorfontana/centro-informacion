@@ -571,6 +571,16 @@ body { background: var(--papel); }
 .age-ag p { font-size: 12px; color: var(--tinta-2); }
 .age-ag small { font-size: 11.5px; color: var(--tinta-3); }
 .pill.sec { background: var(--rojo-suave); color: var(--rojo-tinta); }
+.age-ag summary { list-style: none; cursor: pointer; display: grid; gap: 3px; }
+.age-ag summary::-webkit-details-marker { display: none; }
+.age-ver-mas { font-size: 11.5px; color: var(--rojo-tinta); font-weight: 600; }
+.age-ag[open] .age-ver-mas { display: none; }
+.age-ag[open] { border-color: var(--rojo); }
+.age-det { border-top: 1px solid var(--linea); margin-top: 8px; padding-top: 8px; display: grid; gap: 6px; }
+.age-det h5 { font: 700 10.5px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--tinta-3); }
+.age-lista { list-style: none; padding: 0; margin: 0; display: grid; gap: 7px; font-size: 12.5px; }
+.age-lista small { color: var(--tinta-3); }
+.age-instr { white-space: pre-wrap; font: 12px/1.5 var(--mono); background: var(--hundido); border-radius: 4px; padding: 10px; max-height: 320px; overflow: auto; color: var(--tinta-2); }
 .chip { margin-left: auto; font: 700 10px var(--ui); letter-spacing: .04em; text-transform: uppercase; padding: 2px 7px; border-radius: 3px; white-space: nowrap; background: var(--hundido); color: var(--tinta-2); }
 .chip.ok { background: var(--v3-f); color: var(--v3); } .chip.medio { background: var(--v1-f); color: var(--v1); } .chip.mal { background: var(--rojo-suave); color: var(--rojo-tinta); }
 .age-tema { background: var(--superficie); border: 1px solid var(--linea); border-radius: 6px; margin-bottom: 12px; overflow: hidden; }
@@ -1673,8 +1683,8 @@ body { background: var(--papel); }
     }
     $('age-equipo').innerHTML = ['Selección', 'Producción', 'Edición'].map(function (et) {
       return '<div class="age-etapa"><h4>' + et + '</h4>' + A.filter(function (a) { return a.etapa === et; }).map(function (a) {
-        return '<div class="age-ag"><div class="fila"><span class="num">' + a.n + '</span><b>' + esc(a.nombre) + '</b>' + (a.ia ? '<span class="pill">IA</span>' : '') + chip(a.prendido === false ? 'apagado' : a.resultado) + '</div>' +
-          '<p>' + esc(a.hace) + '</p>' + (a.detalle ? '<small>' + esc(a.detalle) + '</small>' : '') + '</div>';
+        return '<details class="age-ag" data-agente="' + esc(a.id) + '"><summary><div class="fila"><span class="num">' + a.n + '</span><b>' + esc(a.nombre) + '</b>' + (a.ia ? '<span class="pill">IA</span>' : '') + chip(a.prendido === false ? 'apagado' : a.resultado) + '</div>' +
+          '<p>' + esc(a.hace) + '</p>' + (a.detalle ? '<small>' + esc(a.detalle) + '</small>' : '') + '<span class="age-ver-mas">Tocá para ver qué hizo</span></summary><div class="age-det"></div></details>';
       }).join('') + '</div>';
     }).join('');
   }
@@ -1782,6 +1792,45 @@ body { background: var(--papel); }
     opciones('v-eje', 'Toda la agenda', (d.ejes || []).map(function (e) { return [e.id, e.nombre]; }));
     if (RED) pintarMenu();
   }).catch(function () {});
+
+  // Detalle de cada agente: qué hizo en cada tema y, si usa IA, su instrucción completa
+  var SEC_DE_MON = { 'monitor-argentina': 'argentina', 'monitor-local': 'local', 'monitor-mercosur': 'mercosur', 'monitor-mundo': 'mundo' };
+  var INSTR = { jefe: 'jefe', redactor: 'redactor', verificador: 'verificador', titulador: 'titulador', corrector: 'corrector' };
+  function filaDet(ok, titulo, texto) {
+    return '<li><span class="semaforo ' + (ok === true ? 'verde' : ok === false ? 'rojo' : 'amarillo') + '"></span> <b>' + esc(titulo) + '</b>' + (texto ? '<br><small>' + texto + '</small>' : '') + '</li>';
+  }
+  function detalleAgente(id) {
+    var M = RED.menu || [], R = RED.reserva || [], l = [];
+    var tit = function (b) { return (b.titulos || [])[0] || b.titulo_tema; };
+    if (SEC_DE_MON[id]) {
+      var sec = SEC_DE_MON[id];
+      M.filter(function (b) { return b.seccion === sec; }).forEach(function (b) { l.push(filaDet(true, b.titulo_tema, 'Pasó al menú · ' + b.n_medios + (b.n_medios === 1 ? ' medio' : ' medios'))); });
+      R.filter(function (c) { return c.seccion === sec; }).slice(0, 8).forEach(function (c) { l.push(filaDet(null, c.titulo, 'Quedó en reserva · ' + c.n_medios + (c.n_medios === 1 ? ' medio' : ' medios'))); });
+      if (!l.length) l.push('<li><small>' + (id === 'monitor-local' ? 'No encontró noticias de los lugares de su lista: hoy no hay medios de zona norte entre las fuentes.' : 'No encontró temas en esta vuelta.') + '</small></li>');
+    } else if (id === 'jefe') {
+      M.forEach(function (b) { l.push(filaDet(true, b.titulo_tema, esc(SEC_N[b.seccion]) + (b.por_que ? ' · ' + esc(b.por_que) : ' · elegido por puntaje (' + b.puntaje + ')'))); });
+    } else {
+      M.forEach(function (b) {
+        var v = b.verificacion || {}, f = b.fuentes || [];
+        if (id === 'fuentes') l.push(filaDet(f.some(function (x) { return x.leida; }), b.titulo_tema, f.map(function (x) { return esc(x.medio) + (x.leida ? '' : ' (no abrió)') + (x.autor ? ' — ' + esc(x.autor) : ''); }).join(' · ')));
+        if (id === 'redactor') l.push(filaDet(!!b.cuerpo_html, b.titulo_tema, b.cuerpo_html ? 'Borrador de ' + b.cuerpo_html.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length + ' palabras' + (b.falta ? ' · falta: ' + esc(b.falta) : '') : 'Sin borrador'));
+        if (id === 'verificador') l.push(filaDet(v.estado ? v.estado !== 'rojo' : (b.cuerpo_html ? false : null), tit(b), v.estado ? esc(v.estado.toUpperCase()) + ((v.sin_respaldo || []).length ? ' · sin respaldo: ' + esc(v.sin_respaldo.join('; ')) : '') : (b.cuerpo_html ? 'No pudo revisar' : 'No había borrador para revisar')));
+        if (id === 'titulador') l.push(filaDet((b.titulos || []).length > 1 ? true : (b.cuerpo_html ? false : null), b.titulo_tema, (b.titulos || []).length > 1 ? b.titulos.map(esc).join(' / ') : (b.cuerpo_html ? 'No pudo titular' : 'No había borrador')));
+        if (id === 'corrector') l.push(filaDet(b.correccion ? true : (b.cuerpo_html ? false : null), tit(b), b.correccion ? esc(b.correccion) : (b.cuerpo_html ? 'No pudo corregir' : 'No había borrador')));
+        if (id === 'fotos') l.push(filaDet((b.fotos || []).length > 0, tit(b), (b.fotos || []).map(function (x) { return esc(x.credito); }).join(' · ') || 'Sin fotos'));
+        if (id === 'enlazador') l.push(filaDet((b.enlaces || []).length ? true : (b.cuerpo_html ? null : null), tit(b), (b.enlaces || []).length ? b.enlaces.map(function (x) { return (x.clase === 'interno' ? 'Diario: ' : 'Fuente: ') + esc(x.palabra); }).join(' · ') : (b.cuerpo_html ? 'No encontró dónde enlazar' : 'No había borrador')));
+      });
+    }
+    return '<h5>Qué hizo en esta vuelta</h5><ul class="age-lista">' + l.join('') + '</ul>' +
+      (INSTR[id] ? '<h5>Su instrucción</h5><pre class="age-instr" data-instr="' + INSTR[id] + '">Cargando…</pre><small>Se cambia en agentes/instrucciones/' + INSTR[id] + '.md</small>' : '');
+  }
+  $('age-equipo').addEventListener('toggle', function (ev) {
+    var d = ev.target; if (!d.open || !d.hasAttribute('data-agente') || !RED) return;
+    var caja = d.querySelector('.age-det'); caja.innerHTML = detalleAgente(d.getAttribute('data-agente'));
+    var pre = caja.querySelector('[data-instr]');
+    if (pre) fetch('agentes/instrucciones/' + pre.getAttribute('data-instr') + '.md', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw 0; return r.text(); })
+      .then(function (t) { pre.textContent = t; }).catch(function () { pre.textContent = 'No se pudo cargar la instrucción.'; });
+  }, true);
   function conRedaccion(d) { RED = d; pintarEquipo(); pintarAviso(); pintarMenu(); }
   pintarEquipo();
   pintarKpisExp(); pintarVivo(); pintarRegiones(); pintarPortada(); pintarMesa(); abrir(estado.sel); fijar(MAPA.cajas.mundo); ir();
