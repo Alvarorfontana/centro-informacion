@@ -521,7 +521,7 @@ def correr(nombre_agente, reg, ia, fn, *args):
     try:
         return fn(*args)
     except SinClave:
-        reg.anotar(nombre_agente, "sin clave de IA", "Falta cargar la clave gratuita de Gemini o Groq en GitHub")
+        reg.anotar(nombre_agente, "sin clave de IA", "No hay ninguna IA disponible")
     except Exception as e:  # noqa: BLE001
         reg.anotar(nombre_agente, "falló", str(e))
         traceback.print_exc()

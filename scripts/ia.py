@@ -4,6 +4,8 @@ IA gratuita para los agentes de redacción. No usa el plan de Claude.
 Prueba en orden:
   1. Gemini (Google), si existe la clave GEMINI_API_KEY.
   2. Groq, si existe la clave GROQ_API_KEY.
+  3. Pollinations (pollinations.ai), que no pide clave: es el respaldo para que funcione siempre.
+     Sin clave admite más o menos un pedido cada 15 segundos, así que va más lento.
 Las dos se sacan gratis (aistudio.google.com y console.groq.com) y se guardan como
 "secrets" del repositorio en GitHub (Settings → Secrets and variables → Actions).
 """
@@ -26,6 +28,9 @@ class IA:
         self.groq = os.environ.get("GROQ_API_KEY", "").strip()
         self.gemini_modelos = conf.get("gemini_modelos") or ["gemini-flash-latest"]
         self.groq_modelos = conf.get("groq_modelos") or ["llama-3.3-70b-versatile"]
+        self.libre = conf.get("sin_clave", True)  # Pollinations, sin clave
+        self.libre_modelos = conf.get("pollinations_modelos") or ["openai"]
+        self.pausa_libre = float(conf.get("pausa_sin_clave", 16))
         self.pausa = float(conf.get("pausa_segundos", 5))
         self.llamadas = 0
         self.usado = None  # "Gemini · modelo" que respondió la última vez
@@ -33,10 +38,10 @@ class IA:
 
     @property
     def disponible(self):
-        return bool(self.gemini or self.groq)
+        return bool(self.gemini or self.groq or self.libre)
 
-    def _post(self, url, cuerpo, cabeceras):
-        espera = self.pausa - (time.time() - self._ultima)
+    def _post(self, url, cuerpo, cabeceras, pausa=None):
+        espera = (self.pausa if pausa is None else pausa) - (time.time() - self._ultima)
         if espera > 0:
             time.sleep(espera)
         req = urllib.request.Request(url, data=json.dumps(cuerpo).encode(), headers={"Content-Type": "application/json", **cabeceras})
@@ -64,15 +69,25 @@ class IA:
         }, {"Authorization": f"Bearer {self.groq}"})
         return d["choices"][0]["message"]["content"]
 
+    def _pollinations(self, modelo, prompt):
+        d = self._post("https://text.pollinations.ai/openai", {
+            "model": modelo, "temperature": 0.4, "jsonMode": True,
+            "response_format": {"type": "json_object"},
+            "messages": [{"role": "user", "content": prompt}],
+        }, {"User-Agent": "CentroInformacion-DiarioFederal"}, pausa=self.pausa_libre)
+        return d["choices"][0]["message"]["content"]
+
     def json(self, prompt):
         """Manda el pedido y devuelve el JSON de la respuesta. Si un proveedor falla, prueba el siguiente."""
         if not self.disponible:
-            raise SinClave("Falta la clave GEMINI_API_KEY o GROQ_API_KEY")
+            raise SinClave("No hay ninguna IA configurada")
         intentos = []
         if self.gemini:
             intentos += [("Gemini", m, self._gemini) for m in self.gemini_modelos]
         if self.groq:
             intentos += [("Groq", m, self._groq) for m in self.groq_modelos]
+        if self.libre:
+            intentos += [("Pollinations", m, self._pollinations) for m in self.libre_modelos]
         errores = []
         for prov, modelo, fn in intentos:
             for vuelta in range(2):
@@ -82,7 +97,7 @@ class IA:
                     return leer_json(texto)
                 except urllib.error.HTTPError as e:
                     errores.append(f"{prov} {modelo}: HTTP {e.code}")
-                    if e.code == 429 and vuelta == 0:
+                    if e.code in (429, 502, 503) and vuelta == 0:
                         time.sleep(30)  # límite por minuto: esperar y reintentar una vez
                         continue
                     break  # 404 (modelo que no existe), 400, 403: probar el siguiente

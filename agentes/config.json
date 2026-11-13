@@ -23,7 +23,7 @@
     ]
   },
   "ia": {
-    "_ayuda": "Se usa Gemini si está la clave GEMINI_API_KEY; si falla o no está, Groq con GROQ_API_KEY. Las dos tienen uso gratuito.",
+    "_ayuda": "Orden: Gemini (clave GEMINI_API_KEY), Groq (clave GROQ_API_KEY) y, si no hay claves o fallan, Pollinations, que es gratis y no pide clave pero va más lento. Las claves gratuitas dan mejores resultados.",
     "gemini_modelos": [
       "gemini-flash-latest",
       "gemini-2.5-flash",
@@ -33,7 +33,12 @@
       "llama-3.3-70b-versatile",
       "openai/gpt-oss-120b"
     ],
-    "pausa_segundos": 5
+    "sin_clave": true,
+    "pollinations_modelos": [
+      "openai"
+    ],
+    "pausa_segundos": 5,
+    "pausa_sin_clave": 16
   },
   "agentes": [
     {

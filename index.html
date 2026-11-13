@@ -1673,7 +1673,9 @@ body { background: var(--papel); }
     $('age-cifras').innerHTML = [[M.length, 'temas en el menú'], [borr, 'borradores'], [(RED.reserva || []).length, 'en reserva'], [RED.ia && RED.ia.usado ? RED.ia.usado.split(' · ')[0] : 'Sin IA', 'IA gratuita']]
       .map(function (k) { return '<div><b>' + esc(k[0]) + '</b><small>' + k[1] + '</small></div>'; }).join('');
     $('age-cuando').textContent = 'armado ' + hace(RED.generado) + ' · elegido por ' + (RED.eleccion === 'ia' ? 'el jefe de redacción (IA)' : 'puntaje');
-    $('age-aviso').innerHTML = RED.ia && RED.ia.disponible ? '' :
+    $('age-aviso').innerHTML = RED.ia && RED.ia.usado && RED.ia.usado.indexOf('Pollinations') === 0 ?
+      '<div class="age-aviso"><b>Están escribiendo con una IA gratuita sin clave</b><span>Funciona, pero es más lenta y más simple. Para mejores borradores, cargá una clave gratuita de Google: entrá a <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a>, creala y guardala en <a href="' + REPO + '/settings/secrets/actions/new" target="_blank" rel="noopener">GitHub → Secrets</a> con el nombre <code>GEMINI_API_KEY</code>.</span></div>' :
+      RED.ia && RED.ia.disponible ? '' :
       '<div class="age-aviso"><b>Falta un paso para que escriban</b><span>Los monitores, las fuentes y las fotos ya funcionan. Para que el redactor, el verificador, el titulador y el corrector escriban hace falta una clave gratuita de IA (no usa tu plan de Claude):</span>' +
       '<ol><li>Entrá a <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a> con tu cuenta de Google y tocá "Create API key". Copiala.</li>' +
       '<li>En GitHub abrí <a href="' + REPO + '/settings/secrets/actions/new" target="_blank" rel="noopener">Settings → Secrets → Actions → New secret</a>. Nombre: <code>GEMINI_API_KEY</code>. Pegá la clave y guardá.</li>' +
