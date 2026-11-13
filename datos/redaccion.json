@@ -1,11 +1,11 @@
 {
- "generado": "2026-11-13T04:39:50+00:00",
- "noticias_de": "2026-11-13T01:06:20+00:00",
+ "generado": "2026-11-13T16:08:22+00:00",
+ "noticias_de": "2026-11-13T08:01:46+00:00",
  "eleccion": "reglas",
  "ia": {
   "disponible": true,
   "usado": "Pollinations · openai",
-  "llamadas": 12
+  "llamadas": 18
  },
  "diario": {
   "notas": 93,
@@ -21,10 +21,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "117 titulares de 24 medios → 12 temas",
+   "detalle": "137 titulares de 34 medios → 12 temas",
    "produjo": 12,
-   "inicio": "2026-11-13T04:29:53+00:00",
-   "fin": "2026-11-13T04:29:53+00:00"
+   "inicio": "2026-11-13T15:53:23+00:00",
+   "fin": "2026-11-13T15:53:23+00:00"
   },
   {
    "id": "monitor-local",
@@ -37,8 +37,8 @@
    "resultado": "funcionó",
    "detalle": "0 titulares de 0 medios → 0 temas",
    "produjo": 0,
-   "inicio": "2026-11-13T04:29:53+00:00",
-   "fin": "2026-11-13T04:29:53+00:00"
+   "inicio": "2026-11-13T15:53:23+00:00",
+   "fin": "2026-11-13T15:53:23+00:00"
   },
   {
    "id": "monitor-mercosur",
@@ -49,10 +49,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "55 titulares de 30 medios → 12 temas",
+   "detalle": "57 titulares de 32 medios → 12 temas",
    "produjo": 12,
-   "inicio": "2026-11-13T04:29:53+00:00",
-   "fin": "2026-11-13T04:29:53+00:00"
+   "inicio": "2026-11-13T15:53:23+00:00",
+   "fin": "2026-11-13T15:53:23+00:00"
   },
   {
    "id": "monitor-mundo",
@@ -63,10 +63,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "114 titulares de 9 medios → 12 temas",
+   "detalle": "114 titulares de 8 medios → 12 temas",
    "produjo": 12,
-   "inicio": "2026-11-13T04:29:53+00:00",
-   "fin": "2026-11-13T04:29:53+00:00"
+   "inicio": "2026-11-13T15:53:23+00:00",
+   "fin": "2026-11-13T15:53:23+00:00"
   },
   {
    "id": "jefe",
@@ -79,8 +79,8 @@
    "resultado": "falló",
    "detalle": "IA: Pollinations openai: HTTP 400 — eligió por puntaje",
    "produjo": 8,
-   "inicio": "2026-11-13T04:29:53+00:00",
-   "fin": "2026-11-13T04:30:42+00:00"
+   "inicio": "2026-11-13T15:53:23+00:00",
+   "fin": "2026-11-13T15:54:28+00:00"
   },
   {
    "id": "redactor",
@@ -91,10 +91,10 @@
    "ia": true,
    "prendido": true,
    "resultado": "falló",
-   "detalle": "1 borradores de 8 temas · último error: Pollinations openai: HTTP 400",
-   "produjo": 1,
-   "inicio": "2026-11-13T04:39:00+00:00",
-   "fin": "2026-11-13T04:39:50+00:00"
+   "detalle": "3 borradores de 8 temas · último error: Pollinations openai: Unterminated string starting at: line 1 column 16 (char 15)",
+   "produjo": 3,
+   "inicio": "2026-11-13T16:04:34+00:00",
+   "fin": "2026-11-13T16:04:32+00:00"
   },
   {
    "id": "fuentes",
@@ -105,10 +105,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "Leyó 8 de 10 notas originales; 6 con autor",
+   "detalle": "Leyó 7 de 9 notas originales; 6 con autor",
    "produjo": 8,
-   "inicio": "2026-11-13T04:38:59+00:00",
-   "fin": "2026-11-13T04:39:50+00:00"
+   "inicio": "2026-11-13T16:04:33+00:00",
+   "fin": "2026-11-13T16:08:22+00:00"
   },
   {
    "id": "verificador",
@@ -119,10 +119,10 @@
    "ia": true,
    "prendido": true,
    "resultado": "falló",
-   "detalle": "0 verde · 0 amarillo · 0 rojo · último error: Pollinations openai: HTTP 402",
-   "produjo": 0,
-   "inicio": "2026-11-13T04:36:06+00:00",
-   "fin": "2026-11-13T04:36:22+00:00"
+   "detalle": "1 verde · 0 amarillo · 0 rojo · último error: Pollinations openai: HTTP 400",
+   "produjo": 1,
+   "inicio": "2026-11-13T16:06:29+00:00",
+   "fin": "2026-11-13T16:01:02+00:00"
   },
   {
    "id": "fotos",
@@ -133,10 +133,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "28 fotos propuestas (20 libres)",
+   "detalle": "30 fotos propuestas (22 libres)",
    "produjo": 8,
-   "inicio": "2026-11-13T04:39:50+00:00",
-   "fin": "2026-11-13T04:39:50+00:00"
+   "inicio": "2026-11-13T16:08:16+00:00",
+   "fin": "2026-11-13T16:08:22+00:00"
   },
   {
    "id": "titulador",
@@ -147,10 +147,10 @@
    "ia": true,
    "prendido": true,
    "resultado": "falló",
-   "detalle": "Tituló 0 borradores · último error: Pollinations openai: HTTP 402",
-   "produjo": 0,
-   "inicio": "2026-11-13T04:37:04+00:00",
-   "fin": "2026-11-13T04:37:20+00:00"
+   "detalle": "Tituló 2 borradores · último error: Pollinations openai: HTTP 402",
+   "produjo": 2,
+   "inicio": "2026-11-13T16:07:21+00:00",
+   "fin": "2026-11-13T16:01:59+00:00"
   },
   {
    "id": "enlazador",
@@ -161,10 +161,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "0 enlaces al diario y 0 a fuentes",
-   "produjo": 1,
-   "inicio": "2026-11-13T04:37:21+00:00",
-   "fin": "2026-11-13T04:39:50+00:00"
+   "detalle": "1 enlaces al diario y 1 a fuentes",
+   "produjo": 3,
+   "inicio": "2026-11-13T16:08:22+00:00",
+   "fin": "2026-11-13T16:08:22+00:00"
   },
   {
    "id": "corrector",
@@ -175,10 +175,10 @@
    "ia": true,
    "prendido": true,
    "resultado": "falló",
-   "detalle": "Corrigió 0 borradores · último error: Pollinations openai: HTTP 400",
+   "detalle": "Corrigió 0 borradores · último error: Pollinations openai: HTTP 402",
    "produjo": 0,
-   "inicio": "2026-11-13T04:36:22+00:00",
-   "fin": "2026-11-13T04:37:04+00:00"
+   "inicio": "2026-11-13T16:07:05+00:00",
+   "fin": "2026-11-13T16:07:21+00:00"
   }
  ],
  "menu": [
@@ -186,8 +186,8 @@
    "id": "20261113-01",
    "seccion": "argentina",
    "por_que": "",
-   "titulo_tema": "Sube el precio del petróleo tras el rechazo de Trump al acuerdo con Irán y el ataque a cuatro buques en el Estrecho de Ormuz",
-   "puntaje": 8.8,
+   "titulo_tema": "La audiencia del lunes por el GNL en Sierra Grande tendrá 248 expositores",
+   "puntaje": 8.2,
    "n_medios": 1,
    "paises": [
     "Argentina"
@@ -195,64 +195,61 @@
    "region": "patagonia",
    "tema": "Energía",
    "ejes": [
-    "eeuu",
-    "energia",
-    "guerras"
+    "energia"
    ],
    "region_mundo": "América Latina",
    "titulos": [
-    "Sube el precio del petróleo tras el rechazo de Trump al acuerdo con Irán y el ataque a cuatro buques en el Estrecho de Ormuz"
+    "Secretaría de Río Negro convoca audiencia pública sobre Argentina LNG",
+    "Río Negro registra 248 expositores en audiencia sobre Argentina LNG",
+    "Audiencia de Sierra Grande evalúa impacto del gasoducto de 527 km"
    ],
-   "bajadas": [],
-   "cuerpo_html": "",
+   "bajadas": [
+    "La audiencia contó con 230 inscripciones de particulares y 18 especialistas, sumando 248 expositores.",
+    "El proyecto, impulsado por YPF, la italiana Eni y la compañía de Emiratos Árabes Unidos XRG, tiene una inversión estimada de 51.000 millones de dólares."
+   ],
+   "cuerpo_html": "<p>La <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/la-trama-secreta-del-fraude-a-la-intervencion-judicial-de-la-uom/\" title=\"Diario Federal: La trama secreta. Del fraude a la intervención judicial de la UOM\">Secretaría</a> de Ambiente y Cambio Climático de Río Negro convocó a una audiencia pública el lunes 15 de noviembre en Sierra Grande para el proyecto Argentina LNG. Según el medio regional Río Negro, se registraron 230 inscripciones de personas particulares y 18 exposiciones de especialistas, sumando 248 expositores. <strong>248</strong> expositores, pero el número de participantes individuales puede ser menor, porque algunos solicitó intervenir en más de un bloque.</p>\n<p>La convocatoria comenzó a las 8:00 a.m. en el gimnasio Vuta Mahuida, ubicado en la calle 28 de Octubre. La audiencia se centró en cuatro estudios de impacto ambiental: el gasoducto de 527 kilómetros que conecta Neuquén con el golfo San Matías, las unidades flotantes de licuefacción (FLNG), el poliducto y el complejo industrial. <strong>527 km</strong> del gasoducto, <strong>12</strong> millones de toneladas anuales de producción inicial y <strong>18</strong> millones de toneladas posibles de ampliación.</p>\n<p>El proyecto, impulsado por YPF, la italiana Eni y la compañía de Emiratos Árabes Unidos XRG, tiene una inversión estimada de 51.000 millones de dólares. La decisión final de inversión se había previsto para el jueves 26 de noviembre, pero se pospuso hasta el domingo 29. <strong>51.000 millones</strong> de dólares, <strong>10.000 millones</strong> de dólares en exportaciones anuales estimadas a partir de 2031.</p>\n<p>La audiencia es una instancia de participación ciudadana dentro del procedimiento de evaluación ambiental y no constituye una aprobación definitiva del proyecto. Sus conclusiones tampoco son vinculantes para las resoluciones finales de la autoridad ambiental provincial. La audiencia se transmitirá por el canal de YouTube de la Secretaría de Ambiente y Cambio Climático de Río Negro.</p>\n<blockquote>\"Argentina LNG\" es un megaproyecto de exportación de gas que busca convertir los recursos de Vaca Muerta en GNL para abastecer a los mercados internacionales.</blockquote>\n<p>La inscripción para exponer cerró el miércoles 11 de noviembre a las 8:00 a.m. y la audiencia se llevará a cabo en el gimnasio Vuta Mahuida, en la calle 28 de Octubre, a partir de las 8:00 a.m. del lunes 15 de noviembre.</p>",
    "fotos": [
     {
-     "url": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/rn-2026-11-12T210050.165.jpg?w=1200&h=630&crop=1&resize=1200,630",
-     "pagina": "https://www.rionegro.com.ar/mundo/sube-el-precio-del-petroleo-tras-el-rechazo-de-trump-al-acuerdo-con-iran-y-el-ataque-a-cuatro-buques-en-el-estrecho-de-ormuz-4796499/",
+     "url": "https://www.rionegro.com.ar/wp-content/uploads/2024/10/buque-para-GNL-RN.jpg?w=1200&h=630&crop=1&resize=1200,630",
+     "pagina": "https://www.rionegro.com.ar/politica/la-audiencia-del-lunes-por-el-gnl-en-sierra-grande-tendra-248-expositores/",
      "credito": "Foto: Río Negro",
      "fuente": "Río Negro",
-     "descripcion": "Sube el precio del petróleo tras el rechazo de Trump al acuerdo con Irán y el ataque a cuatro buques en el Estrecho de Ormuz",
+     "descripcion": "La audiencia del lunes por el GNL en Sierra Grande tendrá 248 expositores",
      "libre": false
     },
     {
-     "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Fontaine_sube_kreatinst-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Fontaine_sube_kreatinst-2.jpg",
-     "credito": "Foto: Kreatinst / Wikimedia Commons (CC BY-SA 4.0)",
-     "descripcion": "Fontaine Subé Place Drouet D'Erlon REIMS zoom",
-     "licencia": "CC BY-SA 4.0",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Capra_pyrenaica_victoriae%2C_juvenile_--_2013_--_Laguna_Grande%2C_Sierra_de_Gredos%2C_Espa%C3%B1a.jpg/1280px-Capra_pyrenaica_victoriae%2C_juvenile_--_2013_--_Laguna_Grande%2C_Sierra_de_Gredos%2C_Espa%C3%B1a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Capra_pyrenaica_victoriae,_juvenile_--_2013_--_Laguna_Grande,_Sierra_de_Gredos,_Espa%C3%B1a.jpg",
+     "credito": "Foto: J. Ligero Loarte / Wikimedia Commons (CC BY-SA 3.0)",
+     "descripcion": "A three month old Iberian ibex (Capra pyrenaica victoriae) in Sierra de Gredos, Spain.",
+     "licencia": "CC BY-SA 3.0",
      "fuente": "Wikimedia Commons",
      "libre": true
     },
     {
-     "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Tarjeta_%22SUBE%22.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Tarjeta_%22SUBE%22.JPG",
-     "credito": "Foto: 7B-ort-belgrano / Wikimedia Commons (CC BY-SA 4.0)",
-     "descripcion": "Foto de la tarjeta \"SUBE\" observada con un microscopio digital",
-     "licencia": "CC BY-SA 4.0",
-     "fuente": "Wikimedia Commons",
-     "libre": true
-    },
-    {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/1280px-Donald_Trump_official_portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Donald_Trump_official_portrait.jpg",
-     "credito": "Foto: Shealeah Craighead / Wikimedia Commons (Public domain)",
-     "descripcion": "President Donald Trump poses for his official portrait at The White House, in Washington, D.C., on Friday, October 6, 2017.  (Official White House Photo by Shealah Craighead)",
-     "licencia": "Public domain",
-     "fuente": "Wikimedia Commons",
-     "libre": true
-    },
-    {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/President_Trump_Visits_St._John%27s_Episcopal_Church_%2849963649028%29.jpg/1280px-President_Trump_Visits_St._John%27s_Episcopal_Church_%2849963649028%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:President_Trump_Visits_St._John%27s_Episcopal_Church_(49963649028).jpg",
-     "credito": "Foto: The White House from Washington, DC / Wikimedia Commons (Public domain)",
-     "descripcion": "President Donald J. Trump walks from the White House Monday evening, June 1, 2020, to St. John’s Episcopal Church, known as the church of Presidents’s, that was damaged by fire during demonstrations i",
-     "licencia": "Public domain",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Sierra_Grande_volcano.jpg/1280px-Sierra_Grande_volcano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Sierra_Grande_volcano.jpg",
+     "credito": "Foto: No machine-readable author provided. Pmsyyz assumed (based on copyright claims). / Wikimedia Commons (CC BY-SA 3.0)",
+     "descripcion": "Sierra Grande, an extinct shield volcano in northeast New Mexico as seen from the rim of Capulin Volcano National Monument.\n\nPhoto taken by myself, Phillip M. Stewart",
+     "licencia": "CC BY-SA 3.0",
      "fuente": "Wikimedia Commons",
      "libre": true
     }
    ],
-   "enlaces": [],
-   "relacionadas": [],
+   "enlaces": [
+    {
+     "url": "https://www.diariofederal.com.ar/articulo/la-trama-secreta-del-fraude-a-la-intervencion-judicial-de-la-uom/",
+     "clase": "interno",
+     "titulo": "Diario Federal: La trama secreta. Del fraude a la intervención judicial de la UOM",
+     "palabra": "Secretaría"
+    }
+   ],
+   "relacionadas": [
+    {
+     "titulo": "La trama secreta. Del fraude a la intervención judicial de la UOM",
+     "url": "https://www.diariofederal.com.ar/articulo/la-trama-secreta-del-fraude-a-la-intervencion-judicial-de-la-uom/"
+    }
+   ],
    "verificacion": {
     "independientes": 1,
     "paises": [
@@ -260,39 +257,36 @@
     ],
     "estatal": [],
     "oficiales": [],
-    "agencias_citadas": [
-     "Reuters"
-    ],
+    "agencias_citadas": [],
     "leidas": 1
    },
    "fuentes": [
     {
      "medio": "Río Negro",
-     "url": "https://www.rionegro.com.ar/mundo/sube-el-precio-del-petroleo-tras-el-rechazo-de-trump-al-acuerdo-con-iran-y-el-ataque-a-cuatro-buques-en-el-estrecho-de-ormuz-4796499/",
-     "titulo": "Sube el precio del petróleo tras el rechazo de Trump al acuerdo con Irán y el ataque a cuatro buques en el Estrecho de Ormuz",
+     "url": "https://www.rionegro.com.ar/politica/la-audiencia-del-lunes-por-el-gnl-en-sierra-grande-tendra-248-expositores/",
+     "titulo": "La audiencia del lunes por el GNL en Sierra Grande tendrá 248 expositores",
      "pais": "Argentina",
      "tipo": "Medio regional",
-     "fecha": "2026-11-13T00:04:29+00:00",
+     "fecha": "2026-11-13T03:15:00+00:00",
      "idioma": "castellano",
-     "autor": "Redacción",
-     "fecha_pub": "2026-11-12T21:04:29-03:00",
-     "imagen": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/rn-2026-11-12T210050.165.jpg?w=1200&h=630&crop=1&resize=1200,630",
-     "agencias": [
-      "Reuters"
-     ],
+     "autor": "Adrian Pecollo",
+     "fecha_pub": "2026-11-13T00:15:00-03:00",
+     "imagen": "https://www.rionegro.com.ar/wp-content/uploads/2024/10/buque-para-GNL-RN.jpg?w=1200&h=630&crop=1&resize=1200,630",
+     "agencias": [],
      "oficiales": [],
      "leida": true,
-     "palabras": 964,
+     "palabras": 467,
      "resumen": null
     }
-   ]
+   ],
+   "falta": "Confirmar el número exacto de participantes individuales que se presentarán en la audiencia."
   },
   {
    "id": "20261113-02",
    "seccion": "argentina",
    "por_que": "",
-   "titulo_tema": "El riesgo país bajó a 829 puntos tras el aval del FMI, aunque las acciones argentinas cayeron",
-   "puntaje": 8.6,
+   "titulo_tema": "El BCRA compró US$103 millones, su mayor adquisición en casi un mes, pero cayeron las reservas",
+   "puntaje": 8.0,
    "n_medios": 1,
    "paises": [
     "Argentina"
@@ -300,22 +294,40 @@
    "region": "patagonia",
    "tema": "Economía",
    "ejes": [
-    "fmi"
+    "economia"
    ],
    "region_mundo": "América Latina",
    "titulos": [
-    "El riesgo país bajó a 829 puntos tras el aval del FMI, aunque las acciones argentinas cayeron"
+    "El BCRA compró US$103 millones, su mayor adquisición en casi un mes, pero cayeron las reservas"
    ],
    "bajadas": [],
    "cuerpo_html": "",
    "fotos": [
     {
-     "url": "https://www.rionegro.com.ar/wp-content/uploads/2026/10/Bolsa-de-Buenos-Aires-.jpeg?w=1200&h=630&crop=1&resize=1200,630",
-     "pagina": "https://www.rionegro.com.ar/economia/el-riesgo-pais-bajo-a-829-puntos-tras-el-aval-del-fmi-pero-las-acciones-argentinas-cayeron/",
+     "url": "https://www.rionegro.com.ar/wp-content/uploads/2026/10/BCRA.jpg?w=1200&h=630&crop=1&resize=1200,630",
+     "pagina": "https://www.rionegro.com.ar/economia/el-bcra-compro-us103-millones-su-mayor-adquisicion-en-casi-un-mes-pero-cayeron-las-reservas-4796543/",
      "credito": "Foto: Río Negro",
      "fuente": "Río Negro",
-     "descripcion": "El riesgo país bajó a 829 puntos tras el aval del FMI, aunque las acciones argentinas cayeron",
+     "descripcion": "El BCRA compró US$103 millones, su mayor adquisición en casi un mes, pero cayeron las reservas",
      "libre": false
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/500.000_pesos_2026_bcra.png/1280px-500.000_pesos_2026_bcra.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:500.000_pesos_2026_bcra.png",
+     "credito": "Foto: Casa Rosada (Argentina Presidency of the Nation) / Wikimedia Commons (CC BY-SA 2.0)",
+     "descripcion": "prototipo del nuevo billete de 500,000 pesos argentinos presentado el 11/9/26 por el banco central, en circulación desde el 1/10/26.",
+     "licencia": "CC BY-SA 2.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/CaputoBausili.jpg/1280px-CaputoBausili.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:CaputoBausili.jpg",
+     "credito": "Foto: [argentina.gob.ar Gobierno argentino] / Wikimedia Commons (CC BY 4.0)",
+     "descripcion": "El ministro de Economía y el presidente del BCRA anunciando un nuevo programa con el Fondo Monetario Internacional",
+     "licencia": "CC BY 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
     }
    ],
    "enlaces": [],
@@ -333,19 +345,19 @@
    "fuentes": [
     {
      "medio": "Río Negro",
-     "url": "https://www.rionegro.com.ar/economia/el-riesgo-pais-bajo-a-829-puntos-tras-el-aval-del-fmi-pero-las-acciones-argentinas-cayeron/",
-     "titulo": "El riesgo país bajó a 829 puntos tras el aval del FMI, aunque las acciones argentinas cayeron",
+     "url": "https://www.rionegro.com.ar/economia/el-bcra-compro-us103-millones-su-mayor-adquisicion-en-casi-un-mes-pero-cayeron-las-reservas-4796543/",
+     "titulo": "El BCRA compró US$103 millones, su mayor adquisición en casi un mes, pero cayeron las reservas",
      "pais": "Argentina",
      "tipo": "Medio regional",
-     "fecha": "2026-11-12T22:45:06+00:00",
+     "fecha": "2026-11-13T02:01:09+00:00",
      "idioma": "castellano",
      "autor": "Redacción",
-     "fecha_pub": "2026-11-12T19:45:06-03:00",
-     "imagen": "https://www.rionegro.com.ar/wp-content/uploads/2026/10/Bolsa-de-Buenos-Aires-.jpeg?w=1200&h=630&crop=1&resize=1200,630",
+     "fecha_pub": "2026-11-13T07:03:00-03:00",
+     "imagen": "https://www.rionegro.com.ar/wp-content/uploads/2026/10/BCRA.jpg?w=1200&h=630&crop=1&resize=1200,630",
      "agencias": [],
      "oficiales": [],
      "leida": true,
-     "palabras": 488,
+     "palabras": 632,
      "resumen": null
     }
    ]
@@ -354,48 +366,65 @@
    "id": "20261113-03",
    "seccion": "argentina",
    "por_que": "",
-   "titulo_tema": "Javier Milei habló tras el dato de inflación y afirmó que buscará llevar la apertura de la economía al 90%",
-   "puntaje": 8.4,
+   "titulo_tema": "Denuncian que el gobierno de Kicillof frena habilitaciones de geriátricos y deja sin cobertura a jubilados",
+   "puntaje": 7.8,
    "n_medios": 1,
    "paises": [
     "Argentina"
    ],
-   "region": "norte-grande",
-   "tema": "Economía",
+   "region": "buenos-aires",
+   "tema": "Política",
    "ejes": [
-    "economia",
-    "gobierno"
+    "peronismo"
    ],
    "region_mundo": "América Latina",
    "titulos": [
-    "Javier Milei habló tras el dato de inflación y afirmó que buscará llevar la apertura de la economía al 90%"
+    "Denuncian que el gobierno de Kicillof frena habilitaciones de geriátricos y deja sin cobertura a jubilados"
    ],
    "bajadas": [],
    "cuerpo_html": "",
    "fotos": [
     {
-     "url": "https://img.lagaceta.com.ar/fotos/notas/2026/11/12/javier-milei-presidente-nacion-1162350-213612.png",
-     "pagina": "https://www.lagaceta.com.ar/nota/1162350/politica/javier-milei-hablo-tras-dato-inflacion-afirmo-buscara-llevar-apertura-economia-al-90porciento.html",
-     "credito": "Foto: La Gaceta (Tucumán)",
-     "fuente": "La Gaceta (Tucumán)",
-     "descripcion": "Javier Milei habló tras el dato de inflación y afirmó que buscará llevar la apertura de la economía al 90%",
+     "url": "https://assets.mdzol.com/social/1995083-9dd410c0d9.jpg",
+     "pagina": "https://www.mdzol.com/politica/2026/11/12/denuncian-que-el-gobierno-de-kicillof-frena-habilitaciones-de-geriatricos-y-deja-sin-cobertura-a-jubilados-1995083.html",
+     "credito": "Foto: mdzol.com",
+     "fuente": "mdzol.com",
+     "descripcion": "Denuncian que el gobierno de Kicillof frena habilitaciones de geriátricos y deja sin cobertura a jubilados",
      "libre": false
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Javier_Milei_VIVA_24_%285%29.jpg/1280px-Javier_Milei_VIVA_24_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Javier_Milei_VIVA_24_(5).jpg",
-     "credito": "Foto: Vox España / Wikimedia Commons (CC0)",
-     "descripcion": "Javier Milei in May 2024",
-     "licencia": "CC0",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Gestores_culturales_de_Luruaco_denuncian_irregularidades.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Gestores_culturales_de_Luruaco_denuncian_irregularidades.jpg",
+     "credito": "Foto: Melisa Martinez / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "Proporciona toda la información para ayudar a otros a entender lo que representa el archivo.",
+     "licencia": "CC BY-SA 4.0",
      "fuente": "Wikimedia Commons",
      "libre": true
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Javier_Milei_in_2026.jpg/1280px-Javier_Milei_in_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Javier_Milei_in_2026.jpg",
-     "credito": "Foto: Elekes Andor / Wikimedia Commons (CC BY 4.0)",
-     "descripcion": "Javier Milei",
-     "licencia": "CC BY 4.0",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Pobladores_de_Morona_denuncian_Carencia_de_Servicios_Basicos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Pobladores_de_Morona_denuncian_Carencia_de_Servicios_Basicos.jpg",
+     "credito": "Foto: https://www.flickr.com/photos/congresoperu/with/7100364977/ Congreso de la República del Perú.] / Wikimedia Commons (CC BY 2.0)",
+     "descripcion": "Pobladores de Morona denuncian Carencia de Servicios Basicos",
+     "licencia": "CC BY 2.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Axel_Kicillof_%28recorte%29.jpg/1280px-Axel_Kicillof_%28recorte%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Axel_Kicillof_(recorte).jpg",
+     "credito": "Foto: https://www.flickr.com/photos/culturaargentina Unknown authorUnknown author / Wikimedia Commons (CC BY-SA 2.0)",
+     "descripcion": "Se realizó el cierre del Foro Internacional por la Emancipación y la Igualdad, organizado por el Ministerio de Cultura de la Nación a través de la Secretaría de Coordinación Estratégica para el Pensam",
+     "licencia": "CC BY-SA 2.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Axel_Kicillof_20190328.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Axel_Kicillof_20190328.jpg",
+     "credito": "Foto: Unknown authorUnknown author / Wikimedia Commons (Public domain)",
+     "descripcion": "La comisión bicameral permanente de Seguimiento y Control de la Gestión de Contratación y de Pago de la Deuda Exterior de la Nación ratificó sus autoridades y reeligió como presidente al senador José ",
+     "licencia": "Public domain",
      "fuente": "Wikimedia Commons",
      "libre": true
     }
@@ -410,25 +439,21 @@
     "estatal": [],
     "oficiales": [],
     "agencias_citadas": [],
-    "leidas": 1
+    "leidas": 0
    },
    "fuentes": [
     {
-     "medio": "La Gaceta (Tucumán)",
-     "url": "https://www.lagaceta.com.ar/nota/1162350/politica/javier-milei-hablo-tras-dato-inflacion-afirmo-buscara-llevar-apertura-economia-al-90porciento.html",
-     "titulo": "Javier Milei habló tras el dato de inflación y afirmó que buscará llevar la apertura de la economía al 90%",
+     "medio": "mdzol.com",
+     "url": "https://www.mdzol.com/politica/2026/11/12/denuncian-que-el-gobierno-de-kicillof-frena-habilitaciones-de-geriatricos-y-deja-sin-cobertura-a-jubilados-1995083.html",
+     "titulo": "Denuncian que el gobierno de Kicillof frena habilitaciones de geriátricos y deja sin cobertura a jubilados",
      "pais": "Argentina",
-     "tipo": "Medio regional",
-     "fecha": "2026-11-12T21:36:00+00:00",
-     "idioma": "castellano",
-     "autor": "Redacción Política",
-     "fecha_pub": "2026-11-12T21:36:18-03:00",
-     "imagen": "https://img.lagaceta.com.ar/fotos/notas/2026/11/12/javier-milei-presidente-nacion-1162350-213612.png",
-     "agencias": [],
-     "oficiales": [],
-     "leida": true,
-     "palabras": 610,
-     "resumen": "El mandatario participó de la Gala Endeavor Argentina 2026 y aseguró que la Argentina cuenta con los recursos necesarios para impulsar un boom industrial."
+     "tipo": null,
+     "fecha": "2026-11-13T00:45:00+00:00",
+     "idioma": "Spanish",
+     "leida": false,
+     "error": "HTTP Error 403: Forbidden",
+     "imagen": "https://assets.mdzol.com/social/1995083-9dd410c0d9.jpg",
+     "resumen": null
     }
    ]
   },
@@ -436,8 +461,8 @@
    "id": "20261113-04",
    "seccion": "argentina",
    "por_que": "",
-   "titulo_tema": "Presupuesto 2027: el Gobierno retomó las negociaciones y busca llevar el proyecto al recinto el 25 de noviembre",
-   "puntaje": 8.1,
+   "titulo_tema": "Jaldo: “Las internas partidarias nunca tienen las garantías que pueden brindar las PASO”",
+   "puntaje": 7.7,
    "n_medios": 1,
    "paises": [
     "Argentina"
@@ -445,55 +470,55 @@
    "region": "norte-grande",
    "tema": "General",
    "ejes": [
-    "energia"
+    "congreso"
    ],
    "region_mundo": "América Latina",
    "titulos": [
-    "Presupuesto 2027: el Gobierno retomó las negociaciones y busca llevar el proyecto al recinto el 25 de noviembre"
+    "Jaldo: “Las internas partidarias nunca tienen las garantías que pueden brindar las PASO”"
    ],
    "bajadas": [],
    "cuerpo_html": "",
    "fotos": [
     {
-     "url": "https://img.lagaceta.com.ar/fotos/notas/2026/10/22/1159067_202610212319580000001.jpg",
-     "pagina": "https://www.lagaceta.com.ar/nota/1162328/politica/presupuesto-2027-gobierno-retomo-negociaciones-busca-llevar-proyecto-al-recinto-25-noviembre.html",
+     "url": "https://img.lagaceta.com.ar/fotos/notas/2026/11/12/osvaldo-jaldo-1162349-211801.jpg",
+     "pagina": "https://www.lagaceta.com.ar/nota/1162349/politica/jaldo-internas-partidarias-nunca-tienen-garantias-pueden-brindar-paso.html",
      "credito": "Foto: La Gaceta (Tucumán)",
      "fuente": "La Gaceta (Tucumán)",
-     "descripcion": "Presupuesto 2027: el Gobierno retomó las negociaciones y busca llevar el proyecto al recinto el 25 de noviembre",
+     "descripcion": "Jaldo: “Las internas partidarias nunca tienen las garantías que pueden brindar las PASO”",
      "libre": false
     },
     {
-     "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Government_budget_allocations_for_R%26D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Government_budget_allocations_for_R%26D.jpg",
-     "credito": "Foto: Vicente Neto / Wikimedia Commons (CC BY 4.0)",
-     "descripcion": "Government budget allocations for R&amp;D",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/JaldoREORarg_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:JaldoREORarg_(cropped).png",
+     "credito": "Foto: [argentina.gob.ar Gobierno argentino] / Wikimedia Commons (CC BY 4.0)",
+     "descripcion": "Los gobernadores de Tucumán y Catamarca en una reunión con el ministro de Economía, para adherir al Régimen de Extinción de Obligaciones Recíprocas",
      "licencia": "CC BY 4.0",
      "fuente": "Wikimedia Commons",
      "libre": true
     },
     {
-     "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Wellbeing_Budget_Process_New_Zealand.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Wellbeing_Budget_Process_New_Zealand.png",
-     "credito": "Foto: Treasury of New Zealand / Wikimedia Commons (CC BY-SA 4.0)",
-     "descripcion": "Wellbeing Budget Process New Zealand",
-     "licencia": "CC BY-SA 4.0",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Osvaldo_Jaldo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Osvaldo_Jaldo.jpg",
+     "credito": "Foto: Mauro Rico / Ministerio de Cultura de la Nación / Wikimedia Commons (CC BY-SA 2.0)",
+     "descripcion": "San Miguel de Tucumán, 8 de julio de 2018 - En la Casa Histórica de Tucumán, se realizo la tradicional vigilia de la independencia.\nFotos: Mauro Rico / Ministerio de Cultura de la Nación.",
+     "licencia": "CC BY-SA 2.0",
      "fuente": "Wikimedia Commons",
      "libre": true
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Gobierno_Estatal_de_Bavaria%2C_M%C3%BAnich%2C_Alemania%2C_2013-02-03%2C_DD_04.JPG/1280px-Gobierno_Estatal_de_Bavaria%2C_M%C3%BAnich%2C_Alemania%2C_2013-02-03%2C_DD_04.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Gobierno_Estatal_de_Bavaria,_M%C3%BAnich,_Alemania,_2013-02-03,_DD_04.JPG",
-     "credito": "Foto: Diego Delso / Wikimedia Commons (CC BY-SA 3.0)",
-     "descripcion": "Frontal view of the Bayerische Staatskanzlei (Bavarian State Chancellery), Hofgarten, Munich, Germany. The institution is serving as the executive office of the Minister-President as head of governmen",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/El_Paso_Skyline.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:El_Paso_Skyline.jpg",
+     "credito": "Foto: autor en Wikimedia / Wikimedia Commons (CC BY-SA 3.0)",
+     "descripcion": "",
      "licencia": "CC BY-SA 3.0",
      "fuente": "Wikimedia Commons",
      "libre": true
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Gobierno_Estatal_de_Baviera%2C_M%C3%BAnich%2C_Alemania%2C_2017-07-07%2C_DD_01.jpg/1280px-Gobierno_Estatal_de_Baviera%2C_M%C3%BAnich%2C_Alemania%2C_2017-07-07%2C_DD_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Gobierno_Estatal_de_Baviera,_M%C3%BAnich,_Alemania,_2017-07-07,_DD_01.jpg",
-     "credito": "Foto: Diego Delso / Wikimedia Commons (CC BY-SA 4.0)",
-     "descripcion": "Frontal view of the Bayerische Staatskanzlei (Bavarian State Chancellery), Hofgarten, Munich, Germany. The institution is serving as the executive office of the Minister-President as head of governmen",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Playa_del_Paso_-_vue_de_l%27extr%C3%A9mit%C3%A9_de_la_coul%C3%A9e_de_lave.jpg/1280px-Playa_del_Paso_-_vue_de_l%27extr%C3%A9mit%C3%A9_de_la_coul%C3%A9e_de_lave.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Playa_del_Paso_-_vue_de_l%27extr%C3%A9mit%C3%A9_de_la_coul%C3%A9e_de_lave.jpg",
+     "credito": "Foto: Patrice78500 / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "Playa del Paso - El Golfo - Lanzarote",
      "licencia": "CC BY-SA 4.0",
      "fuente": "Wikimedia Commons",
      "libre": true
@@ -514,20 +539,20 @@
    "fuentes": [
     {
      "medio": "La Gaceta (Tucumán)",
-     "url": "https://www.lagaceta.com.ar/nota/1162328/politica/presupuesto-2027-gobierno-retomo-negociaciones-busca-llevar-proyecto-al-recinto-25-noviembre.html",
-     "titulo": "Presupuesto 2027: el Gobierno retomó las negociaciones y busca llevar el proyecto al recinto el 25 de noviembre",
+     "url": "https://www.lagaceta.com.ar/nota/1162349/politica/jaldo-internas-partidarias-nunca-tienen-garantias-pueden-brindar-paso.html",
+     "titulo": "Jaldo: “Las internas partidarias nunca tienen las garantías que pueden brindar las PASO”",
      "pais": "Argentina",
      "tipo": "Medio regional",
-     "fecha": "2026-11-12T19:44:00+00:00",
+     "fecha": "2026-11-13T00:00:00+00:00",
      "idioma": "castellano",
      "autor": "Redacción Política",
-     "fecha_pub": "2026-11-12T19:44:42-03:00",
-     "imagen": "https://img.lagaceta.com.ar/fotos/notas/2026/10/22/1159067_202610212319580000001.jpg",
+     "fecha_pub": "2026-11-12T21:19:43-03:00",
+     "imagen": "https://img.lagaceta.com.ar/fotos/notas/2026/11/12/osvaldo-jaldo-1162349-211801.jpg",
      "agencias": [],
      "oficiales": [],
      "leida": true,
-     "palabras": 567,
-     "resumen": "La discusión incluye reclamos por el Impuesto a los Combustibles, coparticipación y fondos para distintas áreas."
+     "palabras": 472,
+     "resumen": "El mandatario reafirmó las virtudes del sistema de definición de candidaturas para cargos nacionales."
     }
    ]
   },
@@ -535,64 +560,46 @@
    "id": "20261113-05",
    "seccion": "mercosur",
    "por_que": "",
-   "titulo_tema": "Professora é demitida de escola em SC após foto em apoio a Lula",
-   "puntaje": 7.7,
+   "titulo_tema": "Senado aprova texto-base de pacote que prevê economia de até R$ 60 bi",
+   "puntaje": 6.8,
    "n_medios": 1,
    "paises": [
     "Brasil"
    ],
-   "region": "",
-   "tema": "General",
+   "region": "vacío",
+   "tema": "Economía",
    "ejes": [
-    "mercosur"
+    "congreso"
    ],
    "region_mundo": "América Latina",
    "titulos": [
-    "Professora é demitida de escola em SC após foto em apoio a Lula"
+    "Senado aprova texto-base de pacote que prevê economia de até R$ 60 bi"
    ],
    "bajadas": [],
-   "cuerpo_html": "",
+   "cuerpo_html": "<p>El Senado brasileño aprobó el texto base del proyecto de ajuste fiscal del gobierno con 45 votos a favor y 31 en contra. La votación, que duró casi cuatro horas, se realizó el 12 de noviembre de 2026, según <strong>Agência Brasil</strong>.</p>\n<p>El proyecto busca reducir gastos y aumentar ingresos, estimando una economía de entre <strong>R$ 50 000 000 000</strong> y <strong>R$ 60 000 000 000</strong> en 2027. El ministro Bruno Moretti explicó que la reducción se aplicará de forma lineal, con un 10 % en beneficios tributarios y un corte adicional al final de 2025. En algunos casos, la reducción puede llegar hasta el 20 % de los valores originales.</p>\n<p>Existen excepciones: los beneficios vinculados a la nómina, al sector de tecnologías de información, a semicondutores y a la exención de vehículos para personas con discapacidad y autistas quedan sin cambios. Además, el límite de crecimiento de gastos en años de aplicación de los mecanismos de contención fiscal se ajusta de un 2,5 % a un 2 % sobre la inflación.</p>\n<p>El proyecto elimina, hasta 2030, las contribuciones extraordinarias de exportaciones de petróleo del cálculo del piso federal de salud. También establece un plazo de 120 días para que el Congreso regule los pagos que superen el techo del funcionalismo público, cuyo límite actual es de <strong>R$ 46 300</strong> por persona.</p>\n<p>Para la estabilización de precios del diésel, el paquete incluye una flexibilización fiscal. El gobierno podrá descontar hasta <strong>R$ 10 500 000 000</strong> de gastos extraordinarios destinados a subsidios a productores e importadores de combustible, justificando la medida por el impacto de la guerra en Oriente Medio en los precios internacionales del petróleo.</p>\n<p>La propuesta no elimina los gastos, pero permite que ciertos valores se excluyan del cálculo de cumplimiento de la meta fiscal. La oposición, encabezada por el senador Rogério Marinho (PL-RN), criticó la rapidez de la tramitación y calificó la propuesta como un aumento de impuestos. Aun así, el requerimiento de urgencia fue aprobado con 40 votos a 38, lo que permitió que el texto se analizara directamente en el pleno.</p>\n<p>El relator, Eduardo Braga (MDB-AM), defendió el proyecto y afirmó que recibió aportes de parlamentarios, incorporando unas 50 enmiendas durante la elaboración del parecer. El gobierno sostiene que el paquete es necesario para controlar el crecimiento de los gastos, ampliar la recaudación y abrir espacio en el presupuesto de 2027.</p>\n<p>Los detalles finales se analizarán probablemente el 17 de noviembre, según <strong>Agência Brasil</strong>. Después de eso, el proyecto seguirá al Congreso de la Cámara de Diputados.</p>\n<blockquote>\"El relator, Eduardo Braga, defendió el texto y afirmó que recibió contribuciones de parlamentarios, con aproximadamente 50 enmiendas incorporadas durante la elaboración del parecer\". Agência Brasil</blockquote>",
    "fotos": [
     {
-     "url": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/public/thumbs/thumb_1200x600_agbrasil.png",
-     "pagina": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/professora-e-demitida-de-escola-em-sc-apos-foto-em-apoio-lula",
+     "url": "https://imagens.ebc.com.br/TvOMb2Hb5US1-3Zj1B458fNfYng=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/12/sessao_do_congresso_12-11-26-2_0.jpg?itok=-u9GH371",
+     "pagina": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/senado-aprova-texto-base-de-pacote-que-preve-economia-de-ate-r-60-bi",
      "credito": "Foto: Agência Brasil",
      "fuente": "Agência Brasil",
-     "descripcion": "Professora é demitida de escola em SC após foto em apoio a Lula",
+     "descripcion": "Senado aprova texto-base de pacote que prevê economia de até R$ 60 bi",
      "libre": false
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/African_teacher_teaching_under_a_tree.jpg/1280px-African_teacher_teaching_under_a_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:African_teacher_teaching_under_a_tree.jpg",
-     "credito": "Foto: Tamandani-Lungu / Wikimedia Commons (CC BY-SA 4.0)",
-     "descripcion": "This is an image of \"African people at work\" from",
-     "licencia": "CC BY-SA 4.0",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/2024-11-12%2C_Senado_Federal_do_Brasil_-_399.jpg/1280px-2024-11-12%2C_Senado_Federal_do_Brasil_-_399.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:2024-11-12,_Senado_Federal_do_Brasil_-_399.jpg",
+     "credito": "Foto: Senado Federal / Wikimedia Commons (CC BY 2.0)",
+     "descripcion": "Subcomissão Permanente de Direitos das Pessoas com Doenças Raras (CASRARAS) realiza audiência pública para debater a normatização do acesso das pessoas com doenças raras a medicamentos, dispositivos m",
+     "licencia": "CC BY 2.0",
      "fuente": "Wikimedia Commons",
      "libre": true
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Professora_Dulce_Sarmento.jpg/1280px-Professora_Dulce_Sarmento.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Professora_Dulce_Sarmento.jpg",
-     "credito": "Foto: Túllio F / Wikimedia Commons (CC BY-SA 4.0)",
-     "descripcion": "Foto da professora Dulce Sarmento em Montes Claros",
-     "licencia": "CC BY-SA 4.0",
-     "fuente": "Wikimedia Commons",
-     "libre": true
-    },
-    {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Anuncio_Rio2016.jpg/1280px-Anuncio_Rio2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Anuncio_Rio2016.jpg",
-     "credito": "Foto: Ricardo Stuckert (Presidency of the Republic) / Wikimedia Commons (CC BY 3.0 br)",
-     "descripcion": "The President of Brazil, Luiz Inácio Lula da Silva, holds a national flag during the celebration of the choice of Rio de Janeiro as the host city of the 2016 Summer Olympic Games.(From left to right: ",
-     "licencia": "CC BY 3.0 br",
-     "fuente": "Wikimedia Commons",
-     "libre": true
-    },
-    {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/S%C3%A9rgio_Cabral_Filho_e_Lula_no_Cristo_-_14jun2007.jpg/1280px-S%C3%A9rgio_Cabral_Filho_e_Lula_no_Cristo_-_14jun2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:S%C3%A9rgio_Cabral_Filho_e_Lula_no_Cristo_-_14jun2007.jpg",
-     "credito": "Foto: Ricardo Stuckert/PR / Wikimedia Commons (CC BY 3.0 br)",
-     "descripcion": "O presidente do Brasil, Lula Larápio Lalau, e o governador do Rio de Janeiro, Sérgio Cabral Filho, à frente do Cristo Redentor.",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Senado2006.jpg/1280px-Senado2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Senado2006.jpg",
+     "credito": "Foto: Wilson Dias/ABr / Wikimedia Commons (CC BY 3.0 br)",
+     "descripcion": "Plenário do Senado Federal do Brasil",
      "licencia": "CC BY 3.0 br",
      "fuente": "Wikimedia Commons",
      "libre": true
@@ -618,15 +625,15 @@
    "fuentes": [
     {
      "medio": "Agência Brasil",
-     "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/professora-e-demitida-de-escola-em-sc-apos-foto-em-apoio-lula",
-     "titulo": "Professora é demitida de escola em SC após foto em apoio a Lula",
+     "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/senado-aprova-texto-base-de-pacote-que-preve-economia-de-ate-r-60-bi",
+     "titulo": "Senado aprova texto-base de pacote que prevê economia de até R$ 60 bi",
      "pais": "Brasil",
      "tipo": "Agencia pública",
-     "fecha": "2026-11-12T23:25:00+00:00",
+     "fecha": "2026-11-13T00:54:00+00:00",
      "idioma": "portugués",
      "autor": null,
-     "fecha_pub": "2026-11-12T23:25:00-03:00",
-     "imagen": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/public/thumbs/thumb_1200x600_agbrasil.png",
+     "fecha_pub": "2026-11-13T00:54:00-03:00",
+     "imagen": "https://imagens.ebc.com.br/TvOMb2Hb5US1-3Zj1B458fNfYng=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/12/sessao_do_congresso_12-11-26-2_0.jpg?itok=-u9GH371",
      "agencias": [],
      "oficiales": [
       "https://www.gov.br/pt-br/orgaos/empresa-brasil-de-comunicacao-s-a",
@@ -635,56 +642,55 @@
       "https://www.gov.br/mec/pt-br/centrais-de-conteudo/canal-libras"
      ],
      "leida": true,
-     "palabras": 523,
-     "resumen": "Uma professora foi demitida, nesta semana, do Colégio Unificado, na cidade de Itajaí (SC), após a postagem de uma foto em que ela e outros funcionários faziam o gesto do “L” com as mãos em apoio ao presidente reeleito Luiz Inácio Lula da Silva. O Sindicato dos Professores de Blumenau e Região (Sinpabre) manifestou repúdio à decisão da escola particular tanto em relação à demissão como a denúncias…"
+     "palabras": 461,
+     "resumen": "Após quase quatro horas de votação, o Senado aprovou nesta quinta-feira (12) o texto-base do projeto de ajuste fiscal do governo, por 45 votos a 31. A proposta prevê medidas para reduzir despesas e ampliar a arrecadação, com economia estimada entre R$ 50 bilhões e R$ 60 bilhões em 2027, segundo o ministro Bruno Moretti. Notícias relacionadas: Governo anuncia medidas de ajuste para economia de até…"
     }
-   ]
+   ],
+   "falta": "Confirmar la fecha exacta de la próxima sesión de la Cámara de Diputados para la aprobación del proyecto."
   },
   {
    "id": "20261113-06",
    "seccion": "mercosur",
    "por_que": "",
-   "titulo_tema": "Dólar dispara 1,58% e fecha a R$ 5,65, maior nível em 17 meses",
-   "puntaje": 7.6,
+   "titulo_tema": "Pablo Sirven presentó en San Juan Operación Sallustro : la historia humana detrás de una foto",
+   "puntaje": 5.8,
    "n_medios": 1,
    "paises": [
-    "Brasil"
+    "Argentina"
    ],
-   "region": "centro",
-   "tema": "Economía",
-   "ejes": [
-    "economia"
-   ],
+   "region": "cuyo",
+   "tema": "General",
+   "ejes": [],
    "region_mundo": "América Latina",
    "titulos": [
-    "Dólar dispara 1,58% e fecha a R$ 5,65, maior nível em 17 meses"
+    "Pablo Sirven presentó en San Juan Operación Sallustro : la historia humana detrás de una foto"
    ],
    "bajadas": [],
-   "cuerpo_html": "<p>El dólar comercial cerró hoy a R$5,6507, con una valorización del 1,58 %. Según Agência Brasil, este es el nivel más alto desde el 2 de junio de 2025. El índice de referencia del dólar, el DXY, subió 0,28 % a 103,160 puntos.</p>\n<p>El mercado de valores se vio afectado. El Ibovespa terminó la sesión a 171 324,31 puntos, una caída del 0,47 %. Durante el día, el índice alcanzó su punto más bajo a 169 942,37 puntos y su máximo a 172 060,43 puntos. El volumen financiero de la bolsa fue de R$32,24 billones.</p>\n<p>El Banco do Brasil registró una caída en sus acciones, impulsada por la reducción de sus utilidades en el tercer trimestre. No se indica la cifra exacta del descenso, pero la tendencia es clara.</p>\n<p>En el exterior, el petróleo se mantuvo en alza. El WTI cerró a US$88,74 (+2,55 %) y el Brent a US$95,82 (+3,30 %). La subida se atribuye a las tensiones entre Estados Unidos e Irán.</p>\n<p>El impulso del dólar se debió, según Agencia Brasil, a la insatisfacción de los inversores con el paquete fiscal anunciado el 11 de noviembre. El gobierno propuso un conjunto de medidas que podrían generar entre R$50 y R$60 billones de impacto en 2027, sin cambiar las metas de resultado primario. La incertidumbre sobre la aprobación en el Congreso Nacional generó presión sobre la divisa.</p>\n<p>El escenario internacional también favoreció al dólar. Los rendimientos de los Treasury de Estados Unidos avanzaron y el Fed expresó preocupación por la inflación persistente y la posibilidad de nuevos aumentos de tasas.</p>\n<p>En la economía interna, el Índice Nacional de Precios al Consumidor Amplo (IPCA) mostró una subida de 0,14 % en octubre, después de 0,82 % en septiembre. En 12 meses, el indicador acumuló 4,63 %. El impacto de la inflación sobre el mercado cambiario fue limitado.</p>\n<blockquote>\"El dólar comercial cerró a R$5,6507\", según Agência Brasil.</blockquote>\n<p>La nota destaca la reacción del mercado frente a la incertidumbre fiscal y la fortaleza del dólar en el contexto de tensiones geopolíticas y expectativas de política monetaria en Estados Unidos.</p>",
+   "cuerpo_html": "",
    "fotos": [
     {
-     "url": "https://imagens.ebc.com.br/qgr1uCa7n_TP2WKn5oQPmLd6V2M=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/07/23/2026-07-23t123806z_1_lynxmpem6m19r_rtroptp_4_usa-trump-tariffs-indonesia.jpg?itok=6u1xpzSK",
-     "pagina": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-dispara-158-e-fecha-r-565-maior-nivel-em-17-meses",
-     "credito": "Foto: Agência Brasil",
-     "fuente": "Agência Brasil",
-     "descripcion": "Dólar dispara 1,58% e fecha a R$ 5,65, maior nível em 17 meses",
+     "url": "https://cdn.tiempodesanjuan.com/tiemposj/112026/1794529644059.jpeg?cw=1200&ch=630",
+     "pagina": "http://www.tiempodesanjuan.com/san-juan/pablo-sirven-presento-en-san-juan-operacion-sallustro-la-historia-humana-detras-de-una-foto_1794529561",
+     "credito": "Foto: tiempodesanjuan.com",
+     "fuente": "tiempodesanjuan.com",
+     "descripcion": "Pablo Sirven presentó en San Juan Operación Sallustro : la historia humana detrás de una foto",
      "libre": false
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Confederate_100_Dollars.jpg/1280px-Confederate_100_Dollars.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Confederate_100_Dollars.jpg",
-     "credito": "Foto: Confederate States of America. / Wikimedia Commons (Public domain)",
-     "descripcion": "A One Hundred Dollar Confederate States of America banknote dated December 22, 1862. Issued during the American Civil War (1861–1865).\nSlave hoeing cotton in the center with John C. Calhoun on the lef",
-     "licencia": "Public domain",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Espa%C3%B1a%2C_sus_monumentos_y_artes%2C_su_naturaleza_e_historia_%281884%29_%2814772926085%29.jpg/1280px-Espa%C3%B1a%2C_sus_monumentos_y_artes%2C_su_naturaleza_e_historia_%281884%29_%2814772926085%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Espa%C3%B1a,_sus_monumentos_y_artes,_su_naturaleza_e_historia_(1884)_(14772926085).jpg",
+     "credito": "Foto: Internet Archive Book Images / Wikimedia Commons (No restrictions)",
+     "descripcion": "Identifier: p2espaasusmonume11barc (find matches)\nTitle: España, sus monumentos y artes, su naturaleza e historia\nYear: 1884 (1880s)\nAuthors: \nSubjects: \nPublisher:  Barcelona : D. Cortezo\nContributin",
+     "licencia": "No restrictions",
      "fuente": "Wikimedia Commons",
      "libre": true
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Ermita_en_D%C3%B3lar%2C_en_Granada_%28Espa%C3%B1a%29.jpg/1280px-Ermita_en_D%C3%B3lar%2C_en_Granada_%28Espa%C3%B1a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Ermita_en_D%C3%B3lar,_en_Granada_(Espa%C3%B1a).jpg",
-     "credito": "Foto: Guadalinfo / Wikimedia Commons (GFDL 1.2)",
-     "descripcion": "Ermita de San Andrés, en Dólar, Granada, España.",
-     "licencia": "GFDL 1.2",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Parque_Zool%C3%B3gico_del_Centenario%2C_M%C3%A9rida%2C_Yucat%C3%A1n_%2808%29.jpg/1280px-Parque_Zool%C3%B3gico_del_Centenario%2C_M%C3%A9rida%2C_Yucat%C3%A1n_%2808%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Parque_Zool%C3%B3gico_del_Centenario,_M%C3%A9rida,_Yucat%C3%A1n_(08).jpg",
+     "credito": "Foto: Inri / Wikimedia Commons (Public domain)",
+     "descripcion": "Parque Zoológico del Centenario en Mérida, Yucatán.",
+     "licencia": "Public domain",
      "fuente": "Wikimedia Commons",
      "libre": true
     }
@@ -694,50 +700,39 @@
    "verificacion": {
     "independientes": 1,
     "paises": [
-     "Brasil"
+     "Argentina"
     ],
     "estatal": [],
-    "oficiales": [
-     "https://falabr.cgu.gov.br/Login/Identificacao/Identificacao.aspx?idFormulario=4&tipo=1&ReturnUrl=/publico/Manifestacao/RegistrarManifestacao.aspx%3FidFormulario%3D4%26tipo%3D1%26origem%3Didp%26modo%3D",
-     "https://www.gov.br/mec/pt-br/centrais-de-conteudo/canal-educacao",
-     "https://www.gov.br/mec/pt-br/centrais-de-conteudo/canal-libras",
-     "https://www.gov.br/pt-br/orgaos/empresa-brasil-de-comunicacao-s-a"
-    ],
+    "oficiales": [],
     "agencias_citadas": [],
     "leidas": 1
    },
    "fuentes": [
     {
-     "medio": "Agência Brasil",
-     "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-dispara-158-e-fecha-r-565-maior-nivel-em-17-meses",
-     "titulo": "Dólar dispara 1,58% e fecha a R$ 5,65, maior nível em 17 meses",
-     "pais": "Brasil",
-     "tipo": "Agencia pública",
-     "fecha": "2026-11-12T22:35:00+00:00",
-     "idioma": "portugués",
-     "autor": null,
-     "fecha_pub": "2026-11-12T22:35:00-03:00",
-     "imagen": "https://imagens.ebc.com.br/qgr1uCa7n_TP2WKn5oQPmLd6V2M=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/07/23/2026-07-23t123806z_1_lynxmpem6m19r_rtroptp_4_usa-trump-tariffs-indonesia.jpg?itok=6u1xpzSK",
+     "medio": "tiempodesanjuan.com",
+     "url": "http://www.tiempodesanjuan.com/san-juan/pablo-sirven-presento-en-san-juan-operacion-sallustro-la-historia-humana-detras-de-una-foto_1794529561",
+     "titulo": "Pablo Sirven presentó en San Juan Operación Sallustro : la historia humana detrás de una foto",
+     "pais": "Argentina",
+     "tipo": null,
+     "fecha": "2026-11-13T00:45:00+00:00",
+     "idioma": "Spanish",
+     "autor": "Tiempo de San Juan",
+     "fecha_pub": "2026-11-13T00:29:12.596Z",
+     "imagen": "https://cdn.tiempodesanjuan.com/tiemposj/112026/1794529644059.jpeg?cw=1200&ch=630",
      "agencias": [],
-     "oficiales": [
-      "https://www.gov.br/pt-br/orgaos/empresa-brasil-de-comunicacao-s-a",
-      "https://falabr.cgu.gov.br/Login/Identificacao/Identificacao.aspx?idFormulario=4&tipo=1&ReturnUrl=/publico/Manifestacao/RegistrarManifestacao.aspx%3FidFormulario%3D4%26tipo%3D1%26origem%3Didp%26modo%3D",
-      "https://www.gov.br/mec/pt-br/centrais-de-conteudo/canal-educacao",
-      "https://www.gov.br/mec/pt-br/centrais-de-conteudo/canal-libras"
-     ],
+     "oficiales": [],
      "leida": true,
-     "palabras": 653,
-     "resumen": "Em meio a turbulências nos cenários doméstico e internacional, o dólar disparou frente ao real e fechou acima de R$ 5,65 nesta quinta-feira (12), no maior patamar desde junho de 2025. A moeda foi impulsionada pela insatisfação dos investidores com o pacote fiscal anunciado pelo governo e pelo fortalecimento da divisa estadunidense no exterior. Na bolsa, o Ibovespa recuou, pressionado…"
+     "palabras": 794,
+     "resumen": null
     }
-   ],
-   "falta": "Confirmar la cifra exacta de la caída de las utilidades del Banco do Brasil en el tercer trimestre."
+   ]
   },
   {
    "id": "20261113-07",
    "seccion": "mundo",
    "por_que": "",
-   "titulo_tema": "Autoridades paraguayas concluyen primera etapa de devolución de ahorros de clientes de Ueno Bank",
-   "puntaje": 11.8,
+   "titulo_tema": "Al menos un muerto y cuatro heridos tras un tiroteo en un concurrido barrio de Washington",
+   "puntaje": 9.7,
    "n_medios": 2,
    "paises": [
     "Francia",
@@ -746,56 +741,38 @@
    "region": "",
    "tema": "General",
    "ejes": [
-    "economia"
+    "eeuu"
    ],
    "region_mundo": "Europa",
    "titulos": [
-    "Autoridades paraguayas concluyen primera etapa de devolución de ahorros de clientes de Ueno Bank"
+    "Al menos un muerto y cuatro heridos tras un tiroteo en un concurrido barrio de Washington"
    ],
    "bajadas": [],
    "cuerpo_html": "",
    "fotos": [
     {
-     "url": "https://ichef.bbci.co.uk/news/1200/branded_mundo/f500/live/8e34c130-dd20-11f1-b3af-4d29131e82d0.jpg",
-     "pagina": "https://www.bbc.com/mundo/articles/c977p7pn0m0mo?at_medium=RSS&at_campaign=rss",
+     "url": "https://ichef.bbci.co.uk/news/1200/branded_mundo/a1b1/live/b3a038d0-dea8-11f1-b441-2b33b063138f.jpg",
+     "pagina": "https://www.bbc.com/mundo/articles/cq8j47lw9nmwo?at_medium=RSS&at_campaign=rss",
      "credito": "Foto: BBC Mundo",
      "fuente": "BBC Mundo",
-     "descripcion": "\"No tengo noticias de mi dinero\": los millones de paraguayos afectados por la crisis del Ueno Bank que reclaman la devolución de sus ahorros",
+     "descripcion": "Al menos 1 muerto y 4 heridos en un tiroteo en un gimnasio en Washington DC",
      "libre": false
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Registro_de_autoridades_y_Wikidata._Primer_d%C3%ADa_12.jpg/1280px-Registro_de_autoridades_y_Wikidata._Primer_d%C3%ADa_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Registro_de_autoridades_y_Wikidata._Primer_d%C3%ADa_12.jpg",
-     "credito": "Foto: Mariahuarteb / Wikimedia Commons (CC BY 4.0)",
-     "descripcion": "Primer encuentro de la segunda jornada de Martes de OpenGLAM: Registro de autoridades y Wikidata. Realizadas en conjunto con la Red de Archivos de la UNLP.",
-     "licencia": "CC BY 4.0",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/International_Lumberjack_Exhibition_at_the_Evergreen_State_Fair.jpg/1280px-International_Lumberjack_Exhibition_at_the_Evergreen_State_Fair.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:International_Lumberjack_Exhibition_at_the_Evergreen_State_Fair.jpg",
+     "credito": "Foto: Guywelch2000 / Wikimedia Commons (CC0)",
+     "descripcion": "International Lumberjack Exhibition at the Evergreen State Fair in Monroe, Washington.",
+     "licencia": "CC0",
      "fuente": "Wikimedia Commons",
      "libre": true
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Registro_de_autoridades_y_Wikidata._Primer_d%C3%ADa_4.jpg/1280px-Registro_de_autoridades_y_Wikidata._Primer_d%C3%ADa_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Registro_de_autoridades_y_Wikidata._Primer_d%C3%ADa_4.jpg",
-     "credito": "Foto: Mariahuarteb / Wikimedia Commons (CC BY 4.0)",
-     "descripcion": "Primer encuentro de la segunda jornada de Martes de OpenGLAM: Registro de autoridades y Wikidata. Realizadas en conjunto con la Red de Archivos de la UNLP.",
-     "licencia": "CC BY 4.0",
-     "fuente": "Wikimedia Commons",
-     "libre": true
-    },
-    {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Resona_Bank_Ueno_Branch.jpg/1280px-Resona_Bank_Ueno_Branch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Resona_Bank_Ueno_Branch.jpg",
-     "credito": "Foto: Suikotei / Wikimedia Commons (CC BY 4.0)",
-     "descripcion": "りそな銀行 上野支店・秋葉原支店 (店頭サービス) (台東区上野)",
-     "licencia": "CC BY 4.0",
-     "fuente": "Wikimedia Commons",
-     "libre": true
-    },
-    {
-     "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Ueno_bank_2x_1x.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Ueno_bank_2x_1x.png",
-     "credito": "Foto: Moñonu / Wikimedia Commons (Public domain)",
-     "descripcion": "Ueno bank",
-     "licencia": "Public domain",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Washington%2C_Nebraska_Dorchester_from_Greene_2.JPG/1280px-Washington%2C_Nebraska_Dorchester_from_Greene_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Washington,_Nebraska_Dorchester_from_Greene_2.JPG",
+     "credito": "Foto: Ammodramus / Wikimedia Commons (CC0)",
+     "descripcion": "Downtown Washington, Nebraska: Dorchester Street, looking north from about Greene Street.",
+     "licencia": "CC0",
      "fuente": "Wikimedia Commons",
      "libre": true
     }
@@ -810,43 +787,39 @@
     ],
     "estatal": [],
     "oficiales": [],
-    "agencias_citadas": [
-     "AFP"
-    ],
+    "agencias_citadas": [],
     "leidas": 1
    },
    "fuentes": [
     {
      "medio": "France 24 Español",
-     "url": "https://www.france24.com/es/video/20261112-autoridades-paraguayas-concluyen-primera-etapa-de-devoluci%C3%B3n-de-ahorros-de-clientes-de-ueno-bank",
-     "titulo": "Autoridades paraguayas concluyen primera etapa de devolución de ahorros de clientes de Ueno Bank",
+     "url": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261112-al-menos-un-muerto-y-cuatro-heridos-tras-un-tiroteo-en-un-concurrido-barrio-de-washington",
+     "titulo": "Al menos un muerto y cuatro heridos tras un tiroteo en un concurrido barrio de Washington",
      "pais": "Francia",
      "tipo": "Medio público",
-     "fecha": "2026-11-12T23:51:30+00:00",
+     "fecha": "2026-11-12T18:14:21+00:00",
      "idioma": "castellano",
      "leida": false,
      "error": "HTTP Error 403: Forbidden",
      "imagen": null,
-     "resumen": "Mientras avanza la investigación penal, el Banco Central del Paraguay (BCP) informó que completó el pago anticipado a todos los depositantes de Ueno Bank que estaban amparados por el primer tramo de la garantía estatal. En la primera etapa de devoluciones se han devuelto hasta 19.000 dólares por cuenta, provenientes del Fondo de Garantía de Depósitos, el total devuelto es apenas una fracción de…"
+     "resumen": "Al menos una persona murió después de que cinco personas fueran baleadas el jueves 12 de noviembre en un vecindario de Washington, D. C., a 1,6 kilómetros de la Casa Blanca, informó la policía. Un gran número de agentes acudió a un edificio de apartamentos cercano donde un sospechoso se había atrincherado y, posteriormente, se suicidó."
     },
     {
      "medio": "BBC Mundo",
-     "url": "https://www.bbc.com/mundo/articles/c977p7pn0m0mo?at_medium=RSS&at_campaign=rss",
-     "titulo": "\"No tengo noticias de mi dinero\": los millones de paraguayos afectados por la crisis del Ueno Bank que reclaman la devolución de sus ahorros",
+     "url": "https://www.bbc.com/mundo/articles/cq8j47lw9nmwo?at_medium=RSS&at_campaign=rss",
+     "titulo": "Al menos 1 muerto y 4 heridos en un tiroteo en un gimnasio en Washington DC",
      "pais": "Reino Unido",
      "tipo": "Medio público",
-     "fecha": "2026-11-10T20:28:11+00:00",
+     "fecha": "2026-11-12T15:14:15+00:00",
      "idioma": "castellano",
      "autor": "Bbcnews",
-     "fecha_pub": "2026-11-10T18:01:08.053Z",
-     "imagen": "https://ichef.bbci.co.uk/news/1200/branded_mundo/f500/live/8e34c130-dd20-11f1-b3af-4d29131e82d0.jpg",
-     "agencias": [
-      "AFP"
-     ],
+     "fecha_pub": "2026-11-12T15:14:15.625Z",
+     "imagen": "https://ichef.bbci.co.uk/news/1200/branded_mundo/a1b1/live/b3a038d0-dea8-11f1-b441-2b33b063138f.jpg",
+     "agencias": [],
      "oficiales": [],
      "leida": true,
-     "palabras": 987,
-     "resumen": "Las autoridades aseguran que ya han devuelto sus ahorros a muchos de los clientes de Ueno Bank, pero todavía quedan grandes cantidades por reembolsar."
+     "palabras": 603,
+     "resumen": "Los equipos de emergencia se desplegaron en el barrio de Logan Circle, un par de kilómetros al norte de la Casa Blanca."
     }
    ]
   },
@@ -854,84 +827,124 @@
    "id": "20261113-08",
    "seccion": "mundo",
    "por_que": "",
-   "titulo_tema": "Renuncia CEO de Nvidia tras escándalo por relación con presunta espía china",
-   "puntaje": 11.7,
-   "n_medios": 2,
+   "titulo_tema": "China insta a fortalecer comunicación militar con EEUU",
+   "puntaje": 8.0,
+   "n_medios": 1,
    "paises": [
-    "Francia",
-    "Reino Unido"
+    "Cuba"
    ],
-   "region": "",
+   "region": "vacío",
    "tema": "Geopolítica",
    "ejes": [
-    "congreso",
     "eeuu"
    ],
-   "region_mundo": "Europa",
+   "region_mundo": "América Latina",
    "titulos": [
-    "Renuncia CEO de Nvidia tras escándalo por relación con presunta espía china"
+    "China y Estados Unidos revisan acuerdos militares en Washington para evitar errores de cálculo",
+    "El portavoz chino Chen Xi destaca la necesidad de comunicación estratégica en Washington",
+    "Washington y Beijing buscan fortalecer el diálogo militar tras consenso de presidentes"
    ],
-   "bajadas": [],
-   "cuerpo_html": "",
+   "bajadas": [
+    "El encuentro se desarrolló los días 2 y 3 de noviembre, según el portavoz del Ministerio de Defensa",
+    "El objetivo principal fue revisar los consensos de los presidentes y reforzar los intercambios militares"
+   ],
+   "cuerpo_html": "<p>El 2 y 3 de noviembre, en Washington, el portavoz del Ministerio de Defensa de <strong>China</strong>, coronel Chen Xi, anunció un encuentro sobre la comunicación militar con <strong>Estados Unidos</strong>. El objetivo fue revisar los consensos de los presidentes y fortalecer los intercambios. Se buscó prevenir malentendidos y errores de cálculo.</p>\n<p>Durante las conversaciones, ambas partes intercambiaron opiniones sobre la aplicación de los acuerdos y la prevención de malentendidos. El vocero subrayó que mantener relaciones militares estables y sostenibles responde a intereses comunes. También destacó la importancia de la comunicación estratégica entre ambos ejércitos.</p>\n<p>China espera que Washington trabaje junto a Beijing para cumplir los consensos alcanzados por los dos jefes de Estado y fortalecer el diálogo. El coronel Chen señaló que ambas naciones deben contribuir a una relación de estabilidad estratégica constructiva. Se resaltó la necesidad de gestionar adecuadamente las diferencias.</p>\n<p>El mensaje refleja la expectativa de la comunidad internacional de una comunicación estratégica entre los dos ejércitos. Según <a class=\"externo\" href=\"https://www.prensa-latina.cu/2026/11/13/china-insta-a-fortalecer-comunicacion-militar-con-eeuu/\" title=\"Fuente: Prensa Latina\">Prensa</a> Latina, el vocero mantiene contacto y coordinación con el Departamento de Defensa estadounidense. La conversación se llevó a cabo en Washington y se centró en la prevención de errores de cálculo.</p>\n<blockquote>\"China espera que Washington trabaje junto a Beijing para cumplir los importantes consensos alcanzados por los dos jefes de Estado\" – <strong>Chen Xi</strong></blockquote>",
    "fotos": [
     {
-     "url": "https://ichef.bbci.co.uk/news/1200/branded_mundo/a88e/live/1c8f87c0-dea3-11f1-82bd-ab0398e9e082.jpg",
-     "pagina": "https://www.bbc.com/mundo/articles/cq2d9pg47052o?at_medium=RSS&at_campaign=rss",
-     "credito": "Foto: BBC Mundo",
-     "fuente": "BBC Mundo",
-     "descripcion": "Jensen Huang renuncia como director ejecutivo de Nvidia tras conocerse su relación con una supuesta espía china",
+     "url": "https://www.prensa-latina.cu/wp-content/uploads/2026/11/china-chen-xi-ministerio-defensa-portavoz-1.jpg",
+     "pagina": "https://www.prensa-latina.cu/2026/11/13/china-insta-a-fortalecer-comunicacion-militar-con-eeuu/",
+     "credito": "Foto: Prensa Latina",
+     "fuente": "Prensa Latina",
+     "descripcion": "China insta a fortalecer comunicación militar con EEUU",
      "libre": false
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg/1280px-1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
+     "credito": "Foto: chensiyuan / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "Five fingers peak. Quartzite sandstone Huangshizhai Zhangjiajie Wulingyuan Hunan, China. Panorama 2012.",
+     "licencia": "CC BY-SA 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Badaling_China_Great-Wall-of-China-01.jpg/1280px-Badaling_China_Great-Wall-of-China-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Badaling_China_Great-Wall-of-China-01.jpg",
+     "credito": "Foto: CEphoto, Uwe Aranas / Wikimedia Commons (CC BY-SA 3.0)",
+     "descripcion": "Badaling, China: Great Wall of China at Badaling",
+     "licencia": "CC BY-SA 3.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Names_of_the_United_States_Railroad_Companies%2C_from_page_7_of_The_National_Gazetteer_A_Geographical_Dictionary_of_the_United_States%2C_1884_by_Auguste_Leon_de_Colange%2C_LL._D._-_%28IA_nationalgazettee00cola%29_%28cropped%29.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Names_of_the_United_States_Railroad_Companies,_from_page_7_of_The_National_Gazetteer_A_Geographical_Dictionary_of_the_United_States,_1884_by_Auguste_Leon_de_Colange,_LL._D._-_(IA_nationalgazettee00cola)_(cropped).jpg",
+     "credito": "Foto: Colange, Leo de, b. 1819 / Wikimedia Commons (Public domain)",
+     "descripcion": "Subjects:",
+     "licencia": "Public domain",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/United_States_Board_on_Geographic_Names_logo.PNG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:United_States_Board_on_Geographic_Names_logo.PNG",
+     "credito": "Foto: United States Board on Geographic Names / Wikimedia Commons (Public domain)",
+     "descripcion": "United States Board on Geographic Names seal",
+     "licencia": "Public domain",
+     "fuente": "Wikimedia Commons",
+     "libre": true
     }
    ],
-   "enlaces": [],
+   "enlaces": [
+    {
+     "url": "https://www.prensa-latina.cu/2026/11/13/china-insta-a-fortalecer-comunicacion-militar-con-eeuu/",
+     "clase": "externo",
+     "titulo": "Fuente: Prensa Latina",
+     "palabra": "Prensa"
+    }
+   ],
    "relacionadas": [],
    "verificacion": {
-    "independientes": 2,
+    "independientes": 1,
     "paises": [
-     "Francia",
-     "Reino Unido"
+     "Cuba"
     ],
-    "estatal": [],
+    "estatal": [
+     "Prensa Latina"
+    ],
     "oficiales": [],
     "agencias_citadas": [
-     "Bloomberg"
+     "Prensa Latina"
     ],
-    "leidas": 1
+    "leidas": 1,
+    "estado": "verde",
+    "sin_respaldo": [],
+    "contradicciones": [],
+    "observaciones": []
    },
    "fuentes": [
     {
-     "medio": "France 24 Español",
-     "url": "https://www.france24.com/es/video/20261112-renuncia-ceo-de-nvidia-tras-esc%C3%A1ndalo-por-relaci%C3%B3n-con-presunta-esp%C3%ADa-china",
-     "titulo": "Renuncia CEO de Nvidia tras escándalo por relación con presunta espía china",
-     "pais": "Francia",
-     "tipo": "Medio público",
-     "fecha": "2026-11-12T23:11:29+00:00",
+     "medio": "Prensa Latina",
+     "url": "https://www.prensa-latina.cu/2026/11/13/china-insta-a-fortalecer-comunicacion-militar-con-eeuu/",
+     "titulo": "China insta a fortalecer comunicación militar con EEUU",
+     "pais": "Cuba",
+     "tipo": "Agencia estatal",
+     "fecha": "2026-11-13T08:18:23+00:00",
      "idioma": "castellano",
-     "leida": false,
-     "error": "HTTP Error 403: Forbidden",
-     "imagen": null,
-     "resumen": "El CEO de Nvidia, Jensen Huang, renunció a su cargo tras desatarse el escándalo por su relación extramarital con Alice Huang, quien es señalada por Estados Unidos de ser una espía china. El empresario aseguró que comparecerá ante el Congreso para dar explicaciones de lo ocurrido . Amplía la información nuestra corresponsal Carolina Valladares."
-    },
-    {
-     "medio": "BBC Mundo",
-     "url": "https://www.bbc.com/mundo/articles/cq2d9pg47052o?at_medium=RSS&at_campaign=rss",
-     "titulo": "Jensen Huang renuncia como director ejecutivo de Nvidia tras conocerse su relación con una supuesta espía china",
-     "pais": "Reino Unido",
-     "tipo": "Medio público",
-     "fecha": "2026-11-12T15:59:31+00:00",
-     "idioma": "castellano",
-     "autor": "Bbcnews",
-     "fecha_pub": "2026-11-12T14:15:42.951Z",
-     "imagen": "https://ichef.bbci.co.uk/news/1200/branded_mundo/a88e/live/1c8f87c0-dea3-11f1-82bd-ab0398e9e082.jpg",
+     "autor": "Isaura Diez Millán",
+     "fecha_pub": "2026-11-13T08:18:23+00:00",
+     "imagen": "https://www.prensa-latina.cu/wp-content/uploads/2026/11/china-chen-xi-ministerio-defensa-portavoz-1.jpg",
      "agencias": [
-      "Bloomberg"
+      "Prensa Latina"
      ],
      "oficiales": [],
      "leida": true,
-     "palabras": 958,
-     "resumen": "El ejecutivo había admitido el domingo pasado haber sido \"infiel\" a su esposa y pidió disculpas por haber lastimado a su familia."
+     "palabras": 232,
+     "resumen": "Beijing, 13 nov (Prensa Latina) China abogó hoy por fortalecer la comunicación entre sus fuerzas armadas y Estados Unidos, tras la cuarta reunión del Grupo de Trabajo sobre Comunicación y Prevención de Crisis. The post China insta a fortalecer comunicación militar con EEUU first appeared on Noticias Prensa Latina ."
     }
-   ]
+   ],
+   "falta": "Confirmar si la reunión incluyó a representantes de otros organismos militares además del Ministerio de Defensa.",
+   "breve": true
   }
  ],
  "reserva": [
@@ -939,7 +952,7 @@
    "seccion": "mercosur",
    "titulo": "Multitud de fieles reciben al Papa León en Perú",
    "n_medios": 5,
-   "puntaje": 20.9,
+   "puntaje": 19.8,
    "region": null,
    "ejes": [],
    "tema": "General",
@@ -975,99 +988,37 @@
    ]
   },
   {
-   "seccion": "argentina",
-   "titulo": "Por qué subió la inflación en octubre: la explicación de Luis Caputo tras el dato del Indec",
-   "n_medios": 3,
-   "puntaje": 12.4,
-   "region": null,
-   "ejes": [
-    "economia",
-    "estadisticas"
-   ],
-   "tema": "Economía",
-   "notas": [
-    {
-     "medio": "Ámbito",
-     "url": "https://www.ambito.com/economia/luis-caputo-explico-que-impulso-la-inflacion-octubre-y-defendio-el-rumbo-economico-n6344665",
-     "titulo": "Luis Caputo explicó qué impulsó la inflación de octubre y defendió el rumbo económico",
-     "fecha": "2026-11-12T21:26:00+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "Río Negro",
-     "url": "https://www.rionegro.com.ar/economia/el-motivo-que-dio-luis-caputo-para-el-repunte-de-la-inflacion-en-octubre-2026-destaco-el-dato-de-ipc-nucleo-4796326/",
-     "titulo": "El motivo que dio Luis Caputo sobre el repunte de la inflación en octubre 2026: destacó el dato de IPC Núcleo",
-     "fecha": "2026-11-12T20:47:55+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "La Gaceta (Tucumán)",
-     "url": "https://www.lagaceta.com.ar/nota/1162299/economia/por-subio-inflacion-octubre-explicacion-luis-caputo-tras-dato-indec.html",
-     "titulo": "Por qué subió la inflación en octubre: la explicación de Luis Caputo tras el dato del Indec",
-     "fecha": "2026-11-12T18:04:00+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
    "seccion": "mundo",
-   "titulo": "Ataque israelí contra hospital Nasser en Gaza deja al menos seis palestinos muertos",
+   "titulo": "Autoridades paraguayas concluyen primera etapa de devolución de ahorros de clientes de Ueno Bank",
    "n_medios": 2,
-   "puntaje": 11.9,
+   "puntaje": 10.6,
    "region": null,
    "ejes": [
-    "guerras"
-   ],
-   "tema": "Geopolítica",
-   "notas": [
-    {
-     "medio": "France 24 Español",
-     "url": "https://www.france24.com/es/video/20261113-ataque-israel%C3%AD-contra-hospital-nasser-en-gaza-deja-al-menos-seis-palestinos-muertos",
-     "titulo": "Ataque israelí contra hospital Nasser en Gaza deja al menos seis palestinos muertos",
-     "fecha": "2026-11-13T00:42:00+00:00",
-     "pais": "Francia"
-    },
-    {
-     "medio": "DW Español",
-     "url": "https://www.dw.com/es/ataques-israelíes-dejan-al-menos-once-muertos-en-distintos-puntos-de-gaza/a-79934531?maca=spa-rss-sp-all-1122-xml-mrss",
-     "titulo": "Ataques israelíes dejan al menos once muertos en distintos puntos de Gaza",
-     "fecha": "2026-11-12T17:03:00+00:00",
-     "pais": "Alemania"
-    }
-   ]
-  },
-  {
-   "seccion": "mundo",
-   "titulo": "¿Cuál es el impacto de la renuncia de Huang a Nvidia en los mercados mundiales?",
-   "n_medios": 2,
-   "puntaje": 11.9,
-   "region": null,
-   "ejes": [
-    "eeuu"
+    "economia"
    ],
    "tema": "General",
    "notas": [
     {
      "medio": "France 24 Español",
-     "url": "https://www.france24.com/es/video/20261113-cu%C3%A1l-es-el-impacto-de-la-renuncia-de-huang-a-nvidia-en-los-mercados-mundiales",
-     "titulo": "¿Cuál es el impacto de la renuncia de Huang a Nvidia en los mercados mundiales?",
-     "fecha": "2026-11-13T00:48:18+00:00",
+     "url": "https://www.france24.com/es/video/20261112-autoridades-paraguayas-concluyen-primera-etapa-de-devoluci%C3%B3n-de-ahorros-de-clientes-de-ueno-bank",
+     "titulo": "Autoridades paraguayas concluyen primera etapa de devolución de ahorros de clientes de Ueno Bank",
+     "fecha": "2026-11-12T23:51:30+00:00",
      "pais": "Francia"
     },
     {
-     "medio": "DW Español",
-     "url": "https://www.dw.com/es/dimite-jensen-huang-y-sacude-al-gigante-de-la-ia-nvidia/a-79931741?maca=spa-rss-sp-all-1122-xml-mrss",
-     "titulo": "Dimite Jensen Huang y sacude al gigante de la IA Nvidia",
-     "fecha": "2026-11-12T14:04:00+00:00",
-     "pais": "Alemania"
+     "medio": "BBC Mundo",
+     "url": "https://www.bbc.com/mundo/articles/c977p7pn0m0mo?at_medium=RSS&at_campaign=rss",
+     "titulo": "\"No tengo noticias de mi dinero\": los millones de paraguayos afectados por la crisis del Ueno Bank que reclaman la devolución de sus ahorros",
+     "fecha": "2026-11-10T20:28:11+00:00",
+     "pais": "Reino Unido"
     }
    ]
   },
   {
    "seccion": "mundo",
-   "titulo": "Trump amenaza a México con duplicar aranceles si no detiene las caravanas de migrantes con destino a la frontera",
+   "titulo": "Renuncia CEO de Nvidia tras escándalo por relación con presunta espía china",
    "n_medios": 2,
-   "puntaje": 11.0,
+   "puntaje": 10.5,
    "region": null,
    "ejes": [
     "congreso",
@@ -1076,26 +1027,87 @@
    "tema": "Geopolítica",
    "notas": [
     {
-     "medio": "BBC Mundo",
-     "url": "https://www.bbc.com/mundo/articles/cj62pglgdwreo?at_medium=RSS&at_campaign=rss",
-     "titulo": "Trump amenaza a México con duplicar aranceles si no detiene las caravanas de migrantes con destino a la frontera",
-     "fecha": "2026-11-12T19:10:59+00:00",
-     "pais": "Reino Unido"
+     "medio": "France 24 Español",
+     "url": "https://www.france24.com/es/video/20261112-renuncia-ceo-de-nvidia-tras-esc%C3%A1ndalo-por-relaci%C3%B3n-con-presunta-esp%C3%ADa-china",
+     "titulo": "Renuncia CEO de Nvidia tras escándalo por relación con presunta espía china",
+     "fecha": "2026-11-12T23:11:29+00:00",
+     "pais": "Francia"
     },
     {
-     "medio": "DW Español",
-     "url": "https://www.dw.com/es/trump-amenaza-con-duplicar-aranceles-a-méxico-si-no-frena-a-migrantes/a-79931643?maca=spa-rss-sp-all-1122-xml-mrss",
-     "titulo": "Trump amenaza con duplicar aranceles a México si no frena a migrantes",
-     "fecha": "2026-11-12T14:00:00+00:00",
-     "pais": "Alemania"
+     "medio": "BBC Mundo",
+     "url": "https://www.bbc.com/mundo/articles/cq2d9pg47052o?at_medium=RSS&at_campaign=rss",
+     "titulo": "Jensen Huang renuncia como director ejecutivo de Nvidia tras conocerse su relación con una supuesta espía china",
+     "fecha": "2026-11-12T15:59:31+00:00",
+     "pais": "Reino Unido"
     }
    ]
   },
   {
    "seccion": "mundo",
-   "titulo": "Al menos un muerto y cuatro heridos tras un tiroteo en un concurrido barrio de Washington",
-   "n_medios": 2,
-   "puntaje": 10.9,
+   "titulo": "Rusia pide garantías escritas de no expansión al este de la OTAN",
+   "n_medios": 1,
+   "puntaje": 8.0,
+   "region": null,
+   "ejes": [
+    "guerras"
+   ],
+   "tema": "Geopolítica",
+   "notas": [
+    {
+     "medio": "Prensa Latina",
+     "url": "https://www.prensa-latina.cu/2026/11/13/rusia-pide-garantias-escritas-de-no-expansion-al-este-de-la-otan/",
+     "titulo": "Rusia pide garantías escritas de no expansión al este de la OTAN",
+     "fecha": "2026-11-13T08:08:51+00:00",
+     "pais": "Cuba"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "El INE confirma que el IPC siguió en octubre en el 4,9% tras subir el gas y bajar las gasolinas",
+   "n_medios": 1,
+   "puntaje": 8.0,
+   "region": null,
+   "ejes": [
+    "energia",
+    "estadisticas"
+   ],
+   "tema": "Energía",
+   "notas": [
+    {
+     "medio": "Europa Press",
+     "url": "https://www.europapress.es/economia/macroeconomia-00338/noticia-ine-confirma-ipc-siguio-octubre-49-subir-gas-bajar-gasolinas-20261113090023.html",
+     "titulo": "El INE confirma que el IPC siguió en octubre en el 4,9% tras subir el gas y bajar las gasolinas",
+     "fecha": "2026-11-13T08:00:23+00:00",
+     "pais": "España"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Última hora de la actualidad política, en directo: elecciones generales del 29N y últimas encuestas",
+   "n_medios": 1,
+   "puntaje": 7.9,
+   "region": null,
+   "ejes": [
+    "congreso"
+   ],
+   "tema": "Política",
+   "notas": [
+    {
+     "medio": "Europa Press",
+     "url": "https://www.europapress.es/nacional/noticia-ultima-hora-actualidad-politica-directo-elecciones-generales-29n-ultimas-encuestas-20261113083052.html",
+     "titulo": "Última hora de la actualidad política, en directo: elecciones generales del 29N y últimas encuestas",
+     "fecha": "2026-11-13T07:30:52+00:00",
+     "pais": "España"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "El fiscal general de EEUU rechaza que Comercio haya obstaculizado investigaciones sobre la supuesta espía de Nvidia",
+   "n_medios": 1,
+   "puntaje": 7.9,
    "region": null,
    "ejes": [
     "eeuu"
@@ -1103,45 +1115,11 @@
    "tema": "General",
    "notas": [
     {
-     "medio": "France 24 Español",
-     "url": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261112-al-menos-un-muerto-y-cuatro-heridos-tras-un-tiroteo-en-un-concurrido-barrio-de-washington",
-     "titulo": "Al menos un muerto y cuatro heridos tras un tiroteo en un concurrido barrio de Washington",
-     "fecha": "2026-11-12T18:14:21+00:00",
-     "pais": "Francia"
-    },
-    {
-     "medio": "BBC Mundo",
-     "url": "https://www.bbc.com/mundo/articles/cq8j47lw9nmwo?at_medium=RSS&at_campaign=rss",
-     "titulo": "Al menos 1 muerto y 4 heridos en un tiroteo en un gimnasio en Washington DC",
-     "fecha": "2026-11-12T15:14:15+00:00",
-     "pais": "Reino Unido"
-    }
-   ]
-  },
-  {
-   "seccion": "argentina",
-   "titulo": "ANSES diciembre 2026: los montos de jubilaciones con aumento, bono de $70.000 y medio aguinaldo",
-   "n_medios": 2,
-   "puntaje": 9.6,
-   "region": null,
-   "ejes": [
-    "economia"
-   ],
-   "tema": "Economía",
-   "notas": [
-    {
-     "medio": "Río Negro",
-     "url": "https://www.rionegro.com.ar/servicios/aguinaldo-actualizado-anses-diciembre-2026-cuanto-cobraran-de-bolsillo-los-jubilados-con-aumento-del-217-y-bono-4796429/",
-     "titulo": "ANSES diciembre 2026: los montos de jubilaciones con aumento, bono de $70.000 y medio aguinaldo",
-     "fecha": "2026-11-12T22:24:50+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "La Gaceta (Tucumán)",
-     "url": "https://www.lagaceta.com.ar/nota/1162347/economia/jubilaciones-pensiones-anses-cuanto-van-aumentar-diciembre-tras-ultimo-dato-inflacion.html",
-     "titulo": "Jubilaciones y pensiones Anses: cuánto van a aumentar en diciembre tras el último dato de inflación",
-     "fecha": "2026-11-12T21:16:00+00:00",
-     "pais": "Argentina"
+     "medio": "Europa Press",
+     "url": "https://www.europapress.es/internacional/noticia-fiscal-general-eeuu-rechaza-comercio-haya-obstaculizado-investigaciones-supuesta-espia-nvidia-20261113081107.html",
+     "titulo": "El fiscal general de EEUU rechaza que Comercio haya obstaculizado investigaciones sobre la supuesta espía de Nvidia",
+     "fecha": "2026-11-13T07:11:07+00:00",
+     "pais": "España"
     }
    ]
   },
@@ -1149,7 +1127,7 @@
    "seccion": "argentina",
    "titulo": "Milei afirmó que «Argentina tiene todo para convertirse en un polo tecnológico»",
    "n_medios": 1,
-   "puntaje": 8.9,
+   "puntaje": 7.7,
    "region": "patagonia",
    "ejes": [
     "gobierno"
@@ -1166,10 +1144,181 @@
    ]
   },
   {
+   "seccion": "argentina",
+   "titulo": "Sube el precio del petróleo tras el rechazo de Trump al acuerdo con Irán y el ataque a cuatro buques en el Estrecho de Ormuz",
+   "n_medios": 1,
+   "puntaje": 7.7,
+   "region": "patagonia",
+   "ejes": [
+    "eeuu",
+    "energia",
+    "guerras"
+   ],
+   "tema": "Energía",
+   "notas": [
+    {
+     "medio": "Río Negro",
+     "url": "https://www.rionegro.com.ar/mundo/sube-el-precio-del-petroleo-tras-el-rechazo-de-trump-al-acuerdo-con-iran-y-el-ataque-a-cuatro-buques-en-el-estrecho-de-ormuz-4796499/",
+     "titulo": "Sube el precio del petróleo tras el rechazo de Trump al acuerdo con Irán y el ataque a cuatro buques en el Estrecho de Ormuz",
+     "fecha": "2026-11-13T00:04:29+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Para Kicillof , el mensaje del Papa fue una verdadera llamada de atención",
+   "n_medios": 2,
+   "puntaje": 7.3,
+   "region": "buenos-aires",
+   "ejes": [
+    "peronismo"
+   ],
+   "tema": "Política",
+   "notas": [
+    {
+     "medio": "laarena.com.ar",
+     "url": "http://www.laarena.com.ar/el-pais/para-kicillof-el-mensaje-del-papa-fue-una-verdadera-llamada-de-atencion-202611120350",
+     "titulo": "Para Kicillof , el mensaje del Papa fue una verdadera llamada de atención",
+     "fecha": "2026-11-12T04:00:00+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "andigital.com.ar",
+     "url": "https://www.andigital.com.ar/nota/144864/kicillof-antes-de-la-misa-en-lujan-hay-que-transformar-en-accion-los-mensajes-del-papa/",
+     "titulo": "Kicillof antes de la misa en Luján : Hay que transformar en acción los mensajes del Papa",
+     "fecha": "2026-11-11T02:00:00+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "La inflación se mantuvo en el 4,9 % en octubre tras contenerse combustible y alimentos",
+   "n_medios": 1,
+   "puntaje": 7.0,
+   "region": null,
+   "ejes": [
+    "economia"
+   ],
+   "tema": "Economía",
+   "notas": [
+    {
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/espana/agencias/2026/11/13/la-inflacion-se-mantuvo-en-el-49-en-octubre-tras-contenerse-combustible-y-alimentos/",
+     "titulo": "La inflación se mantuvo en el 4,9 % en octubre tras contenerse combustible y alimentos",
+     "fecha": "2026-11-13T08:17:49+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "El IBEX 35 arranca la jornada con pérdidas del 0,18 %, pendiente del crudo e inflación",
+   "n_medios": 1,
+   "puntaje": 7.0,
+   "region": null,
+   "ejes": [
+    "economia"
+   ],
+   "tema": "Economía",
+   "notas": [
+    {
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/espana/agencias/2026/11/13/el-ibex-35-arranca-la-jornada-con-perdidas-del-018-pendiente-del-crudo-e-inflacion/",
+     "titulo": "El IBEX 35 arranca la jornada con pérdidas del 0,18 %, pendiente del crudo e inflación",
+     "fecha": "2026-11-13T08:17:33+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "El INE confirma que el IPC siguió en octubre en el 4,9% tras subir el gas y bajar las gasolinas",
+   "n_medios": 1,
+   "puntaje": 7.0,
+   "region": null,
+   "ejes": [
+    "energia",
+    "estadisticas"
+   ],
+   "tema": "Energía",
+   "notas": [
+    {
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/america/agencias/2026/11/13/el-ine-confirma-que-el-ipc-siguio-en-octubre-en-el-49-tras-subir-el-gas-y-bajar-las-gasolinas/",
+     "titulo": "El INE confirma que el IPC siguió en octubre en el 4,9% tras subir el gas y bajar las gasolinas",
+     "fecha": "2026-11-13T08:15:35+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Kimberly “La Más Preciosa” habla sobre el duelo por la muerte de su madre y su presunta deuda con el SAT",
+   "n_medios": 1,
+   "puntaje": 7.0,
+   "region": null,
+   "ejes": [
+    "fmi"
+   ],
+   "tema": "Economía",
+   "notas": [
+    {
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/mexico/2026/11/13/kimberly-la-mas-preciosa-habla-sobre-el-duelo-por-la-muerte-de-su-madre-y-su-presunta-deuda-con-el-sat/",
+     "titulo": "Kimberly “La Más Preciosa” habla sobre el duelo por la muerte de su madre y su presunta deuda con el SAT",
+     "fecha": "2026-11-13T08:15:16+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Campaña de las elecciones generales 29-N, en directo: las entrevistas de Jordi Wild, un nuevo sondeo y última hora política",
+   "n_medios": 1,
+   "puntaje": 7.0,
+   "region": null,
+   "ejes": [
+    "congreso"
+   ],
+   "tema": "Política",
+   "notas": [
+    {
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/espana/2026/11/13/campana-de-las-elecciones-generales-29-n-en-directo-las-entrevistas-de-jordi-wild-un-nuevo-sondeo-y-ultima-hora-politica/",
+     "titulo": "Campaña de las elecciones generales 29-N, en directo: las entrevistas de Jordi Wild, un nuevo sondeo y última hora política",
+     "fecha": "2026-11-13T08:14:54+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Zelenski confirma el desbloqueo de las negociaciones con Rusia y el \"mayor intercambio de prisioneros\" entre los países",
+   "n_medios": 1,
+   "puntaje": 6.9,
+   "region": null,
+   "ejes": [
+    "eeuu",
+    "guerras"
+   ],
+   "tema": "Geopolítica",
+   "notas": [
+    {
+     "medio": "Europa Press",
+     "url": "https://www.europapress.es/internacional/noticia-zelenski-confirma-desbloqueo-negociaciones-rusia-mayor-intercambio-prisioneros-paises-20261113024339.html",
+     "titulo": "Zelenski confirma el desbloqueo de las negociaciones con Rusia y el \"mayor intercambio de prisioneros\" entre los países",
+     "fecha": "2026-11-13T01:43:39+00:00",
+     "pais": "España"
+    }
+   ]
+  },
+  {
    "seccion": "mercosur",
    "titulo": "Telefónica gana 802 millones en verano y borra sus pérdidas del año",
    "n_medios": 3,
-   "puntaje": 8.0,
+   "puntaje": 6.8,
    "region": null,
    "ejes": [],
    "tema": "General",
@@ -1198,90 +1347,50 @@
    ]
   },
   {
-   "seccion": "mundo",
-   "titulo": "Concluye en Panamá foro internacional sobre turismo de convenciones",
+   "seccion": "mercosur",
+   "titulo": "Professora é demitida de escola em SC após foto em apoio a Lula",
    "n_medios": 1,
-   "puntaje": 8.0,
+   "puntaje": 6.6,
    "region": null,
    "ejes": [
-    "congreso"
+    "mercosur"
    ],
    "tema": "General",
    "notas": [
     {
-     "medio": "Prensa Latina",
-     "url": "https://www.prensa-latina.cu/2026/11/12/concluye-en-panama-foro-internacional-sobre-turismo-de-convenciones/",
-     "titulo": "Concluye en Panamá foro internacional sobre turismo de convenciones",
-     "fecha": "2026-11-13T01:54:25+00:00",
-     "pais": "Cuba"
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/professora-e-demitida-de-escola-em-sc-apos-foto-em-apoio-lula",
+     "titulo": "Professora é demitida de escola em SC após foto em apoio a Lula",
+     "fecha": "2026-11-12T23:25:00+00:00",
+     "pais": "Brasil"
     }
    ]
   },
   {
    "seccion": "mundo",
-   "titulo": "Acuerdo de transportistas y gobierno de Chile pone fin al paro",
+   "titulo": "Irán reivindica ataque a radar de alerta temprana de EE.UU. en Baréin",
    "n_medios": 1,
-   "puntaje": 8.0,
+   "puntaje": 6.5,
    "region": null,
    "ejes": [
-    "energia"
-   ],
-   "tema": "Sociedad",
-   "notas": [
-    {
-     "medio": "Prensa Latina",
-     "url": "https://www.prensa-latina.cu/2026/11/12/acuerdo-de-transportistas-y-gobierno-de-chile-pone-fin-al-paro/",
-     "titulo": "Acuerdo de transportistas y gobierno de Chile pone fin al paro",
-     "fecha": "2026-11-13T01:12:51+00:00",
-     "pais": "Cuba"
-    }
-   ]
-  },
-  {
-   "seccion": "mundo",
-   "titulo": "Campaña electoral en Ecuador inicia con recorridos y rituales",
-   "n_medios": 1,
-   "puntaje": 8.0,
-   "region": null,
-   "ejes": [
-    "congreso"
+    "guerras"
    ],
    "tema": "General",
    "notas": [
     {
-     "medio": "Prensa Latina",
-     "url": "https://www.prensa-latina.cu/2026/11/12/campana-electoral-en-ecuador-inicia-con-recorridos-y-rituales/",
-     "titulo": "Campaña electoral en Ecuador inicia con recorridos y rituales",
-     "fecha": "2026-11-13T01:08:49+00:00",
-     "pais": "Cuba"
+     "medio": "DW Español",
+     "url": "https://www.dw.com/es/irán-reivindica-ataque-a-radar-de-alerta-temprana-de-ee-uu-en-baréin/a-79936474?maca=spa-rss-sp-all-1122-xml-mrss",
+     "titulo": "Irán reivindica ataque a radar de alerta temprana de EE.UU. en Baréin",
+     "fecha": "2026-11-13T04:51:00+00:00",
+     "pais": "Alemania"
     }
    ]
   },
   {
    "seccion": "mundo",
-   "titulo": "Presidente de Cámara de Diputados peruana destaca logros de Cuba",
+   "titulo": "Witkoff y Kushner se reúnen con Putin, mientras Zelenski pide mediación de Europa",
    "n_medios": 1,
-   "puntaje": 7.9,
-   "region": null,
-   "ejes": [
-    "congreso"
-   ],
-   "tema": "Política",
-   "notas": [
-    {
-     "medio": "Prensa Latina",
-     "url": "https://www.prensa-latina.cu/2026/11/12/presidente-de-camara-de-diputados-peruana-destaca-logros-de-cuba/",
-     "titulo": "Presidente de Cámara de Diputados peruana destaca logros de Cuba",
-     "fecha": "2026-11-13T00:45:47+00:00",
-     "pais": "Cuba"
-    }
-   ]
-  },
-  {
-   "seccion": "mundo",
-   "titulo": "Derrumbe de edificio en Nueva York causó la muerte a tres colombianos",
-   "n_medios": 1,
-   "puntaje": 7.9,
+   "puntaje": 6.5,
    "region": null,
    "ejes": [
     "eeuu"
@@ -1289,147 +1398,89 @@
    "tema": "General",
    "notas": [
     {
-     "medio": "Prensa Latina",
-     "url": "https://www.prensa-latina.cu/2026/11/12/derrumbe-de-edificio-en-nueva-york-causo-la-muerte-a-tres-colombianos/",
-     "titulo": "Derrumbe de edificio en Nueva York causó la muerte a tres colombianos",
-     "fecha": "2026-11-13T00:39:16+00:00",
-     "pais": "Cuba"
+     "medio": "France 24 Español",
+     "url": "https://www.france24.com/es/video/20261113-witkoff-y-kushner-se-re%C3%BAnen-con-putin-mientras-zelenski-pide-mediaci%C3%B3n-de-europa",
+     "titulo": "Witkoff y Kushner se reúnen con Putin, mientras Zelenski pide mediación de Europa",
+     "fecha": "2026-11-13T05:05:43+00:00",
+     "pais": "Francia"
     }
    ]
   },
   {
-   "seccion": "argentina",
-   "titulo": "Martín Menem presiona a Patricia Bullrich para acelerar la suspensión de las PASO",
+   "seccion": "mercosur",
+   "titulo": "Dólar dispara 1,58% e fecha a R$ 5,65, maior nível em 17 meses",
    "n_medios": 1,
-   "puntaje": 7.8,
-   "region": "norte-grande",
+   "puntaje": 6.4,
+   "region": null,
    "ejes": [
-    "congreso"
+    "economia"
    ],
-   "tema": "General",
+   "tema": "Economía",
    "notas": [
     {
-     "medio": "La Gaceta (Tucumán)",
-     "url": "https://www.lagaceta.com.ar/nota/1162309/politica/martin-menem-presiona-patricia-bullrich-para-acelerar-suspension-paso.html",
-     "titulo": "Martín Menem presiona a Patricia Bullrich para acelerar la suspensión de las PASO",
-     "fecha": "2026-11-12T17:59:00+00:00",
-     "pais": "Argentina"
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-dispara-158-e-fecha-r-565-maior-nivel-em-17-meses",
+     "titulo": "Dólar dispara 1,58% e fecha a R$ 5,65, maior nível em 17 meses",
+     "fecha": "2026-11-12T22:35:00+00:00",
+     "pais": "Brasil"
     }
    ]
   },
   {
    "seccion": "mundo",
-   "titulo": "Abascal carga contra el PSOE por la intervención de Begoña Gómez en el arranque de campaña: \"No tienen vergüenza\"",
+   "titulo": "Donald Trump ve innecesario un pacto de Estados Unidos con Irán",
    "n_medios": 1,
-   "puntaje": 7.1,
+   "puntaje": 6.1,
    "region": null,
    "ejes": [
-    "congreso"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Europa Press",
-     "url": "https://www.europapress.es/nacional/noticia-abascal-carga-contra-psoe-intervencion-begona-gomez-arranque-campana-no-tienen-verguenza-20261112204214.html",
-     "titulo": "Abascal carga contra el PSOE por la intervención de Begoña Gómez en el arranque de campaña: \"No tienen vergüenza\"",
-     "fecha": "2026-11-12T19:42:14+00:00",
-     "pais": "España"
-    }
-   ]
-  },
-  {
-   "seccion": "argentina",
-   "titulo": "En Panamá la norma que limita el cobro del impuesto por uso de la energía solar vence en diciembre",
-   "n_medios": 1,
-   "puntaje": 7.0,
-   "region": null,
-   "ejes": [
-    "energia"
-   ],
-   "tema": "Energía",
-   "notas": [
-    {
-     "medio": "Infobae",
-     "url": "https://www.infobae.com/panama/2026/11/13/en-panama-la-norma-que-limita-el-cobro-del-impuesto-por-uso-de-la-energia-solar-vence-en-diciembre/",
-     "titulo": "En Panamá la norma que limita el cobro del impuesto por uso de la energía solar vence en diciembre",
-     "fecha": "2026-11-13T01:16:37+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "argentina",
-   "titulo": "Calendario lunar de noviembre 2026: cómo se verá la luna las próximas noches desde Estados Unidos",
-   "n_medios": 1,
-   "puntaje": 7.0,
-   "region": null,
-   "ejes": [
-    "eeuu"
+    "eeuu",
+    "guerras"
    ],
    "tema": "Geopolítica",
    "notas": [
     {
-     "medio": "Infobae",
-     "url": "https://www.infobae.com/estados-unidos/2026/11/13/calendario-lunar-de-noviembre-2026-como-se-vera-la-luna-las-proximas-noches-desde-estados-unidos/",
-     "titulo": "Calendario lunar de noviembre 2026: cómo se verá la luna las próximas noches desde Estados Unidos",
-     "fecha": "2026-11-13T01:16:16+00:00",
-     "pais": "Argentina"
+     "medio": "DW Español",
+     "url": "https://www.dw.com/es/donald-trump-ve-innecesario-un-pacto-de-estados-unidos-con-irán/a-79935968?maca=spa-rss-sp-all-1122-xml-mrss",
+     "titulo": "Donald Trump ve innecesario un pacto de Estados Unidos con Irán",
+     "fecha": "2026-11-13T02:27:00+00:00",
+     "pais": "Alemania"
     }
    ]
   },
   {
-   "seccion": "argentina",
-   "titulo": "De la Espriella ordenó reversar salarios de hasta $765 millones mensuales en el Fondo Milagro en medio de su política de austeridad: “No los autorizo”",
+   "seccion": "mercosur",
+   "titulo": "Qué dijo el camionero que habría llevado a Leonardo Bertulazzi hasta Corrientes : Es un tipazo",
    "n_medios": 1,
-   "puntaje": 7.0,
-   "region": null,
-   "ejes": [
-    "economia"
-   ],
-   "tema": "Economía",
+   "puntaje": 5.8,
+   "region": "norte-grande",
+   "ejes": [],
+   "tema": "General",
    "notas": [
     {
-     "medio": "Infobae",
-     "url": "https://www.infobae.com/colombia/2026/11/13/de-la-espriella-ordeno-reversar-salarios-de-hasta-765-millones-mensuales-en-el-fondo-milagro-en-medio-de-su-politica-de-austeridad-no-los-autorizo/",
-     "titulo": "De la Espriella ordenó reversar salarios de hasta $765 millones mensuales en el Fondo Milagro en medio de su política de austeridad: “No los autorizo”",
-     "fecha": "2026-11-13T01:12:00+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "argentina",
-   "titulo": "Salario mínimo de 2027: plantean un aumento “sensato” para evitar problemas en las empresas y en los precios de los productos y servicios",
-   "n_medios": 1,
-   "puntaje": 7.0,
-   "region": null,
-   "ejes": [
-    "economia"
-   ],
-   "tema": "Economía",
-   "notas": [
-    {
-     "medio": "Infobae",
-     "url": "https://www.infobae.com/colombia/2026/11/13/salario-minimo-de-2027-planteo-un-aumento-sensato-para-evitar-problemas-en-las-empresas-y-en-los-precios-de-los-productos-y-servicios/",
-     "titulo": "Salario mínimo de 2027: plantean un aumento “sensato” para evitar problemas en las empresas y en los precios de los productos y servicios",
-     "fecha": "2026-11-13T01:11:45+00:00",
+     "medio": "mdzol.com",
+     "url": "https://www.mdzol.com/policiales/2026/11/12/que-dijo-el-camionero-que-habria-llevado-a-leonardo-bertulazzi-hasta-corrientes-es-un-tipazo-1995097.html",
+     "titulo": "Qué dijo el camionero que habría llevado a Leonardo Bertulazzi hasta Corrientes : Es un tipazo",
+     "fecha": "2026-11-13T00:45:00+00:00",
      "pais": "Argentina"
     }
    ]
   },
   {
    "seccion": "mercosur",
-   "titulo": "Pablo Sirven presentó en San Juan Operación Sallustro : la historia humana detrás de una foto",
+   "titulo": "El Presupuesto se tratará el miércoles 25 en Diputados",
    "n_medios": 1,
-   "puntaje": 6.9,
-   "region": "cuyo",
-   "ejes": [],
-   "tema": "General",
+   "puntaje": 5.8,
+   "region": null,
+   "ejes": [
+    "congreso",
+    "mercosur"
+   ],
+   "tema": "Política",
    "notas": [
     {
-     "medio": "tiempodesanjuan.com",
-     "url": "http://www.tiempodesanjuan.com/san-juan/pablo-sirven-presento-en-san-juan-operacion-sallustro-la-historia-humana-detras-de-una-foto_1794529561",
-     "titulo": "Pablo Sirven presentó en San Juan Operación Sallustro : la historia humana detrás de una foto",
+     "medio": "lv12.com.ar",
+     "url": "https://www.lv12.com.ar/presupuesto/el-presupuesto-se-tratara-el-miercoles-25-diputados-n206567",
+     "titulo": "El Presupuesto se tratará el miércoles 25 en Diputados",
      "fecha": "2026-11-13T00:45:00+00:00",
      "pais": "Argentina"
     }
@@ -1439,7 +1490,7 @@
    "seccion": "mercosur",
    "titulo": "Condorito , Yayita y Washington volverán renovados a su isla en La Paloma",
    "n_medios": 1,
-   "puntaje": 6.9,
+   "puntaje": 5.8,
    "region": null,
    "ejes": [
     "eeuu"
@@ -1457,9 +1508,27 @@
   },
   {
    "seccion": "mercosur",
+   "titulo": "STF encerra processo sobre perdas inflacionárias em planos econômicos",
+   "n_medios": 1,
+   "puntaje": 4.8,
+   "region": null,
+   "ejes": [],
+   "tema": "Economía",
+   "notas": [
+    {
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/stf-encerra-processo-sobre-perdas-inflacionarias-em-planos-economicos",
+     "titulo": "STF encerra processo sobre perdas inflacionárias em planos econômicos",
+     "fecha": "2026-11-13T00:35:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
    "titulo": "PGR é contra revisar condenação de Jair Bolsonaro",
    "n_medios": 1,
-   "puntaje": 5.9,
+   "puntaje": 4.7,
    "region": null,
    "ejes": [],
    "tema": "General",
@@ -1477,7 +1546,7 @@
    "seccion": "mercosur",
    "titulo": "MP apura desvio de R$ 21 milhões em eventos esportivos na cidade de SP",
    "n_medios": 1,
-   "puntaje": 5.9,
+   "puntaje": 4.7,
    "region": null,
    "ejes": [],
    "tema": "General",
@@ -1487,78 +1556,6 @@
      "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/mp-apura-desvio-de-r-21-milhoes-em-eventos-esportivos-na-cidade-de-sp",
      "titulo": "MP apura desvio de R$ 21 milhões em eventos esportivos na cidade de SP",
      "fecha": "2026-11-13T00:13:00+00:00",
-     "pais": "Brasil"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Tesouro Nacional identifica vazamento de dados de 30 mil cadastros",
-   "n_medios": 1,
-   "puntaje": 5.8,
-   "region": null,
-   "ejes": [],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Agência Brasil",
-     "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/tesouro-nacional-identifica-vazamento-de-dados-de-30-mil-cadastros",
-     "titulo": "Tesouro Nacional identifica vazamento de dados de 30 mil cadastros",
-     "fecha": "2026-11-12T23:48:00+00:00",
-     "pais": "Brasil"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Caixa Seguridade informa ataque cibernético e vazamento de dados",
-   "n_medios": 1,
-   "puntaje": 5.7,
-   "region": null,
-   "ejes": [],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Agência Brasil",
-     "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/caixa-seguridade-informa-ataque-cibernetico-e-vazamento-de-dados",
-     "titulo": "Caixa Seguridade informa ataque cibernético e vazamento de dados",
-     "fecha": "2026-11-12T23:06:00+00:00",
-     "pais": "Brasil"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Zanin rejeita ação para determinar segundo turno para o governo do Rio",
-   "n_medios": 1,
-   "puntaje": 5.6,
-   "region": null,
-   "ejes": [],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Agência Brasil",
-     "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/zanin-rejeita-acao-para-determinar-segundo-turno-para-o-governo-do-rio",
-     "titulo": "Zanin rejeita ação para determinar segundo turno para o governo do Rio",
-     "fecha": "2026-11-12T22:30:00+00:00",
-     "pais": "Brasil"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Drauzio Varella é novo membro da Academia Brasileira de Letras",
-   "n_medios": 1,
-   "puntaje": 5.4,
-   "region": null,
-   "ejes": [],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Agência Brasil",
-     "url": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/drauzio-varela-e-novo-membro-da-academia-brasileira-de-letras",
-     "titulo": "Drauzio Varella é novo membro da Academia Brasileira de Letras",
-     "fecha": "2026-11-12T21:47:00+00:00",
      "pais": "Brasil"
     }
    ]
