@@ -23,7 +23,7 @@
     ]
   },
   "ia": {
-    "_ayuda": "Orden: Gemini (clave GEMINI_API_KEY), Groq (clave GROQ_API_KEY) y, si no hay claves o fallan, Pollinations, que es gratis y no pide clave pero va más lento. Las claves gratuitas dan mejores resultados.",
+    "_ayuda": "Orden: Gemini (clave GEMINI_API_KEY), Groq (GROQ_API_KEY), OpenRouter (OPENROUTER_API_KEY: modelos gratis como DeepSeek, Qwen o Kimi) y, si no hay ninguna, Pollinations sin clave, que se corta enseguida.",
     "gemini_modelos": [
       "gemini-flash-latest",
       "gemini-2.5-flash",
@@ -38,7 +38,10 @@
       "openai"
     ],
     "pausa_segundos": 5,
-    "pausa_sin_clave": 16
+    "pausa_sin_clave": 16,
+    "openrouter_modelos": [
+      "openrouter/free"
+    ]
   },
   "agentes": [
     {
