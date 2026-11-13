@@ -511,6 +511,53 @@ def enlazador(borr, tema, fts, diario):
     return html, puestos, relacionadas
 
 
+# ───────────────────────── 13 · agenda del día ─────────────────────────
+
+CUANDO = re.compile(r"\b(hoy|mañana|esta (?:tarde|noche|semana)|este (?:lunes|martes|miércoles|jueves|viernes|sábado|domingo)|"
+                    r"el (?:próximo )?(?:lunes|martes|miércoles|jueves|viernes|sábado|domingo)|en las próximas horas)\b", re.I)
+EVENTO = re.compile(r"\b(sesi[oó]n|sesiona|audiencia|publicar[aá]|dar[aá] a conocer|difundir[aá]|se reunir[aá]|se re[uú]ne|reuni[oó]n|cumbre|paro|"
+                    r"marcha|movilizaci[oó]n|vence|vencimiento|licitaci[oó]n|asumir[aá]|asume|jura|debate|votaci[oó]n|tratar[aá]|conferencia|"
+                    r"viaja|visitar[aá]|elecciones|indec|inflaci[oó]n de|feriado|anuncio|anunciar[aá])\b", re.I)
+
+
+def agenda(noticias):
+    vistos, salida = [], []
+    for n in sorted(AG.todas_las_notas(noticias), key=lambda n: n.get("fecha") or "", reverse=True):
+        texto = (n.get("titulo") or "") + " " + (n.get("resumen") or "")
+        c, e = CUANDO.search(texto), EVENTO.search(texto)
+        if not (c and e) or REC.es_ruido(n.get("titulo") or ""):
+            continue
+        if any(parecidos(n["titulo"], v, 0.35) for v in vistos):
+            continue
+        vistos.append(n["titulo"])
+        salida.append({"titulo": n["titulo"], "url": n["url"], "medio": n.get("medio"), "fecha": n.get("fecha"),
+                       "cuando": c.group(0), "que": e.group(0), "ejes": n.get("ejes") or REC.ejes_de(texto),
+                       "argentina": n.get("pais") == "Argentina" or bool(n.get("region")) or n.get("zona") in ("argentina", "nacional")})
+    # primero lo argentino, después lo que toca la agenda del diario
+    salida.sort(key=lambda x: (not x["argentina"], not x["ejes"]))
+    return salida[:15]
+
+
+# ───────────────────────── 14 · seguimiento ─────────────────────────
+
+def seguimiento(noticias, historial):
+    notas = AG.todas_las_notas(noticias)
+    salida, vistos = [], []
+    for h in sorted(historial, key=lambda h: h.get("fecha", ""), reverse=True):
+        if any(parecidos(h["titulo"], v, 0.5) for v in vistos):
+            continue
+        vistos.append(h["titulo"])
+        nuevas = [n for n in notas if (n.get("fecha") or "") > h.get("fecha", "") and AG.jaccard(AG.raices(h["titulo"]), AG.raices(n.get("titulo") or "")) >= 0.3]
+        unicas, urls = [], set()
+        for n in nuevas:
+            if n["url"] not in urls:
+                urls.add(n["url"]); unicas.append({"titulo": n["titulo"], "url": n["url"], "medio": n.get("medio"), "fecha": n.get("fecha")})
+        if unicas:
+            salida.append({"tema": h["titulo"], "desde": h.get("fecha"), "nuevas": len(unicas), "notas": unicas[:4]})
+    salida.sort(key=lambda x: x["nuevas"], reverse=True)
+    return salida[:10]
+
+
 # ───────────────────────── la cadena ─────────────────────────
 
 def correr(nombre_agente, reg, ia, fn, *args):
@@ -548,6 +595,12 @@ def main():
     historial = [h for h in (leer(hist_ruta, []) or []) if h.get("fecha", "") >= (datetime.now(timezone.utc) - timedelta(days=3)).isoformat()]
 
     candidatos = monitores(noticias, conf, reg)
+    ag = correr("agenda", reg, ia, agenda, noticias) if "agenda" in reg.estado else None
+    if ag is not None:
+        reg.anotar("agenda", "funcionó", f"{len(ag)} hechos anunciados para hoy o los próximos días", len(ag))
+    sg = correr("seguimiento", reg, ia, seguimiento, noticias, historial) if "seguimiento" in reg.estado else None
+    if sg is not None:
+        reg.anotar("seguimiento", "funcionó", f"{len(sg)} temas de los últimos días con notas nuevas" if historial else "Todavía no hay temas de días anteriores para seguir", len(sg))
     menu, como = jefe(candidatos, conf, ia, reg, historial)
     print(f"Menú del día: {len(menu)} temas (elegidos por {como}) de {len(candidatos)} candidatos", flush=True)
 
@@ -651,12 +704,21 @@ def main():
     salida = {"generado": ahora(), "noticias_de": noticias.get("generado"), "eleccion": como,
               "ia": {"disponible": ia.disponible, "usado": ia.usado, "llamadas": ia.llamadas},
               "diario": {"notas": len(diario), "desde": ruta_diario},
-              "agentes": reg.lista(), "menu": borradores, "reserva": reserva}
+              "agentes": reg.lista(), "menu": borradores, "reserva": reserva, "agenda": ag or [], "seguimiento": sg or []}
+    if "whatsapp" in reg.estado and reg.prendido("whatsapp"):
+        try:
+            import avisar
+            res = avisar.mandar(avisar.resumen(salida))
+            reg.anotar("whatsapp", "funcionó" if res.startswith("enviado") else "sin configurar",
+                       "Mensaje enviado" if res.startswith("enviado") else "Falta tu teléfono y la clave de CallMeBot en secretos/claves.json")
+        except Exception as e:  # noqa: BLE001
+            reg.anotar("whatsapp", "falló", str(e))
+        salida["agentes"] = reg.lista()
     (DATOS / "redaccion.json").write_text(json.dumps(salida, ensure_ascii=False, indent=1), encoding="utf-8")
     historial += [{"fecha": ahora(), "titulo": b["titulo_tema"]} for b in borradores]
     hist_ruta.write_text(json.dumps(historial[-120:], ensure_ascii=False, indent=1), encoding="utf-8")
     ok = sum(1 for e in reg.estado.values() if e["resultado"] == "funcionó")
-    print(f"Listo: {len(borradores)} temas, {cuenta['redactor']} borradores, {ok} de 12 agentes funcionaron, {ia.llamadas} pedidos a la IA ({ia.usado or 'sin IA'}).")
+    print(f"Listo: {len(borradores)} temas, {cuenta['redactor']} borradores, {ok} de {len(reg.estado)} agentes funcionaron, {ia.llamadas} pedidos a la IA ({ia.usado or 'sin IA'}).")
     return 0
 
 

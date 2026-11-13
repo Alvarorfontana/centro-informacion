@@ -156,6 +156,33 @@
       "hace": "Pule el texto para que suene a Diario Federal, sin tocar los datos.",
       "ia": true,
       "prendido": true
+    },
+    {
+      "id": "agenda",
+      "n": 13,
+      "etapa": "Selección",
+      "nombre": "Agenda del día",
+      "hace": "Busca en los titulares lo que pasa hoy y mañana: sesiones, audiencias, datos del INDEC, cumbres, paros.",
+      "ia": false,
+      "prendido": true
+    },
+    {
+      "id": "seguimiento",
+      "n": 14,
+      "etapa": "Edición",
+      "nombre": "Seguimiento",
+      "hace": "Sigue los temas de los últimos días y avisa cuando aparecen notas nuevas sobre ellos.",
+      "ia": false,
+      "prendido": true
+    },
+    {
+      "id": "whatsapp",
+      "n": 15,
+      "etapa": "Edición",
+      "nombre": "Aviso por WhatsApp",
+      "hace": "Cuando termina la vuelta, te manda por WhatsApp el menú, la agenda y el seguimiento.",
+      "ia": false,
+      "prendido": true
     }
   ]
 }

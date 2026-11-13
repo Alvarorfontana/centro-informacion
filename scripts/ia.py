@@ -23,13 +23,26 @@ class SinClave(Exception):
     pass
 
 
+def clave(nombre):
+    """Busca la clave en las variables de GitHub y, si no está, en secretos/claves.json (no se publica en el sitio)."""
+    v = os.environ.get(nombre, "").strip()
+    if v:
+        return v
+    try:
+        ruta = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "secretos", "claves.json")
+        with open(ruta, encoding="utf-8") as f:
+            return str(json.load(f).get(nombre) or "").strip()
+    except Exception:  # noqa: BLE001
+        return ""
+
+
 class IA:
     def __init__(self, conf):
-        self.gemini = os.environ.get("GEMINI_API_KEY", "").strip()
-        self.groq = os.environ.get("GROQ_API_KEY", "").strip()
+        self.gemini = clave("GEMINI_API_KEY")
+        self.groq = clave("GROQ_API_KEY")
         self.gemini_modelos = conf.get("gemini_modelos") or ["gemini-flash-latest"]
         self.groq_modelos = conf.get("groq_modelos") or ["llama-3.3-70b-versatile"]
-        self.openrouter = os.environ.get("OPENROUTER_API_KEY", "").strip()
+        self.openrouter = clave("OPENROUTER_API_KEY")
         self.openrouter_modelos = conf.get("openrouter_modelos") or ["openrouter/free"]
         self.libre = conf.get("sin_clave", True)  # Pollinations, sin clave
         self.libre_modelos = conf.get("pollinations_modelos") or ["openai"]

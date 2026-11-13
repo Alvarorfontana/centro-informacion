@@ -857,10 +857,14 @@ body { background: var(--papel); }
 
       <!-- REDACCIÓN AUTOMÁTICA: los 12 agentes (scripts/redaccion.py → datos/redaccion.json) -->
       <section class="vista" id="v-agentes" aria-labelledby="t-age" hidden>
-        <div class="cabeza"><div><h2 id="t-age">Redacción automática</h2><p>Doce agentes trabajan dos veces por día (5:40 y 15:40): eligen los temas, leen las fuentes, escriben, verifican, titulan y enlazan. Nada se publica solo: vos elegís qué pasa a la mesa o al diario.</p></div><div class="cifras" id="age-cifras"></div></div>
+        <div class="cabeza"><div><h2 id="t-age">Redacción automática</h2><p>Quince agentes trabajan dos veces por día (5:40 y 15:40): eligen los temas, leen las fuentes, escriben, verifican, titulan y enlazan. Nada se publica solo: vos elegís qué pasa a la mesa o al diario.</p></div><div class="cifras" id="age-cifras"></div></div>
         <div id="age-aviso"></div>
         <h3 class="age-sub">Los agentes</h3>
         <div class="age-equipo" id="age-equipo"></div>
+        <h3 class="age-sub">Agenda del día <small>lo que los medios anuncian para hoy y los próximos días</small></h3>
+        <div id="age-agenda"></div>
+        <h3 class="age-sub">Seguimiento <small>temas de días anteriores con notas nuevas</small></h3>
+        <div id="age-seg"></div>
         <h3 class="age-sub">Menú del día <small id="age-cuando"></small></h3>
         <div class="filtros"><select id="age-sec" aria-label="Sección"><option value="">Todas las secciones</option><option value="argentina">Argentina</option><option value="local">Local</option><option value="mercosur">Mercosur</option><option value="mundo">Mundo</option></select></div>
         <div id="age-menu"></div>
@@ -1675,12 +1679,21 @@ body { background: var(--papel); }
     var A = (RED && RED.agentes) || [];
     var marcha = A.filter(function (a) { return a.resultado === 'funcionó' || a.resultado === 'con fallas'; }).length;
     $('r-marcha').textContent = RED ? marcha + ' de ' + (A.length || 12) : '0 de 12';
+    if (!RED) { $('age-agenda').innerHTML = ''; $('age-seg').innerHTML = ''; }
     $('c-age').textContent = RED ? (RED.menu || []).length : '12';
     if (RED) $('age-atajo-txt').textContent = (RED.menu || []).length + ' temas en el menú del día · ' + (RED.menu || []).filter(function (b) { return b.cuerpo_html; }).length + ' borradores escritos · armado ' + hace(RED.generado);
     if (!RED) {
       $('age-equipo').innerHTML = '<div class="vacio-vivo"><b>Los agentes todavía no corrieron</b><p>La primera vuelta se hace sola a las 5:40 o a las 15:40. Para no esperar: en GitHub, pestaña Actions → "Redacción automática" → Run workflow.</p></div>';
       return;
     }
+    var AGD = RED.agenda || [], SEG = RED.seguimiento || [];
+    $('age-agenda').innerHTML = AGD.length ? '<div class="age-res">' + AGD.map(function (a) {
+      return '<div><span class="pill sec">' + esc(a.cuando) + '</span><a class="t" href="' + esc(a.url) + '" target="_blank" rel="noopener">' + esc(a.titulo) + '</a><small>' + esc(a.medio || '') + '</small>' +
+        botonMesa({ titulo: a.titulo, url: a.url, medio: a.medio, fecha: a.fecha }) + '</div>';
+    }).join('') + '</div>' : '<div class="vacio">Sin anuncios para hoy en esta vuelta.</div>';
+    $('age-seg').innerHTML = SEG.length ? '<div class="age-res">' + SEG.map(function (t) {
+      return '<div><span class="pill sec">+' + t.nuevas + '</span><span class="t"><b>' + esc(t.tema) + '</b>' + t.notas.map(function (n) { return '<br><a href="' + esc(n.url) + '" target="_blank" rel="noopener" style="color:var(--tinta-2)">' + esc(n.medio || '') + ': ' + esc(n.titulo) + '</a>'; }).join('') + '</span></div>';
+    }).join('') + '</div>' : '<div class="vacio">Todavía no hay temas de días anteriores con novedades.</div>';
     $('age-equipo').innerHTML = ['Selección', 'Producción', 'Edición'].map(function (et) {
       return '<div class="age-etapa"><h4>' + et + '</h4>' + A.filter(function (a) { return a.etapa === et; }).map(function (a) {
         return '<details class="age-ag" data-agente="' + esc(a.id) + '"><summary><div class="fila"><span class="num">' + a.n + '</span><b>' + esc(a.nombre) + '</b>' + (a.ia ? '<span class="pill">IA</span>' : '') + chip(a.prendido === false ? 'apagado' : a.resultado) + '</div>' +
