@@ -1,0 +1,1697 @@
+{
+ "generado": "2026-11-13T04:26:08+00:00",
+ "noticias_de": "2026-11-13T01:06:20+00:00",
+ "eleccion": "reglas",
+ "ia": {
+  "disponible": false,
+  "usado": null,
+  "llamadas": 0
+ },
+ "diario": {
+  "notas": 93,
+  "desde": "/rss.xml"
+ },
+ "agentes": [
+  {
+   "id": "monitor-argentina",
+   "n": 1,
+   "etapa": "Selección",
+   "nombre": "Monitor Argentina",
+   "hace": "Ordena las noticias del país por región y por cuántos medios las cuentan.",
+   "ia": false,
+   "prendido": true,
+   "resultado": "funcionó",
+   "detalle": "119 titulares de 24 medios → 12 temas",
+   "produjo": 12,
+   "inicio": "2026-11-13T04:25:51+00:00",
+   "fin": "2026-11-13T04:25:51+00:00"
+  },
+  {
+   "id": "monitor-local",
+   "n": 2,
+   "etapa": "Selección",
+   "nombre": "Monitor local",
+   "hace": "Busca noticias de los lugares de la lista \"local\" de este archivo.",
+   "ia": false,
+   "prendido": true,
+   "resultado": "funcionó",
+   "detalle": "0 titulares de 0 medios → 0 temas",
+   "produjo": 0,
+   "inicio": "2026-11-13T04:25:51+00:00",
+   "fin": "2026-11-13T04:25:51+00:00"
+  },
+  {
+   "id": "monitor-mercosur",
+   "n": 3,
+   "etapa": "Selección",
+   "nombre": "Monitor Mercosur",
+   "hace": "Noticias de Brasil, Uruguay, Paraguay, Bolivia, Chile y el bloque.",
+   "ia": false,
+   "prendido": true,
+   "resultado": "funcionó",
+   "detalle": "55 titulares de 30 medios → 12 temas",
+   "produjo": 12,
+   "inicio": "2026-11-13T04:25:51+00:00",
+   "fin": "2026-11-13T04:25:51+00:00"
+  },
+  {
+   "id": "monitor-mundo",
+   "n": 4,
+   "etapa": "Selección",
+   "nombre": "Monitor internacional",
+   "hace": "Lo más cubierto en el mundo por agencias y medios.",
+   "ia": false,
+   "prendido": true,
+   "resultado": "funcionó",
+   "detalle": "114 titulares de 9 medios → 12 temas",
+   "produjo": 12,
+   "inicio": "2026-11-13T04:25:51+00:00",
+   "fin": "2026-11-13T04:25:51+00:00"
+  },
+  {
+   "id": "jefe",
+   "n": 5,
+   "etapa": "Selección",
+   "nombre": "Jefe de redacción",
+   "hace": "Junta lo de los monitores, saca repetidas y arma el menú del día con el porqué de cada tema.",
+   "ia": true,
+   "prendido": true,
+   "resultado": "sin clave de IA",
+   "detalle": "Eligió 8 temas por puntaje (sin IA no escribe el porqué)",
+   "produjo": 8,
+   "inicio": "2026-11-13T04:25:51+00:00",
+   "fin": "2026-11-13T04:25:51+00:00"
+  },
+  {
+   "id": "redactor",
+   "n": 6,
+   "etapa": "Producción",
+   "nombre": "Redactor",
+   "hace": "Escribe un borrador propio de cada tema, con palabras propias y atribuyendo cada dato.",
+   "ia": true,
+   "prendido": true,
+   "resultado": "sin clave de IA",
+   "detalle": "Falta cargar la clave gratuita de Gemini o Groq en GitHub (ver LEEME de agentes)",
+   "produjo": 0,
+   "inicio": "2026-11-13T04:26:07+00:00",
+   "fin": "2026-11-13T04:26:07+00:00"
+  },
+  {
+   "id": "fuentes",
+   "n": 7,
+   "etapa": "Producción",
+   "nombre": "Fuentes y autores",
+   "hace": "Abre cada nota original: autor, fecha, agencia que cita y documentos oficiales enlazados.",
+   "ia": false,
+   "prendido": true,
+   "resultado": "funcionó",
+   "detalle": "Leyó 15 de 19 notas originales; 16 con autor",
+   "produjo": 8,
+   "inicio": "2026-11-13T04:26:06+00:00",
+   "fin": "2026-11-13T04:26:08+00:00"
+  },
+  {
+   "id": "verificador",
+   "n": 8,
+   "etapa": "Producción",
+   "nombre": "Verificador",
+   "hace": "Revisa que cada dato del borrador esté en las fuentes y cuenta fuentes independientes.",
+   "ia": true,
+   "prendido": true,
+   "resultado": "sin clave de IA",
+   "detalle": "Falta cargar la clave gratuita de Gemini o Groq en GitHub (ver LEEME de agentes)",
+   "produjo": 0,
+   "fin": "2026-11-13T04:26:08+00:00"
+  },
+  {
+   "id": "fotos",
+   "n": 9,
+   "etapa": "Producción",
+   "nombre": "Fotos",
+   "hace": "Propone fotos con su crédito: la de cada medio y fotos libres de Wikimedia.",
+   "ia": false,
+   "prendido": true,
+   "resultado": "funcionó",
+   "detalle": "36 fotos propuestas (22 libres)",
+   "produjo": 8,
+   "inicio": "2026-11-13T04:26:07+00:00",
+   "fin": "2026-11-13T04:26:08+00:00"
+  },
+  {
+   "id": "titulador",
+   "n": 10,
+   "etapa": "Edición",
+   "nombre": "Titulador",
+   "hace": "Tres títulos y dos bajadas para elegir.",
+   "ia": true,
+   "prendido": true,
+   "resultado": "sin clave de IA",
+   "detalle": "Falta cargar la clave gratuita de Gemini o Groq en GitHub (ver LEEME de agentes)",
+   "produjo": 0,
+   "fin": "2026-11-13T04:26:08+00:00"
+  },
+  {
+   "id": "enlazador",
+   "n": 11,
+   "etapa": "Edición",
+   "nombre": "Enlazador",
+   "hace": "Pone enlaces a notas anteriores del diario (rojo) y a las fuentes (azul).",
+   "ia": false,
+   "prendido": true,
+   "resultado": "esperando borradores",
+   "detalle": "Trabaja sobre los borradores del Redactor, que todavía no escribió ninguno",
+   "produjo": 0,
+   "fin": "2026-11-13T04:26:08+00:00"
+  },
+  {
+   "id": "corrector",
+   "n": 12,
+   "etapa": "Edición",
+   "nombre": "Corrector de estilo",
+   "hace": "Pule el texto para que suene a Diario Federal, sin tocar los datos.",
+   "ia": true,
+   "prendido": true,
+   "resultado": "sin clave de IA",
+   "detalle": "Falta cargar la clave gratuita de Gemini o Groq en GitHub (ver LEEME de agentes)",
+   "produjo": 0,
+   "fin": "2026-11-13T04:26:08+00:00"
+  }
+ ],
+ "menu": [
+  {
+   "id": "20261113-01",
+   "seccion": "argentina",
+   "por_que": "",
+   "titulo_tema": "Por qué subió la inflación en octubre: la explicación de Luis Caputo tras el dato del Indec",
+   "puntaje": 12.4,
+   "n_medios": 3,
+   "paises": [
+    "Argentina"
+   ],
+   "region": "",
+   "tema": "Economía",
+   "ejes": [
+    "economia",
+    "estadisticas"
+   ],
+   "region_mundo": "América Latina",
+   "titulos": [
+    "Por qué subió la inflación en octubre: la explicación de Luis Caputo tras el dato del Indec"
+   ],
+   "bajadas": [],
+   "cuerpo_html": "",
+   "fotos": [
+    {
+     "url": "https://media.ambito.com/p/2f6b4b9e31e1607d0a76f46bb300a86c/adjuntos/239/imagenes/043/744/0043744646/1200x675/1157x594:1177x614/luis-caputo-uia-2026-7.jpeg",
+     "pagina": "https://www.ambito.com/economia/luis-caputo-explico-que-impulso-la-inflacion-octubre-y-defendio-el-rumbo-economico-n6344665",
+     "credito": "Foto: Ámbito",
+     "fuente": "Ámbito",
+     "descripcion": "Luis Caputo explicó qué impulsó la inflación de octubre y defendió el rumbo económico",
+     "libre": false
+    },
+    {
+     "url": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/rn-2026-11-12T174309.601.jpg?w=1200&h=630&crop=1&resize=1200,630",
+     "pagina": "https://www.rionegro.com.ar/economia/el-motivo-que-dio-luis-caputo-para-el-repunte-de-la-inflacion-en-octubre-2026-destaco-el-dato-de-ipc-nucleo-4796326/",
+     "credito": "Foto: Río Negro",
+     "fuente": "Río Negro",
+     "descripcion": "El motivo que dio Luis Caputo sobre el repunte de la inflación en octubre 2026: destacó el dato de IPC Núcleo",
+     "libre": false
+    },
+    {
+     "url": "https://img.lagaceta.com.ar/fotos/notas/2026/11/05/1161120_202611042322030000001.jpg",
+     "pagina": "https://www.lagaceta.com.ar/nota/1162299/economia/por-subio-inflacion-octubre-explicacion-luis-caputo-tras-dato-indec.html",
+     "credito": "Foto: La Gaceta (Tucumán)",
+     "fuente": "La Gaceta (Tucumán)",
+     "descripcion": "Por qué subió la inflación en octubre: la explicación de Luis Caputo tras el dato del Indec",
+     "libre": false
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Caputo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Luis_Caputo.jpg",
+     "credito": "Foto: [argentina.gob.ar Gobierno argentino] / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "Luis Andrés Caputo, economista y trader argentino. Ministro de Finanzas (2017-2018) y Presidente del Banco Central de la República Argentina (2018).",
+     "licencia": "CC BY-SA 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Mf_2017_01_10_luis_caputo_juro_como_ministro.jpg/1280px-Mf_2017_01_10_luis_caputo_juro_como_ministro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mf_2017_01_10_luis_caputo_juro_como_ministro.jpg",
+     "credito": "Foto: [argentina.gob.ar Gobierno argentino] / Wikimedia Commons (CC BY 4.0)",
+     "descripcion": "El equipo económico que acompañó al Ministro Luis Caputo durante su gestión al frente de la Secretaría de Finanzas en el primer año del gobierno de Mauricio Macri.",
+     "licencia": "CC BY 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    }
+   ],
+   "enlaces": [],
+   "relacionadas": [],
+   "verificacion": {
+    "independientes": 3,
+    "paises": [
+     "Argentina"
+    ],
+    "estatal": [],
+    "oficiales": [],
+    "agencias_citadas": [],
+    "leidas": 3
+   },
+   "fuentes": [
+    {
+     "medio": "Ámbito",
+     "url": "https://www.ambito.com/economia/luis-caputo-explico-que-impulso-la-inflacion-octubre-y-defendio-el-rumbo-economico-n6344665",
+     "titulo": "Luis Caputo explicó qué impulsó la inflación de octubre y defendió el rumbo económico",
+     "pais": "Argentina",
+     "tipo": "Medio",
+     "fecha": "2026-11-12T21:26:00+00:00",
+     "idioma": "castellano",
+     "autor": "ámbito.com",
+     "fecha_pub": "2026-11-12T18:26:00-03:00",
+     "imagen": "https://media.ambito.com/p/2f6b4b9e31e1607d0a76f46bb300a86c/adjuntos/239/imagenes/043/744/0043744646/1200x675/1157x594:1177x614/luis-caputo-uia-2026-7.jpeg",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 91,
+     "resumen": "El ministro de Economía atribuyó parte del 2,2% a los cambios en el Régimen de Zona Fría. Además, destacó que la medición núcleo fue del 1,5%, su nivel más bajo desde julio de 2025."
+    },
+    {
+     "medio": "Río Negro",
+     "url": "https://www.rionegro.com.ar/economia/el-motivo-que-dio-luis-caputo-para-el-repunte-de-la-inflacion-en-octubre-2026-destaco-el-dato-de-ipc-nucleo-4796326/",
+     "titulo": "El motivo que dio Luis Caputo sobre el repunte de la inflación en octubre 2026: destacó el dato de IPC Núcleo",
+     "pais": "Argentina",
+     "tipo": "Medio regional",
+     "fecha": "2026-11-12T20:47:55+00:00",
+     "idioma": "castellano",
+     "autor": "Redacción",
+     "fecha_pub": "2026-11-12T17:47:55-03:00",
+     "imagen": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/rn-2026-11-12T174309.601.jpg?w=1200&h=630&crop=1&resize=1200,630",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 586,
+     "resumen": null
+    },
+    {
+     "medio": "La Gaceta (Tucumán)",
+     "url": "https://www.lagaceta.com.ar/nota/1162299/economia/por-subio-inflacion-octubre-explicacion-luis-caputo-tras-dato-indec.html",
+     "titulo": "Por qué subió la inflación en octubre: la explicación de Luis Caputo tras el dato del Indec",
+     "pais": "Argentina",
+     "tipo": "Medio regional",
+     "fecha": "2026-11-12T18:04:00+00:00",
+     "idioma": "castellano",
+     "autor": "Redacción Economía",
+     "fecha_pub": "2026-11-12T18:04:08-03:00",
+     "imagen": "https://img.lagaceta.com.ar/fotos/notas/2026/11/05/1161120_202611042322030000001.jpg",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 270,
+     "resumen": "El ministro de Economía de la Nación se pronunció en sus redes sociales y justificó la aceleración del IPC."
+    }
+   ]
+  },
+  {
+   "id": "20261113-02",
+   "seccion": "argentina",
+   "por_que": "",
+   "titulo_tema": "Mauricio Pochettino es el nuevo entrenador del Manchester United: deja Estados Unidos",
+   "puntaje": 9.7,
+   "n_medios": 2,
+   "paises": [
+    "Argentina"
+   ],
+   "region": "",
+   "tema": "Geopolítica",
+   "ejes": [
+    "eeuu"
+   ],
+   "region_mundo": "América Latina",
+   "titulos": [
+    "Mauricio Pochettino es el nuevo entrenador del Manchester United: deja Estados Unidos"
+   ],
+   "bajadas": [],
+   "cuerpo_html": "",
+   "fotos": [
+    {
+     "url": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-12-at-20.24.39-e1794525999600.jpeg?w=1200&h=630&crop=1&resize=1200,630",
+     "pagina": "https://www.rionegro.com.ar/deportes/mauricio-pochettino-es-el-nuevo-entrenador-del-manchester-united-deja-estados-unidos-4796485/",
+     "credito": "Foto: Río Negro",
+     "fuente": "Río Negro",
+     "descripcion": "Mauricio Pochettino es el nuevo entrenador del Manchester United: deja Estados Unidos",
+     "libre": false
+    },
+    {
+     "url": "https://www.clarin.com/img/2026/10/14/Kvhk4UCr-_2000x1500__1.jpg",
+     "pagina": "https://www.clarin.com/deportes/pep-guardiola-apuntado-reemplazar-pochettino-seleccion-estados-unidos-clausula-millonaria-deberia-pagar-manchester-united_0_aIsHMpOtdl.html",
+     "credito": "Foto: clarin.com",
+     "fuente": "clarin.com",
+     "descripcion": "Pep Guardiola , el apuntado para reemplazar a Pochettino en la Selección de Estados Unidos : la cláusula millonaria que debería pagar Manchester United",
+     "libre": false
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Mauricio_Pochettino_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mauricio_Pochettino_2016.jpg",
+     "credito": "Foto: Дмитрий Голубович / Wikimedia Commons (CC BY-SA 3.0)",
+     "descripcion": "Mauricio Pochettino coaching Tottenham Hotspur FC in a game against PFC CSKA Moscow.",
+     "licencia": "CC BY-SA 3.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Mauricio_Pochettino_2016_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mauricio_Pochettino_2016_(cropped).jpg",
+     "credito": "Foto: Дмитрий Голубович / Wikimedia Commons (CC BY-SA 3.0)",
+     "descripcion": "Mauricio Pochettino coaching Tottenham Hotspur FC in a game against PFC CSKA Moscow.",
+     "licencia": "CC BY-SA 3.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Manchester_-_Old_Trafford_-_Manchester_United_vs_Crawley_Town_-_Chicharito.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Manchester_-_Old_Trafford_-_Manchester_United_vs_Crawley_Town_-_Chicharito.jpg",
+     "credito": "Foto: Andrea Sartorati / Wikimedia Commons (CC BY 2.0)",
+     "descripcion": "Javier \"Chicharito\" Hernandez",
+     "licencia": "CC BY 2.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    }
+   ],
+   "enlaces": [],
+   "relacionadas": [],
+   "verificacion": {
+    "independientes": 2,
+    "paises": [
+     "Argentina"
+    ],
+    "estatal": [],
+    "oficiales": [],
+    "agencias_citadas": [],
+    "leidas": 2
+   },
+   "fuentes": [
+    {
+     "medio": "Río Negro",
+     "url": "https://www.rionegro.com.ar/deportes/mauricio-pochettino-es-el-nuevo-entrenador-del-manchester-united-deja-estados-unidos-4796485/",
+     "titulo": "Mauricio Pochettino es el nuevo entrenador del Manchester United: deja Estados Unidos",
+     "pais": "Argentina",
+     "tipo": "Medio regional",
+     "fecha": "2026-11-12T23:26:22+00:00",
+     "idioma": "castellano",
+     "autor": "Redacción",
+     "fecha_pub": "2026-11-12T20:26:22-03:00",
+     "imagen": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-12-at-20.24.39-e1794525999600.jpeg?w=1200&h=630&crop=1&resize=1200,630",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 420,
+     "resumen": null
+    },
+    {
+     "medio": "clarin.com",
+     "url": "https://www.clarin.com/deportes/pep-guardiola-apuntado-reemplazar-pochettino-seleccion-estados-unidos-clausula-millonaria-deberia-pagar-manchester-united_0_aIsHMpOtdl.html",
+     "titulo": "Pep Guardiola , el apuntado para reemplazar a Pochettino en la Selección de Estados Unidos : la cláusula millonaria que debería pagar Manchester United",
+     "pais": "Argentina",
+     "tipo": null,
+     "fecha": "2026-11-12T01:30:00+00:00",
+     "idioma": "Spanish",
+     "autor": "Redacción Clarín",
+     "fecha_pub": "2026-11-11T22:51:46.000Z",
+     "imagen": "https://www.clarin.com/img/2026/10/14/Kvhk4UCr-_2000x1500__1.jpg",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 588,
+     "resumen": null
+    }
+   ]
+  },
+  {
+   "id": "20261113-03",
+   "seccion": "argentina",
+   "por_que": "",
+   "titulo_tema": "ANSES diciembre 2026: los montos de jubilaciones con aumento, bono de $70.000 y medio aguinaldo",
+   "puntaje": 9.6,
+   "n_medios": 2,
+   "paises": [
+    "Argentina"
+   ],
+   "region": "",
+   "tema": "Economía",
+   "ejes": [
+    "economia"
+   ],
+   "region_mundo": "América Latina",
+   "titulos": [
+    "ANSES diciembre 2026: los montos de jubilaciones con aumento, bono de $70.000 y medio aguinaldo"
+   ],
+   "bajadas": [],
+   "cuerpo_html": "",
+   "fotos": [
+    {
+     "url": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/Aguinaldo-ANSES-2026.jpg?w=1200&h=630&crop=1&resize=1200,630",
+     "pagina": "https://www.rionegro.com.ar/servicios/aguinaldo-actualizado-anses-diciembre-2026-cuanto-cobraran-de-bolsillo-los-jubilados-con-aumento-del-217-y-bono-4796429/",
+     "credito": "Foto: Río Negro",
+     "fuente": "Río Negro",
+     "descripcion": "ANSES diciembre 2026: los montos de jubilaciones con aumento, bono de $70.000 y medio aguinaldo",
+     "libre": false
+    },
+    {
+     "url": "https://img.lagaceta.com.ar/fotos/notas/2026/11/03/feriados-asuetos-6-al-10-noviembre-condicionaran-pagos-anses-mes-1160821-102121.jpg",
+     "pagina": "https://www.lagaceta.com.ar/nota/1162347/economia/jubilaciones-pensiones-anses-cuanto-van-aumentar-diciembre-tras-ultimo-dato-inflacion.html",
+     "credito": "Foto: La Gaceta (Tucumán)",
+     "fuente": "La Gaceta (Tucumán)",
+     "descripcion": "Jubilaciones y pensiones Anses: cuánto van a aumentar en diciembre tras el último dato de inflación",
+     "libre": false
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Les_Anses-d%27Arlet%2C_Martinique.jpg/1280px-Les_Anses-d%27Arlet%2C_Martinique.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Les_Anses-d%27Arlet,_Martinique.jpg",
+     "credito": "Foto: AronMSzabo / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "Main pier of Les Anses-d'Arlet, Martinique",
+     "licencia": "CC BY-SA 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Les_Anses_d%27Arlet.JPG/1280px-Les_Anses_d%27Arlet.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Les_Anses_d%27Arlet.JPG",
+     "credito": "Foto: autor en Wikimedia / Wikimedia Commons (CC BY-SA 3.0)",
+     "descripcion": "",
+     "licencia": "CC BY-SA 3.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    }
+   ],
+   "enlaces": [],
+   "relacionadas": [],
+   "verificacion": {
+    "independientes": 2,
+    "paises": [
+     "Argentina"
+    ],
+    "estatal": [],
+    "oficiales": [],
+    "agencias_citadas": [],
+    "leidas": 2
+   },
+   "fuentes": [
+    {
+     "medio": "Río Negro",
+     "url": "https://www.rionegro.com.ar/servicios/aguinaldo-actualizado-anses-diciembre-2026-cuanto-cobraran-de-bolsillo-los-jubilados-con-aumento-del-217-y-bono-4796429/",
+     "titulo": "ANSES diciembre 2026: los montos de jubilaciones con aumento, bono de $70.000 y medio aguinaldo",
+     "pais": "Argentina",
+     "tipo": "Medio regional",
+     "fecha": "2026-11-12T22:24:50+00:00",
+     "idioma": "castellano",
+     "autor": "Daniela Castro",
+     "fecha_pub": "2026-11-12T19:24:50-03:00",
+     "imagen": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/Aguinaldo-ANSES-2026.jpg?w=1200&h=630&crop=1&resize=1200,630",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 250,
+     "resumen": null
+    },
+    {
+     "medio": "La Gaceta (Tucumán)",
+     "url": "https://www.lagaceta.com.ar/nota/1162347/economia/jubilaciones-pensiones-anses-cuanto-van-aumentar-diciembre-tras-ultimo-dato-inflacion.html",
+     "titulo": "Jubilaciones y pensiones Anses: cuánto van a aumentar en diciembre tras el último dato de inflación",
+     "pais": "Argentina",
+     "tipo": "Medio regional",
+     "fecha": "2026-11-12T21:16:00+00:00",
+     "idioma": "castellano",
+     "autor": "Redacción Economía",
+     "fecha_pub": "2026-11-12T21:16:06-03:00",
+     "imagen": "https://img.lagaceta.com.ar/fotos/notas/2026/11/03/feriados-asuetos-6-al-10-noviembre-condicionaran-pagos-anses-mes-1160821-102121.jpg",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 220,
+     "resumen": "La inflación de octubre fue del 2,2% y determinó el porcentaje de actualización de los haberes y las asignaciones familiares."
+    }
+   ]
+  },
+  {
+   "id": "20261113-04",
+   "seccion": "argentina",
+   "por_que": "",
+   "titulo_tema": "Milei afirmó que «Argentina tiene todo para convertirse en un polo tecnológico»",
+   "puntaje": 8.9,
+   "n_medios": 1,
+   "paises": [
+    "Argentina"
+   ],
+   "region": "patagonia",
+   "tema": "Política",
+   "ejes": [
+    "gobierno"
+   ],
+   "region_mundo": "América Latina",
+   "titulos": [
+    "Milei afirmó que «Argentina tiene todo para convertirse en un polo tecnológico»"
+   ],
+   "bajadas": [],
+   "cuerpo_html": "",
+   "fotos": [
+    {
+     "url": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/Javier-Milei-frente-a-emprendedores.jpg?w=1200&h=630&crop=1&resize=1200,630",
+     "pagina": "https://www.rionegro.com.ar/politica/milei-afirmo-que-argentina-tiene-todo-para-convertirse-en-un-polo-tecnologico-4796505/",
+     "credito": "Foto: Río Negro",
+     "fuente": "Río Negro",
+     "descripcion": "Milei afirmó que «Argentina tiene todo para convertirse en un polo tecnológico»",
+     "libre": false
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Javier_Milei_en_el_Sal%C3%B3n_Blanco_2_%28cropped%29.jpg/1280px-Javier_Milei_en_el_Sal%C3%B3n_Blanco_2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Javier_Milei_en_el_Sal%C3%B3n_Blanco_2_(cropped).jpg",
+     "credito": "Foto: Cancillería Argentina / Wikimedia Commons (CC BY 2.0)",
+     "descripcion": "Javier Milei en el Salón Blanco el día de su jura como tal.",
+     "licencia": "CC BY 2.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Presidente_Javier_Milei_2023-12-10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Presidente_Javier_Milei_2023-12-10.jpg",
+     "credito": "Foto: Senado de la Nación Argentina / Wikimedia Commons (Public domain)",
+     "descripcion": "Javier Milei y Victoria Villarruel en la asunción presidencial.",
+     "licencia": "Public domain",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Argentina_1828_8_Escudos.jpg/1280px-Argentina_1828_8_Escudos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Argentina_1828_8_Escudos.jpg",
+     "credito": "Foto: National Museum of American History / Wikimedia Commons (Public domain)",
+     "descripcion": "Argentina, 8 gold escudos (1828)",
+     "licencia": "Public domain",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/NIE_1905_Map_of_Argentine_Republic%2C_Chile%2C_Paraguay_and_Uruguay.png/1280px-NIE_1905_Map_of_Argentine_Republic%2C_Chile%2C_Paraguay_and_Uruguay.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:NIE_1905_Map_of_Argentine_Republic,_Chile,_Paraguay_and_Uruguay.png",
+     "credito": "Foto: Unknown authorUnknown author / Wikimedia Commons (Public domain)",
+     "descripcion": "A map of the Argentine Republic, Chile, Paraguay and Uruguay, and part of Brazil, from the New International Encyclopaedia 1st edition 1905, volume 1, after page 774.",
+     "licencia": "Public domain",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    }
+   ],
+   "enlaces": [],
+   "relacionadas": [],
+   "verificacion": {
+    "independientes": 1,
+    "paises": [
+     "Argentina"
+    ],
+    "estatal": [],
+    "oficiales": [],
+    "agencias_citadas": [],
+    "leidas": 1
+   },
+   "fuentes": [
+    {
+     "medio": "Río Negro",
+     "url": "https://www.rionegro.com.ar/politica/milei-afirmo-que-argentina-tiene-todo-para-convertirse-en-un-polo-tecnologico-4796505/",
+     "titulo": "Milei afirmó que «Argentina tiene todo para convertirse en un polo tecnológico»",
+     "pais": "Argentina",
+     "tipo": "Medio regional",
+     "fecha": "2026-11-13T00:30:42+00:00",
+     "idioma": "castellano",
+     "autor": "Redacción",
+     "fecha_pub": "2026-11-12T21:30:42-03:00",
+     "imagen": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/Javier-Milei-frente-a-emprendedores.jpg?w=1200&h=630&crop=1&resize=1200,630",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 419,
+     "resumen": null
+    }
+   ]
+  },
+  {
+   "id": "20261113-05",
+   "seccion": "mercosur",
+   "por_que": "",
+   "titulo_tema": "Multitud de fieles reciben al Papa León en Perú",
+   "puntaje": 20.9,
+   "n_medios": 5,
+   "paises": [
+    "Dominican Republic",
+    "Mexico",
+    "Peru"
+   ],
+   "region": "",
+   "tema": "General",
+   "ejes": [],
+   "region_mundo": "América Latina",
+   "titulos": [
+    "Multitud de fieles reciben al Papa León en Perú"
+   ],
+   "bajadas": [],
+   "cuerpo_html": "",
+   "fotos": [
+    {
+     "url": "https://www.zocalo.com.mx/wp-content/uploads/2026/11/papaLeonXIV.jpg",
+     "pagina": "https://www.zocalo.com.mx/el-estadio-nacional-de-lima-en-peru-recibe-al-papa-leon-xiv/",
+     "credito": "Foto: zocalo.com.mx",
+     "fuente": "zocalo.com.mx",
+     "descripcion": "El Estadio Nacional de Lima , en Perú , recibe al papa León XIV",
+     "libre": false
+    },
+    {
+     "url": "https://elcomercio.pe/resizer/v2/SBCBYF3NABFQVBHU5ZZTTKPOM4.jpg?auth=d46e2a3aa7beac49b07025469ccaf13933238c1448ddc7e9af9cb7683ad7944a&width=980&height=528&quality=75&smart=true",
+     "pagina": "https://elcomercio.pe/respuestas/cuando/papa-leon-xiv-en-peru-revisa-aqui-el-itinerario-completo-de-su-visita-las-ciudades-que-recorrera-y-las-actividades-que-realizara-tdpe-noticia/",
+     "credito": "Foto: elcomercio.pe",
+     "fuente": "elcomercio.pe",
+     "descripcion": "Itinerario oficial del papa León XIV : fechas , ciudades y actividades de su visita al Perú",
+     "libre": false
+    },
+    {
+     "url": "https://www.globalmedia.mx/og-image/515712",
+     "pagina": "https://www.globalmedia.mx/articles/multitud_de_fieles_reciben_al_papa_leon_en_peru",
+     "credito": "Foto: globalmedia.mx",
+     "fuente": "globalmedia.mx",
+     "descripcion": "Multitud de fieles reciben al Papa León en Perú",
+     "libre": false
+    },
+    {
+     "url": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/11/6af52bc329f30.jpeg",
+     "pagina": "https://hoy.com.do/el-mundo/papa-leon-llega-peru-visita-seis-dias_1108427.html",
+     "credito": "Foto: hoy.com.do",
+     "fuente": "hoy.com.do",
+     "descripcion": "Papa León llega a Perú para visita de seis días",
+     "libre": false
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/The_Kaaba_during_Hajj_-_edited.jpg/1280px-The_Kaaba_during_Hajj_-_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:The_Kaaba_during_Hajj_-_edited.jpg",
+     "credito": "Foto: Adli Wahid\n\nMinor modifications made by Basile Morin, from the original version. / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "The Kaabah (Kaaba) is located in the Masjid Al-Haram in Makkah (Mecca, Saudi Arabia). This photo was taken during the 2018 Hajj Season. Performing hajj is one of the pillars of Islam and required once",
+     "licencia": "CC BY-SA 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    }
+   ],
+   "enlaces": [],
+   "relacionadas": [],
+   "verificacion": {
+    "independientes": 4,
+    "paises": [
+     "Dominican Republic",
+     "Mexico",
+     "Peru"
+    ],
+    "estatal": [],
+    "oficiales": [],
+    "agencias_citadas": [
+     "AFP"
+    ],
+    "leidas": 3
+   },
+   "fuentes": [
+    {
+     "medio": "zocalo.com.mx",
+     "url": "https://www.zocalo.com.mx/el-estadio-nacional-de-lima-en-peru-recibe-al-papa-leon-xiv/",
+     "titulo": "El Estadio Nacional de Lima , en Perú , recibe al papa León XIV",
+     "pais": "Mexico",
+     "tipo": null,
+     "fecha": "2026-11-13T00:45:00+00:00",
+     "idioma": "Spanish",
+     "autor": "José Alfredo Ramos López",
+     "fecha_pub": "2026-11-12T18:15:51-06:00",
+     "imagen": "https://www.zocalo.com.mx/wp-content/uploads/2026/11/papaLeonXIV.jpg",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 952,
+     "resumen": null
+    },
+    {
+     "medio": "elcomercio.pe",
+     "url": "https://elcomercio.pe/respuestas/cuando/papa-leon-xiv-en-peru-revisa-aqui-el-itinerario-completo-de-su-visita-las-ciudades-que-recorrera-y-las-actividades-que-realizara-tdpe-noticia/",
+     "titulo": "Itinerario oficial del papa León XIV : fechas , ciudades y actividades de su visita al Perú",
+     "pais": "Peru",
+     "tipo": null,
+     "fecha": "2026-11-13T00:45:00+00:00",
+     "idioma": "Spanish",
+     "autor": "Redacción El Comercio Perú",
+     "fecha_pub": "2026-11-12T18:40:00-05:00",
+     "imagen": "https://elcomercio.pe/resizer/v2/SBCBYF3NABFQVBHU5ZZTTKPOM4.jpg?auth=d46e2a3aa7beac49b07025469ccaf13933238c1448ddc7e9af9cb7683ad7944a&width=980&height=528&quality=75&smart=true",
+     "agencias": [],
+     "oficiales": [],
+     "leida": false,
+     "palabras": 0,
+     "resumen": null
+    },
+    {
+     "medio": "globalmedia.mx",
+     "url": "https://www.globalmedia.mx/articles/multitud_de_fieles_reciben_al_papa_leon_en_peru",
+     "titulo": "Multitud de fieles reciben al Papa León en Perú",
+     "pais": "Mexico",
+     "tipo": null,
+     "fecha": "2026-11-12T06:45:00+00:00",
+     "idioma": "Spanish",
+     "autor": "GlobalMedia",
+     "fecha_pub": null,
+     "imagen": "https://www.globalmedia.mx/og-image/515712",
+     "agencias": [
+      "AFP"
+     ],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 833,
+     "resumen": null
+    },
+    {
+     "medio": "hoy.com.do",
+     "url": "https://hoy.com.do/el-mundo/papa-leon-llega-peru-visita-seis-dias_1108427.html",
+     "titulo": "Papa León llega a Perú para visita de seis días",
+     "pais": "Dominican Republic",
+     "tipo": null,
+     "fecha": "2026-11-12T06:45:00+00:00",
+     "idioma": "Spanish",
+     "autor": "EFE",
+     "fecha_pub": "2026-11-12T04:00:00Z",
+     "imagen": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/11/6af52bc329f30.jpeg",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 385,
+     "resumen": null
+    }
+   ]
+  },
+  {
+   "id": "20261113-06",
+   "seccion": "mercosur",
+   "por_que": "",
+   "titulo_tema": "Telefónica gana 802 millones en verano y borra sus pérdidas del año",
+   "puntaje": 8.0,
+   "n_medios": 3,
+   "paises": [
+    "Spain"
+   ],
+   "region": "",
+   "tema": "General",
+   "ejes": [],
+   "region_mundo": "Europa",
+   "titulos": [
+    "Telefónica gana 802 millones en verano y borra sus pérdidas del año"
+   ],
+   "bajadas": [],
+   "cuerpo_html": "",
+   "fotos": [
+    {
+     "url": "https://s3.ppllstatics.com/rc/www/multimedia/economia/2026/11/12/image_20261111210525-RYcWR4wIfFUlFvJeh8ju09K-1200x840@RC.png",
+     "pagina": "https://www.diariosur.es/economia/empresas/telefonica-gana-802-millones-verano-borra-perdidas-20261112073510-ntrc.html",
+     "credito": "Foto: diariosur.es",
+     "fuente": "diariosur.es",
+     "descripcion": "Telefónica gana 802 millones en verano y borra sus pérdidas del año",
+     "libre": false
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Compa%C3%B1%C3%ADa_Telef%C3%B3nica_Nacional_de_Espa%C3%B1a_Elche.JPG/1280px-Compa%C3%B1%C3%ADa_Telef%C3%B3nica_Nacional_de_Espa%C3%B1a_Elche.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Compa%C3%B1%C3%ADa_Telef%C3%B3nica_Nacional_de_Espa%C3%B1a_Elche.JPG",
+     "credito": "Foto: Bic / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "Kantoor Compañía Telefónica Nacional de España in Elche, Spanje",
+     "licencia": "CC BY-SA 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Trapa_Compa%C3%B1%C3%ADa_Telef%C3%B3nica_Nacional_de_Espa%C3%B1a._Valencia.jpg/1280px-Trapa_Compa%C3%B1%C3%ADa_Telef%C3%B3nica_Nacional_de_Espa%C3%B1a._Valencia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Trapa_Compa%C3%B1%C3%ADa_Telef%C3%B3nica_Nacional_de_Espa%C3%B1a._Valencia.jpg",
+     "credito": "Foto: 19Tarrestnom65 / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "Trapas de la ciudad de Valencia",
+     "licencia": "CC BY-SA 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    }
+   ],
+   "enlaces": [],
+   "relacionadas": [],
+   "verificacion": {
+    "independientes": 3,
+    "paises": [
+     "Spain"
+    ],
+    "estatal": [],
+    "oficiales": [],
+    "agencias_citadas": [],
+    "leidas": 3
+   },
+   "fuentes": [
+    {
+     "medio": "diariosur.es",
+     "url": "https://www.diariosur.es/economia/empresas/telefonica-gana-802-millones-verano-borra-perdidas-20261112073510-ntrc.html",
+     "titulo": "Telefónica gana 802 millones en verano y borra sus pérdidas del año",
+     "pais": "Spain",
+     "tipo": null,
+     "fecha": "2026-11-12T07:00:00+00:00",
+     "idioma": "Spanish",
+     "autor": "José A. González",
+     "fecha_pub": "2026-11-12T07:35:58+01:00",
+     "imagen": "https://s3.ppllstatics.com/rc/www/multimedia/economia/2026/11/12/image_20261111210525-RYcWR4wIfFUlFvJeh8ju09K-1200x840@RC.png",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 606,
+     "resumen": null
+    },
+    {
+     "medio": "hoy.es",
+     "url": "https://www.hoy.es/economia/empresas/telefonica-gana-802-millones-verano-borra-perdidas-20261112073510-ntrc.html",
+     "titulo": "Telefónica gana 802 millones en verano y borra sus pérdidas del año",
+     "pais": "Spain",
+     "tipo": null,
+     "fecha": "2026-11-12T07:00:00+00:00",
+     "idioma": "Spanish",
+     "autor": "José A. González",
+     "fecha_pub": "2026-11-12T07:35:58+01:00",
+     "imagen": "https://s3.ppllstatics.com/rc/www/multimedia/economia/2026/11/12/image_20261111210525-RYcWR4wIfFUlFvJeh8ju09K-1200x840@RC.png",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 606,
+     "resumen": null
+    },
+    {
+     "medio": "ideal.es",
+     "url": "https://www.ideal.es/economia/empresas/telefonica-gana-802-millones-verano-borra-perdidas-20261112073510-ntrc.html",
+     "titulo": "Telefónica gana 802 millones en verano y borra sus pérdidas del año",
+     "pais": "Spain",
+     "tipo": null,
+     "fecha": "2026-11-12T07:00:00+00:00",
+     "idioma": "Spanish",
+     "autor": "José A. González",
+     "fecha_pub": "2026-11-12T07:35:58+01:00",
+     "imagen": "https://s3.ppllstatics.com/rc/www/multimedia/economia/2026/11/12/image_20261111210525-RYcWR4wIfFUlFvJeh8ju09K-1200x840@RC.png",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 606,
+     "resumen": null
+    }
+   ]
+  },
+  {
+   "id": "20261113-07",
+   "seccion": "mundo",
+   "por_que": "",
+   "titulo_tema": "Ataque israelí contra hospital Nasser en Gaza deja al menos seis palestinos muertos",
+   "puntaje": 11.9,
+   "n_medios": 2,
+   "paises": [
+    "Alemania",
+    "Francia"
+   ],
+   "region": "",
+   "tema": "Geopolítica",
+   "ejes": [
+    "guerras"
+   ],
+   "region_mundo": "Europa",
+   "titulos": [
+    "Ataque israelí contra hospital Nasser en Gaza deja al menos seis palestinos muertos"
+   ],
+   "bajadas": [],
+   "cuerpo_html": "",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Angulo_de_ataque_potencial.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Angulo_de_ataque_potencial.png",
+     "credito": "Foto: Jesús Manuel Recuenco Andrés / Wikimedia Commons (Public domain)",
+     "descripcion": "Figura cohete",
+     "licencia": "Public domain",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Ataque_Escampe_2007.jpg/1280px-Ataque_Escampe_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ataque_Escampe_2007.jpg",
+     "credito": "Foto: Estevoaei / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "Ataque Escampe vendo un concerto na Gentalha do Pichel",
+     "licencia": "CC BY-SA 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Nasser_1961.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Nasser_1961.jpg",
+     "credito": "Foto: Not credited / Wikimedia Commons (Public domain)",
+     "descripcion": "Egypt's president Gamal Abdel Nasser in Qobba palace, 1961",
+     "licencia": "Public domain",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Rally_Finland_2010_-_shakedown_-_Nasser_Al-Attiyah_1.jpg/1280px-Rally_Finland_2010_-_shakedown_-_Nasser_Al-Attiyah_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Rally_Finland_2010_-_shakedown_-_Nasser_Al-Attiyah_1.jpg",
+     "credito": "Foto: kallerna / Wikimedia Commons (CC BY-SA 3.0)",
+     "descripcion": "Nasser Al-Attiyah driving his Ford Fiesta S2000 at Rannakylä shakedown in Muurame of the Neste Oil Rally Finland 2010.",
+     "licencia": "CC BY-SA 3.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    }
+   ],
+   "enlaces": [],
+   "relacionadas": [],
+   "verificacion": {
+    "independientes": 2,
+    "paises": [
+     "Alemania",
+     "Francia"
+    ],
+    "estatal": [],
+    "oficiales": [],
+    "agencias_citadas": [],
+    "leidas": 0
+   },
+   "fuentes": [
+    {
+     "medio": "France 24 Español",
+     "url": "https://www.france24.com/es/video/20261113-ataque-israel%C3%AD-contra-hospital-nasser-en-gaza-deja-al-menos-seis-palestinos-muertos",
+     "titulo": "Ataque israelí contra hospital Nasser en Gaza deja al menos seis palestinos muertos",
+     "pais": "Francia",
+     "tipo": "Medio público",
+     "fecha": "2026-11-13T00:42:00+00:00",
+     "idioma": "castellano",
+     "leida": false,
+     "error": "HTTP Error 403: Forbidden",
+     "imagen": null,
+     "resumen": "El Hospital Nasser, el principal hospital del sur de Gaza, fue atacado otra vez por Israel en la madrugada de este jueves 12 de noviembre, en un bombardeo que mató a al menos a seis palestinos, entre ellos un cirujano y un menor de 13 años, según informó el Ministerio de Salud gazatí. A pesar de que Israel justifica el ataque afirmando que iba dirigido contra un presunto alto cargo de Hamás, la…"
+    },
+    {
+     "medio": "DW Español",
+     "url": "https://www.dw.com/es/ataques-israelíes-dejan-al-menos-once-muertos-en-distintos-puntos-de-gaza/a-79934531?maca=spa-rss-sp-all-1122-xml-mrss",
+     "titulo": "Ataques israelíes dejan al menos once muertos en distintos puntos de Gaza",
+     "pais": "Alemania",
+     "tipo": "Medio público",
+     "fecha": "2026-11-12T17:03:00+00:00",
+     "idioma": "castellano",
+     "leida": false,
+     "error": "'ascii' codec can't encode character '\\xed' in position 22: ordinal not in range(128)",
+     "imagen": null,
+     "resumen": "El bombardeo más letal afectó al hospital Naser, donde seis personas, entre ellas un niño y un médico, perdieron la vida. Israel afirmó que el objetivo era un líder de Hamás."
+    }
+   ]
+  },
+  {
+   "id": "20261113-08",
+   "seccion": "mundo",
+   "por_que": "",
+   "titulo_tema": "¿Cuál es el impacto de la renuncia de Huang a Nvidia en los mercados mundiales?",
+   "puntaje": 11.9,
+   "n_medios": 2,
+   "paises": [
+    "Alemania",
+    "Francia"
+   ],
+   "region": "",
+   "tema": "General",
+   "ejes": [
+    "eeuu"
+   ],
+   "region_mundo": "Europa",
+   "titulos": [
+    "¿Cuál es el impacto de la renuncia de Huang a Nvidia en los mercados mundiales?"
+   ],
+   "bajadas": [],
+   "cuerpo_html": "",
+   "fotos": [
+    {
+     "url": "https://static.dw.com/image/79724049_6.jpg",
+     "pagina": "https://www.dw.com/es/dimite-jensen-huang-y-sacude-al-gigante-de-la-ia-nvidia/a-79931741?maca=spa-rss-sp-all-1122-xml-mrss",
+     "credito": "Foto: DW Español",
+     "fuente": "DW Español",
+     "descripcion": "Dimite Jensen Huang y sacude al gigante de la IA Nvidia",
+     "libre": false
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Billiards_rack_in_focus_with_out-of-focus_cue_ball.jpg/1280px-Billiards_rack_in_focus_with_out-of-focus_cue_ball.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Billiards_rack_in_focus_with_out-of-focus_cue_ball.jpg",
+     "credito": "Foto: Candeadly / Wikimedia Commons (CC BY 4.0)",
+     "descripcion": "Billiards rack in focus with out-of-focus cue ball",
+     "licencia": "CC BY 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Cue_ball_in_focus_with_out-of-focus_pool_rack.jpg/1280px-Cue_ball_in_focus_with_out-of-focus_pool_rack.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Cue_ball_in_focus_with_out-of-focus_pool_rack.jpg",
+     "credito": "Foto: Candeadly / Wikimedia Commons (CC BY 4.0)",
+     "descripcion": "Cue ball in focus with out-of-focus pool rack",
+     "licencia": "CC BY 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Cindy_Huang%2C_ORR_Director.jpg/1280px-Cindy_Huang%2C_ORR_Director.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Cindy_Huang,_ORR_Director.jpg",
+     "credito": "Foto: United States Department of Health and Human Services / Wikimedia Commons (Public domain)",
+     "descripcion": "Portrait of Cindy Huang, Director of the Office of Refugee Resettlement under President Biden.",
+     "licencia": "Public domain",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Close_wing_puddling_position_of_Lethe_wui_%28Huang%2C_1999%29_-_Golden_Mystic.jpg/1280px-Close_wing_puddling_position_of_Lethe_wui_%28Huang%2C_1999%29_-_Golden_Mystic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Close_wing_puddling_position_of_Lethe_wui_(Huang,_1999)_-_Golden_Mystic.jpg",
+     "credito": "Foto: Atanu Bose Photography / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "Lethe wui (Huang, 1999) - Golden Mystic",
+     "licencia": "CC BY-SA 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    }
+   ],
+   "enlaces": [],
+   "relacionadas": [],
+   "verificacion": {
+    "independientes": 2,
+    "paises": [
+     "Alemania",
+     "Francia"
+    ],
+    "estatal": [],
+    "oficiales": [],
+    "agencias_citadas": [],
+    "leidas": 1
+   },
+   "fuentes": [
+    {
+     "medio": "France 24 Español",
+     "url": "https://www.france24.com/es/video/20261113-cu%C3%A1l-es-el-impacto-de-la-renuncia-de-huang-a-nvidia-en-los-mercados-mundiales",
+     "titulo": "¿Cuál es el impacto de la renuncia de Huang a Nvidia en los mercados mundiales?",
+     "pais": "Francia",
+     "tipo": "Medio público",
+     "fecha": "2026-11-13T00:48:18+00:00",
+     "idioma": "castellano",
+     "leida": false,
+     "error": "HTTP Error 403: Forbidden",
+     "imagen": null,
+     "resumen": "Tras pasar 33 años a la cabeza de Nvidia, Jensen Huang renunció a su cargo tras el escándalo desatado inicialmente por su relación extramatrimonial con con Alice Huang, una empresaria de Shanghái señalada por Estados Unidos como una espía china. La empresa tecnológica ha sufrido grandes golpes en sus acciones en los últimos días, cayendo hasta un 7% este 12 de noviembre. Analizamos la situación…"
+    },
+    {
+     "medio": "DW Español",
+     "url": "https://www.dw.com/es/dimite-jensen-huang-y-sacude-al-gigante-de-la-ia-nvidia/a-79931741?maca=spa-rss-sp-all-1122-xml-mrss",
+     "titulo": "Dimite Jensen Huang y sacude al gigante de la IA Nvidia",
+     "pais": "Alemania",
+     "tipo": "Medio público",
+     "fecha": "2026-11-12T14:04:00+00:00",
+     "idioma": "castellano",
+     "autor": "Noticias DW",
+     "fecha_pub": "2026-11-12T14:04:46.991Z",
+     "imagen": "https://static.dw.com/image/79724049_6.jpg",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 362,
+     "resumen": "La directora financiera, Colette Kress, asume como consejera delegada interina mientras la compañía busca un sucesor permanente."
+    }
+   ]
+  }
+ ],
+ "reserva": [
+  {
+   "seccion": "mundo",
+   "titulo": "Autoridades paraguayas concluyen primera etapa de devolución de ahorros de clientes de Ueno Bank",
+   "n_medios": 2,
+   "puntaje": 11.8,
+   "region": null,
+   "ejes": [
+    "economia"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "France 24 Español",
+     "url": "https://www.france24.com/es/video/20261112-autoridades-paraguayas-concluyen-primera-etapa-de-devoluci%C3%B3n-de-ahorros-de-clientes-de-ueno-bank",
+     "titulo": "Autoridades paraguayas concluyen primera etapa de devolución de ahorros de clientes de Ueno Bank",
+     "fecha": "2026-11-12T23:51:30+00:00",
+     "pais": "Francia"
+    },
+    {
+     "medio": "BBC Mundo",
+     "url": "https://www.bbc.com/mundo/articles/c977p7pn0m0mo?at_medium=RSS&at_campaign=rss",
+     "titulo": "\"No tengo noticias de mi dinero\": los millones de paraguayos afectados por la crisis del Ueno Bank que reclaman la devolución de sus ahorros",
+     "fecha": "2026-11-10T20:28:11+00:00",
+     "pais": "Reino Unido"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Renuncia CEO de Nvidia tras escándalo por relación con presunta espía china",
+   "n_medios": 2,
+   "puntaje": 11.7,
+   "region": null,
+   "ejes": [
+    "congreso",
+    "eeuu"
+   ],
+   "tema": "Geopolítica",
+   "notas": [
+    {
+     "medio": "France 24 Español",
+     "url": "https://www.france24.com/es/video/20261112-renuncia-ceo-de-nvidia-tras-esc%C3%A1ndalo-por-relaci%C3%B3n-con-presunta-esp%C3%ADa-china",
+     "titulo": "Renuncia CEO de Nvidia tras escándalo por relación con presunta espía china",
+     "fecha": "2026-11-12T23:11:29+00:00",
+     "pais": "Francia"
+    },
+    {
+     "medio": "BBC Mundo",
+     "url": "https://www.bbc.com/mundo/articles/cq2d9pg47052o?at_medium=RSS&at_campaign=rss",
+     "titulo": "Jensen Huang renuncia como director ejecutivo de Nvidia tras conocerse su relación con una supuesta espía china",
+     "fecha": "2026-11-12T15:59:31+00:00",
+     "pais": "Reino Unido"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Trump amenaza a México con duplicar aranceles si no detiene las caravanas de migrantes con destino a la frontera",
+   "n_medios": 2,
+   "puntaje": 11.0,
+   "region": null,
+   "ejes": [
+    "congreso",
+    "eeuu"
+   ],
+   "tema": "Geopolítica",
+   "notas": [
+    {
+     "medio": "BBC Mundo",
+     "url": "https://www.bbc.com/mundo/articles/cj62pglgdwreo?at_medium=RSS&at_campaign=rss",
+     "titulo": "Trump amenaza a México con duplicar aranceles si no detiene las caravanas de migrantes con destino a la frontera",
+     "fecha": "2026-11-12T19:10:59+00:00",
+     "pais": "Reino Unido"
+    },
+    {
+     "medio": "DW Español",
+     "url": "https://www.dw.com/es/trump-amenaza-con-duplicar-aranceles-a-méxico-si-no-frena-a-migrantes/a-79931643?maca=spa-rss-sp-all-1122-xml-mrss",
+     "titulo": "Trump amenaza con duplicar aranceles a México si no frena a migrantes",
+     "fecha": "2026-11-12T14:00:00+00:00",
+     "pais": "Alemania"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Al menos un muerto y cuatro heridos tras un tiroteo en un concurrido barrio de Washington",
+   "n_medios": 2,
+   "puntaje": 10.9,
+   "region": null,
+   "ejes": [
+    "eeuu"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "France 24 Español",
+     "url": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261112-al-menos-un-muerto-y-cuatro-heridos-tras-un-tiroteo-en-un-concurrido-barrio-de-washington",
+     "titulo": "Al menos un muerto y cuatro heridos tras un tiroteo en un concurrido barrio de Washington",
+     "fecha": "2026-11-12T18:14:21+00:00",
+     "pais": "Francia"
+    },
+    {
+     "medio": "BBC Mundo",
+     "url": "https://www.bbc.com/mundo/articles/cq8j47lw9nmwo?at_medium=RSS&at_campaign=rss",
+     "titulo": "Al menos 1 muerto y 4 heridos en un tiroteo en un gimnasio en Washington DC",
+     "fecha": "2026-11-12T15:14:15+00:00",
+     "pais": "Reino Unido"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Sube el precio del petróleo tras el rechazo de Trump al acuerdo con Irán y el ataque a cuatro buques en el Estrecho de Ormuz",
+   "n_medios": 1,
+   "puntaje": 8.8,
+   "region": "patagonia",
+   "ejes": [
+    "eeuu",
+    "energia",
+    "guerras"
+   ],
+   "tema": "Energía",
+   "notas": [
+    {
+     "medio": "Río Negro",
+     "url": "https://www.rionegro.com.ar/mundo/sube-el-precio-del-petroleo-tras-el-rechazo-de-trump-al-acuerdo-con-iran-y-el-ataque-a-cuatro-buques-en-el-estrecho-de-ormuz-4796499/",
+     "titulo": "Sube el precio del petróleo tras el rechazo de Trump al acuerdo con Irán y el ataque a cuatro buques en el Estrecho de Ormuz",
+     "fecha": "2026-11-13T00:04:29+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "El riesgo país bajó a 829 puntos tras el aval del FMI, aunque las acciones argentinas cayeron",
+   "n_medios": 1,
+   "puntaje": 8.6,
+   "region": "patagonia",
+   "ejes": [
+    "fmi"
+   ],
+   "tema": "Economía",
+   "notas": [
+    {
+     "medio": "Río Negro",
+     "url": "https://www.rionegro.com.ar/economia/el-riesgo-pais-bajo-a-829-puntos-tras-el-aval-del-fmi-pero-las-acciones-argentinas-cayeron/",
+     "titulo": "El riesgo país bajó a 829 puntos tras el aval del FMI, aunque las acciones argentinas cayeron",
+     "fecha": "2026-11-12T22:45:06+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Javier Milei habló tras el dato de inflación y afirmó que buscará llevar la apertura de la economía al 90%",
+   "n_medios": 1,
+   "puntaje": 8.4,
+   "region": "norte-grande",
+   "ejes": [
+    "economia",
+    "gobierno"
+   ],
+   "tema": "Economía",
+   "notas": [
+    {
+     "medio": "La Gaceta (Tucumán)",
+     "url": "https://www.lagaceta.com.ar/nota/1162350/politica/javier-milei-hablo-tras-dato-inflacion-afirmo-buscara-llevar-apertura-economia-al-90porciento.html",
+     "titulo": "Javier Milei habló tras el dato de inflación y afirmó que buscará llevar la apertura de la economía al 90%",
+     "fecha": "2026-11-12T21:36:00+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Presupuesto 2027: el Gobierno retomó las negociaciones y busca llevar el proyecto al recinto el 25 de noviembre",
+   "n_medios": 1,
+   "puntaje": 8.1,
+   "region": "norte-grande",
+   "ejes": [
+    "energia"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "La Gaceta (Tucumán)",
+     "url": "https://www.lagaceta.com.ar/nota/1162328/politica/presupuesto-2027-gobierno-retomo-negociaciones-busca-llevar-proyecto-al-recinto-25-noviembre.html",
+     "titulo": "Presupuesto 2027: el Gobierno retomó las negociaciones y busca llevar el proyecto al recinto el 25 de noviembre",
+     "fecha": "2026-11-12T19:44:00+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Concluye en Panamá foro internacional sobre turismo de convenciones",
+   "n_medios": 1,
+   "puntaje": 8.0,
+   "region": null,
+   "ejes": [
+    "congreso"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Prensa Latina",
+     "url": "https://www.prensa-latina.cu/2026/11/12/concluye-en-panama-foro-internacional-sobre-turismo-de-convenciones/",
+     "titulo": "Concluye en Panamá foro internacional sobre turismo de convenciones",
+     "fecha": "2026-11-13T01:54:25+00:00",
+     "pais": "Cuba"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Acuerdo de transportistas y gobierno de Chile pone fin al paro",
+   "n_medios": 1,
+   "puntaje": 8.0,
+   "region": null,
+   "ejes": [
+    "energia"
+   ],
+   "tema": "Sociedad",
+   "notas": [
+    {
+     "medio": "Prensa Latina",
+     "url": "https://www.prensa-latina.cu/2026/11/12/acuerdo-de-transportistas-y-gobierno-de-chile-pone-fin-al-paro/",
+     "titulo": "Acuerdo de transportistas y gobierno de Chile pone fin al paro",
+     "fecha": "2026-11-13T01:12:51+00:00",
+     "pais": "Cuba"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Campaña electoral en Ecuador inicia con recorridos y rituales",
+   "n_medios": 1,
+   "puntaje": 8.0,
+   "region": null,
+   "ejes": [
+    "congreso"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Prensa Latina",
+     "url": "https://www.prensa-latina.cu/2026/11/12/campana-electoral-en-ecuador-inicia-con-recorridos-y-rituales/",
+     "titulo": "Campaña electoral en Ecuador inicia con recorridos y rituales",
+     "fecha": "2026-11-13T01:08:49+00:00",
+     "pais": "Cuba"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Presidente de Cámara de Diputados peruana destaca logros de Cuba",
+   "n_medios": 1,
+   "puntaje": 7.9,
+   "region": null,
+   "ejes": [
+    "congreso"
+   ],
+   "tema": "Política",
+   "notas": [
+    {
+     "medio": "Prensa Latina",
+     "url": "https://www.prensa-latina.cu/2026/11/12/presidente-de-camara-de-diputados-peruana-destaca-logros-de-cuba/",
+     "titulo": "Presidente de Cámara de Diputados peruana destaca logros de Cuba",
+     "fecha": "2026-11-13T00:45:47+00:00",
+     "pais": "Cuba"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Derrumbe de edificio en Nueva York causó la muerte a tres colombianos",
+   "n_medios": 1,
+   "puntaje": 7.9,
+   "region": null,
+   "ejes": [
+    "eeuu"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Prensa Latina",
+     "url": "https://www.prensa-latina.cu/2026/11/12/derrumbe-de-edificio-en-nueva-york-causo-la-muerte-a-tres-colombianos/",
+     "titulo": "Derrumbe de edificio en Nueva York causó la muerte a tres colombianos",
+     "fecha": "2026-11-13T00:39:16+00:00",
+     "pais": "Cuba"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Martín Menem presiona a Patricia Bullrich para acelerar la suspensión de las PASO",
+   "n_medios": 1,
+   "puntaje": 7.8,
+   "region": "norte-grande",
+   "ejes": [
+    "congreso"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "La Gaceta (Tucumán)",
+     "url": "https://www.lagaceta.com.ar/nota/1162309/politica/martin-menem-presiona-patricia-bullrich-para-acelerar-suspension-paso.html",
+     "titulo": "Martín Menem presiona a Patricia Bullrich para acelerar la suspensión de las PASO",
+     "fecha": "2026-11-12T17:59:00+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Professora é demitida de escola em SC após foto em apoio a Lula",
+   "n_medios": 1,
+   "puntaje": 7.7,
+   "region": null,
+   "ejes": [
+    "mercosur"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/professora-e-demitida-de-escola-em-sc-apos-foto-em-apoio-lula",
+     "titulo": "Professora é demitida de escola em SC após foto em apoio a Lula",
+     "fecha": "2026-11-12T23:25:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Dólar dispara 1,58% e fecha a R$ 5,65, maior nível em 17 meses",
+   "n_medios": 1,
+   "puntaje": 7.6,
+   "region": null,
+   "ejes": [
+    "economia"
+   ],
+   "tema": "Economía",
+   "notas": [
+    {
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-dispara-158-e-fecha-r-565-maior-nivel-em-17-meses",
+     "titulo": "Dólar dispara 1,58% e fecha a R$ 5,65, maior nível em 17 meses",
+     "fecha": "2026-11-12T22:35:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Abascal carga contra el PSOE por la intervención de Begoña Gómez en el arranque de campaña: \"No tienen vergüenza\"",
+   "n_medios": 1,
+   "puntaje": 7.1,
+   "region": null,
+   "ejes": [
+    "congreso"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Europa Press",
+     "url": "https://www.europapress.es/nacional/noticia-abascal-carga-contra-psoe-intervencion-begona-gomez-arranque-campana-no-tienen-verguenza-20261112204214.html",
+     "titulo": "Abascal carga contra el PSOE por la intervención de Begoña Gómez en el arranque de campaña: \"No tienen vergüenza\"",
+     "fecha": "2026-11-12T19:42:14+00:00",
+     "pais": "España"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "En Panamá la norma que limita el cobro del impuesto por uso de la energía solar vence en diciembre",
+   "n_medios": 1,
+   "puntaje": 7.0,
+   "region": null,
+   "ejes": [
+    "energia"
+   ],
+   "tema": "Energía",
+   "notas": [
+    {
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/panama/2026/11/13/en-panama-la-norma-que-limita-el-cobro-del-impuesto-por-uso-de-la-energia-solar-vence-en-diciembre/",
+     "titulo": "En Panamá la norma que limita el cobro del impuesto por uso de la energía solar vence en diciembre",
+     "fecha": "2026-11-13T01:16:37+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Calendario lunar de noviembre 2026: cómo se verá la luna las próximas noches desde Estados Unidos",
+   "n_medios": 1,
+   "puntaje": 7.0,
+   "region": null,
+   "ejes": [
+    "eeuu"
+   ],
+   "tema": "Geopolítica",
+   "notas": [
+    {
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/estados-unidos/2026/11/13/calendario-lunar-de-noviembre-2026-como-se-vera-la-luna-las-proximas-noches-desde-estados-unidos/",
+     "titulo": "Calendario lunar de noviembre 2026: cómo se verá la luna las próximas noches desde Estados Unidos",
+     "fecha": "2026-11-13T01:16:16+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "De la Espriella ordenó reversar salarios de hasta $765 millones mensuales en el Fondo Milagro en medio de su política de austeridad: “No los autorizo”",
+   "n_medios": 1,
+   "puntaje": 7.0,
+   "region": null,
+   "ejes": [
+    "economia"
+   ],
+   "tema": "Economía",
+   "notas": [
+    {
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/colombia/2026/11/13/de-la-espriella-ordeno-reversar-salarios-de-hasta-765-millones-mensuales-en-el-fondo-milagro-en-medio-de-su-politica-de-austeridad-no-los-autorizo/",
+     "titulo": "De la Espriella ordenó reversar salarios de hasta $765 millones mensuales en el Fondo Milagro en medio de su política de austeridad: “No los autorizo”",
+     "fecha": "2026-11-13T01:12:00+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Pablo Sirven presentó en San Juan Operación Sallustro : la historia humana detrás de una foto",
+   "n_medios": 1,
+   "puntaje": 6.9,
+   "region": "cuyo",
+   "ejes": [],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "tiempodesanjuan.com",
+     "url": "http://www.tiempodesanjuan.com/san-juan/pablo-sirven-presento-en-san-juan-operacion-sallustro-la-historia-humana-detras-de-una-foto_1794529561",
+     "titulo": "Pablo Sirven presentó en San Juan Operación Sallustro : la historia humana detrás de una foto",
+     "fecha": "2026-11-13T00:45:00+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Condorito , Yayita y Washington volverán renovados a su isla en La Paloma",
+   "n_medios": 1,
+   "puntaje": 6.9,
+   "region": null,
+   "ejes": [
+    "eeuu"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "diarioeldia.cl",
+     "url": "https://www.diarioeldia.cl/noticias/2026/11/12/156704-condorito-yayita-y-washington-volveran-renovados-a-su-isla-en-la-paloma",
+     "titulo": "Condorito , Yayita y Washington volverán renovados a su isla en La Paloma",
+     "fecha": "2026-11-13T00:45:00+00:00",
+     "pais": "Chile"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "PGR é contra revisar condenação de Jair Bolsonaro",
+   "n_medios": 1,
+   "puntaje": 5.9,
+   "region": null,
+   "ejes": [],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/pgr-e-contra-revisar-condenacao-de-jair-bolsonaro",
+     "titulo": "PGR é contra revisar condenação de Jair Bolsonaro",
+     "fecha": "2026-11-13T00:26:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "MP apura desvio de R$ 21 milhões em eventos esportivos na cidade de SP",
+   "n_medios": 1,
+   "puntaje": 5.9,
+   "region": null,
+   "ejes": [],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/mp-apura-desvio-de-r-21-milhoes-em-eventos-esportivos-na-cidade-de-sp",
+     "titulo": "MP apura desvio de R$ 21 milhões em eventos esportivos na cidade de SP",
+     "fecha": "2026-11-13T00:13:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Tesouro Nacional identifica vazamento de dados de 30 mil cadastros",
+   "n_medios": 1,
+   "puntaje": 5.8,
+   "region": null,
+   "ejes": [],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/tesouro-nacional-identifica-vazamento-de-dados-de-30-mil-cadastros",
+     "titulo": "Tesouro Nacional identifica vazamento de dados de 30 mil cadastros",
+     "fecha": "2026-11-12T23:48:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Caixa Seguridade informa ataque cibernético e vazamento de dados",
+   "n_medios": 1,
+   "puntaje": 5.7,
+   "region": null,
+   "ejes": [],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/caixa-seguridade-informa-ataque-cibernetico-e-vazamento-de-dados",
+     "titulo": "Caixa Seguridade informa ataque cibernético e vazamento de dados",
+     "fecha": "2026-11-12T23:06:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Zanin rejeita ação para determinar segundo turno para o governo do Rio",
+   "n_medios": 1,
+   "puntaje": 5.6,
+   "region": null,
+   "ejes": [],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/zanin-rejeita-acao-para-determinar-segundo-turno-para-o-governo-do-rio",
+     "titulo": "Zanin rejeita ação para determinar segundo turno para o governo do Rio",
+     "fecha": "2026-11-12T22:30:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Drauzio Varella é novo membro da Academia Brasileira de Letras",
+   "n_medios": 1,
+   "puntaje": 5.4,
+   "region": null,
+   "ejes": [],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/drauzio-varela-e-novo-membro-da-academia-brasileira-de-letras",
+     "titulo": "Drauzio Varella é novo membro da Academia Brasileira de Letras",
+     "fecha": "2026-11-12T21:47:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  }
+ ]
+}
