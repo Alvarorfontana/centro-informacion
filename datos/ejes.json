@@ -1,25 +1,346 @@
 {
   "_ayuda": "Agenda de la agencia: temas que se buscan a propósito cada hora, además de lo que aparece solo. 'palabras' sirve para marcar las notas que ya llegaron; 'consulta' es la búsqueda en GDELT (medios argentinos). Para sumar un eje, copiá uno y cambiale id, nombre, palabras y consulta.",
   "ejes": [
-    { "id": "gobierno", "nombre": "Gobierno y Milei", "palabras": ["Milei", "Casa Rosada", "Gobierno nacional", "jefe de Gabinete", "Karina Milei", "Adorni", "Francos", "decreto", "DNU", "La Libertad Avanza"],
-      "consulta": "(Milei OR \"Casa Rosada\" OR \"La Libertad Avanza\" OR DNU) sourcecountry:AR" },
-    { "id": "peronismo", "nombre": "PJ y Kicillof", "palabras": ["peronismo", "PJ", "Kicillof", "Cristina Kirchner", "kirchnerismo", "Fuerza Patria", "Unión por la Patria", "Massa"],
-      "consulta": "(peronismo OR Kicillof OR kirchnerismo OR \"Partido Justicialista\") sourcecountry:AR" },
-    { "id": "congreso", "nombre": "Congreso y elecciones", "palabras": ["Congreso", "Senado", "Diputados", "PASO", "primarias", "elecciones", "reforma electoral", "boleta única"],
-      "consulta": "(Senado OR Diputados OR PASO OR \"reforma electoral\" OR \"boleta unica\") sourcecountry:AR" },
-    { "id": "economia", "nombre": "Política económica e inflación", "palabras": ["Caputo", "Ministerio de Economía", "inflación", "dólar", "reservas", "Banco Central", "BCRA", "superávit", "tarifas", "salarios"],
-      "consulta": "(inflacion OR Caputo OR \"Banco Central\" OR reservas OR dolar) sourcecountry:AR" },
-    { "id": "estadisticas", "nombre": "INDEC y estadísticas", "palabras": ["INDEC", "pobreza", "desempleo", "desocupación", "EPH", "actividad económica", "EMAE", "canasta básica", "IPC"],
-      "consulta": "(INDEC OR pobreza OR desocupacion OR EMAE OR \"canasta basica\") sourcecountry:AR" },
-    { "id": "fmi", "nombre": "FMI y deuda", "palabras": ["FMI", "Fondo Monetario", "Georgieva", "deuda", "bonistas", "riesgo país", "Banco Mundial", "BID"],
-      "consulta": "(FMI OR \"Fondo Monetario\" OR \"riesgo pais\" OR bonistas) sourcecountry:AR" },
-    { "id": "mercosur", "nombre": "Mercosur e integración", "palabras": ["Mercosur", "Unión Europea", "Lula", "Orsi", "Peña", "Parlasur", "arancel", "acuerdo comercial"],
-      "consulta": "(Mercosur OR Parlasur OR \"acuerdo Mercosur\") sourcelang:spanish" },
-    { "id": "eeuu", "nombre": "Estados Unidos", "palabras": ["Estados Unidos", "Trump", "Washington", "Casa Blanca", "Bessent", "Rubio", "Tesoro de EE.UU.", "aranceles"],
-      "consulta": "(Trump OR \"Casa Blanca\" OR \"Estados Unidos\") Argentina sourcelang:spanish" },
-    { "id": "guerras", "nombre": "Guerras y conflictos", "palabras": ["guerra", "Ucrania", "Rusia", "Israel", "Gaza", "Irán", "OTAN", "bombardeo", "alto el fuego"],
-      "consulta": "(guerra OR Ucrania OR Gaza OR \"alto el fuego\" OR OTAN) sourcelang:spanish" },
-    { "id": "energia", "nombre": "Combustibles y energía", "palabras": ["combustibles", "nafta", "YPF", "Vaca Muerta", "petróleo", "gas", "GNL", "litio", "energía", "electricidad", "tarifas de luz"],
-      "consulta": "(YPF OR \"Vaca Muerta\" OR combustibles OR nafta OR litio) sourcecountry:AR" }
+    {
+      "id": "gobierno",
+      "nombre": "Gobierno y Milei",
+      "palabras": [
+        "Adorni",
+        "Bullrich",
+        "Casa Rosada",
+        "Cúneo Libarona",
+        "DNU",
+        "Francos",
+        "Gobierno nacional",
+        "Karina Milei",
+        "La Libertad Avanza",
+        "Milei",
+        "Petri",
+        "Pettovello",
+        "Sturzenegger",
+        "decreto",
+        "jefe de Gabinete",
+        "oficialismo"
+      ],
+      "consulta": "(Milei OR \"Casa Rosada\" OR \"La Libertad Avanza\" OR DNU) sourcecountry:AR"
+    },
+    {
+      "id": "peronismo",
+      "nombre": "PJ y Kicillof",
+      "palabras": [
+        "Cristina Kirchner",
+        "Fuerza Patria",
+        "Grabois",
+        "Kicillof",
+        "La Cámpora",
+        "Massa",
+        "Mayra Mendoza",
+        "Máximo Kirchner",
+        "PJ",
+        "Partido Justicialista",
+        "Quintela",
+        "Unión por la Patria",
+        "kirchnerismo",
+        "peronismo",
+        "peronista",
+        "peronistas"
+      ],
+      "consulta": "(peronismo OR peronista OR Kicillof OR kirchnerismo OR \"Partido Justicialista\" OR \"La Campora\") sourcecountry:AR"
+    },
+    {
+      "id": "congreso",
+      "nombre": "Congreso y elecciones",
+      "palabras": [
+        "Congreso",
+        "Senado",
+        "Diputados",
+        "PASO",
+        "primarias",
+        "elecciones",
+        "reforma electoral",
+        "boleta única"
+      ],
+      "consulta": "(Senado OR Diputados OR PASO OR \"reforma electoral\" OR \"boleta unica\") sourcecountry:AR"
+    },
+    {
+      "id": "economia",
+      "nombre": "Política económica e inflación",
+      "palabras": [
+        "Caputo",
+        "Ministerio de Economía",
+        "inflación",
+        "dólar",
+        "reservas",
+        "Banco Central",
+        "BCRA",
+        "superávit",
+        "tarifas",
+        "salarios"
+      ],
+      "consulta": "(inflacion OR Caputo OR \"Banco Central\" OR reservas OR dolar) sourcecountry:AR"
+    },
+    {
+      "id": "estadisticas",
+      "nombre": "INDEC y estadísticas",
+      "palabras": [
+        "INDEC",
+        "pobreza",
+        "desempleo",
+        "desocupación",
+        "EPH",
+        "actividad económica",
+        "EMAE",
+        "canasta básica",
+        "IPC"
+      ],
+      "consulta": "(INDEC OR pobreza OR desocupacion OR EMAE OR \"canasta basica\") sourcecountry:AR"
+    },
+    {
+      "id": "fmi",
+      "nombre": "FMI y deuda",
+      "palabras": [
+        "FMI",
+        "Fondo Monetario",
+        "Georgieva",
+        "deuda",
+        "bonistas",
+        "riesgo país",
+        "Banco Mundial",
+        "BID"
+      ],
+      "consulta": "(FMI OR \"Fondo Monetario\" OR \"riesgo pais\" OR bonistas) sourcecountry:AR"
+    },
+    {
+      "id": "mercosur",
+      "nombre": "Mercosur e integración",
+      "palabras": [
+        "Mercosur",
+        "Unión Europea",
+        "Lula",
+        "Orsi",
+        "Peña",
+        "Parlasur",
+        "arancel",
+        "acuerdo comercial"
+      ],
+      "consulta": "(Mercosur OR Parlasur OR \"acuerdo Mercosur\") sourcelang:spanish"
+    },
+    {
+      "id": "eeuu",
+      "nombre": "Estados Unidos",
+      "palabras": [
+        "Estados Unidos",
+        "Trump",
+        "Washington",
+        "Casa Blanca",
+        "Bessent",
+        "Rubio",
+        "Tesoro de EE.UU.",
+        "aranceles"
+      ],
+      "consulta": "(Trump OR \"Casa Blanca\" OR \"Estados Unidos\") Argentina sourcelang:spanish"
+    },
+    {
+      "id": "guerras",
+      "nombre": "Guerras y conflictos",
+      "palabras": [
+        "guerra",
+        "Ucrania",
+        "Rusia",
+        "Israel",
+        "Gaza",
+        "Irán",
+        "OTAN",
+        "bombardeo",
+        "alto el fuego"
+      ],
+      "consulta": "(guerra OR Ucrania OR Gaza OR \"alto el fuego\" OR OTAN) sourcelang:spanish"
+    },
+    {
+      "id": "energia",
+      "nombre": "Combustibles y energía",
+      "palabras": [
+        "combustibles",
+        "nafta",
+        "YPF",
+        "Vaca Muerta",
+        "petróleo",
+        "gas",
+        "GNL",
+        "litio",
+        "energía",
+        "electricidad",
+        "tarifas de luz"
+      ],
+      "consulta": "(YPF OR \"Vaca Muerta\" OR combustibles OR nafta OR litio) sourcecountry:AR"
+    },
+    {
+      "id": "provincias",
+      "nombre": "Gobernadores y provincias",
+      "palabras": [
+        "gobernador",
+        "gobernadora",
+        "gobernadores",
+        "Legislatura",
+        "provincia de",
+        "Llaryora",
+        "Pullaro",
+        "Jalil",
+        "Sáenz",
+        "Torres",
+        "Figueroa",
+        "Valdés",
+        "Insfrán",
+        "Zdero",
+        "Cornejo",
+        "Orrego",
+        "Frigerio",
+        "Sadir",
+        "Poggi"
+      ],
+      "consulta": "(gobernador OR gobernadores OR legislatura OR coparticipacion) sourcecountry:AR"
+    },
+    {
+      "id": "local",
+      "nombre": "Política local y municipios",
+      "palabras": [
+        "intendente",
+        "intendenta",
+        "Concejo Deliberante",
+        "municipio",
+        "Vicente López",
+        "San Isidro",
+        "Tigre",
+        "conurbano",
+        "Jorge Macri",
+        "Ciudad de Buenos Aires",
+        "Legislatura porteña"
+      ],
+      "consulta": "(intendente OR \"Concejo Deliberante\" OR conurbano OR \"Vicente Lopez\" OR \"San Isidro\") sourcecountry:AR"
+    },
+    {
+      "id": "brasil",
+      "nombre": "Brasil",
+      "palabras": [
+        "Brasil",
+        "Lula",
+        "Bolsonaro",
+        "Itamaraty",
+        "Petrobras",
+        "Planalto",
+        "Haddad",
+        "real brasileño"
+      ],
+      "consulta": "(Lula OR Bolsonaro OR Brasil OR Petrobras) sourcelang:spanish"
+    },
+    {
+      "id": "latinoamerica",
+      "nombre": "Latinoamérica",
+      "palabras": [
+        "Latinoamérica",
+        "América Latina",
+        "Chile",
+        "Uruguay",
+        "Paraguay",
+        "Bolivia",
+        "Perú",
+        "Colombia",
+        "Venezuela",
+        "México",
+        "Ecuador",
+        "Maduro",
+        "Sheinbaum",
+        "Petro",
+        "Kast",
+        "Orsi",
+        "Celac"
+      ],
+      "consulta": "(Venezuela OR Bolivia OR Chile OR Colombia OR Mexico OR Peru OR \"America Latina\") sourcelang:spanish"
+    },
+    {
+      "id": "migracion",
+      "nombre": "Migración e inmigrantes",
+      "palabras": [
+        "migrantes",
+        "migrante",
+        "inmigrantes",
+        "inmigración",
+        "migración",
+        "Dirección Nacional de Migraciones",
+        "refugiados",
+        "deportación",
+        "deportaciones",
+        "frontera",
+        "residencia precaria",
+        "extranjeros"
+      ],
+      "consulta": "(migrantes OR inmigrantes OR migracion OR refugiados OR deportaciones) sourcelang:spanish"
+    },
+    {
+      "id": "china",
+      "nombre": "China y Asia",
+      "palabras": [
+        "China",
+        "Xi Jinping",
+        "Pekín",
+        "Beijing",
+        "swap chino",
+        "Japón",
+        "India",
+        "Taiwán"
+      ],
+      "consulta": "(China OR \"Xi Jinping\" OR Pekin) Argentina sourcelang:spanish"
+    },
+    {
+      "id": "justicia",
+      "nombre": "Justicia y Corte",
+      "palabras": [
+        "Corte Suprema",
+        "juez",
+        "jueza",
+        "fiscal",
+        "Comodoro Py",
+        "causa",
+        "procesado",
+        "Consejo de la Magistratura"
+      ],
+      "consulta": "(\"Corte Suprema\" OR \"Comodoro Py\" OR \"Consejo de la Magistratura\") sourcecountry:AR"
+    },
+    {
+      "id": "trabajo",
+      "nombre": "Trabajo, gremios y salarios",
+      "palabras": [
+        "CGT",
+        "gremio",
+        "gremios",
+        "sindicato",
+        "paritaria",
+        "paritarias",
+        "paro",
+        "huelga",
+        "reforma laboral",
+        "UOM",
+        "ATE",
+        "CTA",
+        "despidos"
+      ],
+      "consulta": "(CGT OR paritarias OR \"reforma laboral\" OR sindicato OR despidos) sourcecountry:AR"
+    },
+    {
+      "id": "agro",
+      "nombre": "Campo y agroindustria",
+      "palabras": [
+        "retenciones",
+        "campo",
+        "soja",
+        "trigo",
+        "maíz",
+        "cosecha",
+        "Sociedad Rural",
+        "agroexportación",
+        "sequía"
+      ],
+      "consulta": "(retenciones OR soja OR cosecha OR \"Sociedad Rural\") sourcecountry:AR"
+    }
   ]
 }

@@ -1,25 +1,30 @@
 {
   "_ayuda": "Configuración de la redacción automática. Para apagar un agente, poné \"prendido\": false. Para cambiar cuántas notas se arman por región, tocá \"cupos\". Las instrucciones de cada agente están en agentes/instrucciones/.",
   "cupos": {
-    "argentina": 4,
-    "local": 1,
+    "argentina": 5,
+    "local": 2,
     "mercosur": 2,
-    "mundo": 2
+    "mundo": 3
   },
   "candidatos_por_monitor": 12,
   "local": {
     "nombre": "Local",
     "palabras": [
-      "Vicente López",
-      "Vicente Lopez",
-      "San Isidro",
-      "Tigre",
-      "San Fernando",
-      "zona norte del conurbano",
-      "Olivos",
-      "Munro",
+      "Carapachay",
+      "Concejo Deliberante de",
       "Florida Oeste",
-      "Carapachay"
+      "Jorge Macri",
+      "Munro",
+      "Olivos",
+      "San Fernando",
+      "San Isidro",
+      "Soledad Martínez",
+      "Tigre",
+      "Vicente Lopez",
+      "Vicente López",
+      "conurbano bonaerense",
+      "intendente de Vicente López",
+      "zona norte del conurbano"
     ]
   },
   "ia": {
