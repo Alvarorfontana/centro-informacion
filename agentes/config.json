@@ -179,8 +179,8 @@
       "id": "whatsapp",
       "n": 15,
       "etapa": "Edición",
-      "nombre": "Aviso por WhatsApp",
-      "hace": "Cuando termina la vuelta, te manda por WhatsApp el menú, la agenda y el seguimiento.",
+      "nombre": "Aviso al celular",
+      "hace": "Cuando termina la vuelta, te manda por Telegram (o WhatsApp) el menú, la agenda y el seguimiento.",
       "ia": false,
       "prendido": true
     }

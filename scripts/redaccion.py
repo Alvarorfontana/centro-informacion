@@ -710,7 +710,7 @@ def main():
             import avisar
             res = avisar.mandar(avisar.resumen(salida))
             reg.anotar("whatsapp", "funcionó" if res.startswith("enviado") else "sin configurar",
-                       "Mensaje enviado" if res.startswith("enviado") else "Falta tu teléfono y la clave de CallMeBot en secretos/claves.json")
+                       res[0].upper() + res[1:] if res.startswith("enviado") else ("Falta escribirle al bot de Telegram" if "escribas" in res else "Falta crear el bot de Telegram y pasar su token"))
         except Exception as e:  # noqa: BLE001
             reg.anotar("whatsapp", "falló", str(e))
         salida["agentes"] = reg.lista()
