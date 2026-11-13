@@ -83,6 +83,24 @@
       ]
     },
     {
+      "id": "local",
+      "nombre": "Política local y municipios",
+      "palabras": [
+        "intendente",
+        "intendenta",
+        "Concejo Deliberante",
+        "municipio",
+        "Vicente López",
+        "San Isidro",
+        "Tigre",
+        "conurbano",
+        "Jorge Macri",
+        "Ciudad de Buenos Aires",
+        "Legislatura porteña"
+      ],
+      "consulta": "(intendente OR \"Concejo Deliberante\" OR conurbano OR \"Vicente Lopez\" OR \"San Isidro\") sourcecountry:AR"
+    },
+    {
       "id": "economia",
       "nombre": "Política económica e inflación",
       "palabras": [
@@ -116,8 +134,54 @@
       "consulta": "(INDEC OR pobreza OR desocupacion OR EMAE OR \"canasta basica\") sourcecountry:AR"
     },
     {
+      "id": "industria",
+      "nombre": "Industria y empleo",
+      "incluye": "industria argentina, producción, fábricas, empleo, salarios y gremios",
+      "palabras": [
+        "CGT",
+        "gremio",
+        "gremios",
+        "sindicato",
+        "paritaria",
+        "paritarias",
+        "paro",
+        "huelga",
+        "reforma laboral",
+        "UOM",
+        "ATE",
+        "CTA",
+        "despidos",
+        "industria",
+        "industrial",
+        "UIA",
+        "Unión Industrial",
+        "producción industrial",
+        "capacidad instalada",
+        "fábrica",
+        "fábricas",
+        "pymes",
+        "metalúrgica",
+        "metalúrgico",
+        "automotriz",
+        "ADEFA",
+        "textil",
+        "siderurgia",
+        "Techint",
+        "empleo",
+        "desempleo",
+        "puestos de trabajo",
+        "suspensiones",
+        "importaciones"
+      ],
+      "consultas": [
+        "(CGT OR paritarias OR \"reforma laboral\" OR sindicato OR despidos) sourcecountry:AR",
+        "(industria OR UIA OR \"capacidad instalada\" OR pymes OR automotriz OR metalurgica) sourcecountry:AR",
+        "(empleo OR suspensiones OR \"puestos de trabajo\" OR cierre de fabrica) sourcecountry:AR"
+      ]
+    },
+    {
       "id": "fmi",
-      "nombre": "FMI y deuda",
+      "nombre": "Deuda externa y FMI",
       "palabras": [
         "FMI",
         "Fondo Monetario",
@@ -126,55 +190,37 @@
         "bonistas",
         "riesgo país",
         "Banco Mundial",
-        "BID"
+        "BID",
+        "deuda externa",
+        "vencimientos",
+        "default",
+        "reestructuración",
+        "Club de París",
+        "bonos",
+        "Bonares",
+        "Globales",
+        "swap"
       ],
-      "consulta": "(FMI OR \"Fondo Monetario\" OR \"riesgo pais\" OR bonistas) sourcecountry:AR"
+      "consultas": [
+        "(FMI OR \"Fondo Monetario\" OR \"riesgo pais\" OR bonistas) sourcecountry:AR",
+        "(\"deuda externa\" OR vencimientos OR \"Club de Paris\" OR Bonares OR reestructuracion) sourcecountry:AR"
+      ]
     },
     {
-      "id": "mercosur",
-      "nombre": "Mercosur e integración",
+      "id": "agro",
+      "nombre": "Campo y agroindustria",
       "palabras": [
-        "Mercosur",
-        "Unión Europea",
-        "Lula",
-        "Orsi",
-        "Peña",
-        "Parlasur",
-        "arancel",
-        "acuerdo comercial"
+        "retenciones",
+        "campo",
+        "soja",
+        "trigo",
+        "maíz",
+        "cosecha",
+        "Sociedad Rural",
+        "agroexportación",
+        "sequía"
       ],
-      "consulta": "(Mercosur OR Parlasur OR \"acuerdo Mercosur\") sourcelang:spanish"
-    },
-    {
-      "id": "eeuu",
-      "nombre": "Estados Unidos",
-      "palabras": [
-        "Estados Unidos",
-        "Trump",
-        "Washington",
-        "Casa Blanca",
-        "Bessent",
-        "Rubio",
-        "Tesoro de EE.UU.",
-        "aranceles"
-      ],
-      "consulta": "(Trump OR \"Casa Blanca\" OR \"Estados Unidos\") Argentina sourcelang:spanish"
-    },
-    {
-      "id": "guerras",
-      "nombre": "Guerras y conflictos",
-      "palabras": [
-        "guerra",
-        "Ucrania",
-        "Rusia",
-        "Israel",
-        "Gaza",
-        "Irán",
-        "OTAN",
-        "bombardeo",
-        "alto el fuego"
-      ],
-      "consulta": "(guerra OR Ucrania OR Gaza OR \"alto el fuego\" OR OTAN) sourcelang:spanish"
+      "consulta": "(retenciones OR soja OR cosecha OR \"Sociedad Rural\") sourcecountry:AR"
     },
     {
       "id": "energia",
@@ -195,22 +241,100 @@
       "consulta": "(YPF OR \"Vaca Muerta\" OR combustibles OR nafta OR litio) sourcecountry:AR"
     },
     {
-      "id": "local",
-      "nombre": "Política local y municipios",
+      "id": "economia-global",
+      "nombre": "Economía global y mercados emergentes",
+      "incluye": "Wall Street, la Fed, tasas, commodities, mercados emergentes",
       "palabras": [
-        "intendente",
-        "intendenta",
-        "Concejo Deliberante",
-        "municipio",
-        "Vicente López",
-        "San Isidro",
-        "Tigre",
-        "conurbano",
-        "Jorge Macri",
-        "Ciudad de Buenos Aires",
-        "Legislatura porteña"
+        "mercados emergentes",
+        "Wall Street",
+        "Reserva Federal",
+        "la Fed",
+        "tasas de interés",
+        "bonos del Tesoro",
+        "commodities",
+        "materias primas",
+        "precio del petróleo",
+        "Brent",
+        "recesión global",
+        "economía mundial",
+        "dólar global",
+        "JP Morgan",
+        "MSCI",
+        "Banco Mundial",
+        "OCDE"
       ],
-      "consulta": "(intendente OR \"Concejo Deliberante\" OR conurbano OR \"Vicente Lopez\" OR \"San Isidro\") sourcecountry:AR"
+      "consultas": [
+        "(\"mercados emergentes\" OR \"Reserva Federal\" OR \"Wall Street\" OR \"economia mundial\" OR commodities) sourcelang:spanish"
+      ]
+    },
+    {
+      "id": "internacional",
+      "nombre": "Política internacional y conflictos",
+      "incluye": "guerras y conflictos, Estados Unidos, China y Asia, Europa, ONU y cumbres",
+      "palabras": [
+        "guerra",
+        "Ucrania",
+        "Rusia",
+        "Israel",
+        "Gaza",
+        "Irán",
+        "OTAN",
+        "bombardeo",
+        "alto el fuego",
+        "Estados Unidos",
+        "Trump",
+        "Washington",
+        "Casa Blanca",
+        "Bessent",
+        "Rubio",
+        "Tesoro de EE.UU.",
+        "aranceles",
+        "China",
+        "Xi Jinping",
+        "Pekín",
+        "Beijing",
+        "swap chino",
+        "Japón",
+        "India",
+        "Taiwán",
+        "ONU",
+        "Naciones Unidas",
+        "G20",
+        "G7",
+        "Unión Europea",
+        "Bruselas",
+        "Kremlin",
+        "Putin",
+        "Zelenski",
+        "Netanyahu",
+        "Hamas",
+        "Hezbollah",
+        "Medio Oriente",
+        "cumbre",
+        "sanciones",
+        "Consejo de Seguridad"
+      ],
+      "consultas": [
+        "(guerra OR Ucrania OR Gaza OR \"alto el fuego\" OR OTAN) sourcelang:spanish",
+        "(Trump OR \"Casa Blanca\" OR \"Estados Unidos\") Argentina sourcelang:spanish",
+        "(China OR \"Xi Jinping\" OR Pekin) Argentina sourcelang:spanish",
+        "(ONU OR G20 OR \"Union Europea\" OR \"Consejo de Seguridad\" OR sanciones) sourcelang:spanish"
+      ]
+    },
+    {
+      "id": "mercosur",
+      "nombre": "Mercosur e integración",
+      "palabras": [
+        "Mercosur",
+        "Unión Europea",
+        "Lula",
+        "Orsi",
+        "Peña",
+        "Parlasur",
+        "arancel",
+        "acuerdo comercial"
+      ],
+      "consulta": "(Mercosur OR Parlasur OR \"acuerdo Mercosur\") sourcelang:spanish"
     },
     {
       "id": "brasil",
@@ -269,57 +393,6 @@
         "extranjeros"
       ],
       "consulta": "(migrantes OR inmigrantes OR migracion OR refugiados OR deportaciones) sourcelang:spanish"
-    },
-    {
-      "id": "china",
-      "nombre": "China y Asia",
-      "palabras": [
-        "China",
-        "Xi Jinping",
-        "Pekín",
-        "Beijing",
-        "swap chino",
-        "Japón",
-        "India",
-        "Taiwán"
-      ],
-      "consulta": "(China OR \"Xi Jinping\" OR Pekin) Argentina sourcelang:spanish"
-    },
-    {
-      "id": "trabajo",
-      "nombre": "Trabajo, gremios y salarios",
-      "palabras": [
-        "CGT",
-        "gremio",
-        "gremios",
-        "sindicato",
-        "paritaria",
-        "paritarias",
-        "paro",
-        "huelga",
-        "reforma laboral",
-        "UOM",
-        "ATE",
-        "CTA",
-        "despidos"
-      ],
-      "consulta": "(CGT OR paritarias OR \"reforma laboral\" OR sindicato OR despidos) sourcecountry:AR"
-    },
-    {
-      "id": "agro",
-      "nombre": "Campo y agroindustria",
-      "palabras": [
-        "retenciones",
-        "campo",
-        "soja",
-        "trigo",
-        "maíz",
-        "cosecha",
-        "Sociedad Rural",
-        "agroexportación",
-        "sequía"
-      ],
-      "consulta": "(retenciones OR soja OR cosecha OR \"Sociedad Rural\") sourcecountry:AR"
     }
   ]
 }
