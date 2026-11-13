@@ -529,6 +529,14 @@ def correr(nombre_agente, reg, ia, fn, *args):
 
 
 def main():
+    import os
+    horas = os.environ.get("SALTEAR_SI_RECIENTE", "").strip()
+    previa = leer(DATOS / "redaccion.json") or {}
+    if horas and previa.get("generado"):
+        edad = (datetime.now(timezone.utc) - datetime.fromisoformat(previa["generado"])).total_seconds() / 3600
+        if edad < float(horas):
+            print(f"La última vuelta fue hace {edad:.1f} horas: no hace falta otra todavía.")
+            return 0
     conf = leer(AGENTES / "config.json")
     noticias = leer(DATOS / "noticias.json")
     if not noticias:
