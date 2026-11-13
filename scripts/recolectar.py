@@ -145,12 +145,39 @@ def gdelt(consulta, modo="artlist", periodo="3d", maximo=40):
         params["maxrecords"] = str(maximo)
     url = GDELT + "?" + urllib.parse.urlencode(params)
     crudo = pedir(url)
-    time.sleep(6)  # GDELT pide no más de una consulta cada 5 segundos
+    time.sleep(9)  # GDELT pide no más de una consulta cada 5 segundos; desde GitHub conviene más margen
     try:
         return json.loads(crudo.decode("utf-8", "ignore"))
     except json.JSONDecodeError:
         # GDELT contesta texto plano cuando la consulta no le gusta
         raise ValueError(crudo.decode("utf-8", "ignore")[:200])
+
+
+def bing_noticias(consulta, maximo=25):
+    """Respaldo de GDELT (que a veces corta con 429): búsqueda de noticias de Bing por RSS, sin clave."""
+    import feedparser
+    texto = re.sub(r"source\w+:\S+", " ", consulta)
+    texto = re.sub(r"[()]", " ", texto).replace(" OR ", " | ")
+    texto = re.sub(r"\s+", " ", texto).strip()
+    url = "https://www.bing.com/news/search?" + urllib.parse.urlencode({"q": texto, "format": "rss", "setlang": "es-AR", "cc": "AR"})
+    feed = feedparser.parse(pedir(url, intentos=1))
+    notas = []
+    for e in feed.entries[:maximo]:
+        link = getattr(e, "link", "") or ""
+        q = urllib.parse.parse_qs(urllib.parse.urlparse(link).query)
+        if q.get("url"):
+            link = q["url"][0]
+        titulo = limpiar_titulo(getattr(e, "title", "") or "")
+        if not titulo or not link or es_ruido(titulo):
+            continue
+        medio = (e.get("news_source") or e.get("source", {}).get("title") if isinstance(e.get("source"), dict) else e.get("news_source")) or urllib.parse.urlparse(link).netloc.replace("www.", "")
+        fecha = None
+        if getattr(e, "published_parsed", None):
+            fecha = datetime(*e.published_parsed[:6], tzinfo=timezone.utc).isoformat()
+        resumen = re.sub(r"<[^>]+>", " ", getattr(e, "summary", "") or "").strip()[:300] or None
+        notas.append({"titulo": titulo, "resumen": resumen, "url": link, "medio": medio, "pais": None, "idioma": "es", "fecha": fecha,
+                      "imagen": None, "region": region_de(titulo), "zona": None, "tema": tema_de(titulo), "via": "Bing Noticias", "tipo": None})
+    return notas
 
 
 def fecha_gdelt(s):
@@ -198,10 +225,21 @@ def nota_gdelt(a, region=None, zona=None):
 
 def leer_rss(fuente):
     import feedparser  # se instala en el workflow
-    crudo = pedir(fuente["url"], intentos=2)
-    feed = feedparser.parse(crudo)
-    if not feed.entries:
-        raise ValueError("el feed no trae notas")
+    # una fuente puede tener varias direcciones posibles: se prueba hasta que una funcione
+    feed, errores = None, []
+    for url in [fuente.get("url"), *fuente.get("alternativas", [])]:
+        if not url:
+            continue
+        try:
+            f = feedparser.parse(pedir(url, intentos=1))
+            if f.entries:
+                feed = f
+                break
+            errores.append("sin notas")
+        except Exception as e:  # noqa: BLE001
+            errores.append(str(e)[:50])
+    if not feed:
+        raise ValueError(" / ".join(errores) or "el feed no trae notas")
     notas = []
     for e in feed.entries[:25]:
         fecha = None
@@ -280,15 +318,26 @@ def main():
     salida["ejes"] = {}
     for e in EJES:
         try:
-            notas, urls = [], set()
+            notas, urls, fallas = [], set(), []
             for consulta in e.get("consultas") or [e["consulta"]]:  # un eje puede juntar varias búsquedas
-                for a in gdelt(consulta, maximo=30).get("articles", []):
-                    n = nota_gdelt(a)
+                try:
+                    encontradas = [nota_gdelt(a) for a in gdelt(consulta, maximo=30).get("articles", [])]
+                except Exception as ex:  # noqa: BLE001
+                    fallas.append(f"GDELT: {str(ex)[:60]}")
+                    encontradas = []
+                if not encontradas:  # GDELT cortó o no trajo nada: se prueba Bing Noticias
+                    try:
+                        encontradas = bing_noticias(consulta)
+                    except Exception as ex:  # noqa: BLE001
+                        fallas.append(f"Bing: {str(ex)[:60]}")
+                for n in encontradas:
                     if es_ruido(n["titulo"]) or n["url"] in urls:
                         continue
                     urls.add(n["url"])
                     n["ejes"] = [e["id"]]
                     notas.append(n)
+            if not notas and fallas:
+                raise RuntimeError("; ".join(fallas[-2:]))
             salida["ejes"][e["id"]] = {"nombre": e["nombre"], "notas": notas}
             salida["estado"].append({"fuente": f"GDELT · agenda {e['nombre']}", "ok": True, "notas": len(notas)})
         except Exception as ex:  # noqa: BLE001
