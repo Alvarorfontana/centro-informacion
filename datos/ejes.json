@@ -1,9 +1,10 @@
 {
-  "_ayuda": "Agenda de la agencia: temas que se buscan a propósito cada hora, además de lo que aparece solo. 'palabras' sirve para marcar las notas que ya llegaron; 'consulta' es la búsqueda en GDELT (medios argentinos). Para sumar un eje, copiá uno y cambiale id, nombre, palabras y consulta.",
+  "_ayuda": "Agenda de la agencia: temas que se buscan a propósito cada hora, además de lo que aparece solo. 'palabras' sirve para marcar las notas que ya llegaron; 'consulta' (o la lista 'consultas') es la búsqueda en GDELT (medios argentinos). Para sumar un eje, copiá uno y cambiale id, nombre, palabras y consulta.",
   "ejes": [
     {
-      "id": "gobierno",
-      "nombre": "Gobierno y Milei",
+      "id": "politica",
+      "nombre": "Política nacional",
+      "incluye": "Gobierno y Milei, peronismo y Kicillof, Congreso y elecciones, gobernadores y provincias, justicia y Corte",
       "palabras": [
         "Adorni",
         "Bullrich",
@@ -20,14 +21,7 @@
         "Sturzenegger",
         "decreto",
         "jefe de Gabinete",
-        "oficialismo"
-      ],
-      "consulta": "(Milei OR \"Casa Rosada\" OR \"La Libertad Avanza\" OR DNU) sourcecountry:AR"
-    },
-    {
-      "id": "peronismo",
-      "nombre": "PJ y Kicillof",
-      "palabras": [
+        "oficialismo",
         "Cristina Kirchner",
         "Fuerza Patria",
         "Grabois",
@@ -43,14 +37,7 @@
         "kirchnerismo",
         "peronismo",
         "peronista",
-        "peronistas"
-      ],
-      "consulta": "(peronismo OR peronista OR Kicillof OR kirchnerismo OR \"Partido Justicialista\" OR \"La Campora\") sourcecountry:AR"
-    },
-    {
-      "id": "congreso",
-      "nombre": "Congreso y elecciones",
-      "palabras": [
+        "peronistas",
         "Congreso",
         "Senado",
         "Diputados",
@@ -58,9 +45,42 @@
         "primarias",
         "elecciones",
         "reforma electoral",
-        "boleta única"
+        "boleta única",
+        "gobernador",
+        "gobernadora",
+        "gobernadores",
+        "Legislatura",
+        "provincia de",
+        "Llaryora",
+        "Pullaro",
+        "Jalil",
+        "Sáenz",
+        "Torres",
+        "Figueroa",
+        "Valdés",
+        "Insfrán",
+        "Zdero",
+        "Cornejo",
+        "Orrego",
+        "Frigerio",
+        "Sadir",
+        "Poggi",
+        "Corte Suprema",
+        "juez",
+        "jueza",
+        "fiscal",
+        "Comodoro Py",
+        "causa",
+        "procesado",
+        "Consejo de la Magistratura"
       ],
-      "consulta": "(Senado OR Diputados OR PASO OR \"reforma electoral\" OR \"boleta unica\") sourcecountry:AR"
+      "consultas": [
+        "(Milei OR \"Casa Rosada\" OR \"La Libertad Avanza\" OR DNU) sourcecountry:AR",
+        "(peronismo OR peronista OR Kicillof OR kirchnerismo OR \"Partido Justicialista\" OR \"La Campora\") sourcecountry:AR",
+        "(Senado OR Diputados OR PASO OR \"reforma electoral\" OR \"boleta unica\") sourcecountry:AR",
+        "(gobernador OR gobernadores OR legislatura OR coparticipacion) sourcecountry:AR",
+        "(\"Corte Suprema\" OR \"Comodoro Py\" OR \"Consejo de la Magistratura\") sourcecountry:AR"
+      ]
     },
     {
       "id": "economia",
@@ -175,32 +195,6 @@
       "consulta": "(YPF OR \"Vaca Muerta\" OR combustibles OR nafta OR litio) sourcecountry:AR"
     },
     {
-      "id": "provincias",
-      "nombre": "Gobernadores y provincias",
-      "palabras": [
-        "gobernador",
-        "gobernadora",
-        "gobernadores",
-        "Legislatura",
-        "provincia de",
-        "Llaryora",
-        "Pullaro",
-        "Jalil",
-        "Sáenz",
-        "Torres",
-        "Figueroa",
-        "Valdés",
-        "Insfrán",
-        "Zdero",
-        "Cornejo",
-        "Orrego",
-        "Frigerio",
-        "Sadir",
-        "Poggi"
-      ],
-      "consulta": "(gobernador OR gobernadores OR legislatura OR coparticipacion) sourcecountry:AR"
-    },
-    {
       "id": "local",
       "nombre": "Política local y municipios",
       "palabras": [
@@ -290,21 +284,6 @@
         "Taiwán"
       ],
       "consulta": "(China OR \"Xi Jinping\" OR Pekin) Argentina sourcelang:spanish"
-    },
-    {
-      "id": "justicia",
-      "nombre": "Justicia y Corte",
-      "palabras": [
-        "Corte Suprema",
-        "juez",
-        "jueza",
-        "fiscal",
-        "Comodoro Py",
-        "causa",
-        "procesado",
-        "Consejo de la Magistratura"
-      ],
-      "consulta": "(\"Corte Suprema\" OR \"Comodoro Py\" OR \"Consejo de la Magistratura\") sourcecountry:AR"
     },
     {
       "id": "trabajo",

@@ -280,14 +280,15 @@ def main():
     salida["ejes"] = {}
     for e in EJES:
         try:
-            datos = gdelt(e["consulta"], maximo=30)
-            notas = []
-            for a in datos.get("articles", []):
-                n = nota_gdelt(a)
-                if es_ruido(n["titulo"]):
-                    continue
-                n["ejes"] = [e["id"]]
-                notas.append(n)
+            notas, urls = [], set()
+            for consulta in e.get("consultas") or [e["consulta"]]:  # un eje puede juntar varias búsquedas
+                for a in gdelt(consulta, maximo=30).get("articles", []):
+                    n = nota_gdelt(a)
+                    if es_ruido(n["titulo"]) or n["url"] in urls:
+                        continue
+                    urls.add(n["url"])
+                    n["ejes"] = [e["id"]]
+                    notas.append(n)
             salida["ejes"][e["id"]] = {"nombre": e["nombre"], "notas": notas}
             salida["estado"].append({"fuente": f"GDELT · agenda {e['nombre']}", "ok": True, "notas": len(notas)})
         except Exception as ex:  # noqa: BLE001
