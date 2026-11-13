@@ -1,0 +1,148 @@
+{
+  "_ayuda": "Configuración de la redacción automática. Para apagar un agente, poné \"prendido\": false. Para cambiar cuántas notas se arman por región, tocá \"cupos\". Las instrucciones de cada agente están en agentes/instrucciones/.",
+  "cupos": {
+    "argentina": 4,
+    "local": 1,
+    "mercosur": 2,
+    "mundo": 2
+  },
+  "candidatos_por_monitor": 12,
+  "local": {
+    "nombre": "Local",
+    "palabras": [
+      "Vicente López",
+      "Vicente Lopez",
+      "San Isidro",
+      "Tigre",
+      "San Fernando",
+      "zona norte del conurbano",
+      "Olivos",
+      "Munro",
+      "Florida Oeste",
+      "Carapachay"
+    ]
+  },
+  "ia": {
+    "_ayuda": "Se usa Gemini si está la clave GEMINI_API_KEY; si falla o no está, Groq con GROQ_API_KEY. Las dos tienen uso gratuito.",
+    "gemini_modelos": [
+      "gemini-flash-latest",
+      "gemini-2.5-flash",
+      "gemini-flash-lite-latest"
+    ],
+    "groq_modelos": [
+      "llama-3.3-70b-versatile",
+      "openai/gpt-oss-120b"
+    ],
+    "pausa_segundos": 5
+  },
+  "agentes": [
+    {
+      "id": "monitor-argentina",
+      "n": 1,
+      "etapa": "Selección",
+      "nombre": "Monitor Argentina",
+      "hace": "Ordena las noticias del país por región y por cuántos medios las cuentan.",
+      "ia": false,
+      "prendido": true
+    },
+    {
+      "id": "monitor-local",
+      "n": 2,
+      "etapa": "Selección",
+      "nombre": "Monitor local",
+      "hace": "Busca noticias de los lugares de la lista \"local\" de este archivo.",
+      "ia": false,
+      "prendido": true
+    },
+    {
+      "id": "monitor-mercosur",
+      "n": 3,
+      "etapa": "Selección",
+      "nombre": "Monitor Mercosur",
+      "hace": "Noticias de Brasil, Uruguay, Paraguay, Bolivia, Chile y el bloque.",
+      "ia": false,
+      "prendido": true
+    },
+    {
+      "id": "monitor-mundo",
+      "n": 4,
+      "etapa": "Selección",
+      "nombre": "Monitor internacional",
+      "hace": "Lo más cubierto en el mundo por agencias y medios.",
+      "ia": false,
+      "prendido": true
+    },
+    {
+      "id": "jefe",
+      "n": 5,
+      "etapa": "Selección",
+      "nombre": "Jefe de redacción",
+      "hace": "Junta lo de los monitores, saca repetidas y arma el menú del día con el porqué de cada tema.",
+      "ia": true,
+      "prendido": true
+    },
+    {
+      "id": "redactor",
+      "n": 6,
+      "etapa": "Producción",
+      "nombre": "Redactor",
+      "hace": "Escribe un borrador propio de cada tema, con palabras propias y atribuyendo cada dato.",
+      "ia": true,
+      "prendido": true
+    },
+    {
+      "id": "fuentes",
+      "n": 7,
+      "etapa": "Producción",
+      "nombre": "Fuentes y autores",
+      "hace": "Abre cada nota original: autor, fecha, agencia que cita y documentos oficiales enlazados.",
+      "ia": false,
+      "prendido": true
+    },
+    {
+      "id": "verificador",
+      "n": 8,
+      "etapa": "Producción",
+      "nombre": "Verificador",
+      "hace": "Revisa que cada dato del borrador esté en las fuentes y cuenta fuentes independientes.",
+      "ia": true,
+      "prendido": true
+    },
+    {
+      "id": "fotos",
+      "n": 9,
+      "etapa": "Producción",
+      "nombre": "Fotos",
+      "hace": "Propone fotos con su crédito: la de cada medio y fotos libres de Wikimedia.",
+      "ia": false,
+      "prendido": true
+    },
+    {
+      "id": "titulador",
+      "n": 10,
+      "etapa": "Edición",
+      "nombre": "Titulador",
+      "hace": "Tres títulos y dos bajadas para elegir.",
+      "ia": true,
+      "prendido": true
+    },
+    {
+      "id": "enlazador",
+      "n": 11,
+      "etapa": "Edición",
+      "nombre": "Enlazador",
+      "hace": "Pone enlaces a notas anteriores del diario (rojo) y a las fuentes (azul).",
+      "ia": false,
+      "prendido": true
+    },
+    {
+      "id": "corrector",
+      "n": 12,
+      "etapa": "Edición",
+      "nombre": "Corrector de estilo",
+      "hace": "Pule el texto para que suene a Diario Federal, sin tocar los datos.",
+      "ia": true,
+      "prendido": true
+    }
+  ]
+}

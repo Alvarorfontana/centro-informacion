@@ -1,0 +1,46 @@
+name: Redacción automática
+
+# Los 12 agentes de redacción (scripts/redaccion.py). Corren a las 5:40 y a las 15:40 de Argentina,
+# después del recolector, y dejan el menú del día y los borradores en datos/redaccion.json.
+# Nunca publican: todo queda como borrador en el Centro de Información.
+# Usan IA gratuita con las claves GEMINI_API_KEY y/o GROQ_API_KEY (Settings → Secrets and variables → Actions).
+on:
+  schedule:
+    - cron: '40 8 * * *'
+    - cron: '40 18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: redaccion
+  cancel-in-progress: false
+
+jobs:
+  redaccion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar
+        run: pip install feedparser beautifulsoup4
+      - name: Correr los agentes
+        env:
+          PYTHONUNBUFFERED: '1'
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python scripts/redaccion.py
+      - name: Guardar
+        run: |
+          # Firmado como el dueño del repo: Vercel no publica commits de otros autores
+          git config user.name "Alvarorfontana"
+          git config user.email "alvarorfontana@gmail.com"
+          git add datos/redaccion.json datos/redaccion-historial.json
+          if git diff --cached --quiet; then echo "Sin cambios."; exit 0; fi
+          git commit -m "Redacción automática: menú y borradores"
+          for i in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 5; done
+          exit 1

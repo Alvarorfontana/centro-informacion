@@ -10,6 +10,7 @@ Idea tomada de Horizon (radar de noticias de código abierto), pero sin IA: regl
        + 2 por cada país distinto                 (repercusión internacional)
        + 1 por cada agencia                       (las agencias marcan agenda)
        + 2 si toca una región argentina            (prioridad federal del diario)
+       + 2 si toca un eje de la agenda (datos/ejes.json: gobierno, PJ, FMI, energía…)
        - 1 por cada 6 horas de antigüedad de la nota más nueva (lo viejo baja)
   3. Solo entran los grupos con al menos MIN_MEDIOS medios distintos.
 
@@ -104,9 +105,10 @@ def agrupar(notas, ahora=None):
         tema = max(set(temas), key=temas.count) if temas else "General"
         mas_nueva = max((m.get("fecha") or "" for m in unicas), default="")
         horas = _horas(mas_nueva, ahora) if mas_nueva else 48.0
+        ejes = sorted({e for m in unicas for e in (m.get("ejes") or [])})
         detalle = {
             "medios": 3 * len(unicas), "paises": 2 * len(paises), "agencias": agencias,
-            "region": 2 if region else 0, "antiguedad": -round(horas / 6, 1),
+            "region": 2 if region else 0, "agenda": 2 if ejes else 0, "antiguedad": -round(horas / 6, 1),
         }
         puntaje = round(sum(detalle.values()), 1)
         # el titular que representa al grupo: el que más palabras comparte con los demás
@@ -121,8 +123,9 @@ def agrupar(notas, ahora=None):
             "region": region,
             "zona": unicas[idx].get("zona"),
             "tema": tema,
+            "ejes": ejes,
             "ultima": mas_nueva or None,
-            "notas": [{k: m.get(k) for k in ("titulo", "url", "medio", "pais", "fecha", "tipo", "via", "region", "zona", "tema", "idioma", "resumen")}
+            "notas": [{k: m.get(k) for k in ("titulo", "url", "medio", "pais", "fecha", "tipo", "via", "region", "zona", "tema", "idioma", "resumen", "ejes", "region_mundo")}
                       for m in sorted(unicas, key=lambda x: x.get("fecha") or "", reverse=True)],
         })
 
@@ -137,6 +140,8 @@ def todas_las_notas(datos):
     for z in datos.get("zonas", {}).values():
         notas.extend(z.get("notas", []))
     notas.extend(datos.get("rss", []))
+    for e in datos.get("ejes", {}).values():
+        notas.extend(e.get("notas", []))
     return notas
 
 

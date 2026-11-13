@@ -46,6 +46,43 @@ ZONAS = {
     "mundo": {"nombre": "Mundo", "consulta": '(guerra OR elecciones OR "Naciones Unidas" OR China OR "Estados Unidos" OR Europa) sourcelang:spanish'},
 }
 
+# Región del mundo según el país del medio (GDELT da el país en inglés; los RSS, en castellano).
+REGIONES_MUNDO = {
+    "América Latina": ["Argentina", "Brasil", "Brazil", "Uruguay", "Paraguay", "Bolivia", "Chile", "Peru", "Perú", "Colombia", "Venezuela", "Ecuador",
+                       "Mexico", "México", "Cuba", "Dominican Republic", "República Dominicana", "Guatemala", "Honduras", "El Salvador", "Nicaragua",
+                       "Costa Rica", "Panama", "Panamá", "Puerto Rico"],
+    "Norteamérica": ["United States", "Estados Unidos", "Canada", "Canadá"],
+    "Europa": ["Spain", "España", "France", "Francia", "Germany", "Alemania", "United Kingdom", "Reino Unido", "Italy", "Italia", "Portugal", "Belgium",
+               "Netherlands", "Switzerland", "Austria", "Poland", "Ukraine", "Ucrania", "Russia", "Rusia", "Sweden", "Norway", "Ireland", "Greece"],
+    "Medio Oriente": ["Israel", "Iran", "Irán", "Turkey", "Turquía", "Qatar", "Catar", "Saudi Arabia", "United Arab Emirates", "Lebanon", "Syria", "Iraq", "Egypt", "Egipto"],
+    "Asia": ["China", "Japan", "Japón", "Corea del Sur", "South Korea", "India", "Vietnam", "Indonesia", "Philippines", "Singapore", "Pakistan", "Taiwan"],
+    "África": ["South Africa", "Sudáfrica", "Nigeria", "Kenya", "Morocco", "Marruecos", "Algeria", "Angola", "Ethiopia"],
+    "Oceanía": ["Australia", "New Zealand", "Nueva Zelanda", "Fiji"],
+}
+PAIS_A_REGION = {p: r for r, ps in REGIONES_MUNDO.items() for p in ps}
+
+# Agenda de la agencia (datos/ejes.json): temas que se buscan a propósito y sirven para marcar las notas.
+try:
+    EJES = json.loads((DATOS / "ejes.json").read_text(encoding="utf-8")).get("ejes", [])
+except Exception:  # noqa: BLE001
+    EJES = []
+
+
+def ejes_de(texto):
+    """Ejes de la agenda que toca un titular. Las siglas (PJ, PASO, FMI) se buscan respetando mayúsculas."""
+    plano = sin_acentos(texto)
+    hallados = []
+    for e in EJES:
+        for p in e.get("palabras", []):
+            if p.isupper():
+                ok = re.search(r"\b" + re.escape(p) + r"\b", texto)
+            else:
+                ok = re.search(r"\b" + re.escape(sin_acentos(p).lower()) + r"\b", plano.lower())
+            if ok:
+                hallados.append(e["id"]); break
+    return hallados
+
+
 # Palabras para asignar región a las notas que llegan por RSS (como deducirRegion del diario).
 CLAVES = {
     "norte-grande": ["Corrientes", "Misiones", "Chaco", "Formosa", "Jujuy", "Salta", "Tucuman", "Catamarca", "Santiago del Estero", "La Rioja", "Posadas", "Resistencia", "NEA", "NOA", "Norte Grande"],
@@ -125,7 +162,7 @@ def fecha_gdelt(s):
 
 # Deportes y espectáculos no sirven para la agenda del diario: se descartan.
 RUIDO = re.compile(r"\b(f[uú]tbol|torneo|goles?|gan[oó] \d|partido de|copa (argentina|libertadores|sudamericana)|selecci[oó]n argentina de|"
-                   r"tenis|f[oó]rmula 1|automovilismo|boca juniors|river plate|clausura|apertura 20\d\d|playoffs?|serie a|premier league|la liga|nba|"
+                   r"tenis|f[oó]rmula 1|automovilismo|rally|nations league|champions league|copa de campeones|camiseta|mundial de clubes|rugby|los pumas|las leonas|v[oó]ley|b[aá]squet|hockey|boxeo|golf|boca juniors|river plate|clausura|apertura 20\d\d|playoffs?|serie a|premier league|la liga|nba|"
                    r"espect[aá]culos?|far[aá]ndula|reality|telenovela|famos[oa]s?|cantante|show en vivo|recital|hor[oó]scopo|receta|musical|taquilla|estreno|pel[ií]cula|netflix|streaming)\b", re.I)
 
 
@@ -239,6 +276,25 @@ def main():
             salida["estado"].append({"fuente": f"GDELT · {z['nombre']}", "ok": False, "error": str(e)[:160]})
         print(f"zona {zid}: {len(salida['zonas'][zid]['notas'])} notas", flush=True)
 
+    # agenda: cada eje se busca a propósito en medios argentinos (y del mundo hispano para Mercosur, EE.UU. y guerras)
+    salida["ejes"] = {}
+    for e in EJES:
+        try:
+            datos = gdelt(e["consulta"], maximo=30)
+            notas = []
+            for a in datos.get("articles", []):
+                n = nota_gdelt(a)
+                if es_ruido(n["titulo"]):
+                    continue
+                n["ejes"] = [e["id"]]
+                notas.append(n)
+            salida["ejes"][e["id"]] = {"nombre": e["nombre"], "notas": notas}
+            salida["estado"].append({"fuente": f"GDELT · agenda {e['nombre']}", "ok": True, "notas": len(notas)})
+        except Exception as ex:  # noqa: BLE001
+            salida["ejes"][e["id"]] = {"nombre": e["nombre"], "notas": []}
+            salida["estado"].append({"fuente": f"GDELT · agenda {e['nombre']}", "ok": False, "error": str(ex)[:160]})
+        print(f"eje {e['id']}: {len(salida['ejes'][e['id']]['notas'])} notas", flush=True)
+
     # notas de las búsquedas regionales cuyo título no nombra la región: van a "nacional"
     sueltas = salida.pop("_sueltas", [])
     if sueltas:
@@ -254,13 +310,24 @@ def main():
             salida["estado"].append({"fuente": f["nombre"], "ok": False, "error": str(e)[:160], "tipo": f.get("tipo"), "via": "RSS"})
         print(f"rss {f['nombre']}: {salida['estado'][-1]}", flush=True)
 
-    # sin duplicados por enlace
-    vistos = set()
-    for grupo in [*(r["notas"] for r in salida["regiones"].values()), *(z["notas"] for z in salida["zonas"].values()), salida["rss"]]:
+    # sin duplicados por enlace; cada nota queda marcada con sus ejes de agenda y su región del mundo
+    vistos = {}
+    grupos = [*(r["notas"] for r in salida["regiones"].values()), *(z["notas"] for z in salida["zonas"].values()), salida["rss"],
+              *(e["notas"] for e in salida["ejes"].values())]
+    for grupo in grupos:
         unicas = []
         for n in grupo:
-            if n.get("url") and n["url"] not in vistos and n.get("titulo"):
-                vistos.add(n["url"]); unicas.append(n)
+            if not (n.get("url") and n.get("titulo")):
+                continue
+            ejes = sorted(set(n.get("ejes", [])) | set(ejes_de(n["titulo"] + " " + (n.get("resumen") or ""))))
+            if n["url"] in vistos:
+                previa = vistos[n["url"]]  # ya estaba: se le suman los ejes
+                previa["ejes"] = sorted(set(previa.get("ejes", [])) | set(ejes))
+                continue
+            n["ejes"] = ejes
+            n["region_mundo"] = PAIS_A_REGION.get(n.get("pais") or "")
+            vistos[n["url"]] = n
+            unicas.append(n)
         grupo[:] = unicas
 
     # "Lo más cubierto": el mismo hecho contado por varios medios, ordenado por importancia (scripts/agrupar.py)

@@ -555,6 +555,61 @@ body { background: var(--papel); }
 .aviso-der { display: inline-flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .btn-admin { background: var(--rojo); color: #fff; text-decoration: none; font-family: var(--ui); font-weight: 800; font-size: 13px; letter-spacing: 0; padding: 6px 12px; border-radius: 4px; white-space: nowrap; box-shadow: 0 0 14px var(--brillo); }
 .btn-admin:hover { filter: brightness(1.08); }
+/* Redacción automática */
+.age-sub { font-family: var(--display); font-size: 21px; margin: 26px 0 10px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.age-sub small { font-family: var(--ui); font-size: 12px; color: var(--tinta-3); font-weight: 500; }
+.age-aviso { border: 1px solid var(--v1); background: var(--v1-f); border-radius: 6px; padding: 14px 16px; display: grid; gap: 6px; margin-bottom: 8px; }
+.age-aviso b { font-family: var(--display); font-size: 18px; }
+.age-aviso ol { margin: 0; padding-left: 20px; color: var(--tinta-2); }
+.age-aviso a { color: var(--v1); }
+.age-equipo { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.age-etapa h4 { font: 700 11px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--tinta-3); margin-bottom: 6px; }
+.age-ag { background: var(--superficie); border: 1px solid var(--linea); border-radius: 6px; padding: 10px 12px; margin-bottom: 8px; display: grid; gap: 3px; }
+.age-ag .fila { display: flex; gap: 8px; align-items: center; }
+.age-ag .num { font: 600 11px var(--mono); color: var(--tinta-3); }
+.age-ag b { font-size: 13.5px; }
+.age-ag p { font-size: 12px; color: var(--tinta-2); }
+.age-ag small { font-size: 11.5px; color: var(--tinta-3); }
+.pill.sec { background: var(--rojo-suave); color: var(--rojo-tinta); }
+.chip { margin-left: auto; font: 700 10px var(--ui); letter-spacing: .04em; text-transform: uppercase; padding: 2px 7px; border-radius: 3px; white-space: nowrap; background: var(--hundido); color: var(--tinta-2); }
+.chip.ok { background: var(--v3-f); color: var(--v3); } .chip.medio { background: var(--v1-f); color: var(--v1); } .chip.mal { background: var(--rojo-suave); color: var(--rojo-tinta); }
+.age-tema { background: var(--superficie); border: 1px solid var(--linea); border-radius: 6px; margin-bottom: 12px; overflow: hidden; }
+.age-tema > .cab { padding: 14px 16px; display: grid; gap: 6px; }
+.age-tema .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 11.5px; color: var(--tinta-3); }
+.age-tema h4 { font-family: var(--display); font-size: 21px; line-height: 1.2; }
+.age-tema .porque { font-size: 12.5px; color: var(--tinta-2); }
+.semaforo { width: 9px; height: 9px; border-radius: 50%; display: inline-block; background: var(--v0); }
+.semaforo.verde { background: var(--v3); } .semaforo.amarillo { background: var(--v1); } .semaforo.rojo { background: var(--rojo); }
+.age-tema details { border-top: 1px solid var(--linea); }
+.age-tema summary { cursor: pointer; padding: 10px 16px; font-weight: 700; font-size: 13px; color: var(--rojo-tinta); }
+.age-cuerpo { padding: 4px 16px 16px; display: grid; gap: 14px; }
+.age-cuerpo .bloque h5 { font: 700 10.5px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--tinta-3); margin-bottom: 6px; }
+.age-opc label { display: flex; gap: 8px; align-items: flex-start; padding: 5px 0; cursor: pointer; }
+.age-opc input { margin-top: 4px; accent-color: var(--rojo); }
+.age-texto { font-family: var(--display); font-size: 16.5px; line-height: 1.55; max-width: 68ch; }
+.age-texto p { margin-bottom: .8em; } .age-texto h3 { font-size: 19px; margin: .6em 0 .4em; } .age-texto blockquote { border-left: 3px solid var(--rojo); padding-left: 12px; color: var(--tinta-2); }
+.age-texto a.interno { color: var(--rojo-tinta); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.age-texto a.externo, .age-texto a { color: var(--blue, #78aee8); text-decoration: underline; text-underline-offset: 3px; }
+.age-texto a.interno { color: var(--rojo-tinta); }
+.leyenda { font-size: 11.5px; color: var(--tinta-3); display: flex; gap: 14px; flex-wrap: wrap; }
+.leyenda i { display: inline-block; width: 10px; height: 3px; vertical-align: middle; margin-right: 5px; }
+.age-ver ul { padding-left: 18px; color: var(--tinta-2); font-size: 13px; }
+.age-fotos { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.age-fotos label { display: grid; gap: 4px; font-size: 11px; color: var(--tinta-3); cursor: pointer; border: 2px solid transparent; border-radius: 6px; padding: 3px; }
+.age-fotos label:has(input:checked) { border-color: var(--rojo); }
+.age-fotos input { position: absolute; opacity: 0; }
+.age-fotos img { width: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: 4px; background: var(--hundido); }
+.age-fuentes { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.age-fuentes td, .age-fuentes th { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--linea); vertical-align: top; }
+.age-fuentes th { font: 600 10.5px var(--mono); color: var(--tinta-3); text-transform: uppercase; letter-spacing: .08em; }
+.age-fuentes a { color: var(--tinta); }
+.age-acc { display: flex; flex-wrap: wrap; gap: 8px; }
+.age-acc .btn { text-decoration: none; color: var(--tinta); } .age-acc .btn.primario { color: #fff; }
+.age-res { background: var(--superficie); border: 1px solid var(--linea); border-radius: 6px; }
+.age-res > div { display: flex; gap: 10px; align-items: center; padding: 9px 14px; border-bottom: 1px solid var(--linea); font-size: 13px; flex-wrap: wrap; }
+.age-res > div:last-child { border-bottom: 0; }
+.age-res a.t { color: var(--tinta); font-weight: 600; flex: 1 1 300px; }
+@media (max-width: 960px) { .age-equipo { grid-template-columns: 1fr; } }
 </style>
 <div class="app">
   <div class="aviso" role="note">
@@ -571,6 +626,7 @@ body { background: var(--papel); }
         <a href="#en-vivo" data-vista="en-vivo">Noticias en vivo <span class="cuenta" id="c-viv"></span></a>
         <a href="#regiones" data-vista="regiones">Regiones de Argentina <span class="cuenta">5</span></a>
         <h3>Redacción</h3>
+        <a href="#agentes" data-vista="agentes">Redacción automática <span class="cuenta" id="c-age">12</span></a>
         <a href="#mesa" data-vista="mesa">Mesa de edición <span class="cuenta" id="c-mesa">0</span></a>
         <a href="https://www.diariofederal.com.ar/admin/" target="_blank" rel="noopener" class="ir-admin">Administrador de noticias <span class="cuenta">↗</span></a>
         <h3>Inteligencia editorial</h3>
@@ -587,7 +643,7 @@ body { background: var(--papel); }
         <div><span>Noticias reales</span><b id="r-viv">—</b></div>
         <div><span>Fuentes conectadas</span><b id="r-con">—</b></div>
         <div><span>Agencias catalogadas</span><b id="r-age"></b></div>
-        <div><span>Agentes en marcha</span><b>0 de 12</b></div>
+        <div><span>Agentes en marcha</span><b id="r-marcha">0 de 12</b></div>
       </div>
     </aside>
 
@@ -681,6 +737,8 @@ body { background: var(--papel); }
           <select id="v-zona" aria-label="Zona"><option value="">Todas las zonas</option><option value="argentina">Argentina</option><option value="mercosur">Mercosur y región</option><option value="mundo">Mundo</option></select>
           <select id="v-region" aria-label="Región argentina"></select>
           <select id="v-tema" aria-label="Tema"></select>
+          <select id="v-eje" aria-label="Eje de la agenda"><option value="">Toda la agenda</option></select>
+          <select id="v-mundo" aria-label="Región del mundo"><option value="">Todo el mundo</option></select>
         </div>
         <div id="lista-vivo"></div>
       </section>
@@ -776,6 +834,19 @@ body { background: var(--papel); }
         <ul class="linea-tiempo" id="linea-tiempo"></ul>
       </section>
 
+
+      <!-- REDACCIÓN AUTOMÁTICA: los 12 agentes (scripts/redaccion.py → datos/redaccion.json) -->
+      <section class="vista" id="v-agentes" aria-labelledby="t-age" hidden>
+        <div class="cabeza"><div><h2 id="t-age">Redacción automática</h2><p>Doce agentes trabajan dos veces por día (5:40 y 15:40): eligen los temas, leen las fuentes, escriben, verifican, titulan y enlazan. Nada se publica solo: vos elegís qué pasa a la mesa o al diario.</p></div><div class="cifras" id="age-cifras"></div></div>
+        <div id="age-aviso"></div>
+        <h3 class="age-sub">Los agentes</h3>
+        <div class="age-equipo" id="age-equipo"></div>
+        <h3 class="age-sub">Menú del día <small id="age-cuando"></small></h3>
+        <div class="filtros"><select id="age-sec" aria-label="Sección"><option value="">Todas las secciones</option><option value="argentina">Argentina</option><option value="local">Local</option><option value="mercosur">Mercosur</option><option value="mundo">Mundo</option></select></div>
+        <div id="age-menu"></div>
+        <h3 class="age-sub">En reserva <small>temas que los monitores encontraron y el jefe dejó afuera</small></h3>
+        <div id="age-reserva"></div>
+      </section>
       <!-- FLUJO -->
       <section class="vista" id="v-flujo" aria-labelledby="t-flu" hidden>
         <div class="cabeza"><div><h2 id="t-flu">Flujo y agentes</h2><p>Cómo una señal llega a ser nota publicada. Ya funciona la recolección automática; el resto de los pasos está previsto.</p></div></div>
@@ -971,14 +1042,14 @@ body { background: var(--papel); }
   var FLUJO = [
     ['Fuentes y conectores', 'GDELT y RSS de agencias y medios.', 'recolectar.py · GitHub Actions', 1],
     ['Búsqueda', 'Trae lo nuevo de cada fuente cada hora.', 'recolectar.py · GitHub Actions', 1],
-    ['Limpieza y duplicados', 'Hoy quita enlaces repetidos; falta unir notas que cuentan el mismo hecho.', 'a mejorar', 0],
-    ['Clasificación', 'Región argentina y tema de cada titular, por palabras clave.', 'recolectar.py', 1],
+    ['Limpieza y duplicados', 'Quita enlaces repetidos y une las notas que cuentan el mismo hecho.', 'agrupar.py · monitores', 1],
+    ['Clasificación', 'Región argentina, región del mundo, tema y ejes de la agenda de cada titular.', 'recolectar.py · datos/ejes.json', 1],
     ['Registro de evidencias', 'Guarda enlace, fecha, idioma y copia del original (SingleFile, archive.ph).', 'a crear', 0],
     ['Cruce con antecedentes', 'Relaciona actores y hechos anteriores.', 'a crear', 0],
     ['Detección de señales', 'Marca lo que crece antes de que sea tapa en todos lados.', 'a crear (ya hay volumen diario por región)', 0],
     ['Investigación', 'Arma el expediente con cronología y actores.', 'datos: observatorio-repo-dots · dots-ciudades-repo', 0],
-    ['Verificación', 'Confirma con dos fuentes independientes o un documento oficial.', 'a crear: verificación de fuentes', 0],
-    ['Propuesta de nota', 'Solo con evidencia suficiente.', 'a crear', 0],
+    ['Verificación', 'Cuenta fuentes independientes, busca documentos oficiales y revisa que cada dato del borrador esté en las fuentes.', 'agentes 7 y 8 · redaccion.py', 1],
+    ['Propuesta de nota', 'Menú del día y borrador propio con títulos, bajadas, fotos y enlaces.', 'agentes 5, 6, 9 a 12 · redaccion.py', 1],
     ['Edición y aprobación humana', 'Una persona del diario decide si se publica.', 'Siempre una persona', 2],
     ['Publicación en Diario Federal', 'Botón "Llevar al diario": abre el /admin con un borrador armado; una persona escribe y publica.', 'diario-federal-manager', 1]
   ];
@@ -1011,6 +1082,9 @@ body { background: var(--papel); }
     Object.keys(D.regiones || {}).forEach(function (k) { (D.regiones[k].notas || []).forEach(function (n) { l.push(n); }); });
     Object.keys(D.zonas || {}).forEach(function (k) { (D.zonas[k].notas || []).forEach(function (n) { l.push(n); }); });
     (D.rss || []).forEach(function (n) { l.push(n); });
+    Object.keys(D.ejes || {}).forEach(function (k) { (D.ejes[k].notas || []).forEach(function (n) { l.push(n); }); });
+    var vistos = {};
+    l = l.filter(function (n) { if (vistos[n.url]) return false; vistos[n.url] = 1; return true; });
     return l.filter(function (n) { return n.titulo && n.url; }).sort(function (a, b) { return String(b.fecha || '').localeCompare(String(a.fecha || '')); });
   }
   opciones('v-region', 'Todas las regiones', Object.keys(REG_NOMBRES).map(function (k) { return [k, REG_NOMBRES[k]]; }));
@@ -1027,8 +1101,8 @@ body { background: var(--papel); }
     var porZona = function (z) { return todas.filter(function (n) { return n.zona === z; }).length; };
     $('kpis-vivo').innerHTML = [[todas.length, 'titulares reales'], [medios, 'medios distintos'], [porZona('argentina'), 'de Argentina'], [porZona('mercosur'), 'del Mercosur y la región'], [porZona('mundo'), 'del mundo'], [ok + ' de ' + total, 'fuentes respondieron']]
       .map(function (k) { return '<div><b>' + k[0] + '</b><small>' + k[1] + '</small></div>'; }).join('');
-    var q = $('v-buscar').value.trim().toLowerCase(), z = $('v-zona').value, r = $('v-region').value, t = $('v-tema').value;
-    var l = todas.filter(function (n) { return (!z || n.zona === z) && (!r || n.region === r) && (!t || n.tema === t) && (!q || (n.titulo + ' ' + n.medio).toLowerCase().indexOf(q) >= 0); });
+    var q = $('v-buscar').value.trim().toLowerCase(), z = $('v-zona').value, r = $('v-region').value, t = $('v-tema').value, ej = $('v-eje').value, mu = $('v-mundo').value;
+    var l = todas.filter(function (n) { return (!z || n.zona === z) && (!r || n.region === r) && (!t || n.tema === t) && (!ej || (n.ejes || []).indexOf(ej) >= 0) && (!mu || n.region_mundo === mu) && (!q || (n.titulo + ' ' + n.medio).toLowerCase().indexOf(q) >= 0); });
     var lim = estado.limVivo || 60;
     $('lista-vivo').innerHTML = l.length ? '<div class="titulares">' + l.slice(0, lim).map(titular).join('') + '</div>' +
       (l.length > lim ? '<button class="btn mas" id="ver-mas">Ver más (' + (l.length - lim) + ')</button>' : '') : '<div class="vacio">No hay titulares con esos filtros.</div>';
@@ -1047,7 +1121,7 @@ body { background: var(--papel); }
       (est ? '<span class="pill est">Agencia estatal</span>' : '') + '<span>vía ' + esc(n.via) + '</span>' +
       botonMesa(n) + '</div></div></article>';
   }
-  ['v-buscar', 'v-zona', 'v-region', 'v-tema'].forEach(function (id) { $(id).addEventListener('input', function () { estado.limVivo = 60; pintarVivo(); }); });
+  ['v-buscar', 'v-zona', 'v-region', 'v-tema', 'v-eje', 'v-mundo'].forEach(function (id) { $(id).addEventListener('input', function () { estado.limVivo = 60; pintarVivo(); }); });
   $('lista-vivo').addEventListener('click', function (ev) { if (ev.target.id === 'ver-mas') { estado.limVivo = (estado.limVivo || 60) + 60; pintarVivo(); } });
 
 
@@ -1503,7 +1577,7 @@ body { background: var(--papel); }
 
   // ── Navegación ──
   $('c-exp').textContent = EXP.length; $('c-cro').textContent = todos.length; $('c-fue').textContent = F.length; $('r-age').textContent = agencias.length;
-  var VISTAS = ['portada', 'mesa', 'cubierto', 'en-vivo', 'regiones', 'expedientes', 'mapa', 'radar', 'fuentes', 'cronologia', 'flujo'];
+  var VISTAS = ['portada', 'agentes', 'mesa', 'cubierto', 'en-vivo', 'regiones', 'expedientes', 'mapa', 'radar', 'fuentes', 'cronologia', 'flujo'];
   function columnas() {
     document.querySelector('.cuerpo').style.gridTemplateColumns = $('inspector').hidden && window.matchMedia('(min-width: 961px)').matches ? (window.matchMedia('(max-width: 1180px)').matches ? '210px minmax(0,1fr)' : '236px minmax(0,1fr)') : '';
   }
@@ -1511,7 +1585,7 @@ body { background: var(--papel); }
     var v = location.hash.slice(1); if (VISTAS.indexOf(v) < 0) v = 'portada';
     VISTAS.forEach(function (x) { $('v-' + x).hidden = x !== v; });
     document.querySelectorAll('#nav a').forEach(function (a) { if (a.getAttribute('data-vista') === v) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
-    $('inspector').hidden = ['portada', 'mesa', 'cubierto', 'en-vivo', 'regiones', 'fuentes', 'flujo', 'radar'].indexOf(v) >= 0;
+    $('inspector').hidden = ['portada', 'agentes', 'mesa', 'cubierto', 'en-vivo', 'regiones', 'fuentes', 'flujo', 'radar'].indexOf(v) >= 0;
     columnas();
     if (v === 'expedientes') pintarLista();
     if (v === 'fuentes') { pintarFuentes(); pintarConexion(); }
@@ -1545,8 +1619,161 @@ body { background: var(--papel); }
     $('aviso-act').textContent = 'Última recolección: ' + new Date(D.generado).toLocaleString('es-AR', { dateStyle: 'short', timeStyle: 'short' });
     pintarVivo(); pintarRegiones(); pintarConexion(); pintarPortada(); pintarCubierto();
   }
+
+  // ── Redacción automática (los 12 agentes: datos/redaccion.json) ──
+  var SEC_N = { argentina: 'Argentina', local: 'Local', mercosur: 'Mercosur', mundo: 'Mundo' };
+  var EJES_N = {};
+  var REPO = 'https://github.com/Alvarorfontana/centro-informacion';
+  function llenarFiltros(D) {
+    Object.keys(D.ejes || {}).forEach(function (k) { EJES_N[k] = D.ejes[k].nombre; });
+    if ($('v-eje').options.length < 2 && Object.keys(EJES_N).length) opciones('v-eje', 'Toda la agenda', Object.keys(EJES_N).map(function (k) { return [k, EJES_N[k]]; }));
+    var mundos = {}; todasLasNotas().forEach(function (n) { if (n.region_mundo) mundos[n.region_mundo] = 1; });
+    if ($('v-mundo').options.length < 2) opciones('v-mundo', 'Todo el mundo', Object.keys(mundos).sort());
+  }
+  // Solo las etiquetas que escriben los agentes; los enlaces conservan su color (interno / externo)
+  var PERM_A = { P: 1, H3: 1, STRONG: 1, B: 1, EM: 1, I: 1, BLOCKQUOTE: 1, BR: 1, A: 1 };
+  function htmlAgente(html) {
+    var d = new DOMParser().parseFromString('<body>' + (html || '') + '</body>', 'text/html');
+    function nodo(n) {
+      if (n.nodeType === 3) return esc(n.nodeValue);
+      if (n.nodeType !== 1) return '';
+      var dentro = Array.prototype.map.call(n.childNodes, nodo).join(''), t = n.nodeName;
+      if (!PERM_A[t]) return dentro;
+      if (t === 'BR') return '<br>';
+      if (t === 'A') { var h = n.getAttribute('href') || '', c = n.getAttribute('class') === 'interno' ? 'interno' : 'externo';
+        return /^https?:\/\//i.test(h) ? '<a class="' + c + '" href="' + esc(h) + '" target="_blank" rel="noopener" title="' + esc(n.getAttribute('title') || '') + '">' + dentro + '</a>' : dentro; }
+      return '<' + t.toLowerCase() + '>' + dentro + '</' + t.toLowerCase() + '>';
+    }
+    return Array.prototype.map.call(d.body.childNodes, nodo).join('');
+  }
+  var RED = null, eleccion = {};
+  function chip(r) {
+    var c = r === 'funcionó' ? 'ok' : (r === 'falló' ? 'mal' : (r === 'con fallas' || r === 'sin clave de IA' ? 'medio' : ''));
+    return '<span class="chip ' + c + '">' + esc(r) + '</span>';
+  }
+  function pintarEquipo() {
+    var A = (RED && RED.agentes) || [];
+    var marcha = A.filter(function (a) { return a.resultado === 'funcionó' || a.resultado === 'con fallas'; }).length;
+    $('r-marcha').textContent = RED ? marcha + ' de ' + (A.length || 12) : '0 de 12';
+    $('c-age').textContent = RED ? (RED.menu || []).length : '12';
+    if (!RED) {
+      $('age-equipo').innerHTML = '<div class="vacio-vivo"><b>Los agentes todavía no corrieron</b><p>La primera vuelta se hace sola a las 5:40 o a las 15:40. Para no esperar: en GitHub, pestaña Actions → "Redacción automática" → Run workflow.</p></div>';
+      return;
+    }
+    $('age-equipo').innerHTML = ['Selección', 'Producción', 'Edición'].map(function (et) {
+      return '<div class="age-etapa"><h4>' + et + '</h4>' + A.filter(function (a) { return a.etapa === et; }).map(function (a) {
+        return '<div class="age-ag"><div class="fila"><span class="num">' + a.n + '</span><b>' + esc(a.nombre) + '</b>' + (a.ia ? '<span class="pill">IA</span>' : '') + chip(a.prendido === false ? 'apagado' : a.resultado) + '</div>' +
+          '<p>' + esc(a.hace) + '</p>' + (a.detalle ? '<small>' + esc(a.detalle) + '</small>' : '') + '</div>';
+      }).join('') + '</div>';
+    }).join('');
+  }
+  function pintarAviso() {
+    if (!RED) { $('age-aviso').innerHTML = ''; $('age-cifras').innerHTML = ''; return; }
+    var M = RED.menu || [], borr = M.filter(function (b) { return b.cuerpo_html; }).length;
+    $('age-cifras').innerHTML = [[M.length, 'temas en el menú'], [borr, 'borradores'], [(RED.reserva || []).length, 'en reserva'], [RED.ia && RED.ia.usado ? RED.ia.usado.split(' · ')[0] : 'Sin IA', 'IA gratuita']]
+      .map(function (k) { return '<div><b>' + esc(k[0]) + '</b><small>' + k[1] + '</small></div>'; }).join('');
+    $('age-cuando').textContent = 'armado ' + hace(RED.generado) + ' · elegido por ' + (RED.eleccion === 'ia' ? 'el jefe de redacción (IA)' : 'puntaje');
+    $('age-aviso').innerHTML = RED.ia && RED.ia.disponible ? '' :
+      '<div class="age-aviso"><b>Falta un paso para que escriban</b><span>Los monitores, las fuentes y las fotos ya funcionan. Para que el redactor, el verificador, el titulador y el corrector escriban hace falta una clave gratuita de IA (no usa tu plan de Claude):</span>' +
+      '<ol><li>Entrá a <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a> con tu cuenta de Google y tocá "Create API key". Copiala.</li>' +
+      '<li>En GitHub abrí <a href="' + REPO + '/settings/secrets/actions/new" target="_blank" rel="noopener">Settings → Secrets → Actions → New secret</a>. Nombre: <code>GEMINI_API_KEY</code>. Pegá la clave y guardá.</li>' +
+      '<li>Corré los agentes desde <a href="' + REPO + '/actions/workflows/redaccion.yml" target="_blank" rel="noopener">Actions → Redacción automática → Run workflow</a>.</li></ol>' +
+      '<span>Opcional, de respaldo: una clave de <a href="https://console.groq.com/keys" target="_blank" rel="noopener">Groq</a> con el nombre <code>GROQ_API_KEY</code>.</span></div>';
+  }
+  function reporteDe(b) {
+    var e = eleccion[b.id] || {}, foto = (b.fotos || [])[e.foto == null ? -1 : e.foto];
+    var html = limpiarHtml(b.cuerpo_html || '');
+    var tmp = document.createElement('div'); tmp.innerHTML = html;
+    var r = { titulo: (b.titulos || [])[e.titulo || 0] || b.titulo_tema, bajada: (b.bajadas || [])[e.bajada || 0] || '', cuerpo: tmp.innerText.trim(), cuerpoHtml: html,
+      region: b.region || '', zona: b.region ? 'argentina' : (b.seccion === 'mercosur' ? 'mercosur' : b.seccion === 'mundo' ? 'mundo' : 'argentina'), tema: b.tema || '',
+      fuentes: (b.fuentes || []).map(function (f) { return { medio: f.medio, url: f.url, titulo: f.titulo }; }) };
+    if (foto) { r.foto = foto.url; r.epigrafe = foto.credito; }
+    return r;
+  }
+  function pintarMenu() {
+    if (!RED) { $('age-menu').innerHTML = ''; $('age-reserva').innerHTML = ''; return; }
+    var sec = $('age-sec').value, M = (RED.menu || []).filter(function (b) { return !sec || b.seccion === sec; });
+    $('age-menu').innerHTML = M.length ? M.map(function (b) {
+      var v = b.verificacion || {}, e = eleccion[b.id] || {};
+      var ejes = (b.ejes || []).map(function (x) { return '<span class="pill">' + esc(EJES_N[x] || x) + '</span>'; }).join('');
+      var opc = function (lista, campo, nombre) {
+        return (lista || []).map(function (t, i) { return '<label><input type="radio" name="' + campo + '-' + b.id + '" data-elegir="' + b.id + '" data-campo="' + campo + '" value="' + i + '"' + ((e[campo] || 0) === i ? ' checked' : '') + '><span>' + esc(t) + '</span></label>'; }).join('') || '<small>' + nombre + '</small>';
+      };
+      var ver = '<div class="bloque age-ver"><h5>Verificación</h5><p><span class="semaforo ' + esc(v.estado || '') + '"></span> ' + esc(v.estado ? v.estado.toUpperCase() : 'Sin revisar') +
+        ' · ' + (v.independientes || 0) + (v.independientes === 1 ? ' medio' : ' medios independientes') + (v.paises && v.paises.length ? ' de ' + v.paises.length + (v.paises.length === 1 ? ' país' : ' países') : '') +
+        (v.agencias_citadas && v.agencias_citadas.length ? ' · citan a ' + esc(v.agencias_citadas.join(', ')) : '') + '</p>' +
+        (v.estatal && v.estatal.length ? '<p><span class="pill est">Voz de un gobierno</span> ' + esc(v.estatal.join(', ')) + '</p>' : '') +
+        ['sin_respaldo', 'contradicciones', 'observaciones'].map(function (k) { var l = v[k] || []; return l.length ? '<b style="font-size:12.5px">' + { sin_respaldo: 'Sin respaldo en las fuentes', contradicciones: 'Contradicciones', observaciones: 'A revisar' }[k] + '</b><ul>' + l.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : ''; }).join('') +
+        (v.oficiales && v.oficiales.length ? '<b style="font-size:12.5px">Documentos oficiales enlazados</b><ul>' + v.oficiales.map(function (o) { return '<li><a href="' + esc(o) + '" target="_blank" rel="noopener">' + esc(o) + '</a></li>'; }).join('') + '</ul>' : '') +
+        (b.falta ? '<p style="color:var(--v1)">Falta: ' + esc(b.falta) + '</p>' : '') + '</div>';
+      var fotos = (b.fotos || []).length ? '<div class="bloque"><h5>Fotos propuestas (tocá una para elegirla)</h5><div class="age-fotos">' + b.fotos.map(function (f, i) {
+        return '<label><input type="radio" name="foto-' + b.id + '" data-elegir="' + b.id + '" data-campo="foto" value="' + i + '"' + (e.foto === i ? ' checked' : '') + '><img loading="lazy" referrerpolicy="no-referrer" src="' + esc(f.url) + '" alt=""><span>' + esc(f.credito) + (f.libre ? ' · <b style="color:var(--v3)">libre</b>' : '') + '</span>' +
+          (f.pagina ? '<a href="' + esc(f.pagina) + '" target="_blank" rel="noopener" style="color:var(--tinta-3)">ver origen ↗</a>' : '') + '</label>';
+      }).join('') + '</div></div>' : '';
+      var fts = '<div class="bloque"><h5>Fuentes y autores</h5><table class="age-fuentes"><tr><th>Medio</th><th>Nota</th><th>Autor</th><th>Fecha</th></tr>' + (b.fuentes || []).map(function (f) {
+        return '<tr><td><b>' + esc(f.medio || '') + '</b>' + (f.pais ? '<br><small>' + esc(f.pais) + '</small>' : '') + '</td><td><a href="' + esc(f.url) + '" target="_blank" rel="noopener">' + esc(f.titulo || '') + '</a>' +
+          (f.agencias && f.agencias.length ? '<br><small>cita a ' + esc(f.agencias.join(', ')) + '</small>' : '') + (f.leida === false ? '<br><small>no se pudo abrir</small>' : '') + '</td><td>' + esc(f.autor || '—') + '</td><td>' + esc(String(f.fecha_pub || f.fecha || '').slice(0, 10)) + '</td></tr>';
+      }).join('') + '</table></div>';
+      var rel = (b.relacionadas || []).length ? '<div class="bloque"><h5>Notas anteriores del diario</h5><ul>' + b.relacionadas.map(function (n) { return '<li><a href="' + esc(n.url) + '" target="_blank" rel="noopener" style="color:var(--rojo-tinta)">' + esc(n.titulo) + '</a></li>'; }).join('') + '</ul></div>' : '';
+      var cuerpo = b.cuerpo_html ? '<div class="bloque"><h5>Título</h5><div class="age-opc">' + opc(b.titulos, 'titulo', '') + '</div></div>' +
+        '<div class="bloque"><h5>Bajada</h5><div class="age-opc">' + opc(b.bajadas, 'bajada', 'Sin bajada propuesta') + '</div></div>' +
+        '<div class="bloque"><h5>Borrador' + (b.breve ? ' (breve: había poco material)' : '') + '</h5><div class="leyenda"><span><i style="background:var(--rojo-tinta)"></i>enlace a nota del diario</span><span><i style="background:#78aee8"></i>enlace a la fuente</span></div><div class="age-texto">' + htmlAgente(b.cuerpo_html) + '</div>' +
+        (b.correccion ? '<small style="color:var(--tinta-3)">Corrector: ' + esc(b.correccion) + '</small>' : '') + '</div>'
+        : '<div class="bloque"><p class="porque">Todavía sin borrador: falta la clave de IA o el redactor falló en este tema. Podés armarlo a mano con las fuentes de abajo.</p></div>';
+      var acc = '<div class="age-acc">' + (b.cuerpo_html ? '<button type="button" class="btn primario" data-a-mesa="' + b.id + '">Llevar a la Mesa para editar</button><a class="btn" target="_blank" rel="noopener" data-al-diario="' + b.id + '" href="#">Enviar al diario como borrador</a>' : '') +
+        '<button type="button" class="btn" data-fuentes-mesa="' + b.id + '">Sumar las fuentes a la mesa</button></div>';
+      return '<article class="age-tema"><div class="cab"><div class="meta"><span class="pill sec">' + esc(SEC_N[b.seccion] || b.seccion) + '</span>' + (b.region ? '<span class="pill">' + esc(REG_NOMBRES[b.region] || b.region) + '</span>' : '') + (b.region_mundo && b.seccion !== 'argentina' ? '<span class="pill">' + esc(b.region_mundo) + '</span>' : '') + ejes +
+        '<span><span class="semaforo ' + esc(v.estado || '') + '"></span> ' + (b.n_medios || 0) + (b.n_medios === 1 ? ' medio' : ' medios') + '</span></div>' +
+        '<h4>' + esc((b.titulos || [])[e.titulo || 0] || b.titulo_tema) + '</h4>' + (b.por_que ? '<p class="porque">Por qué: ' + esc(b.por_que) + '</p>' : '') +
+        (b.titulos && b.titulos[0] && b.titulos[0] !== b.titulo_tema ? '<p class="porque">Tema original: ' + esc(b.titulo_tema) + '</p>' : '') + '</div>' +
+        '<details><summary>Ver borrador, verificación, fotos y fuentes</summary><div class="age-cuerpo">' + cuerpo + ver + fotos + fts + rel + acc + '</div></details></article>';
+    }).join('') : '<div class="vacio">No hay temas en esta sección en la última vuelta.</div>';
+    $('age-menu').querySelectorAll('[data-al-diario]').forEach(function (a) {
+      var b = (RED.menu || []).filter(function (x) { return x.id === a.getAttribute('data-al-diario'); })[0];
+      if (b) a.href = ADMIN + '#centro=' + encodeURIComponent(JSON.stringify(reporteDe(b)));
+    });
+    var R = RED.reserva || [];
+    $('age-reserva').innerHTML = R.length ? '<div class="age-res">' + R.map(function (c) {
+      var n = (c.notas || [])[0] || {};
+      return '<div><span class="pill sec">' + esc(SEC_N[c.seccion] || c.seccion) + '</span><a class="t" href="' + esc(n.url) + '" target="_blank" rel="noopener">' + esc(c.titulo) + '</a><small>' + c.n_medios + (c.n_medios === 1 ? ' medio' : ' medios') + '</small>' +
+        (n.url ? botonMesa({ titulo: c.titulo, url: n.url, medio: n.medio, pais: n.pais, fecha: n.fecha, region: c.region, tema: c.tema }) : '') + '</div>';
+    }).join('') + '</div>' : '<div class="vacio">Sin temas en reserva.</div>';
+  }
+  $('age-sec').addEventListener('input', pintarMenu);
+  var confirmarReemplazo = null;
+  $('age-menu').addEventListener('change', function (ev) {
+    var x = ev.target; if (!x.hasAttribute('data-elegir')) return;
+    var id = x.getAttribute('data-elegir'); eleccion[id] = eleccion[id] || {}; eleccion[id][x.getAttribute('data-campo')] = +x.value;
+    var b = (RED.menu || []).filter(function (y) { return y.id === id; })[0], a = $('age-menu').querySelector('[data-al-diario="' + id + '"]');
+    if (b && a) a.href = ADMIN + '#centro=' + encodeURIComponent(JSON.stringify(reporteDe(b)));
+    if (x.getAttribute('data-campo') === 'titulo') { var h = x.closest('.age-tema').querySelector('h4'); h.textContent = b.titulos[+x.value]; }
+  });
+  function fuentesAMesa(b) {
+    (b.fuentes || []).forEach(function (f) { if (f.url && !enMesa(f.url)) mesa.push({ titulo: f.titulo, resumen: f.resumen || '', url: f.url, medio: f.medio, pais: f.pais, idioma: f.idioma, fecha: f.fecha, tipo: f.tipo, via: 'Agentes', region: b.region, zona: '', tema: b.tema }); });
+    guardarMesa(); pintarMesa();
+  }
+  $('age-menu').addEventListener('click', function (ev) {
+    var fm = ev.target.closest('[data-fuentes-mesa]'), am = ev.target.closest('[data-a-mesa]');
+    var id = (fm || am) && (fm || am).getAttribute(fm ? 'data-fuentes-mesa' : 'data-a-mesa'); if (!id) return;
+    var b = (RED.menu || []).filter(function (y) { return y.id === id; })[0]; if (!b) return;
+    if (fm) { fuentesAMesa(b); toast('Fuentes sumadas a la mesa (' + mesa.length + ')'); return; }
+    if (($('m-titulo').value.trim() || ed.innerText.trim()) && confirmarReemplazo !== id) { confirmarReemplazo = id; toast('La mesa ya tiene un borrador: tocá de nuevo para reemplazarlo'); return; }
+    confirmarReemplazo = null;
+    var r = reporteDe(b);
+    $('m-titulo').value = r.titulo; $('m-bajada').value = r.bajada; $('m-region').value = r.region || ''; $('m-tema').value = r.tema || '';
+    ed.innerHTML = r.cuerpoHtml; mesa = []; fuentesAMesa(b); actualizarEnvio();
+    location.hash = 'mesa'; toast('Borrador en la mesa: editalo y mandalo al diario');
+  });
+  fetch('datos/ejes.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (d) {
+    (d.ejes || []).forEach(function (e) { EJES_N[e.id] = e.nombre; });
+    opciones('v-eje', 'Toda la agenda', (d.ejes || []).map(function (e) { return [e.id, e.nombre]; }));
+    if (RED) pintarMenu();
+  }).catch(function () {});
+  function conRedaccion(d) { RED = d; pintarEquipo(); pintarAviso(); pintarMenu(); }
+  pintarEquipo();
   pintarKpisExp(); pintarVivo(); pintarRegiones(); pintarPortada(); pintarMesa(); abrir(estado.sel); fijar(MAPA.cajas.mundo); ir();
-  fetch('datos/noticias.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(conDatos).catch(function () { /* sin recolección todavía */ });
+  fetch('datos/noticias.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) { conDatos(d); llenarFiltros(d); if (RED) pintarMenu(); }).catch(function () { /* sin recolección todavía */ });
+  fetch('datos/redaccion.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(conRedaccion).catch(function () { /* los agentes todavía no corrieron */ });
 })();
 </script>
 
