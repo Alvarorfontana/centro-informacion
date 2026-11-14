@@ -1,59 +1,6 @@
 {
- "generado": "2026-11-14T03:59:47+00:00",
+ "generado": "2026-11-14T12:13:01+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": [
-  {
-   "titulo": "Levantan la suspensión de los vuelos en Estados Unidos",
-   "n_medios": 12,
-   "paises": [
-    "Alemania",
-    "Argentina",
-    "Cuba",
-    "España",
-    "Estados Unidos",
-    "Francia",
-    "Reino Unido"
-   ],
-   "region": null,
-   "tema": "Geopolítica",
-   "ejes": [
-    "internacional"
-   ],
-   "desde": "2026-11-14T03:59:47+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Levantan suspensión de vuelos en EEUU tras horas de caos",
-     "url": "https://www.prensa-latina.cu/2026/11/13/levantan-suspension-de-vuelos-en-eeuu-tras-horas-de-caos/",
-     "medio": "Prensa Latina",
-     "fecha": "2026-11-14T03:48:11+00:00"
-    },
-    {
-     "titulo": "La normalización de los vuelos entre Guatemala y Estados Unidos será gradual, según Aeronáutica Civil",
-     "url": "https://www.infobae.com/guatemala/2026/11/14/la-normalizacion-de-los-vuelos-entre-guatemala-y-estados-unidos-sera-gradual-segun-aeronautica-civil/",
-     "medio": "Infobae",
-     "fecha": "2026-11-14T03:46:58+00:00"
-    },
-    {
-     "titulo": "Estados Unidos reanuda el tráfico aéreo después de un parón de más de cuatro horas y 6.000 vuelos cancelados",
-     "url": "https://elpais.com/us/2026-11-14/estados-unidos-reanuda-el-trafico-aereo-despues-de-un-paron-de-mas-de-cuatro-horas-y-6000-vuelos-cancelados.html",
-     "medio": "El País · América",
-     "fecha": "2026-11-14T03:29:07+00:00"
-    },
-    {
-     "titulo": "Honduras: Aeronáutica Civil alerta por suspensión de despegues en Estados Unidos y posibles afectaciones a vuelos",
-     "url": "https://www.infobae.com/honduras/2026/11/14/honduras-aeronautica-civil-alerta-por-suspension-de-despegues-en-estados-unidos-y-posibles-afectaciones-a-vuelos/",
-     "medio": "Infobae América",
-     "fecha": "2026-11-14T03:01:54+00:00"
-    },
-    {
-     "titulo": "EE.UU. suspendió todos los vuelos por razones de seguridad aérea y desató un caos",
-     "url": "https://www.pagina12.com.ar/2026/11/13/eeuu-suspendio-todos-los-vuelos-por-razones-de-seguridad-aerea/",
-     "medio": "Página/12",
-     "fecha": "2026-11-14T03:01:00+00:00"
-    }
-   ]
-  }
- ]
+ "urgentes": []
 }
