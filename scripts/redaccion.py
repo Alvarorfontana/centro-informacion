@@ -266,6 +266,8 @@ def leer_fuente(url):
                 autor = a.get("name") if isinstance(a, dict) else a if isinstance(a, str) else None
             if x.get("datePublished") and not fecha:
                 fecha = x["datePublished"]
+    if autor and (re.search(r"\.(com|ar|net|org)\b", autor.lower()) or autor.lower().replace(" ", "") in ("bbcnews", "redacción", "redaccion")):
+        autor = None  # no es una persona: es el nombre del sitio
     if autor and autor.startswith("http"):
         autor = autor.rstrip("/").rsplit("/", 1)[-1].replace("-", " ").title()
     if not autor:
