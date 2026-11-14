@@ -31,7 +31,6 @@
     "_ayuda": "Orden: Gemini (clave GEMINI_API_KEY), Groq (GROQ_API_KEY), OpenRouter (OPENROUTER_API_KEY: modelos gratis como DeepSeek, Qwen o Kimi) y, si no hay ninguna, Pollinations sin clave, que se corta enseguida.",
     "gemini_modelos": [
       "gemini-flash-latest",
-      "gemini-2.5-flash",
       "gemini-flash-lite-latest"
     ],
     "groq_modelos": [
@@ -46,7 +45,8 @@
     "pausa_sin_clave": 16,
     "openrouter_modelos": [
       "openrouter/free"
-    ]
+    ],
+    "espera_maxima_segundos": 70
   },
   "agentes": [
     {

@@ -662,6 +662,11 @@ def main():
                 cuenta["enlazador"] += 1
                 b["cuerpo_html"], b["enlaces"], b["relacionadas"] = e
         borradores.append(b)
+        # se guarda el avance después de cada tema: si GitHub corta la vuelta, lo hecho no se pierde
+        parcial = leer(DATOS / "redaccion.json", {}) or {}
+        parcial.update({"generado": ahora(), "en_curso": f"{i} de {len(menu)} temas", "agentes": reg.lista(), "menu": borradores,
+                        "ia": {"disponible": ia.disponible, "usado": ia.usado, "llamadas": ia.llamadas}})
+        (DATOS / "redaccion.json").write_text(json.dumps(parcial, ensure_ascii=False, indent=1), encoding="utf-8")
 
     # resumen de lo que hizo cada agente de producción y edición
     detalle = {

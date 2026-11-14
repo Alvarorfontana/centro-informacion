@@ -17,7 +17,7 @@ concurrency:
 jobs:
   recolectar:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -30,6 +30,7 @@ jobs:
           PYTHONUNBUFFERED: '1'
         run: python scripts/recolectar.py
       - name: Guardar
+        if: always()
         run: |
           # Firmado como el dueño del repo: Vercel no publica commits de otros autores
           git config user.name "Alvarorfontana"

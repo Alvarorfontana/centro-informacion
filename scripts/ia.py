@@ -48,6 +48,7 @@ class IA:
         self.libre_modelos = conf.get("pollinations_modelos") or ["openai"]
         self.pausa_libre = float(conf.get("pausa_sin_clave", 16))
         self.pausa = float(conf.get("pausa_segundos", 5))
+        self.espera = float(conf.get("espera_maxima_segundos", 70))  # si la IA tarda más, se pasa al siguiente modelo
         self.llamadas = 0
         self.usado = None  # "Gemini · modelo" que respondió la última vez
         self._ultima = 0.0
@@ -62,7 +63,7 @@ class IA:
             time.sleep(espera)
         req = urllib.request.Request(url, data=json.dumps(cuerpo).encode(), headers={"Content-Type": "application/json", **cabeceras})
         try:
-            with urllib.request.urlopen(req, timeout=120) as r:
+            with urllib.request.urlopen(req, timeout=self.espera) as r:
                 return json.loads(r.read().decode("utf-8"))
         finally:
             self._ultima = time.time()
@@ -135,10 +136,11 @@ class IA:
 def leer_json(texto):
     texto = (texto or "").strip()
     texto = re.sub(r"^```(?:json)?\s*|\s*```$", "", texto)
+    texto = re.sub(r"\\u(?![0-9a-fA-F]{4})", r"\\\\u", texto)  # \u mal escritos por la IA
     try:
         return json.loads(texto)
     except json.JSONDecodeError:
         m = re.search(r"\{.*\}", texto, re.S)
         if m:
-            return json.loads(m.group(0))
+            return json.loads(m.group(0), strict=False)
         raise
