@@ -555,6 +555,65 @@ body { background: var(--papel); }
 .aviso-der { display: inline-flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .btn-admin { background: var(--rojo); color: #fff; text-decoration: none; font-family: var(--ui); font-weight: 800; font-size: 13px; letter-spacing: 0; padding: 6px 12px; border-radius: 4px; white-space: nowrap; box-shadow: 0 0 14px var(--brillo); }
 .btn-admin:hover { filter: brightness(1.08); }
+
+/* Central de noticias (tapa clara) */
+#v-central { max-width: none; }
+.cn { --p: #F6F4EF; --p2: #FBFAF7; --t: #16181D; --t2: #3F434A; --t3: #5B5F66; --l: #DEDAD2; --l2: #CFCAC0; --r: #B5121B;
+  background: var(--p); color: var(--t); margin: -24px -28px; min-height: calc(100vh - 60px); font-family: var(--ui); }
+.cn a { color: var(--t); text-decoration: none; } .cn a:hover { color: var(--r); }
+.cn-cab { background: var(--p2); border-bottom: 1px solid #D9D5CC; padding: 14px 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.cn-logo { display: flex; align-items: center; gap: 10px; font: 800 24px/1 Manrope, Inter, var(--ui); letter-spacing: -.02em; }
+.cn-cuad { width: 13px; height: 13px; border-radius: 3px; background: #d0021b; }
+.cn-sep { width: 1px; height: 26px; background: var(--l2); margin: 0 4px; }
+.cn-nombre { font-weight: 700; font-size: 17px; letter-spacing: -.01em; }
+.cn-buscar { margin-left: auto; display: flex; align-items: center; gap: 8px; border: 1px solid var(--l2); background: #fff; padding: 8px 12px; min-width: 240px; color: var(--t3); font-size: 13px; }
+.cn-buscar input { border: 0; outline: 0; font: inherit; background: transparent; width: 100%; color: var(--t); }
+.cn-admin { background: var(--t); color: var(--p2) !important; padding: 10px 14px; font-size: 13px; font-weight: 600; }
+.cn-urgente { background: var(--r); color: #fff; padding: 11px 28px; display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+.cn-urgente b { font: 600 11px var(--mono); letter-spacing: .16em; }
+.cn-urgente a { color: #fff !important; font: 600 17px var(--display); }
+.cn-urgente small { font-size: 12.5px; opacity: .85; }
+.cn-cuerpo { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start; padding: 24px 28px 48px; }
+.cn-filtros { flex: 1 1 180px; max-width: 210px; font-size: 14px; }
+.cn-et { font: 600 10.5px var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--t3); margin: 0 0 6px; }
+.cn-filtros > div + .cn-et { margin-top: 22px; }
+.cn-f { display: flex; justify-content: space-between; width: 100%; padding: 6px 0; background: none; border: 0; font: inherit; color: var(--t2); cursor: pointer; text-align: left; }
+.cn-f span { color: var(--t3); } .cn-f.on { color: var(--t); font-weight: 700; }
+.cn-cable { flex: 999 1 520px; min-width: 0; }
+.cn-cable-cab { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--t); padding-bottom: 10px; gap: 10px; flex-wrap: wrap; }
+.cn-cable-cab h2 { margin: 0; font: 700 30px var(--display); letter-spacing: -.01em; }
+.cn-cable-cab span { font-size: 13px; color: var(--t3); }
+.cn-fila { display: grid; grid-template-columns: 52px 1fr auto; gap: 14px; padding: 13px 0; border-bottom: 1px solid var(--l); align-items: baseline; }
+.cn-fila .h { font: 500 13px var(--mono); color: var(--t3); }
+.cn-fila .et { display: flex; gap: 10px; font: 700 10.5px var(--ui); letter-spacing: .1em; text-transform: uppercase; color: var(--t3); margin-bottom: 3px; }
+.cn-fila .et .u { color: var(--r); } .cn-fila .et .a { color: var(--t); }
+.cn-fila a.t { font: 600 18px/1.3 var(--display); }
+.cn-fila .m { font-size: 12.5px; color: var(--t3); white-space: nowrap; display: flex; gap: 8px; align-items: center; }
+.cn-fila .m button { font: 600 11.5px var(--ui); border: 1px solid var(--l2); background: transparent; color: var(--t2); padding: 4px 8px; cursor: pointer; }
+.cn-mas { margin-top: 14px; font: 600 13px var(--ui); background: transparent; border: 1px solid var(--l2); padding: 9px 16px; cursor: pointer; color: var(--t); }
+.cn-ed { flex: 1 1 300px; max-width: 380px; background: var(--p2); border: 1px solid #D9D5CC; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.cn-ed-sello { font: 600 10.5px var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--r); }
+.cn-ed h3 { margin: 0; font: 700 23px var(--display); }
+.cn-ed-estado { font-size: 13px; color: var(--t3); }
+.cn-barra { height: 6px; background: #E5E1D8; display: flex; } .cn-barra i { display: block; height: 100%; } #cn-barra-a { background: var(--t); } #cn-barra-d { background: var(--l2); }
+.cn-p { border-top: 1px solid var(--l); padding-top: 12px; display: flex; flex-direction: column; gap: 5px; }
+.cn-p .v { font: 700 10.5px var(--ui); letter-spacing: .1em; text-transform: uppercase; color: var(--r); }
+.cn-p .t { font: 600 17px/1.28 var(--display); }
+.cn-p .f { font-size: 12.5px; color: var(--t3); }
+.cn-p .b { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+.cn-p .b a, .cn-p .b button { font: 600 12.5px var(--ui); padding: 8px 12px; border: 1px solid var(--l2); background: transparent; color: var(--t); cursor: pointer; }
+.cn-p .b .si { background: var(--t); color: var(--p2) !important; border-color: var(--t); }
+.cn-p .b .no { border: 0; color: var(--t3); }
+.cn-p.aprobada .t::before { content: "✓ "; color: #1f7a3d; }
+.cn-vermas { font-size: 13px; font-weight: 600; color: var(--r) !important; }
+@media (max-width: 960px) {
+  .cn { margin: -16px -14px; }
+  .cn-cab, .cn-cuerpo, .cn-urgente { padding-left: 16px; padding-right: 16px; }
+  .cn-buscar { margin-left: 0; flex: 1 1 100%; }
+  .cn-filtros { max-width: none; flex-basis: 100%; display: none; }
+  .cn-ed { max-width: none; order: -1; }
+  .cn-fila { grid-template-columns: 44px 1fr; } .cn-fila .m { grid-column: 2; }
+}
 /* Edición del día */
 #v-edicion { max-width: 1080px; }
 .ed-cab { border-bottom: 3px double var(--linea); padding-bottom: 16px; margin-bottom: 22px; display: grid; gap: 6px; }
@@ -669,7 +728,7 @@ body { background: var(--papel); }
 .age-atajo .pill { grid-area: p; } .age-atajo b { grid-area: b; font-size: 16px; } .age-atajo small { grid-area: s; color: var(--tinta-2); font-size: 12.5px; }
 .age-atajo > span:last-child { grid-area: f; font-size: 22px; color: var(--rojo); }
 @media (max-width: 960px) {
-  .nav a[data-vista="portada"] { order: -4; } .nav a[data-vista="edicion"] { order: -3; } .nav a[data-vista="agentes"] { order: -2; } .nav a[data-vista="mesa"] { order: -1; }
+  .nav a[data-vista="central"] { order: -5; } .nav a[data-vista="portada"] { order: -4; } .nav a[data-vista="edicion"] { order: -3; } .nav a[data-vista="agentes"] { order: -2; } .nav a[data-vista="mesa"] { order: -1; }
   .nav { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
 }
 
@@ -689,6 +748,7 @@ body { background: var(--papel); }
         <a href="#en-vivo" data-vista="en-vivo">Noticias en vivo <span class="cuenta" id="c-viv"></span></a>
         <a href="#regiones" data-vista="regiones">Regiones de Argentina <span class="cuenta">5</span></a>
         <h3>Redacción</h3>
+        <a href="#central" data-vista="central">Central de noticias <span class="cuenta" id="c-cen">●</span></a>
         <a href="#edicion" data-vista="edicion">Edición del día <span class="cuenta" id="c-edi">·</span></a>
         <a href="#agentes" data-vista="agentes">Redacción automática <span class="cuenta" id="c-age">12</span></a>
         <a href="#mesa" data-vista="mesa">Mesa de edición <span class="cuenta" id="c-mesa">0</span></a>
@@ -901,6 +961,37 @@ body { background: var(--papel); }
 
 
 
+
+      <!-- CENTRAL DE NOTICIAS: tapa clara tipo cable de agencia (se suma, no reemplaza nada) -->
+      <section class="vista" id="v-central" aria-label="Central de noticias" hidden>
+        <div class="cn">
+          <header class="cn-cab">
+            <a class="cn-logo" href="#central"><span class="cn-cuad" aria-hidden="true"></span>EL DIARIO<span class="cn-sep" aria-hidden="true"></span><span class="cn-nombre">Central de noticias</span></a>
+            <label class="cn-buscar"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg><input type="search" id="cn-q" placeholder="Buscar en el cable" aria-label="Buscar en el cable"></label>
+            <a class="cn-admin" id="cn-admin" target="_blank" rel="noopener" href="#">Administrador del diario ↗</a>
+          </header>
+          <div id="cn-urg"></div>
+          <div class="cn-cuerpo">
+            <aside class="cn-filtros" aria-label="Filtros">
+              <div class="cn-et">Sección</div><div id="cn-sec"></div>
+              <div class="cn-et">Agenda</div><div id="cn-ejes"></div>
+            </aside>
+            <section class="cn-cable" aria-label="Cable">
+              <div class="cn-cable-cab"><h2>Cable</h2><span id="cn-act"></span></div>
+              <div id="cn-lista"></div>
+              <button type="button" class="cn-mas" id="cn-mas" hidden>Ver más</button>
+            </section>
+            <aside class="cn-ed" aria-label="Edición en curso">
+              <div class="cn-ed-sello" id="cn-ed-sello">Edición</div>
+              <h3>Propuesta de la mesa</h3>
+              <div class="cn-ed-estado" id="cn-ed-estado"></div>
+              <div class="cn-barra" aria-hidden="true"><i id="cn-barra-a"></i><i id="cn-barra-d"></i></div>
+              <div id="cn-prop"></div>
+              <a class="cn-vermas" href="#edicion">Ver la edición completa →</a>
+            </aside>
+          </div>
+        </div>
+      </section>
       <!-- EDICIÓN DEL DÍA: propuesta de la mesa por edición, estilo agencia (lee datos/redaccion.json y datos/urgentes.json) -->
       <section class="vista" id="v-edicion" aria-labelledby="t-edi" hidden>
         <header class="ed-cab">
@@ -1664,7 +1755,7 @@ body { background: var(--papel); }
 
   // ── Navegación ──
   $('c-exp').textContent = EXP.length; $('c-cro').textContent = todos.length; $('c-fue').textContent = F.length; $('r-age').textContent = agencias.length;
-  var VISTAS = ['portada', 'edicion', 'agentes', 'mesa', 'cubierto', 'en-vivo', 'regiones', 'expedientes', 'mapa', 'radar', 'fuentes', 'cronologia', 'flujo'];
+  var VISTAS = ['portada', 'central', 'edicion', 'agentes', 'mesa', 'cubierto', 'en-vivo', 'regiones', 'expedientes', 'mapa', 'radar', 'fuentes', 'cronologia', 'flujo'];
   function columnas() {
     document.querySelector('.cuerpo').style.gridTemplateColumns = $('inspector').hidden && window.matchMedia('(min-width: 961px)').matches ? (window.matchMedia('(max-width: 1180px)').matches ? '210px minmax(0,1fr)' : '236px minmax(0,1fr)') : '';
   }
@@ -1672,7 +1763,7 @@ body { background: var(--papel); }
     var v = location.hash.slice(1); if (VISTAS.indexOf(v) < 0) v = 'portada';
     VISTAS.forEach(function (x) { $('v-' + x).hidden = x !== v; });
     document.querySelectorAll('#nav a').forEach(function (a) { if (a.getAttribute('data-vista') === v) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
-    $('inspector').hidden = ['portada', 'edicion', 'agentes', 'mesa', 'cubierto', 'en-vivo', 'regiones', 'fuentes', 'flujo', 'radar'].indexOf(v) >= 0;
+    $('inspector').hidden = ['portada', 'central', 'edicion', 'agentes', 'mesa', 'cubierto', 'en-vivo', 'regiones', 'fuentes', 'flujo', 'radar'].indexOf(v) >= 0;
     columnas();
     if (v === 'expedientes') pintarLista();
     if (v === 'fuentes') { pintarFuentes(); pintarConexion(); }
@@ -1924,7 +2015,7 @@ body { background: var(--papel); }
     if (!RED) { $('ed-prop').innerHTML = '<div class="vacio">Todavía no hay una edición armada. La próxima se arma sola a las 6:40, 12:40 o 18:40.</div>'; return; }
     var gen = new Date(RED.generado), edn = RED.edicion || '';
     $('ed-sello').textContent = NOMBRE_ED[edn] || 'Edición';
-    $('ed-fecha').textContent = gen.toLocaleDateString('es-AR', { weekday: 'long', day: 'numeric', month: 'long' }) + ' · armada a las ' + gen.toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit' });
+    $('ed-fecha').textContent = gen.toLocaleDateString('es-AR', { weekday: 'long', day: 'numeric', month: 'long' }) + ' · armada a las ' + gen.toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
     $('ed-horas').innerHTML = [['mañana', '6:40'], ['mediodía', '12:40'], ['tarde', '18:40']].map(function (h) { return '<span class="' + (h[0] === edn ? 'hoy' : '') + '">' + h[1] + ' · ' + h[0] + '</span>'; }).join('');
     var M = RED.menu || [];
     var apr = M.filter(function (b) { return EST_ED[b.id] === 'aprobada'; }).length, des = M.filter(function (b) { return EST_ED[b.id] === 'descartada'; }).length;
@@ -1970,11 +2061,92 @@ body { background: var(--papel); }
     if ((id = t.getAttribute('data-ed-fuentes'))) { var c = buscar(id); if (c) { fuentesAMesa(c); location.hash = 'mesa'; toast('Fuentes en la mesa'); } return; }
     if (t.id === 'ed-ver-desc') { Object.keys(EST_ED).forEach(function (k) { if (EST_ED[k] === 'descartada') delete EST_ED[k]; }); guardarEd(); pintarEdicion(); }
   });
-  fetch('datos/urgentes.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) { URG = d; pintarEdicion(); }).catch(function () {});
-  function conRedaccion(d) { RED = d; pintarEquipo(); pintarAviso(); pintarMenu(); pintarEdicion(); }
+  fetch('datos/urgentes.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) { URG = d; pintarEdicion(); pintarCentral(); }).catch(function () {});
+
+  // ── Central de noticias: cable de agencia en tapa clara ──
+  var CN = { sec: '', eje: '', q: '', max: 40 };
+  var RUIDO_CN = /\b(f[uú]tbol|partido|gol|torneo|copa|mundial|selecci[oó]n|boxeo|tenis|receta|hor[oó]scopo|famos|novia|novio|actriz|actor|cantante|reality|gran hermano|moria|dieta|heladera|focaccia|albahaca|helado|qu[eé] le pasa a tu cuerpo|d[oó]nde ver|a qu[eé] hora juega|en vivo:? .*\bvs\b|minuto a minuto|bolet[ií]n de deportes|grammy)\b/i;
+  function secDe(n) {
+    if (n.zona === 'mercosur') return 'mercosur';
+    if (n.region) return 'provincias';
+    if (n.zona === 'mundo' || (n.pais && n.pais !== 'Argentina')) return 'mundo';
+    return 'argentina';
+  }
+  var SEC_CN = [['', 'Todo'], ['argentina', 'Argentina'], ['provincias', 'Provincias'], ['mercosur', 'Mercosur'], ['mundo', 'Mundo']];
+  function notasCable() {
+    return todasLasNotas().filter(function (n) { return !RUIDO_CN.test(n.titulo || ''); })
+      .sort(function (a, b) { return (b.fecha || '').localeCompare(a.fecha || ''); });
+  }
+  function prioridadDe(n) {
+    var tit = (n.titulo || '').toLowerCase().slice(0, 50);
+    var U = (URG && URG.urgentes) || [];
+    if (U.some(function (u) { return (u.notas || []).some(function (x) { return x.url === n.url; }); })) return 'urgente';
+    if (RED && (RED.menu || []).some(function (b) { return (b.fuentes || []).some(function (f) { return f.url === n.url; }); })) return 'alta';
+    return '';
+  }
+  function pintarCentral() {
+    var todas = notasCable();
+    $('cn-admin').href = ADMIN;
+    var cuenta = {}; todas.forEach(function (n) { var s = secDe(n); cuenta[s] = (cuenta[s] || 0) + 1; });
+    $('cn-sec').innerHTML = SEC_CN.map(function (s) {
+      return '<button type="button" class="cn-f' + (CN.sec === s[0] ? ' on' : '') + '" data-cn-sec="' + s[0] + '">' + s[1] + ' <span>' + (s[0] ? (cuenta[s[0]] || 0) : todas.length) + '</span></button>';
+    }).join('');
+    var ce = {}; todas.forEach(function (n) { (n.ejes || []).forEach(function (e) { ce[e] = (ce[e] || 0) + 1; }); });
+    $('cn-ejes').innerHTML = Object.keys(EJES_N).filter(function (k) { return ce[k]; }).map(function (k) {
+      return '<button type="button" class="cn-f' + (CN.eje === k ? ' on' : '') + '" data-cn-eje="' + k + '">' + esc(EJES_N[k]) + ' <span>' + ce[k] + '</span></button>';
+    }).join('') || '<small style="color:#5B5F66">Aparecen con la próxima recolección.</small>';
+    var q = CN.q.toLowerCase();
+    var L = todas.filter(function (n) { return (!CN.sec || secDe(n) === CN.sec) && (!CN.eje || (n.ejes || []).indexOf(CN.eje) >= 0) && (!q || (n.titulo + ' ' + (n.medio || '')).toLowerCase().indexOf(q) >= 0); });
+    var medios = {}; todas.forEach(function (n) { medios[n.medio] = 1; });
+    var gen = estado.datos && estado.datos.generado;
+    $('cn-act').textContent = (gen ? 'Actualizado ' + new Date(gen).toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }) + ' · ' : '') + Object.keys(medios).length + ' medios · ' + L.length + ' notas';
+    $('cn-lista').innerHTML = L.slice(0, CN.max).map(function (n) {
+      var pr = prioridadDe(n), h = n.fecha ? new Date(n.fecha).toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }) : '—';
+      var etq = (n.ejes && n.ejes[0] && EJES_N[n.ejes[0]]) || (n.region && REG_NOMBRES[n.region]) || (n.region_mundo) || ({ argentina: 'Argentina', mercosur: 'Mercosur', mundo: 'Mundo', provincias: 'Provincias' })[secDe(n)];
+      return '<article class="cn-fila"><span class="h">' + h + '</span><div><div class="et">' + (pr ? '<span class="' + (pr === 'urgente' ? 'u' : 'a') + '">' + (pr === 'urgente' ? 'Urgente' : 'En la edición') + '</span>' : '') + '<span>' + esc(etq || '') + '</span></div>' +
+        '<a class="t" href="' + esc(n.url) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '</a></div><span class="m">' + esc(n.medio || '') + botonMesa(n) + '</span></article>';
+    }).join('') || '<div class="vacio" style="color:#5B5F66">No hay notas con ese filtro.</div>';
+    $('cn-mas').hidden = L.length <= CN.max;
+    var U = (URG && URG.urgentes) || [];
+    $('cn-urg').innerHTML = U.length ? U.slice(0, 2).map(function (u) {
+      var n = (u.notas || [])[0] || {};
+      return '<div class="cn-urgente"><b>● URGENTE · ' + esc(new Date(u.desde).toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })) + '</b><a href="' + esc(n.url || '#') + '" target="_blank" rel="noopener">' + esc(u.titulo) + '</a><small>' + u.n_medios + ' medios</small></div>';
+    }).join('') : '';
+    // edición en curso
+    if (!RED) { $('cn-prop').innerHTML = '<p class="cn-ed-estado">La próxima edición se arma sola a las 6:40, 12:40 o 18:40.</p>'; return; }
+    var M = RED.menu || [];
+    var apr = M.filter(function (b) { return EST_ED[b.id] === 'aprobada'; }).length, des = M.filter(function (b) { return EST_ED[b.id] === 'descartada'; }).length;
+    $('cn-ed-sello').textContent = (NOMBRE_ED[RED.edicion] || 'Edición') + (RED.edicion === 'mañana' ? ' · 6:40' : RED.edicion === 'mediodía' ? ' · 12:40' : RED.edicion === 'tarde' ? ' · 18:40' : '');
+    $('cn-ed-estado').textContent = M.length + ' notas · ' + apr + ' aprobadas · ' + des + ' descartadas · ' + (M.length - apr - des) + ' por revisar';
+    $('cn-barra-a').style.width = (M.length ? 100 * apr / M.length : 0) + '%'; $('cn-barra-d').style.width = (M.length ? 100 * des / M.length : 0) + '%';
+    $('c-cen').textContent = M.length - apr - des;
+    var orden = { urgente: 0, alta: 1, normal: 2 };
+    $('cn-prop').innerHTML = M.filter(function (b) { return EST_ED[b.id] !== 'descartada'; })
+      .sort(function (a, b) { return (orden[a.prioridad] || 2) - (orden[b.prioridad] || 2); }).slice(0, 5).map(function (b) {
+      var v = b.verificacion || {}, est = EST_ED[b.id] || '';
+      var vol = b.volanta || (b.ejes && b.ejes[0] && EJES_N[b.ejes[0]]) || SEC_N[b.seccion] || '';
+      return '<div class="cn-p ' + est + '"><div class="v">' + esc(vol) + '</div><div class="t">' + esc((b.titulos || [])[0] || b.titulo_tema) + '</div>' +
+        '<div class="f">✍ ' + esc(b.firma || 'Redacción') + ' · ' + esc(b.escalon || '') + (v.estado ? ' · ' + esc(v.estado) : '') + '</div><div class="b">' +
+        (b.cuerpo_html ? '<a class="si" target="_blank" rel="noopener" data-ed-aprobar="' + esc(b.id) + '" href="' + esc(ADMIN + '#centro=' + encodeURIComponent(JSON.stringify(reporteDe(b)))) + '">Aprobar</a><button type="button" data-ed-editar="' + esc(b.id) + '">Editar</button>'
+          : '<button type="button" data-ed-fuentes="' + esc(b.id) + '">Armar con las fuentes</button>') +
+        '<button type="button" class="no" data-ed-descartar="' + esc(b.id) + '">Descartar</button></div></div>';
+    }).join('');
+  }
+  $('cn-sec').addEventListener('click', function (ev) { var b = ev.target.closest('[data-cn-sec]'); if (!b) return; CN.sec = b.getAttribute('data-cn-sec'); CN.max = 40; pintarCentral(); });
+  $('cn-ejes').addEventListener('click', function (ev) { var b = ev.target.closest('[data-cn-eje]'); if (!b) return; var e = b.getAttribute('data-cn-eje'); CN.eje = CN.eje === e ? '' : e; CN.max = 40; pintarCentral(); });
+  $('cn-q').addEventListener('input', function () { CN.q = this.value.trim(); CN.max = 40; pintarCentral(); });
+  $('cn-mas').addEventListener('click', function () { CN.max += 40; pintarCentral(); });
+  $('cn-prop').addEventListener('click', function (ev) {
+    var t = ev.target, id, buscar = function (x) { return (RED.menu || []).filter(function (y) { return y.id === x; })[0]; };
+    if ((id = t.getAttribute('data-ed-aprobar'))) { EST_ED[id] = 'aprobada'; guardarEd(); setTimeout(function () { pintarCentral(); pintarEdicion(); }, 300); return; }
+    if ((id = t.getAttribute('data-ed-descartar'))) { EST_ED[id] = 'descartada'; guardarEd(); pintarCentral(); pintarEdicion(); return; }
+    if ((id = t.getAttribute('data-ed-editar'))) { var b = buscar(id); if (b) llevarAMesa(b); return; }
+    if ((id = t.getAttribute('data-ed-fuentes'))) { var c = buscar(id); if (c) { fuentesAMesa(c); location.hash = 'mesa'; } return; }
+  });
+  function conRedaccion(d) { RED = d; pintarEquipo(); pintarAviso(); pintarMenu(); pintarEdicion(); pintarCentral(); }
   pintarEquipo();
   pintarKpisExp(); pintarVivo(); pintarRegiones(); pintarPortada(); pintarMesa(); abrir(estado.sel); fijar(MAPA.cajas.mundo); ir();
-  fetch('datos/noticias.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) { conDatos(d); llenarFiltros(d); if (RED) pintarMenu(); }).catch(function () { /* sin recolección todavía */ });
+  fetch('datos/noticias.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) { conDatos(d); llenarFiltros(d); if (RED) pintarMenu(); pintarCentral(); }).catch(function () { /* sin recolección todavía */ });
   fetch('datos/redaccion.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(conRedaccion).catch(function () { /* los agentes todavía no corrieron */ });
 })();
 </script>
