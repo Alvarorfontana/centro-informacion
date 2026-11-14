@@ -1,0 +1,59 @@
+name: Chequeo antes de publicar
+
+# Revisión automática de cada cambio propuesto (PR): que el código compile,
+# que el JavaScript no tenga errores de sintaxis y que los JSON de datos se puedan leer.
+# No cambia nada; si algo falla, el PR queda marcado en rojo antes de llegar al sitio.
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  chequeo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Python compila
+        run: python -m compileall -q scripts
+      - name: JavaScript sin errores de sintaxis
+        run: |
+          find . -name "*.js" -not -path "*/vendor/*" -not -path "./node_modules/*" -not -path "./.git/*" -print0 | xargs -0 -r -n1 node --check
+          # scripts dentro de las páginas HTML
+          python - <<'PY'
+          import pathlib, re, subprocess, sys, tempfile
+          mal = 0
+          for f in pathlib.Path(".").rglob("*.html"):
+              if ".git" in f.parts or "vendor" in f.parts:
+                  continue
+              js = "\n".join(re.findall(r"<script(?![^>]*\bsrc=)(?![^>]*type=\"application/(?:ld\+)?json\")[^>]*>(.*?)</script>", f.read_text(encoding="utf-8"), re.S))
+              if not js.strip():
+                  continue
+              with tempfile.NamedTemporaryFile("w", suffix=".js", delete=False) as t:
+                  t.write(js)
+              r = subprocess.run(["node", "--check", t.name], capture_output=True, text=True)
+              if r.returncode:
+                  mal += 1
+                  print(f"::error file={f}::{r.stderr.strip()[:500]}")
+          sys.exit(1 if mal else 0)
+          PY
+      - name: JSON de datos legibles
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          mal = 0
+          for f in list(pathlib.Path(".").rglob("*.json")) + list(pathlib.Path(".").rglob("*.geojson")):
+              if ".git" in f.parts or "node_modules" in f.parts:
+                  continue
+              try:
+                  json.loads(f.read_text(encoding="utf-8"))
+              except Exception as e:
+                  mal += 1
+                  print(f"::error file={f}::{e}")
+          sys.exit(1 if mal else 0)
+          PY
