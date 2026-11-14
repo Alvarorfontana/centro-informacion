@@ -558,6 +558,22 @@ def seguimiento(noticias, historial):
     return salida[:10]
 
 
+# ───────────────────────── firma ─────────────────────────
+
+def firma_para(b):
+    """Firma del borrador según agentes/firmas.json: primero por eje de la agenda, después por sección."""
+    f = leer(AGENTES / "firmas.json", {}) or {}
+    ejes = set(b.get("ejes") or [])
+    for regla in f.get("por_eje", []):
+        if ejes & set(regla.get("ejes", [])):
+            return regla["firma"]
+    if b.get("tema") in ("Economía", "Energía", "Agro y clima"):
+        for regla in f.get("por_eje", []):
+            if "economia" in regla.get("ejes", []):
+                return regla["firma"]
+    return (f.get("por_seccion") or {}).get(b.get("seccion")) or "Redacción"
+
+
 # ───────────────────────── la cadena ─────────────────────────
 
 def correr(nombre_agente, reg, ia, fn, *args):
@@ -661,6 +677,7 @@ def main():
             if e:
                 cuenta["enlazador"] += 1
                 b["cuerpo_html"], b["enlaces"], b["relacionadas"] = e
+        b["firma"] = firma_para(b)
         borradores.append(b)
         # se guarda el avance después de cada tema: si GitHub corta la vuelta, lo hecho no se pierde
         parcial = leer(DATOS / "redaccion.json", {}) or {}

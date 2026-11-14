@@ -1723,6 +1723,7 @@ body { background: var(--papel); }
     var r = { titulo: (b.titulos || [])[e.titulo || 0] || b.titulo_tema, bajada: (b.bajadas || [])[e.bajada || 0] || '', cuerpo: tmp.innerText.trim(), cuerpoHtml: html,
       region: b.region || '', zona: b.region ? 'argentina' : (b.seccion === 'mercosur' ? 'mercosur' : b.seccion === 'mundo' ? 'mundo' : 'argentina'), tema: b.tema || '',
       fuentes: (b.fuentes || []).map(function (f) { return { medio: f.medio, url: f.url, titulo: f.titulo }; }) };
+    if (b.firma) r.autor = b.firma;
     if (foto) { r.foto = foto.url; r.epigrafe = foto.credito; }
     return r;
   }
@@ -1759,7 +1760,7 @@ body { background: var(--papel); }
       var acc = '<div class="age-acc">' + (b.cuerpo_html ? '<button type="button" class="btn primario" data-a-mesa="' + b.id + '">Llevar a la Mesa para editar</button><a class="btn" target="_blank" rel="noopener" data-al-diario="' + b.id + '" href="#">Enviar al diario como borrador</a>' : '') +
         '<button type="button" class="btn" data-fuentes-mesa="' + b.id + '">Sumar las fuentes a la mesa</button></div>';
       return '<article class="age-tema"><div class="cab"><div class="meta"><span class="pill sec">' + esc(SEC_N[b.seccion] || b.seccion) + '</span>' + (b.region ? '<span class="pill">' + esc(REG_NOMBRES[b.region] || b.region) + '</span>' : '') + (b.region_mundo && b.seccion !== 'argentina' ? '<span class="pill">' + esc(b.region_mundo) + '</span>' : '') + ejes +
-        '<span><span class="semaforo ' + esc(v.estado || '') + '"></span> ' + (b.n_medios || 0) + (b.n_medios === 1 ? ' medio' : ' medios') + '</span></div>' +
+        '<span><span class="semaforo ' + esc(v.estado || '') + '"></span> ' + (b.n_medios || 0) + (b.n_medios === 1 ? ' medio' : ' medios') + '</span>' + (b.firma ? '<span>✍ ' + esc(b.firma) + '</span>' : '') + '</div>' +
         '<h4>' + esc((b.titulos || [])[e.titulo || 0] || b.titulo_tema) + '</h4>' + (b.por_que ? '<p class="porque">Por qué: ' + esc(b.por_que) + '</p>' : '') +
         (b.titulos && b.titulos[0] && b.titulos[0] !== b.titulo_tema ? '<p class="porque">Tema original: ' + esc(b.titulo_tema) + '</p>' : '') + '</div>' +
         '<details><summary>Ver borrador, verificación, fotos y fuentes</summary><div class="age-cuerpo">' + cuerpo + ver + fotos + fts + rel + acc + '</div></details></article>';
