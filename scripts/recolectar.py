@@ -190,7 +190,8 @@ def fecha_gdelt(s):
 # Deportes y espectáculos no sirven para la agenda del diario: se descartan.
 RUIDO = re.compile(r"\b(f[uú]tbol|torneo|goles?|gan[oó] \d|partido de|copa (argentina|libertadores|sudamericana)|selecci[oó]n argentina de|"
                    r"\b\d+\s*[-–]\s*\d+\s+(?:ante|frente a|contra)\b|\b(?:cae|gana|venci[oó]|empat[oó])\s+\d+\s*[-–]\s*\d+|grammy|premios oscar|premios martín fierro|reality|gran hermano|tenis|f[oó]rmula 1|automovilismo|rally|entrenador|t[eé]cnico de la selecci[oó]n|manchester|real madrid|barcelona fc|nations league|champions league|copa de campeones|camiseta|mundial de clubes|rugby|los pumas|las leonas|v[oó]ley|b[aá]squet|hockey|boxeo|golf|boca juniors|river plate|clausura|apertura 20\d\d|playoffs?|serie a|premier league|la liga|nba|"
-                   r"espect[aá]culos?|far[aá]ndula|reality|telenovela|famos[oa]s?|cantante|show en vivo|recital|hor[oó]scopo|receta|musical|taquilla|estreno|pel[ií]cula|netflix|streaming)\b", re.I)
+                   r"espect[aá]culos?|far[aá]ndula|reality|telenovela|famos[oa]s?|cantante|show en vivo|recital|hor[oó]scopo|recetas?|c[oó]mo hacer|ingredientes?|cocina f[aá]cil|dieta|qu[eé] le pasa a tu cuerpo|beneficios de|heladera|maceta|jard[ií]n|trucos? para|"
+                   r"la nueva vida de|as[ií] es (?:la casa|la vida|por dentro)|a qu[eé] se dedica|perdi[oó] la paciencia|su ex\b|romance|chimentos?|influencer|viral en tiktok|wanda nara|icardi|moria cas[aá]n)\b", re.I)
 
 
 def limpiar_titulo(t):

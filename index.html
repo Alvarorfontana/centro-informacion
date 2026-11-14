@@ -2065,7 +2065,7 @@ body { background: var(--papel); }
 
   // ── Central de noticias: cable de agencia en tapa clara ──
   var CN = { sec: '', eje: '', q: '', max: 40 };
-  var RUIDO_CN = /\b(f[uú]tbol|partido|gol|torneo|copa|mundial|selecci[oó]n|boxeo|tenis|receta|hor[oó]scopo|famos|novia|novio|actriz|actor|cantante|reality|gran hermano|moria|dieta|heladera|focaccia|albahaca|helado|qu[eé] le pasa a tu cuerpo|d[oó]nde ver|a qu[eé] hora juega|en vivo:? .*\bvs\b|minuto a minuto|bolet[ií]n de deportes|grammy)\b/i;
+  var RUIDO_CN = /\b(f[uú]tbol|partido|gol|torneo|copa|mundial|selecci[oó]n|boxeo|tenis|receta|hor[oó]scopo|famos|novia|novio|cantante|reality|gran hermano|moria|dieta|heladera|focaccia|albahaca|helado|recetas?|c[oó]mo hacer|la nueva vida de|as[ií] es (?:la casa|la vida|por dentro)|a qu[eé] se dedica|perdi[oó] la paciencia|beneficios de|maceta|qu[eé] le pasa a tu cuerpo|d[oó]nde ver|a qu[eé] hora juega|en vivo:? .*\bvs\b|minuto a minuto|bolet[ií]n de deportes|grammy)\b/i;
   function secDe(n) {
     if (n.zona === 'mercosur') return 'mercosur';
     if (n.region) return 'provincias';
