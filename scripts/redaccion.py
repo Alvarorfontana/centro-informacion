@@ -192,7 +192,10 @@ def jefe(candidatos, conf, ia, reg, historial):
     def por_reglas():
         menu = []
         for sec, cupo in cupos.items():
-            menu += [c for c in limpios if c["seccion"] == sec][:cupo]
+            elegidos = [c for c in limpios if c["seccion"] == sec][:cupo]
+            for j, c in enumerate(elegidos):
+                c["prioridad"] = "alta" if j == 0 or c["n_medios"] >= 4 else "normal"
+            menu += elegidos
         return menu
 
     if not reg.prendido("jefe"):
@@ -219,6 +222,8 @@ def jefe(candidatos, conf, ia, reg, historial):
             c = por_id.get(int(str(x.get("id", "0")).lstrip("#") or 0))
             if c and c not in menu:
                 c["por_que"] = (x.get("por_que") or "").strip()
+                p = str(x.get("prioridad") or "").lower()
+                c["prioridad"] = "urgente" if "urgente" in p else "alta" if "alta" in p else "normal"
                 menu.append(c)
         total = sum(cupos.values())
         if not menu:
@@ -382,7 +387,7 @@ def titulador(html, ia):
     baj = [t.strip() for t in (r.get("bajadas") or []) if isinstance(t, str) and t.strip()][:2]
     if not tit:
         raise ValueError("no propuso títulos")
-    return tit, baj
+    return tit, baj, (str(r.get("volanta") or "").strip()[:40])
 
 
 # ───────────────────────── 9 · fotos ─────────────────────────
@@ -663,7 +668,7 @@ def main():
             t = correr("titulador", reg, ia, titulador, b["cuerpo_html"], ia)
             if t:
                 cuenta["titulador"] += 1
-                b["titulos"], b["bajadas"] = t
+                b["titulos"], b["bajadas"], b["volanta"] = t
         if not b["titulos"]:
             b["titulos"] = [tema["titulo"]]
 
@@ -678,6 +683,9 @@ def main():
                 cuenta["enlazador"] += 1
                 b["cuerpo_html"], b["enlaces"], b["relacionadas"] = e
         b["firma"] = firma_para(b)
+        b["prioridad"] = tema.get("prioridad", "normal")
+        b["escalon"] = ("nota completa" if b["cuerpo_html"] and not b.get("breve") else
+                        "ampliación" if b["cuerpo_html"] else "sin borrador")
         borradores.append(b)
         # se guarda el avance después de cada tema: si GitHub corta la vuelta, lo hecho no se pierde
         parcial = leer(DATOS / "redaccion.json", {}) or {}
@@ -723,7 +731,11 @@ def main():
                 "tema": c.get("tema"), "notas": [{k: n.get(k) for k in ("medio", "url", "titulo", "fecha", "pais")} for n in c["notas"][:4]]}
                for c in sorted(candidatos, key=lambda c: c["puntaje"], reverse=True) if id(c) not in elegidos][:40]
 
-    salida = {"generado": ahora(), "noticias_de": noticias.get("generado"), "eleccion": como,
+    hora_ar = (datetime.now(timezone.utc) - timedelta(hours=3)).hour
+    edicion = "mañana" if hora_ar < 10 else "mediodía" if hora_ar < 16 else "tarde"
+    orden = {"urgente": 0, "alta": 1, "normal": 2}
+    borradores.sort(key=lambda b: (orden.get(b.get("prioridad"), 2), not b.get("cuerpo_html")))
+    salida = {"generado": ahora(), "edicion": edicion, "noticias_de": noticias.get("generado"), "eleccion": como,
               "ia": {"disponible": ia.disponible, "usado": ia.usado, "llamadas": ia.llamadas},
               "diario": {"notas": len(diario), "desde": ruta_diario},
               "agentes": reg.lista(), "menu": borradores, "reserva": reserva, "agenda": ag or [], "seguimiento": sg or []}

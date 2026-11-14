@@ -10,4 +10,6 @@ Criterios, en este orden (los temas marcados con "agenda" son prioridad del diar
 Descartá deportes, espectáculos y notas de servicio.
 
 Respondé SOLO con JSON, así:
-{"menu": [{"id": 3, "por_que": "una oración sobre por qué importa para el lector argentino"}]}
+{"menu": [{"id": 3, "por_que": "una oración sobre por qué importa para el lector argentino", "prioridad": "urgente | alta | normal"}]}
+
+Prioridad: "urgente" solo para un hecho grave o de alto impacto nacional que pasó en las últimas horas; "alta" para los temas centrales de la edición; "normal" para el resto.
