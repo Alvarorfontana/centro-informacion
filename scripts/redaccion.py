@@ -636,10 +636,12 @@ def main():
 
     cuenta = {k: 0 for k in reg.estado}
     borradores = []
+    # Cada edición (6:40, 12:40, 18:40) lleva su propio id: si no, las notas de la mañana y de la tarde se pisaban en las mesas.
+    EDICION_ID = f"{datetime.now(timezone.utc):%H%M}"
     for i, tema in enumerate(menu, 1):
         print(f"[{i}/{len(menu)}] {SECCIONES[tema['seccion']]} · {tema['titulo'][:90]}", flush=True)
         textos = {}
-        b = {"id": f"{datetime.now(timezone.utc):%Y%m%d}-{i:02d}", "seccion": tema["seccion"], "por_que": tema.get("por_que", ""),
+        b = {"id": f"{datetime.now(timezone.utc):%Y%m%d}-{EDICION_ID}-{i:02d}", "seccion": tema["seccion"], "por_que": tema.get("por_que", ""),
              "titulo_tema": tema["titulo"], "puntaje": tema["puntaje"], "n_medios": tema["n_medios"], "paises": tema.get("paises", []),
              "region": tema.get("region") or "", "tema": tema.get("tema"), "ejes": tema.get("ejes", []),
              "region_mundo": next((n.get("region_mundo") for n in tema["notas"] if n.get("region_mundo")), None), "titulos": [], "bajadas": [], "cuerpo_html": "", "fotos": [],

@@ -30,6 +30,14 @@ module.exports = async function handler(req, res) {
   if (payload.estado === 'publicado' && process.env.DIARIO_PERMITIR_PUBLICAR !== 'true') {
     return res.status(403).json({ ok: false, code: 'PUBLISHING_DISABLED', error: 'La publicación directa está desactivada. Activá DIARIO_PERMITIR_PUBLICAR=true después de configurar y probar el publicador.' });
   }
+  // Solo los campos que acepta la API del diario: un campo de más o vacío hace rechazar la nota.
+  const CAMPOS = ['titulo', 'bajada', 'categoria', 'autor', 'contenido_html', 'estado', 'slug', 'fecha', 'volanta', 'imagen_url', 'epigrafe', 'etiquetas', 'fuentes', 'video_url'];
+  const limpio = {};
+  for (const k of CAMPOS) {
+    const v = payload[k];
+    if (v === undefined || v === null || v === '' || (Array.isArray(v) && !v.length)) continue;
+    limpio[k] = v;
+  }
   const endpoint = process.env.DIARIO_ARTICULOS_API_URL || 'https://www.diariofederal.com.ar/api/v1/articulos';
   try {
     const upstream = await fetch(endpoint, {
@@ -39,7 +47,7 @@ module.exports = async function handler(req, res) {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
-      body: JSON.stringify(payload)
+      body: JSON.stringify(limpio)
     });
     const raw = await upstream.text();
     let data;

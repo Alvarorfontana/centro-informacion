@@ -26,3 +26,12 @@ No colocar tokens en HTML, JavaScript del navegador, archivos del repositorio ni
 
 ## Límites actuales
 La edición y el historial de la mesa siguen siendo locales al navegador. No hay guardado central multiusuario ni colaboración simultánea. El puente de publicación queda instalado, pero no puede enviar hasta que se configuren los secretos indicados y se pruebe primero con borradores.
+
+## Revisión 14/11 — correcciones
+- El paquete ahora pasa la validación de la API del diario: fecha en formato `AAAA-MM-DD`, campos vacíos omitidos (antes `video_url: ""` y la fecha con hora hacían rechazar toda nota), slug de hasta 100 caracteres, solo enlaces `https`.
+- Las secciones de los agentes se traducen a las del diario: `mundo` y `mercosur` → Internacional; `argentina` y `local` → Argentina.
+- La mesa toma como título el primer título periodístico de los agentes (no el nombre del tema) y trae volanta, fotos y verificación también al importar a mano.
+- Se corrigió el limpiador de HTML, que fallaba al guardar y al enviar.
+- Los borradores de cada edición tienen id propio (`AAAAMMDD-HHMM-NN`): antes las tres ediciones del día repetían ids y se pisaban en las dos mesas.
+- Fotos de la biblioteca local no se pueden enviar (el diario pide un enlace https): la mesa avisa antes de enviar.
+- Ojo: la API del diario rechaza "Enviar como borrador" mientras el repositorio `diario` sea público (lo exige por seguridad). Con el repo público solo funciona "Solicitar publicación" con los permisos activados.
