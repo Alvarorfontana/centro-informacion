@@ -857,7 +857,7 @@ body { background: var(--papel); }
 
       <!-- REDACCIÓN AUTOMÁTICA: los 12 agentes (scripts/redaccion.py → datos/redaccion.json) -->
       <section class="vista" id="v-agentes" aria-labelledby="t-age" hidden>
-        <div class="cabeza"><div><h2 id="t-age">Redacción automática</h2><p>Quince agentes trabajan dos veces por día (5:40 y 15:40): eligen los temas, leen las fuentes, escriben, verifican, titulan y enlazan. Nada se publica solo: vos elegís qué pasa a la mesa o al diario.</p></div><div class="cifras" id="age-cifras"></div></div>
+        <div class="cabeza"><div><h2 id="t-age">Redacción automática</h2><p>Quince agentes arman tres ediciones por día (6:40, 12:40 y 18:40): eligen los temas, leen las fuentes, escriben, verifican, titulan y enlazan. Nada se publica solo: vos elegís qué pasa a la mesa o al diario.</p></div><div class="cifras" id="age-cifras"></div></div>
         <div id="age-aviso"></div>
         <h3 class="age-sub">Los agentes</h3>
         <div class="age-equipo" id="age-equipo"></div>
@@ -1683,7 +1683,7 @@ body { background: var(--papel); }
     $('c-age').textContent = RED ? (RED.menu || []).length : '12';
     if (RED) $('age-atajo-txt').textContent = (RED.menu || []).length + ' temas en el menú del día · ' + (RED.menu || []).filter(function (b) { return b.cuerpo_html; }).length + ' borradores escritos · armado ' + hace(RED.generado);
     if (!RED) {
-      $('age-equipo').innerHTML = '<div class="vacio-vivo"><b>Los agentes todavía no corrieron</b><p>La primera vuelta se hace sola a las 5:40 o a las 15:40. Para no esperar: en GitHub, pestaña Actions → "Redacción automática" → Run workflow.</p></div>';
+      $('age-equipo').innerHTML = '<div class="vacio-vivo"><b>Los agentes todavía no corrieron</b><p>La próxima edición se arma sola a las 6:40, 12:40 o 18:40. Para no esperar: en GitHub, pestaña Actions → "Redacción automática" → Run workflow.</p></div>';
       return;
     }
     var AGD = RED.agenda || [], SEG = RED.seguimiento || [];

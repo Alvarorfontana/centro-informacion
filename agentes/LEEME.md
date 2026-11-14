@@ -1,6 +1,6 @@
 # Redacción automática · los 12 agentes
 
-Corren solos en GitHub dos veces por día (5:40 y 15:40 de Argentina) y dejan el menú del día y los
+Corren solos en GitHub tres veces por día (ediciones de 6:40, 12:40 y 18:40 de Argentina) y dejan el menú del día y los
 borradores en el Centro, en **Redacción automática**. Ningún agente publica: vos elegís qué pasa a la
 Mesa de edición o al administrador del diario. El repositorio del diario no se toca.
 

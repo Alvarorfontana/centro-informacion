@@ -1,16 +1,17 @@
 name: Redacción automática
 
-# Los 12 agentes de redacción (scripts/redaccion.py). Corren a las 5:40 y a las 15:40 de Argentina,
+# Los 12 agentes de redacción (scripts/redaccion.py). Tres ediciones por día: 6:40, 12:40 y 18:40 de Argentina,
 # después del recolector, y dejan el menú del día y los borradores en datos/redaccion.json.
 # Nunca publican: todo queda como borrador en el Centro de Información.
 # Usan IA gratuita con las claves GEMINI_API_KEY y/o GROQ_API_KEY (Settings → Secrets and variables → Actions).
 #
 # GitHub a veces saltea los horarios programados. Por eso también arranca cada vez que termina el
-# recolector, pero solo trabaja si la última vuelta tiene más de 6 horas (así no gasta la IA de más).
+# recolector, pero solo trabaja si la última vuelta tiene más de 5 horas (así no gasta la IA de más).
 on:
   schedule:
-    - cron: '40 8 * * *'
-    - cron: '40 18 * * *'
+    - cron: '40 9 * * *'    # edición de la mañana: 6:40
+    - cron: '40 15 * * *'   # edición del mediodía: 12:40
+    - cron: '40 21 * * *'   # edición de la tarde: 18:40
   workflow_run:
     workflows: ['Recolectar noticias']
     types: [completed]
@@ -36,7 +37,7 @@ jobs:
         run: pip install feedparser beautifulsoup4
       - name: Correr los agentes
         env:
-          SALTEAR_SI_RECIENTE: ${{ github.event_name == 'workflow_run' && '6' || '' }}
+          SALTEAR_SI_RECIENTE: ${{ github.event_name == 'workflow_run' && '5' || '' }}
           PYTHONUNBUFFERED: '1'
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
