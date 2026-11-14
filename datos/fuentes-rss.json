@@ -575,5 +575,110 @@
   "tipo": "Medio local",
   "zona": "argentina",
   "region": "buenos-aires"
+ },
+ {
+  "nombre": "El Territorio (Misiones)",
+  "url": "https://www.elterritorio.com.ar/rss",
+  "pais": "Argentina",
+  "idioma": "castellano",
+  "tipo": "Medio provincial",
+  "zona": "argentina",
+  "region": "norte-grande",
+  "alternativas": [
+   "https://news.google.com/rss/search?q=site:elterritorio.com.ar+when:2d&hl=es-419&gl=AR&ceid=AR:es-419"
+  ]
+ },
+ {
+  "nombre": "Diario Norte (Chaco)",
+  "url": "https://www.diarionorte.com/rss",
+  "pais": "Argentina",
+  "idioma": "castellano",
+  "tipo": "Medio provincial",
+  "zona": "argentina",
+  "region": "norte-grande",
+  "alternativas": [
+   "https://news.google.com/rss/search?q=site:diarionorte.com+when:2d&hl=es-419&gl=AR&ceid=AR:es-419"
+  ]
+ },
+ {
+  "nombre": "Formosa (prensa local)",
+  "url": "https://news.google.com/rss/search?q=Formosa+provincia+-Rosario+when:2d&hl=es-419&gl=AR&ceid=AR:es-419",
+  "pais": "Argentina",
+  "idioma": "castellano",
+  "tipo": "Medio provincial",
+  "zona": "argentina",
+  "region": "norte-grande"
+ },
+ {
+  "nombre": "Uno Entre Ríos",
+  "url": "https://www.unoentrerios.com.ar/rss/pages/home.xml",
+  "pais": "Argentina",
+  "idioma": "castellano",
+  "tipo": "Medio provincial",
+  "zona": "argentina",
+  "region": "centro",
+  "alternativas": [
+   "https://news.google.com/rss/search?q=site:unoentrerios.com.ar+when:2d&hl=es-419&gl=AR&ceid=AR:es-419"
+  ]
+ },
+ {
+  "nombre": "El Tribuno de Jujuy",
+  "url": "https://www.eltribuno.com/jujuy/rss",
+  "pais": "Argentina",
+  "idioma": "castellano",
+  "tipo": "Medio provincial",
+  "zona": "argentina",
+  "region": "norte-grande",
+  "alternativas": [
+   "https://news.google.com/rss/search?q=site:eltribuno.com/jujuy+when:2d&hl=es-419&gl=AR&ceid=AR:es-419"
+  ]
+ },
+ {
+  "nombre": "Nueva Rioja (La Rioja)",
+  "url": "https://www.nuevarioja.com.ar/rss",
+  "pais": "Argentina",
+  "idioma": "castellano",
+  "tipo": "Medio provincial",
+  "zona": "argentina",
+  "region": "norte-grande",
+  "alternativas": [
+   "https://news.google.com/rss/search?q=site:nuevarioja.com.ar+when:2d&hl=es-419&gl=AR&ceid=AR:es-419"
+  ]
+ },
+ {
+  "nombre": "El Diario de la República (San Luis)",
+  "url": "https://www.eldiariodelarepublica.com/rss",
+  "pais": "Argentina",
+  "idioma": "castellano",
+  "tipo": "Medio provincial",
+  "zona": "argentina",
+  "region": "cuyo",
+  "alternativas": [
+   "https://news.google.com/rss/search?q=site:eldiariodelarepublica.com+when:2d&hl=es-419&gl=AR&ceid=AR:es-419"
+  ]
+ },
+ {
+  "nombre": "La Arena (La Pampa)",
+  "url": "https://www.laarena.com.ar/rss",
+  "pais": "Argentina",
+  "idioma": "castellano",
+  "tipo": "Medio provincial",
+  "zona": "argentina",
+  "region": "patagonia",
+  "alternativas": [
+   "https://news.google.com/rss/search?q=site:laarena.com.ar+when:2d&hl=es-419&gl=AR&ceid=AR:es-419"
+  ]
+ },
+ {
+  "nombre": "El Sureño (Tierra del Fuego)",
+  "url": "https://www.surenio.com.ar/rss",
+  "pais": "Argentina",
+  "idioma": "castellano",
+  "tipo": "Medio provincial",
+  "zona": "argentina",
+  "region": "patagonia",
+  "alternativas": [
+   "https://news.google.com/rss/search?q=site:surenio.com.ar+when:2d&hl=es-419&gl=AR&ceid=AR:es-419"
+  ]
  }
 ]
