@@ -555,6 +555,50 @@ body { background: var(--papel); }
 .aviso-der { display: inline-flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .btn-admin { background: var(--rojo); color: #fff; text-decoration: none; font-family: var(--ui); font-weight: 800; font-size: 13px; letter-spacing: 0; padding: 6px 12px; border-radius: 4px; white-space: nowrap; box-shadow: 0 0 14px var(--brillo); }
 .btn-admin:hover { filter: brightness(1.08); }
+/* Edición del día */
+#v-edicion { max-width: 1080px; }
+.ed-cab { border-bottom: 3px double var(--linea); padding-bottom: 16px; margin-bottom: 22px; display: grid; gap: 6px; }
+.ed-sello { font: 700 11px var(--mono); letter-spacing: .2em; text-transform: uppercase; color: var(--rojo-tinta); }
+.ed-cab h2 { font-family: var(--display); font-size: clamp(30px, 4vw, 44px); line-height: 1.05; letter-spacing: -.01em; }
+.ed-fecha { color: var(--tinta-2); font-size: 14px; } .ed-fecha::first-letter { text-transform: uppercase; }
+.ed-horas { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+.ed-horas span { font: 600 12px var(--ui); padding: 5px 10px; border: 1px solid var(--linea); border-radius: 999px; color: var(--tinta-3); }
+.ed-horas span.hoy { border-color: var(--tinta); color: var(--tinta); }
+.ed-estado { font-size: 13px; color: var(--tinta-3); }
+.ed-urg { border: 1px solid var(--rojo); border-left: 6px solid var(--rojo); border-radius: 4px; padding: 12px 16px; margin-bottom: 22px; display: grid; gap: 8px; }
+.ed-urg b.marca { font: 800 11px var(--mono); letter-spacing: .18em; color: var(--rojo-tinta); }
+.ed-urg a { color: var(--tinta); font-family: var(--display); font-size: 18px; line-height: 1.25; text-decoration: none; }
+.ed-urg small { color: var(--tinta-3); }
+.ed-grupo { margin-bottom: 26px; }
+.ed-grupo > h3 { font: 700 11px var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--tinta-3); border-bottom: 1px solid var(--linea); padding-bottom: 8px; margin-bottom: 4px; }
+.ed-nota { display: grid; grid-template-columns: 168px 1fr; gap: 18px; padding: 18px 0; border-bottom: 1px solid var(--linea); }
+.ed-nota.sin-foto { grid-template-columns: 1fr; }
+.ed-nota img { width: 168px; aspect-ratio: 4/3; object-fit: cover; border-radius: 3px; background: var(--hundido); }
+.ed-nota .vol { font: 700 11px var(--ui); letter-spacing: .08em; text-transform: uppercase; color: var(--rojo-tinta); }
+.ed-nota h4 { font-family: var(--display); font-size: 23px; line-height: 1.18; margin: 4px 0 6px; letter-spacing: -.005em; }
+.ed-nota .baj { color: var(--tinta-2); font-size: 14.5px; line-height: 1.5; max-width: 70ch; }
+.ed-nota .meta { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--tinta-3); margin-top: 8px; align-items: center; }
+.ed-nota .meta b { color: var(--tinta-2); font-weight: 600; }
+.ed-nota .acc { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.ed-nota .acc button, .ed-nota .acc a { font: 600 13px var(--ui); padding: 7px 14px; border-radius: 4px; border: 1px solid var(--linea); background: transparent; color: var(--tinta); cursor: pointer; text-decoration: none; }
+.ed-nota .acc .si { background: var(--tinta); color: var(--fondo, #0f1729); border-color: var(--tinta); }
+.ed-nota .acc .no { color: var(--tinta-3); }
+.ed-nota.aprobada { opacity: .75; } .ed-nota.aprobada h4::before { content: "✓ Aprobada · "; color: var(--v3); font-size: 15px; font-family: var(--ui); vertical-align: middle; }
+.ed-nota.descartada { display: none; }
+.ed-mostrar { font: 600 12px var(--ui); color: var(--tinta-3); background: none; border: 0; cursor: pointer; text-decoration: underline; padding: 6px 0; }
+.ed-dos { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 10px; }
+.ed-tit { font-family: var(--display); font-size: 22px; } .ed-sub { font-size: 12.5px; color: var(--tinta-3); margin: 2px 0 10px; }
+.ed-lista { list-style: none; padding: 0; margin: 0; }
+.ed-lista li { padding: 9px 0; border-bottom: 1px solid var(--linea); font-size: 14px; line-height: 1.4; }
+.ed-lista li small { display: block; color: var(--tinta-3); font-size: 12px; margin-top: 2px; }
+.ed-lista a { color: var(--tinta); text-decoration: none; }
+.ed-cuando { font: 700 10.5px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--rojo-tinta); margin-right: 6px; }
+.ed-pie { margin-top: 24px; font-size: 13px; } .ed-pie a { color: var(--tinta-2); }
+@media (max-width: 760px) {
+  .ed-nota { grid-template-columns: 1fr; } .ed-nota img { width: 100%; aspect-ratio: 16/9; }
+  .ed-dos { grid-template-columns: 1fr; }
+}
+
 /* Redacción automática */
 .age-sub { font-family: var(--display); font-size: 21px; margin: 26px 0 10px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
 .age-sub small { font-family: var(--ui); font-size: 12px; color: var(--tinta-3); font-weight: 500; }
@@ -625,7 +669,7 @@ body { background: var(--papel); }
 .age-atajo .pill { grid-area: p; } .age-atajo b { grid-area: b; font-size: 16px; } .age-atajo small { grid-area: s; color: var(--tinta-2); font-size: 12.5px; }
 .age-atajo > span:last-child { grid-area: f; font-size: 22px; color: var(--rojo); }
 @media (max-width: 960px) {
-  .nav a[data-vista="portada"] { order: -3; } .nav a[data-vista="agentes"] { order: -2; } .nav a[data-vista="mesa"] { order: -1; }
+  .nav a[data-vista="portada"] { order: -4; } .nav a[data-vista="edicion"] { order: -3; } .nav a[data-vista="agentes"] { order: -2; } .nav a[data-vista="mesa"] { order: -1; }
   .nav { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
 }
 
@@ -645,6 +689,7 @@ body { background: var(--papel); }
         <a href="#en-vivo" data-vista="en-vivo">Noticias en vivo <span class="cuenta" id="c-viv"></span></a>
         <a href="#regiones" data-vista="regiones">Regiones de Argentina <span class="cuenta">5</span></a>
         <h3>Redacción</h3>
+        <a href="#edicion" data-vista="edicion">Edición del día <span class="cuenta" id="c-edi">·</span></a>
         <a href="#agentes" data-vista="agentes">Redacción automática <span class="cuenta" id="c-age">12</span></a>
         <a href="#mesa" data-vista="mesa">Mesa de edición <span class="cuenta" id="c-mesa">0</span></a>
         <a href="https://www.diariofederal.com.ar/admin/" target="_blank" rel="noopener" class="ir-admin">Administrador de noticias <span class="cuenta">↗</span></a>
@@ -855,6 +900,24 @@ body { background: var(--papel); }
       </section>
 
 
+
+      <!-- EDICIÓN DEL DÍA: propuesta de la mesa por edición, estilo agencia (lee datos/redaccion.json y datos/urgentes.json) -->
+      <section class="vista" id="v-edicion" aria-labelledby="t-edi" hidden>
+        <header class="ed-cab">
+          <div class="ed-sello" id="ed-sello">Edición</div>
+          <h2 id="t-edi">Propuesta de la mesa</h2>
+          <p class="ed-fecha" id="ed-fecha"></p>
+          <div class="ed-horas" id="ed-horas"></div>
+          <p class="ed-estado" id="ed-estado"></p>
+        </header>
+        <div id="ed-urgentes"></div>
+        <div id="ed-prop"></div>
+        <div class="ed-dos">
+          <section><h3 class="ed-tit">Presupuesto del día</h3><p class="ed-sub">Lo que los medios anuncian para hoy y los próximos días</p><div id="ed-agenda"></div></section>
+          <section><h3 class="ed-tit">Seguimiento</h3><p class="ed-sub">Temas de días anteriores con novedades</p><div id="ed-seg"></div></section>
+        </div>
+        <p class="ed-pie"><a href="#agentes">Ver el trabajo de cada agente →</a></p>
+      </section>
       <!-- REDACCIÓN AUTOMÁTICA: los 12 agentes (scripts/redaccion.py → datos/redaccion.json) -->
       <section class="vista" id="v-agentes" aria-labelledby="t-age" hidden>
         <div class="cabeza"><div><h2 id="t-age">Redacción automática</h2><p>Quince agentes arman tres ediciones por día (6:40, 12:40 y 18:40): eligen los temas, leen las fuentes, escriben, verifican, titulan y enlazan. Nada se publica solo: vos elegís qué pasa a la mesa o al diario.</p></div><div class="cifras" id="age-cifras"></div></div>
@@ -1601,7 +1664,7 @@ body { background: var(--papel); }
 
   // ── Navegación ──
   $('c-exp').textContent = EXP.length; $('c-cro').textContent = todos.length; $('c-fue').textContent = F.length; $('r-age').textContent = agencias.length;
-  var VISTAS = ['portada', 'agentes', 'mesa', 'cubierto', 'en-vivo', 'regiones', 'expedientes', 'mapa', 'radar', 'fuentes', 'cronologia', 'flujo'];
+  var VISTAS = ['portada', 'edicion', 'agentes', 'mesa', 'cubierto', 'en-vivo', 'regiones', 'expedientes', 'mapa', 'radar', 'fuentes', 'cronologia', 'flujo'];
   function columnas() {
     document.querySelector('.cuerpo').style.gridTemplateColumns = $('inspector').hidden && window.matchMedia('(min-width: 961px)').matches ? (window.matchMedia('(max-width: 1180px)').matches ? '210px minmax(0,1fr)' : '236px minmax(0,1fr)') : '';
   }
@@ -1609,7 +1672,7 @@ body { background: var(--papel); }
     var v = location.hash.slice(1); if (VISTAS.indexOf(v) < 0) v = 'portada';
     VISTAS.forEach(function (x) { $('v-' + x).hidden = x !== v; });
     document.querySelectorAll('#nav a').forEach(function (a) { if (a.getAttribute('data-vista') === v) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
-    $('inspector').hidden = ['portada', 'agentes', 'mesa', 'cubierto', 'en-vivo', 'regiones', 'fuentes', 'flujo', 'radar'].indexOf(v) >= 0;
+    $('inspector').hidden = ['portada', 'edicion', 'agentes', 'mesa', 'cubierto', 'en-vivo', 'regiones', 'fuentes', 'flujo', 'radar'].indexOf(v) >= 0;
     columnas();
     if (v === 'expedientes') pintarLista();
     if (v === 'fuentes') { pintarFuentes(); pintarConexion(); }
@@ -1845,7 +1908,70 @@ body { background: var(--papel); }
     if (pre) fetch('agentes/instrucciones/' + pre.getAttribute('data-instr') + '.md', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw 0; return r.text(); })
       .then(function (t) { pre.textContent = t; }).catch(function () { pre.textContent = 'No se pudo cargar la instrucción.'; });
   }, true);
-  function conRedaccion(d) { RED = d; pintarEquipo(); pintarAviso(); pintarMenu(); }
+
+  // ── Edición del día: la propuesta de la mesa, estilo agencia ──
+  var URG = null, EST_ED = {};
+  try { EST_ED = JSON.parse(localStorage.getItem('centro-edicion') || '{}') || {}; } catch (e) { EST_ED = {}; }
+  function guardarEd() { try { localStorage.setItem('centro-edicion', JSON.stringify(EST_ED)); } catch (e) {} }
+  var NOMBRE_ED = { 'mañana': 'Edición de la mañana', 'mediodía': 'Edición del mediodía', 'tarde': 'Edición de la tarde' };
+  function llevarAMesa(b) {
+    var r = reporteDe(b);
+    $('m-titulo').value = r.titulo; $('m-bajada').value = r.bajada; $('m-region').value = r.region || ''; $('m-tema').value = r.tema || '';
+    ed.innerHTML = r.cuerpoHtml; mesa = []; fuentesAMesa(b); actualizarEnvio();
+    location.hash = 'mesa'; toast('Nota en la mesa de edición');
+  }
+  function pintarEdicion() {
+    if (!RED) { $('ed-prop').innerHTML = '<div class="vacio">Todavía no hay una edición armada. La próxima se arma sola a las 6:40, 12:40 o 18:40.</div>'; return; }
+    var gen = new Date(RED.generado), edn = RED.edicion || '';
+    $('ed-sello').textContent = NOMBRE_ED[edn] || 'Edición';
+    $('ed-fecha').textContent = gen.toLocaleDateString('es-AR', { weekday: 'long', day: 'numeric', month: 'long' }) + ' · armada a las ' + gen.toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit' });
+    $('ed-horas').innerHTML = [['mañana', '6:40'], ['mediodía', '12:40'], ['tarde', '18:40']].map(function (h) { return '<span class="' + (h[0] === edn ? 'hoy' : '') + '">' + h[1] + ' · ' + h[0] + '</span>'; }).join('');
+    var M = RED.menu || [];
+    var apr = M.filter(function (b) { return EST_ED[b.id] === 'aprobada'; }).length, des = M.filter(function (b) { return EST_ED[b.id] === 'descartada'; }).length;
+    $('ed-estado').textContent = M.length + ' notas propuestas · ' + apr + ' aprobadas · ' + des + ' descartadas · ' + (M.length - apr - des) + ' por revisar';
+    $('c-edi').textContent = M.length - apr - des;
+    var U = (URG && URG.urgentes) || [];
+    $('ed-urgentes').innerHTML = U.length ? '<div class="ed-urg"><b class="marca">● URGENTE</b>' + U.map(function (u) {
+      var n = (u.notas || [])[0] || {};
+      return '<div><a href="' + esc(n.url || '#') + '" target="_blank" rel="noopener">' + esc(u.titulo) + '</a><small> · ' + u.n_medios + ' medios desde ' + hace(u.desde) + '</small></div>';
+    }).join('') + '</div>' : '';
+    var grupos = [['urgente', 'Urgente'], ['alta', 'Prioridad alta'], ['normal', 'Resto de la edición']];
+    $('ed-prop').innerHTML = grupos.map(function (g) {
+      var L = M.filter(function (b) { return (b.prioridad || 'normal') === g[0]; });
+      if (!L.length) return '';
+      return '<section class="ed-grupo"><h3>' + g[1] + '</h3>' + L.map(function (b) {
+        var v = b.verificacion || {}, foto = (b.fotos || [])[0], est = EST_ED[b.id] || '';
+        var vol = b.volanta || (b.ejes && b.ejes[0] && EJES_N[b.ejes[0]]) || SEC_N[b.seccion] || '';
+        return '<article class="ed-nota ' + (foto ? '' : 'sin-foto ') + est + '" data-ed="' + esc(b.id) + '">' +
+          (foto ? '<img loading="lazy" referrerpolicy="no-referrer" src="' + esc(foto.url) + '" alt="" onerror="var a=this.closest(\'.ed-nota\');if(a)a.classList.add(\'sin-foto\');this.remove()">' : '') +
+          '<div><div class="vol">' + esc(vol) + '</div><h4>' + esc((b.titulos || [])[0] || b.titulo_tema) + '</h4>' +
+          ((b.bajadas || [])[0] ? '<p class="baj">' + esc(b.bajadas[0]) + '</p>' : (b.por_que ? '<p class="baj">' + esc(b.por_que) + '</p>' : '')) +
+          '<div class="meta"><span>✍ <b>' + esc(b.firma || 'Redacción') + '</b></span><span>' + esc(b.escalon || '') + '</span>' +
+          '<span><span class="semaforo ' + esc(v.estado || '') + '"></span> ' + (v.estado ? 'verificación ' + esc(v.estado) : 'sin verificar') + '</span>' +
+          '<span>' + (b.n_medios || 0) + (b.n_medios === 1 ? ' medio' : ' medios') + '</span></div>' +
+          '<div class="acc">' + (b.cuerpo_html ? '<a class="si" target="_blank" rel="noopener" data-ed-aprobar="' + esc(b.id) + '" href="' + esc(ADMIN + '#centro=' + encodeURIComponent(JSON.stringify(reporteDe(b)))) + '">Aprobar y mandar al diario</a>' +
+            '<button type="button" data-ed-editar="' + esc(b.id) + '">Editar</button>' : '<button type="button" data-ed-fuentes="' + esc(b.id) + '">Armar con las fuentes</button>') +
+          '<button type="button" class="no" data-ed-descartar="' + esc(b.id) + '">Descartar</button></div></div></article>';
+      }).join('') + '</section>';
+    }).join('') + (des ? '<button type="button" class="ed-mostrar" id="ed-ver-desc">Mostrar las ' + des + ' descartadas</button>' : '');
+    var AGD = RED.agenda || [], SEG = RED.seguimiento || [];
+    $('ed-agenda').innerHTML = AGD.length ? '<ul class="ed-lista">' + AGD.slice(0, 10).map(function (a) {
+      return '<li><span class="ed-cuando">' + esc(a.cuando) + '</span><a href="' + esc(a.url) + '" target="_blank" rel="noopener">' + esc(a.titulo) + '</a><small>' + esc(a.medio || '') + '</small></li>'; }).join('') + '</ul>' : '<p class="ed-sub">Sin anuncios en esta vuelta.</p>';
+    $('ed-seg').innerHTML = SEG.length ? '<ul class="ed-lista">' + SEG.slice(0, 8).map(function (t) {
+      var n = t.notas[0] || {};
+      return '<li><a href="' + esc(n.url || '#') + '" target="_blank" rel="noopener">' + esc(t.tema) + '</a><small>+' + t.nuevas + ' notas nuevas · ' + esc(n.medio || '') + '</small></li>'; }).join('') + '</ul>' : '<p class="ed-sub">Todavía no hay temas de días anteriores con novedades.</p>';
+  }
+  $('ed-prop').addEventListener('click', function (ev) {
+    var t = ev.target, id;
+    var buscar = function (x) { return (RED.menu || []).filter(function (y) { return y.id === x; })[0]; };
+    if ((id = t.getAttribute('data-ed-aprobar'))) { EST_ED[id] = 'aprobada'; guardarEd(); setTimeout(pintarEdicion, 300); toast('Aprobada: se abrió el administrador con el borrador'); return; }
+    if ((id = t.getAttribute('data-ed-descartar'))) { EST_ED[id] = 'descartada'; guardarEd(); pintarEdicion(); toast('Descartada'); return; }
+    if ((id = t.getAttribute('data-ed-editar'))) { var b = buscar(id); if (b) llevarAMesa(b); return; }
+    if ((id = t.getAttribute('data-ed-fuentes'))) { var c = buscar(id); if (c) { fuentesAMesa(c); location.hash = 'mesa'; toast('Fuentes en la mesa'); } return; }
+    if (t.id === 'ed-ver-desc') { Object.keys(EST_ED).forEach(function (k) { if (EST_ED[k] === 'descartada') delete EST_ED[k]; }); guardarEd(); pintarEdicion(); }
+  });
+  fetch('datos/urgentes.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) { URG = d; pintarEdicion(); }).catch(function () {});
+  function conRedaccion(d) { RED = d; pintarEquipo(); pintarAviso(); pintarMenu(); pintarEdicion(); }
   pintarEquipo();
   pintarKpisExp(); pintarVivo(); pintarRegiones(); pintarPortada(); pintarMesa(); abrir(estado.sel); fijar(MAPA.cajas.mundo); ir();
   fetch('datos/noticias.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) { conDatos(d); llenarFiltros(d); if (RED) pintarMenu(); }).catch(function () { /* sin recolección todavía */ });
