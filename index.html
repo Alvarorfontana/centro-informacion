@@ -658,6 +658,8 @@ body { background: var(--papel); }
 .ed-urg b.marca { font: 800 11px var(--mono); letter-spacing: .18em; color: var(--rojo-tinta); }
 .ed-urg a { color: var(--tinta); font-family: var(--display); font-size: 18px; line-height: 1.25; text-decoration: none; }
 .ed-urg small { color: var(--tinta-3); }
+.ed-urg.prim { border-color: var(--tinta-3); border-left-color: var(--tinta); }
+.ed-urg.prim b.marca { color: var(--tinta); }
 .ed-grupo { margin-bottom: 26px; }
 .ed-grupo > h3 { font: 700 11px var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--tinta-3); border-bottom: 1px solid var(--linea); padding-bottom: 8px; margin-bottom: 4px; }
 .ed-nota { display: grid; grid-template-columns: 168px 1fr; gap: 18px; padding: 18px 0; border-bottom: 1px solid var(--linea); }
@@ -1079,6 +1081,7 @@ body { background: var(--papel); }
           <p class="ed-estado" id="ed-estado"></p>
         </header>
         <div id="ed-urgentes"></div>
+        <div id="ed-primicias"></div>
         <div id="ed-prop"></div>
         <div class="ed-dos">
           <section><h3 class="ed-tit">Presupuesto del día</h3><p class="ed-sub">Lo que los medios anuncian para hoy y los próximos días</p><div id="ed-agenda"></div></section>
@@ -2292,6 +2295,15 @@ body { background: var(--papel); }
     if ((id = t.getAttribute('data-ed-fuentes'))) { var c = buscar(id); if (c) { fuentesAMesa(c); location.hash = 'mesa'; toast('Fuentes en la mesa'); } return; }
     if (t.id === 'ed-ver-desc') { Object.keys(EST_ED).forEach(function (k) { if (EST_ED[k] === 'descartada') delete EST_ED[k]; }); guardarEd(); pintarEdicion(); }
   });
+  // Primicias regionales: lo que cuentan diarios de provincia y todavía no los nacionales (datos/primicias.json)
+  fetch('datos/primicias.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) {
+    var L = (d && d.primicias) || [], R = (d && d.quien_se_adelanta) || [];
+    if (!L.length) return;
+    $('ed-primicias').innerHTML = '<div class="ed-urg prim"><b class="marca">● PRIMICIA REGIONAL · todavía no la levantó ningún nacional</b>' + L.slice(0, 6).map(function (p) {
+      var n = (p.notas || [])[0] || {};
+      return '<div><a href="' + esc(n.url || '#') + '" target="_blank" rel="noopener">' + esc(p.titulo) + '</a><small> · ' + esc((p.medios_regionales || []).join(', ')) + ' · desde ' + hace(p.primera_hora) + '</small></div>';
+    }).join('') + (R.length ? '<small>Los que más se adelantan: ' + R.slice(0, 4).map(function (x) { return esc(x.medio) + ' (' + x.levantadas + ')'; }).join(' · ') + '</small>' : '') + '</div>';
+  }).catch(function () {});
   fetch('datos/urgentes.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) { URG = d; pintarEdicion(); pintarCentral(); }).catch(function () {});
 
   // ── Central de noticias: cable de agencia en tapa clara ──
