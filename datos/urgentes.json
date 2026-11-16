@@ -1,53 +1,6 @@
 {
- "generado": "2026-11-16T12:06:50+00:00",
+ "generado": "2026-11-16T22:52:54+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": [
-  {
-   "titulo": "Dólar blue, dólar hoy: a cuánto cotizan el lunes 16 de noviembre de 2026",
-   "n_medios": 5,
-   "paises": [
-    "Argentina"
-   ],
-   "region": null,
-   "tema": "Economía",
-   "ejes": [
-    "economia"
-   ],
-   "desde": "2026-11-16T12:06:50+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Dólar blue, dólar hoy: a cuánto cotizan el lunes 16 de noviembre de 2026",
-     "url": "https://www.pagina12.com.ar/2026/11/16/dolar-blue-dolar-hoy-a-cuanto-cotizan-el-lunes-16-de-noviembre-de-2026/",
-     "medio": "Página/12",
-     "fecha": "2026-11-16T11:50:00+00:00"
-    },
-    {
-     "titulo": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotizan el oficial y el paralelo este lunes 16 de noviembre, minuto a minuto",
-     "url": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotizan-el-oficial-y-el-paralelo-este-lunes-16-de-noviembre-nid16112026/",
-     "medio": "La Nación",
-     "fecha": "2026-11-16T11:48:39+00:00"
-    },
-    {
-     "titulo": "Euro hoy en Panamá: precio y cotización de la divisa este lunes 16 de noviembre de 2026",
-     "url": "https://www.clarin.com/economia/euro-hoy-en-panama-precio-y-cotizacion-de-la-divisa-este-lunes-16-de-noviembre-de-2026_0_B3tlwcZLxX.html",
-     "medio": "Clarín",
-     "fecha": "2026-11-16T10:45:12+00:00"
-    },
-    {
-     "titulo": "A cuánto cotiza el euro blue hoy, lunes 16 de noviembre",
-     "url": "https://perfil.com/economia/a-cuanto-cotiza-el-euro-blue-hoy-lunes-16-de-noviembre-a50-bgd-aKBDI5c04dRW",
-     "medio": "Perfil",
-     "fecha": "2026-11-16T10:00:00+00:00"
-    },
-    {
-     "titulo": "A cuánto abre el dólar este lunes 16 de noviembre",
-     "url": "https://noticiasargentinas.com/economia/a-cuanto-abre-el-dolar-este-lunes-16-de-noviembre_a6afa5e7c9705f1a218ee6e8f",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-16T09:26:00+00:00"
-    }
-   ]
-  }
- ]
+ "urgentes": []
 }
