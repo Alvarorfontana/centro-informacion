@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <style>body{margin:0}</style>
-<style id="ajustes-telefono">@media(max-width:560px){#nav{flex-wrap:wrap;overflow:visible;gap:6px}#nav h3{display:none}#nav a{flex:1 1 auto;justify-content:center;white-space:nowrap}}</style>
+<style id="ajustes-telefono">@media(max-width:760px){aside.lateral{position:static!important;height:auto!important;max-height:none!important}}@media(max-width:560px){#nav{flex-wrap:wrap;overflow:visible;gap:6px}#nav h3{display:none}#nav a{flex:1 1 auto;justify-content:center;white-space:nowrap}}</style>
 </head>
 <body>
 <title>Centro de Información · Diario Federal</title>
@@ -2153,5 +2153,15 @@ body { background: var(--papel); }
 })();
 </script>
 
+<script>
+/* En el teléfono el menú queda arriba del contenido: al tocar una sección se baja hasta ella */
+(function(){var b=document.createElement('button');b.type='button';b.textContent='☰ Menú';b.setAttribute('aria-label','Volver al menú de secciones');
+b.style.cssText='position:fixed;right:14px;bottom:18px;z-index:80;display:none;padding:10px 14px;border-radius:999px;border:1px solid #ff4d5e;background:#d0021b;color:#fff;font:700 14px system-ui;box-shadow:0 6px 18px rgba(0,0,0,.4)';
+b.onclick=function(){var n=document.getElementById('nav');if(n)window.scrollTo({top:n.getBoundingClientRect().top+window.scrollY-10,behavior:'smooth'})};document.body.appendChild(b);
+function ver(){var n=document.getElementById('nav');b.style.display=(window.innerWidth<=760&&n&&n.getBoundingClientRect().bottom<80)?'block':'none'}window.addEventListener('scroll',ver,{passive:true});window.addEventListener('resize',ver);})();
+(function(){var nav=document.getElementById('nav');if(!nav)return;
+nav.addEventListener('click',function(e){var a=e.target.closest('a[data-vista]');if(!a||window.innerWidth>760)return;
+ var id='v-'+a.dataset.vista;setTimeout(function(){var v=document.getElementById(id);if(v&&v.offsetParent){var y=v.getBoundingClientRect().top+window.scrollY-8;window.scrollTo({top:y,behavior:'smooth'})}},120)});})();
+</script>
 </body>
 </html>
