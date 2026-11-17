@@ -290,6 +290,15 @@ def main():
             salida["estado"].append({"fuente": f"GDELT · {r['nombre']}", "ok": True, "notas": len(reg["notas"])})
         except Exception as e:  # noqa: BLE001
             salida["estado"].append({"fuente": f"GDELT · {r['nombre']}", "ok": False, "error": str(e)[:160]})
+        if not reg["notas"]:  # GDELT cortó (pasa seguido desde GitHub): la región se completa con Bing Noticias
+            try:
+                for n in bing_noticias(r["consulta"]):
+                    if not es_ruido(n["titulo"]):
+                        n["region"], n["zona"] = rid, "argentina"
+                        reg["notas"].append(n)
+                salida["estado"].append({"fuente": f"Bing · {r['nombre']}", "ok": True, "notas": len(reg["notas"]), "via": "Bing Noticias"})
+            except Exception as e:  # noqa: BLE001
+                salida["estado"].append({"fuente": f"Bing · {r['nombre']}", "ok": False, "error": str(e)[:160]})
         try:
             vol = gdelt(consulta, modo="timelinevolraw", periodo="14d")
             serie = (vol.get("timeline") or [{}])[0].get("data", [])
@@ -313,6 +322,15 @@ def main():
         except Exception as e:  # noqa: BLE001
             salida["zonas"][zid] = {"nombre": z["nombre"], "notas": []}
             salida["estado"].append({"fuente": f"GDELT · {z['nombre']}", "ok": False, "error": str(e)[:160]})
+        if not salida["zonas"][zid]["notas"]:
+            try:
+                notas = [n for n in bing_noticias(z["consulta"]) if not es_ruido(n["titulo"])]
+                for n in notas:
+                    n["zona"] = zid
+                salida["zonas"][zid]["notas"] = notas
+                salida["estado"].append({"fuente": f"Bing · {z['nombre']}", "ok": True, "notas": len(notas), "via": "Bing Noticias"})
+            except Exception as e:  # noqa: BLE001
+                salida["estado"].append({"fuente": f"Bing · {z['nombre']}", "ok": False, "error": str(e)[:160]})
         print(f"zona {zid}: {len(salida['zonas'][zid]['notas'])} notas", flush=True)
 
     # agenda: cada eje se busca a propósito en medios argentinos (y del mundo hispano para Mercosur, EE.UU. y guerras)

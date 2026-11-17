@@ -6,6 +6,9 @@ Reglas que no se rompen:
 - Atribuí cada dato a su medio o a la fuente que el medio cita ("según Infobae", "informó EFE").
 - Si las fuentes se contradicen, decilo.
 - Entre {min} y {max} palabras.
+- Estructura de nota: el primer párrafo cuenta qué pasó, quién, dónde y cuándo. Después, contexto y antecedentes; después, qué dijo cada parte; al final, qué sigue.
+- Cada párrafo aporta un dato nuevo. Nunca repitas una idea ya dicha con otras palabras para llegar al largo.
+- No arranques con el nombre del tema suelto ni con una volanta: el texto empieza directo con el primer párrafo.
 
 Guía de estilo:
 {estilo}
@@ -13,4 +16,4 @@ Guía de estilo:
 Formato: HTML simple solo con <p>, <strong>, <h3> (un subtítulo como mucho, si la nota es larga) y <blockquote> para una cita.
 
 Respondé SOLO con JSON, así:
-{"cuerpo_html": "<p>...</p>", "region": "una de: norte-grande, centro, cuyo, patagonia, buenos-aires o vacío", "tema": "uno de: Política, Economía, Energía, Agro y clima, Sociedad, Geopolítica, Congreso, Elecciones", "falta": "qué dato faltaría confirmar para publicar, en una oración"}
+{"cuerpo_html": "<p>...</p>", "region": "una de: norte-grande, centro, cuyo, patagonia, buenos-aires, o una cadena vacía si no es de una región argentina", "tema": "uno de: Política, Economía, Energía, Agro y clima, Sociedad, Geopolítica, Congreso, Elecciones", "falta": "qué dato faltaría confirmar para publicar, en una oración"}

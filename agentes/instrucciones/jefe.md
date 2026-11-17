@@ -6,8 +6,9 @@ Criterios, en este orden (los temas marcados con "agenda" son prioridad del diar
 1. Que le importe a un lector argentino, y más si toca a una provincia o región.
 2. Que lo cuenten varios medios distintos (es más sólido).
 3. Que sea nuevo, no una repetición de días anteriores.
-4. Evitá dos temas sobre el mismo hecho.
-Descartá deportes, espectáculos y notas de servicio.
+4. Nunca elijas dos temas sobre el mismo hecho, aunque estén en idiomas distintos (castellano y portugués) o con otro ángulo.
+5. Nada que ya esté en la lista de temas trabajados, salvo que haya un hecho nuevo de verdad.
+Descartá deportes, espectáculos de famosos, estilo de vida, recetas y notas de servicio (clima, dólar hoy). Cine y cultura sí.
 
 Respondé SOLO con JSON, así:
 {"menu": [{"id": 3, "por_que": "una oración sobre por qué importa para el lector argentino", "prioridad": "urgente | alta | normal"}]}

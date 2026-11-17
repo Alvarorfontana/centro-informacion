@@ -4,7 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<style>body{margin:0}</style>
+<style>body{margin:0}
+/* menú: regiones y notas listas */
+.nav a.sub { padding-left: 18px; font-weight: 500; font-size: 13px; flex-wrap: wrap; }
+.nav a.sub small { flex-basis: 100%; order: 3; font-size: 11px; color: var(--tinta-3); font-weight: 400; margin-top: -2px; }
+.nav a.sub.activo { color: var(--rojo-tinta); }
+.nav a.destacado { background: var(--rojo); color: #fff; }
+.nav a.destacado span.cuenta { color: #fff; }
+.nav a.destacado[aria-current="page"] { background: var(--rojo); color: #fff; box-shadow: none; }
+.btn-instalar { margin-top: 10px; width: 100%; border: 1px solid var(--rojo); background: transparent; color: var(--rojo-tinta); border-radius: 4px; padding: 7px 10px; font-weight: 700; font-size: 12.5px; }
+/* tarjeta de nota: se ve sin abrir nada */
+.age-vistazo { display: flex; gap: 14px; margin: 10px 0 4px; align-items: flex-start; }
+.age-vistazo > div { flex: 1; min-width: 0; }
+.age-vistazo img { flex: 0 0 132px; width: 132px; height: 92px; object-fit: cover; border-radius: 4px; background: var(--hundido); }
+.age-vistazo .baj { font-weight: 600; color: var(--tinta); margin: 0 0 4px; font-size: 14px; }
+.age-vistazo .ini { color: var(--tinta-2); font-size: 13.5px; margin: 0 0 4px; line-height: 1.45; }
+.age-vistazo small { color: var(--tinta-3); font-size: 11.5px; }
+.age-acc.rapida { margin: 10px 0 6px; }
+.btn.grande { font-size: 14.5px; padding: 11px 18px; }
+@media (max-width: 600px) { .age-vistazo { flex-direction: column; } .age-vistazo img { width: 100%; height: 170px; } .nav a.sub small { display: none; } }
+
+.hero-mapa .hero-enc { position: absolute; z-index: 2; right: 12px; top: 8px; }
+.hero-mapa svg.mundo { max-height: 440px; }
+.hero-mapa svg .pa { fill: var(--tierra); opacity: .95; stroke: var(--borde-mapa); stroke-width: .3; }
+.hero-mapa svg.mundo .ar { stroke-width: .6; }
+</style>
 <style id="ajustes-telefono">@media(max-width:760px){aside.lateral{position:static!important;height:auto!important;max-height:none!important}}@media(max-width:560px){#nav{flex-wrap:wrap;overflow:visible;gap:6px}#nav h3{display:none}#nav a{flex:1 1 auto;justify-content:center;white-space:nowrap}}</style>
 <link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/iconos/icon-192.png"><link rel="apple-touch-icon" href="/iconos/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Central"><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){})})</script></head>
 <body>
@@ -736,6 +760,13 @@ body { background: var(--papel); }
   .nav { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
 }
 
+
+@media (max-width: 960px) {
+  .nav { display: flex !important; flex-wrap: nowrap !important; overflow-x: auto; gap: 6px; padding-bottom: 6px; scrollbar-width: none; grid-template-columns: none !important; }
+  .nav a { flex: 0 0 auto; }
+  .nav a.destacado { order: -10 !important; }
+  .nav a.sub small { display: none; }
+}
 </style>
 <div class="app">
   <div class="aviso" role="note">
@@ -744,17 +775,28 @@ body { background: var(--papel); }
   </div>
   <div class="cuerpo">
     <aside class="lateral" aria-label="Módulos">
-      <div class="marca"><div class="nombre">Diario Federal</div><small>Centro de Información</small></div>
+      <div class="marca"><div class="nombre">Diario Federal</div><small>Central de noticias</small><button type="button" class="btn-instalar" id="btn-instalar" hidden>Instalar en el teléfono</button></div>
       <nav class="nav" id="nav">
+        <h3>Notas</h3>
+        <a href="#agentes" data-vista="agentes" class="destacado">Notas listas para el diario <span class="cuenta" id="c-age">·</span></a>
         <h3>En vivo</h3>
         <a href="#portada" data-vista="portada">Portada federal <span class="cuenta">●</span></a>
         <a href="#cubierto" data-vista="cubierto">Lo más cubierto <span class="cuenta" id="c-cub"></span></a>
         <a href="#en-vivo" data-vista="en-vivo">Noticias en vivo <span class="cuenta" id="c-viv"></span></a>
         <a href="#regiones" data-vista="regiones">Regiones de Argentina <span class="cuenta">5</span></a>
+        <h3>Regiones y zonas</h3>
+        <a href="#en-vivo" class="sub" data-filtro="region:norte-grande">Norte Grande <small>NEA y NOA</small><span class="cuenta" data-cuenta="region:norte-grande"></span></a>
+        <a href="#en-vivo" class="sub" data-filtro="region:centro">Centro <small>Córdoba, Santa Fe, Entre Ríos</small><span class="cuenta" data-cuenta="region:centro"></span></a>
+        <a href="#en-vivo" class="sub" data-filtro="region:cuyo">Cuyo <small>Mendoza, San Juan, San Luis</small><span class="cuenta" data-cuenta="region:cuyo"></span></a>
+        <a href="#en-vivo" class="sub" data-filtro="region:patagonia">Patagonia <small>La Pampa a Tierra del Fuego</small><span class="cuenta" data-cuenta="region:patagonia"></span></a>
+        <a href="#en-vivo" class="sub" data-filtro="region:buenos-aires">Buenos Aires <small>Provincia y Ciudad</small><span class="cuenta" data-cuenta="region:buenos-aires"></span></a>
+        <a href="#agentes" class="sub" data-filtro="seccion:local">Local <small>Vicente López y zona norte</small><span class="cuenta"></span></a>
+        <a href="#en-vivo" class="sub" data-filtro="zona:argentina">Argentina · nacional<span class="cuenta" data-cuenta="zona:argentina"></span></a>
+        <a href="#en-vivo" class="sub" data-filtro="zona:mercosur">Mercosur y región<span class="cuenta" data-cuenta="zona:mercosur"></span></a>
+        <a href="#en-vivo" class="sub" data-filtro="zona:mundo">Mundo<span class="cuenta" data-cuenta="zona:mundo"></span></a>
         <h3>Redacción</h3>
         <a href="#central" data-vista="central">Central de noticias <span class="cuenta" id="c-cen">●</span></a>
         <a href="#edicion" data-vista="edicion">Edición del día <span class="cuenta" id="c-edi">·</span></a>
-        <a href="#agentes" data-vista="agentes">Redacción automática <span class="cuenta" id="c-age">12</span></a>
         <a href="#mesa" data-vista="mesa">Mesa de edición <span class="cuenta" id="c-mesa">0</span></a>
         <a href="mesa-redaccion-operativa.html" class="ir-admin">Mesa operativa avanzada <span class="cuenta">↗</span></a>
         <a href="https://www.diariofederal.com.ar/admin/" target="_blank" rel="noopener" class="ir-admin">Administrador de noticias <span class="cuenta">↗</span></a>
@@ -787,9 +829,10 @@ body { background: var(--papel); }
         <div class="cinta" id="cinta" hidden><b>Último</b><div class="pista"><ul id="cinta-lista"></ul></div></div>
         <div class="hero">
           <div class="hero-mapa">
-            <span class="rot">Mapa de regiones</span>
-            <svg viewBox="309.6 322.7 87.8 116" role="img" aria-label="Argentina por regiones: tocá una para ver sus noticias"><path class="ar" d="M339.433,424.926L340.8,426.315L342.737,428.554L346.366,430.341L349.854,431.079L349.326,432.562L347.191,432.707L345.656,431.665L344.233,431.585L341.766,431.58ZM350.409,355.177L350.131,357.708L349.943,360.956L350.474,364.101L350.025,364.807L350.171,366.849L350.275,368.495L353.988,371.198L354.02,373.376L355.847,374.747L355.995,376.288L354.314,380.321L350.906,382.008L345.994,382.662L343.166,382.348L344.097,384.219L344.091,386.566L344.898,388.146L343.646,389.248L341.199,389.683L338.538,388.538L337.761,389.359L338.851,392.465L340.756,393.406L341.877,392.423L342.995,394.044L340.959,395.01L339.461,396.944L339.903,400.073L339.758,401.731L337.456,401.741L335.973,403.323L335.922,405.639L338.947,407.896L341.437,408.516L341.397,411.274L339.075,412.998L338.626,416.568L336.834,417.771L336.329,419.187L338.124,422.326L340.272,424.068L339.233,423.915L336.903,423.442L331.083,423.04L329.495,421.285L328.763,419.018L327.253,419.213L326.039,418.115L324.74,414.894L326.128,413.551L326.258,411.61L325.478,410.059L325.947,407.438L325.601,403.355L324.806,401.537L325.711,400.95L325.112,399.779L323.797,399.159L324.242,397.855L322.796,396.676L321.231,393.078L322.06,392.444L320.639,388.634L320.409,385.425L320.399,382.625L321.629,381.481L320.148,378.415L319.48,375.52L320.947,373.461L320.317,370.824L321.142,367.747L320.57,364.839L319.79,364.261L317.557,358.805L318.561,355.557L317.774,352.495L318.228,349.621L319.46,346.651L321.004,344.686L320.032,343.445L320.428,342.428L319.589,337.159L322.247,335.603L322.735,332.32L322.311,331.529L324.168,328.675L327.735,329.444L329.561,331.727L330.302,329.188L333.333,329.316L333.84,329.995L339.31,335.148L341.524,335.624L345.022,337.961L347.882,339.197L348.43,340.593L346.46,345.398L349.212,346.254L352.214,346.741L354.222,346.233L356.299,343.809L356.394,341.021L357.63,340.411L359.156,342.236L359.396,344.761L357.403,346.506L355.814,347.796L353.268,350.863Z"/><g id="burbujas-p"></g></svg>
-            <p class="pie-m">El tamaño de cada punto es la cantidad de notas de los últimos 3 días.</p>
+            <span class="rot" id="hero-rot">Mapa del mundo</span>
+            <div class="seg hero-enc" id="hero-enc" role="group" aria-label="Encuadre del mapa"><button type="button" data-hz="mundo" aria-pressed="true">Mundo</button><button type="button" data-hz="argentina" aria-pressed="false">Argentina</button></div>
+            <svg id="hero-svg" viewBox="0 0 1000 520" role="img" aria-label="Mapa del mundo con las noticias de cada región: tocá un punto para verlas"><g id="hero-paises"></g><g id="burbujas-p"></g></svg>
+            <p class="pie-m" id="hero-pie">El tamaño de cada punto es la cantidad de notas de los últimos 3 días. Tocá Argentina para ver sus regiones.</p>
           </div>
           <div class="region-foco" id="region-foco"></div>
         </div>
@@ -1016,17 +1059,17 @@ body { background: var(--papel); }
       </section>
       <!-- REDACCIÓN AUTOMÁTICA: los 12 agentes (scripts/redaccion.py → datos/redaccion.json) -->
       <section class="vista" id="v-agentes" aria-labelledby="t-age" hidden>
-        <div class="cabeza"><div><h2 id="t-age">Redacción automática</h2><p>Quince agentes arman tres ediciones por día (6:40, 12:40 y 18:40): eligen los temas, leen las fuentes, escriben, verifican, titulan y enlazan. Nada se publica solo: vos elegís qué pasa a la mesa o al diario.</p></div><div class="cifras" id="age-cifras"></div><a class="btn primario" href="mesa-redaccion-operativa.html">Abrir mesa operativa →</a></div>
+        <div class="cabeza"><div><h2 id="t-age">Notas listas para el diario</h2><p>Quince agentes arman tres ediciones por día (6:40, 12:40 y 18:40): eligen los temas, leen las fuentes, escriben, verifican, titulan y enlazan. Nada se publica solo: vos elegís qué pasa a la mesa o al diario.</p></div><div class="cifras" id="age-cifras"></div><a class="btn primario" href="mesa-redaccion-operativa.html">Abrir mesa operativa →</a></div>
         <div id="age-aviso"></div>
-        <h3 class="age-sub">Los agentes</h3>
-        <div class="age-equipo" id="age-equipo"></div>
+        <h3 class="age-sub">Notas de la edición <small id="age-cuando"></small></h3>
+        <div class="filtros"><select id="age-sec" aria-label="Sección"><option value="">Todas las secciones</option><option value="argentina">Argentina</option><option value="local">Local</option><option value="mercosur">Mercosur</option><option value="mundo">Mundo</option></select></div>
+        <div id="age-menu"></div>
         <h3 class="age-sub">Agenda del día <small>lo que los medios anuncian para hoy y los próximos días</small></h3>
         <div id="age-agenda"></div>
         <h3 class="age-sub">Seguimiento <small>temas de días anteriores con notas nuevas</small></h3>
         <div id="age-seg"></div>
-        <h3 class="age-sub">Menú del día <small id="age-cuando"></small></h3>
-        <div class="filtros"><select id="age-sec" aria-label="Sección"><option value="">Todas las secciones</option><option value="argentina">Argentina</option><option value="local">Local</option><option value="mercosur">Mercosur</option><option value="mundo">Mundo</option></select></div>
-        <div id="age-menu"></div>
+        <h3 class="age-sub">Los agentes <small>qué hizo cada uno en la última vuelta</small></h3>
+        <div class="age-equipo" id="age-equipo"></div>
         <h3 class="age-sub">En reserva <small>temas que los monitores encontraron y el jefe dejó afuera</small></h3>
         <div id="age-reserva"></div>
       </section>
@@ -1049,6 +1092,7 @@ body { background: var(--papel); }
   var PT = MAPA.pts;
   var VERIF = ['Sin verificar', 'Una fuente', 'Dos fuentes independientes', 'Documento oficial'];
   var ESTADOS = { senal: 'Señal', inv: 'En investigación', ver: 'En verificación', listo: 'Listo para redacción', red: 'En redacción' };
+  var MUNDO_PTS = { 'América Latina': [300, 255], 'Norteamérica': [255, 140], 'Europa': [528, 100], 'Medio Oriente': [618, 165], 'África': [545, 250], 'Asia': [770, 160], 'Oceanía': [880, 372] };
   var REG_NOMBRES = { 'norte-grande': 'Norte Grande', centro: 'Centro', cuyo: 'Cuyo', patagonia: 'Patagonia', 'buenos-aires': 'Buenos Aires' };
   var NIVEL = { Alto: 3, Medio: 2, Bajo: 1 };
 
@@ -1326,17 +1370,45 @@ body { background: var(--papel); }
     $('cinta').hidden = !ult.length;
     var li = ult.map(function (n) { return '<li><span>' + esc(REG_NOMBRES[n.region] || (n.zona === 'mundo' ? 'Mundo' : n.zona === 'mercosur' ? 'Región' : 'País')) + '</span><a href="' + esc(n.url) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '</a></li>'; }).join('');
     $('cinta-lista').innerHTML = li + li;
-    var max = Math.max.apply(null, Object.keys(cuentas).map(function (k) { return cuentas[k]; }).concat([1]));
-    $('burbujas-p').innerHTML = Object.keys(REG_NOMBRES).map(function (k) {
-      var p = MAPA.regiones[k], r = 1.4 + 3.4 * Math.sqrt(cuentas[k] / max);
-      return '<g class="burbuja' + (estado.regionP === k ? ' sel' : '') + '" data-regp="' + k + '" tabindex="0" role="button" aria-label="' + REG_NOMBRES[k] + ', ' + cuentas[k] + ' notas">' +
+    // mapa: en "Mundo" un punto por región del mundo y uno para Argentina; en "Argentina", un punto por región del país
+    var modo = estado.heroModo || 'mundo', svgH = $('hero-svg');
+    if (!$('hero-paises').firstChild) $('hero-paises').innerHTML = MAPA.paises.map(function (p) { return '<path class="' + (p.ar ? 'ar' : 'pa') + '" d="' + p.d + '"/>'; }).join('');
+    svgH.setAttribute('viewBox', modo === 'argentina' ? '309.6 322.7 87.8 116' : '0 20 1000 440');
+    svgH.classList.toggle('mundo', modo === 'mundo');
+    $('hero-rot').textContent = modo === 'argentina' ? 'Mapa de regiones' : 'Mapa del mundo';
+    $('hero-enc').querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-hz') === modo); });
+    var puntos;
+    if (modo === 'argentina') {
+      puntos = Object.keys(REG_NOMBRES).map(function (k) { return { k: k, n: REG_NOMBRES[k], p: MAPA.regiones[k], c: cuentas[k] }; });
+    } else {
+      var esAr = function (n) { return n.region || n.zona === 'argentina' || n.zona === 'nacional'; };
+      puntos = [{ k: 'ar', n: 'Argentina', p: [350, 372], c: todas.filter(esAr).length }].concat(Object.keys(MUNDO_PTS).map(function (r) {
+        return { k: 'mu:' + r, n: r, p: MUNDO_PTS[r], c: todas.filter(function (n) { return !esAr(n) && n.region_mundo === r; }).length };
+      }));
+    }
+    var max = Math.max.apply(null, puntos.map(function (x) { return x.c; }).concat([1]));
+    var esc1 = modo === 'argentina' ? 1 : 5.2, fs = modo === 'argentina' ? 3.6 : 24;
+    $('burbujas-p').innerHTML = puntos.map(function (x) {
+      var p = x.p, r = (1.4 + 3.4 * Math.sqrt(x.c / max)) * esc1;
+      return '<g class="burbuja' + (estado.regionP === x.k ? ' sel' : '') + '" data-regp="' + x.k + '" tabindex="0" role="button" aria-label="' + esc(x.n) + ', ' + x.c + ' notas">' +
         '<circle class="halo" cx="' + p[0] + '" cy="' + p[1] + '" r="' + (r * 2.1).toFixed(1) + '"/><circle class="n" cx="' + p[0] + '" cy="' + p[1] + '" r="' + r.toFixed(1) + '"/>' +
-        '<text x="' + (p[0] + r * 2.1 + 1).toFixed(1) + '" y="' + (p[1] + 1.3) + '">' + REG_NOMBRES[k] + ' <tspan class="c">' + cuentas[k] + '</tspan></text></g>';
+        '<text style="font-size:' + fs + 'px;stroke-width:' + (fs / 3.6).toFixed(1) + 'px" x="' + (p[0] + r * 2.1 + esc1).toFixed(1) + '" y="' + (p[1] + fs * 0.36).toFixed(1) + '">' + esc(x.n) + ' <tspan class="c">' + x.c + '</tspan></text></g>';
     }).join('');
-    var k = estado.regionP, reg = (D && D.regiones && D.regiones[k]) || {}, lista = todas.filter(function (n) { return n.region === k; });
+    if (estado.regionP && estado.regionP.indexOf('mu:') === 0) {
+      var rm = estado.regionP.slice(3), lm = todas.filter(function (n) { return !(n.region || n.zona === 'argentina' || n.zona === 'nacional') && n.region_mundo === rm; });
+      var fm = lm.find(function (n) { return n.imagen; }) || lm[0], rs = lm.filter(function (n) { return n !== fm; }).slice(0, 6);
+      $('region-foco').innerHTML = '<div class="tope"><div><span>Región del mundo</span><h3>' + esc(rm) + '</h3></div><div><b>' + lm.length + '</b><small>notas, 3 días</small></div></div>' +
+        (fm ? '<div class="principal">' + (fm.imagen ? '<figure><img src="' + esc(fm.imagen) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></figure>' : '') +
+          '<a class="t" href="' + esc(fm.url) + '" target="_blank" rel="noopener">' + esc(fm.titulo) + '</a><span class="meta-n"><span class="medio">' + esc(fm.medio) + '</span><span>' + hace(fm.fecha) + '</span>' + botonMesa(fm) + '</span></div>' +
+          '<ul class="lista-n">' + rs.map(itemN).join('') + '</ul>' : '<p class="sin-datos">Sin titulares de esta región en la última recolección.</p>');
+    }
+    var k = REG_NOMBRES[estado.regionP] ? estado.regionP : null;
+    if (!k && estado.regionP && estado.regionP.indexOf('mu:') === 0) k = '__mundo';
+    if (!k) k = Object.keys(cuentas).sort(function (a, b) { return cuentas[b] - cuentas[a]; })[0];
+    var reg = (D && D.regiones && D.regiones[k]) || {}, lista = todas.filter(function (n) { return n.region === k; });
     var conFoto = lista.find(function (n) { return n.imagen; }), principal = conFoto || lista[0], resto = lista.filter(function (n) { return n !== principal; }).slice(0, 5);
     var vol = (reg.volumen || []).map(function (v) { return v[1]; });
-    $('region-foco').innerHTML = '<div class="tope"><div><span>Región · ' + esc((reg.detalle) || '') + '</span><h3>' + REG_NOMBRES[k] + '</h3></div><div><b>' + cuentas[k] + '</b><small>notas, 3 días</small></div></div>' +
+    if (k !== '__mundo') $('region-foco').innerHTML = '<div class="tope"><div><span>Región · ' + esc((reg.detalle) || '') + '</span><h3>' + REG_NOMBRES[k] + '</h3></div><div><b>' + cuentas[k] + '</b><small>notas, 3 días</small></div></div>' +
       (vol.length > 1 ? '<div>' + spark(vol, 64) + '<div class="spark-pie"><span>' + fechaG(reg.volumen[0][0]) + '</span><span>menciones por día</span><span>' + fechaG(reg.volumen[reg.volumen.length - 1][0]) + '</span></div></div>' : '') +
       (principal ? '<div class="principal">' + (principal.imagen ? '<figure><img src="' + esc(principal.imagen) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></figure>' : '') +
         '<a class="t" href="' + esc(principal.url) + '" target="_blank" rel="noopener">' + esc(principal.titulo) + '</a><span class="meta-n"><span class="medio">' + esc(principal.medio) + '</span><span>' + hace(principal.fecha) + '</span>' +
@@ -1357,9 +1429,16 @@ body { background: var(--papel); }
   function elegirP(ev) {
     var g = ev.target.closest('[data-regp]'); if (!g || ev.target.closest('a')) return;
     if (ev.type === 'keydown' && ev.key !== 'Enter') return;
-    estado.regionP = g.getAttribute('data-regp'); pintarPortada();
+    var sel = g.getAttribute('data-regp');
+    if (sel === 'ar') { estado.heroModo = 'argentina'; estado.regionP = null; } else estado.regionP = sel;
+    pintarPortada();
     if (g.classList.contains('col')) $('region-foco').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
+  $('hero-enc').addEventListener('click', function (ev) {
+    var b = ev.target.closest('[data-hz]'); if (!b) return;
+    estado.heroModo = b.getAttribute('data-hz'); if (estado.heroModo === 'argentina' && !REG_NOMBRES[estado.regionP]) estado.regionP = null;
+    pintarPortada();
+  });
   ['click', 'keydown'].forEach(function (t) { $('burbujas-p').addEventListener(t, elegirP); $('columnas').addEventListener(t, elegirP); });
 
 
@@ -1776,7 +1855,7 @@ body { background: var(--papel); }
     document.querySelector('.cuerpo').style.gridTemplateColumns = $('inspector').hidden && window.matchMedia('(min-width: 961px)').matches ? (window.matchMedia('(max-width: 1180px)').matches ? '210px minmax(0,1fr)' : '236px minmax(0,1fr)') : '';
   }
   function ir() {
-    var v = location.hash.slice(1); if (VISTAS.indexOf(v) < 0) v = 'portada';
+    var v = location.hash.slice(1); if (VISTAS.indexOf(v) < 0) v = 'agentes';
     VISTAS.forEach(function (x) { $('v-' + x).hidden = x !== v; });
     document.querySelectorAll('#nav a').forEach(function (a) { if (a.getAttribute('data-vista') === v) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
     $('inspector').hidden = ['portada', 'central', 'edicion', 'agentes', 'mesa', 'cubierto', 'en-vivo', 'regiones', 'fuentes', 'flujo', 'radar'].indexOf(v) >= 0;
@@ -1786,6 +1865,36 @@ body { background: var(--papel); }
     $('centro').scrollTop = 0;
   }
   window.addEventListener('hashchange', ir);
+
+  // ── Menú izquierdo: cada región o zona abre sus noticias ya filtradas
+  function cuentasNav() {
+    var todas = todasLasNotas();
+    document.querySelectorAll('#nav [data-cuenta]').forEach(function (el) {
+      var f = el.getAttribute('data-cuenta').split(':');
+      el.textContent = todas.filter(function (n) { return f[0] === 'region' ? n.region === f[1] : n.zona === f[1]; }).length || '';
+    });
+  }
+  $('nav').addEventListener('click', function (ev) {
+    var a = ev.target.closest('[data-filtro]'); if (!a) return;
+    var f = a.getAttribute('data-filtro').split(':');
+    if (f[0] === 'seccion') { $('age-sec').value = f[1]; pintarMenu(); }
+    else {
+      ['v-buscar', 'v-zona', 'v-region', 'v-tema', 'v-eje', 'v-mundo'].forEach(function (id) { $(id).value = ''; });
+      $(f[0] === 'region' ? 'v-region' : 'v-zona').value = f[1];
+      estado.limVivo = 60; pintarVivo();
+    }
+    document.querySelectorAll('#nav [data-filtro]').forEach(function (x) { x.classList.toggle('activo', x === a); });
+  });
+
+  // ── Instalar como app en el teléfono
+  var pedidoInstalar = null;
+  window.addEventListener('beforeinstallprompt', function (ev) { ev.preventDefault(); pedidoInstalar = ev; $('btn-instalar').hidden = false; });
+  if (/iphone|ipad/i.test(navigator.userAgent) && !navigator.standalone) $('btn-instalar').hidden = false;
+  $('btn-instalar').addEventListener('click', function () {
+    if (pedidoInstalar) { pedidoInstalar.prompt(); pedidoInstalar.userChoice.then(function () { pedidoInstalar = null; $('btn-instalar').hidden = true; }); }
+    else toast('En iPhone: tocá Compartir (el cuadrado con la flecha) y después "Agregar a inicio"');
+  });
+  window.addEventListener('appinstalled', function () { $('btn-instalar').hidden = true; });
   window.addEventListener('resize', columnas);
 
   function pintarCubierto() {
@@ -1811,7 +1920,7 @@ body { background: var(--papel); }
     $('c-viv').textContent = n; $('r-viv').textContent = n; $('r-con').textContent = ok + ' de ' + (D.estado || []).length;
     $('vivo').className = 'vivo'; $('vivo').textContent = 'Actualizado ' + hace(D.generado);
     $('aviso-act').textContent = 'Última recolección: ' + new Date(D.generado).toLocaleString('es-AR', { dateStyle: 'short', timeStyle: 'short' });
-    pintarVivo(); pintarRegiones(); pintarConexion(); pintarPortada(); pintarCubierto();
+    pintarVivo(); pintarRegiones(); pintarConexion(); pintarPortada(); pintarCubierto(); cuentasNav();
   }
 
   // ── Redacción automática (los 12 agentes: datos/redaccion.json) ──
@@ -1897,6 +2006,17 @@ body { background: var(--papel); }
     if (foto) { r.foto = foto.url; r.epigrafe = foto.credito; }
     return r;
   }
+  function vistazo(b, e) {
+    if (!b.cuerpo_html) return '';
+    var foto = (b.fotos || [])[e.foto || 0], baj = (b.bajadas || [])[e.bajada || 0] || '';
+    var txt = b.cuerpo_html.replace(/<h3[^>]*>.*?<\/h3>/g, ' ').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    var pal = txt.split(' ').length;
+    return '<div class="age-vistazo">' + (foto ? '<img loading="lazy" referrerpolicy="no-referrer" src="' + esc(foto.url) + '" alt="" onerror="this.remove()">' : '') +
+      '<div>' + (baj ? '<p class="baj">' + esc(baj) + '</p>' : '') + '<p class="ini">' + esc(txt.slice(0, 260)) + (txt.length > 260 ? '…' : '') + '</p>' +
+      '<small>' + pal + ' palabras · ' + (b.fuentes || []).length + ' fuentes' + (b.verificacion && b.verificacion.estado ? ' · verificación ' + esc(b.verificacion.estado) : '') + '</small></div></div>' +
+      '<div class="age-acc rapida"><a class="btn primario grande" target="_blank" rel="noopener" data-al-diario="' + b.id + '" href="#">Mandar al diario ↗</a>' +
+      '<button type="button" class="btn" data-a-mesa="' + b.id + '">Editar antes</button></div>';
+  }
   function pintarMenu() {
     if (!RED) { $('age-menu').innerHTML = ''; $('age-reserva').innerHTML = ''; return; }
     var sec = $('age-sec').value, M = (RED.menu || []).filter(function (b) { return !sec || b.seccion === sec; });
@@ -1933,7 +2053,8 @@ body { background: var(--papel); }
         '<span><span class="semaforo ' + esc(v.estado || '') + '"></span> ' + (b.n_medios || 0) + (b.n_medios === 1 ? ' medio' : ' medios') + '</span>' + (b.firma ? '<span>✍ ' + esc(b.firma) + '</span>' : '') + '</div>' +
         '<h4>' + esc((b.titulos || [])[e.titulo || 0] || b.titulo_tema) + '</h4>' + (b.por_que ? '<p class="porque">Por qué: ' + esc(b.por_que) + '</p>' : '') +
         (b.titulos && b.titulos[0] && b.titulos[0] !== b.titulo_tema ? '<p class="porque">Tema original: ' + esc(b.titulo_tema) + '</p>' : '') + '</div>' +
-        '<details><summary>Ver borrador, verificación, fotos y fuentes</summary><div class="age-cuerpo">' + cuerpo + ver + fotos + fts + rel + acc + '</div></details></article>';
+        vistazo(b, e) +
+        '<details><summary>Ver nota completa, verificación, fotos y fuentes</summary><div class="age-cuerpo">' + cuerpo + ver + fotos + fts + rel + acc + '</div></details></article>';
     }).join('') : '<div class="vacio">No hay temas en esta sección en la última vuelta.</div>';
     $('age-menu').querySelectorAll('[data-al-diario]').forEach(function (a) {
       var b = (RED.menu || []).filter(function (x) { return x.id === a.getAttribute('data-al-diario'); })[0];

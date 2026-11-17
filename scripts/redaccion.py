@@ -39,6 +39,19 @@ from ia import IA, SinClave  # noqa: E402
 NAVEGADOR = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36 CentroInformacion-DiarioFederal"
 DIARIO = "https://www.diariofederal.com.ar"
 MERCOSUR = {"Brasil", "Brazil", "Uruguay", "Paraguay", "Bolivia", "Chile", "Venezuela"}
+MARCAS_AR = re.compile(r"\b(argentin\w*|milei|kicillof|caputo|bullrich|villarruel|francos|adorni|casa rosada|indec|bcra|banco central|"
+                       r"congreso|senado|diputados|gobernador\w*|intendent\w*|provincia\w*|bonaerense\w*|porten\w*|caba|peronism\w*|"
+                       r"kirchner\w*|libertari\w*|anses|pami|afip|arca|dolar blue|cgt|uom|ypf|vaca muerta|malvinas|afa|"
+                       r"corrientes|misiones|chaco|formosa|jujuy|salta|tucuman|catamarca|santiago del estero|la rioja|cordoba|santa fe|"
+                       r"entre rios|rosario|mendoza|san juan|san luis|neuquen|rio negro|chubut|santa cruz|tierra del fuego|la pampa|"
+                       r"la plata|mar del plata|bahia blanca|conurbano)\b")
+MARCAS_MERCOSUR = re.compile(r"\b(mercosur|brasil\w*|lula|uruguay\w*|orsi|paraguay\w*|bolivia\w*|chile\w*|kast)\b")
+# Lo que el diario no cubre: deportes, farándula, estilo de vida, recetas (cine y cultura sí)
+DESCARTE = re.compile(r"\b(futbol|goleada|amistoso|gol|goles|hinchas?|liga profesional|copa libertadores|copa sudamericana|mundial de clubes|"
+                      r"boca juniors|river plate|messi|scaloni|seleccion argentina de futbol|tenis|formula 1|f1|nba|boxeo|rugby|"
+                      r"gran hermano|reality|farandula|famosos?|horoscopo|receta|recetas|look|outfit|influencer|tiktoker|"
+                      r"partido (?:de|ante|contra)|vs\.?|resultado del partido)\b")
+REGIONES_OK = {"norte-grande", "centro", "cuyo", "patagonia", "buenos-aires"}
 SECCIONES = {"argentina": "Argentina", "local": "Local", "mercosur": "Mercosur", "mundo": "Mundo"}
 MONITOR_DE = {"argentina": "monitor-argentina", "local": "monitor-local", "mercosur": "monitor-mercosur", "mundo": "monitor-mundo"}
 AGENCIAS = ["EFE", "AFP", "Reuters", "ANSA", "Europa Press", "Noticias Argentinas", "Xinhua", "Sputnik", "DPA", "Bloomberg",
@@ -124,8 +137,15 @@ def seccion_de(n, claves_local):
         return "local"
     if n.get("zona") == "mercosur" or n.get("pais") in MERCOSUR:
         return "mercosur"
-    if n.get("region") or n.get("zona") in ("argentina", "nacional") or n.get("pais") == "Argentina":
+    if n.get("region") or REC.region_de(n.get("titulo") or ""):
         return "argentina"
+    if n.get("zona") in ("argentina", "nacional") or n.get("pais") == "Argentina":
+        # un medio argentino que cuenta algo de afuera va a Mercosur o Mundo, no a Argentina
+        if MARCAS_AR.search(texto):
+            return "argentina"
+        if MARCAS_MERCOSUR.search(texto):
+            return "mercosur"
+        return "mundo"
     return "mundo"
 
 
@@ -177,15 +197,62 @@ def parecidos(a, b, umbral=AG.UMBRAL):
     return AG.jaccard(AG.raices(a), AG.raices(b)) >= umbral
 
 
+NO_NOMBRES = set("el la los las un una en por con para tras que como quien sin ante sobre desde hasta cuando donde este esta "
+                 "o os as um uma no na nos nas do da dos das com pelo pela "
+                 "gobierno presidente ministro ministra estado estados nacional provincia ciudad lunes martes miercoles jueves "
+                 "viernes sabado domingo enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre "
+                 "governo presidente segunda terca quarta quinta sexta".split())
+
+
+def nombres(titulo):
+    """Nombres propios del titular (Lula, Sánchez, Corte, Shenzhen…), recortados a 5 letras: sirven en castellano y en portugués."""
+    salida = set()
+    for i, p in enumerate(re.findall(r"[\wÁÉÍÓÚÑáéíóúñçãõâêô]+", titulo or "")):
+        if not p[:1].isupper() or len(p) < 4:
+            continue
+        k = sin_acentos(p.lower())[:5]
+        if k not in NO_NOMBRES:
+            salida.add(k)
+    return salida
+
+
+def mismo_hecho(a, b):
+    na, nb = nombres(a), nombres(b)
+    return len(na & nb) >= 2 or parecidos(a, b, 0.4)
+
+
+def editor_repetidos(menu, recientes, ia):
+    """Una sola consulta a la IA: marca los temas que repiten un hecho ya trabajado o que repiten otro del menú,
+    aunque estén en otro idioma o con otro ángulo. Devuelve los ids a sacar."""
+    if not ia.disponible or not menu:
+        return set()
+    lista = "\n".join(f"#{c['id']} {c['titulo']}" for c in menu)
+    ya = "\n".join("- " + t for t in recientes[-45:]) or "(ninguno)"
+    prompt = ("Sos editor de un diario. Abajo hay temas YA PUBLICADOS en los últimos días y CANDIDATOS para hoy.\n"
+              "Marcá los candidatos que cuentan EL MISMO HECHO que uno ya publicado o que otro candidato, aunque esté en otro idioma "
+              "(portugués, inglés) o con otras palabras. No marques una novedad real sobre un tema viejo (un hecho nuevo sí vale).\n"
+              "Si dos candidatos son el mismo hecho, marcá solo el segundo.\n\n"
+              f"YA PUBLICADOS:\n{ya}\n\nCANDIDATOS:\n{lista}\n\n"
+              'Respondé SOLO con JSON: {"repetidos": [3, 7]}')
+    try:
+        r = ia.json(prompt)
+        return {int(str(x).lstrip("#")) for x in (r.get("repetidos") or []) if str(x).lstrip("#").isdigit()}
+    except Exception as e:  # noqa: BLE001
+        print(f"Editor de repetidos: no pudo revisar ({e})", flush=True)
+        return set()
+
+
 def jefe(candidatos, conf, ia, reg, historial):
     cupos = conf["cupos"]
     recientes = [h["titulo"] for h in historial]
     # fuera los temas ya trabajados en los últimos días y los repetidos entre secciones
     limpios = []
     for c in sorted(candidatos, key=lambda c: c["puntaje"], reverse=True):
-        if any(parecidos(c["titulo"], t, 0.4) for t in recientes):
+        if DESCARTE.search(sin_acentos(c["titulo"])):
             continue
-        if any(parecidos(c["titulo"], x["titulo"]) for x in limpios):
+        if any(mismo_hecho(c["titulo"], t) for t in recientes):
+            continue
+        if any(mismo_hecho(c["titulo"], x["titulo"]) or parecidos(c["titulo"], x["titulo"]) for x in limpios):
             continue
         limpios.append(c)
 
@@ -228,8 +295,22 @@ def jefe(candidatos, conf, ia, reg, historial):
         total = sum(cupos.values())
         if not menu:
             raise ValueError("la IA no eligió ningún tema válido")
-        menu = menu[: total + 2]
-        reg.anotar("jefe", "funcionó", f"Eligió {len(menu)} de {len(limpios)} temas", len(menu))
+        fuera = editor_repetidos(menu, recientes, ia)
+        if fuera:
+            menu = [c for c in menu if c["id"] not in fuera]
+            print(f"Editor de repetidos: sacó {len(fuera)} temas repetidos", flush=True)
+        # se completa hasta el cupo con los mejores que quedaron, sin repetir hechos
+        for c in limpios:
+            if len(menu) >= total + 4:
+                break
+            if sum(1 for x in menu if x["seccion"] == c["seccion"]) >= cupos.get(c["seccion"], 0) + 1:
+                continue
+            if c in menu or c["id"] in fuera or any(mismo_hecho(c["titulo"], x["titulo"]) for x in menu):
+                continue
+            c.setdefault("prioridad", "normal")
+            menu.append(c)
+        menu = menu[: total + 4]  # se arman algunos de más: los que no tengan material suficiente se descartan
+        reg.anotar("jefe", "funcionó", f"Eligió {len(menu)} de {len(limpios)} temas" + (f" · sacó {len(fuera)} repetidos" if fuera else ""), len(menu))
         return menu, "ia"
     except Exception as e:  # noqa: BLE001
         menu = por_reglas()
@@ -341,14 +422,37 @@ def material(tema, fts, textos, tope=2500):
 
 def redactor(tema, fts, textos, ia):
     total = sum(len((textos.get(f["url"]) or "").split()) for f in fts)
-    mn, mx = (350, 550) if total > 300 else (150, 250)
+    if total < 120:
+        # solo hay titulares y copetes: con eso sale una nota hueca que repite lo mismo. Mejor no hacerla.
+        raise ValueError(f"poco material: no se pudieron leer las notas originales ({total} palabras)")
+    mn, mx = (350, 550) if total > 300 else (180, 280)
     prompt = instruccion("redactor", min=mn, max=mx, estilo=instruccion("estilo")) + "\n\n" + material(tema, fts, textos)
     r = ia.json(prompt)
-    html = limpiar_html(r.get("cuerpo_html", ""))
-    if palabras(html) < 60:
-        raise ValueError("el borrador vino vacío o muy corto")
-    return {"cuerpo_html": html, "region": r.get("region") or tema.get("region") or "", "tema": r.get("tema") or tema.get("tema"),
+    html = sin_cabeza_suelta(limpiar_html(r.get("cuerpo_html", "")))
+    if palabras(html) < 120:
+        raise ValueError(f"el borrador vino muy corto ({palabras(html)} palabras)")
+    if repite_parrafos(html):
+        raise ValueError("el borrador repite los mismos párrafos")
+    region = str(r.get("region") or "").strip().lower()
+    region = region if region in REGIONES_OK else (tema.get("region") or "")
+    if tema.get("seccion") in ("mundo", "mercosur"):
+        region = ""
+    return {"cuerpo_html": html, "region": region, "tema": r.get("tema") or tema.get("tema"),
             "falta": r.get("falta"), "breve": total <= 300}
+
+
+def sin_cabeza_suelta(html):
+    """Saca un primer párrafo o subtítulo de dos o tres palabras (la IA a veces repite la volanta arriba del texto)."""
+    m = re.match(r"\s*<(p|h3)>(.*?)</\1>", html or "", re.S)
+    if m and len(re.sub(r"<[^>]+>", " ", m.group(2)).split()) <= 5:
+        return html[m.end():].lstrip()
+    return html
+
+
+def repite_parrafos(html):
+    pars = [AG.raices(re.sub(r"<[^>]+>", " ", p)) for p in re.findall(r"<p>(.*?)</p>", html or "", re.S)]
+    pars = [p for p in pars if len(p) >= 5]
+    return any(AG.jaccard(pars[i], pars[j]) >= 0.6 for i in range(len(pars)) for j in range(i + 1, len(pars)))
 
 
 # ───────────────────────── 8 · verificador ─────────────────────────
@@ -721,6 +825,8 @@ def main():
                 e["resultado"] = "sin clave de IA"
             else:
                 e["resultado"] = "esperando borradores"
+        if e["resultado"] in ("falló", "con fallas") and cuenta[aid] and cuenta[aid] >= max(1, cuenta["redactor"]) // 2:
+            e["resultado"] = "funcionó"
         if e["resultado"] == "esperando borradores":
             e["detalle"] = "Trabaja sobre los borradores del Redactor, que todavía no escribió ninguno"
         elif e["resultado"] not in ("sin clave de IA",):
@@ -730,6 +836,14 @@ def main():
         e["produjo"] = cuenta[aid]
         e.setdefault("fin", ahora())
 
+    # Solo quedan en el menú las notas escritas, hasta el cupo; las que no tuvieron material vuelven a la reserva
+    total = sum(conf["cupos"].values())
+    sin_borrador = [b for b in borradores if not b.get("cuerpo_html")]
+    borradores = [b for b in borradores if b.get("cuerpo_html")][: total]
+    escritos = {b["titulo_tema"] for b in borradores}
+    menu = [t for t in menu if t["titulo"] in escritos]
+    if sin_borrador:
+        print(f"{len(sin_borrador)} temas sin material suficiente quedaron en la reserva", flush=True)
     elegidos = {id(t) for t in menu}
     reserva = [{"seccion": c["seccion"], "titulo": c["titulo"], "n_medios": c["n_medios"], "puntaje": c["puntaje"], "region": c.get("region"), "ejes": c.get("ejes", []),
                 "tema": c.get("tema"), "notas": [{k: n.get(k) for k in ("medio", "url", "titulo", "fecha", "pais")} for n in c["notas"][:4]]}
