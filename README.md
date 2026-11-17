@@ -14,3 +14,15 @@ Los expedientes de la página son ejemplos hasta que se conecte la verificación
 
 Para sumar una fuente RSS: agregarla en `datos/fuentes-rss.json` y correr el workflow a mano
 (pestaña Actions → Recolectar noticias → Run workflow). En "Fuentes y agencias" se ve si respondió.
+
+## Clave de la mesa (opcional)
+
+Los endpoints `/api/publicar` y `/api/reformular` aceptan el header `X-Mesa-Token`.
+Si configurás `MESA_TOKEN` en Vercel (Settings -> Environment Variables), los endpoints
+solo responden a quien tenga esa clave: la mesa la pide una vez por navegador y la guarda.
+Si la variable no existe, todo sigue funcionando como antes.
+
+## Idioma de los borradores
+
+Los agentes escriben en castellano, así que `scripts/redaccion.py` descarta los titulares
+en portugués (u otro idioma sin tildes del castellano) antes de armar el menú.

@@ -51,6 +51,16 @@ DESCARTE = re.compile(r"\b(futbol|goleada|amistoso|gol|goles|hinchas?|liga profe
                       r"boca juniors|river plate|messi|scaloni|seleccion argentina de futbol|tenis|formula 1|f1|nba|boxeo|rugby|"
                       r"gran hermano|reality|farandula|famosos?|horoscopo|receta|recetas|look|outfit|influencer|tiktoker|"
                       r"partido (?:de|ante|contra)|vs\.?|resultado del partido)\b")
+# Portugués: la mesa escribe en castellano, así que un titular de medio brasileño no sirve
+# como candidato (el borrador saldría en portugués). Se detecta por letras que el castellano
+# no usa (ã, õ, ç) o por palabras que solo existen en portugués.
+MARCAS_PT = re.compile(r"[ãõç]|\b(não|são|é|um|uma|mais|ao|aos|com|em|das|você|também|após|nesta|neste|seu|sua)\b", re.I)
+
+
+def es_portugues(titulo):
+    return bool(MARCAS_PT.search(titulo or ""))
+
+
 REGIONES_OK = {"norte-grande", "centro", "cuyo", "patagonia", "buenos-aires"}
 SECCIONES = {"argentina": "Argentina", "local": "Local", "mercosur": "Mercosur", "mundo": "Mundo"}
 MONITOR_DE = {"argentina": "monitor-argentina", "local": "monitor-local", "mercosur": "monitor-mercosur", "mundo": "monitor-mundo"}
@@ -155,6 +165,8 @@ def monitores(noticias, conf, reg):
     por_seccion = {s: [] for s in SECCIONES}
     for n in AG.todas_las_notas(noticias):
         if REC.es_ruido(n.get("titulo") or ""):
+            continue
+        if es_portugues(n.get("titulo") or ""):
             continue
         if not n.get("ejes"):  # datos viejos o RSS: se marcan los ejes acá también
             n["ejes"] = REC.ejes_de((n.get("titulo") or "") + " " + (n.get("resumen") or ""))

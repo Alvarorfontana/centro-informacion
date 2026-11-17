@@ -15,6 +15,16 @@ module.exports = async function handler(req, res) {
       return res.status(403).json({ ok: false, error: 'Origen no válido.' });
     }
   }
+  // Clave de la mesa: si MESA_TOKEN está configurada en Vercel, el pedido tiene que traerla.
+  // Sin esa variable el endpoint sigue funcionando como antes (así la mesa no se rompe al desplegar).
+  const mesaToken = process.env.MESA_TOKEN;
+  if (mesaToken) {
+    const enviado = String(req.headers['x-mesa-token'] || '');
+    if (enviado !== mesaToken) {
+      res.setHeader('X-Mesa-Auth', 'required');
+      return res.status(401).json({ ok: false, code: 'TOKEN_REQUIRED', error: 'Falta la clave de la mesa o es incorrecta. Volvé a cargarla.' });
+    }
+  }
   const token = process.env.DIARIO_ARTICULOS_API_TOKEN;
   if (!token) {
     return res.status(503).json({

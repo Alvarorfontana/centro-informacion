@@ -64,6 +64,16 @@ module.exports = async function handler(req, res) {
   if (req.method !== 'POST') { res.setHeader('Allow', 'POST'); return res.status(405).json({ ok: false, error: 'Método no permitido.' }); }
   const origin = req.headers.origin;
   if (origin) { try { if (new URL(origin).host !== req.headers.host) return res.status(403).json({ ok: false, error: 'Origen no autorizado.' }); } catch { return res.status(403).json({ ok: false, error: 'Origen no válido.' }); } }
+  // Clave de la mesa: si MESA_TOKEN está configurada en Vercel, el pedido tiene que traerla.
+  // Sin esa variable el endpoint sigue funcionando como antes (así la mesa no se rompe al desplegar).
+  const mesaToken = process.env.MESA_TOKEN;
+  if (mesaToken) {
+    const enviado = String(req.headers['x-mesa-token'] || '');
+    if (enviado !== mesaToken) {
+      res.setHeader('X-Mesa-Auth', 'required');
+      return res.status(401).json({ ok: false, code: 'TOKEN_REQUIRED', error: 'Falta la clave de la mesa o es incorrecta. Volvé a cargarla.' });
+    }
+  }
   const n = req.body && typeof req.body === 'object' ? req.body : {};
   if (!n.cuerpo || String(n.cuerpo).trim().length < 80) return res.status(400).json({ ok: false, error: 'La nota no tiene texto suficiente para reformular.' });
   n.cuerpo = String(n.cuerpo).slice(0, 15000); n.instruccion = String(n.instruccion || '').slice(0, 400);
