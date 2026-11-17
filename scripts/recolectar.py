@@ -2,7 +2,7 @@
 """
 Recolector del Centro de Información de Diario Federal.
 
-Lo corre GitHub Actions cada hora (.github/workflows/recolectar.yml). Trae:
+Lo corre GitHub Actions dos veces por día (.github/workflows/recolectar.yml). Trae:
   1. GDELT (gratis y abierto): noticias de medios argentinos por región del país,
      del Mercosur y del mundo, más el volumen diario de menciones de cada región.
   2. RSS de agencias y medios (datos/fuentes-rss.json): solo título, enlace, fecha
@@ -13,6 +13,7 @@ Escribe datos/noticias.json, que lee la página. Cada fuente queda con su estado
 """
 
 import json
+import os
 import re
 import sys
 import time
@@ -26,6 +27,19 @@ RAIZ = Path(__file__).resolve().parent.parent
 DATOS = RAIZ / "datos"
 AGENTE = "Mozilla/5.0 (CentroInformacion; uso periodistico)"
 GDELT = "https://api.gdeltproject.org/api/v2/doc/doc"
+
+# Presupuesto de tiempo. GitHub Actions cobra los minutos de los repos privados y el plan
+# gratuito tiene un tope mensual: si una vuelta se cuelga esperando fuentes lentas, se come
+# el cupo del mes y después ningún workflow arranca. Cuando se pasa de este presupuesto se
+# corta lo que falta, se sigue con los RSS y se guarda igual: noticias parciales sirven,
+# una corrida colgada no.
+PRESUPUESTO = int(os.environ.get("PRESUPUESTO_MINUTOS", "15")) * 60
+INICIO = time.time()
+
+
+def sin_tiempo():
+    return (time.time() - INICIO) > PRESUPUESTO
+
 
 # Mismas regiones que usa el sitio del diario (src/lib/regiones.ts).
 REGIONES = {
@@ -131,11 +145,11 @@ def pedir(url, intentos=3):
     for i in range(intentos):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": AGENTE})
-            with urllib.request.urlopen(req, timeout=40) as r:
+            with urllib.request.urlopen(req, timeout=15) as r:
                 return r.read()
         except Exception as e:  # noqa: BLE001
             ultimo = e
-            time.sleep(6 * (i + 1))
+            time.sleep(3 * (i + 1))
     raise ultimo
 
 
@@ -285,6 +299,10 @@ def main():
     for rid, r in REGIONES.items():
         consulta = f"{r['consulta']} sourcecountry:AR"
         reg = {"nombre": r["nombre"], "detalle": r["detalle"], "notas": [], "volumen": []}
+        if sin_tiempo():
+            salida["regiones"][rid] = reg
+            salida["estado"].append({"fuente": f"GDELT · {r['nombre']}", "ok": False, "error": "Sin tiempo en esta vuelta"})
+            continue
         try:
             datos = gdelt(consulta)
             # GDELT trae notas que nombran la provincia en cualquier parte del texto: solo se
@@ -310,21 +328,28 @@ def main():
                 salida["estado"].append({"fuente": f"Bing · {r['nombre']}", "ok": True, "notas": len(reg["notas"]), "via": "Bing Noticias"})
             except Exception as e:  # noqa: BLE001
                 salida["estado"].append({"fuente": f"Bing · {r['nombre']}", "ok": False, "error": str(e)[:160]})
-        try:
-            vol = gdelt(consulta, modo="timelinevolraw", periodo="14d")
-            serie = (vol.get("timeline") or [{}])[0].get("data", [])
-            # GDELT da puntos cada 15 minutos o por día según el período: se suman por día
-            por_dia = {}
-            for p in serie:
-                dia = str(p.get("date", ""))[:8]
-                por_dia[dia] = por_dia.get(dia, 0) + int(p.get("value", 0) or 0)
-            reg["volumen"] = [[d, por_dia[d]] for d in sorted(por_dia)][-14:]
-        except Exception as e:  # noqa: BLE001
-            salida["estado"].append({"fuente": f"GDELT volumen · {r['nombre']}", "ok": False, "error": str(e)[:160]})
+        if sin_tiempo():
+            salida["estado"].append({"fuente": f"GDELT volumen · {r['nombre']}", "ok": False, "error": "Sin tiempo en esta vuelta"})
+        else:
+            try:
+                vol = gdelt(consulta, modo="timelinevolraw", periodo="14d")
+                serie = (vol.get("timeline") or [{}])[0].get("data", [])
+                # GDELT da puntos cada 15 minutos o por día según el período: se suman por día
+                por_dia = {}
+                for p in serie:
+                    dia = str(p.get("date", ""))[:8]
+                    por_dia[dia] = por_dia.get(dia, 0) + int(p.get("value", 0) or 0)
+                reg["volumen"] = [[d, por_dia[d]] for d in sorted(por_dia)][-14:]
+            except Exception as e:  # noqa: BLE001
+                salida["estado"].append({"fuente": f"GDELT volumen · {r['nombre']}", "ok": False, "error": str(e)[:160]})
         salida["regiones"][rid] = reg
         print(f"región {rid}: {len(reg['notas'])} notas, {len(reg['volumen'])} días de volumen", flush=True)
 
     for zid, z in ZONAS.items():
+        if sin_tiempo():
+            salida["zonas"][zid] = {"nombre": z["nombre"], "notas": []}
+            salida["estado"].append({"fuente": f"GDELT · {z['nombre']}", "ok": False, "error": "Sin tiempo en esta vuelta"})
+            continue
         try:
             datos = gdelt(z["consulta"], maximo=50)
             notas = [n for n in (nota_gdelt(a, zona=zid) for a in datos.get("articles", [])) if not es_ruido(n["titulo"])]
@@ -347,6 +372,10 @@ def main():
     # agenda: cada eje se busca a propósito en medios argentinos (y del mundo hispano para Mercosur, EE.UU. y guerras)
     salida["ejes"] = {}
     for e in EJES:
+        if sin_tiempo():
+            salida["ejes"][e["id"]] = {"nombre": e["nombre"], "notas": []}
+            salida["estado"].append({"fuente": f"GDELT · agenda {e['nombre']}", "ok": False, "error": "Sin tiempo en esta vuelta"})
+            continue
         try:
             notas, urls, fallas = [], set(), []
             for consulta in e.get("consultas") or [e["consulta"]]:  # un eje puede juntar varias búsquedas
