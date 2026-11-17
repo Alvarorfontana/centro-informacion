@@ -1,2 +1,6 @@
 __pycache__/
 .DS_Store
+
+# Claves locales (Gemini, WhatsApp, Telegram). GitHub Actions usa Secrets y Vercel sus
+# variables de entorno: este archivo nunca va al repo ni al deploy.
+secretos/
