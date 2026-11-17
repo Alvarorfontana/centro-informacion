@@ -29,6 +29,9 @@ jobs:
       - name: Recolectar
         env:
           PYTHONUNBUFFERED: '1'
+          # Tope de tiempo para las búsquedas: lo que no entra se corta y se guarda lo que hay.
+          # Cada minuto de más se descuenta del cupo mensual de minutos de GitHub Actions.
+          PRESUPUESTO_MINUTOS: '15'
         run: python scripts/recolectar.py
       - name: Urgentes
         continue-on-error: true
