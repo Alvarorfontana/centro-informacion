@@ -32,26 +32,26 @@
 <style id="ajustes-telefono">@media(max-width:760px){aside.lateral{position:static!important;height:auto!important;max-height:none!important}}@media(max-width:560px){#nav{flex-wrap:wrap;overflow:visible;gap:6px}#nav h3{display:none}#nav a{flex:1 1 auto;justify-content:center;white-space:nowrap}}</style>
 <link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/iconos/icon-192.png"><link rel="apple-touch-icon" href="/iconos/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Central"><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){})})</script></head>
 <body>
-<title>Centro de Información · Diario Federal</title>
+<title>Central de noticias · EL DIARIO</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Barlow+Condensed:wght@500;600;700&display=swap">
 <style>
 /* Layout: mesa de redacción en tres columnas — módulos a la izquierda, trabajo al centro, expediente a la derecha; en celular, una sola columna */
-/* Una sola apariencia, a propósito: azul noche de sala de noticias, con el rojo del diario */
+/* Apariencia clara, de papel, con el rojo y el logo de EL DIARIO */
 :root {
-  --papel: #0e1a2b; --superficie: #15243a; --hundido: #1c2e48; --tinta: #f1f4f9; --tinta-2: #b4c0d3; --tinta-3: #7d8ba3;
-  --linea: #263a57; --rojo: #ff3d4f; --rojo-suave: #3d1a2a; --rojo-tinta: #ff8592; --brillo: rgba(255, 61, 79, .35);
-  --v0: #8d9ab0; --v1: #f2b544; --v2: #44d1b0; --v3: #5fd889; --v0-f: #22344f; --v1-f: #3a3020; --v2-f: #123a3c; --v3-f: #173b33;
-  --estatal: #cfa6f5; --estatal-f: #2d2747;
-  --tierra: #22375a; --mar: #0f1d31; --borde-mapa: #355075;
-  --barra: #0a1424; --hover: #1a2b44; --mapa-fondo: #1b2d4a;
+  --papel: #F6F4EF; --superficie: #FFFFFF; --hundido: #EEEBE4; --tinta: #16181D; --tinta-2: #3F434A; --tinta-3: #6A6E75;
+  --linea: #DEDAD2; --rojo: #D0021B; --rojo-suave: #FBE6E8; --rojo-tinta: #B5121B; --brillo: transparent;
+  --v0: #6A6E75; --v1: #9A6200; --v2: #0E7A6B; --v3: #1F7A3D; --v0-f: #EEEBE4; --v1-f: #F8EDD6; --v2-f: #DCF1EC; --v3-f: #E1F1E5;
+  --estatal: #6B3FA0; --estatal-f: #EFE7F8;
+  --tierra: #D9D3C7; --mar: #EEF2F5; --borde-mapa: #FFFFFF;
+  --barra: #FBFAF7; --hover: #EEEBE4; --mapa-fondo: #ECEFF2;
   --display: "Newsreader", Georgia, "Times New Roman", serif;
   --ui: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
   --cond: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
-  color-scheme: dark;
+  color-scheme: light;
 }
 [hidden] { display: none !important; }
 html, body { height: 100%; }
@@ -405,15 +405,15 @@ body { background: var(--papel); }
 .lateral { background: var(--barra); border-right-color: var(--linea); }
 .marca { border-bottom-color: var(--linea); }
 .marca .nombre { font-size: 23px; }
-.marca .nombre::before { width: 9px; height: 22px; box-shadow: 0 0 14px var(--brillo); }
+.marca .nombre::before { width: 13px; height: 13px; border-radius: 3px; background: var(--rojo); }
 .marca small { font-family: var(--cond); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--rojo-tinta); }
 .nav h3 { font-family: var(--cond); font-size: 12px; letter-spacing: .18em; color: var(--tinta-3); }
 .nav a { color: var(--tinta-2); font-weight: 600; border-radius: 3px; }
 .nav a:hover { background: var(--hundido); }
 .nav a.ir-admin { color: var(--rojo-tinta); }
 .nav a.ir-admin .cuenta { color: var(--rojo-tinta); }
-.nav a[aria-current="page"] { background: linear-gradient(90deg, var(--rojo-suave), transparent); color: #fff; box-shadow: inset 3px 0 0 var(--rojo); }
-.cabeza h2 { font-family: var(--cond); font-weight: 700; font-size: 38px; letter-spacing: .01em; text-transform: uppercase; line-height: 1; }
+.nav a[aria-current="page"] { background: var(--rojo-suave); color: var(--rojo-tinta); box-shadow: inset 3px 0 0 var(--rojo); }
+.cabeza h2 { font-family: var(--display); font-weight: 700; font-size: 32px; letter-spacing: -.01em; line-height: 1.1; }
 .exp, .titulares, .reg, .kpis div, .escala div, .mapa-full, .mapa-ar, .tabla-caja, .conexion, .ramas-grilla .rama, .resumen-fuentes div, .insp-cab, .inspector { background: var(--superficie); }
 .inspector { background: var(--barra); }
 .filtros select, .filtros input, .btn, .chip { background: var(--hundido); border-color: var(--linea); }
@@ -451,7 +451,7 @@ body { background: var(--papel); }
 .hero-mapa .burbuja .halo { fill: var(--rojo); opacity: .18; }
 .hero-mapa .burbuja .n { fill: var(--rojo); stroke: var(--barra); stroke-width: .35; }
 .hero-mapa .burbuja.sel .halo { opacity: .35; }
-.hero-mapa .burbuja.sel .n { fill: #fff; }
+.hero-mapa .burbuja.sel .n { fill: var(--tinta); }
 .hero-mapa .burbuja text { font-family: var(--cond); font-size: 3.6px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; fill: var(--tinta); paint-order: stroke; stroke: var(--papel); stroke-width: 1px; }
 .hero-mapa .burbuja text tspan.c { fill: var(--rojo-tinta); }
 .hero-mapa .rot { position: absolute; z-index: 2; left: 14px; top: 12px; font-family: var(--cond); font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--tinta-3); }
@@ -469,7 +469,7 @@ body { background: var(--papel); }
 .principal { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; padding-bottom: 12px; border-bottom: 1px solid var(--linea); }
 .principal figure { margin: 0 0 6px; aspect-ratio: 16 / 8; border-radius: 4px; overflow: hidden; background: var(--hundido); max-width: 100%; }
 .principal figure img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.principal a.t { font-family: var(--display); font-size: clamp(21px, 2.2vw, 28px); line-height: 1.15; font-weight: 700; color: #fff; text-decoration: none; text-wrap: balance; }
+.principal a.t { font-family: var(--display); font-size: clamp(21px, 2.2vw, 28px); line-height: 1.15; font-weight: 700; color: var(--tinta); text-decoration: none; text-wrap: balance; }
 .principal a.t:hover { color: var(--rojo-tinta); }
 .meta-n { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; font-size: 12px; color: var(--tinta-3); }
 .meta-n .medio { color: var(--tinta-2); font-weight: 700; }
@@ -501,7 +501,7 @@ body { background: var(--papel); }
 .col .spark { height: 30px; }
 .col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
 .col li a { color: var(--tinta-2); text-decoration: none; font-size: 12.5px; line-height: 1.35; display: block; }
-.col li a:hover { color: #fff; }
+.col li a:hover { color: var(--rojo-tinta); }
 .mundo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .bloque-z { background: var(--superficie); border: 1px solid var(--linea); border-radius: 6px; padding: 14px 18px; min-width: 0; }
 .bloque-z h4 { margin: 0 0 4px; font-family: var(--cond); font-weight: 700; font-size: 20px; text-transform: uppercase; letter-spacing: .04em; display: flex; justify-content: space-between; }
@@ -526,7 +526,7 @@ body { background: var(--papel); }
 
 /* Mesa de edición */
 .a-mesa { background: none; border: 1px solid var(--linea); color: var(--tinta-2); border-radius: 3px; padding: 2px 8px; font-size: 11.5px; font-weight: 700; white-space: nowrap; }
-.a-mesa:hover { border-color: var(--rojo); color: #fff; }
+.a-mesa:hover { border-color: var(--rojo); color: var(--rojo-tinta); }
 .a-mesa.en { background: var(--rojo-suave); border-color: var(--rojo); color: var(--rojo-tinta); }
 .mesa { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.35fr); gap: 16px; align-items: start; }
 .mesa-fuentes, .mesa-editor { background: var(--superficie); border: 1px solid var(--linea); border-radius: 6px; padding: 16px 18px; min-width: 0; }
@@ -540,7 +540,7 @@ body { background: var(--papel); }
 .fuente-m button:hover { color: var(--rojo-tinta); }
 .resumen-m { margin: 2px 0 0; font-size: 13px; color: var(--tinta-2); line-height: 1.45; }
 .fuente-m .insertar-m { justify-self: start; margin: 4px 0 0; background: var(--hundido); border: 1px solid var(--linea); color: var(--tinta); border-radius: 3px; padding: 5px 10px; font-size: 12.5px; font-weight: 700; }
-.fuente-m .insertar-m:hover { border-color: var(--rojo); color: #fff; }
+.fuente-m .insertar-m:hover { border-color: var(--rojo); color: var(--rojo-tinta); }
 .mesa-vacia { color: var(--tinta-2); font-size: 14px; display: grid; gap: 8px; }
 .mesa-editor { display: grid; gap: 12px; }
 .mesa-editor label { display: grid; gap: 5px; font-size: 12px; font-weight: 700; color: var(--tinta-2); text-transform: uppercase; letter-spacing: .06em; }
@@ -767,15 +767,30 @@ body { background: var(--papel); }
   .nav a.destacado { order: -10 !important; }
   .nav a.sub small { display: none; }
 }
+
+/* ── Versión clara (tapa de papel, logo EL DIARIO) ── */
+.marca .nombre { font-family: var(--ui); font-weight: 800; letter-spacing: -.02em; font-size: 22px; }
+.marca small { font-family: var(--ui); font-size: 14px; letter-spacing: -.01em; text-transform: none; color: var(--tinta); font-weight: 700; border-left: 1px solid var(--linea); padding-left: 10px; margin-left: 10px; }
+.marca { display: flex; flex-wrap: wrap; align-items: center; }
+.marca .btn-instalar { flex-basis: 100%; }
+.aviso { font-family: var(--ui); font-size: 12px; letter-spacing: 0; padding-block: 5px; }
+.aviso b { border-radius: 2px; }
+.btn.primario, .btn-admin { box-shadow: none; }
+.portada-cab h2, .region-foco h3 { font-family: var(--display); text-transform: none; letter-spacing: -.01em; }
+.cn { margin: 0; min-height: 0; border: 1px solid var(--linea); }
+#v-central .cn-logo { display: none; }
+.pedir-ahora { display: inline-block; margin-top: 8px; font-weight: 700; color: var(--rojo-tinta); text-decoration: none; }
+@media (max-width: 760px) { .aviso { padding-block: 4px; } .aviso #aviso-act { display: none; } .aviso .btn-admin { padding: 4px 10px; font-size: 12px; } .cabeza h2 { font-size: 26px; } .marca small { font-size: 13px; } }
+@media (max-width: 420px) { .aviso-txt { display: none; } }
 </style>
 <div class="app">
   <div class="aviso" role="note">
-    <span><b>PROTOTIPO</b>Las noticias en vivo son reales (GDELT y RSS). Los expedientes son ejemplos para probar el diseño.</span>
+    <span><b>PROTOTIPO</b><span class="aviso-txt">Noticias reales (GDELT y RSS). Los expedientes son de prueba.</span></span>
     <span class="aviso-der"><span id="aviso-act">Diario Federal · uso interno</span><a class="btn-admin" href="https://www.diariofederal.com.ar/admin/" target="_blank" rel="noopener">Administrador de noticias ↗</a></span>
   </div>
   <div class="cuerpo">
     <aside class="lateral" aria-label="Módulos">
-      <div class="marca"><div class="nombre">Diario Federal</div><small>Central de noticias</small><button type="button" class="btn-instalar" id="btn-instalar" hidden>Instalar en el teléfono</button></div>
+      <div class="marca"><div class="nombre">EL DIARIO</div><small>Central de noticias</small><button type="button" class="btn-instalar" id="btn-instalar" hidden>Instalar en el teléfono</button></div>
       <nav class="nav" id="nav">
         <h3>Notas</h3>
         <a href="#agentes" data-vista="agentes" class="destacado">Notas listas para el diario <span class="cuenta" id="c-age">·</span></a>
@@ -1059,7 +1074,7 @@ body { background: var(--papel); }
       </section>
       <!-- REDACCIÓN AUTOMÁTICA: los 12 agentes (scripts/redaccion.py → datos/redaccion.json) -->
       <section class="vista" id="v-agentes" aria-labelledby="t-age" hidden>
-        <div class="cabeza"><div><h2 id="t-age">Notas listas para el diario</h2><p>Quince agentes arman tres ediciones por día (6:40, 12:40 y 18:40): eligen los temas, leen las fuentes, escriben, verifican, titulan y enlazan. Nada se publica solo: vos elegís qué pasa a la mesa o al diario.</p></div><div class="cifras" id="age-cifras"></div><a class="btn primario" href="mesa-redaccion-operativa.html">Abrir mesa operativa →</a></div>
+        <div class="cabeza"><div><h2 id="t-age">Notas listas para el diario</h2><p>Los agentes preparan borradores solos a las 6:00 y a las 17:00. Eso no te frena: las notas se ven y se arman a cualquier hora, y lo que recibís sigue entrando. Nada se publica solo: vos elegís qué pasa a la mesa o al diario.<br><a class="pedir-ahora" href="https://github.com/Alvarorfontana/centro-informacion/actions/workflows/redaccion.yml" target="_blank" rel="noopener">Pedir notas nuevas ahora ↗</a></p></div><div class="cifras" id="age-cifras"></div><a class="btn primario" href="mesa-redaccion-operativa.html">Abrir mesa operativa →</a></div>
         <div id="age-aviso"></div>
         <h3 class="age-sub">Notas de la edición <small id="age-cuando"></small></h3>
         <div class="filtros"><select id="age-sec" aria-label="Sección"><option value="">Todas las secciones</option><option value="argentina">Argentina</option><option value="local">Local</option><option value="mercosur">Mercosur</option><option value="mundo">Mundo</option></select></div>
@@ -1962,7 +1977,7 @@ body { background: var(--papel); }
     $('c-age').textContent = RED ? (RED.menu || []).length : '12';
     if (RED) $('age-atajo-txt').textContent = (RED.menu || []).length + ' temas en el menú del día · ' + (RED.menu || []).filter(function (b) { return b.cuerpo_html; }).length + ' borradores escritos · armado ' + hace(RED.generado);
     if (!RED) {
-      $('age-equipo').innerHTML = '<div class="vacio-vivo"><b>Los agentes todavía no corrieron</b><p>La próxima edición se arma sola a las 6:40, 12:40 o 18:40. Para no esperar: en GitHub, pestaña Actions → "Redacción automática" → Run workflow.</p></div>';
+      $('age-equipo').innerHTML = '<div class="vacio-vivo"><b>Los agentes todavía no corrieron</b><p>Se arman solos a las 6:00 y 17:00. Para no esperar: <a href="https://github.com/Alvarorfontana/centro-informacion/actions/workflows/redaccion.yml" target="_blank" rel="noopener">abrí este enlace</a> y tocá "Run workflow".</p></div>';
       return;
     }
     var AGD = RED.agenda || [], SEG = RED.seguimiento || [];
@@ -2149,11 +2164,11 @@ body { background: var(--papel); }
     location.hash = 'mesa'; toast('Nota en la mesa de edición');
   }
   function pintarEdicion() {
-    if (!RED) { $('ed-prop').innerHTML = '<div class="vacio">Todavía no hay una edición armada. La próxima se arma sola a las 6:40, 12:40 o 18:40.</div>'; return; }
+    if (!RED) { $('ed-prop').innerHTML = '<div class="vacio">Todavía no hay una edición armada. Se arma sola a las 6:00 y 17:00, o pedila ahora desde «Notas listas».</div>'; return; }
     var gen = new Date(RED.generado), edn = RED.edicion || '';
     $('ed-sello').textContent = NOMBRE_ED[edn] || 'Edición';
     $('ed-fecha').textContent = gen.toLocaleDateString('es-AR', { weekday: 'long', day: 'numeric', month: 'long' }) + ' · armada a las ' + gen.toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
-    $('ed-horas').innerHTML = [['mañana', '6:40'], ['mediodía', '12:40'], ['tarde', '18:40']].map(function (h) { return '<span class="' + (h[0] === edn ? 'hoy' : '') + '">' + h[1] + ' · ' + h[0] + '</span>'; }).join('');
+    $('ed-horas').innerHTML = [['mañana', '6:00'], ['tarde', '17:00']].map(function (h) { return '<span class="' + (h[0] === edn ? 'hoy' : '') + '">' + h[1] + ' · ' + h[0] + '</span>'; }).join('');
     var M = RED.menu || [];
     var apr = M.filter(function (b) { return EST_ED[b.id] === 'aprobada'; }).length, des = M.filter(function (b) { return EST_ED[b.id] === 'descartada'; }).length;
     $('ed-estado').textContent = M.length + ' notas propuestas · ' + apr + ' aprobadas · ' + des + ' descartadas · ' + (M.length - apr - des) + ' por revisar';
@@ -2250,10 +2265,10 @@ body { background: var(--papel); }
       return '<div class="cn-urgente"><b>● URGENTE · ' + esc(new Date(u.desde).toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })) + '</b><a href="' + esc(n.url || '#') + '" target="_blank" rel="noopener">' + esc(u.titulo) + '</a><small>' + u.n_medios + ' medios</small></div>';
     }).join('') : '';
     // edición en curso
-    if (!RED) { $('cn-prop').innerHTML = '<p class="cn-ed-estado">La próxima edición se arma sola a las 6:40, 12:40 o 18:40.</p>'; return; }
+    if (!RED) { $('cn-prop').innerHTML = '<p class="cn-ed-estado">Se arma sola a las 6:00 y 17:00, o pedila ahora desde «Notas listas».</p>'; return; }
     var M = RED.menu || [];
     var apr = M.filter(function (b) { return EST_ED[b.id] === 'aprobada'; }).length, des = M.filter(function (b) { return EST_ED[b.id] === 'descartada'; }).length;
-    $('cn-ed-sello').textContent = (NOMBRE_ED[RED.edicion] || 'Edición') + (RED.edicion === 'mañana' ? ' · 6:40' : RED.edicion === 'mediodía' ? ' · 12:40' : RED.edicion === 'tarde' ? ' · 18:40' : '');
+    $('cn-ed-sello').textContent = (NOMBRE_ED[RED.edicion] || 'Edición') + (RED.edicion === 'mañana' ? ' · 6:00' : RED.edicion === 'tarde' ? ' · 17:00' : '');
     $('cn-ed-estado').textContent = M.length + ' notas · ' + apr + ' aprobadas · ' + des + ' descartadas · ' + (M.length - apr - des) + ' por revisar';
     $('cn-barra-a').style.width = (M.length ? 100 * apr / M.length : 0) + '%'; $('cn-barra-d').style.width = (M.length ? 100 * des / M.length : 0) + '%';
     $('c-cen').textContent = M.length - apr - des;
