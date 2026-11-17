@@ -1,10 +1,11 @@
 name: Recolectar noticias
 
-# Cada 3 horas (antes cada hora: se gastaban los minutos gratis de GitHub) trae noticias reales de GDELT y de los RSS de datos/fuentes-rss.json
+# Dos veces por día (6:00 y 17:00 de Argentina) trae noticias reales de GDELT y de los RSS de datos/fuentes-rss.json
 # y las guarda en datos/noticias.json, que es lo que muestra el Centro.
 on:
   schedule:
-    - cron: '17 0,3,6,9,12,15,18,21 * * *'
+    - cron: '0 9 * * *'    # 6:00 de Argentina
+    - cron: '0 20 * * *'   # 17:00 de Argentina
   workflow_dispatch:
 
 permissions:

@@ -301,7 +301,7 @@ def jefe(candidatos, conf, ia, reg, historial):
             print(f"Editor de repetidos: sacó {len(fuera)} temas repetidos", flush=True)
         # se completa hasta el cupo con los mejores que quedaron, sin repetir hechos
         for c in limpios:
-            if len(menu) >= total + 4:
+            if len(menu) >= total + 2:
                 break
             if sum(1 for x in menu if x["seccion"] == c["seccion"]) >= cupos.get(c["seccion"], 0) + 1:
                 continue
@@ -309,7 +309,7 @@ def jefe(candidatos, conf, ia, reg, historial):
                 continue
             c.setdefault("prioridad", "normal")
             menu.append(c)
-        menu = menu[: total + 4]  # se arman algunos de más: los que no tengan material suficiente se descartan
+        menu = menu[: total + 2]  # se arman algunos de más: los que no tengan material suficiente se descartan
         reg.anotar("jefe", "funcionó", f"Eligió {len(menu)} de {len(limpios)} temas" + (f" · sacó {len(fuera)} repetidos" if fuera else ""), len(menu))
         return menu, "ia"
     except Exception as e:  # noqa: BLE001
