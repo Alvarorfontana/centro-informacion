@@ -139,13 +139,24 @@ def pedir(url, intentos=3):
     raise ultimo
 
 
+GDELT_CORTADO = False  # si GDELT contesta 429 una vez, no se le insiste en esta vuelta: se pasa directo a Bing (ahorra ~30 minutos)
+
+
 def gdelt(consulta, modo="artlist", periodo="3d", maximo=40):
+    global GDELT_CORTADO
+    if GDELT_CORTADO:
+        raise RuntimeError("GDELT cortado en esta vuelta (429): se usa Bing")
     params = {"query": consulta, "mode": modo, "format": "json", "timespan": periodo, "sort": "datedesc"}
     if modo == "artlist":
         params["maxrecords"] = str(maximo)
     url = GDELT + "?" + urllib.parse.urlencode(params)
-    crudo = pedir(url)
-    time.sleep(9)  # GDELT pide no más de una consulta cada 5 segundos; desde GitHub conviene más margen
+    try:
+        crudo = pedir(url, intentos=1)
+    except Exception as e:  # noqa: BLE001
+        if "429" in str(e):
+            GDELT_CORTADO = True
+        raise
+    time.sleep(6)  # GDELT pide no más de una consulta cada 5 segundos; desde GitHub conviene más margen
     try:
         return json.loads(crudo.decode("utf-8", "ignore"))
     except json.JSONDecodeError:
@@ -370,14 +381,23 @@ def main():
         salida["zonas"].setdefault("nacional", {"nombre": ZONAS["nacional"]["nombre"], "notas": []})["notas"].extend(sueltas)
 
     fuentes = json.loads((DATOS / "fuentes-rss.json").read_text(encoding="utf-8"))
-    for f in fuentes:
+
+    def una(f):
         try:
-            notas = leer_rss(f)
-            salida["rss"].extend(notas)
-            salida["estado"].append({"fuente": f["nombre"], "ok": True, "notas": len(notas), "tipo": f.get("tipo"), "via": "RSS"})
+            return f, leer_rss(f), None
         except Exception as e:  # noqa: BLE001
-            salida["estado"].append({"fuente": f["nombre"], "ok": False, "error": str(e)[:160], "tipo": f.get("tipo"), "via": "RSS"})
-        print(f"rss {f['nombre']}: {salida['estado'][-1]}", flush=True)
+            return f, None, e
+
+    # los RSS se leen de a 10 a la vez: antes iban de a uno y la vuelta tardaba demasiado
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        for f, notas, e in pool.map(una, fuentes):
+            if e is None:
+                salida["rss"].extend(notas)
+                salida["estado"].append({"fuente": f["nombre"], "ok": True, "notas": len(notas), "tipo": f.get("tipo"), "via": "RSS"})
+            else:
+                salida["estado"].append({"fuente": f["nombre"], "ok": False, "error": str(e)[:160], "tipo": f.get("tipo"), "via": "RSS"})
+            print(f"rss {f['nombre']}: {salida['estado'][-1]}", flush=True)
 
     # sin duplicados por enlace; cada nota queda marcada con sus ejes de agenda y su región del mundo
     vistos = {}
