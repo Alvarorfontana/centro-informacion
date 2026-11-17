@@ -779,6 +779,17 @@ body { background: var(--papel); }
 .portada-cab h2, .region-foco h3 { font-family: var(--display); text-transform: none; letter-spacing: -.01em; }
 .cn { margin: 0; min-height: 0; border: 1px solid var(--linea); }
 #v-central .cn-logo { display: none; }
+/* Menú del teléfono: botón Secciones que abre la lista completa */
+.btn-menu { display: none; }
+@media (max-width: 960px) {
+  .btn-menu { display: inline-flex; align-items: center; margin-left: auto; border: 1px solid var(--tinta); background: var(--tinta); color: #fff; border-radius: 4px; padding: 7px 12px; font: 700 13px var(--ui); }
+  .marca small { margin-right: 8px; }
+  #nav { display: none !important; }
+  body.menu-abierto #nav { display: grid !important; grid-template-columns: 1fr 1fr; gap: 6px; overflow-y: auto; max-height: 72vh; -webkit-mask-image: none; mask-image: none; padding: 6px 14px 14px; flex-wrap: wrap; }
+  body.menu-abierto #nav h3 { display: block !important; grid-column: 1 / -1; padding: 10px 2px 2px; }
+  body.menu-abierto #nav a { white-space: normal; justify-content: space-between; order: 0 !important; }
+  body.menu-abierto #nav a.destacado { grid-column: 1 / -1; }
+}
 .pedir-ahora { display: inline-block; margin-top: 8px; font-weight: 700; color: var(--rojo-tinta); text-decoration: none; }
 @media (max-width: 760px) { .aviso { padding-block: 4px; } .aviso #aviso-act { display: none; } .aviso .btn-admin { padding: 4px 10px; font-size: 12px; } .cabeza h2 { font-size: 26px; } .marca small { font-size: 13px; } }
 @media (max-width: 420px) { .aviso-txt { display: none; } }
@@ -790,7 +801,7 @@ body { background: var(--papel); }
   </div>
   <div class="cuerpo">
     <aside class="lateral" aria-label="Módulos">
-      <div class="marca"><div class="nombre">EL DIARIO</div><small>Central de noticias</small><button type="button" class="btn-instalar" id="btn-instalar" hidden>Instalar en el teléfono</button></div>
+      <div class="marca"><div class="nombre">EL DIARIO</div><small>Central de noticias</small><button type="button" class="btn-menu" id="btn-menu" aria-expanded="false" aria-controls="nav">☰ Secciones</button><button type="button" class="btn-instalar" id="btn-instalar" hidden>Instalar en el teléfono</button></div>
       <nav class="nav" id="nav">
         <h3>Notas</h3>
         <a href="#agentes" data-vista="agentes" class="destacado">Notas listas para el diario <span class="cuenta" id="c-age">·</span></a>
@@ -2304,14 +2315,15 @@ body { background: var(--papel); }
 </script>
 
 <script>
+function abrirMenu(si){var m=document.getElementById('btn-menu');document.body.classList.toggle('menu-abierto',si);if(m){m.setAttribute('aria-expanded',si?'true':'false');m.textContent=si?'✕ Cerrar':'☰ Secciones';}}
+document.getElementById('btn-menu').addEventListener('click',function(){abrirMenu(!document.body.classList.contains('menu-abierto'))});
+document.getElementById('nav').addEventListener('click',function(e){if(e.target.closest('a')&&window.innerWidth<=960){abrirMenu(false);setTimeout(function(){window.scrollTo({top:0})},60)}});
 /* En el teléfono el menú queda arriba del contenido: al tocar una sección se baja hasta ella */
-(function(){var b=document.createElement('button');b.type='button';b.textContent='☰ Menú';b.setAttribute('aria-label','Volver al menú de secciones');
-b.style.cssText='position:fixed;right:14px;bottom:18px;z-index:80;display:none;padding:10px 14px;border-radius:999px;border:1px solid #ff4d5e;background:#d0021b;color:#fff;font:700 14px system-ui;box-shadow:0 6px 18px rgba(0,0,0,.4)';
-b.onclick=function(){var n=document.getElementById('nav');if(n)window.scrollTo({top:n.getBoundingClientRect().top+window.scrollY-10,behavior:'smooth'})};document.body.appendChild(b);
-function ver(){var n=document.getElementById('nav');b.style.display=(window.innerWidth<=760&&n&&n.getBoundingClientRect().bottom<80)?'block':'none'}window.addEventListener('scroll',ver,{passive:true});window.addEventListener('resize',ver);})();
-(function(){var nav=document.getElementById('nav');if(!nav)return;
-nav.addEventListener('click',function(e){var a=e.target.closest('a[data-vista]');if(!a||window.innerWidth>760)return;
- var id='v-'+a.dataset.vista;setTimeout(function(){var v=document.getElementById(id);if(v&&v.offsetParent){var y=v.getBoundingClientRect().top+window.scrollY-8;window.scrollTo({top:y,behavior:'smooth'})}},120)});})();
+(function(){var b=document.createElement('button');b.type='button';b.textContent='☰ Secciones';b.setAttribute('aria-label','Abrir el menú de secciones');
+b.style.cssText='position:fixed;left:14px;bottom:18px;z-index:80;display:none;padding:10px 14px;border-radius:999px;border:1px solid #ff4d5e;background:#d0021b;color:#fff;font:700 14px system-ui;box-shadow:0 6px 18px rgba(0,0,0,.4)';
+b.onclick=function(){window.scrollTo({top:0,behavior:'smooth'});abrirMenu(true)};document.body.appendChild(b);
+function ver(){b.style.display=(window.innerWidth<=960&&window.scrollY>300&&!document.body.classList.contains('menu-abierto'))?'block':'none'}window.addEventListener('scroll',ver,{passive:true});window.addEventListener('resize',ver);})();
+
 </script>
 </body>
 </html>
