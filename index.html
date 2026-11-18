@@ -2022,7 +2022,7 @@ body { background: var(--papel); }
       '<span>Opcional, de respaldo: una clave de <a href="https://console.groq.com/keys" target="_blank" rel="noopener">Groq</a> con el nombre <code>GROQ_API_KEY</code>.</span></div>';
   }
   function reporteDe(b) {
-    var e = eleccion[b.id] || {}, foto = (b.fotos || [])[e.foto == null ? -1 : e.foto];
+    var e = eleccion[b.id] || {}, foto = (b.fotos || [])[e.foto == null ? 0 : e.foto];
     var html = limpiarHtml(b.cuerpo_html || '');
     var tmp = document.createElement('div'); tmp.innerHTML = html;
     var r = { titulo: (b.titulos || [])[e.titulo || 0] || b.titulo_tema, bajada: (b.bajadas || [])[e.bajada || 0] || '', cuerpo: tmp.innerText.trim(), cuerpoHtml: html,
