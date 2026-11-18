@@ -8,8 +8,10 @@ on:
   schedule:
     - cron: '47 8 * * *'    # 5:47 de Argentina (edición de la mañana)
     - cron: '47 9 * * *'    # 6:47, respaldo
+    - cron: '17 11 * * *'   # 8:17, segundo respaldo (el 18/11 GitHub no disparó ni la de 5:47 ni la de 6:47)
     - cron: '47 19 * * *'   # 16:47 de Argentina (edición de la tarde)
     - cron: '47 20 * * *'   # 17:47, respaldo
+    - cron: '17 22 * * *'   # 19:17, segundo respaldo
   workflow_dispatch:
 
 permissions:
