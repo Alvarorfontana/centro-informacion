@@ -44,7 +44,10 @@ MARCAS_AR = re.compile(r"\b(argentin\w*|milei|kicillof|caputo|bullrich|villarrue
                        r"kirchner\w*|libertari\w*|anses|pami|afip|arca|dolar blue|cgt|uom|ypf|vaca muerta|malvinas|afa|"
                        r"corrientes|misiones|chaco|formosa|jujuy|salta|tucuman|catamarca|santiago del estero|la rioja|cordoba|santa fe|"
                        r"entre rios|rosario|mendoza|san juan|san luis|neuquen|rio negro|chubut|santa cruz|tierra del fuego|la pampa|"
-                       r"la plata|mar del plata|bahia blanca|conurbano)\b")
+                       r"la plata|mar del plata|bahia blanca|conurbano|campana|zarate|san nicolas|ramallo|baradero|pilar|escobar|tigre|san isidro|"
+                       r"vicente lopez|quilmes|avellaneda|lanus|lomas de zamora|la matanza|moron|merlo|moreno|tandil|olavarria|junin|pergamino|"
+                       r"necochea|lujan|ushuaia|rawson|comodoro rivadavia|bariloche|parana|posadas|resistencia|san salvador|ruta nacional|ruta provincial)\b")
+MARCAS_AR_FIRMES = re.compile(r"\b(argentin\w*|milei|kicillof|casa rosada|buenos aires|bonaerense\w*|campana|zarate|rosario|mar del plata|bahia blanca|la plata|vaca muerta|ypf)\b")
 MARCAS_MERCOSUR = re.compile(r"\b(mercosur|brasil\w*|lula|uruguay\w*|orsi|paraguay\w*|bolivia\w*|chile\w*|kast)\b")
 # Lo que el diario no cubre: deportes, farándula, estilo de vida, recetas (cine y cultura sí)
 DESCARTE = re.compile(r"\b(futbol|goleada|amistoso|gol|goles|hinchas?|liga profesional|copa libertadores|copa sudamericana|mundial de clubes|"
@@ -156,6 +159,9 @@ def seccion_de(n, claves_local):
         if MARCAS_MERCOSUR.search(texto):
             return "mercosur"
         return "mundo"
+    # un medio de afuera que cuenta algo de la Argentina (sin las palabras genéricas como "senado" o "provincia")
+    if MARCAS_AR_FIRMES.search(texto):
+        return "argentina"
     return "mundo"
 
 
