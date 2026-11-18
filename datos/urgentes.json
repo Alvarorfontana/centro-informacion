@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T17:37:41+00:00",
+ "generado": "2026-11-18T18:26:13+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
@@ -51,10 +51,9 @@
   },
   {
    "titulo": "Cumbre de EEUU, China y Rusia: qué se sabe del histórico encuentro entre Trump, Xi Jinping y Putin",
-   "n_medios": 5,
+   "n_medios": 4,
    "paises": [
-    "Argentina",
-    "Francia"
+    "Argentina"
    ],
    "region": null,
    "tema": "Geopolítica",
@@ -87,12 +86,6 @@
      "url": "https://www.pagina12.com.ar/2026/11/18/trump-xi-jinping-y-putin-y-un-primer-saludo-antes-de-la-cumbre-de-shenzen/",
      "medio": "Página/12",
      "fecha": "2026-11-18T15:02:16+00:00"
-    },
-    {
-     "titulo": "Cumbre APEC: Trump es recibido por Xi Jinping y estrecha la mano con Putin",
-     "url": "https://www.france24.com/es/cumbre-apec-trump-es-recibido-por-xi-jinping-y-estrecha-la-mano-con-putin",
-     "medio": "France 24 Español",
-     "fecha": "2026-11-18T13:43:41+00:00"
     }
    ]
   }
