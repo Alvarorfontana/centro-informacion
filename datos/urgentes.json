@@ -1,56 +1,8 @@
 {
- "generado": "2026-11-18T16:33:19+00:00",
+ "generado": "2026-11-18T17:37:41+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
-  {
-   "titulo": "Trump, Xi Jinping y Putin y un primer saludo antes de la cumbre de Shenzen",
-   "n_medios": 7,
-   "paises": [
-    "Argentina",
-    "Francia",
-    "Italia"
-   ],
-   "region": null,
-   "tema": "Geopolítica",
-   "ejes": [
-    "internacional"
-   ],
-   "desde": "2026-11-18T16:33:19+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Cumbre de EEUU, China y Rusia: qué se sabe del histórico encuentro entre Trump, Xi Jinping y Putin",
-     "url": "https://www.lanacion.com.ar/el-mundo/cumbre-de-eeuu-china-y-rusia-que-se-sabe-del-historico-encuentro-entre-trump-xi-jinping-y-putin-nid18112026/",
-     "medio": "La Nación",
-     "fecha": "2026-11-18T16:17:52+00:00"
-    },
-    {
-     "titulo": "Xi Jinping recibe a Trump con un abrazo antes de la cumbre tripartita sin precedentes con Putin",
-     "url": "https://www.diarionorte.com/336843-xi-jinping-recibe-a-trump-con-un-abrazo-antes-de-la-cumbre-tripartita-sin-precedentes-con-putin",
-     "medio": "Diario Norte (Chaco)",
-     "fecha": "2026-11-18T15:56:48+00:00"
-    },
-    {
-     "titulo": "Trump se reunirá por separado con Putin en China, aparte de reunión tripartita EEUU-Rusia-China",
-     "url": "https://www.clarin.com/estados-unidos/trump-se-reunira-por-separado-con-putin-en-china-aparte-de-reunion-tripartita-eeuu-rusia-china_0_12UFOAFoPq.html",
-     "medio": "Clarín",
-     "fecha": "2026-11-18T15:50:07+00:00"
-    },
-    {
-     "titulo": "Trump, Putin e Xi a Shenzhen tra abbracci e strette di mano",
-     "url": "https://www.ansa.it/sito/notizie/mondo/2026/11/18/trump-putin-e-xi-a-shenzhen-tra-abbracci-e-strette-di-mano_9e7135eb-3e7b-4851-bfab-d2fbdb0e6829.html",
-     "medio": "ANSA Latina",
-     "fecha": "2026-11-18T15:47:55+00:00"
-    },
-    {
-     "titulo": "Trump, Xi Jinping y Putin y un primer saludo antes de la cumbre de Shenzen",
-     "url": "https://www.pagina12.com.ar/2026/11/18/trump-xi-jinping-y-putin-y-un-primer-saludo-antes-de-la-cumbre-de-shenzen/",
-     "medio": "Página/12",
-     "fecha": "2026-11-18T15:02:16+00:00"
-    }
-   ]
-  },
   {
    "titulo": "Suspensión de las PASO: el oficialismo eliminará las listas colectoras que dividían a sus aliados del Senado",
    "n_medios": 6,
@@ -98,43 +50,49 @@
    ]
   },
   {
-   "titulo": "Golpe al Gobierno: no consiguió quórum en Diputados para avanzar con la ley Malvinas y la reforma del BCRA",
-   "n_medios": 4,
+   "titulo": "Cumbre de EEUU, China y Rusia: qué se sabe del histórico encuentro entre Trump, Xi Jinping y Putin",
+   "n_medios": 5,
    "paises": [
-    "Argentina"
+    "Argentina",
+    "Francia"
    ],
    "region": null,
-   "tema": "Política",
+   "tema": "Geopolítica",
    "ejes": [
-    "economia",
-    "politica"
+    "internacional"
    ],
-   "desde": "2026-11-18T16:33:19+00:00",
+   "desde": "2026-11-18T17:37:41+00:00",
    "avisado": false,
    "notas": [
     {
-     "titulo": "Fracaso libertario: por falta de quorum se cayó la sesión en Diputados por la ley de Malvinas y la reforma del BCRA",
-     "url": "https://www.ambito.com/politica/diputados-sesiona-la-ley-defensa-la-soberania-nacional-y-la-reforma-del-banco-central-n6346397",
-     "medio": "Ámbito",
-     "fecha": "2026-11-18T15:57:00+00:00"
+     "titulo": "Cumbre de EEUU, China y Rusia: qué se sabe del histórico encuentro entre Trump, Xi Jinping y Putin",
+     "url": "https://www.lanacion.com.ar/el-mundo/cumbre-de-eeuu-china-y-rusia-que-se-sabe-del-historico-encuentro-entre-trump-xi-jinping-y-putin-nid18112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-18T16:17:52+00:00"
     },
     {
-     "titulo": "Giro sorpresivo en Diputados: no hubo quórum para sancionar BCRA y la ley Malvinas",
-     "url": "https://www.cronista.com/economia-politica/bcra-y-malvinas-con-cambios-el-oficialismo-avanza-en-dos-proyectos-emblema-de-milei/",
-     "medio": "El Cronista",
-     "fecha": "2026-11-18T15:36:54+00:00"
+     "titulo": "Xi Jinping recibe a Trump con un abrazo antes de la cumbre tripartita sin precedentes con Putin",
+     "url": "https://www.diarionorte.com/336843-xi-jinping-recibe-a-trump-con-un-abrazo-antes-de-la-cumbre-tripartita-sin-precedentes-con-putin",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-18T15:56:48+00:00"
     },
     {
-     "titulo": "Golpe al Gobierno: no consiguió quórum en Diputados para avanzar con la ley Malvinas y la reforma del BCRA",
-     "url": "https://perfil.com/politica/golpe-al-gobierno-no-consiguio-quorum-en-diputados-para-avanzar-con-la-ley-malvinas-y-la-reforma-del-bcra-a4lKw6b5huMt",
-     "medio": "Perfil",
-     "fecha": "2026-11-18T15:36:41+00:00"
+     "titulo": "Trump se reunirá por separado con Putin en China, aparte de reunión tripartita EEUU-Rusia-China",
+     "url": "https://www.clarin.com/estados-unidos/trump-se-reunira-por-separado-con-putin-en-china-aparte-de-reunion-tripartita-eeuu-rusia-china_0_12UFOAFoPq.html",
+     "medio": "Clarín",
+     "fecha": "2026-11-18T15:50:07+00:00"
     },
     {
-     "titulo": "La Libertad Avanza no consiguió quórum y Diputados quedó sin tratar la ley de Malvinas y la reforma de la Carta Orgánica del BCRA",
-     "url": "https://www.lagaceta.com.ar/nota/1163097/politica/libertad-avanza-no-consiguio-quorum-diputados-quedo-sin-tratar-ley-malvinas-reforma-carta-organica-bcra.html",
-     "medio": "La Gaceta (Tucumán)",
-     "fecha": "2026-11-18T13:19:00+00:00"
+     "titulo": "Trump, Xi Jinping y Putin y un primer saludo antes de la cumbre de Shenzen",
+     "url": "https://www.pagina12.com.ar/2026/11/18/trump-xi-jinping-y-putin-y-un-primer-saludo-antes-de-la-cumbre-de-shenzen/",
+     "medio": "Página/12",
+     "fecha": "2026-11-18T15:02:16+00:00"
+    },
+    {
+     "titulo": "Cumbre APEC: Trump es recibido por Xi Jinping y estrecha la mano con Putin",
+     "url": "https://www.france24.com/es/cumbre-apec-trump-es-recibido-por-xi-jinping-y-estrecha-la-mano-con-putin",
+     "medio": "France 24 Español",
+     "fecha": "2026-11-18T13:43:41+00:00"
     }
    ]
   }
