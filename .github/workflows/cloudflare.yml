@@ -1,0 +1,46 @@
+name: Publicar en Cloudflare
+
+# Publica la Central en Cloudflare Pages (gratis, sin tope diario).
+# Corre una sola vez cuando termina cada vuelta del recolector o de los agentes,
+# y cuando se sube un cambio a mano. Así no se gasta un despliegue por cada commit.
+# Necesita dos secretos en GitHub (Settings → Secrets and variables → Actions):
+#   CLOUDFLARE_API_TOKEN y CLOUDFLARE_ACCOUNT_ID
+on:
+  workflow_run:
+    workflows: ['Recolectar noticias', 'Redacción automática']
+    types: [completed]
+  push:
+    branches: [main]
+    paths-ignore: ['datos/**']
+  workflow_dispatch:
+
+concurrency:
+  group: cloudflare
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Armar la carpeta del sitio
+        run: |
+          mkdir _sitio
+          rsync -a --exclude='.git*' --exclude='_sitio' --exclude='scripts' --exclude='functions' \
+            --exclude='api' --exclude='secretos' --exclude='__pycache__' --exclude='vercel.json' ./ _sitio/
+      - name: Crear el proyecto si todavía no existe
+        continue-on-error: true
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages project create central-noticias --production-branch=main
+      - name: Publicar
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy _sitio --project-name=central-noticias --branch=main --commit-dirty=true
