@@ -1,6 +1,99 @@
 {
- "generado": "2026-11-17T19:10:01+00:00",
+ "generado": "2026-11-18T02:03:13+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": []
+ "urgentes": [
+  {
+   "titulo": "Argentina cerró el año con una goleada: aplastó 7-0 a Costa Rica en Córdoba",
+   "n_medios": 9,
+   "paises": [
+    "Argentina",
+    "Cuba"
+   ],
+   "region": null,
+   "tema": "General",
+   "ejes": [],
+   "desde": "2026-11-18T02:03:13+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Argentina golea 7-0 a Costa Rica en último amistoso de 2026",
+     "url": "https://www.prensa-latina.cu/2026/11/17/argentina-golea-7-0-a-costa-rica-en-ultimo-amistoso-de-2026/",
+     "medio": "Prensa Latina",
+     "fecha": "2026-11-18T02:15:39+00:00"
+    },
+    {
+     "titulo": "Los puntajes de la selección argentina ante Costa Rica",
+     "url": "https://www.lanacion.com.ar/deportes/futbol/los-puntajes-de-la-seleccion-argentina-ante-costa-rica-nid17112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-18T01:55:53+00:00"
+    },
+    {
+     "titulo": "Los memes de la goleada 7-0 de Argentina a Costa Rica: de la “10″ de Messi para Nico Paz al look de Mastantuono",
+     "url": "https://www.infobae.com/deportes/2026/11/18/los-memes-de-la-goleada-7-0-de-argentina-a-costa-rica-de-la-10-de-messi-para-nico-paz-al-look-de-mastantuono/",
+     "medio": "Infobae",
+     "fecha": "2026-11-18T01:55:21+00:00"
+    },
+    {
+     "titulo": "A Nico Paz le bastó un tiempo para ser el mejor de Argentina en la goleada ante Costa Rica",
+     "url": "https://noticiasargentinas.com/deportes/a-nico-paz-le-basto-un-tiempo-para-ser-el-mejor-de-argentina-en-la-goleada-ante-costa-rica_a6afcf3c180252b427d4b8928",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-18T01:25:00+00:00"
+    },
+    {
+     "titulo": "Cuándo vuelve a jugar la Selección Argentina después de la goleada ante Costa Rica",
+     "url": "https://perfil.com/deportes/cuando-vuelve-a-jugar-la-seleccion-argentina-despues-de-la-goleada-ante-costa-rica-aqIJq4b1RhJH",
+     "medio": "Perfil",
+     "fecha": "2026-11-18T01:14:15+00:00"
+    }
+   ]
+  },
+  {
+   "titulo": "El peronismo se reunió en San Fernando para avanzar en un frente nacional anti-Milei",
+   "n_medios": 8,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "tema": "Política",
+   "ejes": [
+    "internacional",
+    "politica"
+   ],
+   "desde": "2026-11-18T02:03:13+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Con Massa y el apoyo de CFK, el peronismo armó una potente foto de unidad que interpela a la interna y a Milei",
+     "url": "https://www.infobae.com/politica/2026/11/18/con-massa-y-el-apoyo-de-cfk-el-peronismo-armo-una-potente-foto-de-unidad-que-interpela-a-la-interna-y-a-milei/",
+     "medio": "Infobae",
+     "fecha": "2026-11-18T01:46:53+00:00"
+    },
+    {
+     "titulo": "Con Sergio Massa y Gerardo Zamora, el peronismo se reunió en San Fernando para avanzar en un frente nacional contra Milei",
+     "url": "https://www.infoban.com.ar/17/11/2026/con-sergio-massa-y-gerardo-zamora-el-peronismo-se-reunio-en-san-fernando-para-avanzar-en-un-frente-nacional-contra-milei/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-18T01:21:33+00:00"
+    },
+    {
+     "titulo": "El peronismo se reunió para avanzar en la construcción de un frente nacional anti Milei",
+     "url": "https://www.cronista.com/economia-politica/el-peronismo-se-reunio-para-avanzar-en-la-construccion-de-un-frente-nacional-anti-milei/",
+     "medio": "El Cronista",
+     "fecha": "2026-11-18T00:15:07+00:00"
+    },
+    {
+     "titulo": "El peronismo se reunió en San Fernando para avanzar en un frente nacional anti-Milei",
+     "url": "https://noticiasargentinas.com/politica/el-peronismo-se-reunio-en-san-fernando-para-avanzar-en-un-frente-nacional-anti-milei_a6afce6fc80252b427d4adbbc",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-18T00:07:30+00:00"
+    },
+    {
+     "titulo": "Entre un frente anti-Milei y la disputa con Kicillof, el peronismo armó una foto “federal” con Massa",
+     "url": "https://perfil.com/politica/entre-un-frente-anti-milei-y-la-disputa-con-kicillof-el-peronismo-armo-una-foto-federal-con-massa-awayS5E6KS1I",
+     "medio": "Perfil",
+     "fecha": "2026-11-17T23:59:09+00:00"
+    }
+   ]
+  }
+ ]
 }
