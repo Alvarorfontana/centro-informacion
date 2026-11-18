@@ -508,6 +508,18 @@ def titulador(html, ia):
     return tit, baj, (str(r.get("volanta") or "").strip()[:40])
 
 
+def bajada_de_respaldo(html):
+    """Si la IA no propuso bajada, se arma con las primeras oraciones del texto (hasta ~240 caracteres)."""
+    texto = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html or "")).strip()
+    oraciones = re.split(r"(?<=[.!?])\s+", texto)
+    salida = ""
+    for o in oraciones:
+        if salida and len(salida) + len(o) > 240:
+            break
+        salida = (salida + " " + o).strip()
+    return salida[:260]
+
+
 # ───────────────────────── 9 · fotos ─────────────────────────
 
 def nombres_propios(titulo):
@@ -799,6 +811,8 @@ def main():
                 b["titulos"], b["bajadas"], b["volanta"] = t
         if not b["titulos"]:
             b["titulos"] = [tema["titulo"]]
+        if not b.get("bajadas") and b.get("cuerpo_html"):
+            b["bajadas"] = [bajada_de_respaldo(b["cuerpo_html"])]
 
         ph = correr("fotos", reg, ia, fotos, tema, fts)
         if ph is not None:
