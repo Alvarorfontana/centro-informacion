@@ -1,97 +1,140 @@
 {
- "generado": "2026-11-18T02:03:13+00:00",
+ "generado": "2026-11-18T16:33:19+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
-   "titulo": "Argentina cerró el año con una goleada: aplastó 7-0 a Costa Rica en Córdoba",
-   "n_medios": 9,
+   "titulo": "Trump, Xi Jinping y Putin y un primer saludo antes de la cumbre de Shenzen",
+   "n_medios": 7,
    "paises": [
     "Argentina",
-    "Cuba"
+    "Francia",
+    "Italia"
    ],
    "region": null,
-   "tema": "General",
-   "ejes": [],
-   "desde": "2026-11-18T02:03:13+00:00",
+   "tema": "Geopolítica",
+   "ejes": [
+    "internacional"
+   ],
+   "desde": "2026-11-18T16:33:19+00:00",
    "avisado": false,
    "notas": [
     {
-     "titulo": "Argentina golea 7-0 a Costa Rica en último amistoso de 2026",
-     "url": "https://www.prensa-latina.cu/2026/11/17/argentina-golea-7-0-a-costa-rica-en-ultimo-amistoso-de-2026/",
-     "medio": "Prensa Latina",
-     "fecha": "2026-11-18T02:15:39+00:00"
-    },
-    {
-     "titulo": "Los puntajes de la selección argentina ante Costa Rica",
-     "url": "https://www.lanacion.com.ar/deportes/futbol/los-puntajes-de-la-seleccion-argentina-ante-costa-rica-nid17112026/",
+     "titulo": "Cumbre de EEUU, China y Rusia: qué se sabe del histórico encuentro entre Trump, Xi Jinping y Putin",
+     "url": "https://www.lanacion.com.ar/el-mundo/cumbre-de-eeuu-china-y-rusia-que-se-sabe-del-historico-encuentro-entre-trump-xi-jinping-y-putin-nid18112026/",
      "medio": "La Nación",
-     "fecha": "2026-11-18T01:55:53+00:00"
+     "fecha": "2026-11-18T16:17:52+00:00"
     },
     {
-     "titulo": "Los memes de la goleada 7-0 de Argentina a Costa Rica: de la “10″ de Messi para Nico Paz al look de Mastantuono",
-     "url": "https://www.infobae.com/deportes/2026/11/18/los-memes-de-la-goleada-7-0-de-argentina-a-costa-rica-de-la-10-de-messi-para-nico-paz-al-look-de-mastantuono/",
-     "medio": "Infobae",
-     "fecha": "2026-11-18T01:55:21+00:00"
+     "titulo": "Xi Jinping recibe a Trump con un abrazo antes de la cumbre tripartita sin precedentes con Putin",
+     "url": "https://www.diarionorte.com/336843-xi-jinping-recibe-a-trump-con-un-abrazo-antes-de-la-cumbre-tripartita-sin-precedentes-con-putin",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-18T15:56:48+00:00"
     },
     {
-     "titulo": "A Nico Paz le bastó un tiempo para ser el mejor de Argentina en la goleada ante Costa Rica",
-     "url": "https://noticiasargentinas.com/deportes/a-nico-paz-le-basto-un-tiempo-para-ser-el-mejor-de-argentina-en-la-goleada-ante-costa-rica_a6afcf3c180252b427d4b8928",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-18T01:25:00+00:00"
+     "titulo": "Trump se reunirá por separado con Putin en China, aparte de reunión tripartita EEUU-Rusia-China",
+     "url": "https://www.clarin.com/estados-unidos/trump-se-reunira-por-separado-con-putin-en-china-aparte-de-reunion-tripartita-eeuu-rusia-china_0_12UFOAFoPq.html",
+     "medio": "Clarín",
+     "fecha": "2026-11-18T15:50:07+00:00"
     },
     {
-     "titulo": "Cuándo vuelve a jugar la Selección Argentina después de la goleada ante Costa Rica",
-     "url": "https://perfil.com/deportes/cuando-vuelve-a-jugar-la-seleccion-argentina-despues-de-la-goleada-ante-costa-rica-aqIJq4b1RhJH",
-     "medio": "Perfil",
-     "fecha": "2026-11-18T01:14:15+00:00"
+     "titulo": "Trump, Putin e Xi a Shenzhen tra abbracci e strette di mano",
+     "url": "https://www.ansa.it/sito/notizie/mondo/2026/11/18/trump-putin-e-xi-a-shenzhen-tra-abbracci-e-strette-di-mano_9e7135eb-3e7b-4851-bfab-d2fbdb0e6829.html",
+     "medio": "ANSA Latina",
+     "fecha": "2026-11-18T15:47:55+00:00"
+    },
+    {
+     "titulo": "Trump, Xi Jinping y Putin y un primer saludo antes de la cumbre de Shenzen",
+     "url": "https://www.pagina12.com.ar/2026/11/18/trump-xi-jinping-y-putin-y-un-primer-saludo-antes-de-la-cumbre-de-shenzen/",
+     "medio": "Página/12",
+     "fecha": "2026-11-18T15:02:16+00:00"
     }
    ]
   },
   {
-   "titulo": "El peronismo se reunió en San Fernando para avanzar en un frente nacional anti-Milei",
-   "n_medios": 8,
+   "titulo": "Suspensión de las PASO: el oficialismo eliminará las listas colectoras que dividían a sus aliados del Senado",
+   "n_medios": 6,
    "paises": [
     "Argentina"
    ],
    "region": null,
    "tema": "Política",
    "ejes": [
-    "internacional",
     "politica"
    ],
-   "desde": "2026-11-18T02:03:13+00:00",
+   "desde": "2026-11-18T16:33:19+00:00",
    "avisado": false,
    "notas": [
     {
-     "titulo": "Con Massa y el apoyo de CFK, el peronismo armó una potente foto de unidad que interpela a la interna y a Milei",
-     "url": "https://www.infobae.com/politica/2026/11/18/con-massa-y-el-apoyo-de-cfk-el-peronismo-armo-una-potente-foto-de-unidad-que-interpela-a-la-interna-y-a-milei/",
-     "medio": "Infobae",
-     "fecha": "2026-11-18T01:46:53+00:00"
+     "titulo": "El Gobierno retiró las listas colectoras para asegurarse el apoyo para suspender las PASO",
+     "url": "https://www.lanacion.com.ar/politica/el-gobierno-retiro-las-listas-colectoras-para-asegurarse-el-apoyo-para-suspender-las-paso-nid18112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-18T16:26:00+00:00"
     },
     {
-     "titulo": "Con Sergio Massa y Gerardo Zamora, el peronismo se reunió en San Fernando para avanzar en un frente nacional contra Milei",
-     "url": "https://www.infoban.com.ar/17/11/2026/con-sergio-massa-y-gerardo-zamora-el-peronismo-se-reunio-en-san-fernando-para-avanzar-en-un-frente-nacional-contra-milei/",
-     "medio": "InfoBAN (zona norte)",
-     "fecha": "2026-11-18T01:21:33+00:00"
-    },
-    {
-     "titulo": "El peronismo se reunió para avanzar en la construcción de un frente nacional anti Milei",
-     "url": "https://www.cronista.com/economia-politica/el-peronismo-se-reunio-para-avanzar-en-la-construccion-de-un-frente-nacional-anti-milei/",
-     "medio": "El Cronista",
-     "fecha": "2026-11-18T00:15:07+00:00"
-    },
-    {
-     "titulo": "El peronismo se reunió en San Fernando para avanzar en un frente nacional anti-Milei",
-     "url": "https://noticiasargentinas.com/politica/el-peronismo-se-reunio-en-san-fernando-para-avanzar-en-un-frente-nacional-anti-milei_a6afce6fc80252b427d4adbbc",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-18T00:07:30+00:00"
-    },
-    {
-     "titulo": "Entre un frente anti-Milei y la disputa con Kicillof, el peronismo armó una foto “federal” con Massa",
-     "url": "https://perfil.com/politica/entre-un-frente-anti-milei-y-la-disputa-con-kicillof-el-peronismo-armo-una-foto-federal-con-massa-awayS5E6KS1I",
+     "titulo": "El futuro de las PASO: tras presiones, Bullrich anunció que se eliminan las listas colectoras del proyecto de reforma electoral",
+     "url": "https://perfil.com/politica/el-futuro-de-las-paso-tras-presiones-bullrich-anuncio-que-se-eliminan-las-listas-colectoras-del-proyecto-de-reforma-electoral-aK8d59V0w3eF",
      "medio": "Perfil",
-     "fecha": "2026-11-17T23:59:09+00:00"
+     "fecha": "2026-11-18T16:19:35+00:00"
+    },
+    {
+     "titulo": "Reforma Política: el oficialismo anunció la eliminación de las colectoras y el debate pasó a un cuarto intermedio en el Senado",
+     "url": "https://www.infobae.com/politica/2026/11/18/congreso-en-vivo-el-debate-sobre-la-suspension-de-las-paso-en-la-comision-de-asuntos-constitucionales/",
+     "medio": "Infobae",
+     "fecha": "2026-11-18T16:18:11+00:00"
+    },
+    {
+     "titulo": "Marcha atrás en el Senado: el oficialismo elimina las colectoras para destrabar el dictamen de las PASO",
+     "url": "https://www.rionegro.com.ar/politica/marcha-atras-en-el-senado-el-gobierno-elimina-las-colectoras-para-destrabar-el-dictamen-de-las-paso-4803286/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-18T16:03:17+00:00"
+    },
+    {
+     "titulo": "El Gobierno dio marcha atrás con las colectoras y se encamina a conseguir los votos para suspender las PASO",
+     "url": "https://www.clarin.com/politica/gobierno-dio-marcha-colectoras-encamina-conseguir-votos-suspender-paso_0_QIA4csutga.html",
+     "medio": "Clarín",
+     "fecha": "2026-11-18T15:54:55+00:00"
+    }
+   ]
+  },
+  {
+   "titulo": "Golpe al Gobierno: no consiguió quórum en Diputados para avanzar con la ley Malvinas y la reforma del BCRA",
+   "n_medios": 4,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "tema": "Política",
+   "ejes": [
+    "economia",
+    "politica"
+   ],
+   "desde": "2026-11-18T16:33:19+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Fracaso libertario: por falta de quorum se cayó la sesión en Diputados por la ley de Malvinas y la reforma del BCRA",
+     "url": "https://www.ambito.com/politica/diputados-sesiona-la-ley-defensa-la-soberania-nacional-y-la-reforma-del-banco-central-n6346397",
+     "medio": "Ámbito",
+     "fecha": "2026-11-18T15:57:00+00:00"
+    },
+    {
+     "titulo": "Giro sorpresivo en Diputados: no hubo quórum para sancionar BCRA y la ley Malvinas",
+     "url": "https://www.cronista.com/economia-politica/bcra-y-malvinas-con-cambios-el-oficialismo-avanza-en-dos-proyectos-emblema-de-milei/",
+     "medio": "El Cronista",
+     "fecha": "2026-11-18T15:36:54+00:00"
+    },
+    {
+     "titulo": "Golpe al Gobierno: no consiguió quórum en Diputados para avanzar con la ley Malvinas y la reforma del BCRA",
+     "url": "https://perfil.com/politica/golpe-al-gobierno-no-consiguio-quorum-en-diputados-para-avanzar-con-la-ley-malvinas-y-la-reforma-del-bcra-a4lKw6b5huMt",
+     "medio": "Perfil",
+     "fecha": "2026-11-18T15:36:41+00:00"
+    },
+    {
+     "titulo": "La Libertad Avanza no consiguió quórum y Diputados quedó sin tratar la ley de Malvinas y la reforma de la Carta Orgánica del BCRA",
+     "url": "https://www.lagaceta.com.ar/nota/1163097/politica/libertad-avanza-no-consiguio-quorum-diputados-quedo-sin-tratar-ley-malvinas-reforma-carta-organica-bcra.html",
+     "medio": "La Gaceta (Tucumán)",
+     "fecha": "2026-11-18T13:19:00+00:00"
     }
    ]
   }
