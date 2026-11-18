@@ -739,6 +739,8 @@ body { background: var(--papel); }
 .age-fotos label { display: grid; gap: 4px; font-size: 11px; color: var(--tinta-3); cursor: pointer; border: 2px solid transparent; border-radius: 6px; padding: 3px; }
 .age-fotos label:has(input:checked) { border-color: var(--rojo); }
 .age-fotos input { position: absolute; opacity: 0; }
+.age-tema.publicada { opacity: .72; }
+.age-tema .ya-pub { display: inline-block; margin-bottom: 6px; background: #1F894C; color: #fff; font-family: var(--ui); font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 4px; text-decoration: none; }
 .age-fotos img { width: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: 4px; background: var(--hundido); }
 .age-fuentes { width: 100%; border-collapse: collapse; font-size: 12.5px; }
 .age-fuentes td, .age-fuentes th { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--linea); vertical-align: top; }
@@ -2021,6 +2023,15 @@ body { background: var(--papel); }
       '<li>Corré los agentes desde <a href="' + REPO + '/actions/workflows/redaccion.yml" target="_blank" rel="noopener">Actions → Redacción automática → Run workflow</a>.</li></ol>' +
       '<span>Opcional, de respaldo: una clave de <a href="https://console.groq.com/keys" target="_blank" rel="noopener">Groq</a> con el nombre <code>GROQ_API_KEY</code>.</span></div>';
   }
+  // Sección del diario: primero el tema (economía, deportes, cultura, tecnología); si no, Mundo/Mercosur → Internacional y el resto → Argentina
+  function seccionDiario(b) {
+    var t = String(b.tema || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    if (/econom/.test(t)) return 'economia';
+    if (/deport/.test(t)) return 'deportes';
+    if (/cultur|cine|espectac/.test(t)) return 'cultura';
+    if (/tecnolog|ciencia/.test(t)) return 'tecnologia';
+    return (b.seccion === 'mundo' || b.seccion === 'mercosur') ? 'internacional' : 'argentina';
+  }
   function reporteDe(b) {
     var e = eleccion[b.id] || {}, foto = (b.fotos || [])[e.foto == null ? 0 : e.foto];
     var html = limpiarHtml(b.cuerpo_html || '');
@@ -2029,6 +2040,8 @@ body { background: var(--papel); }
       region: b.region || '', zona: b.region ? 'argentina' : (b.seccion === 'mercosur' ? 'mercosur' : b.seccion === 'mundo' ? 'mundo' : 'argentina'), tema: b.tema || '',
       fuentes: (b.fuentes || []).map(function (f) { return { medio: f.medio, url: f.url, titulo: f.titulo }; }) };
     if (b.firma) r.autor = b.firma;
+    if (b.volanta) r.volanta = b.volanta;
+    r.seccion = seccionDiario(b);
     if (foto) { r.foto = foto.url; r.epigrafe = foto.credito; }
     return r;
   }
@@ -2043,6 +2056,29 @@ body { background: var(--papel); }
       '<div class="age-acc rapida"><a class="btn primario grande" target="_blank" rel="noopener" data-al-diario="' + b.id + '" href="#">Mandar al diario ↗</a>' +
       '<button type="button" class="btn" data-a-mesa="' + b.id + '">Editar antes</button></div>';
   }
+  // ── Lo que ya salió en el diario: se lee su RSS (vía /api/diario) y se marca "Publicada" en el menú ──
+  var PUBLICADAS = null;
+  function palabrasClave(t) {
+    var vac = { para: 1, como: 1, sobre: 1, desde: 1, entre: 1, hasta: 1, tras: 1, contra: 1, este: 1, esta: 1, pero: 1, porque: 1, cuando: 1, donde: 1, tiene: 1, sera: 1, fue: 1, son: 1, los: 1, las: 1, del: 1, una: 1, uno: 1, que: 1, con: 1, por: 1 };
+    return String(t || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().split(/[^a-z0-9ñ]+/).filter(function (w) { return w.length > 3 && !vac[w]; });
+  }
+  function parecido(a, b) {
+    var A = palabrasClave(a), B = palabrasClave(b); if (A.length < 3 || B.length < 3) return 0;
+    var setB = {}; B.forEach(function (w) { setB[w] = 1; });
+    var comun = A.filter(function (w, i) { return setB[w] && A.indexOf(w) === i; }).length;
+    return comun >= 3 ? comun / Math.min(A.length, B.length) : 0;
+  }
+  function enDiario(titulos) {
+    if (!PUBLICADAS) return null;
+    for (var i = 0; i < PUBLICADAS.length; i++) for (var j = 0; j < titulos.length; j++) if (titulos[j] && parecido(titulos[j], PUBLICADAS[i].titulo) >= 0.6) return PUBLICADAS[i];
+    return null;
+  }
+  function cargarPublicadas() {
+    fetch('/api/diario', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+      if (d && d.ok) { PUBLICADAS = d.notas || []; if (RED) pintarMenu(); }
+    }).catch(function () {});
+  }
+  cargarPublicadas(); setInterval(cargarPublicadas, 5 * 60 * 1000);
   function pintarMenu() {
     if (!RED) { $('age-menu').innerHTML = ''; $('age-reserva').innerHTML = ''; return; }
     var sec = $('age-sec').value, M = (RED.menu || []).filter(function (b) { return !sec || b.seccion === sec; });
@@ -2075,7 +2111,8 @@ body { background: var(--papel); }
         : '<div class="bloque"><p class="porque">Todavía sin borrador: falta la clave de IA o el redactor falló en este tema. Podés armarlo a mano con las fuentes de abajo.</p></div>';
       var acc = '<div class="age-acc">' + (b.cuerpo_html ? '<button type="button" class="btn primario" data-a-mesa="' + b.id + '">Llevar a la Mesa para editar</button><a class="btn" target="_blank" rel="noopener" data-al-diario="' + b.id + '" href="#">Enviar al diario como borrador</a>' : '') +
         '<button type="button" class="btn" data-fuentes-mesa="' + b.id + '">Sumar las fuentes a la mesa</button></div>';
-      return '<article class="age-tema"><div class="cab"><div class="meta"><span class="pill sec">' + esc(SEC_N[b.seccion] || b.seccion) + '</span>' + (b.region ? '<span class="pill">' + esc(REG_NOMBRES[b.region] || b.region) + '</span>' : '') + (b.region_mundo && b.seccion !== 'argentina' ? '<span class="pill">' + esc(b.region_mundo) + '</span>' : '') + ejes +
+      var pub = enDiario([b.titulo_tema].concat(b.titulos || []));
+      return '<article class="age-tema' + (pub ? ' publicada' : '') + '"><div class="cab">' + (pub ? '<a class="ya-pub" href="' + esc(pub.url) + '" target="_blank" rel="noopener">✓ Publicada en el diario ↗</a>' : '') + '<div class="meta"><span class="pill sec">' + esc(SEC_N[b.seccion] || b.seccion) + '</span>' + (b.region ? '<span class="pill">' + esc(REG_NOMBRES[b.region] || b.region) + '</span>' : '') + (b.region_mundo && b.seccion !== 'argentina' ? '<span class="pill">' + esc(b.region_mundo) + '</span>' : '') + ejes +
         '<span><span class="semaforo ' + esc(v.estado || '') + '"></span> ' + (b.n_medios || 0) + (b.n_medios === 1 ? ' medio' : ' medios') + '</span>' + (b.firma ? '<span>✍ ' + esc(b.firma) + '</span>' : '') + '</div>' +
         '<h4>' + esc((b.titulos || [])[e.titulo || 0] || b.titulo_tema) + '</h4>' + (b.por_que ? '<p class="porque">Por qué: ' + esc(b.por_que) + '</p>' : '') +
         (b.titulos && b.titulos[0] && b.titulos[0] !== b.titulo_tema ? '<p class="porque">Tema original: ' + esc(b.titulo_tema) + '</p>' : '') + '</div>' +

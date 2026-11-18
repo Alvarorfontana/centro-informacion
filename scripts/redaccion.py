@@ -511,9 +511,12 @@ def titulador(html, ia):
 # ───────────────────────── 9 · fotos ─────────────────────────
 
 def nombres_propios(titulo):
-    pal = re.findall(r"\b[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+(?:\s+(?:de\s+)?[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+)*", titulo or "")
+    titulo = titulo or ""
+    pal = [(m.start(), m.group()) for m in re.finditer(r"\b[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+(?:\s+(?:de\s+)?[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+)*", titulo)]
     vacias = {"El", "La", "Los", "Las", "Un", "Una", "En", "Por", "Con", "Para", "Tras", "Qué", "Cómo", "Quién", "Sin", "Ante"}
-    return [p for p in pal if p not in vacias and len(p) > 3][:2]
+    # La primera palabra del título va con mayúscula aunque no sea un nombre ("Cerró una fábrica…"): si parece un verbo, no cuenta
+    verbo = re.compile(r"(ó|ió|aron|ieron|aba|ará|erá|irá|ía|an|en|ado|ido|ada|ida)$", re.I)
+    return [p for i, p in pal if p not in vacias and len(p) > 3 and not (i == 0 and " " not in p and verbo.search(p))][:2]
 
 
 def wikimedia(consulta, maximo=2):
@@ -526,6 +529,11 @@ def wikimedia(consulta, maximo=2):
         ii = (p.get("imageinfo") or [{}])[0]
         md = ii.get("extmetadata") or {}
         val = lambda k: re.sub(r"<[^>]+>", "", (md.get(k) or {}).get("value", "")).strip()  # noqa: E731
+        # Solo fotos que de verdad nombran lo buscado (en el nombre del archivo o en la descripción)
+        clave = re.sub(r"\W+", " ", consulta).lower().split()
+        texto = (p.get("title", "") + " " + val("ImageDescription")).lower()
+        if not clave or not all(c in texto for c in clave if len(c) > 2):
+            continue
         fotos.append({"url": ii.get("thumburl") or ii.get("url"), "pagina": ii.get("descriptionurl"),
                       "credito": f"Foto: {val('Artist') or 'autor en Wikimedia'} / Wikimedia Commons ({val('LicenseShortName') or 'licencia libre'})",
                       "descripcion": val("ImageDescription")[:200], "licencia": val("LicenseShortName"), "fuente": "Wikimedia Commons", "libre": True})

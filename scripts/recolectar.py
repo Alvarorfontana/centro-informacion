@@ -20,7 +20,7 @@ import time
 import unicodedata
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -294,6 +294,18 @@ def leer_rss(fuente):
 
 def main():
     DATOS.mkdir(exist_ok=True)
+    # Horario de respaldo: GitHub a veces atrasa los horarios programados, así que hay una segunda vuelta
+    # una hora después. Si la primera ya trajo noticias hace poco, la de respaldo no hace nada.
+    horas = os.environ.get("SALTEAR_SI_RECIENTE", "").strip()
+    if horas:
+        try:
+            previa = json.loads((DATOS / "noticias.json").read_text(encoding="utf-8")).get("generado")
+            edad = (datetime.now(timezone.utc) - datetime.fromisoformat(previa)).total_seconds() / 3600
+            if edad < float(horas):
+                print(f"La última recolección fue hace {edad:.1f} horas: esta vuelta de respaldo no hace falta.")
+                return
+        except Exception:  # noqa: BLE001
+            pass
     salida = {"generado": datetime.now(timezone.utc).isoformat(timespec="seconds"), "regiones": {}, "zonas": {}, "rss": [], "estado": []}
 
     for rid, r in REGIONES.items():
@@ -430,6 +442,7 @@ def main():
 
     # sin duplicados por enlace; cada nota queda marcada con sus ejes de agenda y su región del mundo
     vistos = {}
+    limite = datetime.now(timezone.utc) - timedelta(days=3)
     grupos = [*(r["notas"] for r in salida["regiones"].values()), *(z["notas"] for z in salida["zonas"].values()), salida["rss"],
               *(e["notas"] for e in salida["ejes"].values())]
     for grupo in grupos:
@@ -437,6 +450,12 @@ def main():
         for n in grupo:
             if not (n.get("url") and n.get("titulo")):
                 continue
+            if n.get("fecha"):  # notas de más de 3 días no son noticia para la agencia
+                try:
+                    if datetime.fromisoformat(n["fecha"].replace("Z", "+00:00")) < limite:
+                        continue
+                except ValueError:
+                    pass
             ejes = sorted(set(n.get("ejes", [])) | set(ejes_de(n["titulo"] + " " + (n.get("resumen") or ""))))
             if n["url"] in vistos:
                 previa = vistos[n["url"]]  # ya estaba: se le suman los ejes
