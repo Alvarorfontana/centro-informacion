@@ -2032,11 +2032,17 @@ body { background: var(--papel); }
     if (/tecnolog|ciencia/.test(t)) return 'tecnologia';
     return (b.seccion === 'mundo' || b.seccion === 'mercosur') ? 'internacional' : 'argentina';
   }
+  function bajadaRespaldo(h) {
+    var t = String(h || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim(), s = '';
+    var os = t.split(/(?<=[.!?])\s+/);
+    for (var i = 0; i < os.length; i++) { if (s && s.length + os[i].length > 240) break; s = (s + ' ' + os[i]).trim(); }
+    return s.slice(0, 260);
+  }
   function reporteDe(b) {
     var e = eleccion[b.id] || {}, foto = (b.fotos || [])[e.foto == null ? 0 : e.foto];
     var html = limpiarHtml(b.cuerpo_html || '');
     var tmp = document.createElement('div'); tmp.innerHTML = html;
-    var r = { titulo: (b.titulos || [])[e.titulo || 0] || b.titulo_tema, bajada: (b.bajadas || [])[e.bajada || 0] || '', cuerpo: tmp.innerText.trim(), cuerpoHtml: html,
+    var r = { titulo: (b.titulos || [])[e.titulo || 0] || b.titulo_tema, bajada: (b.bajadas || [])[e.bajada || 0] || bajadaRespaldo(html), cuerpo: tmp.innerText.trim(), cuerpoHtml: html,
       region: b.region || '', zona: b.region ? 'argentina' : (b.seccion === 'mercosur' ? 'mercosur' : b.seccion === 'mundo' ? 'mundo' : 'argentina'), tema: b.tema || '',
       fuentes: (b.fuentes || []).map(function (f) { return { medio: f.medio, url: f.url, titulo: f.titulo }; }) };
     if (b.firma) r.autor = b.firma;
