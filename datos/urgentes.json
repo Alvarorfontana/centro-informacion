@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T18:43:36+00:00",
+ "generado": "2026-11-19T19:29:13+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
@@ -53,7 +53,7 @@
   },
   {
    "titulo": "La selección argentina perdió 2-0 con Australia en su debut en el Mundial Sub 17 de Qatar",
-   "n_medios": 5,
+   "n_medios": 4,
    "paises": [
     "Argentina"
    ],
@@ -86,12 +86,6 @@
      "url": "https://www.rionegro.com.ar/deportes/la-seleccion-argentina-cayo-ante-australia-en-el-debut-en-el-mundial-sub-17-4805147/",
      "medio": "Río Negro",
      "fecha": "2026-11-19T17:54:03+00:00"
-    },
-    {
-     "titulo": "Duro arranque: la Selección Sub-17 falló en las áreas y cayó 2 a 0 ante Australia en el debut mundialista",
-     "url": "https://www.lagaceta.com.ar/nota/1163280/deportes/duro-arranque-seleccion-sub17-fallo-areas-cayo-2-0-ante-australia-debut-mundialista.html",
-     "medio": "La Gaceta (Tucumán)",
-     "fecha": "2026-11-19T15:24:00+00:00"
     }
    ]
   }
