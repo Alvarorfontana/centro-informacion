@@ -1,11 +1,98 @@
 {
- "generado": "2026-11-18T18:26:13+00:00",
+ "generado": "2026-11-19T01:32:59+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
-   "titulo": "Suspensión de las PASO: el oficialismo eliminará las listas colectoras que dividían a sus aliados del Senado",
-   "n_medios": 6,
+   "titulo": "Un cuadro de Van Gogh de una colección argentina fue subastado por un récord de US$190 millones",
+   "n_medios": 5,
+   "paises": [
+    "Argentina",
+    "España"
+   ],
+   "region": null,
+   "tema": "Economía",
+   "ejes": [],
+   "desde": "2026-11-19T01:32:59+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Un cuadro de Van Gogh de una colección argentina fue subastado por un récord de US$190 millones",
+     "url": "https://noticiasargentinas.com/cultura/un-cuadro-de-van-gogh-de-una-coleccion-argentina-fue-subastado-por-un-record-de-us-190-millones_a6afe4e194f169fd00c45ea29",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-19T01:23:44+00:00"
+    },
+    {
+     "titulo": "El Van Gogh estrella de la colección Blaquier Arrieta se vendió en US$190.430.000",
+     "url": "https://www.lanacion.com.ar/cultura/el-vang-gogh-estrella-de-la-coleccion-blaquier-arrieta-se-vendio-en-us-190430000-nid18112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-19T00:20:11+00:00"
+    },
+    {
+     "titulo": "'Châtaigniers en fleurs', el Van Gogh más caro subastado, con 190 millones de dólares",
+     "url": "https://www.clarin.com/estados-unidos/chataigniers-en-fleurs-el-van-gogh-mas-caro-subastado-con-190-millones-de-dolares_0_d1NKJStxxC.html",
+     "medio": "Clarín",
+     "fecha": "2026-11-18T23:50:16+00:00"
+    },
+    {
+     "titulo": "190 millones de dólares por un ‘van gogh’: la subasta de ‘Los castaños en flor’ alcanza cifras récord",
+     "url": "https://elpais.com/us/2026-11-18/190-millones-de-dolares-por-un-van-gogh-la-subasta-de-los-castanos-en-flor-alcanza-cifras-record.html",
+     "medio": "El País · América",
+     "fecha": "2026-11-18T23:42:09+00:00"
+    },
+    {
+     "titulo": "Del expolio nazi a la colección Blaquier: un Van Gogh de US$180 millones sale a subasta tras acuerdo judicial",
+     "url": "https://perfil.com/arte-cultura/del-expolio-nazi-a-la-coleccion-blaquier-un-van-gogh-de-us180-millones-sale-a-subasta-tras-acuerdo-judicial-a4xN83K47bYn",
+     "medio": "Perfil",
+     "fecha": "2026-11-18T23:23:07+00:00"
+    }
+   ]
+  },
+  {
+   "titulo": "¿Por qué Ucrania pone ahora en la mira de sus ataques el puente que une a Rusia con Crimea?",
+   "n_medios": 4,
+   "paises": [
+    "Alemania",
+    "Argentina",
+    "Francia"
+   ],
+   "region": null,
+   "tema": "Geopolítica",
+   "ejes": [
+    "internacional"
+   ],
+   "desde": "2026-11-19T01:32:59+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Moscú registra nuevo ataque a puente que une Rusia con la anexionada Crimea",
+     "url": "https://www.dw.com/es/moscú-registra-nuevo-ataque-a-puente-que-une-rusia-con-la-anexionada-crimea/a-79986493?maca=spa-rss-sp-all-1122-xml-mrss",
+     "medio": "DW Español",
+     "fecha": "2026-11-19T00:13:00+00:00"
+    },
+    {
+     "titulo": "Reportan que Ucrania atacó de nuevo contra el puente de Crimea: una vía clave para que Rusia traslade suministros militares y civiles",
+     "url": "https://www.clarin.com/mundo/reportan-ucrania-ataco-nuevo-puente-crimea-via-clave-rusia-traslade-suministros-militares-civiles_0_2ihmCjV26J.html",
+     "medio": "Clarín",
+     "fecha": "2026-11-18T23:45:25+00:00"
+    },
+    {
+     "titulo": "Reportan un nuevo ataque contra el puente de Crimea",
+     "url": "https://perfil.com/internacional/reportan-un-nuevo-ataque-contra-el-puente-de-crimea-azwgW1X0sYMH",
+     "medio": "Perfil",
+     "fecha": "2026-11-18T23:09:06+00:00"
+    },
+    {
+     "titulo": "¿Por qué Ucrania pone ahora en la mira de sus ataques el puente que une a Rusia con Crimea?",
+     "url": "https://www.france24.com/es/europa/20261118-por-qu%C3%A9-ucrania-pone-ahora-en-la-mira-de-sus-ataques-el-puente-que-une-a-rusia-con-crimea",
+     "medio": "France 24 Español",
+     "fecha": "2026-11-18T22:09:19+00:00"
+    }
+   ]
+  },
+  {
+   "titulo": "Milei dijo que Patricia Bullrich es su \"socia política\" y defendió el plan económico, pero admitió que la gente \"experimenta privaciones\"",
+   "n_medios": 5,
    "paises": [
     "Argentina"
    ],
@@ -14,78 +101,38 @@
    "ejes": [
     "politica"
    ],
-   "desde": "2026-11-18T16:33:19+00:00",
+   "desde": "2026-11-19T01:32:59+00:00",
    "avisado": false,
    "notas": [
     {
-     "titulo": "El Gobierno retiró las listas colectoras para asegurarse el apoyo para suspender las PASO",
-     "url": "https://www.lanacion.com.ar/politica/el-gobierno-retiro-las-listas-colectoras-para-asegurarse-el-apoyo-para-suspender-las-paso-nid18112026/",
-     "medio": "La Nación",
-     "fecha": "2026-11-18T16:26:00+00:00"
-    },
-    {
-     "titulo": "El futuro de las PASO: tras presiones, Bullrich anunció que se eliminan las listas colectoras del proyecto de reforma electoral",
-     "url": "https://perfil.com/politica/el-futuro-de-las-paso-tras-presiones-bullrich-anuncio-que-se-eliminan-las-listas-colectoras-del-proyecto-de-reforma-electoral-aK8d59V0w3eF",
-     "medio": "Perfil",
-     "fecha": "2026-11-18T16:19:35+00:00"
-    },
-    {
-     "titulo": "Reforma Política: el oficialismo anunció la eliminación de las colectoras y el debate pasó a un cuarto intermedio en el Senado",
-     "url": "https://www.infobae.com/politica/2026/11/18/congreso-en-vivo-el-debate-sobre-la-suspension-de-las-paso-en-la-comision-de-asuntos-constitucionales/",
-     "medio": "Infobae",
-     "fecha": "2026-11-18T16:18:11+00:00"
-    },
-    {
-     "titulo": "Marcha atrás en el Senado: el oficialismo elimina las colectoras para destrabar el dictamen de las PASO",
-     "url": "https://www.rionegro.com.ar/politica/marcha-atras-en-el-senado-el-gobierno-elimina-las-colectoras-para-destrabar-el-dictamen-de-las-paso-4803286/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-18T16:03:17+00:00"
-    },
-    {
-     "titulo": "El Gobierno dio marcha atrás con las colectoras y se encamina a conseguir los votos para suspender las PASO",
-     "url": "https://www.clarin.com/politica/gobierno-dio-marcha-colectoras-encamina-conseguir-votos-suspender-paso_0_QIA4csutga.html",
-     "medio": "Clarín",
-     "fecha": "2026-11-18T15:54:55+00:00"
-    }
-   ]
-  },
-  {
-   "titulo": "Cumbre de EEUU, China y Rusia: qué se sabe del histórico encuentro entre Trump, Xi Jinping y Putin",
-   "n_medios": 4,
-   "paises": [
-    "Argentina"
-   ],
-   "region": null,
-   "tema": "Geopolítica",
-   "ejes": [
-    "internacional"
-   ],
-   "desde": "2026-11-18T17:37:41+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Cumbre de EEUU, China y Rusia: qué se sabe del histórico encuentro entre Trump, Xi Jinping y Putin",
-     "url": "https://www.lanacion.com.ar/el-mundo/cumbre-de-eeuu-china-y-rusia-que-se-sabe-del-historico-encuentro-entre-trump-xi-jinping-y-putin-nid18112026/",
-     "medio": "La Nación",
-     "fecha": "2026-11-18T16:17:52+00:00"
-    },
-    {
-     "titulo": "Xi Jinping recibe a Trump con un abrazo antes de la cumbre tripartita sin precedentes con Putin",
-     "url": "https://www.diarionorte.com/336843-xi-jinping-recibe-a-trump-con-un-abrazo-antes-de-la-cumbre-tripartita-sin-precedentes-con-putin",
-     "medio": "Diario Norte (Chaco)",
-     "fecha": "2026-11-18T15:56:48+00:00"
-    },
-    {
-     "titulo": "Trump se reunirá por separado con Putin en China, aparte de reunión tripartita EEUU-Rusia-China",
-     "url": "https://www.clarin.com/estados-unidos/trump-se-reunira-por-separado-con-putin-en-china-aparte-de-reunion-tripartita-eeuu-rusia-china_0_12UFOAFoPq.html",
-     "medio": "Clarín",
-     "fecha": "2026-11-18T15:50:07+00:00"
-    },
-    {
-     "titulo": "Trump, Xi Jinping y Putin y un primer saludo antes de la cumbre de Shenzen",
-     "url": "https://www.pagina12.com.ar/2026/11/18/trump-xi-jinping-y-putin-y-un-primer-saludo-antes-de-la-cumbre-de-shenzen/",
+     "titulo": "Milei negó la interna con Bullrich y reconoció que hay gente que “experimenta privaciones”",
+     "url": "https://www.pagina12.com.ar/2026/11/19/milei-nego-la-interna-con-bullrich-y-reconocio-que-hay-gente-que-experimenta-privaciones/",
      "medio": "Página/12",
-     "fecha": "2026-11-18T15:02:16+00:00"
+     "fecha": "2026-11-19T00:04:45+00:00"
+    },
+    {
+     "titulo": "Milei dijo que Patricia Bullrich es su \"socia política\" y defendió el plan económico, pero admitió que la gente \"experimenta privaciones\"",
+     "url": "https://www.clarin.com/politica/milei-dijo-patricia-bullrich-socia-politica-defendio-plan-economico-admitio-gente-experimenta-privaciones_0_SZhQhLVurI.html",
+     "medio": "Clarín",
+     "fecha": "2026-11-18T23:37:09+00:00"
+    },
+    {
+     "titulo": "\"Es mi socia política\": Javier Milei negó una interna con Patricia Bullrich y apuntó contra el kirchnerismo",
+     "url": "https://www.ambito.com/politica/es-mi-socia-javier-milei-nego-una-interna-patricia-bullrich-y-apunto-contra-el-kirchnerismo-n6346910",
+     "medio": "Ámbito",
+     "fecha": "2026-11-18T23:19:00+00:00"
+    },
+    {
+     "titulo": "Javier Milei respaldó a Patricia Bullrich, cruzó a Domingo Cavallo y defendió su gestión económica",
+     "url": "https://www.rionegro.com.ar/politica/javier-milei-respaldo-a-patricia-bullrich-cruzo-a-domingo-cavallo-y-defendio-su-gestion-economica-4804054/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-18T22:35:00+00:00"
+    },
+    {
+     "titulo": "Milei defendió a Bullrich: “Cómo la vamos a echar, es mi socia política”",
+     "url": "https://www.ellitoral.com.ar/nacional/2026-11-18-19-14-0-en-medio-de-la-tension-en-el-oficialismo-milei-defendio-a-bullrich-como-la-vamos-a-echar-es-mi-socia-politica",
+     "medio": "El Litoral (Corrientes)",
+     "fecha": "2026-11-18T22:14:00+00:00"
     }
    ]
   }
