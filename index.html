@@ -1482,11 +1482,29 @@ body { background: var(--papel); }
     REGISTRO[n.url] = n; var en = enMesa(n.url);
     return '<button type="button" class="a-mesa' + (en ? ' en' : '') + '" data-mesa="' + esc(n.url) + '" style="margin-left:auto">' + (en ? '✓ En la mesa' : '+ A la mesa') + '</button>';
   }
+  // Agregado: lo que se suma con "+ A la mesa" también entra a la Mesa de Redacción como nota para armar
+  function aRedaccion(n) {
+    try {
+      var KEYR = 'df_newsroom_v2', db = JSON.parse(localStorage.getItem(KEYR) || 'null');
+      if (!db || !Array.isArray(db.notes)) db = { notes: [], assets: (db && Array.isArray(db.assets)) ? db.assets : [] };
+      if (!Array.isArray(db.assets)) db.assets = [];
+      var sid = 'url:' + n.url;
+      if (db.notes.some(function (x) { return x.sourceId === sid; })) return;
+      var t = String(n.tema || '').toLowerCase(), sec = /econom/.test(t) ? 'Economía' : /deport/.test(t) ? 'Deportes' : /cultur|cine/.test(t) ? 'Cultura' : /tecnolog|ciencia/.test(t) ? 'Tecnología' : (n.zona && n.zona !== 'argentina') ? 'Internacional' : 'Argentina';
+      var ahora = new Date().toISOString(), e = function (v) { return String(v || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+      var nota = { id: Date.now().toString(36) + Math.random().toString(36).slice(2, 8), sourceId: sid, title: n.titulo || 'Nota sin título', summary: n.resumen || '',
+        body: '<p>' + e(n.resumen || '') + '</p><p>Fuente: <a href="' + e(n.url) + '" target="_blank" rel="noopener">' + e(n.medio || 'ver nota') + '</a></p>',
+        section: sec, author: 'Redacción', status: 'En edición', assignee: '', due: '', image: n.imagen || '', caption: n.imagen ? ('Foto: ' + (n.medio || '')) : '', volanta: '', tags: [n.tema, n.pais].filter(Boolean),
+        sources: [{ medio: n.medio, url: n.url, titulo: n.titulo, pais: n.pais, tipo: n.tipo, fecha: n.fecha }], photos: [], verification: null, agentMeta: {}, altTitles: [], versions: [],
+        created: ahora, updated: ahora, updatedBy: 'Central de noticias' };
+      db.notes.unshift(nota); localStorage.setItem(KEYR, JSON.stringify(db));
+    } catch (err) {}
+  }
   document.addEventListener('click', function (ev) {
     var b = ev.target.closest && ev.target.closest('[data-mesa]'); if (!b) return;
     var url = b.getAttribute('data-mesa');
     if (enMesa(url)) { mesa = mesa.filter(function (m) { return m.url !== url; }); }
-    else { var n = REGISTRO[url]; if (!n) return; mesa.push({ titulo: n.titulo, resumen: n.resumen || '', url: n.url, medio: n.medio, pais: n.pais, idioma: n.idioma, fecha: n.fecha, tipo: n.tipo, via: n.via, region: n.region, zona: n.zona, tema: n.tema }); toast('Sumada a la mesa (' + mesa.length + ')'); }
+    else { var n = REGISTRO[url]; if (!n) return; mesa.push({ titulo: n.titulo, resumen: n.resumen || '', url: n.url, medio: n.medio, pais: n.pais, idioma: n.idioma, fecha: n.fecha, tipo: n.tipo, via: n.via, region: n.region, zona: n.zona, tema: n.tema }); toast('Sumada a la mesa (' + mesa.length + ')'); aRedaccion(n); }
     guardarMesa();
     document.querySelectorAll('[data-mesa]').forEach(function (x) { var e = enMesa(x.getAttribute('data-mesa')); x.classList.toggle('en', e); x.textContent = e ? '✓ En la mesa' : '+ A la mesa'; });
     pintarMesa();
