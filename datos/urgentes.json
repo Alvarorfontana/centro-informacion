@@ -1,91 +1,133 @@
 {
- "generado": "2026-11-19T19:29:13+00:00",
+ "generado": "2026-11-19T19:33:52+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
-   "titulo": "Las acciones de Anthropic empezaron a cotizar en Wall Street: suben 15% después de una salida récord a la bolsa",
+   "titulo": "Por un fallo de la Corte: prepagas no podrán aumentar sus cuotas sin autorización del Gobierno",
    "n_medios": 5,
    "paises": [
-    "Argentina",
-    "España",
-    "Francia"
+    "Argentina"
    ],
    "region": null,
-   "tema": "General",
+   "tema": "Energía",
    "ejes": [
-    "economia-global"
+    "politica"
    ],
-   "desde": "2026-11-19T18:43:36+00:00",
+   "desde": "2026-11-19T19:33:52+00:00",
    "avisado": false,
    "notas": [
     {
-     "titulo": "Las acciones de Anthropic empezaron a cotizar en Wall Street: suben 15% después de una salida récord a la bolsa",
-     "url": "https://www.infobae.com/economia/2026/11/19/las-acciones-de-anthropic-empiezan-a-cotizar-en-wall-street-despues-de-una-salida-record-a-la-bolsa/",
-     "medio": "Infobae América",
-     "fecha": "2026-11-19T18:14:19+00:00"
+     "titulo": "Freno a las prepagas: la Corte Suprema declaró inconstitucional la desregulación de cuotas de Javier Milei",
+     "url": "https://www.rionegro.com.ar/justicia/freno-a-las-prepagas-la-corte-suprema-declaro-inconstitucional-la-desregulacion-de-cuotas-de-javier-milei-4805475/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-19T19:30:51+00:00"
     },
     {
-     "titulo": "Ashton Kutcher podría convertirse en multimillonario con la salida en la bolsa de Wall Street de Antrophic",
-     "url": "https://perfil.com/protagonistas/ashton-kutcher-podria-convertirse-en-multimillonario-con-la-salida-en-la-bolsa-de-wall-street-de-antrophic-a50-jsm-aXBmo9c1svvR",
-     "medio": "Perfil",
-     "fecha": "2026-11-19T18:04:08+00:00"
+     "titulo": "Fallo contra el DNU de Javier Milei: la Corte Suprema restituyó los controles estatales sobre las cuotas de las prepagas",
+     "url": "https://www.ambito.com/politica/prepagas-y-aumentos-la-corte-suprema-declaro-inconstitucionales-dos-articulos-del-dnu-javier-milei-que-desregularon-las-cuotas-n6347259",
+     "medio": "Ámbito",
+     "fecha": "2026-11-19T19:09:00+00:00"
     },
     {
-     "titulo": "Cotización de Anthropic supera los USD 2 billones en su primer día en Wall Street",
-     "url": "https://www.clarin.com/estados-unidos/cotizacion-de-anthropic-supera-los-usd-2-billones-en-su-primer-dia-en-wall-street_0_mjNgiWW9QD.html",
+     "titulo": "Por un fallo de la Corte: prepagas no podrán aumentar sus cuotas sin autorización del Gobierno",
+     "url": "https://www.cronista.com/economia-politica/por-un-fallo-de-la-corte-prepagas-no-podran-aumentar-sus-cuotas-sin-autorizacion-del-gobierno/",
+     "medio": "El Cronista",
+     "fecha": "2026-11-19T18:28:26+00:00"
+    },
+    {
+     "titulo": "Las prepagas ya no podrán aumentar las cuotas sin autorización del Gobierno",
+     "url": "https://www.pagina12.com.ar/2026/11/19/las-prepagas-ya-no-podran-aumentar-las-cuotas-sin-autorizacion-del-gobierno/",
+     "medio": "Página/12",
+     "fecha": "2026-11-19T18:22:07+00:00"
+    },
+    {
+     "titulo": "La Corte Suprema declaró inconstitucionales dos artículos sobre cómo las prepagas deben aumentar sus cuotas",
+     "url": "https://www.clarin.com/sociedad/corte-suprema-declaro-inconstitucional-articulos-clave-prepagas-deben-aumentar-cuotas_0_4pvLqrw9Yl.html",
      "medio": "Clarín",
-     "fecha": "2026-11-19T17:40:14+00:00"
-    },
-    {
-     "titulo": "Así fue la salida a bolsa histórica de Anthropic en Wall Street",
-     "url": "https://es.euronews.com/video/2026/11/19/salida-a-bolsa-historica-de-anthropic-en-wall-street-entre-protestas-por-burbuja-de-ia",
-     "medio": "Euronews Español",
-     "fecha": "2026-11-19T17:33:40+00:00"
-    },
-    {
-     "titulo": "El récord colosal con el que Anthropic comienza a cotizar en Bolsa",
-     "url": "https://elpais.com/us/economia/2026-11-19/el-record-colosal-con-el-que-anthropic-comienza-a-cotizar-en-bolsa.html",
-     "medio": "El País · América",
-     "fecha": "2026-11-19T17:10:34+00:00"
+     "fecha": "2026-11-19T18:06:47+00:00"
     }
    ]
   },
   {
-   "titulo": "La selección argentina perdió 2-0 con Australia en su debut en el Mundial Sub 17 de Qatar",
+   "titulo": "La Campagnola anunció el cierre definitivo de su planta en Mar del Plata: afecta a 80 trabajadores",
+   "n_medios": 4,
+   "paises": [
+    "Argentina"
+   ],
+   "region": "buenos-aires",
+   "tema": "General",
+   "ejes": [
+    "industria"
+   ],
+   "desde": "2026-11-19T19:33:52+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "La Campagnola anunció el cierre definitivo de su planta en Mar del Plata: afecta a 80 trabajadores",
+     "url": "https://perfil.com/nea/la-campagnola-anuncio-el-cierre-definitivo-de-su-planta-en-mar-del-plata-afecta-a-80-trabajadores-aNuLR1W8ZQ8V",
+     "medio": "Perfil",
+     "fecha": "2026-11-19T19:30:23+00:00"
+    },
+    {
+     "titulo": "Arcor baja la persiana de una planta de La Campagnola en Mar del Plata y apuesta por las importaciones",
+     "url": "https://www.ambito.com/negocios/arcor-baja-la-persiana-una-planta-la-campagnola-mar-del-plata-y-apuesta-las-importaciones-n6347251",
+     "medio": "Ámbito",
+     "fecha": "2026-11-19T18:54:00+00:00"
+    },
+    {
+     "titulo": "La Campagnola anunció el cierre definitivo de su planta en Mar del Plata y afecta a 80 trabajadores",
+     "url": "https://noticiasargentinas.com/economia/la-campagnola-anuncio-el-cierre-definitivo-de-su-planta-en-mar-del-plata-y-afecta-a-80-trabajadores_a6aff3e6809bc92d20f3673af",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-19T18:40:02+00:00"
+    },
+    {
+     "titulo": "Arcor cierra para siempre la planta de atún de La Campagnola en Mar del Plata",
+     "url": "https://www.cronista.com/negocios/la-campagnola-cierra-para-siempre-su-planta-de-latas-de-atun-en-mar-del-plata/",
+     "medio": "El Cronista",
+     "fecha": "2026-11-19T16:12:00+00:00"
+    }
+   ]
+  },
+  {
+   "titulo": "El riesgo país vuelve a superar los 900 puntos: caen bonos y acciones argentinas",
    "n_medios": 4,
    "paises": [
     "Argentina"
    ],
    "region": null,
-   "tema": "General",
-   "ejes": [],
-   "desde": "2026-11-19T18:43:36+00:00",
+   "tema": "Economía",
+   "ejes": [
+    "economia",
+    "economia-global",
+    "fmi"
+   ],
+   "desde": "2026-11-19T19:33:52+00:00",
    "avisado": false,
    "notas": [
     {
-     "titulo": "La selección argentina perdió 2-0 con Australia en su debut en el Mundial Sub 17 de Qatar",
-     "url": "https://www.infobae.com/deportes/2026/11/19/la-seleccion-argentina-debutara-en-el-mundial-sub-17-ante-australia-hora-tv-y-todo-lo-que-tenes-que-saber/",
-     "medio": "Infobae",
-     "fecha": "2026-11-19T18:41:01+00:00"
-    },
-    {
-     "titulo": "Resultado de la selección argentina Sub 17 vs. Australia Sub 17: quién ganó el partido del Mundial Qatar 2026",
-     "url": "https://www.lanacion.com.ar/deportes/futbol/resultado-de-la-seleccion-argentina-sub-17-vs-australia-sub-17-quien-gano-el-partido-del-mundial-nid19112026/",
-     "medio": "La Nación",
-     "fecha": "2026-11-19T18:15:09+00:00"
-    },
-    {
-     "titulo": "La Selección argentina Sub-17 comenzó con el pie izquierdo y perdió en el debut ante Australia",
-     "url": "https://noticiasargentinas.com/deportes/la-seleccion-argentina-sub-17-comenzo-con-el-pie-izquierdo-y-perdio-en-el-debut-ante-australia_a6aff352809bc92d20f35d4a4",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-19T18:12:17+00:00"
-    },
-    {
-     "titulo": "La Selección Argentina cayó ante Australia en el debut en el Mundial Sub 17",
-     "url": "https://www.rionegro.com.ar/deportes/la-seleccion-argentina-cayo-ante-australia-en-el-debut-en-el-mundial-sub-17-4805147/",
+     "titulo": "El riesgo país superó los 900 puntos, caen bonos y acciones y el dólar marca un nuevo máximo",
+     "url": "https://www.rionegro.com.ar/economia/el-riesgo-pais-supero-los-900-puntos-caen-bonos-y-acciones-y-el-dolar-marca-un-nuevo-maximo-4805496/",
      "medio": "Río Negro",
-     "fecha": "2026-11-19T17:54:03+00:00"
+     "fecha": "2026-11-19T19:06:47+00:00"
+    },
+    {
+     "titulo": "El riesgo país vuelve a superar los 900 puntos: caen bonos y acciones argentinas",
+     "url": "https://www.cronista.com/economia-politica/el-riesgo-pais-vuelve-a-superar-los-900-puntos-caen-bonos-y-acciones-argentinas/",
+     "medio": "El Cronista",
+     "fecha": "2026-11-19T19:01:16+00:00"
+    },
+    {
+     "titulo": "Caen los bonos y las acciones argentinas y el riesgo país sube a los 886 puntos",
+     "url": "https://noticiasargentinas.com/economia/caen-los-bonos-y-las-acciones-argentinas-y-el-riesgo-pais-sube-a-los-886-puntos_a6aff390209bc92d20f360da8",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-19T18:25:39+00:00"
+    },
+    {
+     "titulo": "El riesgo país se dispara y vuelve a acercarse a los 890 puntos, mientras los ADRs bajan hasta 5%",
+     "url": "https://www.ambito.com/los-bonos-dolares-rebotan-medio-la-euforia-anthropic-n6347109",
+     "medio": "Ámbito",
+     "fecha": "2026-11-19T18:07:00+00:00"
     }
    ]
   }
