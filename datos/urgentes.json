@@ -1,11 +1,11 @@
 {
- "generado": "2026-11-19T01:59:59+00:00",
+ "generado": "2026-11-19T03:26:16+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
    "titulo": "Un cuadro de Van Gogh de una colección argentina fue subastado por un récord de US$190 millones",
-   "n_medios": 5,
+   "n_medios": 4,
    "paises": [
     "Argentina",
     "España"
@@ -39,100 +39,6 @@
      "url": "https://elpais.com/us/2026-11-18/190-millones-de-dolares-por-un-van-gogh-la-subasta-de-los-castanos-en-flor-alcanza-cifras-record.html",
      "medio": "El País · América",
      "fecha": "2026-11-18T23:42:09+00:00"
-    },
-    {
-     "titulo": "Del expolio nazi a la colección Blaquier: un Van Gogh de US$180 millones sale a subasta tras acuerdo judicial",
-     "url": "https://perfil.com/arte-cultura/del-expolio-nazi-a-la-coleccion-blaquier-un-van-gogh-de-us180-millones-sale-a-subasta-tras-acuerdo-judicial-a4xN83K47bYn",
-     "medio": "Perfil",
-     "fecha": "2026-11-18T23:23:07+00:00"
-    }
-   ]
-  },
-  {
-   "titulo": "¿Por qué Ucrania pone ahora en la mira de sus ataques el puente que une a Rusia con Crimea?",
-   "n_medios": 4,
-   "paises": [
-    "Alemania",
-    "Argentina",
-    "Francia"
-   ],
-   "region": null,
-   "tema": "Geopolítica",
-   "ejes": [
-    "internacional"
-   ],
-   "desde": "2026-11-19T01:32:59+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Moscú registra nuevo ataque a puente que une Rusia con la anexionada Crimea",
-     "url": "https://www.dw.com/es/moscú-registra-nuevo-ataque-a-puente-que-une-rusia-con-la-anexionada-crimea/a-79986493?maca=spa-rss-sp-all-1122-xml-mrss",
-     "medio": "DW Español",
-     "fecha": "2026-11-19T00:13:00+00:00"
-    },
-    {
-     "titulo": "Reportan que Ucrania atacó de nuevo contra el puente de Crimea: una vía clave para que Rusia traslade suministros militares y civiles",
-     "url": "https://www.clarin.com/mundo/reportan-ucrania-ataco-nuevo-puente-crimea-via-clave-rusia-traslade-suministros-militares-civiles_0_2ihmCjV26J.html",
-     "medio": "Clarín",
-     "fecha": "2026-11-18T23:45:25+00:00"
-    },
-    {
-     "titulo": "Reportan un nuevo ataque contra el puente de Crimea",
-     "url": "https://perfil.com/internacional/reportan-un-nuevo-ataque-contra-el-puente-de-crimea-azwgW1X0sYMH",
-     "medio": "Perfil",
-     "fecha": "2026-11-18T23:09:06+00:00"
-    },
-    {
-     "titulo": "¿Por qué Ucrania pone ahora en la mira de sus ataques el puente que une a Rusia con Crimea?",
-     "url": "https://www.france24.com/es/europa/20261118-por-qu%C3%A9-ucrania-pone-ahora-en-la-mira-de-sus-ataques-el-puente-que-une-a-rusia-con-crimea",
-     "medio": "France 24 Español",
-     "fecha": "2026-11-18T22:09:19+00:00"
-    }
-   ]
-  },
-  {
-   "titulo": "Milei dijo que Patricia Bullrich es su \"socia política\" y defendió el plan económico, pero admitió que la gente \"experimenta privaciones\"",
-   "n_medios": 5,
-   "paises": [
-    "Argentina"
-   ],
-   "region": null,
-   "tema": "Política",
-   "ejes": [
-    "politica"
-   ],
-   "desde": "2026-11-19T01:32:59+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Milei negó la interna con Bullrich y reconoció que hay gente que “experimenta privaciones”",
-     "url": "https://www.pagina12.com.ar/2026/11/19/milei-nego-la-interna-con-bullrich-y-reconocio-que-hay-gente-que-experimenta-privaciones/",
-     "medio": "Página/12",
-     "fecha": "2026-11-19T00:04:45+00:00"
-    },
-    {
-     "titulo": "Milei dijo que Patricia Bullrich es su \"socia política\" y defendió el plan económico, pero admitió que la gente \"experimenta privaciones\"",
-     "url": "https://www.clarin.com/politica/milei-dijo-patricia-bullrich-socia-politica-defendio-plan-economico-admitio-gente-experimenta-privaciones_0_SZhQhLVurI.html",
-     "medio": "Clarín",
-     "fecha": "2026-11-18T23:37:09+00:00"
-    },
-    {
-     "titulo": "\"Es mi socia política\": Javier Milei negó una interna con Patricia Bullrich y apuntó contra el kirchnerismo",
-     "url": "https://www.ambito.com/politica/es-mi-socia-javier-milei-nego-una-interna-patricia-bullrich-y-apunto-contra-el-kirchnerismo-n6346910",
-     "medio": "Ámbito",
-     "fecha": "2026-11-18T23:19:00+00:00"
-    },
-    {
-     "titulo": "Javier Milei respaldó a Patricia Bullrich, cruzó a Domingo Cavallo y defendió su gestión económica",
-     "url": "https://www.rionegro.com.ar/politica/javier-milei-respaldo-a-patricia-bullrich-cruzo-a-domingo-cavallo-y-defendio-su-gestion-economica-4804054/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-18T22:35:00+00:00"
-    },
-    {
-     "titulo": "Milei defendió a Bullrich: “Cómo la vamos a echar, es mi socia política”",
-     "url": "https://www.ellitoral.com.ar/nacional/2026-11-18-19-14-0-en-medio-de-la-tension-en-el-oficialismo-milei-defendio-a-bullrich-como-la-vamos-a-echar-es-mi-socia-politica",
-     "medio": "El Litoral (Corrientes)",
-     "fecha": "2026-11-18T22:14:00+00:00"
     }
    ]
   }
