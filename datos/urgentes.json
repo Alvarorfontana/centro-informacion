@@ -1,6 +1,99 @@
 {
- "generado": "2026-11-19T17:42:52+00:00",
+ "generado": "2026-11-19T18:43:36+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": []
+ "urgentes": [
+  {
+   "titulo": "Las acciones de Anthropic empezaron a cotizar en Wall Street: suben 15% después de una salida récord a la bolsa",
+   "n_medios": 5,
+   "paises": [
+    "Argentina",
+    "España",
+    "Francia"
+   ],
+   "region": null,
+   "tema": "General",
+   "ejes": [
+    "economia-global"
+   ],
+   "desde": "2026-11-19T18:43:36+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Las acciones de Anthropic empezaron a cotizar en Wall Street: suben 15% después de una salida récord a la bolsa",
+     "url": "https://www.infobae.com/economia/2026/11/19/las-acciones-de-anthropic-empiezan-a-cotizar-en-wall-street-despues-de-una-salida-record-a-la-bolsa/",
+     "medio": "Infobae América",
+     "fecha": "2026-11-19T18:14:19+00:00"
+    },
+    {
+     "titulo": "Ashton Kutcher podría convertirse en multimillonario con la salida en la bolsa de Wall Street de Antrophic",
+     "url": "https://perfil.com/protagonistas/ashton-kutcher-podria-convertirse-en-multimillonario-con-la-salida-en-la-bolsa-de-wall-street-de-antrophic-a50-jsm-aXBmo9c1svvR",
+     "medio": "Perfil",
+     "fecha": "2026-11-19T18:04:08+00:00"
+    },
+    {
+     "titulo": "Cotización de Anthropic supera los USD 2 billones en su primer día en Wall Street",
+     "url": "https://www.clarin.com/estados-unidos/cotizacion-de-anthropic-supera-los-usd-2-billones-en-su-primer-dia-en-wall-street_0_mjNgiWW9QD.html",
+     "medio": "Clarín",
+     "fecha": "2026-11-19T17:40:14+00:00"
+    },
+    {
+     "titulo": "Así fue la salida a bolsa histórica de Anthropic en Wall Street",
+     "url": "https://es.euronews.com/video/2026/11/19/salida-a-bolsa-historica-de-anthropic-en-wall-street-entre-protestas-por-burbuja-de-ia",
+     "medio": "Euronews Español",
+     "fecha": "2026-11-19T17:33:40+00:00"
+    },
+    {
+     "titulo": "El récord colosal con el que Anthropic comienza a cotizar en Bolsa",
+     "url": "https://elpais.com/us/economia/2026-11-19/el-record-colosal-con-el-que-anthropic-comienza-a-cotizar-en-bolsa.html",
+     "medio": "El País · América",
+     "fecha": "2026-11-19T17:10:34+00:00"
+    }
+   ]
+  },
+  {
+   "titulo": "La selección argentina perdió 2-0 con Australia en su debut en el Mundial Sub 17 de Qatar",
+   "n_medios": 5,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "tema": "General",
+   "ejes": [],
+   "desde": "2026-11-19T18:43:36+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "La selección argentina perdió 2-0 con Australia en su debut en el Mundial Sub 17 de Qatar",
+     "url": "https://www.infobae.com/deportes/2026/11/19/la-seleccion-argentina-debutara-en-el-mundial-sub-17-ante-australia-hora-tv-y-todo-lo-que-tenes-que-saber/",
+     "medio": "Infobae",
+     "fecha": "2026-11-19T18:41:01+00:00"
+    },
+    {
+     "titulo": "Resultado de la selección argentina Sub 17 vs. Australia Sub 17: quién ganó el partido del Mundial Qatar 2026",
+     "url": "https://www.lanacion.com.ar/deportes/futbol/resultado-de-la-seleccion-argentina-sub-17-vs-australia-sub-17-quien-gano-el-partido-del-mundial-nid19112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-19T18:15:09+00:00"
+    },
+    {
+     "titulo": "La Selección argentina Sub-17 comenzó con el pie izquierdo y perdió en el debut ante Australia",
+     "url": "https://noticiasargentinas.com/deportes/la-seleccion-argentina-sub-17-comenzo-con-el-pie-izquierdo-y-perdio-en-el-debut-ante-australia_a6aff352809bc92d20f35d4a4",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-19T18:12:17+00:00"
+    },
+    {
+     "titulo": "La Selección Argentina cayó ante Australia en el debut en el Mundial Sub 17",
+     "url": "https://www.rionegro.com.ar/deportes/la-seleccion-argentina-cayo-ante-australia-en-el-debut-en-el-mundial-sub-17-4805147/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-19T17:54:03+00:00"
+    },
+    {
+     "titulo": "Duro arranque: la Selección Sub-17 falló en las áreas y cayó 2 a 0 ante Australia en el debut mundialista",
+     "url": "https://www.lagaceta.com.ar/nota/1163280/deportes/duro-arranque-seleccion-sub17-fallo-areas-cayo-2-0-ante-australia-debut-mundialista.html",
+     "medio": "La Gaceta (Tucumán)",
+     "fecha": "2026-11-19T15:24:00+00:00"
+    }
+   ]
+  }
+ ]
 }
