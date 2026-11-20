@@ -1,15 +1,15 @@
 {
- "generado": "2026-11-20T08:19:44+00:00",
- "edicion": "mañana",
- "noticias_de": "2026-11-20T08:08:23+00:00",
+ "generado": "2026-11-20T17:30:17+00:00",
+ "edicion": "mediodía",
+ "noticias_de": "2026-11-20T17:21:16+00:00",
  "eleccion": "ia",
  "ia": {
   "disponible": true,
   "usado": "Pollinations · openai",
-  "llamadas": 29
+  "llamadas": 26
  },
  "diario": {
-  "notas": 107,
+  "notas": 108,
   "desde": "/rss.xml"
  },
  "agentes": [
@@ -22,10 +22,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "375 titulares de 63 medios → 12 temas",
+   "detalle": "367 titulares de 45 medios → 12 temas",
    "produjo": 12,
-   "inicio": "2026-11-20T08:10:18+00:00",
-   "fin": "2026-11-20T08:10:18+00:00"
+   "inicio": "2026-11-20T17:22:25+00:00",
+   "fin": "2026-11-20T17:22:25+00:00"
   },
   {
    "id": "monitor-local",
@@ -36,10 +36,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "13 titulares de 7 medios → 11 temas",
-   "produjo": 11,
-   "inicio": "2026-11-20T08:10:18+00:00",
-   "fin": "2026-11-20T08:10:18+00:00"
+   "detalle": "13 titulares de 8 medios → 12 temas",
+   "produjo": 12,
+   "inicio": "2026-11-20T17:22:25+00:00",
+   "fin": "2026-11-20T17:22:25+00:00"
   },
   {
    "id": "monitor-mercosur",
@@ -50,10 +50,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "22 titulares de 9 medios → 12 temas",
+   "detalle": "13 titulares de 6 medios → 12 temas",
    "produjo": 12,
-   "inicio": "2026-11-20T08:10:18+00:00",
-   "fin": "2026-11-20T08:10:18+00:00"
+   "inicio": "2026-11-20T17:22:25+00:00",
+   "fin": "2026-11-20T17:22:25+00:00"
   },
   {
    "id": "monitor-mundo",
@@ -64,10 +64,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "406 titulares de 50 medios → 12 temas",
+   "detalle": "388 titulares de 41 medios → 12 temas",
    "produjo": 12,
-   "inicio": "2026-11-20T08:10:18+00:00",
-   "fin": "2026-11-20T08:10:18+00:00"
+   "inicio": "2026-11-20T17:22:25+00:00",
+   "fin": "2026-11-20T17:22:25+00:00"
   },
   {
    "id": "jefe",
@@ -78,10 +78,10 @@
    "ia": true,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "Eligió 14 de 34 temas",
+   "detalle": "Eligió 14 de 37 temas",
    "produjo": 14,
-   "inicio": "2026-11-20T08:10:18+00:00",
-   "fin": "2026-11-20T08:10:49+00:00"
+   "inicio": "2026-11-20T17:22:25+00:00",
+   "fin": "2026-11-20T17:22:50+00:00"
   },
   {
    "id": "redactor",
@@ -92,10 +92,10 @@
    "ia": true,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "5 borradores de 14 temas",
-   "produjo": 5,
-   "inicio": "2026-11-20T08:18:23+00:00",
-   "fin": "2026-11-20T08:18:19+00:00"
+   "detalle": "4 borradores de 14 temas",
+   "produjo": 4,
+   "inicio": "2026-11-20T17:30:03+00:00",
+   "fin": "2026-11-20T17:30:17+00:00"
   },
   {
    "id": "fuentes",
@@ -106,10 +106,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "Leyó 24 de 35 notas originales; 24 con autor",
+   "detalle": "Leyó 18 de 35 notas originales; 23 con autor",
    "produjo": 14,
-   "inicio": "2026-11-20T08:18:20+00:00",
-   "fin": "2026-11-20T08:19:44+00:00"
+   "inicio": "2026-11-20T17:30:03+00:00",
+   "fin": "2026-11-20T17:30:17+00:00"
   },
   {
    "id": "verificador",
@@ -122,8 +122,8 @@
    "resultado": "falló",
    "detalle": "0 verde · 0 amarillo · 0 rojo · último error: Pollinations openai: HTTP 402",
    "produjo": 0,
-   "inicio": "2026-11-20T08:18:46+00:00",
-   "fin": "2026-11-20T08:19:02+00:00"
+   "inicio": "2026-11-20T17:29:06+00:00",
+   "fin": "2026-11-20T17:29:22+00:00"
   },
   {
    "id": "fotos",
@@ -134,10 +134,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "60 fotos propuestas (29 libres)",
+   "detalle": "58 fotos propuestas (30 libres)",
    "produjo": 14,
-   "inicio": "2026-11-20T08:19:43+00:00",
-   "fin": "2026-11-20T08:19:44+00:00"
+   "inicio": "2026-11-20T17:30:17+00:00",
+   "fin": "2026-11-20T17:30:17+00:00"
   },
   {
    "id": "titulador",
@@ -150,8 +150,8 @@
    "resultado": "funcionó",
    "detalle": "Tituló 4 borradores",
    "produjo": 4,
-   "inicio": "2026-11-20T08:19:19+00:00",
-   "fin": "2026-11-20T08:16:07+00:00"
+   "inicio": "2026-11-20T17:29:39+00:00",
+   "fin": "2026-11-20T17:30:17+00:00"
   },
   {
    "id": "enlazador",
@@ -163,9 +163,9 @@
    "prendido": true,
    "resultado": "funcionó",
    "detalle": "3 enlaces al diario y 4 a fuentes",
-   "produjo": 5,
-   "inicio": "2026-11-20T08:19:44+00:00",
-   "fin": "2026-11-20T08:19:44+00:00"
+   "produjo": 4,
+   "inicio": "2026-11-20T17:30:03+00:00",
+   "fin": "2026-11-20T17:30:17+00:00"
   },
   {
    "id": "corrector",
@@ -176,10 +176,10 @@
    "ia": true,
    "prendido": true,
    "resultado": "falló",
-   "detalle": "Corrigió 1 borradores · último error: Pollinations openai: HTTP 402",
-   "produjo": 1,
-   "inicio": "2026-11-20T08:19:02+00:00",
-   "fin": "2026-11-20T08:19:19+00:00"
+   "detalle": "Corrigió 0 borradores · último error: Pollinations openai: HTTP 402",
+   "produjo": 0,
+   "inicio": "2026-11-20T17:29:22+00:00",
+   "fin": "2026-11-20T17:29:39+00:00"
   },
   {
    "id": "agenda",
@@ -192,8 +192,8 @@
    "resultado": "funcionó",
    "detalle": "15 hechos anunciados para hoy o los próximos días",
    "produjo": 15,
-   "inicio": "2026-11-20T08:10:18+00:00",
-   "fin": "2026-11-20T08:10:18+00:00"
+   "inicio": "2026-11-20T17:22:25+00:00",
+   "fin": "2026-11-20T17:22:25+00:00"
   },
   {
    "id": "seguimiento",
@@ -206,8 +206,8 @@
    "resultado": "funcionó",
    "detalle": "6 temas de los últimos días con notas nuevas",
    "produjo": 6,
-   "inicio": "2026-11-20T08:10:18+00:00",
-   "fin": "2026-11-20T08:10:18+00:00"
+   "inicio": "2026-11-20T17:22:25+00:00",
+   "fin": "2026-11-20T17:22:25+00:00"
   },
   {
    "id": "whatsapp",
@@ -220,274 +220,62 @@
    "resultado": "sin configurar",
    "detalle": "Falta crear el bot de Telegram y pasar su token",
    "produjo": 0,
-   "fin": "2026-11-20T08:19:44+00:00",
-   "inicio": "2026-11-20T08:19:44+00:00"
+   "fin": "2026-11-20T17:30:17+00:00",
+   "inicio": "2026-11-20T17:30:17+00:00"
   }
  ],
  "menu": [
   {
-   "id": "20261120-0810-01",
+   "id": "20261120-1722-03",
    "seccion": "argentina",
-   "por_que": "La aprobación de la ley de discapacidad afecta a millones de argentinos que dependen de beneficios estatales",
-   "titulo_tema": "Por unanimidad , el Senado sancionó la ley de Discapacidad",
-   "puntaje": 27.3,
-   "n_medios": 8,
-   "paises": [
-    "Argentina"
-   ],
-   "region": "centro",
-   "tema": "Política",
-   "ejes": [
-    "industria",
-    "politica"
-   ],
-   "region_mundo": "América Latina",
-   "titulos": [
-    "Senado aprueba Ley permanente de discapacidad con respaldo papal",
-    "Ley de discapacidad gana unanimidad en el Senado y mantiene beneficios",
-    "Senado ratifica esquema de discapacidad tras veto de Milei"
-   ],
-   "bajadas": [
-    "La ley sustituye el esquema transitorio que vence el 31 de diciembre y garantiza prestaciones, pensiones y cobertura médica básica",
-    "El presidente de la comisión de Presupuesto y Hacienda, Agustín Monteverde, destaca que la permanencia del régimen generará previsibilidad y estabilidad para las familias"
-   ],
-   "cuerpo_html": "<p>El Senado convirtió este jueves, por unanimidad, la Ley de Fortalecimiento, Sostenibilidad y Eficiencia Permanente del Sistema de Discapacidad, sustituyendo el esquema transitorio que vence el 31 de diciembre. La sesión, iniciada a las 11:00, contó con la presencia de los 71 legisladores que votaron 71 a favor y ninguno en contra, según <a class=\"externo\" href=\"https://elciudadanoweb.com/por-unanimidad-el-senado-sanciono-la-ley-de-discapacidad/\" title=\"Fuente: elciudadanoweb.com\">elciudadanoweb.com</a> y <a class=\"externo\" href=\"https://www.diariouno.com.ar/politica/por-unanimidad-el-senado-aprobo-la-ley-que-protege-beneficios-personas-discpacidad-n1618255\" title=\"Fuente: diariouno.com.ar\">diariouno.com.ar.</a></p>\n<p>La iniciativa replica en gran medida la Ley 27.793, sancionada el año pasado y vetada por el presidente Javier Milei, pero mantiene los beneficios de la emergencia que había sido rechazada en 2025. El texto, aprobado tras el respaldo del papa León XIV a los reclamos de los colectivos de discapacidad, asegura la continuidad de prestaciones, pensiones y cobertura médica básica mediante el programa federal Incluir Salud.</p>\n<p>El presidente de la comisión de Presupuesto y Hacienda, Agustín Monteverde, explicó que la permanencia del régimen “es la única forma de salir de la emergencia en discapacidad”, pues “generará previsibilidad y estabilidad” para las familias afectadas. Patricia Bullrich, jefa del bloque de La Libertad Avanza, calificó la sanción como un “acuerdo social y político” que supera los parches anteriores.</p>\n<p>Desde la oposición, la ex gobernadora y senadora peronista Alicia Kirchner señaló que la ley “no reconstruye los derechos que fueron vulnerados”, mientras que la senadora catamarqueña Lucía Corpacci criticó al presidente Milei por “no interesarse en los discapacitados” y afirmó que la norma sale “porque los colectivos de discapacidad salieron a la calle”.</p>\n<p>El documento establece que los titulares del Certificado Único de Discapacidad pueden recibir una pensión no contributiva equivalente al 70 % del haber mínimo jubilatorio y, al mismo tiempo, trabajar formalmente o en monotributo siempre que sus ingresos no superen los dos salarios mínimos vitales y móviles. Además, ratifica el nomenclador único con actualización automática vinculada al índice de movilidad jubilatoria.</p>\n<p>En cuanto a recursos, la ley dispone que la partida presupuestaria del Ministerio de Salud no podrá ser inferior en términos reales a la del ejercicio previo, crea auditorías cruzadas entre ANSES, ARCA, SINTyS y RENAPER y fija un plazo de 30 días para su reglamentación. Los bloques aliados, como el PRO y el radicalismo, destacaron la necesidad de dejar atrás las prórrogas y los aranceles congelados para dar certeza a las familias.</p>\n<p>El cumplimiento efectivo de la norma dependerá de que se asignen los recursos suficientes en el Presupuesto 2027, según la senadora radical mendocina Mariana Juri, quien pidió vigilancia legislativa sobre los fondos. El próximo debate en la Cámara de Diputados comenzará la semana que sigue.</p>\n<p>La sanción, que evita que las personas con discapacidad queden desprotegidas en enero, marca un punto de partida, pero la oposición advierte que la ley solo será efectiva si el gobierno garantiza las partidas reales y acelera la cancelación de las deudas acumuladas con los proveedores de servicios.</p>",
-   "fotos": [
-    {
-     "url": "https://elciudadanoweb.com/wp-content/uploads/2026/11/senado-discapacidad-1-1.webp",
-     "pagina": "https://elciudadanoweb.com/por-unanimidad-el-senado-sanciono-la-ley-de-discapacidad/",
-     "credito": "Foto: elciudadanoweb.com",
-     "fuente": "elciudadanoweb.com",
-     "descripcion": "Por unanimidad , el Senado sancionó la ley de Discapacidad",
-     "libre": false
-    },
-    {
-     "url": "https://media.diariouno.com.ar/p/462225cbfab5338a0894a3d046a6a21a/adjuntos/298/imagenes/009/851/0009851552/1200x675/smart/manifestacion-discapacidad.jpg",
-     "pagina": "https://www.diariouno.com.ar/politica/por-unanimidad-el-senado-aprobo-la-ley-que-protege-beneficios-personas-discpacidad-n1618255",
-     "credito": "Foto: diariouno.com.ar",
-     "fuente": "diariouno.com.ar",
-     "descripcion": "Por unanimidad el Senado aprobó la ley que protege beneficios para personas con discapacidad",
-     "libre": false
-    },
-    {
-     "url": "https://pxbcdn.eldiariodelarepublica.com/republica/112026/1795129737540.jpg?cw=1200&ch=630",
-     "pagina": "https://www.eldiariodelarepublica.com/nota/2026-11-19-20-7-0-el-senado-sanciono-por-unanimidad-una-ley-permanente-de-discapacidad",
-     "credito": "Foto: eldiariodelarepublica.com",
-     "fuente": "eldiariodelarepublica.com",
-     "descripcion": "El Senado sancionó por unanimidad una ley permanente de discapacidad",
-     "libre": false
-    },
-    {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/2024-11-12%2C_Senado_Federal_do_Brasil_-_399.jpg/1280px-2024-11-12%2C_Senado_Federal_do_Brasil_-_399.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:2024-11-12,_Senado_Federal_do_Brasil_-_399.jpg",
-     "credito": "Foto: Senado Federal / Wikimedia Commons (CC BY 2.0)",
-     "descripcion": "Subcomissão Permanente de Direitos das Pessoas com Doenças Raras (CASRARAS) realiza audiência pública para debater a normatização do acesso das pessoas com doenças raras a medicamentos, dispositivos m",
-     "licencia": "CC BY 2.0",
-     "fuente": "Wikimedia Commons",
-     "libre": true
-    },
-    {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Senado2006.jpg/1280px-Senado2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Senado2006.jpg",
-     "credito": "Foto: Wilson Dias/ABr / Wikimedia Commons (CC BY 3.0 br)",
-     "descripcion": "Plenário do Senado Federal do Brasil",
-     "licencia": "CC BY 3.0 br",
-     "fuente": "Wikimedia Commons",
-     "libre": true
-    }
-   ],
-   "enlaces": [
-    {
-     "url": "https://elciudadanoweb.com/por-unanimidad-el-senado-sanciono-la-ley-de-discapacidad/",
-     "clase": "externo",
-     "titulo": "Fuente: elciudadanoweb.com",
-     "palabra": "elciudadanoweb.com"
-    },
-    {
-     "url": "https://www.diariouno.com.ar/politica/por-unanimidad-el-senado-aprobo-la-ley-que-protege-beneficios-personas-discpacidad-n1618255",
-     "clase": "externo",
-     "titulo": "Fuente: diariouno.com.ar",
-     "palabra": "diariouno.com.ar."
-    }
-   ],
-   "relacionadas": [],
-   "verificacion": {
-    "independientes": 4,
-    "paises": [
-     "Argentina"
-    ],
-    "estatal": [],
-    "oficiales": [],
-    "agencias_citadas": [],
-    "leidas": 3
-   },
-   "fuentes": [
-    {
-     "medio": "elciudadanoweb.com",
-     "url": "https://elciudadanoweb.com/por-unanimidad-el-senado-sanciono-la-ley-de-discapacidad/",
-     "titulo": "Por unanimidad , el Senado sancionó la ley de Discapacidad",
-     "pais": "Argentina",
-     "tipo": null,
-     "fecha": "2026-11-20T03:45:00+00:00",
-     "idioma": "Spanish",
-     "autor": "El Ciudadano",
-     "fecha_pub": "2026-11-20T02:38:49+00:00",
-     "imagen": "https://elciudadanoweb.com/wp-content/uploads/2026/11/senado-discapacidad-1-1.webp",
-     "agencias": [],
-     "oficiales": [],
-     "leida": true,
-     "palabras": 948,
-     "resumen": null
-    },
-    {
-     "medio": "diariouno.com.ar",
-     "url": "https://www.diariouno.com.ar/politica/por-unanimidad-el-senado-aprobo-la-ley-que-protege-beneficios-personas-discpacidad-n1618255",
-     "titulo": "Por unanimidad el Senado aprobó la ley que protege beneficios para personas con discapacidad",
-     "pais": "Argentina",
-     "tipo": null,
-     "fecha": "2026-11-20T02:45:00+00:00",
-     "idioma": "Spanish",
-     "autor": "Redacción de UNO",
-     "fecha_pub": "2026-11-19T20:14:00-03:00",
-     "imagen": "https://media.diariouno.com.ar/p/462225cbfab5338a0894a3d046a6a21a/adjuntos/298/imagenes/009/851/0009851552/1200x675/smart/manifestacion-discapacidad.jpg",
-     "agencias": [],
-     "oficiales": [],
-     "leida": true,
-     "palabras": 668,
-     "resumen": null
-    },
-    {
-     "medio": "eldiariodelarepublica.com",
-     "url": "https://www.eldiariodelarepublica.com/nota/2026-11-19-20-7-0-el-senado-sanciono-por-unanimidad-una-ley-permanente-de-discapacidad",
-     "titulo": "El Senado sancionó por unanimidad una ley permanente de discapacidad",
-     "pais": "Argentina",
-     "tipo": null,
-     "fecha": "2026-11-20T02:30:00+00:00",
-     "idioma": "Spanish",
-     "autor": "El Diario de la República",
-     "fecha_pub": "2026-11-19T23:10:05.207Z",
-     "imagen": "https://pxbcdn.eldiariodelarepublica.com/republica/112026/1795129737540.jpg?cw=1200&ch=630",
-     "agencias": [],
-     "oficiales": [],
-     "leida": true,
-     "palabras": 575,
-     "resumen": null
-    },
-    {
-     "medio": "Diario Norte (Chaco)",
-     "url": "https://www.diarionorte.com/336955-el-senado-tratara-la-ley-de-ludopatia-el-jueves-26",
-     "titulo": "El Senado tratará la ley de Ludopatía el jueves 26",
-     "pais": "Argentina",
-     "tipo": "Medio provincial",
-     "fecha": "2026-11-20T01:34:10+00:00",
-     "idioma": "castellano",
-     "leida": false,
-     "error": "HTTP Error 403: Forbidden",
-     "imagen": null,
-     "resumen": "El proyecto tendrá preferencia para ser debatido la próxima semana en la Cámara alta con o sin dictamen de comisión."
-    }
-   ],
-   "falta": "Confirmar el monto exacto de la partida presupuestaria asignada al Ministerio de Salud para el ejercicio 2027.",
-   "volanta": "Discapacidad",
-   "firma": "Ramiro De la Puente",
-   "prioridad": "alta",
-   "escalon": "nota completa"
-  },
-  {
-   "id": "20261120-0810-04",
-   "seccion": "argentina",
-   "por_que": "El juicio en ausencia de los responsables del atentado a la AMIA es un hito en la justicia argentina",
-   "titulo_tema": "Javier Milei aseguró que los responsables del atentado a la AMIA serán juzgados con la ley de juicio en ausencia",
-   "puntaje": 13.9,
+   "por_que": "La alerta amarilla por tormentas en Formosa y Misiones afecta directamente a los habitantes de esas provincias, con riesgo de inundaciones y daños a la infraestructura.",
+   "titulo_tema": "Emiten alerta amarilla por tormentas para este miércoles en toda la provincia",
+   "puntaje": 12.2,
    "n_medios": 3,
    "paises": [
     "Argentina"
    ],
-   "region": "buenos-aires",
-   "tema": "Política",
-   "ejes": [
-    "internacional",
-    "politica"
-   ],
+   "region": "norte-grande",
+   "tema": "Sociedad",
+   "ejes": [],
    "region_mundo": "América Latina",
    "titulos": [
-    "Mile I asegura que los responsables del atentado a la AMIA serán juzgados bajo la ley de juicio en ausencia",
-    "Mile I destaca la importancia de la ley de juicio en ausencia tras su intervención en el FACA",
-    "Mile I recuerda la historia de la comunidad judía y reafirma la justicia contra el terrorismo"
+    "Entre Ríos emite alerta amarilla por tormentas en diez departamentos",
+    "Formosa y Misiones también alertan sobre tormentas del 20 de noviembre",
+    "El Niño intensifica lluvias y provoca evacuaciones en el noreste argentino"
    ],
    "bajadas": [
-    "En la cena anual del Foro Argentino contra el Antisemitismo, Mile I recibió una distinción por su labor y recordó los ataques de la década de los noventa contra la Embajada de Israel y la AMIA",
-    "El presidente citó la expulsión del encargado de negocios de Teherán y la firma de un memorándum con Israel como parte de las acciones de su gobierno en materia de seguridad exterior"
+    "Diecisiete personas evacuadas en el mirador de Bajada Grande, y se registran autoevacuaciones en Entre Ríos",
+    "La alerta amarilla se mantendrá solo el viernes, sin previsión de alerta para sábado y domingo"
    ],
-   "cuerpo_html": "<p>El <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/mercados-reaccionan-discurso-presidente/\" title=\"Diario Federal: Los mercados argentinos reaccionan con cautela al discurso presidencial\">presidente</a> Javier Mile I se pronunció el jueves 19 noviembre ante la cena anual del Foro <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/milei-explica-por-que-la-inflacion-argentina-se-freno-este-ano/\" title=\"Diario Federal: Milei explica por qué la inflación argentina se frenó este año\">Argentino</a> contra el Antisemitismo (FACA) en Puerto Madero, afirmando que los responsables del atentado a la AMIA serán juzgados bajo la ley de juicio en ausencia.</p>\n<p>La reunión, celebrada en el salón Madero Tango, contó con la presencia de funcionarios, empresarios y personalidades de los medios. Mile I recibió una distinción por su labor y recordó los ataques de la década de los noventa contra la Embajada de Israel y la AMIA, donde “fueron ciento catorce vidas arrancadas por el terrorismo” según su discurso.</p>\n<p>El mandatario destacó la importancia de la ley de juicio en ausencia, señalando que “los responsables van a ser juzgados aunque sigan escondidos detrás de un régimen que los protege”. Esta medida permite procesar a los autores de los atentados a pesar de la falta de extradiciones o de la inacción de los países implicados.</p>\n<p>Durante su intervención, Mile I hizo un recorrido por la historia de la comunidad judía en Argentina, mencionando la llegada de las primeras familias a Moisés Ville, en Santa Fe, en 1889. Subrayó que la comunidad ha contribuido al país como médicos, docentes y productores, y que “cada vez que alguien la agrede, agrede a la Argentina entera”.</p>\n<p>El presidente también recordó las acciones de su gobierno en materia de seguridad exterior: la declaración de Hamás, la Guardia Revolucionaria iraní y las Fuerzas Quds como organizaciones terroristas, la expulsión del encargado de negocios de Teherán y la firma de un memorándum con Israel en defensa de la libertad y la democracia.</p>\n<p>En cuanto a la respuesta de la oposición, la cobertura de La Nación señaló que los críticos del presidente calificaron la declaración como un paso “decisivo” pero también expresaron dudas sobre la efectividad de la ley de juicio en ausencia, citando la falta de mecanismos de ejecución en el extranjero.</p>\n<p>El Senado, según informó Noticias Argentinas, aprobó por unanimidad una ley permanente de discapacidad que mantiene los beneficios de la emergencia, aunque no se relaciona directamente con el tema de la AMIA.</p>\n<p>Para concluir, Mile I afirmó que la justicia “por fin empieza a moverse” y que la Argentina no permitirá que la comunidad judía sea atacada en su suelo. Se espera que el gobierno avance en la aplicación práctica de la ley de juicio en ausencia y en la coordinación con organismos internacionales.</p>",
+   "cuerpo_html": "<p>El 20 de noviembre la Dirección Provincial de Defensa Civil de Entre Ríos emitió una alerta amarilla por tormentas que cubre diez departamentos de la provincia, mientras el monitoreo de las inundaciones continúa en curso.</p>\n<p>La alerta, vigente durante la mañana del día, incluye a Diamante, Paraná, Rosario del Tala, Villaguay, La Paz, Federal, Concordia, San Salvador, Feliciano y Federación, según el informe de la Defensa Civil y los avisos del Servicio Meteorológico Nacional.</p>\n<p>El fenómeno El Niño es el motor de la situación, provocando precipitaciones intensas en cortos períodos, actividad eléctrica frecuente, ocasional granizo y ráfagas de viento, según la Dirección Provincial.</p>\n<p>Hasta la fecha, se han evacuado diecisiete personas, entre ellas en el mirador de Bajada Grande, y se registran autoevacuaciones, según la información de las autoridades de Protección Civil Municipal.</p>\n<p>La recomendación oficial es evitar salir durante las tormentas, mantener limpios los desagües, desconectar electrodomésticos y buscar refugio en un edificio o vehículo cerrado si se está al aire libre.</p>\n<p>El Sistema Nacional de Alerta y Monitoreo de Emergencias (Siname) confirma que la alerta amarilla se mantendrá solo el viernes, sin previsión de alerta para el sábado 21 ni el domingo 22 de noviembre.</p>\n<p>En paralelo, la provincia de <a class=\"externo\" href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxOeTh0MFBsOXRYaFJUZE1Ed0JUckVWU2h3WDd2YnMtNk9xME9yRGlTSmVfUkIxSzZXcENFX3pFZkVLUHNjTDZyckxfUUJEMFBaSzFHVE5VSm54YmpaRndPNC16cnFGZ3pCc1E2NFd6ZFotZUR5ckpaMTg1NWxWWFU4OHdseDd3UDc5RVZDaWREUFNZOU9hQ3l4NzdWQ2x0Vkc4Ym03dVVyV3JKWU1NVkxaNjBzS0RlN083dDVfM3NJRi0zeGtwc3MyQmtwbTZobkdXQXFFemtjM2EyQdIB7gFBVV95cUxOQ0IyQ3ZGaG9JbnV0M2p3RDB2T2Z2V20tU0t2V216OWF4d3RObFpONzB5T1Mzc3R1YzhaUnhUdTk4NWhpS1ZJOUJpSXdMeTRVajVBZExlREM2TjQwVWVFNFFDcVUwUWcxRkg1enpKdWlzOG53alNKR3h1WUNyUU1mMmxfU0g5SGk2SjNoak1UOFBJbkxvUi1hbDNsUmdsb3Y4VzB0T1c3SDlUREh0XzBOemJwSXdKdXd0blpkYVlSNmUxSlVramJXd3N0a3hSc3JRRHpnbjZxVm40enNvTlpkU21acGROOTJsOHQyR3ZR?oc=5\" title=\"Fuente: Formosa (prensa local)\">Formosa</a> también reportó la emisión de una alerta amarilla por tormentas para el viernes 20 de noviembre, según la prensa local, aunque no se detallan los departamentos afectados.</p>\n<p>La provincia de Misiones, a través del medio El Territorio, anunció una alerta amarilla por tormentas para el miércoles, sin especificar la extensión geográfica ni la duración, según la cobertura de Google Noticias.</p>\n<p>El contexto regional muestra que el fenómeno El Niño está generando condiciones meteorológicas adversas en varias provincias del noreste argentino, con el potencial de agravar la situación hídrica en el territorio.</p>\n<p>El Gobierno Provincial de Entre Ríos mantiene un monitoreo permanente de la situación hídrica y meteorológica, y la Dirección Provincial de Defensa Civil seguirá actualizando los avisos conforme evolucione el clima.</p>\n<p>Para la población, la prioridad es seguir las indicaciones de las autoridades, mantenerse informados a través de los canales oficiales y evitar desplazamientos innecesarios durante las tormentas.</p>\n<p>Con el fin de evaluar la evolución de la alerta, las autoridades planean revisar la información del Sistema Meteorológico Nacional y del Siname a las 12:00 del día siguiente.</p>\n<p>La comunidad de Entre Ríos, Formosa y Misiones debe prestar atención a los avisos de las respectivas Defensas Civiles y a las recomendaciones de los servicios meteorológicos locales.</p>",
    "fotos": [
     {
-     "url": "https://www.lanacion.com.ar/resizer/v2/el-mandatario-fue-distinguido-por-la-organizacion-VCNEV2DXBBD5JFX3UVJPVUD2PA.jpg?auth=71336c1f47c3d06e9f509aa9cd67e66cd46e73d827ae3f7136a3d532da06120d&width=1200&height=675&quality=70&smart=true",
-     "pagina": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-senado-aprobo-la-nueva-ley-de-discapacidad-y-la-adhesion-al-nid20112026/",
-     "credito": "Foto: La Nación",
-     "fuente": "La Nación",
-     "descripcion": "Javier Milei y sus medidas, en vivo: “Los responsables van a ser juzgados”, dijo el Presidente sobre el atentado a la AMIA",
+     "url": "https://media.lacapital.com.ar/p/6042e6136ae9638ee825f321d641d881/adjuntos/205/imagenes/103/543/0103543431/1200x675/smart/el-nino-inundaciones-parana.jpg",
+     "pagina": "https://www.unoentrerios.com.ar/la-provincia/entre-rios-rige-un-alerta-amarilla-tormentas-y-hay-mas-evacuados-n10293265.html",
+     "credito": "Foto: Uno Entre Ríos",
+     "fuente": "Uno Entre Ríos",
+     "descripcion": "Entre Ríos: rige un alerta amarilla por tormentas y hay más evacuados",
      "libre": false
     },
     {
-     "url": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/Javier-Milei-1.jpg?w=1200&h=630&crop=1&resize=1200,630",
-     "pagina": "https://www.rionegro.com.ar/politica/javier-milei-aseguro-que-los-responsables-del-atentado-a-la-amia-seran-juzgados-con-la-ley-de-juicio-en-ausencia-4805903/",
-     "credito": "Foto: Río Negro",
-     "fuente": "Río Negro",
-     "descripcion": "Javier Milei aseguró que los responsables del atentado a la AMIA serán juzgados con la ley de juicio en ausencia",
+     "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+     "pagina": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOeTh0MFBsOXRYaFJUZE1Ed0JUckVWU2h3WDd2YnMtNk9xME9yRGlTSmVfUkIxSzZXcENFX3pFZkVLUHNjTDZyckxfUUJEMFBaSzFHVE5VSm54YmpaRndPNC16cnFGZ3pCc1E2NFd6ZFotZUR5ckpaMTg1NWxWWFU4OHdseDd3UDc5RVZDaWREUFNZOU9hQ3l4NzdWQ2x0Vkc4Ym03dVVyV3JKWU1NVkxaNjBzS0RlN083dDVfM3NJRi0zeGtwc3MyQmtwbTZobkdXQXFFemtjM2EyQdIB7gFBVV95cUxOQ0IyQ3ZGaG9JbnV0M2p3RDB2T2Z2V20tU0t2V216OWF4d3RObFpONzB5T1Mzc3R1YzhaUnhUdTk4NWhpS1ZJOUJpSXdMeTRVajVBZExlREM2TjQwVWVFNFFDcVUwUWcxRkg1enpKdWlzOG53alNKR3h1WUNyUU1mMmxfU0g5SGk2SjNoak1UOFBJbkxvUi1hbDNsUmdsb3Y4VzB0T1c3SDlUREh0XzBOemJwSXdKdXd0blpkYVlSNmUxSlVramJXd3N0a3hSc3JRRHpnbjZxVm40enNvTlpkU21acGROOTJsOHQyR3ZR?oc=5",
+     "credito": "Foto: Formosa (prensa local)",
+     "fuente": "Formosa (prensa local)",
+     "descripcion": "Hay alerta amarilla por tormentas para este viernes 20 de noviembre en Formosa: las zonas afectadas",
      "libre": false
-    },
-    {
-     "url": "https://alpha-app.tadevel-cdn.com/hostname/noticiasargentinas.com/api/v1/image/article/6aff917f09bc92d20f3cc1ee/facebook?v=84caa8b5eef90b18105198a4c828668f&s=39e4248a041b00e045896c4db6f93615",
-     "pagina": "https://noticiasargentinas.com/politica/milei-celebro-el-juicio-en-ausencia-por-la-amia---los-responsables-van-a-ser-juzgados-aunque-sigan-escondidos-detras-de-un-regimen-_a6aff917f09bc92d20f3cc1ee",
-     "credito": "Foto: Noticias Argentinas",
-     "fuente": "Noticias Argentinas",
-     "descripcion": "Milei celebró el juicio en ausencia por la AMIA: “Los responsables van a ser juzgados aunque sigan escondidos detrás de un régimen”",
-     "libre": false
-    },
-    {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Javier_Milei_VIVA_24_%285%29.jpg/1280px-Javier_Milei_VIVA_24_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Javier_Milei_VIVA_24_(5).jpg",
-     "credito": "Foto: Vox España / Wikimedia Commons (CC0)",
-     "descripcion": "Javier Milei in May 2024",
-     "licencia": "CC0",
-     "fuente": "Wikimedia Commons",
-     "libre": true
-    },
-    {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Javier_Milei_in_2026.jpg/1280px-Javier_Milei_in_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Javier_Milei_in_2026.jpg",
-     "credito": "Foto: Elekes Andor / Wikimedia Commons (CC BY 4.0)",
-     "descripcion": "Javier Milei",
-     "licencia": "CC BY 4.0",
-     "fuente": "Wikimedia Commons",
-     "libre": true
     }
    ],
    "enlaces": [
     {
-     "url": "https://www.diariofederal.com.ar/articulo/milei-explica-por-que-la-inflacion-argentina-se-freno-este-ano/",
-     "clase": "interno",
-     "titulo": "Diario Federal: Milei explica por qué la inflación argentina se frenó este año",
-     "palabra": "Argentino"
-    },
-    {
-     "url": "https://www.diariofederal.com.ar/articulo/mercados-reaccionan-discurso-presidente/",
-     "clase": "interno",
-     "titulo": "Diario Federal: Los mercados argentinos reaccionan con cautela al discurso presidencial",
-     "palabra": "presidente"
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOeTh0MFBsOXRYaFJUZE1Ed0JUckVWU2h3WDd2YnMtNk9xME9yRGlTSmVfUkIxSzZXcENFX3pFZkVLUHNjTDZyckxfUUJEMFBaSzFHVE5VSm54YmpaRndPNC16cnFGZ3pCc1E2NFd6ZFotZUR5ckpaMTg1NWxWWFU4OHdseDd3UDc5RVZDaWREUFNZOU9hQ3l4NzdWQ2x0Vkc4Ym03dVVyV3JKWU1NVkxaNjBzS0RlN083dDVfM3NJRi0zeGtwc3MyQmtwbTZobkdXQXFFemtjM2EyQdIB7gFBVV95cUxOQ0IyQ3ZGaG9JbnV0M2p3RDB2T2Z2V20tU0t2V216OWF4d3RObFpONzB5T1Mzc3R1YzhaUnhUdTk4NWhpS1ZJOUJpSXdMeTRVajVBZExlREM2TjQwVWVFNFFDcVUwUWcxRkg1enpKdWlzOG53alNKR3h1WUNyUU1mMmxfU0g5SGk2SjNoak1UOFBJbkxvUi1hbDNsUmdsb3Y4VzB0T1c3SDlUREh0XzBOemJwSXdKdXd0blpkYVlSNmUxSlVramJXd3N0a3hSc3JRRHpnbjZxVm40enNvTlpkU21acGROOTJsOHQyR3ZR?oc=5",
+     "clase": "externo",
+     "titulo": "Fuente: Formosa (prensa local)",
+     "palabra": "Formosa"
     }
    ],
-   "relacionadas": [
-    {
-     "titulo": "Milei explica por qué la inflación argentina se frenó este año",
-     "url": "https://www.diariofederal.com.ar/articulo/milei-explica-por-que-la-inflacion-argentina-se-freno-este-ano/"
-    },
-    {
-     "titulo": "Los mercados argentinos reaccionan con cautela al discurso presidencial",
-     "url": "https://www.diariofederal.com.ar/articulo/mercados-reaccionan-discurso-presidente/"
-    }
-   ],
+   "relacionadas": [],
    "verificacion": {
     "independientes": 3,
     "paises": [
@@ -496,73 +284,273 @@
     "estatal": [],
     "oficiales": [],
     "agencias_citadas": [],
-    "leidas": 2
+    "leidas": 1
    },
    "fuentes": [
     {
-     "medio": "La Nación",
-     "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-senado-aprobo-la-nueva-ley-de-discapacidad-y-la-adhesion-al-nid20112026/",
-     "titulo": "Javier Milei y sus medidas, en vivo: “Los responsables van a ser juzgados”, dijo el Presidente sobre el atentado a la AMIA",
+     "medio": "Uno Entre Ríos",
+     "url": "https://www.unoentrerios.com.ar/la-provincia/entre-rios-rige-un-alerta-amarilla-tormentas-y-hay-mas-evacuados-n10293265.html",
+     "titulo": "Entre Ríos: rige un alerta amarilla por tormentas y hay más evacuados",
      "pais": "Argentina",
-     "tipo": "Medio",
-     "fecha": "2026-11-20T07:30:00+00:00",
-     "idioma": null,
-     "autor": "LA NACION",
-     "fecha_pub": "2026-11-20T05:40:00Z",
-     "imagen": "https://www.lanacion.com.ar/resizer/v2/el-mandatario-fue-distinguido-por-la-organizacion-VCNEV2DXBBD5JFX3UVJPVUD2PA.jpg?auth=71336c1f47c3d06e9f509aa9cd67e66cd46e73d827ae3f7136a3d532da06120d&width=1200&height=675&quality=70&smart=true",
+     "tipo": "Medio provincial",
+     "fecha": "2026-11-20T12:43:18+00:00",
+     "idioma": "castellano",
+     "autor": "Uno Entre Rios",
+     "fecha_pub": "2026-11-20T09:43:18-03:00",
+     "imagen": "https://media.lacapital.com.ar/p/6042e6136ae9638ee825f321d641d881/adjuntos/205/imagenes/103/543/0103543431/1200x675/smart/el-nino-inundaciones-parana.jpg",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 374,
+     "resumen": "Defensa Civil emitió alerta amarilla por tormentas para diez departamentos de Entre Ríos, mientras continúa el monitoreo de las inundaciones. Recomendaciones"
+    },
+    {
+     "medio": "Formosa (prensa local)",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOeTh0MFBsOXRYaFJUZE1Ed0JUckVWU2h3WDd2YnMtNk9xME9yRGlTSmVfUkIxSzZXcENFX3pFZkVLUHNjTDZyckxfUUJEMFBaSzFHVE5VSm54YmpaRndPNC16cnFGZ3pCc1E2NFd6ZFotZUR5ckpaMTg1NWxWWFU4OHdseDd3UDc5RVZDaWREUFNZOU9hQ3l4NzdWQ2x0Vkc4Ym03dVVyV3JKWU1NVkxaNjBzS0RlN083dDVfM3NJRi0zeGtwc3MyQmtwbTZobkdXQXFFemtjM2EyQdIB7gFBVV95cUxOQ0IyQ3ZGaG9JbnV0M2p3RDB2T2Z2V20tU0t2V216OWF4d3RObFpONzB5T1Mzc3R1YzhaUnhUdTk4NWhpS1ZJOUJpSXdMeTRVajVBZExlREM2TjQwVWVFNFFDcVUwUWcxRkg1enpKdWlzOG53alNKR3h1WUNyUU1mMmxfU0g5SGk2SjNoak1UOFBJbkxvUi1hbDNsUmdsb3Y4VzB0T1c3SDlUREh0XzBOemJwSXdKdXd0blpkYVlSNmUxSlVramJXd3N0a3hSc3JRRHpnbjZxVm40enNvTlpkU21acGROOTJsOHQyR3ZR?oc=5",
+     "titulo": "Hay alerta amarilla por tormentas para este viernes 20 de noviembre en Formosa: las zonas afectadas",
+     "pais": "Argentina",
+     "tipo": "Medio provincial",
+     "fecha": "2026-11-20T04:31:06+00:00",
+     "idioma": "castellano",
+     "autor": null,
+     "fecha_pub": null,
+     "imagen": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
      "agencias": [],
      "oficiales": [],
      "leida": false,
      "palabras": 0,
-     "resumen": "El minuto a minuto de las decisiones del jefe de Estado, las reacciones de la oposición y las declaraciones de los funcionarios"
+     "resumen": "&nbsp;&nbsp; TN"
     },
     {
-     "medio": "Río Negro",
-     "url": "https://www.rionegro.com.ar/politica/javier-milei-aseguro-que-los-responsables-del-atentado-a-la-amia-seran-juzgados-con-la-ley-de-juicio-en-ausencia-4805903/",
-     "titulo": "Javier Milei aseguró que los responsables del atentado a la AMIA serán juzgados con la ley de juicio en ausencia",
+     "medio": "El Territorio (Misiones)",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPMmljcUhtRTlfSVI5bEI2Zmk0Snh3blFPRGxINDY0SGZjRTduTExuZ1B2V1BvOTNPSXZFUTdqTnFCVTdhbTl3UkNZTXNmRDlTODZuamFPTjkwOURYVXpxZGVldjZONDg3Y05yUTBMVWlTeWhsb0FULV9ZMzd0Y1BMc1dTWnVhc3N5LUFFUUJIUVlpc1FKRzVuNzFoSUFTT3J0M3NpaVBjNThlc2lOX3FPN3h5Q3dYNkxSSkZ4aGluM3VDc1F4US1SaW4tcWlvTGZKd0HSAdcBQVVfeXFMT210VEc0UkNXUXV0bGpXVEJUd3U5eXlucTVleW1TOTJqbktiX1JYd1FKMHJqMnp5aGpwMjNlR0lYYTZTVWxEdTQtLUlKeFNUeFdBaWpaZ1BzdnU2Rk9lWmNkb3BLc3ZWSnZrN0pRNFNGeU9XSlk4WDdEMy1Mck4wRVpneHhnS1E2VTV6Yl9QLURwN0NyT1o5TFd1QnI5MWdlVGV5SEJtRUFQaFRqYkdLTUZwcVdNRlhqTkVDck5Rb3g2dHExWGpJN0JOMERzZC1Scl96RGtIWm8?oc=5",
+     "titulo": "Emiten alerta amarilla por tormentas para este miércoles en toda la provincia",
      "pais": "Argentina",
-     "tipo": "Medio regional",
-     "fecha": "2026-11-20T00:37:59+00:00",
+     "tipo": "Medio provincial",
+     "fecha": "2026-11-18T23:10:00+00:00",
      "idioma": "castellano",
      "autor": null,
-     "fecha_pub": "2026-11-19T21:37:59-03:00",
-     "imagen": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/Javier-Milei-1.jpg?w=1200&h=630&crop=1&resize=1200,630",
+     "fecha_pub": null,
+     "imagen": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
      "agencias": [],
      "oficiales": [],
-     "leida": true,
-     "palabras": 856,
-     "resumen": null
-    },
-    {
-     "medio": "Noticias Argentinas",
-     "url": "https://noticiasargentinas.com/politica/milei-celebro-el-juicio-en-ausencia-por-la-amia---los-responsables-van-a-ser-juzgados-aunque-sigan-escondidos-detras-de-un-regimen-_a6aff917f09bc92d20f3cc1ee",
-     "titulo": "Milei celebró el juicio en ausencia por la AMIA: “Los responsables van a ser juzgados aunque sigan escondidos detrás de un régimen”",
-     "pais": "Argentina",
-     "tipo": "Agencia privada",
-     "fecha": "2026-11-20T00:34:47+00:00",
-     "idioma": null,
-     "autor": "Agencia Noticias Argentinas",
-     "fecha_pub": "2026-11-20T00:34:47.640Z",
-     "imagen": "https://alpha-app.tadevel-cdn.com/hostname/noticiasargentinas.com/api/v1/image/article/6aff917f09bc92d20f3cc1ee/facebook?v=84caa8b5eef90b18105198a4c828668f&s=39e4248a041b00e045896c4db6f93615",
-     "agencias": [],
-     "oficiales": [],
-     "leida": true,
-     "palabras": 1004,
-     "resumen": "Lo dijo al recibir una distinción durante la cena anual del Foro Argentino contra el Antisemitismo (FACA), el Presidente evocó a las 114 víctimas de los ataques a la Embajada de Israel y a la AMIA."
+     "leida": false,
+     "palabras": 0,
+     "resumen": "&nbsp;&nbsp; El Territorio"
     }
    ],
-   "falta": "Confirmar si la ley de juicio en ausencia cuenta con los mecanismos necesarios para ejecutar sentencias en el extranjero.",
-   "volanta": "Justicia contra el terrorismo",
-   "firma": "Emilio Lahitte",
+   "falta": "Confirmar si la alerta amarilla se extiende a los días sábado y domingo en Entre Ríos.",
+   "volanta": "Tormentas en el noreste",
+   "firma": "Redacción Federal",
    "prioridad": "alta",
    "escalon": "nota completa"
   },
   {
-   "id": "20261120-0810-07",
+   "id": "20261120-1722-10",
+   "seccion": "mundo",
+   "por_que": "La cumbre entre Trump, Xi y Putin es un hito en la política internacional que repercute en la posición de Argentina dentro del orden mundial multipolar.",
+   "titulo_tema": "Trump llegó a China y Xi Jinping lo recibió antes de la histórica cumbre con Putin",
+   "puntaje": 47.9,
+   "n_medios": 12,
+   "paises": [
+    "Francia",
+    "Reino Unido",
+    "Rusia",
+    "Turquía"
+   ],
+   "region": "",
+   "tema": "Política",
+   "ejes": [
+    "economia",
+    "fmi",
+    "internacional",
+    "politica"
+   ],
+   "region_mundo": "Europa",
+   "titulos": [
+    "Trump, Xi y Putin se reúnen en Shenzhen antes de la cumbre APEC",
+    "Putin ocupa el asiento de honor frente a Trump y Xi en Shenzhen",
+    "Reunión a puerta cerrada entre Trump, Xi y Putin marca nuevo orden mundial"
+   ],
+   "bajadas": [
+    "El encuentro se celebró el jueves 20 de noviembre en Shenzhen, antes de la segunda jornada del foro APEC",
+    "La reunión no reveló una agenda concreta ni acuerdos, dejando el impacto de la cumbre incierto"
+   ],
+   "cuerpo_html": "<p>El jueves 20 de noviembre, en la ciudad de <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/xi-jinping-donald-trump-y-vladimir-putin-participaran-en-una-cumbre/\" title=\"Diario Federal: ¿Yalta 2.0 en Shenzhen? Trump, Putin y Xi Jinping ante el nacimiento de otro orden mundial\">Shenzhen</a>, el presidente de Estados Unidos, Donald Trump, se reunió con el mandatario chino, Xi Jinping, y el jefe de estado ruso, Vladimir Putin, antes de la <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/remontada-historica-primera-jornada/\" title=\"Diario Federal: Remontada histórica en la primera jornada de liga\">histórica</a> cumbre del Foro de Cooperación Económica Asia-Pacífico (APEC). El encuentro, que se celebró a puerta cerrada, contó con la presencia de los tres líderes y se realizó en el marco de la segunda jornada del foro, que reunió a dirigentes de las 21 economías miembros.</p>\n<p>Según la agencia estatal rusa TASS, el presidente ruso ocupó el asiento de mayor honor, a la derecha de Xi, mientras que Trump se sentó a la izquierda del mandatario chino. El protocolo diplomático, que se observó en la reunión, mostró la jerarquía de los tres mandatarios y la importancia de la presencia de Putin en el escenario internacional.</p>\n<p>El Ministerio de Exteriores chino había anticipado que la reunión abordaría temas de paz mundial, desarme nuclear, la guerra entre Rusia y Ucrania, la situación en Irán y las relaciones comerciales. De acuerdo con <a class=\"externo\" href=\"https://www.aa.com.tr/es/pol%C3%ADtica/xi-jinping-trump-y-putin-celebran-una-reuni%C3%B3n-trilateral-en-china-al-margen-del-foro-de-apec/4130209\" title=\"Fuente: Anadolu (castellano)\">Anadolu</a>, el encuentro se calificó como «importancia trascendental» y se esperaba que los tres líderes discutieran la posibilidad de avanzar en el desarme nuclear, aunque el país chino ha rechazado participar en negociaciones de desarme, argumentando que su arsenal es considerablemente menor que el de las otras dos potencias.</p>\n<p>El presidente ruso, Vladimir Putin, afirmó que la reunión sería una oportunidad para presentar al Kremlin como un actor mundial, a pesar de la continuación de los bombardeos en Ucrania. En un foro empresarial de la APEC, Putin dijo que la presión occidental sobre Rusia había fracasado y que el país había soportado una presión de sanciones sin precedentes. Por su parte, el asesor presidencial ruso Yuri Ushakov señaló que la reunión incluiría el futuro de las relaciones entre las grandes potencias y consideró improbable que los mandatarios evitan tratar la guerra en Ucrania.</p>\n<p>Donald Trump, quien ya había anunciado su intención de hablar sobre el desarme nuclear en Shenzhen, expresó su optimismo sobre la posibilidad de avanzar en ese tema. Sin embargo, reconoció las dificultades que afrontan las potencias nucleares para renunciar a sus arsenales. El presidente estadounidense también hizo referencia a la guerra en Ucrania, aunque no se conoce el contenido exacto de sus declaraciones.</p>\n<p>El politólogo vietnamita Nguyen Minh Tam, citado por <a class=\"externo\" href=\"https://noticiaslatam.lat/20261120/la-reunion-de-putin-trump-y-xi-jinping-marca-un-hito-en-la-configuracion-del-orden-mundial-1175960140.html\" title=\"Fuente: Sputnik Mundo\">Sputnik</a> Mundo, calificó la reunión como un hito en la configuración del orden mundial multipolar, señalando que el dominio occidental estaba cediendo terreno a nuevos centros de influencia. Según la agencia, el encuentro marcó un cambio en la dinámica internacional y la aparición de un nuevo orden mundial a puerta cerrada.</p>\n<p>El encuentro concluyó sin que se publicara una agenda concreta ni se anunciara un acuerdo. No se sabe si los tres líderes trataron los ataques israelíes contra Gaza o las perspectivas de una solución de dos Estados. La falta de información sobre la agenda y los resultados de la reunión deja abierta la pregunta sobre el impacto real de la cumbre.</p>\n<p>Para el futuro, la reunión de Shenzhen podría sentar las bases de un nuevo diálogo entre las tres grandes potencias, aunque la falta de transparencia y la ausencia de acuerdos concretos sugieren que el evento fue más simbólico que decisivo. Los próximos días se espera que se revelen más detalles sobre los temas tratados y las posibles implicaciones para la política internacional.</p>",
+   "fotos": [
+    {
+     "url": "https://cdn.img.noticiaslatam.lat/images/sharing/article/spa/1175960140.jpg?11759599611795174921",
+     "pagina": "https://noticiaslatam.lat/20261120/la-reunion-de-putin-trump-y-xi-jinping-marca-un-hito-en-la-configuracion-del-orden-mundial-1175960140.html",
+     "credito": "Foto: Sputnik Mundo",
+     "fuente": "Sputnik Mundo",
+     "descripcion": "La reunión de Putin, Trump y Xi Jinping marca un hito en la configuración del orden mundial multipolar, señala un experto",
+     "libre": false
+    },
+    {
+     "url": "https://ichef.bbci.co.uk/news/1200/branded_mundo/17b2/live/72c78770-e36f-11f1-a094-5fdc692f3e33.jpg",
+     "pagina": "https://www.bbc.com/mundo/articles/cwlymkv5n9vvo?at_medium=RSS&at_campaign=rss",
+     "credito": "Foto: BBC Mundo",
+     "fuente": "BBC Mundo",
+     "descripcion": "Por qué Putin es el ganador de la histórica reunión con Trump y Xi",
+     "libre": false
+    },
+    {
+     "url": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/19/thumbs_b_c_c0ac37afaba64119fb83df7866cdb69c.jpg",
+     "pagina": "https://www.aa.com.tr/es/pol%C3%ADtica/xi-jinping-trump-y-putin-celebran-una-reuni%C3%B3n-trilateral-en-china-al-margen-del-foro-de-apec/4130209",
+     "credito": "Foto: Anadolu (castellano)",
+     "fuente": "Anadolu (castellano)",
+     "descripcion": "Xi Jinping, Trump y Putin celebran una reunión trilateral en China al margen del foro de APEC",
+     "libre": false
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/1280px-Donald_Trump_official_portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Donald_Trump_official_portrait.jpg",
+     "credito": "Foto: Shealeah Craighead / Wikimedia Commons (Public domain)",
+     "descripcion": "President Donald Trump poses for his official portrait at The White House, in Washington, D.C., on Friday, October 6, 2017.  (Official White House Photo by Shealah Craighead)",
+     "licencia": "Public domain",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/President_Trump_Visits_St._John%27s_Episcopal_Church_%2849963649028%29.jpg/1280px-President_Trump_Visits_St._John%27s_Episcopal_Church_%2849963649028%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:President_Trump_Visits_St._John%27s_Episcopal_Church_(49963649028).jpg",
+     "credito": "Foto: The White House from Washington, DC / Wikimedia Commons (Public domain)",
+     "descripcion": "President Donald J. Trump walks from the White House Monday evening, June 1, 2020, to St. John’s Episcopal Church, known as the church of Presidents’s, that was damaged by fire during demonstrations i",
+     "licencia": "Public domain",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    }
+   ],
+   "enlaces": [
+    {
+     "url": "https://noticiaslatam.lat/20261120/la-reunion-de-putin-trump-y-xi-jinping-marca-un-hito-en-la-configuracion-del-orden-mundial-1175960140.html",
+     "clase": "externo",
+     "titulo": "Fuente: Sputnik Mundo",
+     "palabra": "Sputnik"
+    },
+    {
+     "url": "https://www.aa.com.tr/es/pol%C3%ADtica/xi-jinping-trump-y-putin-celebran-una-reuni%C3%B3n-trilateral-en-china-al-margen-del-foro-de-apec/4130209",
+     "clase": "externo",
+     "titulo": "Fuente: Anadolu (castellano)",
+     "palabra": "Anadolu"
+    },
+    {
+     "url": "https://www.diariofederal.com.ar/articulo/xi-jinping-donald-trump-y-vladimir-putin-participaran-en-una-cumbre/",
+     "clase": "interno",
+     "titulo": "Diario Federal: ¿Yalta 2.0 en Shenzhen? Trump, Putin y Xi Jinping ante el nacimiento de otro orden mundial",
+     "palabra": "Shenzhen"
+    },
+    {
+     "url": "https://www.diariofederal.com.ar/articulo/remontada-historica-primera-jornada/",
+     "clase": "interno",
+     "titulo": "Diario Federal: Remontada histórica en la primera jornada de liga",
+     "palabra": "histórica"
+    }
+   ],
+   "relacionadas": [
+    {
+     "titulo": "¿Yalta 2.0 en Shenzhen? Trump, Putin y Xi Jinping ante el nacimiento de otro orden mundial",
+     "url": "https://www.diariofederal.com.ar/articulo/xi-jinping-donald-trump-y-vladimir-putin-participaran-en-una-cumbre/"
+    },
+    {
+     "titulo": "Remontada histórica en la primera jornada de liga",
+     "url": "https://www.diariofederal.com.ar/articulo/remontada-historica-primera-jornada/"
+    }
+   ],
+   "verificacion": {
+    "independientes": 4,
+    "paises": [
+     "Francia",
+     "Reino Unido",
+     "Rusia",
+     "Turquía"
+    ],
+    "estatal": [
+     "Sputnik Mundo",
+     "Anadolu (castellano)"
+    ],
+    "oficiales": [],
+    "agencias_citadas": [],
+    "leidas": 2
+   },
+   "fuentes": [
+    {
+     "medio": "France 24 Español",
+     "url": "https://www.france24.com/es/programas/el-debate/20261120-trump-xi-y-putin-un-nuevo-orden-mundial-a-puerta-cerrada",
+     "titulo": "Trump, Xi y Putin: ¿un nuevo orden mundial a puerta cerrada?",
+     "pais": "Francia",
+     "tipo": "Medio público",
+     "fecha": "2026-11-20T16:43:46+00:00",
+     "idioma": "castellano",
+     "leida": false,
+     "error": "HTTP Error 403: Forbidden",
+     "imagen": null,
+     "resumen": "En un encuentro a puerta cerrada, Donald Trump, Xi Jinping y Vladimir Putin abordaron asuntos que afectan al equilibrio del poder mundial. La declaración conjunta de los tres mandatarios plantea reformas en Naciones Unidas, una mayor coordinación energética, la defensa de las inmunidades de funcionarios estatales ante tribunales internacionales y el diálogo sobre riesgos nucleares. Sin embargo,…"
+    },
+    {
+     "medio": "Sputnik Mundo",
+     "url": "https://noticiaslatam.lat/20261120/la-reunion-de-putin-trump-y-xi-jinping-marca-un-hito-en-la-configuracion-del-orden-mundial-1175960140.html",
+     "titulo": "La reunión de Putin, Trump y Xi Jinping marca un hito en la configuración del orden mundial multipolar, señala un experto",
+     "pais": "Rusia",
+     "tipo": "Agencia estatal",
+     "fecha": "2026-11-20T11:42:00+00:00",
+     "idioma": null,
+     "autor": "Sputnik Mundo",
+     "fecha_pub": "20261120T1142+0000",
+     "imagen": "https://cdn.img.noticiaslatam.lat/images/sharing/article/spa/1175960140.jpg?11759599611795174921",
+     "agencias": [],
+     "oficiales": [],
+     "leida": false,
+     "palabras": 0,
+     "resumen": "El antiguo dominio de Occidente está cediendo terreno a nuevos centros de influencia, comentó a Sputnik el politólogo vietnamita Nguyen Minh Tam al referirse a la histórica reunión trilateral entre los mandatarios de Rusia, EEUU y China, celebrada el 19 de noviembre en Shenzhen, al margen del Foro APEC."
+    },
+    {
+     "medio": "BBC Mundo",
+     "url": "https://www.bbc.com/mundo/articles/cwlymkv5n9vvo?at_medium=RSS&at_campaign=rss",
+     "titulo": "Por qué Putin es el ganador de la histórica reunión con Trump y Xi",
+     "pais": "Reino Unido",
+     "tipo": "Medio público",
+     "fecha": "2026-11-19T13:07:35+00:00",
+     "idioma": "castellano",
+     "autor": null,
+     "fecha_pub": "2026-11-19T04:02:07.716Z",
+     "imagen": "https://ichef.bbci.co.uk/news/1200/branded_mundo/17b2/live/72c78770-e36f-11f1-a094-5fdc692f3e33.jpg",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 741,
+     "resumen": "La reunión de este jueves entre los líderes de Estados Unidos, China y Rusia le brindará a Vladimir Putin una gran plataforma, pero no lo acerca a ganar la guerra en Ucrania."
+    },
+    {
+     "medio": "Anadolu (castellano)",
+     "url": "https://www.aa.com.tr/es/pol%C3%ADtica/xi-jinping-trump-y-putin-celebran-una-reuni%C3%B3n-trilateral-en-china-al-margen-del-foro-de-apec/4130209",
+     "titulo": "Xi Jinping, Trump y Putin celebran una reunión trilateral en China al margen del foro de APEC",
+     "pais": "Turquía",
+     "tipo": "Agencia estatal",
+     "fecha": "2026-11-19T08:44:13+00:00",
+     "idioma": "castellano",
+     "autor": "Saadet Gökce",
+     "fecha_pub": "2026-11-19T11:44:18.617",
+     "imagen": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/19/thumbs_b_c_c0ac37afaba64119fb83df7866cdb69c.jpg",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 309,
+     "resumen": "Los tres mandatarios abordan cuestiones como el desarme nuclear, la guerra entre Rusia y Ucrania, Irán y las relaciones entre las grandes potencias, aunque no se ha divulgado una agenda oficial."
+    }
+   ],
+   "falta": "Confirmar si la reunión produjo algún acuerdo concreto sobre desarme nuclear o la guerra en Ucrania.",
+   "volanta": "Cumbre APEC",
+   "firma": "Ramiro De la Puente",
+   "prioridad": "alta",
+   "escalon": "nota completa"
+  },
+  {
+   "id": "20261120-1722-07",
    "seccion": "local",
-   "por_que": "El programa de pasantías de San Isidro conecta a estudiantes con el mundo laboral, fortaleciendo la economía local",
-   "titulo_tema": "San Isidro acerca a estudiantes secundarios al mundo laboral con visitas a empresas y pasantías municipales",
-   "puntaje": 6.1,
+   "por_que": "La ordenanza del HCD de Escobar sobre el Fondo de Fortalecimiento a Entidades de Bien Público es relevante para la gestión municipal y la continuidad de servicios públicos.",
+   "titulo_tema": "El HCD de Escobar aprobó una ordenanza para garantizar la continuidad del Fondo de Fortalecimiento a Entidades de Bien Público",
+   "puntaje": 8.7,
    "n_medios": 1,
    "paises": [
     "Argentina"
@@ -574,49 +562,57 @@
    ],
    "region_mundo": "América Latina",
    "titulos": [
-    "San Isidro acerca a estudiantes secundarios al mundo laboral con visitas a empresas y pasantías municipales"
+    "Concejo de Escobar aprueba ordenanza que asegura fondo permanente para entidades de bien público",
+    "Fondo de Fortalecimiento para Entidades de Bien Público queda garantizado tras nueva ordenanza municipal",
+    "Ordenanza en Escobar fija asistencia técnica y financiera a organizaciones sin fines de lucro"
    ],
    "bajadas": [
-    "El Municipio de San Isidro lanzó el programa Tu Muni: Inspirando Vocación el 19 de noviembre, dirigido a estudiantes del último año de secundaria."
+    "La medida, impulsada por el intendente Ariel Sujarchuk, ya ha beneficiado a 135 instituciones desde 2022",
+    "El fondo, que antes dependía de la gestión municipal, ahora asigna recursos anuales para proyectos de infraestructura y equipamiento"
    ],
-   "cuerpo_html": "<p>El Municipio de San Isidro lanzó el programa <strong>Tu Muni: Inspirando Vocación</strong> el 19 de noviembre, dirigido a estudiantes del último año de secundaria. La iniciativa, que empezó como piloto con dos instituciones educativas, permite a los jóvenes conocer el funcionamiento de empresas locales y realizar pasantías en dependencias municipales.</p>\n<p>La Subsecretaría de Educación y la Dirección General de Producción desarrollaron el proyecto para acompañar a los estudiantes en la transición entre la escuela y su futuro académico o laboral. Según el intendente Ramón Lanús, el objetivo es que San Isidro sea un lugar donde “vivan, estudien, trabajen y se desarrollen”. El programa busca que los chicos descubran vocaciones y proyecten su futuro en la ciudad.</p>\n<p>En la fase inicial, cuarenta y cinco alumnos del Colegio Cardenal Spínola participaron en visitas de dos a cuatro horas a empresas de distintos sectores. Los recorridos incluyeron encuentros con profesionales y actividades que mostraron los procesos internos de cada organización.</p>\n<p>Entre las empresas visitadas se encuentra Cencosud, cuya oficina de Martínez recibió a los estudiantes para explicar el comercio minorista a gran escala, el comercio electrónico y la logística que sostiene la actividad. Radio Simphony ofreció una transmisión en vivo, mostrando la producción de un programa de streaming. La textil Tascani permitió observar las etapas de elaboración de una prenda, desde el diseño hasta la confección. Kansas y Burger 54 mostraron el funcionamiento del sector gastronómico y sus desafíos operativos.</p>\n<p>Los alumnos también dialogaron con trabajadores y profesionales, aprendiendo sobre sus trayectorias y los requisitos de habilidades y conocimientos para cada actividad. La Subsecretaría de Educación indicó que el programa se integra a la materia Trabajo y Ciudadanía de la escuela.</p>\n<p>El intendente Lanús afirmó que el municipio quiere que los jóvenes conozcan de cerca el mundo del trabajo y que las oportunidades productivas de San Isidro estén al alcance de la juventud local. El programa planea ampliar su alcance en 2027, según la información del medio local.</p>\n<p>Para el próximo año, el municipio planea incluir más instituciones educativas y ampliar la oferta de pasantías municipales, con el fin de fortalecer la vinculación entre la escuela y el sector productivo de la <a class=\"externo\" href=\"https://www.zonanortediario.com.ar/19/11/2026/san-isidro-acerca-a-estudiantes-secundarios-al-mundo-laboral-con-visitas-a-empresas-y-pasantias-municipales/\" title=\"Fuente: Zona Norte Diario\">zona.</a></p>",
+   "cuerpo_html": "<p>El Concejo Deliberante de Escobar <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/2026-11-05-pena-renuncio-diputados-juicio-politico-paraguay/\" title=\"Diario Federal: La decisión de Cartes fue definitiva: Peña renunció y Diputados aprobó igual el juicio político\">aprobó</a> por unanimidad una ordenanza que institucionaliza el Fondo de Fortalecimiento para Entidades de Bien Público, una iniciativa impulsada por el intendente Ariel Sujarchuk que funciona desde 2022 y que ya benefició a 135 instituciones del distrito.</p><p>La norma garantiza la continuidad de la herramienta de asistencia a organizaciones sociales, independientemente de los cambios de gestión municipal. Antes, el fondo dependía de la decisión del Ejecutivo local; con la ordenanza, queda establecido como una política pública permanente.</p><p>Desde su implementación, el programa ha apoyado a clubes de barrio, sociedades de fomento, cuarteles de bomberos voluntarios, centros de jubilados, asociaciones civiles y organizaciones dedicadas a la atención de personas con discapacidad, entre otras.</p><p>La ordenanza establece que el fondo brindará asistencia técnica y financiera a organizaciones de la sociedad civil sin fines de lucro inscritas en el Registro Municipal de Entidades de Bien Público, asignando anualmente recursos para financiar proyectos presentados por las propias instituciones.</p><p>Entre las iniciativas que podrán recibir acompañamiento se encuentran obras de infraestructura y mejoras edilicias, adquisición de equipamiento e insumos, regularización institucional y contable, puesta en valor de espacios comunitarios y actividades destinadas a promover la solidaridad y el bienestar de los vecinos.</p><p>Representantes de distintas entidades participaron de la sesión del Concejo Deliberante y expresaron su respaldo a la aprobación de la ordenanza. Gastón Savino, de APANNE, destacó la importancia de garantizar la continuidad de los aportes municipales: “Es importante porque es una situación difícil la que estamos pasando y muchas veces dependemos de la ayuda o de alguna colaboración. Esta ordenanza deja fijos algunos incentivos para las entidades que trabajan todo el año, más allá de quién esté gobernando”.</p><p>Luján Corsillo, de Fundación Nosotros, centro de día de Escobar, hizo hincapié en las dificultades que atraviesan las organizaciones vinculadas a la discapacidad: “La importancia de que se apruebe esta ordenanza es que nos ayuda a las instituciones de discapacidad, que venimos atravesando hace mucho tiempo una situación muy difícil”.</p>",
    "fotos": [
     {
-     "url": "https://www.zonanortediario.com.ar/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-19-at-11.22.00-AM-1.jpeg",
-     "pagina": "https://www.zonanortediario.com.ar/19/11/2026/san-isidro-acerca-a-estudiantes-secundarios-al-mundo-laboral-con-visitas-a-empresas-y-pasantias-municipales/",
+     "url": "https://www.zonanortediario.com.ar/wp-content/uploads/2026/11/image-131.png",
+     "pagina": "https://www.zonanortediario.com.ar/20/11/2026/el-hcd-de-escobar-aprobo-una-ordenanza-para-garantizar-la-continuidad-del-fondo-de-fortalecimiento-a-entidades-de-bien-publico/",
      "credito": "Foto: Zona Norte Diario",
      "fuente": "Zona Norte Diario",
-     "descripcion": "San Isidro acerca a estudiantes secundarios al mundo laboral con visitas a empresas y pasantías municipales",
+     "descripcion": "El HCD de Escobar aprobó una ordenanza para garantizar la continuidad del Fondo de Fortalecimiento a Entidades de Bien Público",
      "libre": false
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/SAN_ISIDRO_NUEVA_ECIJA_MUNICIPAL_HALL_BUILDING.png/1280px-SAN_ISIDRO_NUEVA_ECIJA_MUNICIPAL_HALL_BUILDING.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:SAN_ISIDRO_NUEVA_ECIJA_MUNICIPAL_HALL_BUILDING.png",
-     "credito": "Foto: Lanceanjelloison / Wikimedia Commons (CC0)",
-     "descripcion": "The San Isidro, Nueva Ecija Municipal Hall is the administrative center of the town, housing local government offices and symbolizing the municipality's governance and civic life.",
-     "licencia": "CC0",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Gob_2022-2026_Material_Gr%C3%A1fico_Kit_Fondo_de_Fortalecimiento_2022_Trabajadores.png/1280px-Gob_2022-2026_Material_Gr%C3%A1fico_Kit_Fondo_de_Fortalecimiento_2022_Trabajadores.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Gob_2022-2026_Material_Gr%C3%A1fico_Kit_Fondo_de_Fortalecimiento_2022_Trabajadores.png",
+     "credito": "Foto: Gobierno de Chile / Wikimedia Commons (CC BY 3.0 cl)",
+     "descripcion": "Material del kit gráfico del Gobierno 2022-2026 del presidente Gabriel Boric Font.",
+     "licencia": "CC BY 3.0 cl",
      "fuente": "Wikimedia Commons",
      "libre": true
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/San_Isidro_Bohol_1.jpg/1280px-San_Isidro_Bohol_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:San_Isidro_Bohol_1.jpg",
-     "credito": "Foto: P199 / Wikimedia Commons (Public domain)",
-     "descripcion": "Municipal Hall of San Isidro, Bohol, the Philippines",
-     "licencia": "Public domain",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Gob_2022-2026_Material_Gr%C3%A1fico_Kit_Fondo_de_Fortalecimiento_2022_gato.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Gob_2022-2026_Material_Gr%C3%A1fico_Kit_Fondo_de_Fortalecimiento_2022_gato.png",
+     "credito": "Foto: Gobierno de Chile / Wikimedia Commons (CC BY 3.0 cl)",
+     "descripcion": "Material del kit gráfico del Gobierno 2022-2026 del presidente Gabriel Boric Font.",
+     "licencia": "CC BY 3.0 cl",
      "fuente": "Wikimedia Commons",
      "libre": true
     }
    ],
    "enlaces": [
     {
-     "url": "https://www.zonanortediario.com.ar/19/11/2026/san-isidro-acerca-a-estudiantes-secundarios-al-mundo-laboral-con-visitas-a-empresas-y-pasantias-municipales/",
-     "clase": "externo",
-     "titulo": "Fuente: Zona Norte Diario",
-     "palabra": "zona."
+     "url": "https://www.diariofederal.com.ar/articulo/2026-11-05-pena-renuncio-diputados-juicio-politico-paraguay/",
+     "clase": "interno",
+     "titulo": "Diario Federal: La decisión de Cartes fue definitiva: Peña renunció y Diputados aprobó igual el juicio político",
+     "palabra": "aprobó"
     }
    ],
-   "relacionadas": [],
+   "relacionadas": [
+    {
+     "titulo": "La decisión de Cartes fue definitiva: Peña renunció y Diputados aprobó igual el juicio político",
+     "url": "https://www.diariofederal.com.ar/articulo/2026-11-05-pena-renuncio-diputados-juicio-politico-paraguay/"
+    }
+   ],
    "verificacion": {
     "independientes": 1,
     "paises": [
@@ -630,287 +626,195 @@
    "fuentes": [
     {
      "medio": "Zona Norte Diario",
-     "url": "https://www.zonanortediario.com.ar/19/11/2026/san-isidro-acerca-a-estudiantes-secundarios-al-mundo-laboral-con-visitas-a-empresas-y-pasantias-municipales/",
-     "titulo": "San Isidro acerca a estudiantes secundarios al mundo laboral con visitas a empresas y pasantías municipales",
+     "url": "https://www.zonanortediario.com.ar/20/11/2026/el-hcd-de-escobar-aprobo-una-ordenanza-para-garantizar-la-continuidad-del-fondo-de-fortalecimiento-a-entidades-de-bien-publico/",
+     "titulo": "El HCD de Escobar aprobó una ordenanza para garantizar la continuidad del Fondo de Fortalecimiento a Entidades de Bien Público",
      "pais": "Argentina",
      "tipo": "Medio local",
-     "fecha": "2026-11-19T14:27:04+00:00",
+     "fecha": "2026-11-20T15:44:06+00:00",
      "idioma": null,
      "autor": null,
-     "fecha_pub": "2026-11-19T11:27:04-03:00",
-     "imagen": "https://www.zonanortediario.com.ar/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-19-at-11.22.00-AM-1.jpeg",
+     "fecha_pub": "2026-11-20T12:44:06-03:00",
+     "imagen": "https://www.zonanortediario.com.ar/wp-content/uploads/2026/11/image-131.png",
      "agencias": [],
      "oficiales": [],
      "leida": true,
-     "palabras": 640,
-     "resumen": "El Municipio de San Isidro puso en marcha el programa “Tu Muni: Inspirando Vocación”, una iniciativa destinada a estudiantes del último año de secundaria que les permite conocer el funcionamiento de empresas locales y realizar pasantías en dependencias municipales. La propuesta comenzó este año como una experiencia piloto con dos instituciones educativas y prevé ampliar [&#8230;] La entrada San…"
+     "palabras": 529,
+     "resumen": "El Concejo Deliberante de Escobar aprobó por unanimidad una ordenanza que institucionaliza el Fondo de Fortalecimiento para Entidades de Bien Público, una iniciativa impulsada por el intendente Ariel Sujarchuk que funciona desde 2022 y que ya benefició a 135 instituciones del distrito. La aprobación de la norma permitirá garantizar la continuidad de esta herramienta de [&#8230;] La entrada El HCD…"
     }
    ],
-   "falta": "Confirmar la cifra exacta de estudiantes que participarán en la fase ampliada de 2027.",
-   "correccion": "corregida ortografía, puntuación, cifras en letras, eliminación de muletillas y redundancias",
+   "falta": "Confirmar la cifra exacta de recursos asignados anualmente por la ordenanza.",
+   "volanta": "Fondo de Bien Público",
    "firma": "Redacción Federal",
    "prioridad": "normal",
    "escalon": "nota completa"
   },
   {
-   "id": "20261120-0810-09",
-   "seccion": "mercosur",
-   "por_que": "El libro sobre Jango aporta contexto histórico a la política brasileña y al debate sobre la dictadura",
-   "titulo_tema": "Livro do filho resgata dúvidas sobre morte de Jango durante a ditadura",
-   "puntaje": 6.8,
-   "n_medios": 1,
+   "id": "20261120-1722-13",
+   "seccion": "mundo",
+   "por_que": "",
+   "titulo_tema": "La Casa Blanca desplazó a su jefe de ciberseguridad tras la ola de fallos tecnológicos en Estados Unidos",
+   "puntaje": 17.1,
+   "n_medios": 4,
    "paises": [
-    "Brasil"
+    "Alemania",
+    "España"
    ],
    "region": "",
-   "tema": "Política",
+   "tema": "Seguridad",
    "ejes": [
-    "brasil"
+    "internacional"
    ],
-   "region_mundo": "América Latina",
+   "region_mundo": "Europa",
    "titulos": [
-    "Jango murió en Argentina en 1976 por envenenamiento, según su hijo",
-    "El ex‑presidente brasileño fue asesinado en Buenos Aires, revela su descendiente",
-    "El libro de João Vicente Goulart acusa a la dictadura de matar a Jango"
+    "Cairncross renuncia tras fallos que paralizaron banca y vuelos en EE. UU.",
+    "Trump destituye a Cairncross por fallos tecnológicos que afectaron a Microsoft y la NSA",
+    "Davies asumirá interina la ciberseguridad tras fallos que paralizaron servicios críticos"
    ],
    "bajadas": [
-    "El autor sostiene que un agente infiltrado introdujo cloruro de potasio en la medicación enviada al Hotel Liberty",
-    "La Editora Matrix planea publicar una edición ampliada con más documentos y entrevistas"
+    "La salida de Cairncross se produjo después de una semana de interrupciones que afectaron a la Administración Federal de Aviación y a empresas como Microsoft y Apple.",
+    "Davies, directora de Información del Departamento de Defensa, fue confirmada por el Senado y asumirá el puesto de manera interina, aunque su nombramiento definitivo dependerá de la confirmación del Senado en enero"
    ],
-   "cuerpo_html": "<p>El libro de João Vicente Goulart, hijo del ex‑presidente <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/brasil-devalua-argentina-mira-para-otro-lado/\" title=\"Diario Federal: Brasil devalúa y la Argentina mira para otro lado\">brasileño</a>, afirma que su padre murió en Argentina en 1976 a causa de un asesinato envenenado, contraviniendo la versión oficial de un infarto. El autor, junto al periodista Alex Solnik, publicó en la edición de la Editora Matrix el título <strong>As Duas Mortes de Jango – o crime que a ditadura tentou esconder</strong>. Según el relato, Jango, quien fue depuesto en el golpe de 1964, vivió en exilio entre Uruguay y Argentina, trasladándose en su Cessna 210.</p><p>El contexto histórico incluye la Operación Condor, una alianza entre gobiernos militares de la región apoyada por Estados Unidos, que perseguía y eliminaba a opositores. En la narrativa, un empleado llamado Héctor, quien entregaba los medicamentos de Jango, sería un agente infiltrado que habría introducido cloruro de potasio en la medicación enviada desde Europa al Hotel Liberty de Buenos Aires.</p><p>La versión oficial, citada por el Ministerio de Salud de Brasil, sostiene que Jango falleció de un infarto a los 57 años, tras recibir tratamiento con un médico francés. La contradicción se centra en la supuesta manipulación de la medicación, que según el libro, podría haber causado la muerte del ex‑presidente.</p><p>El hijo de Jango explica que su trabajo busca rescatar “historias que muestran cómo mi padre fue asesinado en Argentina, hace 50 años”. No se han presentado pruebas documentales que confirmen la presencia de cloruro de potasio ni la participación de Héctor como agente de la dictadura.</p><p>El futuro de la investigación depende de la disponibilidad de archivos militares y de los testimonios de los exiliados que participaron en la Operación Condor. La Editora Matrix planea publicar una edición ampliada con más documentos y entrevistas, según informaron los autores.</p>",
+   "cuerpo_html": "<p>El jueves 20 de noviembre, la Casa White anunció la salida de Sean Cairncross como director nacional de ciberseguridad, tras una serie de fallos tecnológicos que paralizaron servicios bancarios, de correo y de transporte aéreo en Estados Unidos. La decisión se produjo en medio de una semana de interrupciones que afectaron a la Administración Federal de Aviación, a la Agencia de Seguridad Nacional y a empresas como Microsoft y Apple.</p>\n<p>Según <a class=\"externo\" href=\"https://www.infobae.com/estados-unidos/2026/11/20/trump-destituyo-al-jefe-de-ciberseguridad-de-la-casa-blanca-tras-las-fallas-tecnologicas-que-afectaron-a-estados-unidos/\" title=\"Fuente: Infobae\">Infobae</a>, el presidente Donald Trump destituyó a Cairncross, quien había ocupado el cargo desde agosto de 2025, y lo reemplazó por Kirsten Davies, directora de Información del Departamento de Defensa. La fuente cercana a la Casa White, citada por AFP, afirmó que el mandatario apoyó plenamente el despido porque el funcionario “no contaba con las credenciales adecuadas”.</p>\n<p>El propio Cairncross confirmó su salida en un comunicado nocturno, describiendo su paso por la administración republicana como “el honor de toda una vida”. Davies asumirá el puesto de manera interina y, según la misma fuente, cuenta con las credenciales necesarias y fue confirmada por el Senado.</p>\n<p>El secretario de Estado Marco Rubio felicitó a Davies en un mensaje difundido en X, y recordó que el sucesor permanente deberá recibir la confirmación del Senado, que quedará bajo control demócrata a partir de enero.</p>\n<p>Los incidentes que motivaron el despido incluyeron una interrupción global de Microsoft 365 que afectó a cientos de millones de usuarios, la suspensión temporal de más de 18.000 vuelos comerciales y la paralización de sistemas clave de la NSA. Además, el banco JPMorgan Chase reportó un ciberataque a proveedores externos, aunque aseguró que sus servicios no se vieron interrumpidos.</p>\n<p>El presidente Trump minimizó los apagones digitales, calificándolos de “episodios aislados” y “relacionados con actualizaciones rutinarias”. En un viaje oficial a Asia, afirmó que “todo estará completamente bajo control”.</p>\n<p>Las autoridades estadounidenses insistieron en que los incidentes no estuvieron relacionados entre sí y no fueron consecuencia de un ataque coordinado o patrocinado por un Estado extranjero. El principal responsable de los servicios de inteligencia, Jay Clayton, sostuvo que las fallas respondieron a interrupciones independientes asociadas a tareas de mantenimiento y cambios técnicos.</p>\n<p>El despido de Cairncross representa el primer cambio importante de personal en la administración de Trump desde que comenzaron las interrupciones. La salida se produce mientras la Casa White enfrenta cuestionamientos por su gestión de los incidentes y la vulnerabilidad de las infraestructuras críticas.</p>\n<p>Davies asumirá el cargo de manera interina, pero el nombramiento definitivo requerirá la confirmación del Senado, proceso que podría complicarse con la llegada de los demócratas a la Cámara alta en enero.</p>",
    "fotos": [
     {
-     "url": "https://f.i.uol.com.br/fotografia/2025/02/25/174048750567bdbb511465e_1740487505_3x2_rt.jpg",
-     "pagina": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/livro-do-filho-resgata-duvidas-sobre-morte-de-jango-durante-a-ditadura.shtml",
-     "credito": "Foto: Folha · Poder",
-     "fuente": "Folha · Poder",
-     "descripcion": "Livro do filho resgata dúvidas sobre morte de Jango durante a ditadura",
+     "url": "https://www.infobae.com/resizer/v2/JSWYXQ2OSRFNXLW6DN2RWHJYQI.JPG?auth=4ab9459484d526d5e43f351c097f3b7dea63c80bc9eb31b18a42286ba3c57dcc&smart=true&width=1200&height=630&quality=85",
+     "pagina": "https://www.infobae.com/estados-unidos/2026/11/20/trump-destituyo-al-jefe-de-ciberseguridad-de-la-casa-blanca-tras-las-fallas-tecnologicas-que-afectaron-a-estados-unidos/",
+     "credito": "Foto: Infobae",
+     "fuente": "Infobae",
+     "descripcion": "Trump destituyó al jefe de ciberseguridad de la Casa Blanca tras las fallas tecnológicas que afectaron a Estados Unidos",
      "libre": false
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Livro_Saudosa_mem%C3%B3ria_de_uma_fam%C3%ADlia_pioneira.png/1280px-Livro_Saudosa_mem%C3%B3ria_de_uma_fam%C3%ADlia_pioneira.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Livro_Saudosa_mem%C3%B3ria_de_uma_fam%C3%ADlia_pioneira.png",
-     "credito": "Foto: QuincasDnatas / Wikimedia Commons (CC0)",
-     "descripcion": "Livro Saudosa memória de uma família pioneira",
-     "licencia": "CC0",
-     "fuente": "Wikimedia Commons",
-     "libre": true
-    },
-    {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Django_on_radio.jpg/1280px-Django_on_radio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Django_on_radio.jpg",
-     "credito": "Foto: 106fm Jerusalem / Wikimedia Commons (CC BY 2.0)",
-     "descripcion": "Singer Django (Amir Rusiano) talking in the educational \"Radio Har HaTzofim\" in Jerusalem.",
-     "licencia": "CC BY 2.0",
-     "fuente": "Wikimedia Commons",
-     "libre": true
-    }
-   ],
-   "enlaces": [
-    {
-     "url": "https://www.diariofederal.com.ar/articulo/brasil-devalua-argentina-mira-para-otro-lado/",
-     "clase": "interno",
-     "titulo": "Diario Federal: Brasil devalúa y la Argentina mira para otro lado",
-     "palabra": "brasileño"
-    }
-   ],
-   "relacionadas": [
-    {
-     "titulo": "Brasil devalúa y la Argentina mira para otro lado",
-     "url": "https://www.diariofederal.com.ar/articulo/brasil-devalua-argentina-mira-para-otro-lado/"
-    }
-   ],
-   "verificacion": {
-    "independientes": 1,
-    "paises": [
-     "Brasil"
-    ],
-    "estatal": [],
-    "oficiales": [],
-    "agencias_citadas": [],
-    "leidas": 1
-   },
-   "fuentes": [
-    {
-     "medio": "Folha · Poder",
-     "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/livro-do-filho-resgata-duvidas-sobre-morte-de-jango-durante-a-ditadura.shtml",
-     "titulo": "Livro do filho resgata dúvidas sobre morte de Jango durante a ditadura",
-     "pais": "Brasil",
-     "tipo": "Medio",
-     "fecha": "2026-11-20T07:00:00+00:00",
-     "idioma": "pt",
-     "autor": "Leonardo Fuhrmann",
-     "fecha_pub": "2026-11-20 04:00:00",
-     "imagen": "https://f.i.uol.com.br/fotografia/2025/02/25/174048750567bdbb511465e_1740487505_3x2_rt.jpg",
-     "agencias": [],
-     "oficiales": [],
-     "leida": true,
-     "palabras": 975,
-     "resumen": "Sabotadores de carros, especialistas em assassinatos por envenenamento, agentes duplos, codinomes, voos secretos e um grampo na casa de um ex-presidente que está exilado no país vizinho. A história parece romance de espionagem, mas é um resgate que João Vicente Goulart faz dos últimos anos de vida de seu pai, o ex-presidente do Brasil João Goulart , morto em 6 de dezembro de 1976. Leia mais…"
-    }
-   ],
-   "falta": "Confirmar la existencia de archivos que acrediten la manipulación de la medicación y la identidad de Héctor como agente infiltrado.",
-   "volanta": "Muerte de Jango",
-   "firma": "Emilio Lahitte",
-   "prioridad": "normal",
-   "escalon": "nota completa"
-  },
-  {
-   "id": "20261120-0810-14",
-   "seccion": "argentina",
-   "por_que": "",
-   "titulo_tema": "Causa AFA: la Corte Suprema le sacó al juzgado de Campana el caso por la Mansión de Pilar y volverá a Comodoro Py",
-   "puntaje": 17.0,
-   "n_medios": 6,
-   "paises": [],
-   "region": "buenos-aires",
-   "tema": "Política",
-   "ejes": [
-    "politica"
-   ],
-   "region_mundo": null,
-   "titulos": [
-    "Corte Suprema devuelve caso de lavado de dinero de la AFA a Comodoro Py",
-    "Decisión de la Corte Suprema anula traslado de expediente de la AFA a Campana",
-    "Juzgado de Comodoro Py retomará investigación sobre la mansión de Pilar"
-   ],
-   "bajadas": [
-    "El expediente, enviado a Campana por supuestos testaferros, será revisado por el juez Daniel Rafecas en Comodoro Py",
-    "La Corte citó una “grosera violación a las reglas de competencia” como motivo para revertir la sentencia de la Cámara Federal"
-   ],
-   "cuerpo_html": "<p>El 19 de noviembre de 2026 la Corte Suprema de Justicia ordenó que la causa por lavado de dinero vinculada a la Asociación del Fútbol Argentino (AFA) y la compra de la mansión de Pilar deje de tramitarse en el juzgado federal de Campana y vuelva a los tribunales federales de Comodoro Py, donde se inició la investigación. El expediente había sido enviado a Campana a petición de dos supuestos testaferros, según informó <a class=\"externo\" href=\"https://bairesparatodos.com.ar/la-corte-suprema-ordeno-que-la-causa-por-lavado-de-la-afa-y-la-mansion-de-pilar-vaya-a-comodoro-py/\" title=\"Fuente: Baires Para Todos\">Baires</a> Para Todos.</p>\n<p>La decisión, tomada por unanimidad, anuló la sentencia de la Cámara Federal de Casación Penal que había transferido el caso al juez Adrián González Charvay. Los jueces de la Corte señalaron una “grosera violación a las reglas de competencia” y la “guarantee del juez natural” se vio afectada de modo severo, según Baires Para Todos.</p>\n<p>El Juzgado Federal N°3, bajo la dirección del juez Daniel Rafecas, asumirá la responsabilidad de la investigación. La fiscalía, representada por Mario Villar, planteó el recurso que llevó a la Corte a reconsiderar la asignación del caso, como menciona Diario Popular.</p>\n<p>La causa no se limita a la compra de la propiedad. La Corte explicó que la hipótesis investigada abarca la constitución y modificación de sociedades, cesión de participaciones, ampliación de capital, administración de personas jurídicas y decisiones comerciales vinculadas a la adquisición y uso de activos. Se investigan presuntos lavados de dinero entre 2021 y 2025 a través de una red internacional de intermediarios, según Baires Para Todos.</p>\n<p>Los jueces sostuvieron que la mayor parte de las maniobras se habría realizado en la Ciudad de Buenos Aires y no en Pilar, lo que indica que el Partido de Pilar no era el centro de dirección de la actividad investigada. Esta conclusión se basa en la sede de Real Central SRL, la empresa que habría comprado la propiedad, según Baires Para Todos.</p>\n<p>Claudio “Chiqui” Tapia, figura central en la AFA, se vio afectado por la decisión, pues el juez de Campana, Adrián González Charvay, se describió como amigo de la AFA en el artículo de Los Andes. La Corte, sin embargo, no vinculó directamente a Tapia con el caso, pero la decisión de enviar el expediente a Comodoro Py se percibe como un golpe a su círculo de influencia.</p>\n<p>El proceso seguirá en Comodoro Py, donde el juez Daniel Rafecas deberá revisar el expediente y determinar los próximos pasos. La Corte no estableció un plazo concreto para la continuación de la investigación, pero se espera que el juez federal emita nuevas órdenes en las próximas semanas.</p>\n<p>La medida refleja la intención de la Corte Suprema de evitar “excesos deformantes del trámite del litigio”, según la redacción del fallo. Los jueces consideraron que la intervención del tribunal era necesaria para preservar la integridad del proceso y evitar una posible manipulación de la causa.</p>\n<p>El caso sigue en curso y las autoridades federales continuarán investigando las posibles irregularidades en la compra de la mansión de Pilar y la relación con la AFA. La Corte no emitió comentarios adicionales sobre el impacto que la decisión pueda tener en la política deportiva del país.</p>",
-   "fotos": [
-    {
-     "url": "https://bairesparatodos.com.ar/wp-content/uploads/2026/11/bae2bc4a52e9-proyecto-nuevo-2026-11-19t160700148.jpg",
-     "pagina": "https://bairesparatodos.com.ar/la-corte-suprema-ordeno-que-la-causa-por-lavado-de-la-afa-y-la-mansion-de-pilar-vaya-a-comodoro-py/",
-     "credito": "Foto: Baires Para Todos",
-     "fuente": "Baires Para Todos",
-     "descripcion": "La Corte Suprema ordenó que la causa por lavado de la AFA y la mansión de Pilar vaya a Comodoro Py",
+     "url": "https://flex-app.tadevel-cdn.com/hostname/www.losprimeros.tv/api/v1/image/article/6b0028f9cd25aee2884b38fe/facebook?v=86582a063f4960e9b3c8f4fabe3b4bb6&s=15e8a7cece271c7002d5e3b238121efa",
+     "pagina": "https://www.losprimeros.tv/mundo/la-casa-blanca-desplazo-a-su-jefe-de-ciberseguridad-tras-la-ola-de-fallos-tecnologicos-en-estados-unidos_a6b0028f9cd25aee2884b38fe",
+     "credito": "Foto: Los Primeros TV",
+     "fuente": "Los Primeros TV",
+     "descripcion": "La Casa Blanca desplazó a su jefe de ciberseguridad tras la ola de fallos tecnológicos en Estados Unidos",
      "libre": false
     },
     {
-     "url": "https://media.losandes.com.ar/p/7ce7b04f4e841d9465208076fa42ce5f/adjuntos/368/imagenes/100/768/0100768578/1200x675/smart/afa-pilar-chiqui-tapia.png",
-     "pagina": "https://www.losandes.com.ar/politica/golpe-al-chiqui-tapia-la-corte-suprema-le-saco-la-causa-pilar-al-juez-amigo-la-afa-y-la-envio-comodoro-py-n6014913",
-     "credito": "Foto: Los Andes",
-     "fuente": "Los Andes",
-     "descripcion": "Golpe al \"Chiqui\" Tapia: la Corte Suprema le sacó la causa de Pilar al juez amigo de la AFA y la envió a Comodoro Py",
+     "url": "https://imagenes.elpais.com/resizer/v2/4K4RP2UUWVIVVJS5F4CE7NE4PE.jpg?auth=3375c96aa62c3fc2a9de29e9889c24303ec44ecf4f8ed1037d81a86a7193cd52&width=1200",
+     "pagina": "https://elpais.com/us/2026-11-20/el-director-nacional-de-ciberseguridad-de-la-casa-blanca-deja-el-cargo-tras-una-semana-de-fallos-tecnologicos-en-estados-unidos.html",
+     "credito": "Foto: El País · Internacional",
+     "fuente": "El País · Internacional",
+     "descripcion": "El director nacional de Ciberseguridad de la Casa Blanca deja el cargo tras una semana de fallos tecnológicos en Estados Unidos",
      "libre": false
     },
     {
-     "url": "https://media.diariopopular.com.ar/p/008f14445eea05196a0fd6ec42d058ad/adjuntos/143/imagenes/008/209/0008209058/1200x675/smart/image.png",
-     "pagina": "https://www.diariopopular.com.ar/politica/la-corte-suprema-ordeno-que-la-investigacion-la-mansion-pilar-vuelva-comodoro-py-n930016",
-     "credito": "Foto: Diario Popular",
-     "fuente": "Diario Popular",
-     "descripcion": "La Corte Suprema ordenó que la investigación por la mansión de Pilar vuelva a Comodoro Py",
-     "libre": false
-    },
-    {
-     "url": "https://media.lmneuquen.com/p/6bc09090135f38b564cf77d97dc654d2/adjuntos/195/imagenes/008/444/0008444486/1200x675/smart/causa-mansion-afa.png",
-     "pagina": "https://www.lmneuquen.com/pais/corrupcion-la-afa-la-corte-suprema-dejo-efecto-un-fallo-y-la-mansion-pilar-sera-investigada-comodoro-py-n1261901",
-     "credito": "Foto: LMNeuquén",
-     "fuente": "LMNeuquén",
-     "descripcion": "Corrupción en la AFA: la Corte Suprema dejó sin efecto un fallo y la mansión de Pilar será investigada en Comodoro Py",
-     "libre": false
-    },
-    {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Academia_da_For%C3%A7a_A%C3%A9rea_%28AFA%29_em_Pirassununga-SP._Ca%C3%A7a_F-5EM_%284856%29_da_For%C3%A7a_A%C3%A9rea_Brasileira_iniciando_o_taxiamento_para_a_apresenta%C3%A7%C3%A3o_no_Domingo_A%C3%A9reo_-_panoramio.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Academia_da_For%C3%A7a_A%C3%A9rea_(AFA)_em_Pirassununga-SP._Ca%C3%A7a_F-5EM_(4856)_da_For%C3%A7a_A%C3%A9rea_Brasileira_iniciando_o_taxiamento_para_a_apresenta%C3%A7%C3%A3o_no_Domingo_A%C3%A9reo_-_panoramio.jpg",
-     "credito": "Foto: MARCO AURÉLIO ESPARZ… / Wikimedia Commons (CC BY-SA 3.0)",
-     "descripcion": "Academia da Força Aérea (AFA) em Pirassununga/SP. Caça F-5EM (4856) da Força Aérea Brasileira iniciando o taxiamento para a apresentação no Domingo Aéreo 2015. Atualmente, a FAB possui uma frota de 46",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Estadio_casa_blanca_desde_la_Diego_V%C3%A1squez_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Estadio_casa_blanca_desde_la_Diego_V%C3%A1squez_-_panoramio.jpg",
+     "credito": "Foto: Quito magnífico / Wikimedia Commons (CC BY-SA 3.0)",
+     "descripcion": "Estadio casa blanca desde la Diego Vásquez",
      "licencia": "CC BY-SA 3.0",
      "fuente": "Wikimedia Commons",
      "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Lago_Pippin%2C_Copper_Center%2C_Alaska%2C_Estados_Unidos%2C_2017-08-22%2C_DD_115-118_PAN.jpg/1280px-Lago_Pippin%2C_Copper_Center%2C_Alaska%2C_Estados_Unidos%2C_2017-08-22%2C_DD_115-118_PAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Lago_Pippin,_Copper_Center,_Alaska,_Estados_Unidos,_2017-08-22,_DD_115-118_PAN.jpg",
+     "credito": "Foto: Diego Delso / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "Pippin Lake viewed from the Richardson Highway, near Copper Center, Alaska, United States.",
+     "licencia": "CC BY-SA 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
     }
    ],
    "enlaces": [
     {
-     "url": "https://bairesparatodos.com.ar/la-corte-suprema-ordeno-que-la-causa-por-lavado-de-la-afa-y-la-mansion-de-pilar-vaya-a-comodoro-py/",
+     "url": "https://www.infobae.com/estados-unidos/2026/11/20/trump-destituyo-al-jefe-de-ciberseguridad-de-la-casa-blanca-tras-las-fallas-tecnologicas-que-afectaron-a-estados-unidos/",
      "clase": "externo",
-     "titulo": "Fuente: Baires Para Todos",
-     "palabra": "Baires"
+     "titulo": "Fuente: Infobae",
+     "palabra": "Infobae"
     }
    ],
    "relacionadas": [],
    "verificacion": {
     "independientes": 4,
-    "paises": [],
+    "paises": [
+     "Alemania",
+     "España"
+    ],
     "estatal": [],
     "oficiales": [],
-    "agencias_citadas": [],
+    "agencias_citadas": [
+     "AFP",
+     "Reuters"
+    ],
     "leidas": 3
    },
    "fuentes": [
     {
-     "medio": "Baires Para Todos",
-     "url": "https://bairesparatodos.com.ar/la-corte-suprema-ordeno-que-la-causa-por-lavado-de-la-afa-y-la-mansion-de-pilar-vaya-a-comodoro-py/",
-     "titulo": "La Corte Suprema ordenó que la causa por lavado de la AFA y la mansión de Pilar vaya a Comodoro Py",
-     "pais": null,
-     "tipo": null,
-     "fecha": "2026-11-19T14:21:00+00:00",
-     "idioma": "es",
-     "autor": "A D",
-     "fecha_pub": "2026-11-19T22:21:10+00:00",
-     "imagen": "https://bairesparatodos.com.ar/wp-content/uploads/2026/11/bae2bc4a52e9-proyecto-nuevo-2026-11-19t160700148.jpg",
-     "agencias": [],
-     "oficiales": [],
-     "leida": true,
-     "palabras": 1005,
-     "resumen": "El máximo tribunal anuló el fallo que había enviado el expediente a Campana, como pedían los supuestos testaferros. Los jueces hablaron de una “grosera violación a las reglas de competencia”. La inves ..."
-    },
-    {
-     "medio": "Los Andes",
-     "url": "https://www.losandes.com.ar/politica/golpe-al-chiqui-tapia-la-corte-suprema-le-saco-la-causa-pilar-al-juez-amigo-la-afa-y-la-envio-comodoro-py-n6014913",
-     "titulo": "Golpe al \"Chiqui\" Tapia: la Corte Suprema le sacó la causa de Pilar al juez amigo de la AFA y la envió a Comodoro Py",
-     "pais": null,
-     "tipo": null,
-     "fecha": "2026-11-19T11:35:00+00:00",
-     "idioma": "es",
-     "autor": "Redacción Política",
-     "fecha_pub": "2026-11-19T16:35:00-03:00",
-     "imagen": "https://media.losandes.com.ar/p/7ce7b04f4e841d9465208076fa42ce5f/adjuntos/368/imagenes/100/768/0100768578/1200x675/smart/afa-pilar-chiqui-tapia.png",
-     "agencias": [],
-     "oficiales": [],
-     "leida": true,
-     "palabras": 53,
-     "resumen": "El máximo tribunal dispuso que el expediente deje el juzgado federal de Campana, a cargo de Adrián González Charvay. La investigación por presunto lavado de activos quedará en manos del juez Daniel Ra ..."
-    },
-    {
-     "medio": "Diario Popular",
-     "url": "https://www.diariopopular.com.ar/politica/la-corte-suprema-ordeno-que-la-investigacion-la-mansion-pilar-vuelva-comodoro-py-n930016",
-     "titulo": "La Corte Suprema ordenó que la investigación por la mansión de Pilar vuelva a Comodoro Py",
-     "pais": null,
-     "tipo": null,
-     "fecha": "2026-11-19T11:10:00+00:00",
-     "idioma": "es",
-     "autor": "Popular",
-     "fecha_pub": "2026-11-19T16:10:00-03:00",
-     "imagen": "https://media.diariopopular.com.ar/p/008f14445eea05196a0fd6ec42d058ad/adjuntos/143/imagenes/008/209/0008209058/1200x675/smart/image.png",
-     "agencias": [],
-     "oficiales": [],
+     "medio": "DW Español",
+     "url": "https://www.dw.com/es/casa-blanca-despide-al-jefe-de-ciberseguridad-tras-una-serie-de-fallos-tecnológicos/a-80001722?maca=spa-rss-sp-all-1122-xml-mrss",
+     "titulo": "Casa Blanca despide al jefe de ciberseguridad tras una serie de fallos tecnológicos",
+     "pais": "Alemania",
+     "tipo": "Medio público",
+     "fecha": "2026-11-20T12:15:00+00:00",
+     "idioma": "castellano",
      "leida": false,
-     "palabras": 0,
-     "resumen": "El máximo tribunal aceptó un planteo del fiscal Mario Villar y dispuso que el expediente quede a cargo del juez federal Daniel Rafecas, al cuestionar la decisión que había enviado el caso a Campana."
+     "error": "'ascii' codec can't encode character '\\xf3' in position 85: ordinal not in range(128)",
+     "imagen": null,
+     "resumen": "Sean Cairncros deja el puesto tras grandes fallos tecnológicos que afectaron varios servicios y generaron preocupación por las amenazas de la inteligencia artificial. Lo sustituye Kirsten Davies."
     },
     {
-     "medio": "LMNeuquén",
-     "url": "https://www.lmneuquen.com/pais/corrupcion-la-afa-la-corte-suprema-dejo-efecto-un-fallo-y-la-mansion-pilar-sera-investigada-comodoro-py-n1261901",
-     "titulo": "Corrupción en la AFA: la Corte Suprema dejó sin efecto un fallo y la mansión de Pilar será investigada en Comodoro Py",
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/estados-unidos/2026/11/20/trump-destituyo-al-jefe-de-ciberseguridad-de-la-casa-blanca-tras-las-fallas-tecnologicas-que-afectaron-a-estados-unidos/",
+     "titulo": "Trump destituyó al jefe de ciberseguridad de la Casa Blanca tras las fallas tecnológicas que afectaron a Estados Unidos",
      "pais": null,
      "tipo": null,
-     "fecha": "2026-11-19T09:43:00+00:00",
+     "fecha": "2026-11-20T03:29:00+00:00",
      "idioma": "es",
-     "autor": "LM Neuquen",
-     "fecha_pub": "2026-11-19T14:42:00-03:00",
-     "imagen": "https://media.lmneuquen.com/p/6bc09090135f38b564cf77d97dc654d2/adjuntos/195/imagenes/008/444/0008444486/1200x675/smart/causa-mansion-afa.png",
+     "autor": "INFOBAE",
+     "fecha_pub": "2026-11-20T03:21:53.849Z",
+     "imagen": "https://www.infobae.com/resizer/v2/JSWYXQ2OSRFNXLW6DN2RWHJYQI.JPG?auth=4ab9459484d526d5e43f351c097f3b7dea63c80bc9eb31b18a42286ba3c57dcc&smart=true&width=1200&height=630&quality=85",
+     "agencias": [
+      "AFP",
+      "Reuters"
+     ],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 694,
+     "resumen": "La salida de Cairncross representa el primer cambio importante de personal en la administración del líder republicano desde que comenzaron las interrupciones ..."
+    },
+    {
+     "medio": "Los Primeros TV",
+     "url": "https://www.losprimeros.tv/mundo/la-casa-blanca-desplazo-a-su-jefe-de-ciberseguridad-tras-la-ola-de-fallos-tecnologicos-en-estados-unidos_a6b0028f9cd25aee2884b38fe",
+     "titulo": "La Casa Blanca desplazó a su jefe de ciberseguridad tras la ola de fallos tecnológicos en Estados Unidos",
+     "pais": null,
+     "tipo": null,
+     "fecha": "2026-11-20T03:07:00+00:00",
+     "idioma": "es",
+     "autor": "Los Primeros TV",
+     "fecha_pub": "2026-11-20T11:07:45.092Z",
+     "imagen": "https://flex-app.tadevel-cdn.com/hostname/www.losprimeros.tv/api/v1/image/article/6b0028f9cd25aee2884b38fe/facebook?v=86582a063f4960e9b3c8f4fabe3b4bb6&s=15e8a7cece271c7002d5e3b238121efa",
      "agencias": [],
      "oficiales": [],
      "leida": true,
-     "palabras": 12,
-     "resumen": "De esta forma, se dejó sin efecto el fallo de la Cámara de Casación que había declarado competente al Juzgado Federal de Campana, Adrián Charvay. La sentencia lleva las firmas de los tres jueces del ..."
+     "palabras": 907,
+     "resumen": "Sean Cairncross deja el cargo y será reemplazado de manera interina por Kirsten Davies, actual directora de Información del Departamento de Defensa. Las interrupciones recientes afectaron aerolíneas, ..."
+    },
+    {
+     "medio": "El País · Internacional",
+     "url": "https://elpais.com/us/2026-11-20/el-director-nacional-de-ciberseguridad-de-la-casa-blanca-deja-el-cargo-tras-una-semana-de-fallos-tecnologicos-en-estados-unidos.html",
+     "titulo": "El director nacional de Ciberseguridad de la Casa Blanca deja el cargo tras una semana de fallos tecnológicos en Estados Unidos",
+     "pais": "España",
+     "tipo": "Medio",
+     "fecha": "2026-11-20T02:11:54+00:00",
+     "idioma": null,
+     "autor": "El País",
+     "fecha_pub": "2026-11-20T03:11:54+01:00",
+     "imagen": "https://imagenes.elpais.com/resizer/v2/4K4RP2UUWVIVVJS5F4CE7NE4PE.jpg?auth=3375c96aa62c3fc2a9de29e9889c24303ec44ecf4f8ed1037d81a86a7193cd52&width=1200",
+     "agencias": [
+      "Reuters"
+     ],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 437,
+     "resumen": "Kirsten Davies, responsable de tecnología del Departamento de Defensa, asumirá temporalmente sus funciones"
     }
    ],
-   "falta": "Confirmar la fecha exacta en que la Corte Suprema emitió el fallo y la firma de los jueces involucrados",
-   "volanta": "Lavado de dinero",
+   "falta": "Confirmar la fecha exacta de la confirmación del Senado para el nombramiento permanente de Davies.",
+   "volanta": "Ciberseguridad en EE. UU.",
    "firma": "Emilio Lahitte",
    "prioridad": "normal",
    "escalon": "nota completa"
@@ -919,172 +823,224 @@
  "reserva": [
   {
    "seccion": "mundo",
-   "titulo": "Trump llegó a China y Xi Jinping lo recibió antes de la histórica cumbre con Putin",
-   "n_medios": 16,
-   "puntaje": 63.0,
+   "titulo": "El Reino Unido y la UE cierran un acuerdo post-Brexit tras superar el escollo de la movilidad juvenil",
+   "n_medios": 4,
+   "puntaje": 21.9,
    "region": null,
    "ejes": [
-    "energia",
     "internacional",
-    "politica"
+    "mercosur"
    ],
-   "tema": "Geopolítica",
+   "tema": "General",
    "notas": [
     {
-     "medio": "Sputnik Mundo",
-     "url": "https://noticiaslatam.lat/20261120/reunion-entre-putin-xi-y-trump-es-un-punto-de-quiebre-para-el-ordenamiento-mundial-dice-experto-1175955994.html",
-     "titulo": "La reunión entre Putin, Xi y Trump \"es un punto de quiebre\" para el ordenamiento mundial, dice un experto",
-     "fecha": "2026-11-20T01:52:45+00:00",
-     "pais": "Rusia"
+     "medio": "NYT en Español",
+     "url": "https://www.nytimes.com/es/2026/11/20/espanol/mundo/reino-unido-ue-acuerdo-brexit.html",
+     "titulo": "El Reino Unido anuncia un acuerdo para reconfigurar el Brexit: lo que hay que saber",
+     "fecha": "2026-11-20T16:49:56+00:00",
+     "pais": "Estados Unidos"
     },
     {
-     "medio": "DW Español",
-     "url": "https://www.dw.com/es/la-foto-de-shenzhen-xi-junta-a-trump-y-putin-en-una-cita-histórica/a-79997135?maca=spa-rss-sp-all-1122-xml-mrss",
-     "titulo": "La foto de Shenzhen: Xi junta a Trump y Putin en una cita histórica",
-     "fecha": "2026-11-19T21:43:00+00:00",
-     "pais": "Alemania"
+     "medio": "El País · América",
+     "url": "https://elpais.com/internacional/2026-11-20/el-reino-unido-y-la-ue-se-disponen-a-cerrar-un-acuerdo-limitado-de-movilidad-juvenil-que-supere-el-bloqueo-del-brexit.html",
+     "titulo": "El Reino Unido y la UE cierran un acuerdo post-Brexit tras superar el escollo de la movilidad juvenil",
+     "fecha": "2026-11-20T16:09:19+00:00",
+     "pais": "España"
+    },
+    {
+     "medio": "La Nación",
+     "url": "https://www.lanacion.com.ar/el-mundo/el-reino-unido-y-la-ue-firman-su-mayor-acuerdo-de-acercamiento-desde-el-brexit-nid20112026/",
+     "titulo": "El Reino Unido y la UE firman su mayor acuerdo de acercamiento desde el Brexit",
+     "fecha": "2026-11-20T15:43:23+00:00",
+     "pais": "Argentina"
     },
     {
      "medio": "France 24 Español",
-     "url": "https://www.france24.com/es/video/20261119-in%C3%A9dita-reuni%C3%B3n-entre-xi-trump-y-putin-declaraci%C3%B3n-conjunta-de-paz-y-cr%C3%ADticas-a-la-cpi-1",
-     "titulo": "Inédita reunión entre Xi, Trump y Putin: declaración conjunta de paz y críticas a la CPI",
-     "fecha": "2026-11-19T20:45:57+00:00",
+     "url": "https://www.france24.com/es/europa/20261120-reino-unido-y-la-uni%C3%B3n-europea-acuerdan-facilitar-el-comercio-y-ampliar-la-movilidad-juvenil-tras-el-brexit",
+     "titulo": "🔴 En vivo: Reino Unido y la Unión Europea acuerdan facilitar el comercio y ampliar la movilidad juvenil tras el Brexit",
+     "fecha": "2026-11-20T13:16:40+00:00",
      "pais": "Francia"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Pity Álvarez fue condenado a 12 años de prisión por el crimen de Cristian Díaz",
+   "n_medios": 5,
+   "puntaje": 20.0,
+   "region": null,
+   "ejes": [
+    "mercosur"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "La Nación",
+     "url": "https://www.lanacion.com.ar/seguridad/pity-alvarez-fue-condenado-a-la-pena-de-12-anos-de-carcel-nid20112026/",
+     "titulo": "Pity Álvarez fue condenado a la pena de 12 años de cárcel",
+     "fecha": "2026-11-20T17:14:10+00:00",
+     "pais": "Argentina"
     },
     {
-     "medio": "El Cronista",
-     "url": "https://www.cronista.com/financial-times/trump-xi-putin-y-la-espada-de-damocles-que-dejo-la-historica-cumbre-que-mira-al-nuevo-orden-mundial/",
-     "titulo": "Trump, Xi, Putin y la espada de Damocles: qué dejó la histórica cumbre que mira al nuevo orden mundial",
-     "fecha": "2026-11-19T20:24:38+00:00",
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/sociedad/policiales/2026/11/20/juicio-a-pity-alvarez-en-vivo-sin-el-musico-en-la-sala-el-tribunal-dara-a-conocer-el-veredicto/",
+     "titulo": "Condenaron a “Pity” Álvarez a 12 años de prisión por el crimen de Cristian Díaz, pero no irá a la cárcel",
+     "fecha": "2026-11-20T17:13:12+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Perfil",
+     "url": "https://perfil.com/sociedad/condenaron-a-pity-alvarez-a-12-anos-de-prision-con-arresto-domicilario-aJKbK6q9WHGw",
+     "titulo": "Condenaron a Pity Álvarez a 12 años de prisión con arresto domicilario",
+     "fecha": "2026-11-20T17:06:01+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Noticias Argentinas",
+     "url": "https://noticiasargentinas.com/sociedad/pity-alvarez-fue-condenado-a-12-anos-de-prision-por-el-crimen-de-cristian-diaz_a6b004992f48d6d3ab47bbcf2",
+     "titulo": "Pity Álvarez fue condenado a 12 años de prisión por el crimen de Cristian Díaz",
+     "fecha": "2026-11-20T17:00:00+00:00",
      "pais": "Argentina"
     }
    ]
   },
   {
    "seccion": "argentina",
-   "titulo": "El Senado convirtió en ley la adhesión argentina al Tratado de Patentes",
-   "n_medios": 6,
-   "puntaje": 22.4,
+   "titulo": "El Senado tratará la Ley de Ludopatía",
+   "n_medios": 5,
+   "puntaje": 18.4,
    "region": null,
    "ejes": [
-    "internacional",
-    "mercosur",
     "politica"
    ],
    "tema": "Política",
    "notas": [
     {
-     "medio": "laprensa.com.ar",
-     "url": "https://www.laprensa.com.ar/El-Senado-convirtio-en-ley-la-adhesion-argentina-al-Tratado-de-Patentes-578011.note.aspx",
-     "titulo": "El Senado convirtió en ley la adhesión argentina al Tratado de Patentes",
-     "fecha": "2026-11-20T04:30:00+00:00",
+     "medio": "Página/12",
+     "url": "https://www.pagina12.com.ar/2026/11/20/el-senado-provincial-le-dio-sancion-definitiva-a-la-reforma-de-seguridad/",
+     "titulo": "El Senado provincial le dio sanción definitiva a la reforma de seguridad",
+     "fecha": "2026-11-20T13:58:14+00:00",
      "pais": "Argentina"
     },
     {
-     "medio": "ellitoral.com",
-     "url": "https://www.ellitoral.com/politica/senado-estadosunidos-tratadodepatentes-federicosturzenegger-javiermilei-cilfa-cooperala-medicamentos-franciscopaoltroni_0_R5DU7GkZFu.html",
-     "titulo": "El Senado convirtió en ley la adhesión argentina al Tratado de Patentes",
-     "fecha": "2026-11-20T02:30:00+00:00",
+     "medio": "El Sureño (Tierra del Fuego)",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA5Tm1VeUJoV1cteG03X19tQzBwaVVXVmp0ckJmOU9qcW5xT2RJWUtmZ041SnE5WU5LVWliZE1zRWR2aTBDTGR2QkJrS0hGaDlXTTZrUmh4VF9lLWVXdHRyWS1KaEotOXV6dGtXVGpHbl8yazg?oc=5",
+     "titulo": "El Senado tratará la Ley de Ludopatía",
+     "fecha": "2026-11-20T03:09:57+00:00",
      "pais": "Argentina"
     },
     {
-     "medio": "Ámbito",
-     "url": "https://www.ambito.com/negocios/amcham-celebro-el-avance-la-adhesion-argentina-un-tratado-patentes-y-destaco-su-impacto-las-inversiones-n6347393",
-     "titulo": "AmCham celebró el avance de la adhesión argentina a un tratado de patentes y destacó su impacto en las inversiones",
-     "fecha": "2026-11-20T01:15:16+00:00",
+     "medio": "Diario Norte (Chaco)",
+     "url": "https://www.diarionorte.com/336955-el-senado-tratara-la-ley-de-ludopatia-el-jueves-26",
+     "titulo": "El Senado tratará la ley de Ludopatía el jueves 26",
+     "fecha": "2026-11-20T01:34:10+00:00",
      "pais": "Argentina"
     },
     {
-     "medio": "Río Negro",
-     "url": "https://www.rionegro.com.ar/politica/tratado-de-patentes-que-implica-la-adhesion-de-argentina-que-aprobo-el-senado-4805917/",
-     "titulo": "Tratado de Patentes: qué implica la adhesión de Argentina que aprobó el Senado",
-     "fecha": "2026-11-20T01:01:55+00:00",
+     "medio": "El Diario de la República (San Luis)",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQek9NaUhJM0RVVDhTXzN6aXBxV0hfMVRGcFVkcFF5Wi11NDQwNU5MQnozNFJOV01YUnR6TkgwRS1vMGdBdlRDellOMVNLNVp0cWktVFI1b01aWnBVamduRk1mOGgtYUh4WEsxc1VrZTlHUkNHdFBJX2RVdXF4MjhncDhHaUxFTm5JbVVFdmJPMWpFR2h6WmhNVW5TZ3ZyNU82d2dGTTEwX2xBM05YcUE4S2RwWWl3a0ItSFNibEtGa2FUOGZ6TjhEMnlXdG1CSHlqdjJfQQ?oc=5",
+     "titulo": "El Senado sancionó por unanimidad una ley permanente de discapacidad",
+     "fecha": "2026-11-19T22:35:01+00:00",
      "pais": "Argentina"
     }
    ]
   },
   {
-   "seccion": "mundo",
-   "titulo": "La CIJ declara a Myanmar responsable de genocidio contra los musulmanes rohinyás",
-   "n_medios": 3,
-   "puntaje": 16.6,
+   "seccion": "argentina",
+   "titulo": "Causa AFA: la Corte Suprema le sacó al juzgado de Campana el caso por la Mansión de Pilar y volverá a Comodoro Py",
+   "n_medios": 6,
+   "puntaje": 15.5,
    "region": null,
    "ejes": [
-    "internacional"
+    "politica"
    ],
-   "tema": "Geopolítica",
+   "tema": "General",
    "notas": [
     {
-     "medio": "BBC Mundo",
-     "url": "https://www.bbc.com/mundo/articles/cm9w9pp7w9x9o?at_medium=RSS&at_campaign=rss",
-     "titulo": "Quiénes son los rohinyás, la \"minoría más perseguida del mundo\" por la que Myanmar fue condenado por genocidio",
-     "fecha": "2026-11-19T23:52:20+00:00",
-     "pais": "Reino Unido"
+     "medio": "Baires Para Todos",
+     "url": "https://bairesparatodos.com.ar/la-corte-suprema-ordeno-que-la-causa-por-lavado-de-la-afa-y-la-mansion-de-pilar-vaya-a-comodoro-py/",
+     "titulo": "La Corte Suprema ordenó que la causa por lavado de la AFA y la mansión de Pilar vaya a Comodoro Py",
+     "fecha": "2026-11-19T14:21:00+00:00",
+     "pais": null
     },
     {
-     "medio": "El País · Internacional",
-     "url": "https://elpais.com/internacional/2026-11-19/el-tribunal-internacional-de-justicia-concluye-que-el-ejercito-de-myanmar-mato-a-miles-de-rohinyas-y-cometio-actos-de-violencia-extrema-contra-ellos.html",
-     "titulo": "El máximo tribunal de la ONU concluye que Myanmar cometió genocidio contra los rohinyás",
-     "fecha": "2026-11-19T13:39:09+00:00",
-     "pais": "España"
+     "medio": "Los Andes",
+     "url": "https://www.losandes.com.ar/politica/golpe-al-chiqui-tapia-la-corte-suprema-le-saco-la-causa-pilar-al-juez-amigo-la-afa-y-la-envio-comodoro-py-n6014913",
+     "titulo": "Golpe al \"Chiqui\" Tapia: la Corte Suprema le sacó la causa de Pilar al juez amigo de la AFA y la envió a Comodoro Py",
+     "fecha": "2026-11-19T11:35:00+00:00",
+     "pais": null
     },
     {
-     "medio": "Anadolu (castellano)",
-     "url": "https://www.aa.com.tr/es/mundo/la-cij-declara-a-myanmar-responsable-de-genocidio-contra-los-musulmanes-rohiny%C3%A1s/4130737",
-     "titulo": "La CIJ declara a Myanmar responsable de genocidio contra los musulmanes rohinyás",
-     "fecha": "2026-11-19T11:48:52+00:00",
-     "pais": "Turquía"
-    }
-   ]
-  },
-  {
-   "seccion": "mundo",
-   "titulo": "El director nacional de Ciberseguridad de la Casa Blanca deja el cargo tras una semana de fallos tecnológicos en Estados Unidos",
-   "n_medios": 3,
-   "puntaje": 14.9,
-   "region": null,
-   "ejes": [
-    "internacional"
-   ],
-   "tema": "Geopolítica",
-   "notas": [
-    {
-     "medio": "Euronews Español",
-     "url": "https://es.euronews.com/2026/11/20/casa-blanca-fulmina-jefe-ciberseguridad-cadena-fallos-tecnologicos",
-     "titulo": "La Casa Blanca fulmina a su jefe de ciberseguridad tras una cadena de fallos tecnológicos",
-     "fecha": "2026-11-20T07:26:48+00:00",
-     "pais": "Francia"
+     "medio": "Diario Popular",
+     "url": "https://www.diariopopular.com.ar/politica/la-corte-suprema-ordeno-que-la-investigacion-la-mansion-pilar-vuelva-comodoro-py-n930016",
+     "titulo": "La Corte Suprema ordenó que la investigación por la mansión de Pilar vuelva a Comodoro Py",
+     "fecha": "2026-11-19T11:10:00+00:00",
+     "pais": null
     },
     {
-     "medio": "El País · América",
-     "url": "https://elpais.com/us/2026-11-20/el-director-nacional-de-ciberseguridad-de-la-casa-blanca-deja-el-cargo-tras-una-semana-de-fallos-tecnologicos-en-estados-unidos.html",
-     "titulo": "El director nacional de Ciberseguridad de la Casa Blanca deja el cargo tras una semana de fallos tecnológicos en Estados Unidos",
-     "fecha": "2026-11-20T02:11:54+00:00",
-     "pais": "España"
-    },
-    {
-     "medio": "Infobae",
-     "url": "https://www.infobae.com/estados-unidos/2026/11/20/trump-destituyo-al-jefe-de-ciberseguridad-de-la-casa-blanca-tras-las-fallas-tecnologicas-que-afectaron-a-estados-unidos/",
-     "titulo": "Trump destituyó al jefe de ciberseguridad de la Casa Blanca tras las fallas tecnológicas que afectaron a Estados Unidos",
-     "fecha": "2026-11-19T16:00:00+00:00",
+     "medio": "LMNeuquén",
+     "url": "https://www.lmneuquen.com/pais/corrupcion-la-afa-la-corte-suprema-dejo-efecto-un-fallo-y-la-mansion-pilar-sera-investigada-comodoro-py-n1261901",
+     "titulo": "Corrupción en la AFA: la Corte Suprema dejó sin efecto un fallo y la mansión de Pilar será investigada en Comodoro Py",
+     "fecha": "2026-11-19T09:43:00+00:00",
      "pais": null
     }
    ]
   },
   {
-   "seccion": "mundo",
-   "titulo": "Por qué Robert Pattinson podría ser un gran James Bond",
+   "seccion": "argentina",
+   "titulo": "“No cambia nada”: ¿por qué el fallo de la Corte Suprema sobre las prepagas no frena los aumentos?",
    "n_medios": 3,
-   "puntaje": 14.8,
+   "puntaje": 13.0,
+   "region": null,
+   "ejes": [
+    "politica"
+   ],
+   "tema": "Energía",
+   "notas": [
+    {
+     "medio": "Página/12",
+     "url": "https://www.pagina12.com.ar/2026/11/20/no-cambia-nada-por-que-el-fallo-de-la-corte-suprema-sobre-las-prepagas-no-frena-los-aumentos/",
+     "titulo": "“No cambia nada”: ¿por qué el fallo de la Corte Suprema sobre las prepagas no frena los aumentos?",
+     "fecha": "2026-11-20T17:08:35+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "InfoBAN (zona norte)",
+     "url": "https://www.infoban.com.ar/20/11/2026/las-prepagas-criticaron-el-fallo-supremo-que-frena-los-aumentos/",
+     "titulo": "Las prepagas criticaron el fallo supremo que frena los aumentos",
+     "fecha": "2026-11-20T13:43:13+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Uno Entre Ríos",
+     "url": "https://www.unoentrerios.com.ar/el-pais/fallo-la-corte-suprema-dice-que-el-estado-debe-regular-cuotas-las-prepagas-n10293262.html",
+     "titulo": "Fallo de la Corte Suprema dice que el Estado debe regular cuotas de las prepagas",
+     "fecha": "2026-11-20T12:23:38+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "El príncipe Harry respalda a Robert Pattinson como el próximo James Bond",
+   "n_medios": 3,
+   "puntaje": 12.9,
    "region": null,
    "ejes": [],
    "tema": "General",
    "notas": [
     {
+     "medio": "La Nación",
+     "url": "https://www.lanacion.com.ar/espectaculos/cine/robert-pattinson-de-ladron-de-bancos-a-oscuro-enmascarado-los-proyectos-que-el-nuevo-james-bond-nid20112026/",
+     "titulo": "Robert Pattinson, de ladrón de bancos a oscuro enmascarado: los proyectos que el nuevo James Bond protagonizará en los próximos años",
+     "fecha": "2026-11-20T16:30:55+00:00",
+     "pais": "Argentina"
+    },
+    {
      "medio": "Infobae América",
-     "url": "https://www.infobae.com/america/opinion/2026/11/20/la-fascinacion-por-james-bond/",
-     "titulo": "La fascinación por James Bond",
-     "fecha": "2026-11-20T07:00:00+00:00",
+     "url": "https://www.infobae.com/entretenimiento/2026/11/20/el-principe-harry-respalda-a-robert-pattinson-como-el-proximo-james-bond/",
+     "titulo": "El príncipe Harry respalda a Robert Pattinson como el próximo James Bond",
+     "fecha": "2026-11-20T16:00:26+00:00",
      "pais": "Argentina"
     },
     {
@@ -1093,54 +1049,65 @@
      "titulo": "El mensaje de Pierce Brosnan a Robert Pattinson tras convertirse en James Bond",
      "fecha": "2026-11-19T15:25:00+00:00",
      "pais": "Alemania"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Directo España y el cara a cara entre Núñez Feijóo y Sánchez en el debate presidencial",
+   "n_medios": 2,
+   "puntaje": 12.8,
+   "region": null,
+   "ejes": [
+    "migracion",
+    "politica"
+   ],
+   "tema": "Política",
+   "notas": [
+    {
+     "medio": "France 24 Español",
+     "url": "https://www.france24.com/es/video/20261120-directo-espa%C3%B1a-y-el-cara-a-cara-entre-n%C3%BA%C3%B1ez-feij%C3%B3o-y-s%C3%A1nchez-en-el-debate-presidencial",
+     "titulo": "Directo España y el cara a cara entre Núñez Feijóo y Sánchez en el debate presidencial",
+     "fecha": "2026-11-20T16:20:57+00:00",
+     "pais": "Francia"
     },
     {
-     "medio": "NYT en Español",
-     "url": "https://www.nytimes.com/es/2026/11/19/espanol/cultura/pattinson-james-bond.html",
-     "titulo": "Por qué Robert Pattinson podría ser un gran James Bond",
-     "fecha": "2026-11-19T06:00:05+00:00",
-     "pais": "Estados Unidos"
+     "medio": "Europa Press",
+     "url": "https://www.europapress.es/nacional/noticia-elecciones-generales-2026-directo-resumen-debate-sanchez-feijoo-reacciones-ultima-hora-campana-20261120083023.html",
+     "titulo": "Elecciones generales 2026, en directo: resumen del debate ayer entre Sánchez y Feijóo y reacciones al cara a cara",
+     "fecha": "2026-11-20T07:30:23+00:00",
+     "pais": "España"
     }
    ]
   },
   {
    "seccion": "argentina",
-   "titulo": "Crece el riesgo país: alcanzó los 931 puntos y hace caer las acciones argentinas",
-   "n_medios": 4,
-   "puntaje": 14.4,
-   "region": null,
-   "ejes": [
-    "economia-global",
-    "fmi"
-   ],
+   "titulo": "Visita sorpresa de Bill Gates a la Argentina",
+   "n_medios": 3,
+   "puntaje": 12.2,
+   "region": "patagonia",
+   "ejes": [],
    "tema": "General",
    "notas": [
     {
-     "medio": "Ámbito",
-     "url": "https://www.ambito.com/los-bonos-dolares-rebotan-medio-la-euforia-anthropic-n6347109",
-     "titulo": "Fuerte castigo para los activos argentinos: los ADRs se hundieron hasta 10,4% y el riesgo país voló 9,8% a 931 puntos",
-     "fecha": "2026-11-19T22:29:00+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "Nueva Rioja (La Rioja)",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaUNIdHg5amFEWmVjczdaSElDelp4OWtSa09lRUxNSl9jdDlOaXRqbWlReUdCQW1uWW1XMGxIMGVoTUw1eG5VLU9iZ2lBUUxpQ1BMa3NpSWw3dlVMdFZXdTRoWXd4bUNHRHFERm41WXR6UkZmaVFEMjAxdkpFXzU1ZTBmVjAxa3BJR3BFbFNSY2JfYWZTZ29WUEF2M3hhVWxraS0tcTJtaXdmSWxI0gGmAUFVX3lxTFBwTjE1TXpRNjJnNGl1WVQybS1ReWJQS0VORUFhLVU3NjNIVGc1Z2hiYkFqaEZDOUJEczRMcUpTaWMtYXRtOE15X0VOYmNoZEhZR0hoMlBmenI5M0tGanJkTzQ0Tk1uX0JhQ1dGUDdXRnVYMU42aEdER1dqOGxRZ0d3dV9oZjBTLUgxcU92aDNyNi1XdEIyR0JyeUxPdkNXeGdJUHFGclE?oc=5",
-     "titulo": "El riesgo país de la Argentina cerró la jornada en 931 puntos básicos",
-     "fecha": "2026-11-19T22:07:54+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "Uno Entre Ríos",
-     "url": "https://www.unoentrerios.com.ar/economia/el-riesgo-pais-volvio-superar-los-900-puntos-y-cayeron-los-bonos-y-las-acciones-argentinas-n10293188.html",
-     "titulo": "El riesgo país volvió a superar los 900 puntos y cayeron los bonos y las acciones argentinas",
-     "fecha": "2026-11-19T21:21:30+00:00",
-     "pais": "Argentina"
-    },
-    {
      "medio": "El Cronista",
-     "url": "https://www.cronista.com/economia-politica/el-riesgo-pais-vuelve-a-superar-los-900-puntos-caen-bonos-y-acciones-argentinas/",
-     "titulo": "Crece el riesgo país: alcanzó los 931 puntos y hace caer las acciones argentinas",
-     "fecha": "2026-11-19T19:01:16+00:00",
+     "url": "https://www.cronista.com/economia-politica/que-hace-bill-gates-en-argentina-el-magnate-fue-fotografiado-en-buenos-aires-y-ushuaia/",
+     "titulo": "Qué hace Bill Gates en Argentina: el magnate fue fotografiado en Buenos Aires y Ushuaia",
+     "fecha": "2026-11-20T12:38:46+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "El Sureño (Tierra del Fuego)",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObnllWjdRSUZibl9oaEF2TUo5SmphS3BvcnJuNFpoRjk4RTRqRUJlSHZ3T01seUVmQ3lMMTZCYzdiLTdJYlN0LUVMMk9teUNhNFMyeTlHcXRTeHFSUUhIcXZoVjlmT21GS0YwQ1VfbUw0Y1Q4N01PeDk4VUJhTURRSmROcFM?oc=5",
+     "titulo": "Bill Gates llegó a Ushuaia en una hermética visita",
+     "fecha": "2026-11-20T01:15:02+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "El Litoral (Corrientes)",
+     "url": "https://www.ellitoral.com.ar/nacional/2026-11-19-20-57-0-visita-sorpresa-de-bill-gates-a-la-argentina",
+     "titulo": "Visita sorpresa de Bill Gates a la Argentina",
+     "fecha": "2026-11-19T23:57:00+00:00",
      "pais": "Argentina"
     }
    ]
@@ -1149,7 +1116,7 @@
    "seccion": "mundo",
    "titulo": "La Comisión Europea denuncia haber sufrido ciberataques asistidos con IA",
    "n_medios": 2,
-   "puntaje": 13.7,
+   "puntaje": 12.2,
    "region": null,
    "ejes": [
     "internacional"
@@ -1173,428 +1140,324 @@
    ]
   },
   {
-   "seccion": "argentina",
-   "titulo": "Última hora del cara a cara entre Pedro Sánchez y Alberto Núñez Feijóo, en directo: la campaña se reanuda tras la resaca del debate a 9 días de las elecciones generales",
-   "n_medios": 2,
-   "puntaje": 13.0,
-   "region": null,
-   "ejes": [
-    "politica"
-   ],
-   "tema": "Política",
-   "notas": [
-    {
-     "medio": "Infobae",
-     "url": "https://www.infobae.com/espana/2026/11/20/ultima-hora-del-cara-a-cara-entre-pedro-sanchez-y-alberto-nunez-feijoo-en-directo-la-campana-se-reanuda-tras-la-resaca-del-debate/",
-     "titulo": "Última hora del cara a cara entre Pedro Sánchez y Alberto Núñez Feijóo, en directo: la campaña se reanuda tras la resaca del debate a 9 días de las elecciones generales",
-     "fecha": "2026-11-20T07:57:44+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "Europa Press",
-     "url": "https://www.europapress.es/nacional/noticia-elecciones-generales-2026-directo-resumen-debate-sanchez-feijoo-reacciones-ultima-hora-campana-20261120083023.html",
-     "titulo": "Elecciones generales 2026, en directo: resumen del debate entre Sánchez y Feijóo, reacciones y última hora de la campaña",
-     "fecha": "2026-11-20T07:30:23+00:00",
-     "pais": "España"
-    }
-   ]
-  },
-  {
-   "seccion": "argentina",
-   "titulo": "El Senado aprobó la reforma del régimen de propiedad privada que restablece la Ley de Tierras",
-   "n_medios": 3,
-   "puntaje": 12.7,
-   "region": null,
-   "ejes": [
-    "politica"
-   ],
-   "tema": "Política",
-   "notas": [
-    {
-     "medio": "Perfil",
-     "url": "https://perfil.com/politica/se-aprobo-en-el-senado-la-reforma-del-regimen-de-propiedad-privada-que-reestablece-la-ley-de-tierras-quienes-votaron-a-favor-y-quienes-en-contra-ayfBC1L4SJmJ",
-     "titulo": "Se aprobó en el Senado la reforma del régimen de propiedad privada que reestablece la Ley de Tierras: quiénes votaron a favor y quiénes en contra",
-     "fecha": "2026-11-20T06:31:10+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "primerafuente.com.ar",
-     "url": "https://www.primerafuente.com.ar/noticias/133643/inviolabilidad-propiedad-privada-senado-convirtio-ley-restituye-ley-tierras",
-     "titulo": "Inviolabilidad de la Propiedad Privada : el Senado la convirtió en ley y restituye la Ley de Tierras",
-     "fecha": "2026-11-20T04:30:00+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "La Nación",
-     "url": "https://www.lanacion.com.ar/politica/el-senado-aprobo-la-reforma-del-regimen-de-propiedad-privada-que-restablece-la-ley-de-tierras-nid19112026/",
-     "titulo": "El Senado aprobó la reforma del régimen de propiedad privada que restablece la Ley de Tierras",
-     "fecha": "2026-11-20T03:45:01+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
    "seccion": "mundo",
-   "titulo": "Por un fallo de la Corte: prepagas no podrán aumentar sus cuotas sin autorización del Gobierno",
-   "n_medios": 3,
-   "puntaje": 12.7,
-   "region": null,
-   "ejes": [
-    "politica"
-   ],
-   "tema": "Energía",
-   "notas": [
-    {
-     "medio": "La Nación",
-     "url": "https://www.lanacion.com.ar/economia/que-podria-pasar-tras-el-fallo-de-la-corte-sobre-las-cuotas-de-las-prepagas-y-como-reacciono-el-nid19112026/",
-     "titulo": "Qué podría pasar tras el fallo de la Corte Suprema sobre las cuotas de las prepagas y cuál fue la reacción del sector",
-     "fecha": "2026-11-20T06:08:39+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "Página/12",
-     "url": "https://www.pagina12.com.ar/2026/11/20/dnu-7023-la-corte-declaro-inconstitucional-la-liberacion-de-los-precios-de-las-prepagas/",
-     "titulo": "Freno de la Corte a los aumentos de las prepagas",
-     "fecha": "2026-11-20T03:01:00+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "El Cronista",
-     "url": "https://www.cronista.com/economia-politica/por-un-fallo-de-la-corte-prepagas-no-podran-aumentar-sus-cuotas-sin-autorizacion-del-gobierno/",
-     "titulo": "Por un fallo de la Corte: prepagas no podrán aumentar sus cuotas sin autorización del Gobierno",
-     "fecha": "2026-11-19T18:28:26+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "argentina",
-   "titulo": "Hay alerta amarilla por tormentas para este viernes 20 de noviembre en Formosa: las zonas afectadas",
-   "n_medios": 3,
-   "puntaje": 12.4,
-   "region": "norte-grande",
-   "ejes": [],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Formosa (prensa local)",
-     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOeTh0MFBsOXRYaFJUZE1Ed0JUckVWU2h3WDd2YnMtNk9xME9yRGlTSmVfUkIxSzZXcENFX3pFZkVLUHNjTDZyckxfUUJEMFBaSzFHVE5VSm54YmpaRndPNC16cnFGZ3pCc1E2NFd6ZFotZUR5ckpaMTg1NWxWWFU4OHdseDd3UDc5RVZDaWREUFNZOU9hQ3l4NzdWQ2x0Vkc4Ym03dVVyV3JKWU1NVkxaNjBzS0RlN083dDVfM3NJRi0zeGtwc3MyQmtwbTZobkdXQXFFemtjM2EyQdIB7gFBVV95cUxOQ0IyQ3ZGaG9JbnV0M2p3RDB2T2Z2V20tU0t2V216OWF4d3RObFpONzB5T1Mzc3R1YzhaUnhUdTk4NWhpS1ZJOUJpSXdMeTRVajVBZExlREM2TjQwVWVFNFFDcVUwUWcxRkg1enpKdWlzOG53alNKR3h1WUNyUU1mMmxfU0g5SGk2SjNoak1UOFBJbkxvUi1hbDNsUmdsb3Y4VzB0T1c3SDlUREh0XzBOemJwSXdKdXd0blpkYVlSNmUxSlVramJXd3N0a3hSc3JRRHpnbjZxVm40enNvTlpkU21acGROOTJsOHQyR3ZR?oc=5",
-     "titulo": "Hay alerta amarilla por tormentas para este viernes 20 de noviembre en Formosa: las zonas afectadas",
-     "fecha": "2026-11-20T04:31:06+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "tn.com.ar",
-     "url": "https://tn.com.ar/clima/alertas/2026/11/20/hay-alerta-amarilla-por-tormentas-para-este-viernes-20-de-noviembre-en-chaco-las-zonas-afectadas/",
-     "titulo": "Hay alerta amarilla por tormentas para este viernes 20 de noviembre en Chaco : las zonas afectadas",
-     "fecha": "2026-11-20T04:30:00+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "El Territorio (Misiones)",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPMmljcUhtRTlfSVI5bEI2Zmk0Snh3blFPRGxINDY0SGZjRTduTExuZ1B2V1BvOTNPSXZFUTdqTnFCVTdhbTl3UkNZTXNmRDlTODZuamFPTjkwOURYVXpxZGVldjZONDg3Y05yUTBMVWlTeWhsb0FULV9ZMzd0Y1BMc1dTWnVhc3N5LUFFUUJIUVlpc1FKRzVuNzFoSUFTT3J0M3NpaVBjNThlc2lOX3FPN3h5Q3dYNkxSSkZ4aGluM3VDc1F4US1SaW4tcWlvTGZKd0HSAdcBQVVfeXFMT210VEc0UkNXUXV0bGpXVEJUd3U5eXlucTVleW1TOTJqbktiX1JYd1FKMHJqMnp5aGpwMjNlR0lYYTZTVWxEdTQtLUlKeFNUeFdBaWpaZ1BzdnU2Rk9lWmNkb3BLc3ZWSnZrN0pRNFNGeU9XSlk4WDdEMy1Mck4wRVpneHhnS1E2VTV6Yl9QLURwN0NyT1o5TFd1QnI5MWdlVGV5SEJtRUFQaFRqYkdLTUZwcVdNRlhqTkVDck5Rb3g2dHExWGpJN0JOMERzZC1Scl96RGtIWm8?oc=5",
-     "titulo": "Emiten alerta amarilla por tormentas para este miércoles en toda la provincia",
-     "fecha": "2026-11-18T23:10:00+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mundo",
-   "titulo": "Reseña de ‘Los juegos del hambre: amanecer en la cosecha’: una precuela superficial",
-   "n_medios": 2,
-   "puntaje": 12.0,
-   "region": null,
-   "ejes": [
-    "agro"
-   ],
-   "tema": "Agro y clima",
-   "notas": [
-    {
-     "medio": "NYT en Español",
-     "url": "https://www.nytimes.com/es/2026/11/20/espanol/cultura/resena-los-juegos-del-hambre-amanecer-en-la-cosecha.html",
-     "titulo": "Reseña de ‘Los juegos del hambre: amanecer en la cosecha’: una precuela superficial",
-     "fecha": "2026-11-20T08:00:10+00:00",
-     "pais": "Estados Unidos"
-    },
-    {
-     "medio": "Infobae",
-     "url": "https://www.infobae.com/espana/agencias/2026/11/20/los-juegos-del-hambre-amanecer-en-la-cosecha-contra-la-manipulacion-informativa/",
-     "titulo": "'Los juegos del hambre: Amanecer en la cosecha', contra la manipulación informativa",
-     "fecha": "2026-11-20T07:46:31+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mundo",
-   "titulo": "Ataque de misiles rusos dañan tres puentes y dejan tres muertos en la capital ucraniana",
+   "titulo": "Dos misiles y un dron rusos caen en el este de Polonia en plenas maniobras militares de una decena de países europeos",
    "n_medios": 2,
    "puntaje": 11.8,
    "region": null,
    "ejes": [
-    "energia",
     "internacional"
    ],
-   "tema": "Geopolítica",
+   "tema": "General",
    "notas": [
     {
-     "medio": "DW Español",
-     "url": "https://www.dw.com/es/ataque-de-misiles-rusos-dañan-tres-puentes-y-dejan-tres-muertos-en-la-capital-ucraniana/a-79998916?maca=spa-rss-sp-all-1122-xml-mrss",
-     "titulo": "Ataque de misiles rusos dañan tres puentes y dejan tres muertos en la capital ucraniana",
-     "fecha": "2026-11-20T06:43:00+00:00",
-     "pais": "Alemania"
-    },
-    {
-     "medio": "Infobae América",
-     "url": "https://www.infobae.com/america/mundo/2026/11/20/rusia-lanzo-un-ataque-con-misiles-contra-ucrania-y-bombardeo-puentes-e-infraestructura-critica-de-kiev-al-menos-tres-muertos/",
-     "titulo": "Rusia lanzó un ataque con misiles contra Ucrania y bombardeó puentes e infraestructura crítica de Kiev: al menos tres muertos",
-     "fecha": "2026-11-20T05:59:53+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mundo",
-   "titulo": "Honduras y Estados Unidos firman acuerdos por 13.5 millones de dólares para reforzar la defensa y la seguridad fronteriza",
-   "n_medios": 2,
-   "puntaje": 11.3,
-   "region": null,
-   "ejes": [
-    "internacional"
-   ],
-   "tema": "Geopolítica",
-   "notas": [
-    {
-     "medio": "Infobae América",
-     "url": "https://www.infobae.com/honduras/2026/11/20/honduras-y-estados-unidos-firman-acuerdos-por-135-millones-de-dolares-para-reforzar-la-defensa-y-la-seguridad-fronteriza/",
-     "titulo": "Honduras y Estados Unidos firman acuerdos por 13.5 millones de dólares para reforzar la defensa y la seguridad fronteriza",
-     "fecha": "2026-11-20T04:07:27+00:00",
-     "pais": "Argentina"
+     "medio": "El País · Internacional",
+     "url": "https://elpais.com/internacional/2026-11-20/dos-misiles-y-un-dron-rusos-caen-en-el-este-de-polonia-en-plenas-maniobras-militares-de-una-decena-de-paises-europeos.html",
+     "titulo": "Dos misiles y un dron rusos caen en el este de Polonia en plenas maniobras militares de una decena de países europeos",
+     "fecha": "2026-11-20T16:00:50+00:00",
+     "pais": "España"
     },
     {
      "medio": "DW Español",
-     "url": "https://www.dw.com/es/guerra-contra-irán-ha-costado-más-de-48-000-millones-de-dólares-a-estados-unidos/a-79997859?maca=spa-rss-sp-all-1122-xml-mrss",
-     "titulo": "Guerra contra Irán ha costado más de 48.000 millones de dólares a Estados Unidos",
-     "fecha": "2026-11-19T20:54:00+00:00",
+     "url": "https://www.dw.com/es/dos-misiles-rusos-caen-en-polonia-que-denuncia-provocación/a-80001438?maca=spa-rss-sp-all-1122-xml-mrss",
+     "titulo": "Dos misiles rusos caen en Polonia, que denuncia \"provocación\"",
+     "fecha": "2026-11-20T11:56:00+00:00",
      "pais": "Alemania"
     }
    ]
   },
   {
    "seccion": "mundo",
-   "titulo": "Anthropic debuta en Wall Street y alcanza una valoración bursátil de USD 2 billones",
+   "titulo": "Directo París y la candidatura oficial de Dominique de Villepin para las presidenciales en Francia",
    "n_medios": 2,
-   "puntaje": 11.0,
+   "puntaje": 11.8,
    "region": null,
    "ejes": [
-    "economia",
-    "economia-global"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "France 24 Español",
-     "url": "https://www.france24.com/es/programas/econom%C3%ADa/20261120-anthropic-debuta-en-wall-street-y-alcanza-una-valoraci%C3%B3n-burs%C3%A1til-de-usd-2-billones",
-     "titulo": "Anthropic debuta en Wall Street y alcanza una valoración bursátil de USD 2 billones",
-     "fecha": "2026-11-20T01:57:38+00:00",
-     "pais": "Francia"
-    },
-    {
-     "medio": "Ámbito",
-     "url": "https://www.ambito.com/finanzas/efecto-anthropic-wall-street-anticipa-un-rebote-el-2-y-las-bolsas-europeas-se-recuperan-n6347010",
-     "titulo": "Wall Street cayó fuerte ante el sorpresivo sube y baja de Anthropic en su debut bursátil",
-     "fecha": "2026-11-19T23:08:00+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "argentina",
-   "titulo": "Formosa reafirma su compromiso integral con los derechos de niñas, niños y adolescentes",
-   "n_medios": 2,
-   "puntaje": 10.9,
-   "region": "norte-grande",
-   "ejes": [
-    "internacional"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Formosa (prensa local)",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTzNUTml5dTRhakNuZ1czWVk0WU1qd2NDdERUQkFqY3dVaWlrbzVRaHl5SkZzMDRBb2RFVXhob05WbGQ2ODdqWFI4dlVHN3A0RVpGNHZzeVJ0UkhucnpEeThobE5fWnBoYmxlTWoxOEs0TndKcWpNTm9lUTBiOTZfcExHLTllajJ2VFg2ZnRqMTBTcHlzR3RHa29iYXkzbmZNRDZsWUlVRWJaUlJjN0ltdEhPRk5JTEY0RFRUVTFB?oc=5",
-     "titulo": "Formosa reafirma su compromiso integral con los derechos de niñas, niños y adolescentes",
-     "fecha": "2026-11-20T01:38:45+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "Diario Norte (Chaco)",
-     "url": "https://www.diarionorte.com/336951-formosa-reafirma-su-compromiso-integral-con-los-derechos-de-ninas-ninos-y-adolescentes",
-     "titulo": "Formosa reafirma su compromiso integral con los derechos de niñas, niños y adolescentes",
-     "fecha": "2026-11-20T01:34:11+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mundo",
-   "titulo": "\"¿Qué le debe a Marruecos?\": Sánchez y Núñez Feijóo chocan en su único debate cara a cara",
-   "n_medios": 2,
-   "puntaje": 10.9,
-   "region": null,
-   "ejes": [
+    "internacional",
     "politica"
    ],
-   "tema": "General",
+   "tema": "Política",
    "notas": [
     {
      "medio": "France 24 Español",
-     "url": "https://www.france24.com/es/europa/20261120-qu%C3%A9-le-debe-a-marruecos-s%C3%A1nchez-y-n%C3%BA%C3%B1ez-feij%C3%B3o-chocan-en-su-%C3%BAnico-debate-cara-a-cara",
-     "titulo": "\"¿Qué le debe a Marruecos?\": Sánchez y Núñez Feijóo chocan en su único debate cara a cara",
-     "fecha": "2026-11-20T01:47:22+00:00",
+     "url": "https://www.france24.com/es/video/20261120-directo-par%C3%ADs-y-la-candidatura-oficial-de-dominique-de-villepin-para-las-presidenciales-en-francia",
+     "titulo": "Directo París y la candidatura oficial de Dominique de Villepin para las presidenciales en Francia",
+     "fecha": "2026-11-20T16:20:36+00:00",
      "pais": "Francia"
     },
     {
-     "medio": "El País · América",
-     "url": "https://elpais.com/espana/elecciones-generales/2026-11-19/mentiras-y-medias-verdades-del-debate-cara-a-cara-entre-pedro-sanchez-y-alberto-nunez-feijoo.html",
-     "titulo": "Mentiras y medias verdades del debate cara a cara entre Pedro Sánchez y Alberto Núñez Feijóo",
-     "fecha": "2026-11-19T22:17:20+00:00",
+     "medio": "El País · Internacional",
+     "url": "https://elpais.com/internacional/2026-11-20/dominique-de-villepin-anuncia-su-candidatura-a-las-elecciones-presidenciales-en-francia.html",
+     "titulo": "Dominique de Villepin anuncia su candidatura a las elecciones presidenciales en Francia",
+     "fecha": "2026-11-20T16:06:13+00:00",
      "pais": "España"
     }
    ]
   },
   {
    "seccion": "mundo",
-   "titulo": "¿Invertir en Anthropic?: qué hay que tener en cuenta",
+   "titulo": "La cumbre Xi-Trump-Putin en Shenzhen deja más dudas que acuerdos",
    "n_medios": 2,
-   "puntaje": 10.6,
+   "puntaje": 11.6,
    "region": null,
+   "ejes": [
+    "internacional"
+   ],
+   "tema": "Geopolítica",
+   "notas": [
+    {
+     "medio": "DW Español",
+     "url": "https://www.dw.com/es/la-cumbre-xi-trump-putin-en-shenzhen-deja-más-dudas-que-acuerdos/a-80004824?maca=spa-rss-sp-all-1122-xml-mrss",
+     "titulo": "La cumbre Xi-Trump-Putin en Shenzhen deja más dudas que acuerdos",
+     "fecha": "2026-11-20T15:06:00+00:00",
+     "pais": "Alemania"
+    },
+    {
+     "medio": "El País · Internacional",
+     "url": "https://elpais.com/internacional/2026-11-19/trump-y-putin-interactuan-en-shenzhen-antes-de-las-reuniones-con-xi.html",
+     "titulo": "Xi, Trump y Putin, tras la cumbre de Shenzhen: “Una guerra nuclear no se puede ganar y nunca debe librarse”",
+     "fecha": "2026-11-19T15:53:31+00:00",
+     "pais": "España"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "La Campagnola cierra su planta de atún en Mar del Plata y deja en vilo a 60 trabajadores",
+   "n_medios": 2,
+   "puntaje": 11.4,
+   "region": "buenos-aires",
    "ejes": [
     "industria"
    ],
    "tema": "General",
    "notas": [
     {
-     "medio": "Ámbito",
-     "url": "https://www.ambito.com/negocios/invertir-anthropic-que-hay-que-tener-cuenta-n6347379",
-     "titulo": "¿Invertir en Anthropic?: qué hay que tener en cuenta",
-     "fecha": "2026-11-20T00:01:00+00:00",
+     "medio": "Página/12",
+     "url": "https://www.pagina12.com.ar/2026/11/20/la-campagnola-cierra-su-planta-de-atun-en-mar-del-plata-y-deja-en-vilo-a-60-trabajadores/",
+     "titulo": "La Campagnola cierra su planta de atún en Mar del Plata y deja en vilo a 60 trabajadores",
+     "fecha": "2026-11-20T14:01:55+00:00",
      "pais": "Argentina"
     },
     {
-     "medio": "NYT en Español",
-     "url": "https://www.nytimes.com/es/2026/11/19/espanol/negocios/anthropic-bolsa-inversion.html",
-     "titulo": "¿Deberías invertir en Anthropic?",
-     "fecha": "2026-11-19T20:04:09+00:00",
-     "pais": "Estados Unidos"
+     "medio": "LA GACETA",
+     "url": "https://www.lagaceta.com.ar/nota/1163319/economia/cierra-planta-campagnola-mar-plata-hay-incertidumbre-futuro-75-trabajadores.html",
+     "titulo": "Cierra la planta de La Campagnola en Mar del Plata y hay incertidumbre por el futuro de 75 trabajadores",
+     "fecha": "2026-11-19T14:05:00+00:00",
+     "pais": null
     }
    ]
   },
   {
-   "seccion": "argentina",
-   "titulo": "El Gobernador recibió a representantes que participan en Formosa de la reunión del COHIFE - Diario La Mañana",
+   "seccion": "mundo",
+   "titulo": "TikTok lanza una herramienta para detectar 'deepfakes'",
    "n_medios": 2,
-   "puntaje": 10.5,
-   "region": "norte-grande",
-   "ejes": [
-    "politica"
-   ],
-   "tema": "Política",
-   "notas": [
-    {
-     "medio": "Formosa (prensa local)",
-     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNNDVqbHBkc1p2bWc3Y3FyWWs2SDhKVnlmR3VqOVJ1Q0xoVk5yYzBTcGktbDJ4TmVCSGs3c3YwdE1RaDBwS3FsOGlad21OaFlpczhacC1Hd2MxdkEyLThTbnZYOTU2NHV6N09qYk5wYi1GZGFKWXY2ZXhmQUk5UjRsa0IwMHBLYl80QTZnaDJOdnU0ZEY3d3ZjcEFPNTRabm1Ic0NPUDd6ZUMwTkp5aTVDaDdlU2FhMmtrUTM0aEpfRHZmaFRvblJ5NGxuZ09VaWdoYzdwY1ZUcDF2aXA0?oc=5",
-     "titulo": "El Gobernador recibió a representantes que participan en Formosa de la reunión del COHIFE - Diario La Mañana",
-     "fecha": "2026-11-19T23:04:28+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "Diario Norte (Chaco)",
-     "url": "https://www.diarionorte.com/336933-el-gobernador-recibio-a-participantes-de-la-reunion-del-cohife",
-     "titulo": "El gobernador recibió a participantes de la reunión del Cohife",
-     "fecha": "2026-11-19T22:01:11+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "argentina",
-   "titulo": "El Senado sancionó la norma que mantiene la Ley de Tierras : seguirán los topes para extranjeros",
-   "n_medios": 2,
-   "puntaje": 10.3,
+   "puntaje": 11.3,
    "region": null,
    "ejes": [
-    "migracion",
+    "internacional",
     "politica"
    ],
    "tema": "Política",
    "notas": [
     {
-     "medio": "cadena3.com",
-     "url": "https://www.cadena3.com/noticia/politica-y-economia/el-senado-sanciono-la-norma-que-mantiene-la-ley-de-tierras-seguiran-los-topes-para-extranjeros_614978",
-     "titulo": "El Senado sancionó la norma que mantiene la Ley de Tierras : seguirán los topes para extranjeros",
-     "fecha": "2026-11-20T03:45:00+00:00",
+     "medio": "Euronews Español",
+     "url": "https://es.euronews.com/2026/11/20/tiktok-lanza-una-herramienta-para-que-figuras-publicas-detecten-deepfakes-y-frenen-la-desi",
+     "titulo": "TikTok lanza una herramienta para detectar 'deepfakes'",
+     "fecha": "2026-11-20T13:08:29+00:00",
+     "pais": "Francia"
+    },
+    {
+     "medio": "DW Español",
+     "url": "https://www.dw.com/es/tiktok-lanza-herramientas-contra-deepfakes-y-desinformación-con-ia-antes-de-las-elecciones-europeas-de-2027/a-80000161?maca=spa-rss-sp-all-1122-xml-mrss",
+     "titulo": "TikTok lanza herramientas contra \"deepfakes\" y desinformación con IA antes de las elecciones europeas de 2027",
+     "fecha": "2026-11-20T10:15:00+00:00",
+     "pais": "Alemania"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Javier Milei y sus medidas, en vivo: “Los responsables van a ser juzgados”, dijo el Presidente sobre el atentado a la AMIA",
+   "n_medios": 2,
+   "puntaje": 11.0,
+   "region": null,
+   "ejes": [
+    "politica"
+   ],
+   "tema": "Política",
+   "notas": [
+    {
+     "medio": "La Nación",
+     "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-senado-aprobo-la-nueva-ley-de-discapacidad-y-la-adhesion-al-nid20112026/",
+     "titulo": "Javier Milei y sus medidas, en vivo: “Los responsables van a ser juzgados”, dijo el Presidente sobre el atentado a la AMIA",
+     "fecha": "2026-11-20T17:15:00+00:00",
      "pais": "Argentina"
     },
     {
      "medio": "Noticias Argentinas",
-     "url": "https://noticiasargentinas.com/politica/senado--la-ley-de-tierras-seguira-vigente--se-mantienen-los-limites-a-la-extranjerizacion-de-campos_a6aff7dbc09bc92d20f3baae3",
-     "titulo": "Senado: la Ley de Tierras seguirá vigente: se mantienen los límites a la extranjerización de campos",
-     "fecha": "2026-11-20T01:29:00+00:00",
+     "url": "https://noticiasargentinas.com/politica/---javier-milei-en-vivo--anuncios-y-medidas-del-gobierno-minuto-a-minuto-del-20-de-noviembre-de-2026_a6b00142af48d6d3ab47978dc",
+     "titulo": "🔴 Javier Milei EN VIVO: anuncios y medidas del Gobierno minuto a minuto del 20 de noviembre de 2026",
+     "fecha": "2026-11-20T14:25:00+00:00",
      "pais": "Argentina"
     }
    ]
   },
   {
-   "seccion": "argentina",
-   "titulo": "El Senado respaldó la Ley Joaquín , que busca prevenir accidentes en espacios deportivos y recreativos",
+   "seccion": "mundo",
+   "titulo": "El riesgo país superó los 1000 puntos",
    "n_medios": 2,
-   "puntaje": 10.2,
+   "puntaje": 10.6,
    "region": null,
    "ejes": [
-    "politica"
-   ],
-   "tema": "Política",
-   "notas": [
-    {
-     "medio": "pregon.com.ar",
-     "url": "https://www.pregon.com.ar/nota/-75363/2026/11/el-senado-respaldo-la-ley-joaquin-que-busca-prevenir-accidentes-en-espacios-deportivos-y-recreativos",
-     "titulo": "El Senado respaldó la Ley Joaquín , que busca prevenir accidentes en espacios deportivos y recreativos",
-     "fecha": "2026-11-20T03:30:00+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "Noticias Argentinas",
-     "url": "https://noticiasargentinas.com/politica/el-senado-respaldo-la-ley-joaquin--que-busca-prevenir-accidentes-en-espacios-deportivos-y-recreativos_a6affa38109bc92d20f3d6e8d",
-     "titulo": "El Senado respaldó la Ley Joaquín, que busca prevenir accidentes en espacios deportivos y recreativos",
-     "fecha": "2026-11-20T02:01:29+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "local",
-   "titulo": "Vicente López instaló 80 cámaras en sus patrullas para monitorear operativos en vivo",
-   "n_medios": 2,
-   "puntaje": 10.2,
-   "region": null,
-   "ejes": [
-    "local"
+    "fmi"
    ],
    "tema": "General",
    "notas": [
     {
-     "medio": "pregon.com.ar",
-     "url": "https://www.pregon.com.ar/nota/-75360/2026/11/vicente-lopez-instalo-80-camaras-en-sus-patrullas-para-monitorear-operativos-en-vivo",
-     "titulo": "Vicente López instaló 80 cámaras en sus patrullas para monitorear operativos en vivo",
-     "fecha": "2026-11-20T03:30:00+00:00",
+     "medio": "Noticias Argentinas",
+     "url": "https://noticiasargentinas.com/economia/el-riesgo-pais-supero-los-1000-puntos_a6b005895f48d6d3ab47c789f",
+     "titulo": "El riesgo país superó los 1000 puntos",
+     "fecha": "2026-11-20T14:41:28+00:00",
      "pais": "Argentina"
     },
     {
+     "medio": "El Cronista",
+     "url": "https://www.cronista.com/economia-politica/el-riesgo-pais-vuelve-a-superar-los-900-puntos-caen-bonos-y-acciones-argentinas/",
+     "titulo": "El riesgo país se recalentó, subió casi 10% en un día y alcanzó los 931 puntos",
+     "fecha": "2026-11-20T10:58:55+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Edenor aclaró que todavía no tomó el control de MetroGAS tras el incidente en Remedios de Escalada",
+   "n_medios": 2,
+   "puntaje": 10.0,
+   "region": null,
+   "ejes": [
+    "energia"
+   ],
+   "tema": "Energía",
+   "notas": [
+    {
+     "medio": "InfoBAN (zona norte)",
+     "url": "https://www.infoban.com.ar/20/11/2026/edenor-aclaro-que-todavia-no-tomo-el-control-de-metrogas-tras-el-incidente-en-remedios-de-escalada/",
+     "titulo": "Edenor aclaró que todavía no tomó el control de MetroGAS tras el incidente en Remedios de Escalada",
+     "fecha": "2026-11-20T17:18:14+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/economia/2026/11/20/tras-la-explosion-en-lanus-que-dejo-dos-muertos-edenor-aclaro-que-todavia-no-tomo-el-control-de-metrogas/",
+     "titulo": "Tras la explosión en Lanús que dejó dos muertos, Edenor aclaró que todavía no tomó el control de MetroGAS",
+     "fecha": "2026-11-20T17:13:13+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Pity Álvarez fue condenado a 12 años de prisión por el crimen de Cristian Díaz y cumplirá arresto domiciliario",
+   "n_medios": 2,
+   "puntaje": 10.0,
+   "region": null,
+   "ejes": [
+    "mercosur"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Río Negro",
+     "url": "https://www.rionegro.com.ar/justicia/condenaron-a-pity-alvarez-a-12-anos-de-prision-por-el-crimen-de-cristian-diaz-4806856/",
+     "titulo": "Pity Álvarez fue condenado a 12 años de prisión por el crimen de Cristian Díaz y cumplirá arresto domiciliario",
+     "fecha": "2026-11-20T17:13:18+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "La Gaceta (Tucumán)",
+     "url": "https://www.lagaceta.com.ar/nota/1163443/seguridad/pity-lvarez-fue-condenado-12-anos-prision-asesinato-cristian-diaz-cumplira-pena-casa.html",
+     "titulo": "\"Pity\" Álvarez fue condenado a 12 años de prisión por el asesinato de Cristian Díaz: cumplirá la pena en su casa",
+     "fecha": "2026-11-20T14:14:00+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Tensión en los mercados: el riesgo país salta 10% y supera los 1.000 puntos ante otro desplome de los bonos",
+   "n_medios": 2,
+   "puntaje": 9.9,
+   "region": null,
+   "ejes": [
+    "economia",
+    "fmi",
+    "politica"
+   ],
+   "tema": "Política",
+   "notas": [
+    {
+     "medio": "Ámbito",
+     "url": "https://www.ambito.com/finanzas/los-bonos-dolares-se-desploman-wall-street-y-aumenta-la-presion-el-riesgo-pais-n6347533",
+     "titulo": "Tensión en los mercados: el riesgo país salta 10% y supera los 1.000 puntos ante otro desplome de los bonos",
+     "fecha": "2026-11-20T16:51:00+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Página/12",
+     "url": "https://www.pagina12.com.ar/2026/11/20/el-riesgo-pais-supera-los-1000-puntos-y-hace-temblar-el-plan-de-milei-y-caputo/",
+     "titulo": "El riesgo país supera los 1000 puntos y hace temblar el plan de Milei y Caputo",
+     "fecha": "2026-11-20T14:58:25+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Riesgo país por encima de 1.000 puntos: por qué Argentina se aleja de sus vecinos y hasta dónde puede subir",
+   "n_medios": 2,
+   "puntaje": 9.8,
+   "region": null,
+   "ejes": [
+    "economia-global",
+    "fmi",
+    "latinoamerica"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Perfil",
+     "url": "https://perfil.com/economia/riesgo-pais-por-encima-de-1.000-puntos-por-que-argentina-se-aleja-de-sus-vecinos-y-hasta-donde-puede-subir-av6EM9i8HlTg",
+     "titulo": "Riesgo país por encima de 1.000 puntos: por qué Argentina se aleja de sus vecinos y hasta dónde puede subir",
+     "fecha": "2026-11-20T16:01:35+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Nueva Rioja (La Rioja)",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaUNIdHg5amFEWmVjczdaSElDelp4OWtSa09lRUxNSl9jdDlOaXRqbWlReUdCQW1uWW1XMGxIMGVoTUw1eG5VLU9iZ2lBUUxpQ1BMa3NpSWw3dlVMdFZXdTRoWXd4bUNHRHFERm41WXR6UkZmaVFEMjAxdkpFXzU1ZTBmVjAxa3BJR3BFbFNSY2JfYWZTZ29WUEF2M3hhVWxraS0tcTJtaXdmSWxI0gGmAUFVX3lxTFBwTjE1TXpRNjJnNGl1WVQybS1ReWJQS0VORUFhLVU3NjNIVGc1Z2hiYkFqaEZDOUJEczRMcUpTaWMtYXRtOE15X0VOYmNoZEhZR0hoMlBmenI5M0tGanJkTzQ0Tk1uX0JhQ1dGUDdXRnVYMU42aEdER1dqOGxRZ0d3dV9oZjBTLUgxcU92aDNyNi1XdEIyR0JyeUxPdkNXeGdJUHFGclE?oc=5",
+     "titulo": "El riesgo país de la Argentina cerró la jornada en 931 puntos básicos",
+     "fecha": "2026-11-19T22:07:54+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Chubut elegirá gobernador el 21 de marzo de 2027 con nuevas reglas electorales",
+   "n_medios": 1,
+   "puntaje": 9.7,
+   "region": "patagonia",
+   "ejes": [
+    "politica"
+   ],
+   "tema": "Política",
+   "notas": [
+    {
      "medio": "Noticias Argentinas",
-     "url": "https://noticiasargentinas.com/politica/vicente-lopez-instalo-80-camaras-en-sus-patrullas-para-monitorear-operativos-en-vivo_a6affa39509bc92d20f3d7024",
-     "titulo": "Vicente López instaló 80 cámaras en sus patrullas para monitorear operativos en vivo",
-     "fecha": "2026-11-20T01:37:00+00:00",
+     "url": "https://noticiasargentinas.com/politica/chubut-elegira-gobernador-el-21-de-marzo-de-2027-con-nuevas-reglas-electorales_a6b0067f5f48d6d3ab47d4078",
+     "titulo": "Chubut elegirá gobernador el 21 de marzo de 2027 con nuevas reglas electorales",
+     "fecha": "2026-11-20T15:35:26+00:00",
      "pais": "Argentina"
     }
    ]
@@ -1603,18 +1466,18 @@
    "seccion": "local",
    "titulo": "Graciela Borges recibió el primer Premio Lumiton en el Festival Vicente López Ciudad del Cine",
    "n_medios": 2,
-   "puntaje": 10.1,
-   "region": "buenos-aires",
+   "puntaje": 9.5,
+   "region": null,
    "ejes": [
     "local"
    ],
    "tema": "General",
    "notas": [
     {
-     "medio": "InfoBAN (zona norte)",
-     "url": "https://www.infoban.com.ar/19/11/2026/graciela-borges-recibio-el-primer-premio-lumiton-en-el-festival-vicente-lopez-ciudad-del-cine/",
+     "medio": "Página/12",
+     "url": "https://www.pagina12.com.ar/2026/11/20/graciela-borges-recibio-el-primer-premio-lumiton-en-el-festival-vicente-lopez-ciudad-del-cine/",
      "titulo": "Graciela Borges recibió el primer Premio Lumiton en el Festival Vicente López Ciudad del Cine",
-     "fecha": "2026-11-19T20:59:24+00:00",
+     "fecha": "2026-11-20T14:36:23+00:00",
      "pais": "Argentina"
     },
     {
@@ -1627,29 +1490,243 @@
    ]
   },
   {
-   "seccion": "mercosur",
-   "titulo": "Moraes pauta julgamento da Lei da Dosimetria para o dia 4 de dezembro",
-   "n_medios": 2,
-   "puntaje": 9.2,
-   "region": null,
+   "seccion": "local",
+   "titulo": "Kicillof nombró a Cristina Kirchner en un acto con intendentes de La Cámpora",
+   "n_medios": 1,
+   "puntaje": 8.9,
+   "region": "buenos-aires",
    "ejes": [
-    "brasil",
-    "mercosur"
+    "politica"
+   ],
+   "tema": "Política",
+   "notas": [
+    {
+     "medio": "La Nación",
+     "url": "https://www.lanacion.com.ar/politica/kicillof-nombro-a-cristina-kirchner-en-un-acto-con-intendentes-de-la-campora-nid20112026/",
+     "titulo": "Kicillof nombró a Cristina Kirchner en un acto con intendentes de La Cámpora",
+     "fecha": "2026-11-20T16:53:31+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "local",
+   "titulo": "Axel Kicillof define qué hacer con las PASO bonaerenses, mientras Máximo Kirchner y Sergio Massa exigen un frente de unidad anti-Milei",
+   "n_medios": 1,
+   "puntaje": 8.8,
+   "region": "buenos-aires",
+   "ejes": [
+    "politica"
+   ],
+   "tema": "Política",
+   "notas": [
+    {
+     "medio": "Perfil",
+     "url": "https://perfil.com/politica/kicillof-define-que-hacer-con-las-paso-bonaerenses-mientras-maximo-y-massa-exigen-un-frente-de-unidad-anti-milei-aM3Ol0k1FqKD",
+     "titulo": "Axel Kicillof define qué hacer con las PASO bonaerenses, mientras Máximo Kirchner y Sergio Massa exigen un frente de unidad anti-Milei",
+     "fecha": "2026-11-20T15:56:46+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "local",
+   "titulo": "Saquearon un supermercado chino en Benavídez tras una denuncia de abuso sexual contra un nene de 11 años: hay 15 aprehendidos",
+   "n_medios": 1,
+   "puntaje": 8.6,
+   "region": "buenos-aires",
+   "ejes": [
+    "local"
    ],
    "tema": "General",
    "notas": [
     {
-     "medio": "Agência Brasil",
-     "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/moraes-pauta-julgamento-da-lei-da-dosimetria-para-o-dia-4-de-dezembro",
-     "titulo": "Moraes pauta julgamento da Lei da Dosimetria para o dia 4 de dezembro",
-     "fecha": "2026-11-19T21:34:00+00:00",
-     "pais": "Brasil"
-    },
+     "medio": "Zona Norte Diario",
+     "url": "https://www.zonanortediario.com.ar/20/11/2026/benavidez-detuvieron-a-un-supermercadista-acusado-de-abusar-de-un-nene-de-11-anos-y-vecinos-saquearon-el-comercio/",
+     "titulo": "Saquearon un supermercado chino en Benavídez tras una denuncia de abuso sexual contra un nene de 11 años: hay 15 aprehendidos",
+     "fecha": "2026-11-20T14:43:32+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "local",
+   "titulo": "Presupuesto, tarifaria y transporte: la agenda del Concejo Deliberante de Corrientes",
+   "n_medios": 1,
+   "puntaje": 8.4,
+   "region": "norte-grande",
+   "ejes": [
+    "local"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "El Litoral (Corrientes)",
+     "url": "https://www.ellitoral.com.ar/radio/2026-11-20-10-56-0-presupuesto-tarifaria-y-transporte-la-agenda-del-concejo-deliberante-de-corrientes",
+     "titulo": "Presupuesto, tarifaria y transporte: la agenda del Concejo Deliberante de Corrientes",
+     "fecha": "2026-11-20T13:56:00+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "local",
+   "titulo": "Sofía Vannelli: “La economía tiene que estar al servicio de la gente y no al revés”",
+   "n_medios": 1,
+   "puntaje": 8.4,
+   "region": "buenos-aires",
+   "ejes": [
+    "local",
+    "politica"
+   ],
+   "tema": "Economía",
+   "notas": [
+    {
+     "medio": "Zona Norte Diario",
+     "url": "https://www.zonanortediario.com.ar/20/11/2026/sofia-vannelli-la-economia-tiene-que-estar-al-servicio-de-la-gente-y-no-al-reves/",
+     "titulo": "Sofía Vannelli: “La economía tiene que estar al servicio de la gente y no al revés”",
+     "fecha": "2026-11-20T13:47:03+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "local",
+   "titulo": "Tigre acompañó los 40 años de la Escuela Primaria N°49 de Rincón de Milberg",
+   "n_medios": 1,
+   "puntaje": 8.2,
+   "region": "buenos-aires",
+   "ejes": [
+    "local"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "InfoBAN (zona norte)",
+     "url": "https://www.infoban.com.ar/20/11/2026/tigre-acompano-los-40-anos-de-la-escuela-primaria-n49-de-rincon-de-milberg/",
+     "titulo": "Tigre acompañó los 40 años de la Escuela Primaria N°49 de Rincón de Milberg",
+     "fecha": "2026-11-20T12:51:05+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "El gobierno de Chile congeló el precio de los combustibles hasta abril de 2027: estos son los valores",
+   "n_medios": 1,
+   "puntaje": 7.0,
+   "region": null,
+   "ejes": [
+    "energia",
+    "latinoamerica"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/america/america-latina/2026/11/20/el-gobierno-de-chile-congelo-el-precio-de-los-combustibles-hasta-abril-de-2027-estos-son-los-valores/",
+     "titulo": "El gobierno de Chile congeló el precio de los combustibles hasta abril de 2027: estos son los valores",
+     "fecha": "2026-11-20T17:11:33+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Days Inn busca transformar la hotelería en el interior de Paraguay",
+   "n_medios": 1,
+   "puntaje": 6.8,
+   "region": null,
+   "ejes": [
+    "latinoamerica"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "El Cronista",
+     "url": "https://www.cronista.com/clase/break/days-inn-busca-transformar-la-hoteleria-en-el-interior-de-paraguay/",
+     "titulo": "Days Inn busca transformar la hotelería en el interior de Paraguay",
+     "fecha": "2026-11-20T15:51:41+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Rodrigo Paz participará en un foro regional de la CAF junto a otros nueve presidentes en Panamá",
+   "n_medios": 1,
+   "puntaje": 6.7,
+   "region": null,
+   "ejes": [
+    "latinoamerica"
+   ],
+   "tema": "Política",
+   "notas": [
+    {
+     "medio": "Infobae América",
+     "url": "https://www.infobae.com/america/america-latina/2026/11/20/rodrigo-paz-participara-en-un-foro-regional-de-la-caf-junto-a-otros-nueve-presidentes-en-panama/",
+     "titulo": "Rodrigo Paz participará en un foro regional de la CAF junto a otros nueve presidentes en Panamá",
+     "fecha": "2026-11-20T15:20:00+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Moraes vota no STF para manter passaportes de Flávio Bolsonaro cancelados",
+   "n_medios": 1,
+   "puntaje": 6.7,
+   "region": null,
+   "ejes": [
+    "brasil"
+   ],
+   "tema": "General",
+   "notas": [
     {
      "medio": "Folha · Poder",
-     "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/moraes-marca-julgamento-sobre-dosimetria-que-pode-beneficiar-bolsonaro-para-4-de-dezembro.shtml",
-     "titulo": "Moraes marca para 4 de dezembro julgamento sobre dosimetria que pode beneficiar Bolsonaro",
-     "fecha": "2026-11-19T21:28:00+00:00",
+     "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/moraes-vota-no-stf-para-manter-passaportes-de-flavio-bolsonaro-cancelados.shtml",
+     "titulo": "Moraes vota no STF para manter passaportes de Flávio Bolsonaro cancelados",
+     "fecha": "2026-11-20T15:42:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "local",
+   "titulo": "Pusieron u$s 50.000 en el bar “propio” y ya facturan $ 100 millones mensuales con su cadena de cafeterías",
+   "n_medios": 1,
+   "puntaje": 6.5,
+   "region": null,
+   "ejes": [
+    "local"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "El Cronista",
+     "url": "https://www.cronista.com/negocios/pusieron-us-50000-en-el-bar-propio-y-ya-facturan-100-millones-mensuales-con-su-cadena-de-cafeterias/",
+     "titulo": "Pusieron u$s 50.000 en el bar “propio” y ya facturan $ 100 millones mensuales con su cadena de cafeterías",
+     "fecha": "2026-11-20T14:29:21+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Projeto que impede depoimentos como os de Suzane von Richthofen trava na Alesp",
+   "n_medios": 1,
+   "puntaje": 6.4,
+   "region": null,
+   "ejes": [
+    "brasil"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Folha · Poder",
+     "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/projeto-que-impede-depoimentos-como-os-de-suzane-von-richthofen-trava-na-alesp.shtml",
+     "titulo": "Projeto que impede depoimentos como os de Suzane von Richthofen trava na Alesp",
+     "fecha": "2026-11-20T13:30:00+00:00",
      "pais": "Brasil"
     }
    ]
@@ -1658,7 +1735,7 @@
    "seccion": "local",
    "titulo": "Comunicaciones recibe al líder San Isidro",
    "n_medios": 1,
-   "puntaje": 7.7,
+   "puntaje": 6.2,
    "region": "norte-grande",
    "ejes": [
     "local"
@@ -1676,73 +1753,9 @@
   },
   {
    "seccion": "mercosur",
-   "titulo": "Japón destaca su cooperación con Chile en minerales durante la visita de Kast",
+   "titulo": "Livro do filho resgata dúvidas sobre morte de Jango durante a ditadura",
    "n_medios": 1,
-   "puntaje": 7.0,
-   "region": null,
-   "ejes": [
-    "internacional",
-    "latinoamerica"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Infobae",
-     "url": "https://www.infobae.com/america/agencias/2026/11/20/japon-destaca-su-cooperacion-con-chile-en-minerales-durante-la-visita-de-kast/",
-     "titulo": "Japón destaca su cooperación con Chile en minerales durante la visita de Kast",
-     "fecha": "2026-11-20T08:00:27+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Lula da Silva reglamentó la jornada laboral 5x2 afirmando que su objetivo es “humanizar el mundo del trabajo”: cómo funcionará este nuevo esquema",
-   "n_medios": 1,
-   "puntaje": 6.9,
-   "region": null,
-   "ejes": [
-    "brasil",
-    "mercosur"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Perfil",
-     "url": "https://perfil.com/internacional/lula-da-silva-reglamento-la-jornada-laboral-5x2-afirmando-que-su-objetivo-es-humanizar-el-mundo-del-trabajo-como-funcionara-este-nuevo-esquema-aopK44E0822R",
-     "titulo": "Lula da Silva reglamentó la jornada laboral 5x2 afirmando que su objetivo es “humanizar el mundo del trabajo”: cómo funcionará este nuevo esquema",
-     "fecha": "2026-11-20T07:31:33+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Se reglamentó en Brasil la jornada laboral 5x2: Lula ya firmó el decreto",
-   "n_medios": 1,
-   "puntaje": 6.9,
-   "region": null,
-   "ejes": [
-    "brasil",
-    "mercosur",
-    "politica"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Noticias Argentinas",
-     "url": "https://noticiasargentinas.com/internacionales/se-reglamento-en-brasil-la-jornada-laboral-5x2--lula-ya-firmo-el-decreto_a6aff977709bc92d20f3d0757",
-     "titulo": "Se reglamentó en Brasil la jornada laboral 5x2: Lula ya firmó el decreto",
-     "fecha": "2026-11-20T01:29:38+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "En 2020, una pareja desempleada empezó a construir su casa con botellas de vidrio: cuatro años después, logró una vivienda sustentable de 85 m²",
-   "n_medios": 1,
-   "puntaje": 6.7,
+   "puntaje": 5.3,
    "region": null,
    "ejes": [
     "brasil"
@@ -1750,11 +1763,11 @@
    "tema": "General",
    "notas": [
     {
-     "medio": "Clarín",
-     "url": "https://www.clarin.com/internacional/2020-pareja-desempleada-empezo-construir-casa-botellas-vidrio-anos-despues-logro-vivienda-sustentable-85-m_0_f1uB7SoS8d.html",
-     "titulo": "En 2020, una pareja desempleada empezó a construir su casa con botellas de vidrio: cuatro años después, logró una vivienda sustentable de 85 m²",
-     "fecha": "2026-11-20T06:32:26+00:00",
-     "pais": "Argentina"
+     "medio": "Folha · Poder",
+     "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/livro-do-filho-resgata-duvidas-sobre-morte-de-jango-durante-a-ditadura.shtml",
+     "titulo": "Livro do filho resgata dúvidas sobre morte de Jango durante a ditadura",
+     "fecha": "2026-11-20T07:00:00+00:00",
+     "pais": "Brasil"
     }
    ]
   },
@@ -1762,7 +1775,7 @@
    "seccion": "local",
    "titulo": "Ituzaingó: tres detenidos tras siete allanamientos por el asalto a un supermercado cometido por falsos policías",
    "n_medios": 1,
-   "puntaje": 6.6,
+   "puntaje": 5.0,
    "region": "buenos-aires",
    "ejes": [
     "local"
@@ -1780,9 +1793,45 @@
   },
   {
    "seccion": "mercosur",
-   "titulo": "Prêmio Brasil Olímpico 2026 revela finalistas a melhor atleta do ano",
+   "titulo": "SP: empreendedorismo, marcha e música marcam Dia da Consciência Negra",
    "n_medios": 1,
-   "puntaje": 6.6,
+   "puntaje": 4.9,
+   "region": null,
+   "ejes": [],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/sp-empreendedorismo-marcha-e-musica-marcam-dia-da-consciencia-negra",
+     "titulo": "SP: empreendedorismo, marcha e música marcam Dia da Consciência Negra",
+     "fecha": "2026-11-20T10:46:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Entenda o que se sabe sobre relatórios da PF a respeito de ministros do STF e o que acontece agora",
+   "n_medios": 1,
+   "puntaje": 4.8,
+   "region": null,
+   "ejes": [],
+   "tema": "Política",
+   "notas": [
+    {
+     "medio": "Folha · Poder",
+     "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/entenda-o-que-se-sabe-sobre-relatorios-da-pf-a-respeito-de-ministros-do-stf-e-o-que-acontece-agora.shtml",
+     "titulo": "Entenda o que se sabe sobre relatórios da PF a respeito de ministros do STF e o que acontece agora",
+     "fecha": "2026-11-20T16:13:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Jornais negros surgiram há quase 200 anos para reivindicar cidadania e denunciar racismo",
+   "n_medios": 1,
+   "puntaje": 4.4,
    "region": null,
    "ejes": [
     "brasil"
@@ -1790,212 +1839,25 @@
    "tema": "General",
    "notas": [
     {
-     "medio": "Agência Brasil",
-     "url": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/premio-brasil-olimpico-2026-revela-finalistas-melhor-atleta-do-ano",
-     "titulo": "Prêmio Brasil Olímpico 2026 revela finalistas a melhor atleta do ano",
-     "fecha": "2026-11-19T23:34:00+00:00",
+     "medio": "Folha · Poder",
+     "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/jornais-negros-surgiram-ha-quase-200-anos-para-reivindicar-cidadania-e-denunciar-racismo.shtml",
+     "titulo": "Jornais negros surgiram há quase 200 anos para reivindicar cidadania e denunciar racismo",
+     "fecha": "2026-11-20T02:00:00+00:00",
      "pais": "Brasil"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "CMN amplia controle sobre recolhimentos de tributos dos bancos",
-   "n_medios": 1,
-   "puntaje": 6.6,
-   "region": null,
-   "ejes": [
-    "brasil",
-    "economia"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Agência Brasil",
-     "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/cmn-amplia-controle-sobre-recolhimentos-de-tributos-dos-bancos",
-     "titulo": "CMN amplia controle sobre recolhimentos de tributos dos bancos",
-     "fecha": "2026-11-19T23:33:00+00:00",
-     "pais": "Brasil"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Dólar supera R$ 5,93 e fecha no maior valor desde abril de 2025",
-   "n_medios": 1,
-   "puntaje": 6.4,
-   "region": null,
-   "ejes": [
-    "economia"
-   ],
-   "tema": "Economía",
-   "notas": [
-    {
-     "medio": "Agência Brasil",
-     "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-supera-r-593-e-fecha-no-maior-valor-desde-abril-de-2025",
-     "titulo": "Dólar supera R$ 5,93 e fecha no maior valor desde abril de 2025",
-     "fecha": "2026-11-19T22:47:00+00:00",
-     "pais": "Brasil"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Por el caso Ueno Bank, la Fiscalía de Paraguay allanó el Instituto de Previsión Social: cuál es el objetivo detrás de esta medida",
-   "n_medios": 1,
-   "puntaje": 6.4,
-   "region": null,
-   "ejes": [
-    "latinoamerica"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Perfil",
-     "url": "https://perfil.com/internacional/por-el-caso-ueno-bank-la-fiscalia-de-paraguay-allano-el-instituto-de-prevision-social-cual-es-el-objetivo-detras-de-esta-medida-aZoz71R4r1aL",
-     "titulo": "Por el caso Ueno Bank, la Fiscalía de Paraguay allanó el Instituto de Previsión Social: cuál es el objetivo detrás de esta medida",
-     "fecha": "2026-11-20T04:42:56+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Bolivia extraditó a Estados Unidos a un ex coronel de la Fuerza Aérea acusado de vínculos con el narcotráfico y tráfico de armas",
-   "n_medios": 1,
-   "puntaje": 6.4,
-   "region": null,
-   "ejes": [
-    "internacional",
-    "latinoamerica"
-   ],
-   "tema": "Geopolítica",
-   "notas": [
-    {
-     "medio": "Infobae América",
-     "url": "https://www.infobae.com/america/america-latina/2026/11/20/bolivia-extradito-a-estados-unidos-a-un-ex-coronel-de-la-fuerza-aerea-acusado-de-vinculos-con-el-narcotrafico-y-trafico-de-armas/",
-     "titulo": "Bolivia extraditó a Estados Unidos a un ex coronel de la Fuerza Aérea acusado de vínculos con el narcotráfico y tráfico de armas",
-     "fecha": "2026-11-20T04:28:15+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "local",
-   "titulo": "Jubilados y jubiladas denuncian que los oficialismos de los HCD de Vicente López y San Isidro se niegan a tratar el proyecto en defensa del IPS",
-   "n_medios": 1,
-   "puntaje": 6.3,
-   "region": "buenos-aires",
-   "ejes": [
-    "fmi",
-    "industria",
-    "local"
-   ],
-   "tema": "Sociedad",
-   "notas": [
-    {
-     "medio": "Zona Norte Diario",
-     "url": "https://www.zonanortediario.com.ar/19/11/2026/jubilados-y-jubiladas-denuncian-que-los-bloques-oficialistas-de-los-hcd-de-vicente-lopez-y-san-isidro-se-niegan-a-tratar-el-proyecto-en-defensa-del-ips/",
-     "titulo": "Jubilados y jubiladas denuncian que los oficialismos de los HCD de Vicente López y San Isidro se niegan a tratar el proyecto en defensa del IPS",
-     "fecha": "2026-11-19T16:07:39+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Quiebre del plan derechista",
-   "n_medios": 1,
-   "puntaje": 6.1,
-   "region": null,
-   "ejes": [
-    "brasil",
-    "internacional",
-    "mercosur"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Página/12",
-     "url": "https://www.pagina12.com.ar/2026/11/19/quiebre-del-plan-derechista/",
-     "titulo": "Quiebre del plan derechista",
-     "fecha": "2026-11-20T03:01:00+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "local",
-   "titulo": "Christian Ferrer: Un pensador libre que deja su huella",
-   "n_medios": 1,
-   "puntaje": 5.9,
-   "region": "buenos-aires",
-   "ejes": [
-    "industria",
-    "local"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Zona Norte Diario",
-     "url": "https://www.zonanortediario.com.ar/19/11/2026/christian-ferrer-un-pensador-libre-que-deja-su-huella/",
-     "titulo": "Christian Ferrer: Un pensador libre que deja su huella",
-     "fecha": "2026-11-19T13:39:00+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "local",
-   "titulo": "“Shacá la bashura”: la original campaña de San Isidro que juega con el estereotipo del vecino cheto",
-   "n_medios": 1,
-   "puntaje": 5.7,
-   "region": "buenos-aires",
-   "ejes": [
-    "local"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Zona Norte Diario",
-     "url": "https://www.zonanortediario.com.ar/19/11/2026/shaca-la-bashura-la-original-campana-de-san-isidro-que-juega-con-el-estereotipo-del-vecino-cheto/",
-     "titulo": "“Shacá la bashura”: la original campaña de San Isidro que juega con el estereotipo del vecino cheto",
-     "fecha": "2026-11-19T12:31:26+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "local",
-   "titulo": "San Fernando proyecta renovar cuatro escuelas y jardines de infantes por $3.870 millones",
-   "n_medios": 1,
-   "puntaje": 5.7,
-   "region": "buenos-aires",
-   "ejes": [
-    "local"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Zona Norte Diario",
-     "url": "https://www.zonanortediario.com.ar/19/11/2026/san-fernando-proyecta-renovar-cuatro-escuelas-y-jardines-de-infantes-por-3-870-millones/",
-     "titulo": "San Fernando proyecta renovar cuatro escuelas y jardines de infantes por $3.870 millones",
-     "fecha": "2026-11-19T12:22:07+00:00",
-     "pais": "Argentina"
     }
    ]
   }
  ],
  "agenda": [
   {
-   "titulo": "El Reino Unido buscará recomponer sus vínculos con la UE mediante acuerdos comerciales y de movilidad juvenil a diez años del Brexit",
-   "url": "https://www.infobae.com/america/mundo/2026/11/20/el-reino-unido-buscara-recomponer-sus-vinculos-con-la-ue-mediante-acuerdos-comerciales-y-de-movilidad-juvenil-a-diez-anos-del-brexit/",
-   "medio": "Infobae América",
-   "fecha": "2026-11-20T07:00:00+00:00",
-   "cuando": "este viernes",
-   "que": "se reunirá",
+   "titulo": "Milei publicó un ‘nuevo escudo peronista’ con la bandera británica, en pleno debate por la Ley de Soberanía",
+   "url": "https://perfil.com/politica/milei-publico-un-nuevo-escudo-peronista-con-la-bandera-britanica-atsmi5i2qB4S",
+   "medio": "Perfil",
+   "fecha": "2026-11-20T16:43:10+00:00",
+   "cuando": "hoy",
+   "que": "debate",
    "ejes": [
-    "internacional"
+    "politica"
    ],
    "argentina": true
   },
@@ -2003,11 +1865,23 @@
    "titulo": "Trump ofrecerá una conferencia de prensa tras su viaje a China, donde abordó con Xi y Putin la reducción de los riesgos nucleares",
    "url": "https://www.infobae.com/america/mundo/2026/11/20/trump-ofrecera-una-conferencia-de-prensa-tras-su-viaje-a-china-donde-abordo-con-xi-y-putin-la-reduccion-de-los-riesgos-nucleares/",
    "medio": "Infobae América",
-   "fecha": "2026-11-20T06:00:00+00:00",
+   "fecha": "2026-11-20T16:30:29+00:00",
    "cuando": "Mañana",
    "que": "conferencia",
    "ejes": [
     "internacional"
+   ],
+   "argentina": true
+  },
+  {
+   "titulo": "El lunes feriado habrá recolección domiciliaria de residuos",
+   "url": "https://www.infoban.com.ar/20/11/2026/el-lunes-feriado-habra-recoleccion-domiciliaria-de-residuos-2/",
+   "medio": "InfoBAN (zona norte)",
+   "fecha": "2026-11-20T12:30:49+00:00",
+   "cuando": "El lunes",
+   "que": "feriado",
+   "ejes": [
+    "local"
    ],
    "argentina": true
   },
@@ -2073,30 +1947,6 @@
    "argentina": true
   },
   {
-   "titulo": "Sin consenso para un paro, la CGT llamará a un cese de actividades antes de fin de año y marchará por las obras sociales",
-   "url": "https://www.ambito.com/politica/sin-consenso-un-paro-la-cgt-llamara-un-cese-actividades-antes-fin-ano-y-marchara-las-obras-sociales-n6347302",
-   "medio": "Ámbito",
-   "fecha": "2026-11-19T22:14:00+00:00",
-   "cuando": "El próximo jueves",
-   "que": "paro",
-   "ejes": [
-    "industria"
-   ],
-   "argentina": true
-  },
-  {
-   "titulo": "Genneia realizará una reunión informativa en Ingeniero Maschwitz por el proyecto de almacenamiento de energía con baterías",
-   "url": "https://www.zonanortediario.com.ar/19/11/2026/genneia-realizara-una-reunion-informativa-en-ingeniero-maschwitz-por-el-proyecto-de-almacenamiento-de-energia-con-baterias/",
-   "medio": "Zona Norte Diario",
-   "fecha": "2026-11-19T16:56:14+00:00",
-   "cuando": "este viernes",
-   "que": "reunión",
-   "ejes": [
-    "energia"
-   ],
-   "argentina": true
-  },
-  {
    "titulo": "El Senado tratará este jueves la sanción definitiva de la Ley de Discapacidad",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdEhqam16cjFPSnpTYWhhYXdVRktPZ2ZueXhISklIZjBtazh5TlJxVy1LcW1QRXFkeWJ3TzkxV0E0cjlzUm55MlA2MGg3NlVxWEg5MldEemNuMlBlbHJkMldscVRfWC1aNnYzVWJaNDhiallRamZ2TEVNRmpZRmhaUFZfTHZ5NGVuZUVTYlRKVWxyOGZMbGZXdFVQNkhRc19RTGVqM0M0MW5vcmV1ckdubkZnajdKWXPSAbABQVVfeXFMTUVUdG5seHhWX29ialdCX1dmdFVRZUVJSlZwLWphSFJxY0FpMzJ2eWxRUC1TQjdfdTVmM1FqdUpidGtpNk1DU3dMWVNQejVMSGYweGJCY2NKMFhiWXdnXzhLZUR3QWxYeFMwR0VHMWdOenFNYmNva3hIVnZuNUJQUjYxaEY0S1psZkRQdVdIaHlXV2x1TW9KSmVlb1pDbHhYVXhlVE9PQ0w5T1c0T3Y4NFg?oc=5",
    "medio": "Nueva Rioja (La Rioja)",
@@ -2106,6 +1956,16 @@
    "ejes": [
     "politica"
    ],
+   "argentina": true
+  },
+  {
+   "titulo": "Fin de semana largo de noviembre: por qué es feriado el lunes 23 y qué días de descanso quedan en 2026",
+   "url": "https://noticiasargentinas.com/interes-general/fin-de-semana-largo-de-noviembre--por-que-es-feriado-el-lunes-23-y-que-dias-de-descanso-quedan-en-2026_a6b0059a9f48d6d3ab47c8de8",
+   "medio": "Noticias Argentinas",
+   "fecha": "2026-11-20T14:36:38+00:00",
+   "cuando": "el lunes",
+   "que": "feriado",
+   "ejes": [],
    "argentina": true
   },
   {
@@ -2119,35 +1979,35 @@
    "argentina": true
   },
   {
-   "titulo": "Andy Burnham viaja a Bruselas para recomponer las relaciones tras el Brexit",
-   "url": "https://es.euronews.com/2026/11/20/andy-burnham-viaja-a-bruselas-para-recomponer-las-relaciones-tras-el-brexit",
+   "titulo": "EURONEWS HOY | Las noticias del viernes 20 de noviembre de 2026: Debate del 29N",
+   "url": "https://es.euronews.com/2026/11/20/euronews-hoy-las-noticias-del-viernes-20-de-noviembre-de-2026-debate-del-29n",
    "medio": "Euronews Español",
-   "fecha": "2026-11-20T07:35:35+00:00",
-   "cuando": "hoy",
-   "que": "viaja",
+   "fecha": "2026-11-20T17:00:10+00:00",
+   "cuando": "HOY",
+   "que": "Debate",
    "ejes": [
     "internacional"
    ],
    "argentina": false
   },
   {
-   "titulo": "Elecciones generales 2026, en directo: resumen del debate entre Sánchez y Feijóo, reacciones y última hora de la campaña",
-   "url": "https://www.europapress.es/nacional/noticia-elecciones-generales-2026-directo-resumen-debate-sanchez-feijoo-reacciones-ultima-hora-campana-20261120083023.html",
-   "medio": "Europa Press",
-   "fecha": "2026-11-20T07:30:23+00:00",
-   "cuando": "hoy",
-   "que": "Elecciones",
+   "titulo": "Francia pide una reunión del Consejo de Seguridad tras ataques rusos a embajadas de la UE en Kiev",
+   "url": "https://www.france24.com/es/europa/20261120-francia-pide-una-reuni%C3%B3n-del-consejo-de-seguridad-tras-ataques-rusos-a-embajadas-de-la-ue-en-kiev",
+   "medio": "France 24 Español",
+   "fecha": "2026-11-20T16:18:04+00:00",
+   "cuando": "este viernes",
+   "que": "reunión",
    "ejes": [
-    "politica"
+    "internacional"
    ],
    "argentina": false
   },
   {
-   "titulo": "Nigel Farage en Europe Today antes de la cumbre UE-Reino Unido",
-   "url": "https://es.euronews.com/2026/11/20/nigel-farage-en-europe-today-antes-de-la-cumbre-ue-reino-unido",
-   "medio": "Euronews Español",
-   "fecha": "2026-11-20T07:03:05+00:00",
-   "cuando": "hoy",
+   "titulo": "El Reino Unido y la UE cierran un acuerdo post-Brexit tras superar el escollo de la movilidad juvenil",
+   "url": "https://elpais.com/internacional/2026-11-20/el-reino-unido-y-la-ue-se-disponen-a-cerrar-un-acuerdo-limitado-de-movilidad-juvenil-que-supere-el-bloqueo-del-brexit.html",
+   "medio": "El País · América",
+   "fecha": "2026-11-20T16:09:19+00:00",
+   "cuando": "este viernes",
    "que": "cumbre",
    "ejes": [
     "internacional"
@@ -2155,35 +2015,54 @@
    "argentina": false
   },
   {
-   "titulo": "Por qué Putin es el ganador de la histórica reunión con Trump y Xi",
-   "url": "https://www.bbc.com/mundo/articles/cwlymkv5n9vvo?at_medium=RSS&at_campaign=rss",
-   "medio": "BBC Mundo",
-   "fecha": "2026-11-19T13:07:35+00:00",
-   "cuando": "este jueves",
-   "que": "reunión",
+   "titulo": "Elecciones generales 2026, en directo: resumen del debate ayer entre Sánchez y Feijóo y reacciones al cara a cara",
+   "url": "https://www.europapress.es/nacional/noticia-elecciones-generales-2026-directo-resumen-debate-sanchez-feijoo-reacciones-ultima-hora-campana-20261120083023.html",
+   "medio": "Europa Press",
+   "fecha": "2026-11-20T07:30:23+00:00",
+   "cuando": "este viernes",
+   "que": "Elecciones",
    "ejes": [
-    "internacional"
+    "politica"
    ],
    "argentina": false
   }
  ],
  "seguimiento": [
   {
+   "tema": "El riesgo país de la Argentina cerró la jornada en 931 puntos básicos",
+   "desde": "2026-11-20T01:37:14+00:00",
+   "nuevas": 3,
+   "notas": [
+    {
+     "titulo": "Riesgo país por encima de 1.000 puntos: por qué Argentina se aleja de sus vecinos y hasta dónde puede subir",
+     "url": "https://perfil.com/economia/riesgo-pais-por-encima-de-1.000-puntos-por-que-argentina-se-aleja-de-sus-vecinos-y-hasta-donde-puede-subir-av6EM9i8HlTg",
+     "medio": "Perfil",
+     "fecha": "2026-11-20T16:01:35+00:00"
+    },
+    {
+     "titulo": "El riesgo país se recalentó, subió casi 10% en un día y alcanzó los 931 puntos",
+     "url": "https://www.cronista.com/economia-politica/el-riesgo-pais-vuelve-a-superar-los-900-puntos-caen-bonos-y-acciones-argentinas/",
+     "medio": "El Cronista",
+     "fecha": "2026-11-20T10:58:55+00:00"
+    },
+    {
+     "titulo": "El riesgo país superó los 1000 puntos",
+     "url": "https://noticiasargentinas.com/economia/el-riesgo-pais-supero-los-1000-puntos_a6b005895f48d6d3ab47c789f",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-20T14:41:28+00:00"
+    }
+   ]
+  },
+  {
    "tema": "Lula firma el decreto que regula la reducción de la jornada laboral en Brasil",
    "desde": "2026-11-19T15:31:20+00:00",
-   "nuevas": 3,
+   "nuevas": 2,
    "notas": [
     {
      "titulo": "Informe desde Río de Janeiro: Lula firma decreto de reducción de jornada laboral",
      "url": "https://www.france24.com/es/video/20261120-informe-desde-r%C3%ADo-de-janeiro-lula-firma-decreto-de-reducci%C3%B3n-de-jornada-laboral",
      "medio": "France 24 Español",
      "fecha": "2026-11-20T02:11:04+00:00"
-    },
-    {
-     "titulo": "Se reglamentó en Brasil la jornada laboral 5x2: Lula ya firmó el decreto",
-     "url": "https://noticiasargentinas.com/internacionales/se-reglamento-en-brasil-la-jornada-laboral-5x2--lula-ya-firmo-el-decreto_a6aff977709bc92d20f3d0757",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-20T01:29:38+00:00"
     },
     {
      "titulo": "Lula firmó el decreto que regula el fin de la escala 6×1",
@@ -2194,72 +2073,28 @@
    ]
   },
   {
-   "tema": "El Senado debate discapacidad, patentes y la ley de Tierras",
-   "desde": "2026-11-19T15:31:20+00:00",
-   "nuevas": 2,
-   "notas": [
-    {
-     "titulo": "El Senado aprobó la adhesión al Tratado global de Patentes y blindó la ley de Tierras",
-     "url": "https://www.ambito.com/politica/el-senado-define-el-futuro-la-ley-tierras-y-la-adhesion-al-tratado-global-patentes-n6347359",
-     "medio": "Ámbito",
-     "fecha": "2026-11-20T01:02:00+00:00"
-    },
-    {
-     "titulo": "El Senado aprobó la nueva Ley de Discapacidad",
-     "url": "https://www.diarionorte.com/336943-el-senado-aprobo-la-nueva-ley-de-discapacidad",
-     "medio": "Diario Norte (Chaco)",
-     "fecha": "2026-11-19T23:26:40+00:00"
-    }
-   ]
-  },
-  {
-   "tema": "Un ataque de Ucrania \"sin precedentes\" destruye parcialmente el emblemático puente de Putin en Crimea",
-   "desde": "2026-11-17T19:24:03+00:00",
-   "nuevas": 2,
-   "notas": [
-    {
-     "titulo": "Cómo fue el sofisticado ataque con el que Ucrania destruyó parte del preciado puente de Crimea de Putin (y qué consecuencias tendrá)",
-     "url": "https://www.bbc.com/mundo/articles/c6y498pd1q54o?at_medium=RSS&at_campaign=rss",
-     "medio": "BBC Mundo",
-     "fecha": "2026-11-18T00:55:45+00:00"
-    },
-    {
-     "titulo": "Putin amenaza con una “respuesta más dolorosa” tras la destrucción parcial del puente de Crimea",
-     "url": "https://elpais.com/internacional/2026-11-19/putin-amenaza-con-una-respuesta-mas-dolorosa-tras-la-destruccion-parcial-del-puente-de-crimea.html",
-     "medio": "El País · Internacional",
-     "fecha": "2026-11-19T13:59:59+00:00"
-    }
-   ]
-  },
-  {
-   "tema": "Paraguay: renuncia el fiscal general arrastrado por el caso Ueno Bank",
-   "desde": "2026-11-17T19:24:03+00:00",
-   "nuevas": 2,
-   "notas": [
-    {
-     "titulo": "Por el caso Ueno Bank, la Fiscalía de Paraguay allanó el Instituto de Previsión Social: cuál es el objetivo detrás de esta medida",
-     "url": "https://perfil.com/internacional/por-el-caso-ueno-bank-la-fiscalia-de-paraguay-allano-el-instituto-de-prevision-social-cual-es-el-objetivo-detras-de-esta-medida-aZoz71R4r1aL",
-     "medio": "Perfil",
-     "fecha": "2026-11-20T04:42:56+00:00"
-    },
-    {
-     "titulo": "La caída de Ueno Bank en Paraguay arrastra al jefe de fiscales y amenaza al contralor",
-     "url": "https://elpais.com/america/2026-11-19/la-caida-de-ueno-bank-en-paraguay-arrastra-al-jefe-de-fiscales-y-amenaza-al-contralor.html",
-     "medio": "El País · América",
-     "fecha": "2026-11-19T09:30:00+00:00"
-    }
-   ]
-  },
-  {
-   "tema": "Murió un segundo operario de Metrogas tras la explosión en Lanús",
-   "desde": "2026-11-19T15:31:20+00:00",
+   "tema": "Javier Milei aseguró que los responsables del atentado a la AMIA serán juzgados con la ley de juicio en ausencia",
+   "desde": "2026-11-20T08:19:44+00:00",
    "nuevas": 1,
    "notas": [
     {
-     "titulo": "Escalada: reclamos tras la muerte del segundo operario de Metrogas por la explosión",
-     "url": "https://www.pagina12.com.ar/2026/11/19/escalada-reclamos-tras-la-muerte-del-segundo-operario-de-metrogas-por-la-explosion/",
+     "titulo": "Javier Milei y sus medidas, en vivo: “Los responsables van a ser juzgados”, dijo el Presidente sobre el atentado a la AMIA",
+     "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-senado-aprobo-la-nueva-ley-de-discapacidad-y-la-adhesion-al-nid20112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-20T17:15:00+00:00"
+    }
+   ]
+  },
+  {
+   "tema": "Graciela Borges recibió el primer Premio Lumiton en el Festival Vicente López Ciudad del Cine",
+   "desde": "2026-11-20T01:37:14+00:00",
+   "nuevas": 1,
+   "notas": [
+    {
+     "titulo": "Graciela Borges recibió el primer Premio Lumiton en el Festival Vicente López Ciudad del Cine",
+     "url": "https://www.pagina12.com.ar/2026/11/20/graciela-borges-recibio-el-primer-premio-lumiton-en-el-festival-vicente-lopez-ciudad-del-cine/",
      "medio": "Página/12",
-     "fecha": "2026-11-20T03:01:00+00:00"
+     "fecha": "2026-11-20T14:36:23+00:00"
     }
    ]
   },
@@ -2273,6 +2108,19 @@
      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSEpDYjRaSVJGR2d6Z3RJODNISWl4enlwcW1yX21uaHRkYzh5Yml0U1dzTVRvVVh0eU9ETXB2Wld5M01fU0tBZ3NIQWc5YlF0LVpnbWt0T1dFS1RkSm00LXkyV3NkWkg2c0dtU200QmItRy1SNkI4Q3g1R2xHVjZEZ1ZEOU55eHotMHMydVdpcnBRbnh5bk5uLTRkdkZBZw?oc=5",
      "medio": "El Sureño (Tierra del Fuego)",
      "fecha": "2026-11-18T21:34:31+00:00"
+    }
+   ]
+  },
+  {
+   "tema": "Un ataque de Ucrania \"sin precedentes\" destruye parcialmente el emblemático puente de Putin en Crimea",
+   "desde": "2026-11-17T19:24:03+00:00",
+   "nuevas": 1,
+   "notas": [
+    {
+     "titulo": "Cómo fue el sofisticado ataque con el que Ucrania destruyó parte del preciado puente de Crimea de Putin (y qué consecuencias tendrá)",
+     "url": "https://www.bbc.com/mundo/articles/c6y498pd1q54o?at_medium=RSS&at_campaign=rss",
+     "medio": "BBC Mundo",
+     "fecha": "2026-11-18T00:55:45+00:00"
     }
    ]
   }
