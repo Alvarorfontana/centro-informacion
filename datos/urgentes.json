@@ -1,57 +1,6 @@
 {
- "generado": "2026-11-20T03:13:51+00:00",
+ "generado": "2026-11-20T08:10:02+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": [
-  {
-   "titulo": "Tratado de Patentes: qué implica la adhesión de Argentina que aprobó el Senado",
-   "n_medios": 7,
-   "paises": [
-    "Argentina"
-   ],
-   "region": null,
-   "tema": "Política",
-   "ejes": [
-    "economia",
-    "industria",
-    "internacional",
-    "migracion",
-    "politica"
-   ],
-   "desde": "2026-11-20T01:28:31+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "El Senado sancionó el Tratado de Patentes y la ley de propiedad privada con tope a venta de tierras a extranjeros",
-     "url": "https://www.infobae.com/politica/2026/11/20/el-senado-sanciono-el-tratado-de-patentes-y-la-ley-de-propiedad-privada-con-tope-a-venta-de-tierras-a-extranjeros/",
-     "medio": "Infobae",
-     "fecha": "2026-11-20T01:23:45+00:00"
-    },
-    {
-     "titulo": "AmCham celebró el avance de la adhesión argentina a un tratado de patentes y destacó su impacto en las inversiones",
-     "url": "https://www.ambito.com/negocios/amcham-celebro-el-avance-la-adhesion-argentina-un-tratado-patentes-y-destaco-su-impacto-las-inversiones-n6347393",
-     "medio": "Ámbito",
-     "fecha": "2026-11-20T01:15:16+00:00"
-    },
-    {
-     "titulo": "El Senado aprobó el tratado de patentes acordado con Estados Unidos",
-     "url": "https://perfil.com/politica/el-senado-aprobo-el-tratado-de-patentes-acordado-con-estados-unidos-aL2cg4i5oEDu",
-     "medio": "Perfil",
-     "fecha": "2026-11-20T01:13:02+00:00"
-    },
-    {
-     "titulo": "Tratado de Patentes: qué implica la adhesión de Argentina que aprobó el Senado",
-     "url": "https://www.rionegro.com.ar/politica/tratado-de-patentes-que-implica-la-adhesion-de-argentina-que-aprobo-el-senado-4805917/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-20T01:01:55+00:00"
-    },
-    {
-     "titulo": "El oficialismo aprobó la adhesión al tratado sobre patentes, un proyecto clave en la alianza de Milei con Estados Unidos",
-     "url": "https://www.lanacion.com.ar/politica/el-oficialismo-aprobo-la-adhesion-al-tratado-sobre-patentes-acordado-con-estados-unidos-nid19112026/",
-     "medio": "La Nación",
-     "fecha": "2026-11-20T00:58:26+00:00"
-    }
-   ]
-  }
- ]
+ "urgentes": []
 }
