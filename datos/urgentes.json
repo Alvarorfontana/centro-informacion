@@ -1,6 +1,140 @@
 {
- "generado": "2026-11-20T08:10:02+00:00",
+ "generado": "2026-11-20T17:22:09+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": []
+ "urgentes": [
+  {
+   "titulo": "Pity Álvarez fue condenado a 12 años de prisión por el crimen de Cristian Díaz",
+   "n_medios": 6,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "tema": "General",
+   "ejes": [
+    "mercosur"
+   ],
+   "desde": "2026-11-20T17:22:09+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Pity Álvarez fue condenado a la pena de 12 años de cárcel",
+     "url": "https://www.lanacion.com.ar/seguridad/pity-alvarez-fue-condenado-a-la-pena-de-12-anos-de-carcel-nid20112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-20T17:14:10+00:00"
+    },
+    {
+     "titulo": "Pity Álvarez fue condenado a 12 años de prisión por el crimen de Cristian Díaz y cumplirá arresto domiciliario",
+     "url": "https://www.rionegro.com.ar/justicia/condenaron-a-pity-alvarez-a-12-anos-de-prision-por-el-crimen-de-cristian-diaz-4806856/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-20T17:13:18+00:00"
+    },
+    {
+     "titulo": "Condenaron a “Pity” Álvarez a 12 años de prisión por el crimen de Cristian Díaz, pero no irá a la cárcel",
+     "url": "https://www.infobae.com/sociedad/policiales/2026/11/20/juicio-a-pity-alvarez-en-vivo-sin-el-musico-en-la-sala-el-tribunal-dara-a-conocer-el-veredicto/",
+     "medio": "Infobae",
+     "fecha": "2026-11-20T17:13:12+00:00"
+    },
+    {
+     "titulo": "Condenaron a Pity Álvarez a 12 años de prisión con arresto domicilario",
+     "url": "https://perfil.com/sociedad/condenaron-a-pity-alvarez-a-12-anos-de-prision-con-arresto-domicilario-aJKbK6q9WHGw",
+     "medio": "Perfil",
+     "fecha": "2026-11-20T17:06:01+00:00"
+    },
+    {
+     "titulo": "Pity Álvarez fue condenado a 12 años de prisión por el crimen de Cristian Díaz",
+     "url": "https://noticiasargentinas.com/sociedad/pity-alvarez-fue-condenado-a-12-anos-de-prision-por-el-crimen-de-cristian-diaz_a6b004992f48d6d3ab47bbcf2",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-20T17:00:00+00:00"
+    }
+   ]
+  },
+  {
+   "titulo": "El Reino Unido y la UE firman su mayor acuerdo de acercamiento desde el Brexit",
+   "n_medios": 4,
+   "paises": [
+    "Argentina",
+    "España",
+    "Estados Unidos"
+   ],
+   "region": null,
+   "tema": "General",
+   "ejes": [
+    "internacional",
+    "mercosur"
+   ],
+   "desde": "2026-11-20T17:22:09+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "La Unión Europa y Reino Unido buscan dejar atrás las tensiones del Brexit: los acuerdos para acercar posiciones",
+     "url": "https://www.rionegro.com.ar/mundo/la-union-europa-y-reino-unido-buscan-dejar-atras-las-tensiones-del-brexit-los-acuerdos-para-acercar-posiciones-4806804/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-20T16:51:39+00:00"
+    },
+    {
+     "titulo": "El Reino Unido anuncia un acuerdo para reconfigurar el Brexit: lo que hay que saber",
+     "url": "https://www.nytimes.com/es/2026/11/20/espanol/mundo/reino-unido-ue-acuerdo-brexit.html",
+     "medio": "NYT en Español",
+     "fecha": "2026-11-20T16:49:56+00:00"
+    },
+    {
+     "titulo": "El Reino Unido y la UE cierran un acuerdo post-Brexit tras superar el escollo de la movilidad juvenil",
+     "url": "https://elpais.com/internacional/2026-11-20/el-reino-unido-y-la-ue-se-disponen-a-cerrar-un-acuerdo-limitado-de-movilidad-juvenil-que-supere-el-bloqueo-del-brexit.html",
+     "medio": "El País · América",
+     "fecha": "2026-11-20T16:09:19+00:00"
+    },
+    {
+     "titulo": "El Reino Unido y la UE firman su mayor acuerdo de acercamiento desde el Brexit",
+     "url": "https://www.lanacion.com.ar/el-mundo/el-reino-unido-y-la-ue-firman-su-mayor-acuerdo-de-acercamiento-desde-el-brexit-nid20112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-20T15:43:23+00:00"
+    }
+   ]
+  },
+  {
+   "titulo": "El riesgo país superó los 1000 puntos",
+   "n_medios": 4,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "tema": "Política",
+   "ejes": [
+    "economia",
+    "economia-global",
+    "fmi",
+    "latinoamerica",
+    "politica"
+   ],
+   "desde": "2026-11-20T17:22:09+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Tensión en los mercados: el riesgo país salta 10% y supera los 1.000 puntos ante otro desplome de los bonos",
+     "url": "https://www.ambito.com/finanzas/los-bonos-dolares-se-desploman-wall-street-y-aumenta-la-presion-el-riesgo-pais-n6347533",
+     "medio": "Ámbito",
+     "fecha": "2026-11-20T16:51:00+00:00"
+    },
+    {
+     "titulo": "Riesgo país por encima de 1.000 puntos: por qué Argentina se aleja de sus vecinos y hasta dónde puede subir",
+     "url": "https://perfil.com/economia/riesgo-pais-por-encima-de-1.000-puntos-por-que-argentina-se-aleja-de-sus-vecinos-y-hasta-donde-puede-subir-av6EM9i8HlTg",
+     "medio": "Perfil",
+     "fecha": "2026-11-20T16:01:35+00:00"
+    },
+    {
+     "titulo": "El riesgo país supera los 1000 puntos y hace temblar el plan de Milei y Caputo",
+     "url": "https://www.pagina12.com.ar/2026/11/20/el-riesgo-pais-supera-los-1000-puntos-y-hace-temblar-el-plan-de-milei-y-caputo/",
+     "medio": "Página/12",
+     "fecha": "2026-11-20T14:58:25+00:00"
+    },
+    {
+     "titulo": "El riesgo país superó los 1000 puntos",
+     "url": "https://noticiasargentinas.com/economia/el-riesgo-pais-supero-los-1000-puntos_a6b005895f48d6d3ab47c789f",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-20T14:41:28+00:00"
+    }
+   ]
+  }
+ ]
 }
