@@ -1,61 +1,17 @@
 {
- "generado": "2026-11-20T19:06:11+00:00",
+ "generado": "2026-11-20T19:33:48+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
-   "titulo": "Condenaron a “Pity” Álvarez a 12 años de prisión por el crimen de Cristian Díaz, pero no irá a la cárcel",
-   "n_medios": 5,
-   "paises": [
-    "Argentina"
-   ],
-   "region": null,
-   "tema": "General",
-   "ejes": [
-    "mercosur"
-   ],
-   "desde": "2026-11-20T17:22:09+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Pity Álvarez fue condenado a la pena de 12 años de cárcel",
-     "url": "https://www.lanacion.com.ar/seguridad/pity-alvarez-fue-condenado-a-la-pena-de-12-anos-de-carcel-nid20112026/",
-     "medio": "La Nación",
-     "fecha": "2026-11-20T17:14:10+00:00"
-    },
-    {
-     "titulo": "Pity Álvarez fue condenado a 12 años de prisión por el crimen de Cristian Díaz y cumplirá arresto domiciliario",
-     "url": "https://www.rionegro.com.ar/justicia/condenaron-a-pity-alvarez-a-12-anos-de-prision-por-el-crimen-de-cristian-diaz-4806856/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-20T17:13:18+00:00"
-    },
-    {
-     "titulo": "Condenaron a “Pity” Álvarez a 12 años de prisión por el crimen de Cristian Díaz, pero no irá a la cárcel",
-     "url": "https://www.infobae.com/sociedad/policiales/2026/11/20/juicio-a-pity-alvarez-en-vivo-sin-el-musico-en-la-sala-el-tribunal-dara-a-conocer-el-veredicto/",
-     "medio": "Infobae",
-     "fecha": "2026-11-20T17:13:12+00:00"
-    },
-    {
-     "titulo": "Condenaron a Pity Álvarez a 12 años de prisión con arresto domicilario",
-     "url": "https://perfil.com/sociedad/condenaron-a-pity-alvarez-a-12-anos-de-prision-con-arresto-domicilario-aJKbK6q9WHGw",
-     "medio": "Perfil",
-     "fecha": "2026-11-20T17:06:01+00:00"
-    },
-    {
-     "titulo": "Pity Álvarez fue condenado a 12 años de prisión por el crimen de Cristian Díaz",
-     "url": "https://noticiasargentinas.com/sociedad/pity-alvarez-fue-condenado-a-12-anos-de-prision-por-el-crimen-de-cristian-diaz_a6b004992f48d6d3ab47bbcf2",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-20T17:00:00+00:00"
-    }
-   ]
-  },
-  {
-   "titulo": "El Reino Unido y la UE firman su mayor acuerdo de acercamiento desde el Brexit",
-   "n_medios": 4,
+   "titulo": "Diez años después del Brexit, Reino Unido y la UE estrechan lazos con nuevos acuerdos",
+   "n_medios": 6,
    "paises": [
     "Argentina",
     "España",
-    "Estados Unidos"
+    "Estados Unidos",
+    "Francia",
+    "Reino Unido"
    ],
    "region": null,
    "tema": "General",
@@ -67,10 +23,22 @@
    "avisado": false,
    "notas": [
     {
-     "titulo": "La Unión Europa y Reino Unido buscan dejar atrás las tensiones del Brexit: los acuerdos para acercar posiciones",
-     "url": "https://www.rionegro.com.ar/mundo/la-union-europa-y-reino-unido-buscan-dejar-atras-las-tensiones-del-brexit-los-acuerdos-para-acercar-posiciones-4806804/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-20T16:51:39+00:00"
+     "titulo": "A diez años del Brexit, el Reino Unido y la Unión Europea firman el acuerdo de mayor acercamiento hasta la fecha",
+     "url": "https://perfil.com/internacional/a-diez-anos-del-brexit-el-reino-unido-y-la-union-europea-firman-acuerdos-de-acercamiento-apFjQ4X4D1S9",
+     "medio": "Perfil",
+     "fecha": "2026-11-20T19:12:19+00:00"
+    },
+    {
+     "titulo": "En qué consiste y a quién beneficia el acuerdo de \"reinicio\" de las relaciones entre Reino Unido y la Unión Europea tras el Brexit",
+     "url": "https://www.bbc.com/mundo/articles/cvp86lp2rd24o?at_medium=RSS&at_campaign=rss",
+     "medio": "BBC Mundo",
+     "fecha": "2026-11-20T18:48:26+00:00"
+    },
+    {
+     "titulo": "Diez años después del Brexit, Reino Unido y la UE estrechan lazos con nuevos acuerdos",
+     "url": "https://www.france24.com/es/video/20261120-diez-a%C3%B1os-despu%C3%A9s-del-brexit-reino-unido-y-la-ue-estrechan-lazos-con-nuevos-acuerdos",
+     "medio": "France 24 Español",
+     "fecha": "2026-11-20T18:31:01+00:00"
     },
     {
      "titulo": "El Reino Unido anuncia un acuerdo para reconfigurar el Brexit: lo que hay que saber",
@@ -81,14 +49,8 @@
     {
      "titulo": "El Reino Unido y la UE cierran un acuerdo post-Brexit tras superar el escollo de la movilidad juvenil",
      "url": "https://elpais.com/internacional/2026-11-20/el-reino-unido-y-la-ue-se-disponen-a-cerrar-un-acuerdo-limitado-de-movilidad-juvenil-que-supere-el-bloqueo-del-brexit.html",
-     "medio": "El País · América",
+     "medio": "El País · Internacional",
      "fecha": "2026-11-20T16:09:19+00:00"
-    },
-    {
-     "titulo": "El Reino Unido y la UE firman su mayor acuerdo de acercamiento desde el Brexit",
-     "url": "https://www.lanacion.com.ar/el-mundo/el-reino-unido-y-la-ue-firman-su-mayor-acuerdo-de-acercamiento-desde-el-brexit-nid20112026/",
-     "medio": "La Nación",
-     "fecha": "2026-11-20T15:43:23+00:00"
     }
    ]
   }
