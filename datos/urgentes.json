@@ -1,11 +1,11 @@
 {
- "generado": "2026-11-20T18:02:11+00:00",
+ "generado": "2026-11-20T19:06:11+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
-   "titulo": "Pity Álvarez fue condenado a 12 años de prisión por el crimen de Cristian Díaz",
-   "n_medios": 6,
+   "titulo": "Condenaron a “Pity” Álvarez a 12 años de prisión por el crimen de Cristian Díaz, pero no irá a la cárcel",
+   "n_medios": 5,
    "paises": [
     "Argentina"
    ],
@@ -89,50 +89,6 @@
      "url": "https://www.lanacion.com.ar/el-mundo/el-reino-unido-y-la-ue-firman-su-mayor-acuerdo-de-acercamiento-desde-el-brexit-nid20112026/",
      "medio": "La Nación",
      "fecha": "2026-11-20T15:43:23+00:00"
-    }
-   ]
-  },
-  {
-   "titulo": "El riesgo país superó los 1000 puntos",
-   "n_medios": 4,
-   "paises": [
-    "Argentina"
-   ],
-   "region": null,
-   "tema": "Política",
-   "ejes": [
-    "economia",
-    "economia-global",
-    "fmi",
-    "latinoamerica",
-    "politica"
-   ],
-   "desde": "2026-11-20T17:22:09+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Tensión en los mercados: el riesgo país salta 10% y supera los 1.000 puntos ante otro desplome de los bonos",
-     "url": "https://www.ambito.com/finanzas/los-bonos-dolares-se-desploman-wall-street-y-aumenta-la-presion-el-riesgo-pais-n6347533",
-     "medio": "Ámbito",
-     "fecha": "2026-11-20T16:51:00+00:00"
-    },
-    {
-     "titulo": "Riesgo país por encima de 1.000 puntos: por qué Argentina se aleja de sus vecinos y hasta dónde puede subir",
-     "url": "https://perfil.com/economia/riesgo-pais-por-encima-de-1.000-puntos-por-que-argentina-se-aleja-de-sus-vecinos-y-hasta-donde-puede-subir-av6EM9i8HlTg",
-     "medio": "Perfil",
-     "fecha": "2026-11-20T16:01:35+00:00"
-    },
-    {
-     "titulo": "El riesgo país supera los 1000 puntos y hace temblar el plan de Milei y Caputo",
-     "url": "https://www.pagina12.com.ar/2026/11/20/el-riesgo-pais-supera-los-1000-puntos-y-hace-temblar-el-plan-de-milei-y-caputo/",
-     "medio": "Página/12",
-     "fecha": "2026-11-20T14:58:25+00:00"
-    },
-    {
-     "titulo": "El riesgo país superó los 1000 puntos",
-     "url": "https://noticiasargentinas.com/economia/el-riesgo-pais-supero-los-1000-puntos_a6b005895f48d6d3ab47c789f",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-20T14:41:28+00:00"
     }
    ]
   }
