@@ -1,133 +1,104 @@
 {
- "generado": "2026-11-19T19:33:52+00:00",
+ "generado": "2026-11-20T01:28:31+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
-   "titulo": "Por un fallo de la Corte: prepagas no podrán aumentar sus cuotas sin autorización del Gobierno",
-   "n_medios": 5,
+   "titulo": "Tratado de Patentes: qué implica la adhesión de Argentina que aprobó el Senado",
+   "n_medios": 7,
    "paises": [
     "Argentina"
    ],
    "region": null,
-   "tema": "Energía",
-   "ejes": [
-    "politica"
-   ],
-   "desde": "2026-11-19T19:33:52+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Freno a las prepagas: la Corte Suprema declaró inconstitucional la desregulación de cuotas de Javier Milei",
-     "url": "https://www.rionegro.com.ar/justicia/freno-a-las-prepagas-la-corte-suprema-declaro-inconstitucional-la-desregulacion-de-cuotas-de-javier-milei-4805475/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-19T19:30:51+00:00"
-    },
-    {
-     "titulo": "Fallo contra el DNU de Javier Milei: la Corte Suprema restituyó los controles estatales sobre las cuotas de las prepagas",
-     "url": "https://www.ambito.com/politica/prepagas-y-aumentos-la-corte-suprema-declaro-inconstitucionales-dos-articulos-del-dnu-javier-milei-que-desregularon-las-cuotas-n6347259",
-     "medio": "Ámbito",
-     "fecha": "2026-11-19T19:09:00+00:00"
-    },
-    {
-     "titulo": "Por un fallo de la Corte: prepagas no podrán aumentar sus cuotas sin autorización del Gobierno",
-     "url": "https://www.cronista.com/economia-politica/por-un-fallo-de-la-corte-prepagas-no-podran-aumentar-sus-cuotas-sin-autorizacion-del-gobierno/",
-     "medio": "El Cronista",
-     "fecha": "2026-11-19T18:28:26+00:00"
-    },
-    {
-     "titulo": "Las prepagas ya no podrán aumentar las cuotas sin autorización del Gobierno",
-     "url": "https://www.pagina12.com.ar/2026/11/19/las-prepagas-ya-no-podran-aumentar-las-cuotas-sin-autorizacion-del-gobierno/",
-     "medio": "Página/12",
-     "fecha": "2026-11-19T18:22:07+00:00"
-    },
-    {
-     "titulo": "La Corte Suprema declaró inconstitucionales dos artículos sobre cómo las prepagas deben aumentar sus cuotas",
-     "url": "https://www.clarin.com/sociedad/corte-suprema-declaro-inconstitucional-articulos-clave-prepagas-deben-aumentar-cuotas_0_4pvLqrw9Yl.html",
-     "medio": "Clarín",
-     "fecha": "2026-11-19T18:06:47+00:00"
-    }
-   ]
-  },
-  {
-   "titulo": "La Campagnola anunció el cierre definitivo de su planta en Mar del Plata: afecta a 80 trabajadores",
-   "n_medios": 4,
-   "paises": [
-    "Argentina"
-   ],
-   "region": "buenos-aires",
-   "tema": "General",
-   "ejes": [
-    "industria"
-   ],
-   "desde": "2026-11-19T19:33:52+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "La Campagnola anunció el cierre definitivo de su planta en Mar del Plata: afecta a 80 trabajadores",
-     "url": "https://perfil.com/nea/la-campagnola-anuncio-el-cierre-definitivo-de-su-planta-en-mar-del-plata-afecta-a-80-trabajadores-aNuLR1W8ZQ8V",
-     "medio": "Perfil",
-     "fecha": "2026-11-19T19:30:23+00:00"
-    },
-    {
-     "titulo": "Arcor baja la persiana de una planta de La Campagnola en Mar del Plata y apuesta por las importaciones",
-     "url": "https://www.ambito.com/negocios/arcor-baja-la-persiana-una-planta-la-campagnola-mar-del-plata-y-apuesta-las-importaciones-n6347251",
-     "medio": "Ámbito",
-     "fecha": "2026-11-19T18:54:00+00:00"
-    },
-    {
-     "titulo": "La Campagnola anunció el cierre definitivo de su planta en Mar del Plata y afecta a 80 trabajadores",
-     "url": "https://noticiasargentinas.com/economia/la-campagnola-anuncio-el-cierre-definitivo-de-su-planta-en-mar-del-plata-y-afecta-a-80-trabajadores_a6aff3e6809bc92d20f3673af",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-19T18:40:02+00:00"
-    },
-    {
-     "titulo": "Arcor cierra para siempre la planta de atún de La Campagnola en Mar del Plata",
-     "url": "https://www.cronista.com/negocios/la-campagnola-cierra-para-siempre-su-planta-de-latas-de-atun-en-mar-del-plata/",
-     "medio": "El Cronista",
-     "fecha": "2026-11-19T16:12:00+00:00"
-    }
-   ]
-  },
-  {
-   "titulo": "El riesgo país vuelve a superar los 900 puntos: caen bonos y acciones argentinas",
-   "n_medios": 4,
-   "paises": [
-    "Argentina"
-   ],
-   "region": null,
-   "tema": "Economía",
+   "tema": "Política",
    "ejes": [
     "economia",
-    "economia-global",
-    "fmi"
+    "industria",
+    "internacional",
+    "migracion",
+    "politica"
    ],
-   "desde": "2026-11-19T19:33:52+00:00",
+   "desde": "2026-11-20T01:28:31+00:00",
    "avisado": false,
    "notas": [
     {
-     "titulo": "El riesgo país superó los 900 puntos, caen bonos y acciones y el dólar marca un nuevo máximo",
-     "url": "https://www.rionegro.com.ar/economia/el-riesgo-pais-supero-los-900-puntos-caen-bonos-y-acciones-y-el-dolar-marca-un-nuevo-maximo-4805496/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-19T19:06:47+00:00"
+     "titulo": "El Senado sancionó el Tratado de Patentes y la ley de propiedad privada con tope a venta de tierras a extranjeros",
+     "url": "https://www.infobae.com/politica/2026/11/20/el-senado-sanciono-el-tratado-de-patentes-y-la-ley-de-propiedad-privada-con-tope-a-venta-de-tierras-a-extranjeros/",
+     "medio": "Infobae",
+     "fecha": "2026-11-20T01:23:45+00:00"
     },
     {
-     "titulo": "El riesgo país vuelve a superar los 900 puntos: caen bonos y acciones argentinas",
-     "url": "https://www.cronista.com/economia-politica/el-riesgo-pais-vuelve-a-superar-los-900-puntos-caen-bonos-y-acciones-argentinas/",
-     "medio": "El Cronista",
-     "fecha": "2026-11-19T19:01:16+00:00"
-    },
-    {
-     "titulo": "Caen los bonos y las acciones argentinas y el riesgo país sube a los 886 puntos",
-     "url": "https://noticiasargentinas.com/economia/caen-los-bonos-y-las-acciones-argentinas-y-el-riesgo-pais-sube-a-los-886-puntos_a6aff390209bc92d20f360da8",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-19T18:25:39+00:00"
-    },
-    {
-     "titulo": "El riesgo país se dispara y vuelve a acercarse a los 890 puntos, mientras los ADRs bajan hasta 5%",
-     "url": "https://www.ambito.com/los-bonos-dolares-rebotan-medio-la-euforia-anthropic-n6347109",
+     "titulo": "AmCham celebró el avance de la adhesión argentina a un tratado de patentes y destacó su impacto en las inversiones",
+     "url": "https://www.ambito.com/negocios/amcham-celebro-el-avance-la-adhesion-argentina-un-tratado-patentes-y-destaco-su-impacto-las-inversiones-n6347393",
      "medio": "Ámbito",
-     "fecha": "2026-11-19T18:07:00+00:00"
+     "fecha": "2026-11-20T01:15:16+00:00"
+    },
+    {
+     "titulo": "El Senado aprobó el tratado de patentes acordado con Estados Unidos",
+     "url": "https://perfil.com/politica/el-senado-aprobo-el-tratado-de-patentes-acordado-con-estados-unidos-aL2cg4i5oEDu",
+     "medio": "Perfil",
+     "fecha": "2026-11-20T01:13:02+00:00"
+    },
+    {
+     "titulo": "Tratado de Patentes: qué implica la adhesión de Argentina que aprobó el Senado",
+     "url": "https://www.rionegro.com.ar/politica/tratado-de-patentes-que-implica-la-adhesion-de-argentina-que-aprobo-el-senado-4805917/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-20T01:01:55+00:00"
+    },
+    {
+     "titulo": "El oficialismo aprobó la adhesión al tratado sobre patentes, un proyecto clave en la alianza de Milei con Estados Unidos",
+     "url": "https://www.lanacion.com.ar/politica/el-oficialismo-aprobo-la-adhesion-al-tratado-sobre-patentes-acordado-con-estados-unidos-nid19112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-20T00:58:26+00:00"
+    }
+   ]
+  },
+  {
+   "titulo": "El Senado aprobó por unanimidad la nueva Ley de Discapacidad",
+   "n_medios": 6,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "tema": "Política",
+   "ejes": [
+    "estadisticas",
+    "industria",
+    "internacional",
+    "politica"
+   ],
+   "desde": "2026-11-20T01:28:31+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Ley de Discapacidad: qué cambia para las pensiones y las prestaciones tras la aprobación del Senado",
+     "url": "https://www.ambito.com/politica/ley-discapacidad-que-cambia-las-pensiones-y-las-prestaciones-la-aprobacion-del-senado-n6347172",
+     "medio": "Ámbito",
+     "fecha": "2026-11-19T23:40:00+00:00"
+    },
+    {
+     "titulo": "El Senado aprobó la nueva Ley de Discapacidad",
+     "url": "https://www.diarionorte.com/336943-el-senado-aprobo-la-nueva-ley-de-discapacidad",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-19T23:26:40+00:00"
+    },
+    {
+     "titulo": "El Senado sancionó por unanimidad la nueva Ley de Discapacidad y el sector presionará por su cumplimiento",
+     "url": "https://www.rionegro.com.ar/politica/el-senado-sanciono-por-unanimidad-la-nueva-ley-de-discapacidad-y-el-sector-presionara-por-su-cumplimiento-4805858/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-19T23:21:42+00:00"
+    },
+    {
+     "titulo": "Discapacidad: el Senado aprobó por unanimidad la ley con las modificaciones reclamadas por la oposición.",
+     "url": "https://perfil.com/politica/discapacidad-el-senado-aprobo-por-unanimidad-la-ley-con-las-modificaciones-reclamadas-por-la-oposicion.-aDCMV1g8TxqC",
+     "medio": "Perfil",
+     "fecha": "2026-11-19T22:55:52+00:00"
+    },
+    {
+     "titulo": "El Senado aprobó por unanimidad la nueva Ley de Discapacidad",
+     "url": "https://www.pagina12.com.ar/2026/11/19/el-senado-aprobo-por-unanimidad-la-nueva-ley-de-discapacidad/",
+     "medio": "Página/12",
+     "fecha": "2026-11-19T22:55:00+00:00"
     }
    ]
   }
