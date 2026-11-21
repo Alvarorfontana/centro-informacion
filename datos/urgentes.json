@@ -1,56 +1,6 @@
 {
- "generado": "2026-11-21T01:45:49+00:00",
+ "generado": "2026-11-21T03:12:28+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": [
-  {
-   "titulo": "Jair Bolsonaro fue internado en Brasilia por fuertes dolores abdominales",
-   "n_medios": 5,
-   "paises": [
-    "Argentina",
-    "Cuba",
-    "España"
-   ],
-   "region": null,
-   "tema": "Política",
-   "ejes": [
-    "brasil",
-    "politica"
-   ],
-   "desde": "2026-11-21T00:58:51+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Expresidente brasileño Bolsonaro ingresado por afección intestinal",
-     "url": "https://www.prensa-latina.cu/2026/11/20/expresidente-brasileno-bolsonaro-ingresado-por-afeccion-intestinal/",
-     "medio": "Prensa Latina",
-     "fecha": "2026-11-21T00:58:12+00:00"
-    },
-    {
-     "titulo": "Jair Bolsonaro fue internado en un hospital de Brasilia tras sufrir un fuerte dolor abdominal",
-     "url": "https://www.lanacion.com.ar/el-mundo/jair-bolsonaro-fue-internado-en-un-hospital-de-brasilia-tras-sufrir-un-fuerte-dolor-abdominal-nid20112026/",
-     "medio": "La Nación",
-     "fecha": "2026-11-21T00:56:06+00:00"
-    },
-    {
-     "titulo": "Jair Bolsonaro fue internado en Brasilia por fuertes dolores abdominales",
-     "url": "https://noticiasargentinas.com/internacionales/jair-bolsonaro-fue-internado-en-brasilia-por-fuertes-dolores-abdominales_a6b00e5e4f48d6d3ab482d41f",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-21T00:34:18+00:00"
-    },
-    {
-     "titulo": "Internaron de urgencia a Jair Bolsonaro por \"fuertes dolores abdominales\"",
-     "url": "https://www.clarin.com/mundo/internaron-urgencia-jair-bolsonaro-fuertes-dolores-abdominales_0_2teFrns5Gi.html",
-     "medio": "Clarín",
-     "fecha": "2026-11-21T00:07:07+00:00"
-    },
-    {
-     "titulo": "Hospitalizado el expresidente Jair Bolsonaro con dolores abdominales en Brasilia",
-     "url": "https://elpais.com/america/2026-11-20/hospitalizado-el-expresidente-jair-bolsonaro-con-dolores-abdominales-en-brasilia.html",
-     "medio": "El País · América",
-     "fecha": "2026-11-20T22:57:06+00:00"
-    }
-   ]
-  }
- ]
+ "urgentes": []
 }
