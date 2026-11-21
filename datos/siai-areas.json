@@ -1,0 +1,576 @@
+{
+  "schema_version": "1.0.0",
+  "system": "SIAI",
+  "title": "Sistema Integrado de Análisis e Información",
+  "owner": "Diario Federal",
+  "note": "Catálogo inicial de áreas. Las fuentes enumeradas son candidatas; no implica conexión, disponibilidad ni validación efectiva.",
+  "blocks": [
+    {
+      "id": "economia-produccion",
+      "name": "Economía y sistemas productivos",
+      "areas": [
+        {
+          "id": "economia-mundial",
+          "name": "Economía mundial y macroeconomía",
+          "scope": "Actividad, precios, finanzas públicas, empleo, inversión, productividad y cuentas externas.",
+          "indicators": [
+            "PBI real",
+            "Inflación",
+            "Tasa de interés",
+            "Deuda pública",
+            "Empleo y desempleo",
+            "Salarios reales",
+            "Inversión",
+            "Productividad",
+            "Cuenta corriente"
+          ],
+          "sources": [
+            "INDEC",
+            "BCRA",
+            "FMI",
+            "Banco Mundial",
+            "CEPAL",
+            "OCDE"
+          ],
+          "methods": [
+            "Estadística descriptiva",
+            "Econometría",
+            "Modelos de panel",
+            "Series temporales"
+          ]
+        },
+        {
+          "id": "produccion-industrial",
+          "name": "Producción industrial",
+          "scope": "Producción manufacturera, capacidad instalada, productividad, costos, empleo e inversión por rama y país.",
+          "indicators": [
+            "Índice de producción industrial",
+            "Utilización de capacidad instalada",
+            "Empleo industrial",
+            "Productividad laboral",
+            "Inversión industrial",
+            "Importaciones de insumos",
+            "Exportaciones manufactureras"
+          ],
+          "sources": [
+            "INDEC",
+            "UNIDO",
+            "OCDE",
+            "oficinas estadísticas nacionales",
+            "cámaras sectoriales"
+          ],
+          "methods": [
+            "Series temporales",
+            "Econometría sectorial",
+            "Análisis input-output",
+            "Modelos de escenarios"
+          ]
+        },
+        {
+          "id": "agricultura-alimentacion",
+          "name": "Agricultura, ganadería y alimentación",
+          "scope": "Cultivos, rindes, existencias, ganadería, pesca, insumos, precios y seguridad alimentaria.",
+          "indicators": [
+            "Superficie sembrada",
+            "Rendimiento por hectárea",
+            "Producción por cultivo",
+            "Existencias",
+            "Precios internacionales",
+            "Uso de fertilizantes",
+            "Índice de seguridad alimentaria"
+          ],
+          "sources": [
+            "FAOSTAT",
+            "FAO",
+            "USDA",
+            "INDEC",
+            "organismos agropecuarios nacionales"
+          ],
+          "methods": [
+            "Teledetección",
+            "Modelos de rendimiento",
+            "Series temporales",
+            "Análisis espacial"
+          ]
+        },
+        {
+          "id": "energia",
+          "name": "Energía y sistemas energéticos",
+          "scope": "Producción, oferta, demanda, generación, redes, almacenamiento, costos y transición energética.",
+          "indicators": [
+            "Producción de petróleo y gas",
+            "Generación por fuente",
+            "Demanda eléctrica",
+            "Capacidad instalada",
+            "Importación y exportación energética",
+            "Precios de energía",
+            "Emisiones del sector"
+          ],
+          "sources": [
+            "IEA",
+            "Energy Institute",
+            "OPEP",
+            "CAMMESA",
+            "Secretaría de Energía",
+            "organismos nacionales"
+          ],
+          "methods": [
+            "Balance energético",
+            "Optimización",
+            "Series temporales",
+            "Modelos de redes y sistemas físicos"
+          ]
+        },
+        {
+          "id": "mineria-materiales",
+          "name": "Minería y materiales estratégicos",
+          "scope": "Reservas, extracción, refinación, comercio y cadenas de suministro de minerales.",
+          "indicators": [
+            "Reservas estimadas",
+            "Producción minera",
+            "Capacidad de refinación",
+            "Exportaciones",
+            "Precios",
+            "Concentración de proveedores"
+          ],
+          "sources": [
+            "USGS",
+            "BGS",
+            "organismos mineros nacionales",
+            "UN Comtrade"
+          ],
+          "methods": [
+            "Análisis de cadenas de valor",
+            "Series temporales",
+            "Análisis geoespacial",
+            "Escenarios de oferta y demanda"
+          ]
+        },
+        {
+          "id": "comercio-logistica",
+          "name": "Comercio internacional y logística",
+          "scope": "Flujos comerciales, rutas, puertos, transporte, costos y cadenas de abastecimiento.",
+          "indicators": [
+            "Exportaciones e importaciones",
+            "Balance comercial",
+            "Fletes",
+            "Tráfico portuario",
+            "Tiempos logísticos",
+            "Flujos por producto y destino"
+          ],
+          "sources": [
+            "OMC/WTO",
+            "UN Comtrade",
+            "UNCTAD",
+            "autoridades portuarias",
+            "aduanas"
+          ],
+          "methods": [
+            "Análisis de redes",
+            "Modelos gravitacionales",
+            "GIS",
+            "Análisis de series"
+          ]
+        },
+        {
+          "id": "finanzas-mercados",
+          "name": "Finanzas y mercados",
+          "scope": "Mercados financieros, monedas, crédito, deuda, reservas, capitales y commodities.",
+          "indicators": [
+            "Tipo de cambio",
+            "Reservas internacionales",
+            "Rendimientos de bonos",
+            "Crédito",
+            "Capitalización bursátil",
+            "Flujos de capital",
+            "Precios de commodities"
+          ],
+          "sources": [
+            "Bancos centrales",
+            "FMI",
+            "Banco Mundial",
+            "bolsas y proveedores oficiales de mercado"
+          ],
+          "methods": [
+            "Econometría financiera",
+            "Volatilidad",
+            "Series temporales",
+            "Análisis de riesgo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "territorio-ambiente",
+      "name": "Territorio y sistemas ambientales",
+      "areas": [
+        {
+          "id": "hidrologia-agua",
+          "name": "Hidrología y recursos hídricos",
+          "scope": "Cuencas, caudales, embalses, aguas subterráneas, disponibilidad, inundaciones y sequías.",
+          "indicators": [
+            "Precipitación acumulada",
+            "Caudal",
+            "Nivel hidrométrico",
+            "Almacenamiento de embalses",
+            "Humedad del suelo",
+            "Índice de sequía",
+            "Área inundada"
+          ],
+          "sources": [
+            "INA",
+            "SMN",
+            "NOAA",
+            "NASA",
+            "Copernicus",
+            "UNESCO",
+            "servicios hidrológicos"
+          ],
+          "methods": [
+            "Modelos hidrológicos",
+            "GIS",
+            "Teledetección",
+            "PINNs cuando las ecuaciones físicas y los datos lo justifiquen"
+          ]
+        },
+        {
+          "id": "clima-cambio-climatico",
+          "name": "Clima y cambio climático",
+          "scope": "Precipitaciones, temperaturas, ENSO, extremos, tendencias y pronósticos por escala temporal.",
+          "indicators": [
+            "Anomalía de precipitación",
+            "Anomalía de temperatura",
+            "Índices ENSO",
+            "Días de calor extremo",
+            "Frecuencia de eventos extremos"
+          ],
+          "sources": [
+            "NOAA",
+            "WMO/OMM",
+            "SMN",
+            "Copernicus",
+            "ECMWF",
+            "NASA"
+          ],
+          "methods": [
+            "Climatología",
+            "Análisis de tendencias",
+            "Pronóstico probabilístico",
+            "Modelos de circulación y downscaling"
+          ]
+        },
+        {
+          "id": "suelos-biodiversidad",
+          "name": "Suelos, biodiversidad y medioambiente",
+          "scope": "Suelos, erosión, uso y cobertura del suelo, bosques, biodiversidad, emisiones y contaminación.",
+          "indicators": [
+            "Humedad del suelo",
+            "Carbono orgánico",
+            "Erosión estimada",
+            "Cambio de cobertura",
+            "Pérdida de bosque",
+            "Incendios",
+            "Emisiones"
+          ],
+          "sources": [
+            "FAO",
+            "NASA",
+            "Copernicus",
+            "Global Forest Watch",
+            "UNEP",
+            "organismos ambientales"
+          ],
+          "methods": [
+            "Teledetección",
+            "GIS",
+            "Análisis espacial",
+            "Modelos ambientales"
+          ]
+        },
+        {
+          "id": "pesca-oceanos",
+          "name": "Pesca, océanos y economía marítima",
+          "scope": "Pesquerías, acuicultura, corrientes, temperatura marina, ecosistemas y economía marítima.",
+          "indicators": [
+            "Capturas por especie",
+            "Esfuerzo pesquero",
+            "Temperatura superficial del mar",
+            "Anomalías oceánicas",
+            "Producción acuícola",
+            "Actividad portuaria"
+          ],
+          "sources": [
+            "FAO",
+            "NOAA",
+            "WMO",
+            "organismos pesqueros nacionales"
+          ],
+          "methods": [
+            "Oceanografía",
+            "Series temporales",
+            "Teledetección",
+            "Análisis espacial"
+          ]
+        },
+        {
+          "id": "infraestructura-territorio",
+          "name": "Infraestructura y desarrollo territorial",
+          "scope": "Redes viales, ferroviarias, portuarias, eléctricas, agua, saneamiento, vivienda y desarrollo urbano.",
+          "indicators": [
+            "Inversión en infraestructura",
+            "Kilómetros de red",
+            "Acceso a servicios",
+            "Déficit habitacional",
+            "Capacidad logística",
+            "Ejecución de obras"
+          ],
+          "sources": [
+            "organismos nacionales y provinciales",
+            "Banco Mundial",
+            "CEPAL",
+            "OpenStreetMap"
+          ],
+          "methods": [
+            "GIS",
+            "Análisis costo-beneficio",
+            "Evaluación de proyectos",
+            "Modelos de accesibilidad"
+          ]
+        },
+        {
+          "id": "riesgos-territoriales",
+          "name": "Riesgos y vulnerabilidad territorial",
+          "scope": "Amenazas, exposición y vulnerabilidad de población, infraestructura y actividades económicas.",
+          "indicators": [
+            "Población expuesta",
+            "Infraestructura expuesta",
+            "Área afectada",
+            "Pérdidas estimadas",
+            "Tiempo de alerta"
+          ],
+          "sources": [
+            "INA",
+            "SMN",
+            "NOAA",
+            "NASA",
+            "Copernicus",
+            "protección civil"
+          ],
+          "methods": [
+            "Análisis de riesgo",
+            "GIS",
+            "Modelos de escenarios",
+            "Evaluación de impacto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sociedad-transformacion",
+      "name": "Sociedad y transformación global",
+      "areas": [
+        {
+          "id": "geopolitica",
+          "name": "Geopolítica y relaciones internacionales",
+          "scope": "Potencias, bloques, conflictos, sanciones, diplomacia y seguridad de recursos.",
+          "indicators": [
+            "Comercio por bloque",
+            "Sanciones vigentes",
+            "Gasto en defensa",
+            "Dependencia de importaciones estratégicas",
+            "Eventos y conflictos"
+          ],
+          "sources": [
+            "ONU",
+            "SIPRI",
+            "OMC",
+            "UN Comtrade",
+            "ministerios y organismos oficiales"
+          ],
+          "methods": [
+            "Análisis de redes",
+            "Análisis documental",
+            "Series de eventos",
+            "Análisis geoeconómico"
+          ]
+        },
+        {
+          "id": "demografia-poblacion",
+          "name": "Demografía y población",
+          "scope": "Crecimiento, estructura etaria, migraciones, urbanización y distribución territorial.",
+          "indicators": [
+            "Población total",
+            "Crecimiento anual",
+            "Estructura por edades",
+            "Migración neta",
+            "Urbanización",
+            "Densidad poblacional"
+          ],
+          "sources": [
+            "ONU DESA",
+            "Banco Mundial",
+            "INDEC",
+            "WorldPop",
+            "oficinas estadísticas"
+          ],
+          "methods": [
+            "Proyecciones demográficas",
+            "GIS",
+            "Análisis de cohortes"
+          ]
+        },
+        {
+          "id": "trabajo-transformacion",
+          "name": "Trabajo y transformación social",
+          "scope": "Empleo, salarios, informalidad, productividad, pobreza, desigualdad y automatización.",
+          "indicators": [
+            "Tasa de empleo",
+            "Desempleo",
+            "Informalidad",
+            "Salario real",
+            "Pobreza",
+            "Desigualdad",
+            "Vacantes y ocupaciones"
+          ],
+          "sources": [
+            "OIT/ILO",
+            "INDEC",
+            "CEPAL",
+            "ministerios de trabajo"
+          ],
+          "methods": [
+            "Econometría laboral",
+            "Análisis distributivo",
+            "Series temporales",
+            "Análisis ocupacional"
+          ]
+        },
+        {
+          "id": "ciencia-tecnologia",
+          "name": "Ciencia, tecnología e innovación",
+          "scope": "Investigación, patentes, publicaciones, tecnologías estratégicas y capacidades productivas.",
+          "indicators": [
+            "Gasto en I+D",
+            "Patentes",
+            "Publicaciones científicas",
+            "Personal investigador",
+            "Exportaciones tecnológicas"
+          ],
+          "sources": [
+            "UNESCO",
+            "WIPO",
+            "OCDE",
+            "repositorios científicos",
+            "organismos nacionales"
+          ],
+          "methods": [
+            "Bibliometría",
+            "Análisis de redes",
+            "Indicadores de innovación"
+          ]
+        },
+        {
+          "id": "salud-publica",
+          "name": "Salud pública y sistemas sanitarios",
+          "scope": "Indicadores sanitarios, epidemiología, acceso, infraestructura y economía de la salud.",
+          "indicators": [
+            "Esperanza de vida",
+            "Mortalidad",
+            "Cobertura sanitaria",
+            "Capacidad hospitalaria",
+            "Indicadores epidemiológicos"
+          ],
+          "sources": [
+            "OMS/WHO",
+            "OPS/PAHO",
+            "ministerios de salud",
+            "estadísticas oficiales"
+          ],
+          "methods": [
+            "Epidemiología estadística",
+            "Series temporales",
+            "Análisis territorial"
+          ],
+          "constraints": [
+            "No incorporar datos personales identificables; respetar privacidad y normativa sanitaria."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "investigacion-transversal",
+      "name": "Investigación e información periodística transversal",
+      "areas": [
+        {
+          "id": "monitoreo-noticias",
+          "name": "Monitoreo y análisis de acontecimientos",
+          "scope": "Seguimiento de noticias, fuentes, acontecimientos, actores y procesos nacionales e internacionales.",
+          "indicators": [
+            "Volumen de cobertura",
+            "Diversidad de fuentes",
+            "Tiempo desde acontecimiento a detección",
+            "Evolución temática"
+          ],
+          "sources": [
+            "GDELT",
+            "RSS de medios y agencias",
+            "organismos oficiales"
+          ],
+          "methods": [
+            "Clasificación temática",
+            "Agrupamiento de acontecimientos",
+            "Extracción de entidades",
+            "Análisis temporal"
+          ]
+        },
+        {
+          "id": "verificacion-trazabilidad",
+          "name": "Verificación, documentación y trazabilidad",
+          "scope": "Contraste de afirmaciones, documentos, cronologías, fuentes y datos asociados a expedientes.",
+          "indicators": [
+            "Afirmaciones verificadas",
+            "Fuentes independientes",
+            "Datos con procedencia",
+            "Discrepancias documentadas"
+          ],
+          "sources": [
+            "Documentos primarios",
+            "bases estadísticas",
+            "registros públicos",
+            "fuentes periodísticas"
+          ],
+          "methods": [
+            "Verificación documental",
+            "Comparación de fuentes",
+            "Resolución de entidades",
+            "Auditoría de procedencia"
+          ]
+        },
+        {
+          "id": "modelos-simulacion",
+          "name": "Estadística, modelos y simulación",
+          "scope": "Métodos cuantitativos compartidos para análisis, estimación, escenarios y evaluación.",
+          "indicators": [
+            "Error de pronóstico",
+            "Sesgo",
+            "Cobertura de intervalos",
+            "Estabilidad del modelo",
+            "Sensibilidad a supuestos"
+          ],
+          "sources": [
+            "Series e indicadores de las demás áreas"
+          ],
+          "methods": [
+            "Econometría",
+            "Modelos de series",
+            "PyTorch",
+            "PINNs en sistemas físicos",
+            "Optimización",
+            "Monte Carlo",
+            "Backtesting"
+          ]
+        }
+      ]
+    }
+  ]
+}
