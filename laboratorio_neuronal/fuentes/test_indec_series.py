@@ -4,11 +4,11 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from indec_series import download_series, search_series
+from fuentes.indec_series import download_series, search_series
 
 
 class IndecConnectorTests(unittest.TestCase):
-    @patch("indec_series._get_json")
+    @patch("fuentes.indec_series._get_json")
     def test_search_returns_catalog_metadata(self, get_json):
         get_json.return_value = {
             "data": [{
@@ -21,7 +21,7 @@ class IndecConnectorTests(unittest.TestCase):
         self.assertEqual(result[0]["id"], "123_SERIE")
         self.assertEqual(result[0]["publisher"], "INDEC")
 
-    @patch("indec_series.urlopen")
+    @patch("fuentes.indec_series.urlopen")
     def test_download_saves_csv_and_provenance(self, urlopen):
         class Response:
             def __enter__(self):
