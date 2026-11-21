@@ -152,25 +152,32 @@
         "formats": [
           "JSON"
         ],
-        "base_url": "https://api.bcra.gob.ar/",
+        "base_url": "https://api.bcra.gob.ar/estadisticas/v4.0/",
         "documented_services": [
           "estadisticas monetarias",
           "estadísticas cambiarias",
           "central de deudores",
           "cheques denunciados",
           "régimen de transparencia"
+        ],
+        "documented_endpoints": [
+          "Monetarias",
+          "Monetarias/{IdVariable}",
+          "Metodologia",
+          "Metodologia/{IdVariable}"
         ]
       },
       "documentation_url": "https://www.bcra.gob.ar/en/central-bank-api-catalog/",
-      "endpoint_reference_url": "https://www.bcra.gob.ar/archivos/Catalogo/Content/files/pdf/principales-variables-v3.pdf",
+      "endpoint_reference_url": "https://www.bcra.gob.ar/archivos/Catalogo/Content/files/pdf/principales-variables-v4.pdf",
       "cadence": "Según servicio; algunas variables tienen actualización diaria",
       "license": "Revisar aviso legal de cada API",
       "status": [
         "identified",
-        "api_documented"
+        "api_documented",
+        "pending_validation"
       ],
       "ingestion_tested": false,
-      "notes": "La documentación vigente debe prevalecer sobre versiones antiguas de endpoints."
+      "notes": "Usar v4.0 vigente. La ruta v3.0 está obsoleta; no utilizarla en conectores nuevos. La consulta de prueba por navegador al endpoint v3.0 devolvió 410 Gone. La v4.0 está documentada oficialmente, pero la descarga automatizada aún no fue validada."
     },
     {
       "id": "produccion-datos",
