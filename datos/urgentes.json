@@ -1,6 +1,99 @@
 {
- "generado": "2026-11-21T08:09:12+00:00",
+ "generado": "2026-11-21T16:25:27+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": []
+ "urgentes": [
+  {
+   "titulo": "Explosión en Remedios de Escalada: confirmaron otras dos muertes y ya son cuatro las víctimas fatales",
+   "n_medios": 7,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "tema": "Energía",
+   "ejes": [
+    "energia"
+   ],
+   "desde": "2026-11-21T16:25:27+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Explosión en Remedios de Escalada: confirmaron otras dos muertes y ya son cuatro las víctimas fatales",
+     "url": "https://perfil.com/sociedad/explosion-en-remedios-de-escalada-confirmaron-otras-dos-muertes-y-ya-son-cuatro-las-victimas-fatales-amAgf0D57FnG",
+     "medio": "Perfil",
+     "fecha": "2026-11-21T15:02:21+00:00"
+    },
+    {
+     "titulo": "Confirmaron otras dos muertes por la explosión de gas en Remedios de Escalada: ya son cuatro las víctimas fatales",
+     "url": "https://www.rionegro.com.ar/sociedad/confirmaron-otras-dos-muertes-por-la-explosion-de-gas-en-remedios-de-escalada-ya-son-cuatro-las-victimas-fatales-4807539/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-21T14:07:18+00:00"
+    },
+    {
+     "titulo": "Explosión en Remedios de Escalada: confirmaron la muerte de otras dos personas",
+     "url": "https://www.pagina12.com.ar/2026/11/21/explosion-en-remedios-de-escalada-confirmaron-la-muerte-de-otras-dos-personas/",
+     "medio": "Página/12",
+     "fecha": "2026-11-21T14:04:20+00:00"
+    },
+    {
+     "titulo": "Explosión y muerte: fallecieron otras dos personas por el escape de gas en Remedios de Escalada y ya son cuatro las víctimas",
+     "url": "https://www.lanacion.com.ar/sociedad/explosion-y-muerte-fallecieron-otras-dos-personas-por-el-escape-de-gas-en-remedios-de-escalada-y-ya-nid21112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-21T14:02:18+00:00"
+    },
+    {
+     "titulo": "Explosión en Remedios de Escalada: confirmaron otras dos muertes y ya son cuatro las víctimas fatales",
+     "url": "https://www.ambito.com/informacion-general/explosion-remedios-escalada-confirmaron-otras-dos-muertes-y-ya-son-cuatro-las-victimas-fatales-n6347868",
+     "medio": "Ámbito",
+     "fecha": "2026-11-21T13:49:00+00:00"
+    }
+   ]
+  },
+  {
+   "titulo": "Tragedia en Panamericana: tres muertos tras un violento choque entre dos autos y un colectivo en San Isidro",
+   "n_medios": 5,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "tema": "General",
+   "ejes": [
+    "local"
+   ],
+   "desde": "2026-11-21T16:25:27+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Tragedia en Panamericana: tres muertos tras un violento choque entre dos autos y un colectivo en San Isidro",
+     "url": "https://www.infoban.com.ar/21/11/2026/tragedia-en-panamericana-tres-muertos-tras-un-violento-choque-entre-dos-autos-y-un-colectivo-en-san-isidro/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-21T15:15:58+00:00"
+    },
+    {
+     "titulo": "Chocaron dos autos y un colectivo en Panamericana en el comienzo del fin de semana largo: tres muertos",
+     "url": "https://www.lanacion.com.ar/sociedad/chocaron-dos-autos-y-un-colectivo-en-panamericana-en-el-comienzo-del-fin-de-semana-largo-tres-nid21112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-21T14:23:40+00:00"
+    },
+    {
+     "titulo": "Tres muertos y dos heridos tras un choque entre un auto y un colectivo en la Panamericana",
+     "url": "https://www.ambito.com/informacion-general/tres-muertos-y-dos-heridos-un-choque-un-auto-y-un-colectivo-la-panamericana-n6347866",
+     "medio": "Ámbito",
+     "fecha": "2026-11-21T13:43:00+00:00"
+    },
+    {
+     "titulo": "Murieron tres personas por un brutal choque en Panamericana en el comienzo del fin de semana largo",
+     "url": "https://www.pagina12.com.ar/2026/11/21/murieron-tres-personas-por-un-brutal-choque-en-panamericana-en-el-comienzo-del-fin-de-semana-largo/",
+     "medio": "Página/12",
+     "fecha": "2026-11-21T13:29:24+00:00"
+    },
+    {
+     "titulo": "Tres muertos en un choque seguido de incendio en Panamericana, a la altura de San Isidro",
+     "url": "https://noticiasargentinas.com/sociedad/3-personas-murieron-durante-el-incendio-de-un-auto-en-la-panamericana--a-la-altura-de-san-isidro_a6b0199d32025a804a55c8078",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-21T13:27:00+00:00"
+    }
+   ]
+  }
+ ]
 }
