@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - siai/motor-neuronal-inicial
+      - siai/motor-neuronal-v1
     paths:
       - "laboratorio_neuronal/**"
       - ".github/workflows/siai-neural-tests.yml"
