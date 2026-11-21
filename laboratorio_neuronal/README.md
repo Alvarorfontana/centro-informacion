@@ -41,6 +41,22 @@ Para incluir una MLP PyTorch:
 python laboratorio_neuronal/engine.py datos/serie.csv --target produccion --features energia,empleo,inversion --torch-mlp
 \`\`\`
 
+## Conectar series oficiales
+
+El conector usa la API pública de Series de Tiempo de Datos Argentina, sin credenciales.
+Primero se buscan identificadores de series; después se descargan por ID:
+
+```bash
+python laboratorio_neuronal/fuentes/indec_series.py buscar "industria metalúrgica"
+python laboratorio_neuronal/fuentes/indec_series.py descargar --ids ID_SERIE_1,ID_SERIE_2 --salida datos/industria/series_metalurgia.csv
+```
+
+La descarga guarda un archivo CSV y un archivo lateral `.metadata.json` con la
+consulta, los identificadores y la fecha de recuperación. Antes de entrenar un
+modelo hay que verificar descripción, unidad, frecuencia, cobertura y licencia
+de cada serie. No mezclar series de distinta frecuencia sin una transformación
+metodológica explícita.
+
 ## Límites y controles
 
 - No descarga ni inventa datos: recibe un CSV de origen documentado.
