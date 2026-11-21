@@ -1,14 +1,13 @@
 {
- "generado": "2026-11-21T00:58:51+00:00",
+ "generado": "2026-11-21T01:45:49+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
    "titulo": "Jair Bolsonaro fue internado en Brasilia por fuertes dolores abdominales",
-   "n_medios": 6,
+   "n_medios": 5,
    "paises": [
     "Argentina",
-    "Brasil",
     "Cuba",
     "España"
    ],
@@ -50,46 +49,6 @@
      "url": "https://elpais.com/america/2026-11-20/hospitalizado-el-expresidente-jair-bolsonaro-con-dolores-abdominales-en-brasilia.html",
      "medio": "El País · América",
      "fecha": "2026-11-20T22:57:06+00:00"
-    }
-   ]
-  },
-  {
-   "titulo": "Un temporal golpeó a Córdoba: autos aplastados, evacuados y cortes de luz en varias localidades",
-   "n_medios": 4,
-   "paises": [
-    "Argentina"
-   ],
-   "region": "centro",
-   "tema": "Energía",
-   "ejes": [
-    "energia"
-   ],
-   "desde": "2026-11-21T00:58:51+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Voladura de techos, autos aplastados y una plaza destrozada: las fuertes imágenes del temporal que golpeó a Córdoba",
-     "url": "https://www.clarin.com/sociedad/voladura-techos-autos-aplastados-plaza-destrozada-fuertes-imagenes-temporal-golpeo-cordoba_0_4XKWpbY8Zz.html",
-     "medio": "Clarín",
-     "fecha": "2026-11-20T23:50:16+00:00"
-    },
-    {
-     "titulo": "Un temporal en Córdoba dejó graves destrozos, evacuaciones y cortes de energía en varias localidades",
-     "url": "https://noticiasargentinas.com/sociedad/un-temporal-en-cordoba-dejo-graves-destrozos--evacuados-y-cortes-de-energia-en-varias-localidades_a6b00d2a7f48d6d3ab4825a1f",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-20T23:18:13+00:00"
-    },
-    {
-     "titulo": "Un temporal golpeó a Córdoba: autos aplastados, evacuados y cortes de luz en varias localidades",
-     "url": "https://www.ambito.com/informacion-general/un-temporal-golpeo-cordoba-autos-aplastados-evacuados-y-cortes-luz-varias-localidades-n6347808",
-     "medio": "Ámbito",
-     "fecha": "2026-11-20T23:14:00+00:00"
-    },
-    {
-     "titulo": "Fuerte temporal en Córdoba: ráfagas de 140 kilómetros por hora, evacuados y cortes de ruta",
-     "url": "https://www.rionegro.com.ar/sociedad/fuerte-temporal-en-cordoba-rafagas-de-140-kilometros-por-hora-evacuados-y-cortes-de-ruta-4807274/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-20T21:22:32+00:00"
     }
    ]
   }
