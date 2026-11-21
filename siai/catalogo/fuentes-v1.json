@@ -1,0 +1,498 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_id": "siai-fuentes-publicas-y-sectoriales",
+  "generated_at": "2026-11-21",
+  "scope": "Fuentes públicas, empresariales, sectoriales y de investigación para el Sistema Integrado de Análisis e Información. Registro inicial; no implica que todas las fuentes tengan API ni que las descargas hayan sido probadas.",
+  "status_legend": {
+    "identified": "Fuente y página institucional identificadas.",
+    "api_documented": "La institución documenta una API o interfaz programática.",
+    "download_available": "La fuente publica archivos o informes descargables.",
+    "pending_validation": "Falta verificar endpoint, formato, periodicidad, licencia o descarga automatizada."
+  },
+  "sources": [
+    {
+      "id": "datos-ar-ckan",
+      "name": "Portal Nacional de Datos Abiertos — CKAN",
+      "publisher": "Gobierno de Argentina",
+      "source_type": "official_open_data",
+      "sectors": [
+        "transversal",
+        "economia",
+        "industria",
+        "comercio",
+        "trabajo",
+        "politica",
+        "territorio"
+      ],
+      "topics": [
+        "datasets",
+        "metadatos",
+        "estadisticas_publicas"
+      ],
+      "access": {
+        "mode": "api",
+        "formats": [
+          "JSON"
+        ],
+        "base_url": "https://datos.gob.ar/api/3/action/",
+        "documented_operations": [
+          "package_search",
+          "package_show",
+          "datastore_search"
+        ]
+      },
+      "documentation_url": "https://www.datos.gob.ar/acerca/ckan",
+      "cadence": "Depende de cada organismo y dataset",
+      "license": "Verificar por dataset",
+      "status": [
+        "identified",
+        "api_documented"
+      ],
+      "ingestion_tested": false,
+      "notes": "API de catálogo CKAN. Permite descubrir conjuntos y recursos; no todos los recursos son consultables directamente por datastore."
+    },
+    {
+      "id": "datos-ar-series",
+      "name": "API de Series de Tiempo de la República Argentina",
+      "publisher": "Datos Argentina",
+      "source_type": "official_open_data",
+      "sectors": [
+        "economia",
+        "industria",
+        "comercio",
+        "trabajo",
+        "energia",
+        "finanzas"
+      ],
+      "topics": [
+        "indicadores",
+        "series_temporales",
+        "estadisticas_sectoriales"
+      ],
+      "access": {
+        "mode": "api",
+        "formats": [
+          "JSON",
+          "CSV"
+        ],
+        "base_url": "https://apis.datos.gob.ar/series/api/",
+        "documented_endpoints": [
+          "search/",
+          "series/",
+          "dump/",
+          "validate/"
+        ]
+      },
+      "documentation_url": "https://datosgobar.github.io/datosgobar-landing-apis/",
+      "endpoint_reference_url": "https://www.argentina.gob.ar/sites/default/files/que_es_api_series_de_tiempo_.pdf",
+      "cadence": "Según organismo y serie",
+      "license": "Verificar metadatos de cada serie",
+      "status": [
+        "identified",
+        "api_documented"
+      ],
+      "ingestion_tested": false,
+      "notes": "Permite buscar y consultar indicadores cronológicos. La disponibilidad depende de las series incorporadas al servicio."
+    },
+    {
+      "id": "georef-ar",
+      "name": "API GeoRef Argentina",
+      "publisher": "Datos Argentina",
+      "source_type": "official_open_data",
+      "sectors": [
+        "transversal",
+        "territorio",
+        "infraestructura",
+        "demografia"
+      ],
+      "topics": [
+        "provincias",
+        "departamentos",
+        "municipios",
+        "localidades",
+        "normalizacion_geografica"
+      ],
+      "access": {
+        "mode": "api",
+        "formats": [
+          "JSON"
+        ],
+        "base_url": "https://apis.datos.gob.ar/georef/api/"
+      },
+      "documentation_url": "https://datosgobar.github.io/datosgobar-landing-apis/",
+      "cadence": "Servicio",
+      "license": "Consultar documentación",
+      "status": [
+        "identified",
+        "api_documented"
+      ],
+      "ingestion_tested": false,
+      "notes": "Servicio para normalizar y enriquecer referencias territoriales."
+    },
+    {
+      "id": "bcra-apis",
+      "name": "Banco Central de la República Argentina — APIs",
+      "publisher": "BCRA",
+      "source_type": "official_regulator",
+      "sectors": [
+        "finanzas",
+        "economia",
+        "comercio",
+        "industria"
+      ],
+      "topics": [
+        "estadisticas_monetarias",
+        "variables_financieras",
+        "estadisticas_cambiarias",
+        "deudores",
+        "cheques"
+      ],
+      "access": {
+        "mode": "api",
+        "formats": [
+          "JSON"
+        ],
+        "base_url": "https://api.bcra.gob.ar/",
+        "documented_services": [
+          "estadisticas monetarias",
+          "estadísticas cambiarias",
+          "central de deudores",
+          "cheques denunciados",
+          "régimen de transparencia"
+        ]
+      },
+      "documentation_url": "https://www.bcra.gob.ar/en/central-bank-api-catalog/",
+      "endpoint_reference_url": "https://www.bcra.gob.ar/archivos/Catalogo/Content/files/pdf/principales-variables-v3.pdf",
+      "cadence": "Según servicio; algunas variables tienen actualización diaria",
+      "license": "Revisar aviso legal de cada API",
+      "status": [
+        "identified",
+        "api_documented"
+      ],
+      "ingestion_tested": false,
+      "notes": "La documentación vigente debe prevalecer sobre versiones antiguas de endpoints."
+    },
+    {
+      "id": "produccion-datos",
+      "name": "Datos Productivos — Secretaría de Industria y Desarrollo Productivo",
+      "publisher": "Gobierno de Argentina",
+      "source_type": "official_government",
+      "sectors": [
+        "industria",
+        "economia",
+        "comercio",
+        "trabajo",
+        "innovacion"
+      ],
+      "topics": [
+        "datos_productivos",
+        "CEP_XXI",
+        "indicadores",
+        "estudios_sectoriales"
+      ],
+      "access": {
+        "mode": "portal_and_downloads",
+        "formats": [
+          "CSV",
+          "XLSX",
+          "JSON",
+          "PDF",
+          "HTML"
+        ],
+        "url": "https://www.argentina.gob.ar/produccion/datos-productivos"
+      },
+      "cadence": "Variable por publicación",
+      "license": "Verificar por recurso",
+      "status": [
+        "identified",
+        "download_available",
+        "pending_validation"
+      ],
+      "ingestion_tested": false,
+      "notes": "Portal de entrada a datos productivos, estudios de CEP XXI e indicadores. Identificar recursos concretos antes de programar descargas."
+    },
+    {
+      "id": "adimra",
+      "name": "ADIMRA — Informes y comunicados",
+      "publisher": "Asociación de Industriales Metalúrgicos de la República Argentina",
+      "source_type": "industry_association",
+      "sectors": [
+        "industria",
+        "metalurgia",
+        "maquinaria",
+        "bienes_de_capital",
+        "empleo"
+      ],
+      "topics": [
+        "actividad_metalurgica",
+        "produccion",
+        "empleo",
+        "tipo_de_cambio_real",
+        "morosidad",
+        "seguridad_laboral"
+      ],
+      "access": {
+        "mode": "web_reports",
+        "formats": [
+          "PDF",
+          "HTML"
+        ],
+        "url": "https://www.adimra.org.ar/informes-y-comunicados"
+      },
+      "cadence": "Boletines e informes periódicos; verificar calendario",
+      "license": "No verificada; respetar condiciones de publicación",
+      "status": [
+        "identified",
+        "download_available",
+        "pending_validation"
+      ],
+      "ingestion_tested": false,
+      "notes": "No se confirmó API pública. Priorizar extracción de boletines e informes con conservación del documento original y sus metadatos."
+    },
+    {
+      "id": "camara-acero",
+      "name": "Cámara Argentina del Acero — Estadísticas",
+      "publisher": "Cámara Argentina del Acero",
+      "source_type": "industry_association",
+      "sectors": [
+        "industria",
+        "siderurgia",
+        "metalurgia",
+        "comercio_exterior"
+      ],
+      "topics": [
+        "produccion_siderurgica",
+        "consumo_aparente",
+        "importaciones",
+        "exportaciones"
+      ],
+      "access": {
+        "mode": "web_reports",
+        "formats": [
+          "HTML",
+          "XLSX",
+          "PDF"
+        ],
+        "url": "https://www.acero.org.ar/estadisticas/"
+      },
+      "cadence": "Series históricas y publicaciones periódicas; verificar actualización",
+      "license": "Verificar condiciones de reutilización",
+      "status": [
+        "identified",
+        "download_available",
+        "pending_validation"
+      ],
+      "ingestion_tested": false,
+      "notes": "No se confirmó API pública. Existe información histórica de producción, consumo aparente y comercio exterior."
+    },
+    {
+      "id": "uia-sectores",
+      "name": "Unión Industrial Argentina — Cámaras y sectores industriales",
+      "publisher": "UIA",
+      "source_type": "business_chamber_network",
+      "sectors": [
+        "industria",
+        "manufactura",
+        "energia",
+        "quimica",
+        "alimentos",
+        "textil",
+        "automotriz",
+        "tecnologia"
+      ],
+      "topics": [
+        "representacion_sectorial",
+        "informes",
+        "estadisticas",
+        "camaras"
+      ],
+      "access": {
+        "mode": "directory_and_web",
+        "formats": [
+          "HTML",
+          "PDF"
+        ],
+        "url": "https://www.uia.org.ar/centro-de-estudios/1338/sectores-industriales/"
+      },
+      "cadence": "Variable",
+      "license": "Verificar por entidad y documento",
+      "status": [
+        "identified",
+        "pending_validation"
+      ],
+      "ingestion_tested": false,
+      "notes": "Directorio para ampliar el universo de fuentes primarias sectoriales; cada cámara debe registrarse como fuente independiente."
+    },
+    {
+      "id": "came-entidades",
+      "name": "CAME — Entidades asociadas",
+      "publisher": "Confederación Argentina de la Mediana Empresa",
+      "source_type": "business_chamber_network",
+      "sectors": [
+        "comercio",
+        "servicios",
+        "industria",
+        "turismo",
+        "economias_regionales"
+      ],
+      "topics": [
+        "camaras",
+        "entidades_empresarias",
+        "informes_sectoriales"
+      ],
+      "access": {
+        "mode": "directory_and_web",
+        "formats": [
+          "HTML"
+        ],
+        "url": "https://sistema.came.org.ar/entidades-asociadas"
+      },
+      "cadence": "Directorio; verificar actualización",
+      "license": "No aplica al directorio; documentos según publicación",
+      "status": [
+        "identified",
+        "pending_validation"
+      ],
+      "ingestion_tested": false,
+      "notes": "Directorio útil para descubrir cámaras y asociaciones adicionales."
+    },
+    {
+      "id": "observatorio-camaras",
+      "name": "Observatorio Nacional de Cámaras Empresarias",
+      "publisher": "Gobierno de Argentina",
+      "source_type": "official_registry",
+      "sectors": [
+        "industria",
+        "comercio",
+        "servicios",
+        "economia"
+      ],
+      "topics": [
+        "registro_de_camaras",
+        "representacion_empresarial",
+        "asociatividad"
+      ],
+      "access": {
+        "mode": "web_portal",
+        "formats": [
+          "HTML"
+        ],
+        "url": "https://www.argentina.gob.ar/node/254974"
+      },
+      "cadence": "Verificar actualización del registro",
+      "license": "Verificar",
+      "status": [
+        "identified",
+        "pending_validation"
+      ],
+      "ingestion_tested": false,
+      "notes": "Usar como inventario y descubrimiento de entidades; no asumir que contiene series estadísticas."
+    },
+    {
+      "id": "inpi-estadisticas",
+      "name": "INPI — Portal Estadístico",
+      "publisher": "Instituto Nacional de la Propiedad Industrial",
+      "source_type": "official_registry",
+      "sectors": [
+        "innovacion",
+        "tecnologia",
+        "industria",
+        "ciencia"
+      ],
+      "topics": [
+        "patentes",
+        "marcas",
+        "modelos_y_disenos",
+        "propiedad_industrial"
+      ],
+      "access": {
+        "mode": "web_portal_and_downloads",
+        "formats": [
+          "HTML",
+          "CSV",
+          "XLSX"
+        ],
+        "url": "https://www.argentina.gob.ar/inpi"
+      },
+      "cadence": "Estadísticas mensuales o anuales según indicador",
+      "license": "Verificar por conjunto",
+      "status": [
+        "identified",
+        "pending_validation"
+      ],
+      "ingestion_tested": false,
+      "notes": "La disponibilidad de descarga y la URL específica del portal estadístico deben verificarse antes de automatizar."
+    },
+    {
+      "id": "unido-indstat",
+      "name": "UNIDO — Estadísticas industriales",
+      "publisher": "United Nations Industrial Development Organization",
+      "source_type": "international_organization",
+      "sectors": [
+        "industria",
+        "manufactura",
+        "comercio",
+        "economia"
+      ],
+      "topics": [
+        "produccion_manufacturera",
+        "valor_agregado",
+        "empleo_industrial",
+        "comparacion_internacional"
+      ],
+      "access": {
+        "mode": "data_portal_and_api",
+        "formats": [
+          "CSV",
+          "XLSX",
+          "API"
+        ],
+        "url": "https://stat.unido.org/"
+      },
+      "cadence": "Según base y país",
+      "license": "Verificar condiciones de cada producto de datos",
+      "status": [
+        "identified",
+        "pending_validation"
+      ],
+      "ingestion_tested": false,
+      "notes": "Fuente internacional para comparación estructural. Verificar acceso, autenticación y condiciones de uso de la API antes de implementar."
+    },
+    {
+      "id": "simra-pendiente",
+      "name": "SIMRA — identificación pendiente",
+      "publisher": null,
+      "source_type": "unresolved_acronym",
+      "sectors": [
+        "pendiente"
+      ],
+      "topics": [],
+      "access": {
+        "mode": "unknown"
+      },
+      "status": [
+        "pending_validation"
+      ],
+      "ingestion_tested": false,
+      "notes": "El acrónimo mencionado por el usuario no quedó identificado inequívocamente. No asignar entidad ni endpoint por conjetura."
+    },
+    {
+      "id": "api-pendiente",
+      "name": "API — identificación pendiente",
+      "publisher": null,
+      "source_type": "unresolved_acronym",
+      "sectors": [
+        "pendiente"
+      ],
+      "topics": [],
+      "access": {
+        "mode": "unknown"
+      },
+      "status": [
+        "pending_validation"
+      ],
+      "ingestion_tested": false,
+      "notes": "Acrónimo ambiguo; requiere nombre completo o sector para identificar la entidad correcta."
+    }
+  ]
+}
