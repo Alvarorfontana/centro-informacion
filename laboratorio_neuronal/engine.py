@@ -136,18 +136,34 @@ def rolling_origin_backtest(rows: Sequence[dict], target: str, features: Sequenc
         raise ValueError("Datos insuficientes o parámetros de backtesting inválidos.")
     folds = []
     for end in range(min_train, len(rows) - horizon + 1):
-        train_rows = rows[:end]
-        test_rows = rows[end:end + horizon]
+        train_rows, test_rows = rows[:end], rows[end:end + horizon]
         try:
-            result = run_experiment(train_rows + test_rows, target, features,
-                                    test_fraction=horizon / len(test_rows + train_rows), alpha=alpha)
-            # run_experiment fija un holdout cronológico; se conserva el resultado de cada origen.
-            folds.append({"origin": end, "metrics": result["models"]["ridge"]["metrics"]})
-        except ValueError:
+            # El escalado y los coeficientes se ajustan solo con el pasado de cada origen.
+            train = []
+            test = []
+            for row in train_rows:
+                values = [float(row[k]) for k in [target, *features]]
+                if all(math.isfinite(v) for v in values):
+                    train.append(values)
+            for row in test_rows:
+                values = [float(row[k]) for k in [target, *features]]
+                if all(math.isfinite(v) for v in values):
+                    test.append(values)
+            if len(train) < min_train or not test:
+                continue
+            x_train = [v[1:] for v in train]
+            y_train = [v[0] for v in train]
+            x_test = [v[1:] for v in test]
+            y_test = [v[0] for v in test]
+            x_train_s, x_test_s, _, _ = _standardize(x_train, x_test)
+            coefficients = _ridge_fit(x_train_s, y_train, alpha)
+            prediction = _predict(coefficients, x_test_s)
+            folds.append({"origin": end, "metrics": metrics(y_test, prediction)})
+        except (KeyError, TypeError, ValueError):
             continue
     if not folds:
         raise ValueError("No se pudieron construir ventanas válidas.")
-    return {"method": "expanding_window", "folds": folds,
+    return {"method": "expanding_window", "horizon": horizon, "folds": folds,
             "mean_rmse": sum(f["metrics"]["rmse"] for f in folds) / len(folds)}
 
 
