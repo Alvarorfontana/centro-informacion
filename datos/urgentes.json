@@ -1,45 +1,101 @@
 {
- "generado": "2026-11-21T17:57:49+00:00",
+ "generado": "2026-11-21T19:33:27+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
-   "titulo": "Explosión en Remedios de Escalada: confirmaron otras dos muertes y ya son cuatro las víctimas fatales",
-   "n_medios": 4,
+   "titulo": "Cómo atraparon al \"Chapo Isidro\", uno de los 10 narcotraficantes de México más buscados por el FBI",
+   "n_medios": 5,
    "paises": [
-    "Argentina"
+    "Argentina",
+    "Estados Unidos",
+    "Francia",
+    "Reino Unido"
    ],
    "region": null,
-   "tema": "Energía",
+   "tema": "Sociedad",
    "ejes": [
-    "energia"
+    "latinoamerica"
    ],
-   "desde": "2026-11-21T16:25:27+00:00",
+   "desde": "2026-11-21T19:33:27+00:00",
    "avisado": false,
    "notas": [
     {
-     "titulo": "Explosión en Remedios de Escalada: confirmaron otras dos muertes y ya son cuatro las víctimas fatales",
-     "url": "https://perfil.com/sociedad/explosion-en-remedios-de-escalada-confirmaron-otras-dos-muertes-y-ya-son-cuatro-las-victimas-fatales-amAgf0D57FnG",
+     "titulo": "¿Quién es el 'Chapo Isidro', el capo mexicano que figuraba entre los 10 más buscados del FBI?",
+     "url": "https://www.france24.com/es/video/20261121-qui%C3%A9n-es-el-chapo-isidro-el-capo-mexicano-que-figuraba-entre-los-10-m%C3%A1s-buscados-del-fbi",
+     "medio": "France 24 Español",
+     "fecha": "2026-11-21T18:25:28+00:00"
+    },
+    {
+     "titulo": "El Chapo Isidro es capturado por el ejército mexicano en un enfrentamiento armado",
+     "url": "https://www.nytimes.com/es/2026/11/21/espanol/america-latina/mexico-chapo-isidro-capturado.html",
+     "medio": "NYT en Español",
+     "fecha": "2026-11-21T17:33:00+00:00"
+    },
+    {
+     "titulo": "México capturó al “Chapo Isidro”, un narcotraficante incluido en la lista de los más buscados del FBI",
+     "url": "https://noticiasargentinas.com/internacionales/mexico-capturo-al--chapo-isidro---un-narcotraficante-incluido-en-la-lista-de-los-mas-buscados-del-fbi_a6b01ce5d2025a804a55de4a9",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-21T17:10:31+00:00"
+    },
+    {
+     "titulo": "Cómo atraparon al \"Chapo Isidro\", uno de los 10 narcotraficantes de México más buscados por el FBI",
+     "url": "https://www.bbc.com/mundo/articles/c9p83kyykr73o?at_medium=RSS&at_campaign=rss",
+     "medio": "BBC Mundo",
+     "fecha": "2026-11-21T16:56:26+00:00"
+    },
+    {
+     "titulo": "Detienen en Sinaloa a 'Chapo' Isidro Meza, uno de los narcos más buscados por el FBI",
+     "url": "https://perfil.com/internacional/detienen-en-sinaloa-a-chapo-isidro-meza-uno-de-los-narcos-mas-buscados-por-el-fbi-a31rG7Q44kXi",
      "medio": "Perfil",
-     "fecha": "2026-11-21T15:02:21+00:00"
+     "fecha": "2026-11-21T16:36:03+00:00"
+    }
+   ]
+  },
+  {
+   "titulo": "Máximo Kirchner asumió la presidencia del Congreso del PJ bonaerense",
+   "n_medios": 5,
+   "paises": [
+    "Argentina",
+    "Cuba"
+   ],
+   "region": "buenos-aires",
+   "tema": "Política",
+   "ejes": [
+    "politica"
+   ],
+   "desde": "2026-11-21T19:33:27+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Electo Máximo Kirchner presidente del PJ de Provincia Buenos Aires",
+     "url": "https://www.prensa-latina.cu/2026/11/21/electo-maximo-kirchner-presidente-del-pj-de-provincia-buenos-aires/",
+     "medio": "Prensa Latina",
+     "fecha": "2026-11-21T19:40:11+00:00"
     },
     {
-     "titulo": "Confirmaron otras dos muertes por la explosión de gas en Remedios de Escalada: ya son cuatro las víctimas fatales",
-     "url": "https://www.rionegro.com.ar/sociedad/confirmaron-otras-dos-muertes-por-la-explosion-de-gas-en-remedios-de-escalada-ya-son-cuatro-las-victimas-fatales-4807539/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-21T14:07:18+00:00"
+     "titulo": "Máximo Kirchner quedó a cargo del Congreso del PJ bonaerense y definirá las alianzas electorales en 2027",
+     "url": "https://www.clarin.com/politica/maximo-kirchner-quedo-cargo-congreso-pj-bonaerense-definira-alianzas-electorales-2027_0_LB2VmKVfby.html",
+     "medio": "Clarín",
+     "fecha": "2026-11-21T17:56:21+00:00"
     },
     {
-     "titulo": "Explosión en Remedios de Escalada: confirmaron la muerte de otras dos personas",
-     "url": "https://www.pagina12.com.ar/2026/11/21/explosion-en-remedios-de-escalada-confirmaron-la-muerte-de-otras-dos-personas/",
+     "titulo": "Tras el acuerdo con Kicillof, Máximo Kirchner asumió como presidente del Congreso del PJ bonaerense",
+     "url": "https://perfil.com/politica/tras-el-acuerdo-con-kicillof-maximo-kirchner-asumio-como-presidente-del-congreso-del-pj-bonaerense-aXxtc8A2eP6x",
+     "medio": "Perfil",
+     "fecha": "2026-11-21T17:53:23+00:00"
+    },
+    {
+     "titulo": "En una paz incipiente, el peronismo unido designó a Máximo como presidente del Congreso del PJ",
+     "url": "https://www.pagina12.com.ar/2026/11/21/en-una-paz-incipiente-el-peronismo-unido-designo-a-maximo-como-presidente-del-congreso-del-pj/",
      "medio": "Página/12",
-     "fecha": "2026-11-21T14:04:20+00:00"
+     "fecha": "2026-11-21T17:42:19+00:00"
     },
     {
-     "titulo": "Explosión y muerte: fallecieron otras dos personas por el escape de gas en Remedios de Escalada y ya son cuatro las víctimas",
-     "url": "https://www.lanacion.com.ar/sociedad/explosion-y-muerte-fallecieron-otras-dos-personas-por-el-escape-de-gas-en-remedios-de-escalada-y-ya-nid21112026/",
-     "medio": "La Nación",
-     "fecha": "2026-11-21T14:02:18+00:00"
+     "titulo": "Máximo Kirchner asumió la presidencia del Congreso del PJ bonaerense",
+     "url": "https://www.ambito.com/politica/maximo-kirchner-asumio-la-presidencia-del-congreso-del-pj-bonaerense-n6347909",
+     "medio": "Ámbito",
+     "fecha": "2026-11-21T17:25:00+00:00"
     }
    ]
   }
