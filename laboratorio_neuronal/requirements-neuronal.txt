@@ -1,0 +1,2 @@
+# Dependencia opcional: instalar solo si se usa --torch-mlp o pinn_residual_loss.
+torch>=2.2
