@@ -1,6 +1,48 @@
 {
- "generado": "2026-11-22T18:31:18+00:00",
+ "generado": "2026-11-22T19:33:41+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": []
+ "urgentes": [
+  {
+   "titulo": "Financial Times advirtió por el aumento del riesgo país y las dudas de financiamiento en Argentina",
+   "n_medios": 4,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "tema": "General",
+   "ejes": [
+    "fmi",
+    "politica"
+   ],
+   "desde": "2026-11-22T19:33:41+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Financial Times sigue con las advertencias: habló del Riesgo País y las dudas sobre financiamiento y reelección",
+     "url": "https://perfil.com/economia/financial-times-sigue-con-advertencias-hablo-del-riesgo-pais-y-las-dudas-sobre-financiamiento-y-reeleccion-afmxc9i8rSin",
+     "medio": "Perfil",
+     "fecha": "2026-11-22T18:28:53+00:00"
+    },
+    {
+     "titulo": "Financial Times advirtió por el aumento del riesgo país y las dudas de financiamiento en Argentina",
+     "url": "https://noticiasargentinas.com/economia/financial-times-advirtio-por-el-aumento-del-riesgo-pais-y-las-dudas-de-financiamiento-en-argentina_a6b031a0c4cb99a4fdb5c1168",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-22T16:59:00+00:00"
+    },
+    {
+     "titulo": "The Financial Times advirtió que la suba del riesgo país “complicaría” la deuda externa Argentina: los motivos",
+     "url": "https://www.rionegro.com.ar/economia/the-financial-times-advirtio-que-la-suba-del-riesgo-pais-complicaria-la-deuda-externa-argentina-los-motivos-4808709/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-22T16:13:19+00:00"
+    },
+    {
+     "titulo": "El Financial Times advirtió que la recesión y el riesgo electoral complican el financiamiento de la Argentina",
+     "url": "https://www.ambito.com/economia/financial-times-advirtio-que-la-recesion-y-el-riesgo-electoral-complican-el-financiamiento-la-argentina-n6348067",
+     "medio": "Ámbito",
+     "fecha": "2026-11-22T15:36:00+00:00"
+    }
+   ]
+  }
+ ]
 }
