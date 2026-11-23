@@ -1,46 +1,46 @@
 {
- "generado": "2026-11-22T19:33:41+00:00",
+ "generado": "2026-11-23T00:30:51+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
-   "titulo": "Financial Times advirtió por el aumento del riesgo país y las dudas de financiamiento en Argentina",
+   "titulo": "Donald Trump amenazó con volver a atacar Irán si no hay un acuerdo por Ormuz",
    "n_medios": 4,
    "paises": [
     "Argentina"
    ],
    "region": null,
-   "tema": "General",
+   "tema": "Geopolítica",
    "ejes": [
-    "fmi",
-    "politica"
+    "industria",
+    "internacional"
    ],
-   "desde": "2026-11-22T19:33:41+00:00",
+   "desde": "2026-11-23T00:30:51+00:00",
    "avisado": false,
    "notas": [
     {
-     "titulo": "Financial Times sigue con las advertencias: habló del Riesgo País y las dudas sobre financiamiento y reelección",
-     "url": "https://perfil.com/economia/financial-times-sigue-con-advertencias-hablo-del-riesgo-pais-y-las-dudas-sobre-financiamiento-y-reeleccion-afmxc9i8rSin",
-     "medio": "Perfil",
-     "fecha": "2026-11-22T18:28:53+00:00"
-    },
-    {
-     "titulo": "Financial Times advirtió por el aumento del riesgo país y las dudas de financiamiento en Argentina",
-     "url": "https://noticiasargentinas.com/economia/financial-times-advirtio-por-el-aumento-del-riesgo-pais-y-las-dudas-de-financiamiento-en-argentina_a6b031a0c4cb99a4fdb5c1168",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-22T16:59:00+00:00"
-    },
-    {
-     "titulo": "The Financial Times advirtió que la suba del riesgo país “complicaría” la deuda externa Argentina: los motivos",
-     "url": "https://www.rionegro.com.ar/economia/the-financial-times-advirtio-que-la-suba-del-riesgo-pais-complicaria-la-deuda-externa-argentina-los-motivos-4808709/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-22T16:13:19+00:00"
-    },
-    {
-     "titulo": "El Financial Times advirtió que la recesión y el riesgo electoral complican el financiamiento de la Argentina",
-     "url": "https://www.ambito.com/economia/financial-times-advirtio-que-la-recesion-y-el-riesgo-electoral-complican-el-financiamiento-la-argentina-n6348067",
+     "titulo": "Donald Trump amenazó con volver a atacar Irán si no hay un acuerdo por Ormuz",
+     "url": "https://www.ambito.com/mundo/donald-trump-amenazo-volver-atacar-iran-si-no-hay-un-acuerdo-ormuz-n6348142",
      "medio": "Ámbito",
-     "fecha": "2026-11-22T15:36:00+00:00"
+     "fecha": "2026-11-22T23:41:58+00:00"
+    },
+    {
+     "titulo": "Trump amenaza con nuevos ataques contra Irán mientras se intensifican los bombardeos en el Golfo Pérsico",
+     "url": "https://www.lanacion.com.ar/el-mundo/trump-amenaza-con-nuevos-ataques-contra-iran-mientras-se-intensifican-los-bombardeos-en-el-golfo-nid22112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-22T22:57:36+00:00"
+    },
+    {
+     "titulo": "Trump: “Sin un acuerdo, reanudo los ataques contra Irán en 2027”",
+     "url": "https://www.pagina12.com.ar/2026/11/22/trump-sin-un-acuerdo-reanudo-los-ataques-contra-iran-en-2027/",
+     "medio": "Página/12",
+     "fecha": "2026-11-22T22:52:30+00:00"
+    },
+    {
+     "titulo": "Donald Trump aseguró que está dispuesto a volver a atacar Irán si no se llega a un acuerdo por el estrecho de Ormuz",
+     "url": "https://www.clarin.com/mundo/donald-trump-aseguro-dispuesto-volver-atacar-iran-llega-acuerdo-estrecho-ormuz_0_w7knvdotCz.html",
+     "medio": "Clarín",
+     "fecha": "2026-11-22T21:22:25+00:00"
     }
    ]
   }
