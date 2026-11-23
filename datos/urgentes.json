@@ -1,25 +1,22 @@
 {
- "generado": "2026-11-23T19:33:29+00:00",
+ "generado": "2026-11-23T20:36:58+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
-   "titulo": "Nvidia restituye a Jensen Huang como CEO",
-   "n_medios": 9,
+   "titulo": "Trump dijo que habló con Jensen Huang antes de promover su regreso a Nvidia: “Me tienes que prometer algo…”",
+   "n_medios": 4,
    "paises": [
     "Argentina",
-    "Estados Unidos",
-    "Francia",
-    "Reino Unido"
+    "Francia"
    ],
    "region": null,
    "tema": "Geopolítica",
    "ejes": [
-    "economia-global",
     "internacional",
     "politica"
    ],
-   "desde": "2026-11-23T19:33:29+00:00",
+   "desde": "2026-11-23T20:36:58+00:00",
    "avisado": false,
    "notas": [
     {
@@ -27,18 +24,6 @@
      "url": "https://www.infobae.com/america/agencias/2026/11/23/herzog-felicita-a-jensen-huang-por-su-regreso-al-frente-de-nvidia/",
      "medio": "Infobae",
      "fecha": "2026-11-23T19:16:40+00:00"
-    },
-    {
-     "titulo": "Nvidia se disparó más de 30% en Wall Street tras la restitución de Jensen Huang como CEO",
-     "url": "https://perfil.com/economia/nvidia-se-disparo-mas-de-30-en-wall-street-tras-la-restitucion-de-jensen-huang-como-ceo-aUQNt6U2D9es",
-     "medio": "Perfil",
-     "fecha": "2026-11-23T18:50:22+00:00"
-    },
-    {
-     "titulo": "Por qué Jensen Huang es demasiado importante como para que Nvidia pudiera despedirlo",
-     "url": "https://www.bbc.com/mundo/articles/c9143kp61ldjo?at_medium=RSS&at_campaign=rss",
-     "medio": "BBC Mundo",
-     "fecha": "2026-11-23T18:40:21+00:00"
     },
     {
      "titulo": "Mercados reaccionan positivamente al regreso de Jensen Huang a Nvidia",
@@ -51,6 +36,12 @@
      "url": "https://noticiasargentinas.com/internacionales/trump-dice-que-hablo-con-la-junta-directiva-de-nvidia-y-los--convencio--de-reincorporar-a-jensen-huang_a6b046ffd7f7e41308652b033",
      "medio": "Noticias Argentinas",
      "fecha": "2026-11-23T16:57:22+00:00"
+    },
+    {
+     "titulo": "Trump dijo que habló con Jensen Huang antes de promover su regreso a Nvidia: “Me tienes que prometer algo…”",
+     "url": "https://www.infobae.com/estados-unidos/2026/11/23/trump-dijo-que-hablo-con-jensen-huang-antes-de-promover-su-regreso-me-tienes-que-prometer-algo/",
+     "medio": "Infobae América",
+     "fecha": "2026-11-23T16:47:16+00:00"
     }
    ]
   }
