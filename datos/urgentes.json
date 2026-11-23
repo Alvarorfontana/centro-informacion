@@ -1,48 +1,6 @@
 {
- "generado": "2026-11-23T01:08:34+00:00",
+ "generado": "2026-11-23T02:45:07+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": [
-  {
-   "titulo": "Donald Trump amenazó con volver a atacar Irán si no hay un acuerdo por Ormuz",
-   "n_medios": 4,
-   "paises": [
-    "Argentina"
-   ],
-   "region": null,
-   "tema": "Geopolítica",
-   "ejes": [
-    "industria",
-    "internacional"
-   ],
-   "desde": "2026-11-23T00:30:51+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Donald Trump amenazó con volver a atacar Irán si no hay un acuerdo por Ormuz",
-     "url": "https://www.ambito.com/mundo/donald-trump-amenazo-volver-atacar-iran-si-no-hay-un-acuerdo-ormuz-n6348142",
-     "medio": "Ámbito",
-     "fecha": "2026-11-22T23:41:58+00:00"
-    },
-    {
-     "titulo": "Trump amenaza con nuevos ataques contra Irán mientras se intensifican los bombardeos en el Golfo Pérsico",
-     "url": "https://www.lanacion.com.ar/el-mundo/trump-amenaza-con-nuevos-ataques-contra-iran-mientras-se-intensifican-los-bombardeos-en-el-golfo-nid22112026/",
-     "medio": "La Nación",
-     "fecha": "2026-11-22T22:57:36+00:00"
-    },
-    {
-     "titulo": "Trump: “Sin un acuerdo, reanudo los ataques contra Irán en 2027”",
-     "url": "https://www.pagina12.com.ar/2026/11/22/trump-sin-un-acuerdo-reanudo-los-ataques-contra-iran-en-2027/",
-     "medio": "Página/12",
-     "fecha": "2026-11-22T22:52:30+00:00"
-    },
-    {
-     "titulo": "Donald Trump aseguró que está dispuesto a volver a atacar Irán si no se llega a un acuerdo por el estrecho de Ormuz",
-     "url": "https://www.clarin.com/mundo/donald-trump-aseguro-dispuesto-volver-atacar-iran-llega-acuerdo-estrecho-ormuz_0_w7knvdotCz.html",
-     "medio": "Clarín",
-     "fecha": "2026-11-22T21:22:25+00:00"
-    }
-   ]
-  }
- ]
+ "urgentes": []
 }
