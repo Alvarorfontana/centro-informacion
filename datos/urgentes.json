@@ -1,49 +1,6 @@
 {
- "generado": "2026-11-23T20:36:58+00:00",
+ "generado": "2026-11-23T21:42:50+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": [
-  {
-   "titulo": "Trump dijo que habló con Jensen Huang antes de promover su regreso a Nvidia: “Me tienes que prometer algo…”",
-   "n_medios": 4,
-   "paises": [
-    "Argentina",
-    "Francia"
-   ],
-   "region": null,
-   "tema": "Geopolítica",
-   "ejes": [
-    "internacional",
-    "politica"
-   ],
-   "desde": "2026-11-23T20:36:58+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Herzog felicita a Jensen Huang por su regreso al frente de Nvidia",
-     "url": "https://www.infobae.com/america/agencias/2026/11/23/herzog-felicita-a-jensen-huang-por-su-regreso-al-frente-de-nvidia/",
-     "medio": "Infobae",
-     "fecha": "2026-11-23T19:16:40+00:00"
-    },
-    {
-     "titulo": "Mercados reaccionan positivamente al regreso de Jensen Huang a Nvidia",
-     "url": "https://www.france24.com/es/programas/econom%C3%ADa/20261123-economia-nvidia-jensen-huang-regreso",
-     "medio": "France 24 Español",
-     "fecha": "2026-11-23T18:30:45+00:00"
-    },
-    {
-     "titulo": "Trump dice que habló con la junta directiva de Nvidia y los \"convenció\" de reincorporar a Jensen Huang",
-     "url": "https://noticiasargentinas.com/internacionales/trump-dice-que-hablo-con-la-junta-directiva-de-nvidia-y-los--convencio--de-reincorporar-a-jensen-huang_a6b046ffd7f7e41308652b033",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-23T16:57:22+00:00"
-    },
-    {
-     "titulo": "Trump dijo que habló con Jensen Huang antes de promover su regreso a Nvidia: “Me tienes que prometer algo…”",
-     "url": "https://www.infobae.com/estados-unidos/2026/11/23/trump-dijo-que-hablo-con-jensen-huang-antes-de-promover-su-regreso-me-tienes-que-prometer-algo/",
-     "medio": "Infobae América",
-     "fecha": "2026-11-23T16:47:16+00:00"
-    }
-   ]
-  }
- ]
+ "urgentes": []
 }
