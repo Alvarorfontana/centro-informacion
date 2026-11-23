@@ -1,12 +1,12 @@
 {
- "generado": "2026-11-22T16:50:33+00:00",
- "edicion": "mediodía",
- "noticias_de": "2026-11-22T16:41:37+00:00",
+ "generado": "2026-11-23T00:39:17+00:00",
+ "edicion": "tarde",
+ "noticias_de": "2026-11-23T00:29:59+00:00",
  "eleccion": "ia",
  "ia": {
   "disponible": true,
   "usado": "Pollinations · openai",
-  "llamadas": 25
+  "llamadas": 27
  },
  "diario": {
   "notas": 115,
@@ -22,10 +22,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "345 titulares de 44 medios → 12 temas",
+   "detalle": "340 titulares de 38 medios → 12 temas",
    "produjo": 12,
-   "inicio": "2026-11-22T16:42:49+00:00",
-   "fin": "2026-11-22T16:42:49+00:00"
+   "inicio": "2026-11-23T00:31:07+00:00",
+   "fin": "2026-11-23T00:31:07+00:00"
   },
   {
    "id": "monitor-local",
@@ -36,10 +36,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "12 titulares de 5 medios → 9 temas",
-   "produjo": 9,
-   "inicio": "2026-11-22T16:42:49+00:00",
-   "fin": "2026-11-22T16:42:49+00:00"
+   "detalle": "9 titulares de 2 medios → 6 temas",
+   "produjo": 6,
+   "inicio": "2026-11-23T00:31:07+00:00",
+   "fin": "2026-11-23T00:31:07+00:00"
   },
   {
    "id": "monitor-mercosur",
@@ -50,10 +50,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "19 titulares de 8 medios → 12 temas",
+   "detalle": "19 titulares de 7 medios → 12 temas",
    "produjo": 12,
-   "inicio": "2026-11-22T16:42:49+00:00",
-   "fin": "2026-11-22T16:42:49+00:00"
+   "inicio": "2026-11-23T00:31:07+00:00",
+   "fin": "2026-11-23T00:31:07+00:00"
   },
   {
    "id": "monitor-mundo",
@@ -64,10 +64,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "354 titulares de 26 medios → 12 temas",
+   "detalle": "355 titulares de 28 medios → 12 temas",
    "produjo": 12,
-   "inicio": "2026-11-22T16:42:49+00:00",
-   "fin": "2026-11-22T16:42:49+00:00"
+   "inicio": "2026-11-23T00:31:07+00:00",
+   "fin": "2026-11-23T00:31:07+00:00"
   },
   {
    "id": "jefe",
@@ -78,10 +78,10 @@
    "ia": true,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "Eligió 14 de 38 temas",
+   "detalle": "Eligió 14 de 33 temas",
    "produjo": 14,
-   "inicio": "2026-11-22T16:42:49+00:00",
-   "fin": "2026-11-22T16:43:25+00:00"
+   "inicio": "2026-11-23T00:31:07+00:00",
+   "fin": "2026-11-23T00:31:34+00:00"
   },
   {
    "id": "redactor",
@@ -94,8 +94,8 @@
    "resultado": "funcionó",
    "detalle": "4 borradores de 14 temas",
    "produjo": 4,
-   "inicio": "2026-11-22T16:50:17+00:00",
-   "fin": "2026-11-22T16:50:33+00:00"
+   "inicio": "2026-11-23T00:39:01+00:00",
+   "fin": "2026-11-23T00:39:16+00:00"
   },
   {
    "id": "fuentes",
@@ -106,10 +106,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "Leyó 18 de 27 notas originales; 17 con autor",
+   "detalle": "Leyó 19 de 32 notas originales; 20 con autor",
    "produjo": 14,
-   "inicio": "2026-11-22T16:50:17+00:00",
-   "fin": "2026-11-22T16:50:33+00:00"
+   "inicio": "2026-11-23T00:39:00+00:00",
+   "fin": "2026-11-23T00:39:17+00:00"
   },
   {
    "id": "verificador",
@@ -122,8 +122,8 @@
    "resultado": "falló",
    "detalle": "0 verde · 0 amarillo · 0 rojo · último error: Pollinations openai: HTTP 402",
    "produjo": 0,
-   "inicio": "2026-11-22T16:49:23+00:00",
-   "fin": "2026-11-22T16:49:39+00:00"
+   "inicio": "2026-11-23T00:37:50+00:00",
+   "fin": "2026-11-23T00:38:06+00:00"
   },
   {
    "id": "fotos",
@@ -134,10 +134,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "49 fotos propuestas (26 libres)",
+   "detalle": "54 fotos propuestas (29 libres)",
    "produjo": 14,
-   "inicio": "2026-11-22T16:50:33+00:00",
-   "fin": "2026-11-22T16:50:33+00:00"
+   "inicio": "2026-11-23T00:39:16+00:00",
+   "fin": "2026-11-23T00:39:17+00:00"
   },
   {
    "id": "titulador",
@@ -150,8 +150,8 @@
    "resultado": "funcionó",
    "detalle": "Tituló 4 borradores",
    "produjo": 4,
-   "inicio": "2026-11-22T16:49:56+00:00",
-   "fin": "2026-11-22T16:50:33+00:00"
+   "inicio": "2026-11-23T00:38:23+00:00",
+   "fin": "2026-11-23T00:39:17+00:00"
   },
   {
    "id": "enlazador",
@@ -162,10 +162,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "5 enlaces al diario y 0 a fuentes",
+   "detalle": "2 enlaces al diario y 3 a fuentes",
    "produjo": 4,
-   "inicio": "2026-11-22T16:50:17+00:00",
-   "fin": "2026-11-22T16:50:33+00:00"
+   "inicio": "2026-11-23T00:38:44+00:00",
+   "fin": "2026-11-23T00:39:17+00:00"
   },
   {
    "id": "corrector",
@@ -178,8 +178,8 @@
    "resultado": "falló",
    "detalle": "Corrigió 0 borradores · último error: Pollinations openai: HTTP 402",
    "produjo": 0,
-   "inicio": "2026-11-22T16:49:39+00:00",
-   "fin": "2026-11-22T16:49:56+00:00"
+   "inicio": "2026-11-23T00:38:06+00:00",
+   "fin": "2026-11-23T00:38:23+00:00"
   },
   {
    "id": "agenda",
@@ -190,10 +190,10 @@
    "ia": false,
    "prendido": true,
    "resultado": "funcionó",
-   "detalle": "12 hechos anunciados para hoy o los próximos días",
-   "produjo": 12,
-   "inicio": "2026-11-22T16:42:49+00:00",
-   "fin": "2026-11-22T16:42:49+00:00"
+   "detalle": "9 hechos anunciados para hoy o los próximos días",
+   "produjo": 9,
+   "inicio": "2026-11-23T00:31:07+00:00",
+   "fin": "2026-11-23T00:31:07+00:00"
   },
   {
    "id": "seguimiento",
@@ -206,8 +206,8 @@
    "resultado": "funcionó",
    "detalle": "6 temas de los últimos días con notas nuevas",
    "produjo": 6,
-   "inicio": "2026-11-22T16:42:49+00:00",
-   "fin": "2026-11-22T16:42:49+00:00"
+   "inicio": "2026-11-23T00:31:07+00:00",
+   "fin": "2026-11-23T00:31:07+00:00"
   },
   {
    "id": "whatsapp",
@@ -220,18 +220,18 @@
    "resultado": "sin configurar",
    "detalle": "Falta crear el bot de Telegram y pasar su token",
    "produjo": 0,
-   "fin": "2026-11-22T16:50:33+00:00",
-   "inicio": "2026-11-22T16:50:33+00:00"
+   "fin": "2026-11-23T00:39:17+00:00",
+   "inicio": "2026-11-23T00:39:17+00:00"
   }
  ],
  "menu": [
   {
-   "id": "20261122-1643-01",
+   "id": "20261123-0031-02",
    "seccion": "argentina",
-   "por_que": "El proyecto Sea Lion en Malvinas afecta la soberanía argentina y la economía de la región, y su continuidad genera debate nacional.",
-   "titulo_tema": "Pablo Quirno volvió a exigir que se frene el proyecto Sea Lion en Malvinas, a una semana del fallo del Tribunal del Mar",
-   "puntaje": 12.7,
-   "n_medios": 3,
+   "por_que": "El debut de Santilli en el Senado y su informe de gestión son clave para la política nacional y la transparencia.",
+   "titulo_tema": "Santilli debuta en el Senado con su primer informe de gestión y responderá más de 1.200 preguntas",
+   "puntaje": 10.6,
+   "n_medios": 2,
    "paises": [
     "Argentina"
    ],
@@ -242,208 +242,299 @@
    ],
    "region_mundo": "América Latina",
    "titulos": [
-    "Canciller Quirno exige detener proyecto Sea Lion antes de fallo del TIDM",
-    "Argentina pide al TIDM suspender perforaciones en Malvinas",
-    "Quirno solicita medidas cautelares para proteger cuenca norte de las Islas Malvinas"
+    "Santilli entregará su primer informe de gestión ante el Senado",
+    "Santilli presentará su informe ante el Senado y responderá mil interrogantes",
+    "Santilli se presentará ante el Senado para exponer su gestión"
    ],
    "bajadas": [
-    "El tribunal de Hamburgo decidirá el sábado 28 de noviembre sobre la suspensión de las actividades petroleras",
-    "Dos contratistas británicos y israelíes se retiraron del proyecto tras la solicitud argentina"
+    "El discurso girará en torno al concepto de “orden” y defenderá la gestión de Milei",
+    "La sesión contará con 1.287 consultas, mayormente sobre economía y salud"
    ],
-   "cuerpo_html": "<p>El canciller Pablo Quirno volvió a exigir la detención del proyecto petrolero Sea Lion en las Islas Malvinas, a una semana del fallo del Tribunal Internacional del Derecho del Mar (TIDM). La solicitud se presentó el 22 de noviembre ante el tribunal de Hamburgo, donde el gobierno <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/mercados-reaccionan-discurso-presidente/\" title=\"Diario Federal: Los mercados argentinos reaccionan con cautela al discurso presidencial\">argentino</a> pidió medidas cautelares para impedir la explotación de hidrocarburos en la cuenca norte de las islas.</p>\n<p>El reclamo surge tras las audiencias celebradas el 10 y 11 de noviembre en la sede del TIDM, donde la Casa Rosada solicitó que el Reino Unido suspenda las perforaciones y no otorgue nuevas autorizaciones. Según el Ministerio de Relaciones Exteriores, la medida busca proteger recursos que la Argentina considera propios y evitar daños irreversibles al medio marino.</p>\n<p>Quirno explicó que la Argentina recurrió al organismo internacional “para solicitar la suspensión de las actividades vinculadas al emprendimiento”, y que la decisión del tribunal está prevista para el sábado 28 de noviembre. En la entrevista televisiva “La Noche de Mirtha”, el funcionario calificó la actividad hidrocarburífera unilateral como inaceptable y recordó que “Malvinas es una causa sagrada para nosotros”.</p>\n<p>El canciller también afirmó que la extracción de crudo “compromete recursos naturales que la Argentina considera propios” y que la presentación argentina “exige que se paren estas actividades antes de que se haga el arbitraje”. La solicitud incluye la preservación de los datos obtenidos durante las tareas de exploración y la garantía de protección del medio marino.</p>\n<p>La estrategia judicial tuvo repercusión inmediata en el sector privado. Rockhopper Exploration, la petrolera británica que lidera el proyecto, informó ante la Bolsa de Londres que dos contratistas, una inglesa y otra israelí, se retiraron del proyecto Sea Lion por temor a posibles sanciones. El gobierno argentino había advertido que las penalidades abarcan a las operadoras principales y a toda su cadena de proveedores sin autorización nacional.</p>\n<p>El Ministerio de Defensa señaló que la controversia continuará más allá del fallo cautelar. “Una vez que se saca una gota de petróleo, esa gota no es recuperable”, dijo Quirno en el Marval Legal Forecast 2027, subrayando la urgencia de un freno preventivo.</p>\n<p>El próximo paso será la comunicación oficial del TIDM sobre las medidas provisionales solicitadas. Si el tribunal concede la suspensión, el Reino Unido deberá detener las operaciones y abstenerse de otorgar nuevas autorizaciones. En caso contrario, el gobierno argentino mantendrá su reclamo y seguirá presionando a nivel diplomático y judicial.</p>",
+   "cuerpo_html": "<p>El jefe de Gabinete, Diego Santilli, se presentará este miércoles a las quince horas en el Salón de los Pasos del Senado de la Nación para entregar su primer informe de gestión y responder a más de mil ochocientos interrogantes. La sesión, que se anticipa extensa, se enmarca en el cumplimiento del artículo 101 de la Constitución Nacional, que obliga al coordinador del Ejecutivo a informar al Congreso sobre la marcha del Gobierno.</p>\n<p>La aparición parlamentaria de Santilli marca su debut desde que asumió el cargo el treinta de junio, tras la renuncia de Manuel Adorni, quien fue destituido en medio de una investigación por presunto enriquecimiento ilícito. Desde su entorno se anticipa que el discurso girará en torno al concepto de “orden” y que intentará defender los tres años de gestión de Javier Milei frente a la “herencia recibida”.</p>\n<p>La Jefatura de Gabinete consolidó 1.287 consultas a partir de 1.659 preguntas enviadas por doce bloques parlamentarios. Entre los senadores, la mayor carga recae sobre el área económica, que representa el cuarenta y seis por ciento del temario con 392 interrogantes. Los temas solicitados incluyen el nivel de actividad, las tarifas, el endeudamiento, los impuestos, las privatizaciones, la situación de la industria y el estado de la obra pública y las rutas nacionales.</p>\n<p>En segundo lugar, el Ministerio de Capital Humano, a cargo de Sandra Pettovello, recibe 234 preguntas, equivalente al dieciocho por ciento del total. Las consultas se centran en jubilaciones, salarios, programas de asistencia social y políticas laborales. El Ministerio de Salud, con 148 preguntas (once punto cinco por ciento), pone la lupa sobre el PAMI, los hospitales públicos, los recortes en las prestaciones para personas con discapacidad contemplados en el Presupuesto 2027 y el funcionamiento de la ex Agencia Nacional de Discapacidad (ANDIS).</p>\n<p>La propia Jefatura de Gabinete y la Secretaría de Interior concentran el siete punto seis por ciento de los planteos, mientras que el resto se reparte entre Seguridad, Defensa, Justicia, Relaciones Exteriores y el Banco Central. Entre los asuntos específicos aparecen el destino de las reservas de oro, los créditos del Banco Nación y el cumplimiento de la Ley de Financiamiento Universitario.</p>\n<p>El funcionario estará escoltado por los vicejefes del Interior, Gustavo Coria, y de Gabinete, Ignacio Devitt. A diferencia de la última exposición de Adorni en Diputados en abril, no se prevé la presencia del presidente ni del resto de los ministros.</p>\n<p>El debate se espera que sea intenso, con la oposición planteando cuestionamientos sobre temas sensibles para la Casa Rosada. Si bien la agenda se centra en la economía, la gestión social y la salud, también se abordarán cuestiones de seguridad y de política exterior, reflejo de la complejidad de la administración actual.</p>\n<p>Al concluir la sesión, Santilli deberá responder a las preguntas en un plazo de una semana, según lo establecido por el reglamento del Senado. La respuesta a los interrogantes será publicada en la página oficial del Congreso y se espera que influya en la percepción pública de la gestión de Milei.</p>",
    "fotos": [
     {
-     "url": "https://media.lacapital.com.ar/p/f4f30d942b9168fc3b8d15d18aaa32ea/adjuntos/205/imagenes/103/454/0103454417/1200x675/smart/sea-lion-petroleo-malvinas-petroleras.jpg",
-     "pagina": "https://www.unoentrerios.com.ar/el-pais/el-gobierno-volvio-exigir-que-se-frene-el-proyecto-sea-lion-malvinas-n10293601.html",
-     "credito": "Foto: Uno Entre Ríos",
-     "fuente": "Uno Entre Ríos",
-     "descripcion": "El gobierno volvió a exigir que se frene el proyecto Sea Lion en Malvinas",
+     "url": "https://alpha-app.tadevel-cdn.com/hostname/noticiasargentinas.com/api/v1/image/article/6b0361f54cb99a4fdb5d5276/facebook?v=23b7ddb18dad50bef1244077c271387e&s=d0a635e7b743bfeba0d5a08ba601a902",
+     "pagina": "https://noticiasargentinas.com/politica/santilli-debuta-en-el-senado-con-su-primer-informe-de-gestion-y-respondera-mas-de-1-200-preguntas_a6b0361f54cb99a4fdb5d5276",
+     "credito": "Foto: Noticias Argentinas",
+     "fuente": "Noticias Argentinas",
+     "descripcion": "Santilli debuta en el Senado con su primer informe de gestión y responderá más de 1.200 preguntas",
      "libre": false
     },
     {
-     "url": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/MLM2467ZPRCEXKIA4KTV7MX2TU.jpg?w=1200&h=630&crop=1&resize=1200,630",
-     "pagina": "https://www.rionegro.com.ar/politica/una-causa-sagrada-pablo-quirno-exigio-frenar-el-petroleo-en-malvinas-y-dos-empresas-ya-dejaron-el-proyecto-4808639/",
-     "credito": "Foto: Río Negro",
-     "fuente": "Río Negro",
-     "descripcion": "Malvinas: Pablo Quirno pidió frenar la explotación petrolera y dos contratistas dejaron el proyecto Sea Lion",
+     "url": "https://img.lagaceta.com.ar/fotos/notas/2026/10/06/conduccion-armado-politico-esta-encabezada-secretaria-general-presidencia-karina-milei-jefe-gabinete-diego-santilli-1157023-212640.jpg",
+     "pagina": "https://www.lagaceta.com.ar/nota/1163722/politica/diego-santilli-debutara-senado-primer-informe-gestion-debera-responder-mas-1200-preguntas.html",
+     "credito": "Foto: La Gaceta (Tucumán)",
+     "fuente": "La Gaceta (Tucumán)",
+     "descripcion": "Diego Santilli debutará en el Senado con su primer informe de gestión y deberá responder más de 1.200 preguntas",
      "libre": false
     },
     {
-     "url": "https://media.ambito.com/p/17e86da02bf540271dee149f7b9b0c44/adjuntos/239/imagenes/043/740/0043740652/1200x675/smart/pablo-quirno-brasil.jpg",
-     "pagina": "https://www.ambito.com/politica/pablo-quirno-volvio-exigir-que-se-frene-el-proyecto-sea-lion-malvinas-una-semana-del-fallo-del-tribunal-del-mar-n6348038",
-     "credito": "Foto: Ámbito",
-     "fuente": "Ámbito",
-     "descripcion": "Pablo Quirno volvió a exigir que se frene el proyecto Sea Lion en Malvinas, a una semana del fallo del Tribunal del Mar",
-     "libre": false
-    },
-    {
-     "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Meeting_with_Secretary_of_Finance_Pablo_Quirno_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Meeting_with_Secretary_of_Finance_Pablo_Quirno_(cropped).jpg",
-     "credito": "Foto: Embajada de EEUU en Argentina / Wikimedia Commons (CC BY 2.0)",
-     "descripcion": "Argentina en 2024",
-     "licencia": "CC BY 2.0",
-     "fuente": "Wikimedia Commons",
-     "libre": true
-    },
-    {
-     "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Pablo_Quirno_Magrane_-_Retrato_Oficial_2025.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Pablo_Quirno_Magrane_-_Retrato_Oficial_2025.png",
-     "credito": "Foto: Cancilleria Argentina / Wikimedia Commons (CC BY 4.0)",
-     "descripcion": "Official portrait of Pablo Quirno the minister of foreign affairs of Argentina",
-     "licencia": "CC BY 4.0",
-     "fuente": "Wikimedia Commons",
-     "libre": true
-    }
-   ],
-   "enlaces": [
-    {
-     "url": "https://www.diariofederal.com.ar/articulo/mercados-reaccionan-discurso-presidente/",
-     "clase": "interno",
-     "titulo": "Diario Federal: Los mercados argentinos reaccionan con cautela al discurso presidencial",
-     "palabra": "argentino"
-    }
-   ],
-   "relacionadas": [
-    {
-     "titulo": "Los mercados argentinos reaccionan con cautela al discurso presidencial",
-     "url": "https://www.diariofederal.com.ar/articulo/mercados-reaccionan-discurso-presidente/"
-    }
-   ],
-   "verificacion": {
-    "independientes": 3,
-    "paises": [
-     "Argentina"
-    ],
-    "estatal": [],
-    "oficiales": [],
-    "agencias_citadas": [],
-    "leidas": 3
-   },
-   "fuentes": [
-    {
-     "medio": "Uno Entre Ríos",
-     "url": "https://www.unoentrerios.com.ar/el-pais/el-gobierno-volvio-exigir-que-se-frene-el-proyecto-sea-lion-malvinas-n10293601.html",
-     "titulo": "El gobierno volvió a exigir que se frene el proyecto Sea Lion en Malvinas",
-     "pais": "Argentina",
-     "tipo": "Medio provincial",
-     "fecha": "2026-11-22T14:44:00+00:00",
-     "idioma": "castellano",
-     "autor": "Uno Entre Rios",
-     "fecha_pub": "2026-11-22T11:44:00-03:00",
-     "imagen": "https://media.lacapital.com.ar/p/f4f30d942b9168fc3b8d15d18aaa32ea/adjuntos/205/imagenes/103/454/0103454417/1200x675/smart/sea-lion-petroleo-malvinas-petroleras.jpg",
-     "agencias": [],
-     "oficiales": [],
-     "leida": true,
-     "palabras": 577,
-     "resumen": "La administración de Javier Milei presentó un pedido de medidas cautelares ante el Tribunal del Mar."
-    },
-    {
-     "medio": "Río Negro",
-     "url": "https://www.rionegro.com.ar/politica/una-causa-sagrada-pablo-quirno-exigio-frenar-el-petroleo-en-malvinas-y-dos-empresas-ya-dejaron-el-proyecto-4808639/",
-     "titulo": "Malvinas: Pablo Quirno pidió frenar la explotación petrolera y dos contratistas dejaron el proyecto Sea Lion",
-     "pais": "Argentina",
-     "tipo": "Medio regional",
-     "fecha": "2026-11-22T14:34:24+00:00",
-     "idioma": "castellano",
-     "autor": "Naira Torres Bel",
-     "fecha_pub": "2026-11-22T11:34:24-03:00",
-     "imagen": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/MLM2467ZPRCEXKIA4KTV7MX2TU.jpg?w=1200&h=630&crop=1&resize=1200,630",
-     "agencias": [],
-     "oficiales": [],
-     "leida": true,
-     "palabras": 677,
-     "resumen": null
-    },
-    {
-     "medio": "Ámbito",
-     "url": "https://www.ambito.com/politica/pablo-quirno-volvio-exigir-que-se-frene-el-proyecto-sea-lion-malvinas-una-semana-del-fallo-del-tribunal-del-mar-n6348038",
-     "titulo": "Pablo Quirno volvió a exigir que se frene el proyecto Sea Lion en Malvinas, a una semana del fallo del Tribunal del Mar",
-     "pais": "Argentina",
-     "tipo": "Medio",
-     "fecha": "2026-11-22T13:58:32+00:00",
-     "idioma": "castellano",
-     "autor": "+ Agregar ámbito en",
-     "fecha_pub": "2026-11-22T10:58:32-03:00",
-     "imagen": "https://media.ambito.com/p/17e86da02bf540271dee149f7b9b0c44/adjuntos/239/imagenes/043/740/0043740652/1200x675/smart/pablo-quirno-brasil.jpg",
-     "agencias": [],
-     "oficiales": [],
-     "leida": true,
-     "palabras": 96,
-     "resumen": "La administración de Javier Milei presentó un pedido de medidas cautelares ante el organismo internacional para suspender las actividades hidrocarburíferas impulsadas por compañías extranjeras en el archipiélago."
-    }
-   ],
-   "falta": "Confirmar la fecha exacta de la decisión del Tribunal Internacional del Derecho del Mar sobre las medidas cautelares.",
-   "volanta": "Proyecto Sea Lion",
-   "firma": "Emilio Lahitte",
-   "prioridad": "alta",
-   "escalon": "nota completa"
-  },
-  {
-   "id": "20261122-1643-04",
-   "seccion": "argentina",
-   "por_que": "La investigación de la muerte de una mujer de 92 años en Cipolletti plantea cuestiones de justicia y derechos de los mayores, relevante para la sociedad.",
-   "titulo_tema": "Investigan la muerte de una mujer de 92 años en Cipolletti y hay un detenido: cómo avanza la causa",
-   "puntaje": 8.7,
-   "n_medios": 1,
-   "paises": [
-    "Argentina"
-   ],
-   "region": "centro",
-   "tema": "Sociedad",
-   "ejes": [
-    "politica"
-   ],
-   "region_mundo": "América Latina",
-   "titulos": [
-    "Mujer de 92 años hallada muerta en Cipolletti, Fiscalía abre investigación de femicidio",
-    "Civitas de Cipolletti: cuerpo sin vida encontrado en domicilio de 92 años",
-    "Investigación de femicidio en Cipolletti tras hallazgo de mujer de 92 años"
-   ],
-   "bajadas": [
-    "El allanamiento de la vivienda permitió la detención de un hombre vinculado al caso",
-    "La autopsia forense se realizará el domingo para establecer la mecánica del crimen"
-   ],
-   "cuerpo_html": "<p>El cuerpo de una mujer de noventa y dos años fue hallado sin vida el sábado 21 de noviembre al mediodía en su domicilio de la calle Arenales al 400, en el barrio 430 Viviendas de Cipolletti. El hallazgo ocurrió después de que un familiar alertara a las autoridades.</p>\n<p>El Ministerio Público <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/2026-11-06-santiago-pena-detenido-fiscalia-ueno-bank/\" title=\"Diario Federal: Santiago Peña quedó detenido y quedó a disposición de la Fiscalía\">Fiscal</a> inició la investigación del asesinato y activó el protocolo por femicidio. Se ordenó un allanamiento de la vivienda y se desplegó un amplio equipo pericial en la propiedad.</p>\n<p>Durante la jornada, el comisario inspector Javier Elicier Yáñez describió la muerte como una “muerte violenta”. Las tareas investigativas comenzaron formalmente a las trece horas, según los fiscales Santiago Márquez Gauna y Jessica Montenegro.</p>\n<p>El allanamiento, realizado a última hora del sábado, permitió la detención de un hombre vinculado al caso. La Fiscalía y la Unidad Operativa para la Investigación del Ministerio Público, junto con personal de Criminalística, la Brigada de Investigaciones y agentes policiales, trabajaron en la vivienda para recoger indicios.</p>\n<p>El domingo se realizará la autopsia forense, que es clave para establecer la mecánica del crimen y la fecha exacta del fallecimiento. Con los resultados preliminares, el Ministerio Público Fiscal planea llevar a cabo la audiencia de formulación de cargos el lunes.</p>\n<p>La causa avanza con la coordinación de la Fiscalía, la Unidad Operativa y las fuerzas de seguridad. Se espera que la audiencia de lunes determine los cargos a formular contra el sospechoso detenido.</p>\n<p>La investigación continúa en curso, con la expectativa de que la autopsia y la pericia de la escena arrojen más datos que permitan avanzar en la acusación.</p>",
-   "fotos": [
-    {
-     "url": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/rn-2026-11-09T233256.804.jpg?w=1200&h=630&crop=1&resize=1200,630",
-     "pagina": "https://www.rionegro.com.ar/policiales/investigan-la-muerte-de-una-mujer-de-92-anos-en-cipolletti-y-hay-un-detenido-como-avanza-la-causa-4808654/",
-     "credito": "Foto: Río Negro",
-     "fuente": "Río Negro",
-     "descripcion": "Investigan la muerte de una mujer de 92 años en Cipolletti y hay un detenido: cómo avanza la causa",
-     "libre": false
-    },
-    {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Cipolletti_-_Bienvenidos.jpg/1280px-Cipolletti_-_Bienvenidos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Cipolletti_-_Bienvenidos.jpg",
-     "credito": "Foto: Arcibel / Wikimedia Commons (CC BY-SA 3.0)",
-     "descripcion": "Welcome to the Cipolletti City in Río Negro Province,  Argentina.",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Ruggero_Santilli_Sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ruggero_Santilli_Sunset.jpg",
+     "credito": "Foto: Globalreach1 at English Wikipedia / Wikimedia Commons (CC BY-SA 3.0)",
+     "descripcion": "Ruggero Santilli",
      "licencia": "CC BY-SA 3.0",
      "fuente": "Wikimedia Commons",
      "libre": true
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Vista_a_la_Isla_Jord%C3%A1n_-_Cipolletti_-_R%C3%ADo_Negro.jpg/1280px-Vista_a_la_Isla_Jord%C3%A1n_-_Cipolletti_-_R%C3%ADo_Negro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Vista_a_la_Isla_Jord%C3%A1n_-_Cipolletti_-_R%C3%ADo_Negro.jpg",
-     "credito": "Foto: Nestorp3117 / Wikimedia Commons (CC BY-SA 4.0)",
-     "descripcion": "La Isla Jordán un lugar que tiene mucha Naturaleza para compartir",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Ruggero_Santilli_Sunset_Smaller.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ruggero_Santilli_Sunset_Smaller.jpg",
+     "credito": "Foto: Globalreach1 at en.wikipedia / Wikimedia Commons (CC BY-SA 3.0)",
+     "descripcion": "Ruggero Santilli",
+     "licencia": "CC BY-SA 3.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/2024-11-12%2C_Senado_Federal_do_Brasil_-_399.jpg/1280px-2024-11-12%2C_Senado_Federal_do_Brasil_-_399.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:2024-11-12,_Senado_Federal_do_Brasil_-_399.jpg",
+     "credito": "Foto: Senado Federal / Wikimedia Commons (CC BY 2.0)",
+     "descripcion": "Subcomissão Permanente de Direitos das Pessoas com Doenças Raras (CASRARAS) realiza audiência pública para debater a normatização do acesso das pessoas com doenças raras a medicamentos, dispositivos m",
+     "licencia": "CC BY 2.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    }
+   ],
+   "enlaces": [],
+   "relacionadas": [],
+   "verificacion": {
+    "independientes": 2,
+    "paises": [
+     "Argentina"
+    ],
+    "estatal": [],
+    "oficiales": [],
+    "agencias_citadas": [],
+    "leidas": 2
+   },
+   "fuentes": [
+    {
+     "medio": "Noticias Argentinas",
+     "url": "https://noticiasargentinas.com/politica/santilli-debuta-en-el-senado-con-su-primer-informe-de-gestion-y-respondera-mas-de-1-200-preguntas_a6b0361f54cb99a4fdb5d5276",
+     "titulo": "Santilli debuta en el Senado con su primer informe de gestión y responderá más de 1.200 preguntas",
+     "pais": "Argentina",
+     "tipo": "Agencia privada",
+     "fecha": "2026-11-22T21:50:15+00:00",
+     "idioma": null,
+     "autor": "Agencia Noticias Argentinas",
+     "fecha_pub": "2026-11-22T21:50:15.296Z",
+     "imagen": "https://alpha-app.tadevel-cdn.com/hostname/noticiasargentinas.com/api/v1/image/article/6b0361f54cb99a4fdb5d5276/facebook?v=23b7ddb18dad50bef1244077c271387e&s=d0a635e7b743bfeba0d5a08ba601a902",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 934,
+     "resumen": "El jefe de Gabinete se presentará este miércoles en la Cámara alta para cumplir por primera vez con el mandato constitucional desde su asunción en junio."
+    },
+    {
+     "medio": "La Gaceta (Tucumán)",
+     "url": "https://www.lagaceta.com.ar/nota/1163722/politica/diego-santilli-debutara-senado-primer-informe-gestion-debera-responder-mas-1200-preguntas.html",
+     "titulo": "Diego Santilli debutará en el Senado con su primer informe de gestión y deberá responder más de 1.200 preguntas",
+     "pais": "Argentina",
+     "tipo": "Medio regional",
+     "fecha": "2026-11-22T19:01:00+00:00",
+     "idioma": "castellano",
+     "autor": "Redacción Política",
+     "fecha_pub": "2026-11-22T19:01:54-03:00",
+     "imagen": "https://img.lagaceta.com.ar/fotos/notas/2026/10/06/conduccion-armado-politico-esta-encabezada-secretaria-general-presidencia-karina-milei-jefe-gabinete-diego-santilli-1157023-212640.jpg",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 643,
+     "resumen": "El jefe de Gabinete se presentará este miércoles a las 15 en la Cámara alta para cumplir con el mandato constitucional. La oposición concentrará sus reclamos en la economía, las jubilaciones, la salud, la obra pública y la situación de la ANDIS."
+    }
+   ],
+   "falta": "Confirmar si la sesión se llevará a cabo en el Salón de los Pasos del Senado o en otro recinto.",
+   "volanta": "Informe de gestión",
+   "firma": "Emilio Lahitte",
+   "prioridad": "alta",
+   "escalon": "nota completa"
+  },
+  {
+   "id": "20261123-0031-06",
+   "seccion": "local",
+   "por_que": "Accidente de motociclista en General Pacheco resalta la seguridad vial local.",
+   "titulo_tema": "Una motociclista cruzó en rojo y fue embestida por un auto en General Pacheco: el choque quedó grabado",
+   "puntaje": 8.9,
+   "n_medios": 1,
+   "paises": [
+    "Argentina"
+   ],
+   "region": "buenos-aires",
+   "tema": "Sociedad",
+   "ejes": [
+    "local"
+   ],
+   "region_mundo": "América Latina",
+   "titulos": [
+    "Motociclista cruzó en rojo y fue embestida en General Pacheco",
+    "Accidente en intersección de Constituyentes y Mansilla deja sin información sobre lesiones",
+    "Vídeo de la videovigilancia de Tigre documenta choque de motocicleta y auto"
+   ],
+   "bajadas": [
+    "Una motociclista cruzó en rojo y fue embestida por un auto en la intersección de la avenida de los Constituyentes y Mansilla, en el barrio Las Tunas de General Pacheco, partido de Tigre, el pasado 22 de noviembre."
+   ],
+   "cuerpo_html": "<p>Una motociclista cruzó en rojo y fue embestida por un auto en la intersección de la avenida de los Constituyentes y Mansilla, en el barrio Las Tunas de General Pacheco, partido de Tigre, el pasado 22 de noviembre. El choque quedó grabado por las cámaras de seguridad del Centro de Operaciones Tigre (COT) y se registró durante las últimas horas de la tarde.</p>\n<p>El siniestro ocurrió cuando la conductora de la motocicleta avanzó a pesar de que el semáforo estaba en rojo y fue impactada por un vehículo que giraba hacia Mansilla. Según el Municipio de Tigre, la maniobra del auto provocó el choque y activó de inmediato el protocolo de emergencia.</p>\n<p>Los operadores municipales detectaron el accidente a través de la videovigilancia y solicitaron la intervención de Defensa Civil, Tránsito, la Policía de la Provincia de Buenos Aires y el Sistema de Emergencias Tigre (SET). La motociclista y su acompañante fueron trasladados al Hospital Magdalena V. de Martínez de General Pacheco; no se informó oficialmente sobre la gravedad de las lesiones.</p>\n<p>El municipio resaltó que el sistema de videovigilancia, con más de 2.000 cámaras distribuidas en el distrito y 130 móviles de patrullaje, permitió identificar el siniestro y coordinar la asistencia de manera rápida.</p>\n<p>Se desconoce si la policía ha iniciado una investigación sobre la responsabilidad del conductor del auto. Los vecinos del barrio Las Tunas han expresado preocupación por la seguridad vial en la zona.</p>",
+   "fotos": [
+    {
+     "url": "https://www.infoban.com.ar/wp-content/uploads/2026/11/accidente-Pacheco-ok-e1795390790225.jpg",
+     "pagina": "https://www.infoban.com.ar/22/11/2026/una-motociclista-cruzo-en-rojo-y-fue-embestida-por-un-auto-en-general-pacheco-el-choque-quedo-grabado/",
+     "credito": "Foto: InfoBAN (zona norte)",
+     "fuente": "InfoBAN (zona norte)",
+     "descripcion": "Una motociclista cruzó en rojo y fue embestida por un auto en General Pacheco: el choque quedó grabado",
+     "libre": false
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Plaza_Gral_%C3%81ngel_Pacheco_-_Ciudad_de_General_Pacheco_%28Partido_de_Tigre%29-2.JPG/1280px-Plaza_Gral_%C3%81ngel_Pacheco_-_Ciudad_de_General_Pacheco_%28Partido_de_Tigre%29-2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Plaza_Gral_%C3%81ngel_Pacheco_-_Ciudad_de_General_Pacheco_(Partido_de_Tigre)-2.JPG",
+     "credito": "Foto: Gabriel Sozzi / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "Gral. Ángel Pacheco square, in General Pacheco, Tigre Partido, Buenos Aires Province. Bougainvillea spectabilis, with its red-purple bracts, stands out in the landscape.",
      "licencia": "CC BY-SA 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Plaza_Gral_%C3%81ngel_Pacheco_-_Ciudad_de_General_Pacheco_%28Partido_de_Tigre%29.jpg/1280px-Plaza_Gral_%C3%81ngel_Pacheco_-_Ciudad_de_General_Pacheco_%28Partido_de_Tigre%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Plaza_Gral_%C3%81ngel_Pacheco_-_Ciudad_de_General_Pacheco_(Partido_de_Tigre).jpg",
+     "credito": "Foto: Gabriel Sozzi / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "Gral. Ángel Pacheco square, in General Pacheco, Tigre Partido, Buenos Aires Province. Bougainvillea spectabilis, with its red-purple bracts, stands out in the landscape.",
+     "licencia": "CC BY-SA 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    }
+   ],
+   "enlaces": [],
+   "relacionadas": [],
+   "verificacion": {
+    "independientes": 1,
+    "paises": [
+     "Argentina"
+    ],
+    "estatal": [],
+    "oficiales": [],
+    "agencias_citadas": [],
+    "leidas": 1
+   },
+   "fuentes": [
+    {
+     "medio": "InfoBAN (zona norte)",
+     "url": "https://www.infoban.com.ar/22/11/2026/una-motociclista-cruzo-en-rojo-y-fue-embestida-por-un-auto-en-general-pacheco-el-choque-quedo-grabado/",
+     "titulo": "Una motociclista cruzó en rojo y fue embestida por un auto en General Pacheco: el choque quedó grabado",
+     "pais": "Argentina",
+     "tipo": "Medio local",
+     "fecha": "2026-11-22T23:41:49+00:00",
+     "idioma": null,
+     "autor": "Redacción",
+     "fecha_pub": "2026-11-22T20:41:49-03:00",
+     "imagen": "https://www.infoban.com.ar/wp-content/uploads/2026/11/accidente-Pacheco-ok-e1795390790225.jpg",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 280,
+     "resumen": "El accidente ocurrió en la intersección de la avenida de los Constituyentes y Mansilla, en el barrio Las Tunas. Las cámaras de seguridad municipales registraron el impacto y dos personas que viajaban en la motocicleta fueron trasladadas al hospital de General Pacheco. Un fuerte accidente de tránsito se registró en General Pacheco, partido de Tigre, [&#8230;] La entrada Una motociclista cruzó en…"
+    }
+   ],
+   "falta": "Confirmar la identidad y la responsabilidad del conductor del automóvil involucrado en el accidente.",
+   "breve": true,
+   "volanta": "",
+   "firma": "Redacción Federal",
+   "prioridad": "normal",
+   "escalon": "ampliación"
+  },
+  {
+   "id": "20261123-0031-09",
+   "seccion": "mercosur",
+   "por_que": "Alerta naranja en Bolivia por crecidas de ríos afecta a varios departamentos del Mercosur.",
+   "titulo_tema": "Bolivia declaró la alerta naranja por crecidas de ríos en siete departamentos debido a El Niño",
+   "puntaje": 6.7,
+   "n_medios": 1,
+   "paises": [
+    "Argentina"
+   ],
+   "region": "",
+   "tema": "Sociedad",
+   "ejes": [
+    "latinoamerica"
+   ],
+   "region_mundo": "América Latina",
+   "titulos": [
+    "Senamhi emite alerta naranja ante riesgo de inundaciones en 18 municipios bolivianos",
+    "Alerta amarilla cubre 19 municipios adicionales mientras se vigilan crecidas",
+    "Gobierno moviliza recursos internacionales tras declaración de emergencia por El Niño"
+   ],
+   "bajadas": [
+    "La medida entra en vigor ese domingo y vigencia mínima de una semana",
+    "El nivel amarillo indica riesgo moderado sin amenaza inmediata de desbordes"
+   ],
+   "cuerpo_html": "<p>El Servicio Nacional de Meteorología e Hidrología de Bolivia (Senamhi) anunció el 22 de noviembre la emisión de una alerta naranja por el posible aumento del caudal de los <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/2026-11-20-nino-fuerte-parana-evacuacion-entre-rios-dots/\" title=\"Diario Federal: El Niño pone al Paraná en nivel de evacuación frente a Entre Ríos\">ríos</a> en 18 municipios de siete departamentos: La Paz, Cochabamba, Santa Cruz, Potosí, Chuquisaca, Tarija y Beni. La medida, que <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/inteligencia-artificial-entra-aulas/\" title=\"Diario Federal: La inteligencia artificial entra en las aulas: promesas y riesgos\">entra</a> en vigor ese domingo, tendrá una vigencia mínima de una semana y se debe a la influencia de El Niño.</p>\n<p>Al mismo tiempo, Senamhi puso en alerta amarilla a 19 municipios adicionales de Cochabamba, Santa Cruz, Potosí, Chuquisaca, Tarija, Pando y Beni. El nivel amarillo indica un riesgo moderado sin amenaza inmediata de desbordes. La alerta naranja, por su parte, señala una amenaza de inundaciones que llega cuando el país sigue sufriendo falta de agua.</p>\n<p>Según el Viceministerio de Defensa Civil, a finales de octubre la sequía había afectado a setenta‑ochocuatro mil doscientos diecisiete familias en seis departamentos (Oruro, La Paz, Chuquisaca, Cochabamba, Santa Cruz y Potosí) y había provocado la pérdida de más de setenta‑cinco mil cabezas de ganado.</p>\n<p>El mismo día, Senamhi declaró otra alerta naranja por temperaturas de entre treinta‑seis y cuarenta‑uno grados centígrados en Beni, Santa Cruz, Chuquisaca y Tarija, advirtiendo que tales condiciones elevan el riesgo de incendios forestales. El sábado, Defensa Civil intervino en un incendio dentro del Parque Nacional Noel Kempff Mercado, a 380 kilómetros de San Ignacio de Velasco, y otro incendio consumió treinta‑o‑ocho hectáreas de paja y arbustos nativos en el altiplano de Oruro, afectando a diez familias de pastores.</p>\n<p>Para las zonas castigadas por la sequía, el Gobierno ordenó la entrega de geomembranas y tanques de agua, así como el envío de cisternas con apoyo de las Fuerzas Armadas. Defensa Civil también entregará material a las gobernaciones para que levanten obras de defensa en las cuencas antes de las crecidas.</p>\n<p>El presidente Rodrigo Paz firmó el 31 de octubre el Decreto Supremo 5759, que declara la emergencia nacional por El Niño para el período 2026‑2027 y cubre sequías, inundaciones, heladas, granizadas, incendios y desbordes. Según Defensa Civil, la medida permitió activar cien millones de dólares del Banco Interamericano de Desarrollo (BID) y cincuenta millones de dólares del Banco Mundial.</p>\n<p>El ciclo de El Niño llega a Bolivia con los daños de la última temporada de lluvias todavía recientes. A comienzos de febrero de 2026, el viceministro de Defensa Civil, Alfredo Troche, informó que las lluvias y granizadas habían dejado noventa‑cinco mil familias afectadas, aunque la cifra completa no se publicó en la fuente original.</p>\n<p>Con la alerta naranja en vigor, las autoridades locales y regionales están reforzando la vigilancia de los ríos y la preparación de los equipos de rescate. Se espera que el gobierno continúe movilizando recursos internacionales y nacionales para mitigar los efectos de las crecidas y la sequía que persisten en el país.</p>",
+   "fotos": [
+    {
+     "url": "https://www.infobae.com/resizer/v2/FTAGKFZVCBDIHJPE7FKJ5DFBFI.jpg?auth=3f2eadee8be9fd721e12b64cf102ea087a06e712ce7088f88b35e529f11b2d5a&smart=true&width=1200&height=630&quality=85",
+     "pagina": "https://www.infobae.com/america/america-latina/2026/11/22/bolivia-declaro-la-alerta-naranja-por-crecidas-de-rios-en-siete-departamentos-debido-a-el-nino/",
+     "credito": "Foto: Infobae América",
+     "fuente": "Infobae América",
+     "descripcion": "Bolivia declaró la alerta naranja por crecidas de ríos en siete departamentos debido a El Niño",
+     "libre": false
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/FCAB_GL26C-2_2005%2C_2010_and_GT22CU-3_2402_Salar_de_Carcote.jpg/1280px-FCAB_GL26C-2_2005%2C_2010_and_GT22CU-3_2402_Salar_de_Carcote.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:FCAB_GL26C-2_2005,_2010_and_GT22CU-3_2402_Salar_de_Carcote.jpg",
+     "credito": "Foto: Kabelleger / David Gubler / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "FCAB GL26C-2 2005, 2010 and GT22CU-3 2402 climb the pass between Salar de Carcote and Salar de Ascotan. The train hauls lead ore from the San Cristobal mine in Bolivia to Antofagasta in Chile.",
+     "licencia": "CC BY-SA 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Lama_glama_Laguna_Colorada_2.jpg/1280px-Lama_glama_Laguna_Colorada_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Lama_glama_Laguna_Colorada_2.jpg",
+     "credito": "Foto: kallerna / Wikimedia Commons (CC BY-SA 4.0)",
+     "descripcion": "A female llama (Lama glama) with her cria at Laguna Colorada, Reserva Nacional de Fauna Andina Eduardo Avaroa, Bolivia.",
+     "licencia": "CC BY-SA 4.0",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/3_examples_of_internal_climate_variability_%281950-2012%29%2C_the_El_Ni%C3%B1o_%E2%80%93_Southern_Oscillation%2C_the_Arctic_Oscillation%2C_and_the_North_Atlantic_Oscillation_%28NOAA%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:3_examples_of_internal_climate_variability_(1950-2012),_the_El_Ni%C3%B1o_%E2%80%93_Southern_Oscillation,_the_Arctic_Oscillation,_and_the_North_Atlantic_Oscillation_(NOAA).png",
+     "credito": "Foto: NOAA / Wikimedia Commons (Public domain)",
+     "descripcion": "This image shows three examples of internal climate variability between 1950 and 2012: the El Niño–Southern oscillation, the Arctic oscillation, and the North Atlantic oscillation (see the Intergovern",
+     "licencia": "Public domain",
+     "fuente": "Wikimedia Commons",
+     "libre": true
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/El_Ni%C3%B1o_in_2016.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:El_Ni%C3%B1o_in_2016.png",
+     "credito": "Foto: NOAA image / Wikimedia Commons (Public domain)",
+     "descripcion": "El Niño in 2016.",
+     "licencia": "Public domain",
      "fuente": "Wikimedia Commons",
      "libre": true
     }
    ],
    "enlaces": [
     {
-     "url": "https://www.diariofederal.com.ar/articulo/2026-11-06-santiago-pena-detenido-fiscalia-ueno-bank/",
+     "url": "https://www.diariofederal.com.ar/articulo/2026-11-20-nino-fuerte-parana-evacuacion-entre-rios-dots/",
      "clase": "interno",
-     "titulo": "Diario Federal: Santiago Peña quedó detenido y quedó a disposición de la Fiscalía",
-     "palabra": "Fiscal"
+     "titulo": "Diario Federal: El Niño pone al Paraná en nivel de evacuación frente a Entre Ríos",
+     "palabra": "ríos"
+    },
+    {
+     "url": "https://www.diariofederal.com.ar/articulo/inteligencia-artificial-entra-aulas/",
+     "clase": "interno",
+     "titulo": "Diario Federal: La inteligencia artificial entra en las aulas: promesas y riesgos",
+     "palabra": "entra"
     }
    ],
    "relacionadas": [
     {
-     "titulo": "Santiago Peña quedó detenido y quedó a disposición de la Fiscalía",
-     "url": "https://www.diariofederal.com.ar/articulo/2026-11-06-santiago-pena-detenido-fiscalia-ueno-bank/"
+     "titulo": "El Niño pone al Paraná en nivel de evacuación frente a Entre Ríos",
+     "url": "https://www.diariofederal.com.ar/articulo/2026-11-20-nino-fuerte-parana-evacuacion-entre-rios-dots/"
+    },
+    {
+     "titulo": "La inteligencia artificial entra en las aulas: promesas y riesgos",
+     "url": "https://www.diariofederal.com.ar/articulo/inteligencia-artificial-entra-aulas/"
     }
    ],
    "verificacion": {
@@ -458,272 +549,203 @@
    },
    "fuentes": [
     {
-     "medio": "Río Negro",
-     "url": "https://www.rionegro.com.ar/policiales/investigan-la-muerte-de-una-mujer-de-92-anos-en-cipolletti-y-hay-un-detenido-como-avanza-la-causa-4808654/",
-     "titulo": "Investigan la muerte de una mujer de 92 años en Cipolletti y hay un detenido: cómo avanza la causa",
+     "medio": "Infobae América",
+     "url": "https://www.infobae.com/america/america-latina/2026/11/22/bolivia-declaro-la-alerta-naranja-por-crecidas-de-rios-en-siete-departamentos-debido-a-el-nino/",
+     "titulo": "Bolivia declaró la alerta naranja por crecidas de ríos en siete departamentos debido a El Niño",
      "pais": "Argentina",
-     "tipo": "Medio regional",
-     "fecha": "2026-11-22T14:59:02+00:00",
-     "idioma": "castellano",
-     "autor": null,
-     "fecha_pub": "2026-11-22T11:59:02-03:00",
-     "imagen": "https://www.rionegro.com.ar/wp-content/uploads/2026/11/rn-2026-11-09T233256.804.jpg?w=1200&h=630&crop=1&resize=1200,630",
+     "tipo": "Medio",
+     "fecha": "2026-11-22T22:36:46+00:00",
+     "idioma": null,
+     "autor": "INFOBAE",
+     "fecha_pub": "2026-11-22T22:36:46.6Z",
+     "imagen": "https://www.infobae.com/resizer/v2/FTAGKFZVCBDIHJPE7FKJ5DFBFI.jpg?auth=3f2eadee8be9fd721e12b64cf102ea087a06e712ce7088f88b35e529f11b2d5a&smart=true&width=1200&height=630&quality=85",
      "agencias": [],
      "oficiales": [],
      "leida": true,
-     "palabras": 461,
-     "resumen": null
+     "palabras": 604,
+     "resumen": "El servicio meteorológico prevé subidas de caudal en 18 municipios a partir de este domingo, en momentos en que buena parte del país sigue sufriendo falta de agua"
     }
    ],
-   "falta": "Confirmar la identidad y antecedentes del detenido antes de publicar la audiencia de formulación de cargos.",
-   "volanta": "Cipolletti",
+   "falta": "Confirmar la cifra exacta de familias afectadas por las lluvias y granizadas en febrero de 2026, ya que la fuente no la publica completa.",
+   "volanta": "Inundaciones y sequía",
    "firma": "Emilio Lahitte",
    "prioridad": "normal",
    "escalon": "nota completa"
   },
   {
-   "id": "20261122-1643-08",
-   "seccion": "mercosur",
-   "por_que": "El triunfo de Brasil en la Billie Jean King Cup fortalece el deporte regional y la rivalidad deportiva con Argentina.",
-   "titulo_tema": "Brasil vence Canadá e volta à elite da Billie Jean King Cup",
-   "puntaje": 7.6,
-   "n_medios": 1,
-   "paises": [
-    "Brasil"
-   ],
-   "region": "",
-   "tema": "Deporte",
-   "ejes": [
-    "brasil"
-   ],
-   "region_mundo": "América Latina",
-   "titulos": [
-    "Brasil vence a Canadá y asegura cupo en Qualifiers 2027",
-    "Naná lidera triunfo de Brasil sobre Canadá en Billie Jean King Cup",
-    "Canadá eliminado por Brasil en histórico encuentro de tenis femenino"
-   ],
-   "bajadas": [
-    "El equipo femenino brasileño ganó 3-2 en Vitória, marcando la primera vez que elimina a Canadá en la historia de la competición.",
-    "La victoria se consolidó gracias a la actuación de la joven Naná, quien venció a Clemence Mercier en dos sets sin perder."
-   ],
-   "cuerpo_html": "<p>El 21 de noviembre, en la ciudad de Vitória, el equipo femenino de tenis de Brasil venció a Canadá con un marcador de tres a dos, <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/seleccion-asegura-billete-mundial/\" title=\"Diario Federal: La selección asegura su billete para el Mundial\">asegurando</a> su ingreso a los Qualifiers de la Billie Jean King Cup 2027. La victoria se consolidó gracias a la actuación de la joven Naná, quien derrotó a Clemence Mercier, número 970 del ranking mundial, en dos sets sin perder.</p>\n<p>La eliminación del país norteamericano marca la <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/remontada-historica-primera-jornada/\" title=\"Diario Federal: Remontada histórica en la primera jornada de liga\">primera</a> vez que Brasil elimina a Canadá en la historia de la competición. Según la Agencia Brasil, el equipo canadiense mantenía un 100 % de éxito en los doce encuentros previos contra la selección brasileña.</p>\n<p>El triunfo se logró en la sede de la Copa del Mundo de tenis femenino, donde el Brasil, clasificado en la posición 19 del ranking mundial, superó a la octava posición canadiense. La clasificación se confirmó con la intervención de Nauhany Silva, de 16 años, quien expresó su emoción tras el resultado.</p>\n<p>Con la victoria, el grupo brasileño se prepara para la fase de Qualifiers, que se desarrollará en dos etapas entre abril y noviembre de 2027. El objetivo será lograr una posición entre las ocho mejores selecciones del mundo.</p>\n<p>El equipo argentino, que no participó en el encuentro, observa con atención el desempeño de Brasil, pues la Copa del Mundo de tenis femenino puede influir en las proyecciones de la región.</p>",
-   "fotos": [
-    {
-     "url": "https://imagens.ebc.com.br/0xgAY-_Y7izDCF-sMC0D-uGghjs=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/22/bjkg_201126145552_foto_caio_grac_a-green_filmes.jpg?itok=8OUZ75Ti",
-     "pagina": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/brasil-vence-canada-e-volta-elite-da-billie-jean-king-cup",
-     "credito": "Foto: Agência Brasil",
-     "fuente": "Agência Brasil",
-     "descripcion": "Brasil vence Canadá e volta à elite da Billie Jean King Cup",
-     "libre": false
-    }
-   ],
-   "enlaces": [
-    {
-     "url": "https://www.diariofederal.com.ar/articulo/seleccion-asegura-billete-mundial/",
-     "clase": "interno",
-     "titulo": "Diario Federal: La selección asegura su billete para el Mundial",
-     "palabra": "asegurando"
-    },
-    {
-     "url": "https://www.diariofederal.com.ar/articulo/remontada-historica-primera-jornada/",
-     "clase": "interno",
-     "titulo": "Diario Federal: Remontada histórica en la primera jornada de liga",
-     "palabra": "primera"
-    }
-   ],
-   "relacionadas": [
-    {
-     "titulo": "La selección asegura su billete para el Mundial",
-     "url": "https://www.diariofederal.com.ar/articulo/seleccion-asegura-billete-mundial/"
-    },
-    {
-     "titulo": "Remontada histórica en la primera jornada de liga",
-     "url": "https://www.diariofederal.com.ar/articulo/remontada-historica-primera-jornada/"
-    }
-   ],
-   "verificacion": {
-    "independientes": 1,
-    "paises": [
-     "Brasil"
-    ],
-    "estatal": [],
-    "oficiales": [
-     "https://falabr.cgu.gov.br/Login/Identificacao/Identificacao.aspx?idFormulario=4&tipo=1&ReturnUrl=/publico/Manifestacao/RegistrarManifestacao.aspx%3FidFormulario%3D4%26tipo%3D1%26origem%3Didp%26modo%3D",
-     "https://www.gov.br/mec/pt-br/centrais-de-conteudo/canal-educacao",
-     "https://www.gov.br/mec/pt-br/centrais-de-conteudo/canal-libras",
-     "https://www.gov.br/pt-br/orgaos/empresa-brasil-de-comunicacao-s-a"
-    ],
-    "agencias_citadas": [],
-    "leidas": 1
-   },
-   "fuentes": [
-    {
-     "medio": "Agência Brasil",
-     "url": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/brasil-vence-canada-e-volta-elite-da-billie-jean-king-cup",
-     "titulo": "Brasil vence Canadá e volta à elite da Billie Jean King Cup",
-     "pais": "Brasil",
-     "tipo": "Agencia pública",
-     "fecha": "2026-11-22T14:15:00+00:00",
-     "idioma": "portugués",
-     "autor": null,
-     "fecha_pub": "2026-11-22T14:15:00-03:00",
-     "imagen": "https://imagens.ebc.com.br/0xgAY-_Y7izDCF-sMC0D-uGghjs=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/22/bjkg_201126145552_foto_caio_grac_a-green_filmes.jpg?itok=8OUZ75Ti",
-     "agencias": [],
-     "oficiales": [
-      "https://www.gov.br/pt-br/orgaos/empresa-brasil-de-comunicacao-s-a",
-      "https://falabr.cgu.gov.br/Login/Identificacao/Identificacao.aspx?idFormulario=4&tipo=1&ReturnUrl=/publico/Manifestacao/RegistrarManifestacao.aspx%3FidFormulario%3D4%26tipo%3D1%26origem%3Didp%26modo%3D",
-      "https://www.gov.br/mec/pt-br/centrais-de-conteudo/canal-educacao",
-      "https://www.gov.br/mec/pt-br/centrais-de-conteudo/canal-libras"
-     ],
-     "leida": true,
-     "palabras": 182,
-     "resumen": "Com vitória decisiva da jovem Naná, equipe brasileira supera o Canadá e se classifica para os Qualifiers da Copa do Mundo de tênis feminino em 2027. Pela primeira vez na história, a equipe brasileira eliminou o Canadá na Billie Jean King Cup (Copa do Mundo do tênis feminino). Com o placar de 3 a 2, em Vitória (ES), o Brasil garantiu vaga na disputa dos Qualifiers da BJK Cup em 2027. Notícias…"
-    }
-   ],
-   "falta": "Confirmar la fecha exacta de inicio de los Qualifiers de la Billie Jean King Cup 2027.",
-   "breve": true,
-   "volanta": "Copa del Mundo de tenis",
-   "firma": "Emilio Lahitte",
-   "prioridad": "normal",
-   "escalon": "ampliación"
-  },
-  {
-   "id": "20261122-1643-13",
+   "id": "20261123-0031-12",
    "seccion": "mundo",
-   "por_que": "El ataque ruso a un edificio de viviendas en Ucrania genera preocupación por la seguridad internacional y las implicaciones geopolíticas.",
-   "titulo_tema": "Un ataque ruso destruyó parcialmente un edificio de viviendas en Ucrania: hay 14 desaparecidos",
-   "puntaje": 20.5,
+   "por_que": "Amenaza de Trump contra Irán afecta la estabilidad regional y las relaciones internacionales.",
+   "titulo_tema": "Donald Trump amenazó con volver a atacar Irán si no hay un acuerdo por Ormuz",
+   "puntaje": 15.9,
    "n_medios": 4,
    "paises": [
-    "Alemania",
-    "Argentina",
-    "Francia"
+    "Argentina"
    ],
    "region": "",
    "tema": "Política",
    "ejes": [
+    "industria",
     "internacional"
    ],
-   "region_mundo": "Europa",
+   "region_mundo": "América Latina",
    "titulos": [
-    "Ataque ruso con drones deja muerto y heridos en edificio de Dymer",
-    "Zelenski confirma búsqueda de 14 desaparecidos tras dron en Dymer",
-    "Rescate en Dymer: nueve evacuados, cuerpo recuperado tras ataque ruso"
+    "Trump anuncia reanudación de ataques a Irán en 2027 si no se logra acuerdo en Ormuz",
+    "Trump amenaza con ataques militares contra Irán a partir de 2027 por falta de consenso en Ormuz",
+    "Trump declara que atacará a Irán en 2027 si no se alcanza acuerdo en Ormuz"
    ],
    "bajadas": [
-    "El edificio de cinco plantas sufrió daños desde la primera hasta la quinta planta, según el DSNS.",
-    "El presidente Zelenski pidió autorización a EE. UU. para enviar misiles Patriot tras el ataque."
+    "La declaración se hizo durante una entrevista a Fox News y calificó las negociaciones con Teherán de “tonterías”",
+    "El presidente también señaló que un ataque iraní a una instalación en Bahréin dejó dos heridos y que el bloqueo naval de EE. UU. continúa"
    ],
-   "cuerpo_html": "<p>Un ataque ruso con <a class=\"interno\" href=\"https://www.diariofederal.com.ar/articulo/ucrania-derriba-puente-de-crimea-con-drones-y-misiles/\" title=\"Diario Federal: Ucrania derriba puente de Crimea con drones y misiles\">drones</a> sobre el edificio residencial de cinco plantas de Dymer, al norte de Kiev, dejó al menos un muerto y tres heridos, y generó la búsqueda de catorce personas desaparecidas bajo los escombros. El incidente ocurrió la noche del 21 de noviembre, según la información difundida por el Servicio Estatal de Emergencias de Ucrania (DSNS) y el presidente Volodímir Zelenski.</p>\n<p>Dymer, una localidad de la región de Kiev, se encuentra a unos 30 kilómetros al norte de la capital. El edificio, de altura de cinco plantas, sufrió daños estructurales desde la primera hasta la quinta planta, según el DSNS. Los equipos de rescate lograron evacuar a nueve personas y controlar el incendio, pero continúan las labores de remoción de escombros y la búsqueda de posibles sobrevivientes.</p>\n<p>El presidente Zelenski, en un mensaje publicado en su cuenta de Telegram, afirmó que catorce personas no responden a las llamadas y que podrían estar atrapadas bajo los escombros. “Es posible que aún haya personas atrapadas bajo los escombros”, agregó. En el mismo comunicado, pidió a Estados Unidos la autorización para enviar misiles Patriot al país.</p>\n<p>El jefe de la Administración Militar Regional de Kiev, Timur Tkachenko, confirmó que se recuperó el cuerpo de una persona entre los escombros y que tres personas resultaron heridas. Según Tkachenko, el ataque fue causado por un dron ruso que impactó el edificio.</p>\n<p>El ataque forma parte de una ofensiva rusa que ha lanzado más de 2.700 drones, 1.460 bombas aéreas y 165 misiles en la última semana, según Zelenski. La Fuerza Aérea ucraniana reportó haber neutralizado 161 drones del tipo Shahed, aunque se registraron impactos en 18 lugares del país.</p>\n<p>El Servicio Estatal de Emergencias de Ucrania (DSNS) señaló que el impacto destruyó parte de la estructura del edificio, desde la primera hasta la quinta planta. Los equipos de rescate lograron evacuar a nueve personas y controlar el incendio, mientras continúan las tareas de remoción de escombros y búsqueda de posibles sobrevivientes.</p>\n<p>El ataque también se enmarca en la creciente colaboración de Rusia con Corea del Norte, según Zelenski, quien denunció el uso de misiles balísticos norcoreanos y la intención de mejorar su precisión. El presidente insistió en la necesidad de reforzar los sistemas de defensa aérea del país para proteger a la población.</p>\n<p>La situación sigue en evolución. Los equipos de rescate continúan las labores de búsqueda y evacuación, mientras la comunidad internacional observa la intensificación de los ataques rusos en la región de Kiev.</p>",
+   "cuerpo_html": "<p>El presidente de Estados Unidos, Donald Trump, anunció este domingo que reanudará ataques militares contra Irán a partir de 2027 si no se llega a un acuerdo sobre el transporte en el estrecho de Ormuz. La declaración se hizo en una entrevista a Fox News, donde calificó de inútiles las conversaciones diplomáticas con Teherán y acusó a los negociadores iraníes de dilatar el proceso.</p>\n<p>Según <a class=\"externo\" href=\"https://www.ambito.com/mundo/donald-trump-amenazo-volver-atacar-iran-si-no-hay-un-acuerdo-ormuz-n6348142\" title=\"Fuente: Ámbito\">Ámbito</a>, Trump aseguró que está dispuesto a ordenar ataques militares contra Irán a comienzos de 2027 si ambos países no logran un acuerdo por el estrecho de Ormuz. La fuente añadió que el mandatario describió a los funcionarios de Teherán como “expertos en alargar” las negociaciones y que “hablan constantemente, no hacen otra cosa que hablar, pero todo son tonterías”.</p>\n<p>La Nación informó que el presidente calificó las negociaciones con Teherán de “tonterías” y que un ataque iraní contra una instalación industrial en Bahréin dejó dos heridos. La fuente también señaló que las tensiones se intensifican mientras Estados Unidos mantiene un bloqueo naval de los puertos iraníes.</p>\n<p><a class=\"externo\" href=\"https://www.pagina12.com.ar/2026/11/22/trump-sin-un-acuerdo-reanudo-los-ataques-contra-iran-en-2027/\" title=\"Fuente: Página/12\">Página/12</a> reportó que Trump advirtió que reanudará ataques militares contra Teherán si no se alcanza un acuerdo y criticó las negociaciones actuales. La publicación citó al mandatario diciendo: “Sin un acuerdo, reanudo los ataques contra Irán en 2027”.</p>\n<p><a class=\"externo\" href=\"https://www.clarin.com/mundo/donald-trump-aseguro-dispuesto-volver-atacar-iran-llega-acuerdo-estrecho-ormuz_0_w7knvdotCz.html\" title=\"Fuente: Clarín\">Clarín</a> añadió que Trump dijo que está dispuesto a volver a atacar Irán si no se llega a un acuerdo por el estrecho de Ormuz y que las conversaciones diplomáticas son “inútiles”. La fuente también incluyó la frase de Trump: “Ahora son más agresivos que antes de las elecciones”, refiriéndose a las negociaciones previas a las elecciones legislativas de noviembre.</p>\n<p>El contexto internacional muestra que el estrecho de Ormuz es una ruta crítica para el transporte de petróleo. La disputa entre Estados Unidos e Irán ha escalado en los últimos meses, con ataques y bloqueos que afectan a la región y al mercado petrolero mundial.</p>\n<p>En cuanto a las reacciones, el gobierno iraní no ha emitido una respuesta oficial a las declaraciones de Trump. Por su parte, la comunidad internacional ha llamado a la calma y a la continuación de los diálogos diplomáticos para evitar un conflicto mayor.</p>\n<p>Lo que sigue es la continuación de las negociaciones entre ambos países, con la posibilidad de que se intensifiquen los bloqueos y las tensiones en el Golfo Pérsico. El gobierno de Estados Unidos mantiene su postura de que la falta de acuerdo puede llevar a un aumento de las hostilidades en la región.</p>",
    "fotos": [
     {
-     "url": "https://images.euronews.com/articles/stories/10/00/32/58/1200x675_cmsv2_bda95ddb-450a-51a2-ad8a-c9b1d73df349-10003258.jpg",
-     "pagina": "https://es.euronews.com/2026/11/22/ucrania-15-desaparecidos-y-un-muerto-tras-un-ataque-con-un-dron-ruso",
-     "credito": "Foto: Euronews Español",
-     "fuente": "Euronews Español",
-     "descripcion": "Ucrania: 15 desaparecidos y un muerto tras impactar un dron ruso en un edificio de viviendas",
+     "url": "https://media.ambito.com/p/f24fcb2563b1e0f5da1b76aafd208c82/adjuntos/239/imagenes/043/721/0043721122/trump-frente-puno.jpeg",
+     "pagina": "https://www.ambito.com/mundo/donald-trump-amenazo-volver-atacar-iran-si-no-hay-un-acuerdo-ormuz-n6348142",
+     "credito": "Foto: Ámbito",
+     "fuente": "Ámbito",
+     "descripcion": "Donald Trump amenazó con volver a atacar Irán si no hay un acuerdo por Ormuz",
      "libre": false
     },
     {
-     "url": "https://alpha-app.tadevel-cdn.com/hostname/noticiasargentinas.com/api/v1/image/article/6b02d4214cb99a4fdb5a9bbe/facebook?v=4c6ec9477f9c4ec452c1c9f92f8aff1c&s=5a6e5cc4597d2b5158d7dce2854165f8",
-     "pagina": "https://noticiasargentinas.com/internacionales/un-ataque-ruso-destruyo-parcialmente-un-edificio-de-viviendas-en-ucrania--hay-14-desaparecidos_a6b02d4214cb99a4fdb5a9bbe",
-     "credito": "Foto: Noticias Argentinas",
-     "fuente": "Noticias Argentinas",
-     "descripcion": "Un ataque ruso destruyó parcialmente un edificio de viviendas en Ucrania: hay 14 desaparecidos",
+     "url": "https://www.lanacion.com.ar/resizer/v2/una-mujer-camina-junto-a-imagenes-del-fallecido-QLMNRJQLL5D2LDR54OYMLNLSOA.JPG?auth=0761aeb39a33c1ddce98db7a9a77d51dc748eba5a79c8c6ef317e4b68268e42e&width=1200&height=800&quality=70&smart=true",
+     "pagina": "https://www.lanacion.com.ar/el-mundo/trump-amenaza-con-nuevos-ataques-contra-iran-mientras-se-intensifican-los-bombardeos-en-el-golfo-nid22112026/",
+     "credito": "Foto: La Nación",
+     "fuente": "La Nación",
+     "descripcion": "Trump amenaza con nuevos ataques contra Irán mientras se intensifican los bombardeos en el Golfo Pérsico",
      "libre": false
+    },
+    {
+     "url": "https://www.pagina12.com.ar/resizer/v2/3EDIYUORC5CPXHAQKYLYIXISAE.jpg?smart=true&auth=a7b8418dab8dec516dfd993a2af6ad094be3c08968b007722ec5f6909027600b&width=1200&height=630",
+     "pagina": "https://www.pagina12.com.ar/2026/11/22/trump-sin-un-acuerdo-reanudo-los-ataques-contra-iran-en-2027/",
+     "credito": "Foto: Página/12",
+     "fuente": "Página/12",
+     "descripcion": "Trump: “Sin un acuerdo, reanudo los ataques contra Irán en 2027”",
+     "libre": false
+    },
+    {
+     "url": "https://www.clarin.com/img/2026/11/22/RzzZLzATy_2000x1500__1.jpg",
+     "pagina": "https://www.clarin.com/mundo/donald-trump-aseguro-dispuesto-volver-atacar-iran-llega-acuerdo-estrecho-ormuz_0_w7knvdotCz.html",
+     "credito": "Foto: Clarín",
+     "fuente": "Clarín",
+     "descripcion": "Donald Trump aseguró que está dispuesto a volver a atacar Irán si no se llega a un acuerdo por el estrecho de Ormuz",
+     "libre": false
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/1280px-Donald_Trump_official_portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Donald_Trump_official_portrait.jpg",
+     "credito": "Foto: Shealeah Craighead / Wikimedia Commons (Public domain)",
+     "descripcion": "President Donald Trump poses for his official portrait at The White House, in Washington, D.C., on Friday, October 6, 2017.  (Official White House Photo by Shealah Craighead)",
+     "licencia": "Public domain",
+     "fuente": "Wikimedia Commons",
+     "libre": true
     }
    ],
    "enlaces": [
     {
-     "url": "https://www.diariofederal.com.ar/articulo/ucrania-derriba-puente-de-crimea-con-drones-y-misiles/",
-     "clase": "interno",
-     "titulo": "Diario Federal: Ucrania derriba puente de Crimea con drones y misiles",
-     "palabra": "drones"
-    }
-   ],
-   "relacionadas": [
+     "url": "https://www.ambito.com/mundo/donald-trump-amenazo-volver-atacar-iran-si-no-hay-un-acuerdo-ormuz-n6348142",
+     "clase": "externo",
+     "titulo": "Fuente: Ámbito",
+     "palabra": "Ámbito"
+    },
     {
-     "titulo": "Ucrania derriba puente de Crimea con drones y misiles",
-     "url": "https://www.diariofederal.com.ar/articulo/ucrania-derriba-puente-de-crimea-con-drones-y-misiles/"
+     "url": "https://www.pagina12.com.ar/2026/11/22/trump-sin-un-acuerdo-reanudo-los-ataques-contra-iran-en-2027/",
+     "clase": "externo",
+     "titulo": "Fuente: Página/12",
+     "palabra": "Página/12"
+    },
+    {
+     "url": "https://www.clarin.com/mundo/donald-trump-aseguro-dispuesto-volver-atacar-iran-llega-acuerdo-estrecho-ormuz_0_w7knvdotCz.html",
+     "clase": "externo",
+     "titulo": "Fuente: Clarín",
+     "palabra": "Clarín"
     }
    ],
+   "relacionadas": [],
    "verificacion": {
     "independientes": 4,
     "paises": [
-     "Alemania",
-     "Argentina",
-     "Francia"
+     "Argentina"
     ],
     "estatal": [],
     "oficiales": [],
     "agencias_citadas": [],
-    "leidas": 1
+    "leidas": 2
    },
    "fuentes": [
     {
-     "medio": "France 24 Español",
-     "url": "https://www.france24.com/es/europa/20261122-en-directo-ucrania-busca-14-desaparecidos-tras-un-ataque-ruso-contra-un-edificio-cerca-de-kiev",
-     "titulo": "En directo: Ucrania busca 14 desaparecidos tras un ataque ruso contra un edificio cerca de Kiev",
-     "pais": "Francia",
-     "tipo": "Medio público",
-     "fecha": "2026-11-22T13:30:05+00:00",
+     "medio": "Ámbito",
+     "url": "https://www.ambito.com/mundo/donald-trump-amenazo-volver-atacar-iran-si-no-hay-un-acuerdo-ormuz-n6348142",
+     "titulo": "Donald Trump amenazó con volver a atacar Irán si no hay un acuerdo por Ormuz",
+     "pais": "Argentina",
+     "tipo": "Medio",
+     "fecha": "2026-11-22T23:41:58+00:00",
      "idioma": "castellano",
-     "leida": false,
-     "error": "HTTP Error 403: Forbidden",
-     "imagen": null,
-     "resumen": "Un ataque ruso contra un edificio residencial en Dymer, al norte de Kiev, dejó al menos un muerto y tres heridos, mientras los equipos de rescate buscan a posibles víctimas bajo los escombros. Volodímir Zelenski informó sobre 14 personas sin localizar y pidió a Estados Unidos autorizar el envío de misiles para los sistemas Patriot."
+     "autor": "+ Agregar ámbito en",
+     "fecha_pub": "2026-11-22T20:41:58-03:00",
+     "imagen": "https://media.ambito.com/p/f24fcb2563b1e0f5da1b76aafd208c82/adjuntos/239/imagenes/043/721/0043721122/trump-frente-puno.jpeg",
+     "agencias": [],
+     "oficiales": [],
+     "leida": true,
+     "palabras": 67,
+     "resumen": "El Presidente estadounidense advirtió que podría ordenar nuevas operaciones militares después de Año Nuevo. Cuestionó las negociaciones con Teherán y desafió al régimen iraní a poner a prueba el bloqueo naval."
     },
     {
-     "medio": "Euronews Español",
-     "url": "https://es.euronews.com/2026/11/22/ucrania-15-desaparecidos-y-un-muerto-tras-un-ataque-con-un-dron-ruso",
-     "titulo": "Ucrania: 15 desaparecidos y un muerto tras impactar un dron ruso en un edificio de viviendas",
-     "pais": "Francia",
+     "medio": "La Nación",
+     "url": "https://www.lanacion.com.ar/el-mundo/trump-amenaza-con-nuevos-ataques-contra-iran-mientras-se-intensifican-los-bombardeos-en-el-golfo-nid22112026/",
+     "titulo": "Trump amenaza con nuevos ataques contra Irán mientras se intensifican los bombardeos en el Golfo Pérsico",
+     "pais": "Argentina",
      "tipo": "Medio",
-     "fecha": "2026-11-22T12:34:02+00:00",
+     "fecha": "2026-11-22T22:57:36+00:00",
      "idioma": null,
-     "autor": "Nathan Rennolds",
-     "fecha_pub": "2026-11-22 13:34:02 +01:00",
-     "imagen": "https://images.euronews.com/articles/stories/10/00/32/58/1200x675_cmsv2_bda95ddb-450a-51a2-ad8a-c9b1d73df349-10003258.jpg",
+     "autor": "LA NACION",
+     "fecha_pub": "2026-11-22T22:57:36.461Z",
+     "imagen": "https://www.lanacion.com.ar/resizer/v2/una-mujer-camina-junto-a-imagenes-del-fallecido-QLMNRJQLL5D2LDR54OYMLNLSOA.JPG?auth=0761aeb39a33c1ddce98db7a9a77d51dc748eba5a79c8c6ef317e4b68268e42e&width=1200&height=800&quality=70&smart=true",
      "agencias": [],
      "oficiales": [],
      "leida": false,
      "palabras": 0,
-     "resumen": "Timur Tkachenko, jefe de la Administración Militar Regional de Kiev, dijo que se había recuperado el cuerpo de una persona de entre los escombros y que tres personas habían resultado heridas."
+     "resumen": "El presidente estadounidense calificó de “tonterías” las negociaciones con Teherán; un ataque iraní contra una instalación industrial en Bahréin dejó dos heridos"
     },
     {
-     "medio": "Noticias Argentinas",
-     "url": "https://noticiasargentinas.com/internacionales/un-ataque-ruso-destruyo-parcialmente-un-edificio-de-viviendas-en-ucrania--hay-14-desaparecidos_a6b02d4214cb99a4fdb5a9bbe",
-     "titulo": "Un ataque ruso destruyó parcialmente un edificio de viviendas en Ucrania: hay 14 desaparecidos",
+     "medio": "Página/12",
+     "url": "https://www.pagina12.com.ar/2026/11/22/trump-sin-un-acuerdo-reanudo-los-ataques-contra-iran-en-2027/",
+     "titulo": "Trump: “Sin un acuerdo, reanudo los ataques contra Irán en 2027”",
      "pais": "Argentina",
-     "tipo": "Agencia privada",
-     "fecha": "2026-11-22T11:39:50+00:00",
+     "tipo": "Medio",
+     "fecha": "2026-11-22T22:52:30+00:00",
+     "idioma": "castellano",
+     "autor": "Página 12",
+     "fecha_pub": "2026-11-22T23:00:20.908Z",
+     "imagen": "https://www.pagina12.com.ar/resizer/v2/3EDIYUORC5CPXHAQKYLYIXISAE.jpg?smart=true&auth=a7b8418dab8dec516dfd993a2af6ad094be3c08968b007722ec5f6909027600b&width=1200&height=630",
+     "agencias": [],
+     "oficiales": [],
+     "leida": false,
+     "palabras": 0,
+     "resumen": "El presidente estadounidense advirtió que reanudará ataques militares contra Teherán si no se alcanza un acuerdo y criticó las negociaciones actuales."
+    },
+    {
+     "medio": "Clarín",
+     "url": "https://www.clarin.com/mundo/donald-trump-aseguro-dispuesto-volver-atacar-iran-llega-acuerdo-estrecho-ormuz_0_w7knvdotCz.html",
+     "titulo": "Donald Trump aseguró que está dispuesto a volver a atacar Irán si no se llega a un acuerdo por el estrecho de Ormuz",
+     "pais": "Argentina",
+     "tipo": "Medio",
+     "fecha": "2026-11-22T21:22:25+00:00",
      "idioma": null,
-     "autor": "Agencia Noticias Argentinas",
-     "fecha_pub": "2026-11-22T11:39:50.265Z",
-     "imagen": "https://alpha-app.tadevel-cdn.com/hostname/noticiasargentinas.com/api/v1/image/article/6b02d4214cb99a4fdb5a9bbe/facebook?v=4c6ec9477f9c4ec452c1c9f92f8aff1c&s=5a6e5cc4597d2b5158d7dce2854165f8",
+     "autor": "Redacción Clarín",
+     "fecha_pub": "2026-11-22T21:22:25.000Z",
+     "imagen": "https://www.clarin.com/img/2026/11/22/RzzZLzATy_2000x1500__1.jpg",
      "agencias": [],
      "oficiales": [],
      "leida": true,
-     "palabras": 812,
-     "resumen": "El bombardeo con drones ocurrió en la localidad de Dimer, en la región de Kiev."
-    },
-    {
-     "medio": "DW Español",
-     "url": "https://www.dw.com/es/ataque-ruso-provoca-derrumbe-parcial-de-edificio-en-la-región-de-kiev/a-80013001?maca=spa-rss-sp-all-1122-xml-mrss",
-     "titulo": "Ataque ruso provoca derrumbe parcial de edificio en la región de Kiev",
-     "pais": "Alemania",
-     "tipo": "Medio público",
-     "fecha": "2026-11-22T10:14:00+00:00",
-     "idioma": "castellano",
-     "leida": false,
-     "error": "'ascii' codec can't encode character '\\xf3' in position 67: ordinal not in range(128)",
-     "imagen": null,
-     "resumen": "El presidente ucraniano, Volodimir Zelenski, dice que 14 víctimas podrían estar bajo escombros."
+     "palabras": 866,
+     "resumen": "El jefe de la Casa Blanca acusó a Teherán de estirar las negociaciones. El Papa opinó sobre el conflicto y pidió por \"menos guerras\"."
     }
    ],
-   "falta": "Confirmar el número exacto de víctimas confirmadas por el DSNS y la cifra oficial de personas desaparecidas.",
-   "volanta": "Ataque en Dymer",
-   "firma": "Emilio Lahitte",
+   "falta": "Confirmar si el gobierno iraní ha emitido una respuesta oficial a las declaraciones de Trump.",
+   "volanta": "Tensiones en Ormuz",
+   "firma": "Ramiro De la Puente",
    "prioridad": "normal",
    "escalon": "nota completa"
   }
@@ -732,8 +754,8 @@
   {
    "seccion": "argentina",
    "titulo": "Máximo Kirchner asumió al frente del Congreso del PJ bonaerense tras un acuerdo con Kicillof",
-   "n_medios": 15,
-   "puntaje": 49.6,
+   "n_medios": 12,
+   "puntaje": 38.8,
    "region": "buenos-aires",
    "ejes": [
     "pj",
@@ -742,24 +764,10 @@
    "tema": "Política",
    "notas": [
     {
-     "medio": "Codigo Baires",
-     "url": "https://www.codigobaires.com.ar/2026-11-22/con-maximo-al-frente-del-congreso-el-pj-bonaerense-empieza-a-discutir-las-reglas-para-2027-252005/",
-     "titulo": "Con Máximo al frente del Congreso, el PJ bonaerense empieza a discutir las reglas para 2027",
-     "fecha": "2026-11-22T08:04:00+00:00",
-     "pais": null
-    },
-    {
      "medio": "Sitio Andino",
      "url": "https://www.sitioandino.com.ar/politica/maximo-kirchner-fue-elegido-presidente-del-congreso-del-pj-bonaerense-un-acuerdo-kicillof-n5734271",
      "titulo": "Máximo Kirchner fue elegido presidente del Congreso del PJ bonaerense tras un acuerdo con Kicillof",
      "fecha": "2026-11-22T05:06:00+00:00",
-     "pais": null
-    },
-    {
-     "medio": "neuquenpost",
-     "url": "https://neuquenpost.com/la-campora-y-kicillof-cerraron-un-acuerdo-en-medio-de-la-interna-maximo-kirchner-asumio-al-frente-del-congreso-del-pj-bonaerense/",
-     "titulo": "La Cámpora y Kicillof cerraron un acuerdo en medio de la interna: Máximo Kirchner asumió al frente del Congreso del PJ bonaerense",
-     "fecha": "2026-11-22T03:11:00+00:00",
      "pais": null
     },
     {
@@ -768,14 +776,28 @@
      "titulo": "Máximo Kirchner presidirá el Congreso del PJ bonaerense tras un acuerdo con Kicillof",
      "fecha": "2026-11-22T00:38:00+00:00",
      "pais": null
+    },
+    {
+     "medio": "El Intransigente",
+     "url": "https://elintransigente.com/2026/11/22/maximo-kirchner-kicillof-sellaron-tregua-pj-bonaerense-acordaron/",
+     "titulo": "Máximo Kirchner y Kicillof sellaron una tregua en el PJ bonaerense: qué acordaron",
+     "fecha": "2026-11-22T00:00:00+00:00",
+     "pais": null
+    },
+    {
+     "medio": "InfoBAN (zona norte)",
+     "url": "https://www.infoban.com.ar/21/11/2026/maximo-kirchner-asumio-al-frente-del-congreso-del-pj-bonaerense-tras-un-acuerdo-con-axel-kicillof/",
+     "titulo": "Máximo Kirchner asumió al frente del Congreso del PJ bonaerense tras un acuerdo con Axel Kicillof",
+     "fecha": "2026-11-21T21:35:47+00:00",
+     "pais": "Argentina"
     }
    ]
   },
   {
    "seccion": "mundo",
    "titulo": "México: capturan a 'Chapo Isidro', uno de los narcos más buscados por el FBI",
-   "n_medios": 5,
-   "puntaje": 27.4,
+   "n_medios": 6,
+   "puntaje": 33.0,
    "region": null,
    "ejes": [
     "internacional",
@@ -784,6 +806,20 @@
    ],
    "tema": "Sociedad",
    "notas": [
+    {
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/mexico/2026/11/22/en-vivo-seguridad-narcotrafico-y-crimen-en-mexico-hoy-22-de-noviembre-el-chapo-isidro-permanece-en-la-femdo-en-cdmx-tras-su-captura/",
+     "titulo": "EN VIVO | Seguridad, narcotráfico y crimen en México hoy 22 de noviembre: “El Chapo Isidro” permanece en la FEMDO en CDMX tras su captura",
+     "fecha": "2026-11-23T00:17:06+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "NYT en Español",
+     "url": "https://www.nytimes.com/es/2026/11/22/espanol/america-latina/chapo-isidro-captura.html",
+     "titulo": "Así fue como México capturó a uno de los capos de la droga más buscados",
+     "fecha": "2026-11-22T18:40:07+00:00",
+     "pais": "Estados Unidos"
+    },
     {
      "medio": "BBC Mundo",
      "url": "https://www.bbc.com/mundo/articles/c9p83kyykr73o?at_medium=RSS&at_campaign=rss",
@@ -797,28 +833,49 @@
      "titulo": "México asesta otro duro golpe al narco con la captura del Chapo Isidro",
      "fecha": "2026-11-22T09:30:00+00:00",
      "pais": "España"
-    },
-    {
-     "medio": "Sputnik Mundo",
-     "url": "https://noticiaslatam.lat/20261122/cuantas-veces-han-arrestado-al-chapo-isidro-en-mexico-1175986225.html",
-     "titulo": "¿Cuántas veces han arrestado al 'Chapo Isidro' en México?",
-     "fecha": "2026-11-22T03:00:00+00:00",
-     "pais": "Rusia"
-    },
-    {
-     "medio": "France 24 Español",
-     "url": "https://www.france24.com/es/video/20261122-m%C3%A9xico-capturan-a-chapo-isidro-uno-de-los-narcos-m%C3%A1s-buscados-por-el-fbi",
-     "titulo": "México: capturan a 'Chapo Isidro', uno de los narcos más buscados por el FBI",
-     "fecha": "2026-11-22T00:09:43+00:00",
-     "pais": "Francia"
     }
    ]
   },
   {
    "seccion": "mundo",
-   "titulo": "COP31, sin acuerdo sobre combustibles fósiles: ¿fracasó la cumbre de Turquía?",
-   "n_medios": 6,
-   "puntaje": 27.0,
+   "titulo": "Incendio en una fábrica en Indonesia: al menos tres muertos y 36 desaparecidos",
+   "n_medios": 3,
+   "puntaje": 17.7,
+   "region": null,
+   "ejes": [
+    "industria",
+    "politica"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Noticias Argentinas",
+     "url": "https://noticiasargentinas.com/internacionales/incendio-en-una-fabrica-en-indonesia--al-menos-tres-muertos-y-36-desaparecidos_a6b0365134cb99a4fdb5d5ff1",
+     "titulo": "Incendio en una fábrica en Indonesia: al menos tres muertos y 36 desaparecidos",
+     "fecha": "2026-11-22T22:38:54+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "France 24 Español",
+     "url": "https://www.france24.com/es/video/20261122-incendio-en-f%C3%A1brica-de-confiter%C3%ADa-en-indonesia-deja-al-menos-tres-muertos-y-36-desaparecidos",
+     "titulo": "Incendio en fábrica de confitería en Indonesia deja al menos tres muertos y 36 desaparecidos",
+     "fecha": "2026-11-22T16:36:52+00:00",
+     "pais": "Francia"
+    },
+    {
+     "medio": "DW Español",
+     "url": "https://www.dw.com/es/buscan-a-decenas-de-desaparecidos-tras-un-incendio-en-una-fábrica-de-dulces-en-indonesia/a-80012286?maca=spa-rss-sp-all-1122-xml-mrss",
+     "titulo": "Buscan a decenas de desaparecidos tras un incendio en una fábrica de dulces en Indonesia",
+     "fecha": "2026-11-22T05:19:00+00:00",
+     "pais": "Alemania"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Fracasa la COP31 por desacuerdos sobre combustibles fósiles",
+   "n_medios": 3,
+   "puntaje": 15.7,
    "region": null,
    "ejes": [
     "energia",
@@ -828,50 +885,50 @@
    "tema": "Agro y clima",
    "notas": [
     {
-     "medio": "Infobae",
-     "url": "https://www.infobae.com/america/agencias/2026/11/22/la-cop31-de-turquia-concluye-sin-acuerdo-final/",
-     "titulo": "La COP31 de Turquía concluye sin acuerdo final",
-     "fecha": "2026-11-22T16:30:44+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "La Nación",
-     "url": "https://www.lanacion.com.ar/sociedad/cop-31-las-negociaciones-climaticas-terminan-en-fracaso-y-sin-un-acuerdo-sobre-los-combustibles-nid22112026/",
-     "titulo": "COP 31: las negociaciones climáticas terminan en fracaso y sin un acuerdo sobre los combustibles fósiles",
-     "fecha": "2026-11-22T14:49:11+00:00",
-     "pais": "Argentina"
+     "medio": "France 24 Español",
+     "url": "https://www.france24.com/es/video/20261122-fracasa-la-cop31-por-desacuerdos-sobre-combustibles-f%C3%B3siles",
+     "titulo": "Fracasa la COP31 por desacuerdos sobre combustibles fósiles",
+     "fecha": "2026-11-22T22:25:09+00:00",
+     "pais": "Francia"
     },
     {
      "medio": "Euronews Español",
      "url": "https://es.euronews.com/2026/11/22/fracasa-la-cumbre-climatica-cop31-tras-el-rechazo-de-la-ue-al-acuerdo-final",
-     "titulo": "Decepción en la COP31: la UE rechaza el texto final por no hacer referencia a los combustibles fósiles",
+     "titulo": "Decepción generalizada tras no alcanzar un acuerdo climático en la COP31 por los combustibles fósiles",
      "fecha": "2026-11-22T14:24:58+00:00",
      "pais": "Francia"
     },
     {
-     "medio": "France 24 Español",
-     "url": "https://www.france24.com/es/video/20261122-cop31-sin-acuerdo-sobre-combustibles-f%C3%B3siles-fracas%C3%B3-la-cumbre-de-turqu%C3%ADa",
-     "titulo": "COP31, sin acuerdo sobre combustibles fósiles: ¿fracasó la cumbre de Turquía?",
-     "fecha": "2026-11-22T14:09:23+00:00",
-     "pais": "Francia"
+     "medio": "Europa Press",
+     "url": "https://www.europapress.es/sociedad/noticia-espana-rechaza-junto-ue-borrador-cop31-no-incluir-abandono-combustibles-fosiles-20261122125354.html",
+     "titulo": "España rechaza junto a la UE el borrador de la COP31 por no incluir el abandono de los combustibles fósiles",
+     "fecha": "2026-11-22T11:53:54+00:00",
+     "pais": "España"
     }
    ]
   },
   {
    "seccion": "mundo",
-   "titulo": "Marc Márquez se consagró campeón de MotoGP pese al triunfo Marco Bezzecchi en el GP de Portugal",
-   "n_medios": 2,
-   "puntaje": 11.7,
+   "titulo": "Marc Márquez gana su octavo título mundial de MotoGP",
+   "n_medios": 3,
+   "puntaje": 15.1,
    "region": null,
    "ejes": [],
    "tema": "General",
    "notas": [
     {
-     "medio": "Noticias Argentinas",
-     "url": "https://noticiasargentinas.com/deportes/marc-marquez-se-consagro-campeon-de-motogp-pese-al-triunfo-marco-bezzecchi-en-el-gp-de-portugal_a6b0304824cb99a4fdb5b9cc5",
-     "titulo": "Marc Márquez se consagró campeón de MotoGP pese al triunfo Marco Bezzecchi en el GP de Portugal",
-     "fecha": "2026-11-22T15:09:37+00:00",
-     "pais": "Argentina"
+     "medio": "DW Español",
+     "url": "https://www.dw.com/es/marc-márquez-gana-su-octavo-título-mundial-de-motogp/a-80015062?maca=spa-rss-sp-all-1122-xml-mrss",
+     "titulo": "Marc Márquez gana su octavo título mundial de MotoGP",
+     "fecha": "2026-11-22T18:53:00+00:00",
+     "pais": "Alemania"
+    },
+    {
+     "medio": "Euronews Español",
+     "url": "https://es.euronews.com/2026/11/22/marquez-mira-al-record-de-rossi-por-el-retrovisor",
+     "titulo": "Márquez conquista su octavo título de MotoGP y ya mira al récord de Rossi por el retrovisor tras",
+     "fecha": "2026-11-22T17:31:03+00:00",
+     "pais": "Francia"
     },
     {
      "medio": "Europa Press",
@@ -883,65 +940,326 @@
    ]
   },
   {
-   "seccion": "argentina",
-   "titulo": "Elevan a Naranja la alerta por tormentas fuertes para toda la provincia para el domingo",
+   "seccion": "mundo",
+   "titulo": "Investigan la muerte de una mujer de 92 años en Cipolletti: hay dos hombres demorados",
    "n_medios": 3,
-   "puntaje": 11.6,
+   "puntaje": 14.9,
+   "region": null,
+   "ejes": [],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "La Nación",
+     "url": "https://www.lanacion.com.ar/seguridad/conmocion-en-cipolletti-investigan-la-muerte-violenta-de-una-mujer-de-92-anos-y-uno-de-los-dos-nid22112026/",
+     "titulo": "Conmoción en Cipolletti: investigan la muerte violenta de una mujer de 92 años y uno de los dos detenidos es su nieto",
+     "fecha": "2026-11-22T23:57:26+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Noticias Argentinas",
+     "url": "https://noticiasargentinas.com/sociedad/investigan-la-muerte-de-una-mujer-de-92-anos-en-cipolletti--hay-dos-hombres-demorados_a6b0336664cb99a4fdb5c9269",
+     "titulo": "Investigan la muerte de una mujer de 92 años en Cipolletti: hay dos hombres demorados",
+     "fecha": "2026-11-22T18:50:04+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Europa Press",
+     "url": "https://www.europapress.es/castilla-lamancha/noticia-detenido-hombre-relacion-muerte-mujer-villarrobledo-pasado-viernes-20261122172223.html",
+     "titulo": "Detenido un hombre en relación a la muerte de una mujer en Villarrobledo el pasado viernes",
+     "fecha": "2026-11-22T16:22:23+00:00",
+     "pais": "España"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Las tarjetas de crédito y débito concentran casi 7 de cada 10 pagos en los supermercados",
+   "n_medios": 3,
+   "puntaje": 12.9,
+   "region": null,
+   "ejes": [
+    "estadisticas"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Diario Norte (Chaco)",
+     "url": "https://www.diarionorte.com/337111-las-tarjetas-concentran-casi-7-de-cada-10-pagos-en-supermercados",
+     "titulo": "Las tarjetas concentran casi 7 de cada 10 pagos en supermercados",
+     "fecha": "2026-11-23T00:06:40+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Uno Entre Ríos",
+     "url": "https://www.unoentrerios.com.ar/economia/indec-las-tarjetas-credito-y-debito-concentran-los-pagos-los-supermercados-n10293661.html",
+     "titulo": "Indec: las tarjetas de crédito y débito concentran los pagos en los supermercados",
+     "fecha": "2026-11-22T23:02:00+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "El Diario de la República (San Luis)",
+     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNSFpaYUkxdDZYbUFHUzJ1RG14RGRnNkhIUWFKS0VDU3hOci1nR18yYkRoYnJCM1pFZjQyamJtV3pOeWxqTlV1MEk0cEhMOEIyTHN5WkNkLVNwUjNGXzhEbzhjTjRoYlZkZEhwWjBoN1F4V05uT25kdkVxWWFEd2pLOUFET1V0ZEFCeUt2bzBtMWhSd0lnZUxuWUkxM0RGVnczS0JNb05saWNZMXljOUc0Y1ZWQm01YmswMExMYk84NVJSTUFtRzVDWmVTUW5LdlZJQmt0eGktWjh0M3hkRGRYQlpCYVU?oc=5",
+     "titulo": "Las tarjetas de crédito y débito concentran casi 7 de cada 10 pagos en los supermercados",
+     "fecha": "2026-11-22T19:22:53+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Donald Trump echó al jefe de Ciberseguridad de la Casa Blanca",
+   "n_medios": 3,
+   "puntaje": 12.8,
+   "region": null,
+   "ejes": [
+    "internacional",
+    "politica"
+   ],
+   "tema": "Geopolítica",
+   "notas": [
+    {
+     "medio": "Perfil",
+     "url": "https://perfil.com/internacional/quien-es-stephen-miller-el-nuevo-jefe-de-gabinete-de-la-casa-blanca-que-trump-sugirio-como-su-posible-suceso-a50-bgd-a1Gr61X9QfZr",
+     "titulo": "Quién es Stephen Miller, el nuevo jefe de gabinete de la Casa Blanca que Trump sugirió como su posible sucesor",
+     "fecha": "2026-11-22T23:07:53+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Ahora",
+     "url": "https://ahora.com.ar/internacionales/donald-trump-echo-al-jefe-de-ciberseguridad-de-la-casa-blanca",
+     "titulo": "Donald Trump echó al jefe de Ciberseguridad de la Casa Blanca",
+     "fecha": "2026-11-20T13:23:00+00:00",
+     "pais": null
+    },
+    {
+     "medio": "Infobae",
+     "url": "https://www.infobae.com/estados-unidos/2026/11/20/trump-destituyo-al-jefe-de-ciberseguridad-de-la-casa-blanca-tras-las-fallas-tecnologicas-que-afectaron-a-estados-unidos/",
+     "titulo": "Trump destituyó al jefe de ciberseguridad de la Casa Blanca tras las fallas tecnológicas que afectaron a Estados Unidos",
+     "fecha": "2026-11-20T03:29:00+00:00",
+     "pais": null
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Colapinto terminó sexto en un inolvidable GP de Las Vegas",
+   "n_medios": 3,
+   "puntaje": 12.5,
    "region": "norte-grande",
    "ejes": [],
    "tema": "Energía",
    "notas": [
     {
+     "medio": "Diario Norte (Chaco)",
+     "url": "https://www.diarionorte.com/337099-colapinto-termino-sexto-en-un-inolvidable-gp-de-las-vegas",
+     "titulo": "Colapinto terminó sexto en un inolvidable GP de Las Vegas",
+     "fecha": "2026-11-22T21:24:47+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "El Litoral (Corrientes)",
+     "url": "https://www.ellitoral.com.ar/deportes/2026-11-22-9-30-0-colapinto-se-encontro-con-su-mejor-rendimiento-y-termino-sexto-en-el-gp-de-las-vegas",
+     "titulo": "Colapinto se encontró con su mejor rendimiento y terminó sexto en el GP de Las Vegas",
+     "fecha": "2026-11-22T12:30:00+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "El Sureño (Tierra del Fuego)",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOF9IQWtKSXdObjJtRzNCNXU1cFlpaW5WSDhxdTlqa0E0TVpsYU1JWmZKTmV4UzZDWGhXR1RaeUdyRGxPdzVnTXNwQl9yZjNNX290N3Zod0NlUmF2Vm1KeVl4NW92dWE2eHdTLV9semNjZ0ZUZ2FWOVI2WXhfVk80dGM5WXBPWV9Td1hSenl3?oc=5",
+     "titulo": "Colapinto terminó sexto en un inolvidable GP de Las Vegas",
+     "fecha": "2026-11-21T22:45:03+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Inundaciones en Galápagos por El Niño: más de 7.000 afectados y 2.000 familias damnificadas",
+   "n_medios": 2,
+   "puntaje": 12.0,
+   "region": null,
+   "ejes": [
+    "latinoamerica"
+   ],
+   "tema": "Agro y clima",
+   "notas": [
+    {
+     "medio": "Perfil",
+     "url": "https://perfil.com/ciencia-y-tecnologia/mas-de-7.000-afectados-por-graves-inundaciones-en-galapagos-asociado-a-el-nino-a50-bgd-ahjco5A0KMs4",
+     "titulo": "Inundaciones en Galápagos por El Niño: más de 7.000 afectados y 2.000 familias damnificadas",
+     "fecha": "2026-11-23T00:21:40+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "France 24 Español",
+     "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261122-m%C3%A1s-de-7-000-afectados-por-graves-inundaciones-en-gal%C3%A1pagos-asociadas-a-el-ni%C3%B1o",
+     "titulo": "Más de 7.000 afectados por graves inundaciones en Galápagos asociadas a El Niño",
+     "fecha": "2026-11-22T01:44:21+00:00",
+     "pais": "Francia"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "Un buque ruso fue blanco de un presunto ataque con drones en Libia mientras otro arde en el mar Báltico luego de un episodio similar",
+   "n_medios": 2,
+   "puntaje": 11.8,
+   "region": null,
+   "ejes": [
+    "internacional"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "La Nación",
+     "url": "https://www.lanacion.com.ar/el-mundo/un-buque-ruso-fue-blanco-de-un-presunto-ataque-con-drones-en-libia-mientras-otro-arde-en-el-mar-nid22112026/",
+     "titulo": "Un buque ruso fue blanco de un presunto ataque con drones en Libia mientras otro arde en el mar Báltico luego de un episodio similar",
+     "fecha": "2026-11-22T23:17:02+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "DW Español",
+     "url": "https://www.dw.com/es/libia-reporta-un-segundo-ataque-con-drones-contra-barcos-incluido-un-buque-ruso/a-80015362?maca=spa-rss-sp-all-1122-xml-mrss",
+     "titulo": "Libia reporta un segundo ataque con drones contra barcos, incluido un buque ruso",
+     "fecha": "2026-11-22T21:55:00+00:00",
+     "pais": "Alemania"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Una falla informática obligó a Delta a operar los vuelos a mano en Atlanta",
+   "n_medios": 2,
+   "puntaje": 11.6,
+   "region": "norte-grande",
+   "ejes": [
+    "internacional"
+   ],
+   "tema": "Geopolítica",
+   "notas": [
+    {
+     "medio": "Diario Norte (Chaco)",
+     "url": "https://www.diarionorte.com/337101-una-falla-informatica-obligo-a-delta-a-operar-los-vuelos-a-mano-en-atlanta",
+     "titulo": "Una falla informática obligó a Delta a operar los vuelos a mano en Atlanta",
+     "fecha": "2026-11-22T21:50:15+00:00",
+     "pais": "Argentina"
+    },
+    {
      "medio": "La Gaceta (Tucumán)",
-     "url": "https://www.lagaceta.com.ar/nota/1163674/sociedad/domingo-tormentas-fuertes-granizo-rafagas-que-provincias-estan-bajo-alerta-naranja.html",
-     "titulo": "Un domingo con tormentas fuertes, granizo y ráfagas: ¿qué provincias están bajo alerta naranja?",
-     "fecha": "2026-11-22T08:19:00+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "Formosa (prensa local)",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVHUtYVJQUlRuMm5OOWtTTW9jQlQ0bDBZRmlDV045QTJuOGg4Z2ltYnRDRU00d1doSmVNdWZISmRkQk9KRG51STVLc1g4VXlCcTVKcGQ1OVhHVWN5bmM1ZVF5WTZ6dFByNmtsYWl6TDVtQ2lUSVB0NXJQbHk5dVFFSDEzS1p4M0tlMzFKdXpSQzRMZnBYOG1OazY0amU5RkFqbUxVMkRicnNRVU8teW9UUzV4aUtmdFhnb0FqNlc1Zzg5NXZhSEJicmYtUElpS3p2S282Q3lPRW7SAewBQVVfeXFMUDlCMm9na3VnZ0cxT2VaZEZBclRCNEJyel9GUTY5RzNrdVQtbzhqNnVHNkNiYXFTRU1SSnQtc0ZqeXZVSm9UdHZnc24yTVVhc0lqS1dsUmRqWlh4WXJpeFVJa1FPWEdZRElwZ21EVGVDWkhEaElHd0FtUHQ5a19DZGV1eUtRaUdxSW85UjBuVnhuYms3SHI2WDZ1RWpoeHN5dEJqNDJmWWZ2Mk40b09WeTVXN1kzQnNNMEQ2QTFUTjZLNC1jTkhqLThnVzV4SmxTZlhlNmt5STlKYmxqdkxaV190MmFUeDNYWGV2RnU?oc=5",
-     "titulo": "Hay alerta naranja por tormentas para este domingo 22 de noviembre en Formosa: las zonas afectadas",
-     "fecha": "2026-11-22T03:01:02+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "El Territorio (Misiones)",
-     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPa3dRa2FqS3ozQVNjZU1wS0s0bmhUUG53YkxtZkJHNlhSQVZ3M3djVXQtY1dRd0ZPXzdGeHQtNDNGaUctQjZqRlZXQW0zQzRxNVVTMVYyV2NuMmQzSC1zazEyMEpIWUdObG1YNnlLWHZpOHZNYWh5ejl1NXhEUmstVktJZVFzcHB2ZHNPaG9ObzFEV25zUG10LUVjaEpYdFFVRHlrYXpjS2pHN3RfX1hTMDJDTm0tMkVIdlNDcmU3ZXJUOUFOUEZyV2Z4OExrREJNS05ZY2R1UXlpQ29wcEVz0gHkAUFVX3lxTE5EeWhvamt6ZXAzY1VnV1JJY0pRVmM2NEs1NDM0V0NRdktjbVkxczJvcVBQNWVPNGYzVWw3dlZsV1luMW93RTV3S1RHUm96RWlxdmY3eTEwQWN6WnNqcFFiVExIUHU1MkRVdVdHZjdpTEMyZWd3VDVEc2thWjVMWnFtT3BvWWpwM2FYbHhJNjZhU3c4a2VmcGtwcFNlaUJ6bTNITllkOUx2Y0NERFNYbWpqX3dXbDBpMmwwZHVaUGdjMkJQWDNiMVdEZEJqSGpuUnlXS0RUek80VXdlWDgwN1g3bnVYTg?oc=5",
-     "titulo": "Elevan a Naranja la alerta por tormentas fuertes para toda la provincia para el domingo",
-     "fecha": "2026-11-22T00:26:00+00:00",
+     "url": "https://www.lagaceta.com.ar/nota/1163712/mundo/otra-falla-informatica-obliga-delta-operar-en-forma-manual-atlanta-hay-demoras-estados-unidos.html",
+     "titulo": "Otra falla informática obliga a Delta a operar \"en forma manual\" en Atlanta y hay demoras en Estados Unidos",
+     "fecha": "2026-11-22T17:47:00+00:00",
      "pais": "Argentina"
     }
    ]
   },
   {
    "seccion": "argentina",
-   "titulo": "Colapinto, tras su gran resultado en Las Vegas: “Es lindo haber peleado con los equipos de adelante”",
-   "n_medios": 3,
-   "puntaje": 11.4,
-   "region": null,
-   "ejes": [],
-   "tema": "Energía",
+   "titulo": "Destacaron que Formosa sostiene con recursos propios las políticas de género frente al ajuste nacional",
+   "n_medios": 2,
+   "puntaje": 11.5,
+   "region": "norte-grande",
+   "ejes": [
+    "internacional"
+   ],
+   "tema": "General",
    "notas": [
     {
      "medio": "Diario Norte (Chaco)",
-     "url": "https://www.diarionorte.com/337067-colapinto-fue-lindo-haber-peleado-con-los-equipos-de-adelante",
-     "titulo": "Colapinto: \"Fue lindo haber peleado con los equipos de adelante\"",
-     "fecha": "2026-11-22T13:00:24+00:00",
+     "url": "https://www.diarionorte.com/337092-destacaron-que-formosa-sostiene-con-recursos-propios-las-politicas-de-genero-frente-al-ajuste-nacional",
+     "titulo": "Destacaron que Formosa sostiene con recursos propios las políticas de género frente al ajuste nacional",
+     "fecha": "2026-11-22T21:24:46+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Formosa (prensa local)",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOeUlmTWNNaUY2c1M4a0NJZWJkZXJRVmxKV1VROTVxUGJDWlZMbnMteUFCMS1sSDZaOGtVQ21UbTkzZXRMQ2JTaEg1QmlETElGcHlHMU1fdHpVMEVoWnNHRzhsVWdLWHhjN2Y3bEtwRmJ0eG9nNndiNkxFeGRYV2tsWV9kbXVWYVhKQ0c2LWM5bDdDR2puN20teGRFNEpibV96dko1VE85MGxsdlVlRC1XaHdPYzlhVjRxX25hTmpURXFkM09BX2xBUE1uLU82SkdlcjBualRFam1Ya3puOVBXZndCYw?oc=5",
+     "titulo": "De cara al 25N, destacaron que Formosa sostiene con recursos propios las políticas de género frente al ajuste nacional",
+     "fecha": "2026-11-22T15:00:18+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "River eliminó a Lanús y está en cuartos de final",
+   "n_medios": 3,
+   "puntaje": 10.9,
+   "region": null,
+   "ejes": [],
+   "tema": "Geopolítica",
+   "notas": [
+    {
+     "medio": "El Litoral (Corrientes)",
+     "url": "https://www.ellitoral.com.ar/deportes/2026-11-22-21-3-0-river-elimino-a-lanus-y-esta-en-cuartos-de-final",
+     "titulo": "River eliminó a Lanús y está en cuartos de final",
+     "fecha": "2026-11-23T00:03:00+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Página/12",
+     "url": "https://www.pagina12.com.ar/2026/11/22/liga-profesional-a-river-le-costo-pero-se-impuso-y-elimino-a-lanus/",
+     "titulo": "Liga Profesional: a River le costó, pero se impuso y eliminó a Lanús",
+     "fecha": "2026-11-22T23:59:27+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Uno Entre Ríos",
+     "url": "https://www.unoentrerios.com.ar/ovacion/river-derroto-lanus-el-estadio-monumental-y-se-clasifico-cuartos-final-n10293650.html",
+     "titulo": "River derrotó a Lanús en el estadio Monumental y se clasificó a cuartos de final",
+     "fecha": "2026-11-22T22:00:00+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mundo",
+   "titulo": "El Gobierno repudió las amenazas de Irán contra Rafael Grossi y exigió que cesen las intimidaciones",
+   "n_medios": 2,
+   "puntaje": 10.8,
+   "region": null,
+   "ejes": [
+    "internacional"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Perfil",
+     "url": "https://perfil.com/internacional/el-gobierno-repudio-las-amenazas-de-iran-contra-rafael-grossi-y-exigio-que-cesen-las-intimidaciones-aWGQh5s4P134",
+     "titulo": "El Gobierno repudió las amenazas de Irán contra Rafael Grossi y exigió que cesen las intimidaciones",
+     "fecha": "2026-11-22T23:34:07+00:00",
      "pais": "Argentina"
     },
     {
      "medio": "Noticias Argentinas",
-     "url": "https://noticiasargentinas.com/deportes/colapinto--tras-su-gran-resultado-en-las-vegas---es-lindo-haber-peleado-con-los-equipos-de-adelante-_a6b02d4c64cb99a4fdb5a9ffe",
-     "titulo": "Colapinto, tras su gran resultado en Las Vegas: “Es lindo haber peleado con los equipos de adelante”",
-     "fecha": "2026-11-22T11:59:58+00:00",
+     "url": "https://noticiasargentinas.com/politica/el-gobierno-repudio-las-amenazas-de-la-guardia-revolucionaria-de-iran-contra-rafael-grossi_a6b0351514cb99a4fdb5cffa5",
+     "titulo": "El Gobierno repudió las amenazas de la Guardia Revolucionaria de Irán contra Rafael Grossi",
+     "fecha": "2026-11-22T20:38:04+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "argentina",
+   "titulo": "Rosario Central superó a Gimnasia de Mendoza y clasificó a cuartos de final",
+   "n_medios": 2,
+   "puntaje": 10.5,
+   "region": "centro",
+   "ejes": [],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Noticias Argentinas",
+     "url": "https://noticiasargentinas.com/deportes/rosario-central-supero-a-gimnasia-de-mendoza-y-clasifico-a-cuartos-de-final_a6b035b2e4cb99a4fdb5d234c",
+     "titulo": "Rosario Central superó a Gimnasia de Mendoza y clasificó a cuartos de final",
+     "fecha": "2026-11-22T21:27:21+00:00",
      "pais": "Argentina"
     },
     {
-     "medio": "Perfil",
-     "url": "https://perfil.com/deportes/la-alegria-de-colapinto-al-repetir-su-mejor-resultado-en-la-f1-en-el-gp-de-las-vegas-fue-lindo-pelear-con-los-de-adelante-aMdCF6a4sXWh",
-     "titulo": "La alegría de Colapinto al repetir su mejor resultado en la F1 en el GP de Las Vegas: “Fue lindo pelear con los de adelante”",
-     "fecha": "2026-11-22T10:19:18+00:00",
+     "medio": "La Arena (La Pampa)",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOc2JxazFRRHRJQkZXWEVwX2dFSjB1cWY2dTdWYXNBc2I0Ni1JUExtb1p3Z01hTjZLaU5FT0hRamJRTVF3M3JHdEJlZXVjc3RjRzZjUkFjVC1HM1dyTU1HdDlrb0YtMHE2NWJFMVdORGhKajdUWGFTRkRrU2NhbDF5UHl5RzV3SVRnOGNPOS1MNW9MZ1dlcXRIOTRGd0FMVjVBN2tISlpzRXE1VHRIQ0d3aHJ0QlBwRnlnMUxDUkY1X1JqNlBzRGZOZA?oc=5",
+     "titulo": "Rosario Central le ganó a Gimnasia de Mendoza y enfrentará a Barracas en cuartos",
+     "fecha": "2026-11-22T21:16:45+00:00",
      "pais": "Argentina"
     }
    ]
@@ -950,7 +1268,7 @@
    "seccion": "local",
    "titulo": "Otro brutal choque en Panamericana: cuatro heridos y dos vehículos volcados en San Isidro",
    "n_medios": 2,
-   "puntaje": 11.3,
+   "puntaje": 10.0,
    "region": "buenos-aires",
    "ejes": [
     "local"
@@ -974,10 +1292,38 @@
    ]
   },
   {
+   "seccion": "argentina",
+   "titulo": "«Recibirá lo que se merece»: Irán amenazó al candidato argentino para liderar la ONU y el Gobierno salió al cruce",
+   "n_medios": 2,
+   "puntaje": 9.8,
+   "region": null,
+   "ejes": [
+    "energia",
+    "internacional"
+   ],
+   "tema": "Geopolítica",
+   "notas": [
+    {
+     "medio": "Río Negro",
+     "url": "https://www.rionegro.com.ar/politica/recibira-lo-que-se-merece-iran-amenazo-al-candidato-argentino-para-liderar-la-onu-y-el-gobierno-salio-al-cruce-4809073/",
+     "titulo": "«Recibirá lo que se merece»: Irán amenazó al candidato argentino para liderar la ONU y el Gobierno salió al cruce",
+     "fecha": "2026-11-22T23:05:38+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Ámbito",
+     "url": "https://www.ambito.com/politica/fuerte-rechazo-del-gobierno-argentino-las-amenazas-iran-contra-rafael-grossi-n6348099",
+     "titulo": "Fuerte rechazo del Gobierno argentino a las amenazas de Irán contra Rafael Grossi",
+     "fecha": "2026-11-22T19:06:00+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
    "seccion": "mundo",
    "titulo": "El fallo del Tribunal Internacional de Justicia sobre el genocidio rohinyá influirá en el caso de Gaza",
    "n_medios": 2,
-   "puntaje": 11.0,
+   "puntaje": 9.7,
    "region": null,
    "ejes": [
     "internacional",
@@ -1002,10 +1348,37 @@
    ]
   },
   {
+   "seccion": "argentina",
+   "titulo": "PASO 2027: el oficialismo cuenta los votos para suspenderlas en la última sesión ordinaria del Senado",
+   "n_medios": 2,
+   "puntaje": 9.6,
+   "region": null,
+   "ejes": [
+    "politica"
+   ],
+   "tema": "Política",
+   "notas": [
+    {
+     "medio": "Perfil",
+     "url": "https://perfil.com/politica/paso-2027-el-oficialismo-cuenta-los-votos-para-suspenderlas-en-la-ultima-sesion-ordinaria-del-senado-aDXjh0w7nxbn",
+     "titulo": "PASO 2027: el oficialismo cuenta los votos para suspenderlas en la última sesión ordinaria del Senado",
+     "fecha": "2026-11-22T22:08:39+00:00",
+     "pais": "Argentina"
+    },
+    {
+     "medio": "Ámbito",
+     "url": "https://www.ambito.com/politica/suspension-las-paso-la-libertad-avanza-confia-un-piso-38-votos-el-senado-n6348075",
+     "titulo": "Suspensión de las PASO: La Libertad Avanza confía en un piso de 38 votos en el Senado",
+     "fecha": "2026-11-22T17:11:00+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
    "seccion": "mundo",
    "titulo": "En Cisjordania, colonos israelíes atacan presuntamente 4 aldeas palestinas",
    "n_medios": 2,
-   "puntaje": 10.9,
+   "puntaje": 9.6,
    "region": null,
    "ejes": [],
    "tema": "Geopolítica",
@@ -1027,169 +1400,46 @@
    ]
   },
   {
-   "seccion": "mundo",
-   "titulo": "Trump afirma que el ciberataque al FBI podría revelar secretos sobre supuesto \"engaño ruso\"",
-   "n_medios": 2,
-   "puntaje": 10.5,
-   "region": null,
-   "ejes": [
-    "internacional"
-   ],
-   "tema": "Geopolítica",
-   "notas": [
-    {
-     "medio": "Sputnik Mundo",
-     "url": "https://noticiaslatam.lat/20261122/trump-afirma-que-el-ciberataque-al-fbi-podria-revelar-secretos-sobre-supuesto-engano-ruso-1175983837.html",
-     "titulo": "Trump afirma que el ciberataque al FBI podría revelar secretos sobre supuesto \"engaño ruso\"",
-     "fecha": "2026-11-22T01:30:00+00:00",
-     "pais": "Rusia"
-    },
-    {
-     "medio": "DW Español",
-     "url": "https://www.dw.com/es/donald-trump-confirma-un-ciberataque-al-fbi-y-cree-que-podría-destapar-engaños-contra-él/a-80012085?maca=spa-rss-sp-all-1122-xml-mrss",
-     "titulo": "Donald Trump confirma un ciberataque al FBI y cree que podría destapar \"engaños\" contra él",
-     "fecha": "2026-11-22T00:53:00+00:00",
-     "pais": "Alemania"
-    }
-   ]
-  },
-  {
-   "seccion": "mundo",
-   "titulo": "Rutte: \"La OTAN defenderá cada centímetro de Polonia\"",
-   "n_medios": 2,
-   "puntaje": 10.5,
-   "region": null,
-   "ejes": [
-    "internacional"
-   ],
-   "tema": "Geopolítica",
-   "notas": [
-    {
-     "medio": "Euronews Español",
-     "url": "https://es.euronews.com/2026/11/22/rutte-la-otan-defendera-cada-centimetro-de-polonia",
-     "titulo": "Rutte: \"La OTAN defenderá cada centímetro de Polonia\"",
-     "fecha": "2026-11-22T07:57:22+00:00",
-     "pais": "Francia"
-    },
-    {
-     "medio": "DW Español",
-     "url": "https://www.dw.com/es/otan-promete-defender-cada-centímetro-de-polonia-tras-la-incursión-de-misiles-rusos/a-80011180?maca=spa-rss-sp-all-1122-xml-mrss",
-     "titulo": "OTAN promete defender \"cada centímetro\" de Polonia tras la incursión de misiles rusos",
-     "fecha": "2026-11-21T22:04:00+00:00",
-     "pais": "Alemania"
-    }
-   ]
-  },
-  {
    "seccion": "argentina",
-   "titulo": "The Financial Times advirtió que la suba del riesgo país “complicaría” la deuda externa Argentina: los motivos",
-   "n_medios": 2,
-   "puntaje": 9.9,
-   "region": null,
-   "ejes": [
-    "fmi"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Río Negro",
-     "url": "https://www.rionegro.com.ar/economia/the-financial-times-advirtio-que-la-suba-del-riesgo-pais-complicaria-la-deuda-externa-argentina-los-motivos-4808709/",
-     "titulo": "The Financial Times advirtió que la suba del riesgo país “complicaría” la deuda externa Argentina: los motivos",
-     "fecha": "2026-11-22T16:13:19+00:00",
-     "pais": "Argentina"
-    },
-    {
-     "medio": "Ámbito",
-     "url": "https://www.ambito.com/economia/financial-times-advirtio-que-la-recesion-y-el-riesgo-electoral-complican-el-financiamiento-la-argentina-n6348067",
-     "titulo": "El Financial Times advirtió que la recesión y el riesgo electoral complican el financiamiento de la Argentina",
-     "fecha": "2026-11-22T15:36:00+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mundo",
-   "titulo": "Brasil: Jair Bolsonaro se encuentra en cuidados intensivos, pero estable",
-   "n_medios": 2,
-   "puntaje": 9.6,
-   "region": null,
-   "ejes": [
-    "brasil"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "France 24 Español",
-     "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261121-brasil-jair-bolsonaro-se-encuentra-en-cuidados-intensivos-pero-estable",
-     "titulo": "Brasil: Jair Bolsonaro se encuentra en cuidados intensivos, pero estable",
-     "fecha": "2026-11-21T20:35:09+00:00",
-     "pais": "Francia"
-    },
-    {
-     "medio": "Sputnik Mundo",
-     "url": "https://noticiaslatam.lat/20261121/bolsonaro-es-ingresado-en-cuidados-intensivos-tras-dolores-abdominales-1175982571.html",
-     "titulo": "Bolsonaro es ingresado en cuidados intensivos tras dolores abdominales",
-     "fecha": "2026-11-21T20:30:00+00:00",
-     "pais": "Rusia"
-    }
-   ]
-  },
-  {
-   "seccion": "argentina",
-   "titulo": "Agresiones y retroceso en derechos, las denuncias en la Marcha del Orgullo",
+   "titulo": "Malvinas: buscan homenajear en la Ciudad de Buenos Aires al comodoro Carlos Alfredo Rinke, el llamado “Numeral de Hierro”",
    "n_medios": 1,
-   "puntaje": 9.0,
-   "region": "norte-grande",
+   "puntaje": 9.4,
+   "region": "buenos-aires",
    "ejes": [
-    "politica"
+    "local"
    ],
    "tema": "General",
    "notas": [
     {
-     "medio": "Diario Norte (Chaco)",
-     "url": "https://www.diarionorte.com/337087-agresiones-y-retroceso-en-derechos-las-denuncias-en-la-marcha-del-orgullo",
-     "titulo": "Agresiones y retroceso en derechos, las denuncias en la Marcha del Orgullo",
-     "fecha": "2026-11-22T16:39:07+00:00",
+     "medio": "Noticias Argentinas",
+     "url": "https://noticiasargentinas.com/sociedad/malvinas--buscan-homenajear-en-la-ciudad-de-buenos-aires-al-comodoro-carlos-alfredo-rinke--el-llamado--numeral-de-hierro-_a6b0345de4cb99a4fdb5cbba7",
+     "titulo": "Malvinas: buscan homenajear en la Ciudad de Buenos Aires al comodoro Carlos Alfredo Rinke, el llamado “Numeral de Hierro”",
+     "fecha": "2026-11-22T20:39:17+00:00",
      "pais": "Argentina"
     }
    ]
   },
   {
    "seccion": "argentina",
-   "titulo": "Corrientes: policías salvaron con RCP a una menor que se electrocutó con un secarropas",
-   "n_medios": 1,
-   "puntaje": 8.9,
+   "titulo": "Semana inestable en Corrientes: cuándo se esperan lluvias y tormentas",
+   "n_medios": 2,
+   "puntaje": 9.1,
    "region": "norte-grande",
-   "ejes": [
-    "industria"
-   ],
-   "tema": "General",
+   "ejes": [],
+   "tema": "Agro y clima",
    "notas": [
     {
      "medio": "El Litoral (Corrientes)",
-     "url": "https://www.ellitoral.com.ar/policiales/2026-11-22-13-0-0-corrientes-policias-salvaron-con-rcp-a-una-menor-que-se-electrocuto-con-un-secarropas",
-     "titulo": "Corrientes: policías salvaron con RCP a una menor que se electrocutó con un secarropas",
-     "fecha": "2026-11-22T16:00:00+00:00",
+     "url": "https://www.ellitoral.com.ar/sociedad/2026-11-22-16-10-0-semana-inestable-en-corrientes-cuando-se-esperan-lluvias-y-tormentas",
+     "titulo": "Semana inestable en Corrientes: cuándo se esperan lluvias y tormentas",
+     "fecha": "2026-11-22T19:10:00+00:00",
      "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "argentina",
-   "titulo": "Presupuesto 2027 y PASO: el Gobierno apura las negociaciones antes del cierre de las sesiones ordinarias",
-   "n_medios": 1,
-   "puntaje": 8.9,
-   "region": "patagonia",
-   "ejes": [
-    "politica"
-   ],
-   "tema": "General",
-   "notas": [
+    },
     {
-     "medio": "Río Negro",
-     "url": "https://www.rionegro.com.ar/politica/ultima-semana-en-el-congreso-el-gobierno-apura-el-presupuesto-2027-y-las-paso-mientras-define-que-leyes-deja-para-extraordinarias-4808718/",
-     "titulo": "Presupuesto 2027 y PASO: el Gobierno apura las negociaciones antes del cierre de las sesiones ordinarias",
-     "fecha": "2026-11-22T16:06:52+00:00",
+     "medio": "El Territorio (Misiones)",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORXozTFhBVTl3aWpGRUNpUTZEblJwanhSeS1pcHVmOVRoaVdvLW5Fa01JX0l3aUVvV1dGREJqc0RaZUhwejRyNDFrU19xLW1ZNVc5TXRxQmZpUXVKcHlma09Xb0JSMmQwc0VWVUVDaXpfeUQxemFWVjdOclNuN2FBS2JNcHFLOHE2QkcwTVpVRWFoOTExYXh5cmhFTTJick9jUzA1WHB4alNZRENZZldv0gG0AUFVX3lxTFBpQ2hVZlpCVmU0ZU96UTBKRk9FRFMtWEptTFRRVnZodUxObUwzYVM2V1dsYVhjNlJfR2lwTHhjcFJWUWx1X2FDejFzZFg4WFpnWFpwb0VobW03SDZjbFNRbUlzNzFtMmlib1B1NllncGR4cVRkLWNIWFozc3BDdDI4UTIydy1xQm0xOGVPLTFCTVlmRE53RW5KbjdsRHFvWUhGdTRycnhzUG84dFhHeWdBZjJ3cg?oc=5",
+     "titulo": "Domingo con lluvias y tormentas fuertes en Misiones",
+     "fecha": "2026-11-22T11:52:50+00:00",
      "pais": "Argentina"
     }
    ]
@@ -1198,7 +1448,7 @@
    "seccion": "local",
    "titulo": "Tigre: Un fuerte accidente de tránsito en General Pacheco quedó registrado por las cámaras municipales",
    "n_medios": 1,
-   "puntaje": 8.9,
+   "puntaje": 7.6,
    "region": "buenos-aires",
    "ejes": [
     "local"
@@ -1215,51 +1465,10 @@
    ]
   },
   {
-   "seccion": "argentina",
-   "titulo": "Córdoba: la coparticipación cayó 35% y desató una polémica entre el oficialismo y la oposición",
-   "n_medios": 1,
-   "puntaje": 8.8,
-   "region": "centro",
-   "ejes": [
-    "politica"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Página/12",
-     "url": "https://www.pagina12.com.ar/2026/11/22/cordoba-la-coparticipacion-cayo-35-y-desato-una-polemica-entre-el-oficialismo-y-la-oposicion/",
-     "titulo": "Córdoba: la coparticipación cayó 35% y desató una polémica entre el oficialismo y la oposición",
-     "fecha": "2026-11-22T15:45:07+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "argentina",
-   "titulo": "Tensión en el PJ: Cristina Kirchner cuestionó a Axel Kicillof y acelera un acuerdo político con Sergio Massa",
-   "n_medios": 1,
-   "puntaje": 8.8,
-   "region": "buenos-aires",
-   "ejes": [
-    "pj",
-    "politica"
-   ],
-   "tema": "Política",
-   "notas": [
-    {
-     "medio": "Río Negro",
-     "url": "https://www.rionegro.com.ar/politica/tension-en-el-pj-cristina-kirchner-cuestiono-a-axel-kicillof-y-acelera-un-acuerdo-politico-con-sergio-massa-4808645/",
-     "titulo": "Tensión en el PJ: Cristina Kirchner cuestionó a Axel Kicillof y acelera un acuerdo político con Sergio Massa",
-     "fecha": "2026-11-22T15:16:36+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
    "seccion": "local",
    "titulo": "El Municipio de Tigre realizó un nuevo ciclo de mentorías para emprendedores locales",
    "n_medios": 1,
-   "puntaje": 8.8,
+   "puntaje": 7.5,
    "region": "buenos-aires",
    "ejes": [
     "local"
@@ -1276,111 +1485,105 @@
    ]
   },
   {
-   "seccion": "mundo",
-   "titulo": "Trump afirma que \"no es bueno\", pero el hackeo a la base de datos criminal del FBI podría ser ventajoso",
-   "n_medios": 2,
-   "puntaje": 8.8,
+   "seccion": "mercosur",
+   "titulo": "Temporales en el sur de Brasil dejaron cinco muertos y más de 25.000 afectados",
+   "n_medios": 1,
+   "puntaje": 7.5,
    "region": null,
    "ejes": [
-    "internacional"
-   ],
-   "tema": "Geopolítica",
-   "notas": [
-    {
-     "medio": "Euronews Español",
-     "url": "https://es.euronews.com/2026/11/22/trump-afirma-que-no-es-bueno-pero-el-hackeo-a-la-base-de-datos-criminal-del-fbi-podria-ser",
-     "titulo": "Trump afirma que \"no es bueno\", pero el hackeo a la base de datos criminal del FBI podría ser ventajoso",
-     "fecha": "2026-11-22T09:16:34+00:00",
-     "pais": "Francia"
-    },
-    {
-     "medio": "France 24 Español",
-     "url": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261122-dir%C3%A9-que-no-es-bueno-trump-se-refiere-al-supuesto-ciberataque-a-una-base-de-datos-del-fbi",
-     "titulo": "\"Diré que no es bueno\": Trump se refiere al supuesto ciberataque a una base de datos del FBI",
-     "fecha": "2026-11-22T00:02:03+00:00",
-     "pais": "Francia"
-    }
-   ]
-  },
-  {
-   "seccion": "argentina",
-   "titulo": "Falleció el policía atropellado en Castelli: el conductor estaba alcoholizado",
-   "n_medios": 1,
-   "puntaje": 8.7,
-   "region": "norte-grande",
-   "ejes": [
-    "industria",
-    "politica"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Diario Norte (Chaco)",
-     "url": "https://www.diarionorte.com/337079-fallecio-el-policia-atropellado-en-castelli-el-conductor-estaba-alcoholizado",
-     "titulo": "Falleció el policía atropellado en Castelli: el conductor estaba alcoholizado",
-     "fecha": "2026-11-22T14:42:18+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mundo",
-   "titulo": "Canadá aboga por ampliar posibilidades de negocios en El Salvador",
-   "n_medios": 1,
-   "puntaje": 8.0,
-   "region": null,
-   "ejes": [
-    "energia"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Prensa Latina",
-     "url": "https://www.prensa-latina.cu/2026/11/22/canada-aboga-por-ampliar-posibilidades-de-negocios-en-el-salvador/",
-     "titulo": "Canadá aboga por ampliar posibilidades de negocios en El Salvador",
-     "fecha": "2026-11-22T17:16:39+00:00",
-     "pais": "Cuba"
-    }
-   ]
-  },
-  {
-   "seccion": "mundo",
-   "titulo": "Destacan en Bolivia entrega de Título Doctor Honoris Causa a Fidel",
-   "n_medios": 1,
-   "puntaje": 8.0,
-   "region": null,
-   "ejes": [
-    "latinoamerica",
-    "politica"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Prensa Latina",
-     "url": "https://www.prensa-latina.cu/2026/11/22/destacan-en-bolivia-entrega-de-titulo-doctor-honoris-causa-a-fidel/",
-     "titulo": "Destacan en Bolivia entrega de Título Doctor Honoris Causa a Fidel",
-     "fecha": "2026-11-22T17:09:07+00:00",
-     "pais": "Cuba"
-    }
-   ]
-  },
-  {
-   "seccion": "local",
-   "titulo": "Discapacidad neuromotora: el desafío de construir una vida plena más allá del diagnóstico",
-   "n_medios": 1,
-   "puntaje": 7.4,
-   "region": null,
-   "ejes": [
-    "local"
+    "brasil"
    ],
    "tema": "General",
    "notas": [
     {
      "medio": "Noticias Argentinas",
-     "url": "https://noticiasargentinas.com/sociedad/discapacidad-neuromotora--el-desafio-de-construir-una-vida-plena-mas-alla-del-diagnostico_a6b0223b52025a804a55fc572",
-     "titulo": "Discapacidad neuromotora: el desafío de construir una vida plena más allá del diagnóstico",
-     "fecha": "2026-11-22T13:00:00+00:00",
+     "url": "https://noticiasargentinas.com/internacionales/temporales-en-el-sur-de-brasil-dejaron-cinco-muertos-y-mas-de-25-000-afectados_a6b035d2a4cb99a4fdb5d31f2",
+     "titulo": "Temporales en el sur de Brasil dejaron cinco muertos y más de 25.000 afectados",
+     "fecha": "2026-11-22T21:36:46+00:00",
      "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Nova plataforma de streaming exibirá filmes de países do Brics",
+   "n_medios": 1,
+   "puntaje": 7.3,
+   "region": null,
+   "ejes": [
+    "brasil",
+    "internacional"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/nova-plataforma-de-streaming-exibira-filmes-de-paises-do-brics",
+     "titulo": "Nova plataforma de streaming exibirá filmes de países do Brics",
+     "fecha": "2026-11-22T20:05:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Jair Bolsonaro permanece “estable” en cuidados intensivos, dice un comunicado del hospital",
+   "n_medios": 1,
+   "puntaje": 6.7,
+   "region": null,
+   "ejes": [
+    "brasil"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "La Nación",
+     "url": "https://www.lanacion.com.ar/el-mundo/jair-bolsonaro-permanece-estable-en-cuidados-intensivos-dice-un-comunicado-del-hospital-nid22112026/",
+     "titulo": "Jair Bolsonaro permanece “estable” en cuidados intensivos, dice un comunicado del hospital",
+     "fecha": "2026-11-22T22:39:36+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "El Ironman 2027 agota sus 1.600 cupos y proyecta una derrama económica de más de USD 5 millones para Panamá",
+   "n_medios": 1,
+   "puntaje": 6.2,
+   "region": null,
+   "ejes": [
+    "brasil",
+    "internacional",
+    "latinoamerica"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Infobae América",
+     "url": "https://www.infobae.com/panama/2026/11/22/el-ironman-2027-agota-sus-1600-cupos-y-proyecta-una-derrama-economica-de-mas-de-usd-5-millones-para-panama/",
+     "titulo": "El Ironman 2027 agota sus 1.600 cupos y proyecta una derrama económica de más de USD 5 millones para Panamá",
+     "fecha": "2026-11-22T19:50:15+00:00",
+     "pais": "Argentina"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Democratas garantem 258 cadeiras na Câmara dos EUA, melhor resultado desde 1992",
+   "n_medios": 1,
+   "puntaje": 6.2,
+   "region": null,
+   "ejes": [
+    "internacional"
+   ],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Folha · Mundo",
+     "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/democratas-garantem-258-cadeiras-na-camara-melhor-resultado-desde-1992.shtml",
+     "titulo": "Democratas garantem 258 cadeiras na Câmara dos EUA, melhor resultado desde 1992",
+     "fecha": "2026-11-22T19:59:00+00:00",
+     "pais": "Brasil"
     }
    ]
   },
@@ -1388,7 +1591,7 @@
    "seccion": "local",
    "titulo": "Tigre: adultos mayores participaron de una jornada recreativa en las Olimpiadas del Disfrute",
    "n_medios": 2,
-   "puntaje": 7.4,
+   "puntaje": 6.1,
    "region": "buenos-aires",
    "ejes": [
     "local",
@@ -1414,101 +1617,55 @@
   },
   {
    "seccion": "mercosur",
-   "titulo": "Clima en Punta del Este: el estado del tiempo para este 22 de noviembre",
+   "titulo": "Escolas já podem se inscrever para a Olitef 2027",
    "n_medios": 1,
-   "puntaje": 7.0,
-   "region": null,
-   "ejes": [
-    "latinoamerica"
-   ],
-   "tema": "Agro y clima",
-   "notas": [
-    {
-     "medio": "Infobae",
-     "url": "https://www.infobae.com/noticias/2026/11/22/clima-en-punta-del-este-el-estado-del-tiempo-para-este-22-de-noviembre/",
-     "titulo": "Clima en Punta del Este: el estado del tiempo para este 22 de noviembre",
-     "fecha": "2026-11-22T16:31:09+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "local",
-   "titulo": "El peronismo y su enorme desafío",
-   "n_medios": 1,
-   "puntaje": 6.9,
-   "region": null,
-   "ejes": [
-    "pj",
-    "politica"
-   ],
-   "tema": "Política",
-   "notas": [
-    {
-     "medio": "Página/12",
-     "url": "https://www.pagina12.com.ar/2026/11/22/el-peronismo-y-su-enorme-desafio/",
-     "titulo": "El peronismo y su enorme desafío",
-     "fecha": "2026-11-22T16:19:20+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Vacaciones: cómo prepararse para no enfermarse y la vacuna que se tienen que dar los que viajen a Brasil",
-   "n_medios": 1,
-   "puntaje": 6.9,
-   "region": null,
-   "ejes": [
-    "brasil"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "La Nación",
-     "url": "https://www.lanacion.com.ar/salud/vacaciones-como-prepararse-para-no-enfermarse-y-la-vacuna-que-se-tienen-que-dar-los-que-viajen-a-nid22112026/",
-     "titulo": "Vacaciones: cómo prepararse para no enfermarse y la vacuna que se tienen que dar los que viajen a Brasil",
-     "fecha": "2026-11-22T15:56:00+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Lula da Silva descartó recortes en programas sociales y defendió su plan económico",
-   "n_medios": 1,
-   "puntaje": 6.5,
-   "region": null,
-   "ejes": [
-    "brasil",
-    "mercosur"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Ámbito",
-     "url": "https://www.ambito.com/mundo/lula-da-silva-descarto-recortes-programas-sociales-y-defendio-su-plan-economico-n6348035",
-     "titulo": "Lula da Silva descartó recortes en programas sociales y defendió su plan económico",
-     "fecha": "2026-11-22T13:28:12+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "La prensa brasileña cuestionó al Atlético Mineiro tras la derrota ante Boca",
-   "n_medios": 1,
-   "puntaje": 5.5,
+   "puntaje": 5.6,
    "region": null,
    "ejes": [],
    "tema": "General",
    "notas": [
     {
-     "medio": "Noticias Argentinas",
-     "url": "https://noticiasargentinas.com/deportes/la-prensa-brasilena-cuestiono-al-atletico-mineiro-tras-la-derrota-ante-boca_a6b02f27b4cb99a4fdb5b4f88",
-     "titulo": "La prensa brasileña cuestionó al Atlético Mineiro tras la derrota ante Boca",
-     "fecha": "2026-11-22T13:55:02+00:00",
-     "pais": "Argentina"
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/escolas-ja-podem-se-inscrever-para-olitef-2027",
+     "titulo": "Escolas já podem se inscrever para a Olitef 2027",
+     "fecha": "2026-11-22T22:00:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Último dia do Mundial de taekwondo paralímpico tem bronze brasileiro",
+   "n_medios": 1,
+   "puntaje": 5.2,
+   "region": null,
+   "ejes": [],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/ultimo-dia-do-mundial-de-taekwondo-paralimpico-tem-bronze-brasileiro",
+     "titulo": "Último dia do Mundial de taekwondo paralímpico tem bronze brasileiro",
+     "fecha": "2026-11-22T19:37:00+00:00",
+     "pais": "Brasil"
+    }
+   ]
+  },
+  {
+   "seccion": "mercosur",
+   "titulo": "Cleitinho elogia Ana Elisa e diz ter orgulho da deputada petista",
+   "n_medios": 1,
+   "puntaje": 3.9,
+   "region": null,
+   "ejes": [],
+   "tema": "General",
+   "notas": [
+    {
+     "medio": "Folha · Poder",
+     "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/cleitinho-elogia-ana-elisa-e-diz-ter-orgulho-da-deputada-petista.shtml",
+     "titulo": "Cleitinho elogia Ana Elisa e diz ter orgulho da deputada petista",
+     "fecha": "2026-11-22T18:04:00+00:00",
+     "pais": "Brasil"
     }
    ]
   },
@@ -1516,7 +1673,7 @@
    "seccion": "local",
    "titulo": "Benavídez: detuvieron al dueño de un supermercado acusado de abusar de un nene de 11 años y vecinos saquearon el local",
    "n_medios": 1,
-   "puntaje": 4.8,
+   "puntaje": 3.5,
    "region": "buenos-aires",
    "ejes": [
     "local"
@@ -1534,27 +1691,9 @@
   },
   {
    "seccion": "mercosur",
-   "titulo": "La banda de los \"wachiturros\" animó los festejos del Boca campeón: parlante, cumbia, cervezas y toda la intimidad del plantel",
-   "n_medios": 1,
-   "puntaje": 4.8,
-   "region": null,
-   "ejes": [],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Clarín",
-     "url": "https://www.clarin.com/deportes/banda-wachiturros-animaron-festejos-boca-campeon-parlante-cumbia-cervezas-toda-intimidad-plantel_0_MQauXbRPLf.html",
-     "titulo": "La banda de los \"wachiturros\" animó los festejos del Boca campeón: parlante, cumbia, cervezas y toda la intimidad del plantel",
-     "fecha": "2026-11-22T15:18:53+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
    "titulo": "La presión del \"efecto caipirinha\" y el salto del riesgo país profundizan una disyuntiva clave para el Gobierno",
    "n_medios": 1,
-   "puntaje": 4.7,
+   "puntaje": 3.4,
    "region": null,
    "ejes": [
     "brasil",
@@ -1572,31 +1711,10 @@
    ]
   },
   {
-   "seccion": "local",
-   "titulo": "Kicillof quedó afuera de la foto y el peronismo empezó a discutir cómo llegar a 2027",
-   "n_medios": 1,
-   "puntaje": 4.6,
-   "region": "buenos-aires",
-   "ejes": [
-    "pj",
-    "politica"
-   ],
-   "tema": "Política",
-   "notas": [
-    {
-     "medio": "El Cronista",
-     "url": "https://www.cronista.com/columnistas/kicillof-quedo-afuera-de-la-foto-y-el-peronismo-empezo-a-discutir-como-llegar-a-2027/",
-     "titulo": "Kicillof quedó afuera de la foto y el peronismo empezó a discutir cómo llegar a 2027",
-     "fecha": "2026-11-21T14:29:44+00:00",
-     "pais": "Argentina"
-    }
-   ]
-  },
-  {
    "seccion": "mercosur",
    "titulo": "Os riscos políticos do ajuste fiscal",
    "n_medios": 1,
-   "puntaje": 4.6,
+   "puntaje": 3.3,
    "region": null,
    "ejes": [
     "politica"
@@ -1616,7 +1734,7 @@
    "seccion": "mercosur",
    "titulo": "A infraestrutura invisível",
    "n_medios": 1,
-   "puntaje": 4.6,
+   "puntaje": 3.3,
    "region": null,
    "ejes": [
     "politica"
@@ -1631,67 +1749,33 @@
      "pais": "Brasil"
     }
    ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Governo Trump divulga documentos sobre supostos rastros do Pé-Grande",
-   "n_medios": 1,
-   "puntaje": 3.9,
-   "region": null,
-   "ejes": [
-    "internacional"
-   ],
-   "tema": "Geopolítica",
-   "notas": [
-    {
-     "medio": "Folha · Mundo",
-     "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/governo-trump-divulga-documentos-sobre-supostos-rastros-do-pe-grande.shtml",
-     "titulo": "Governo Trump divulga documentos sobre supostos rastros do Pé-Grande",
-     "fecha": "2026-11-21T22:18:00+00:00",
-     "pais": "Brasil"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "José Antonio Kast tem início de governo pedregoso no Chile",
-   "n_medios": 1,
-   "puntaje": 3.5,
-   "region": null,
-   "ejes": [
-    "latinoamerica"
-   ],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Folha · Mundo",
-     "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/colunas/sylvia-colombo/2026/11/jose-antonio-kast-tem-inicio-de-governo-pedregoso-no-chile.shtml",
-     "titulo": "José Antonio Kast tem início de governo pedregoso no Chile",
-     "fecha": "2026-11-21T19:54:00+00:00",
-     "pais": "Brasil"
-    }
-   ]
-  },
-  {
-   "seccion": "mercosur",
-   "titulo": "Documentos da PF acirram disputa no STF sobre relatoria do caso Master",
-   "n_medios": 1,
-   "puntaje": 3.4,
-   "region": null,
-   "ejes": [],
-   "tema": "General",
-   "notas": [
-    {
-     "medio": "Folha · Poder",
-     "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/documentos-da-pf-acirram-disputa-no-stf-sobre-relatoria-do-caso-master.shtml",
-     "titulo": "Documentos da PF acirram disputa no STF sobre relatoria do caso Master",
-     "fecha": "2026-11-22T07:00:00+00:00",
-     "pais": "Brasil"
-    }
-   ]
   }
  ],
  "agenda": [
+  {
+   "titulo": "ATE convocó a una protesta con movilización en el Garrahan por despidos y suspensiones",
+   "url": "https://noticiasargentinas.com/politica/ate-convoco-a-una-protesta-con-movilizacion-en-el-garrahan-por-despidos-y-suspensiones_a6b036f524cb99a4fdb5d87f3",
+   "medio": "Noticias Argentinas",
+   "fecha": "2026-11-22T22:57:00+00:00",
+   "cuando": "este martes",
+   "que": "movilización",
+   "ejes": [
+    "industria"
+   ],
+   "argentina": true
+  },
+  {
+   "titulo": "La agenda de Javier Milei para esta semana: recibirá al presidente de Polonia y habrá reunión de la Mesa Política",
+   "url": "https://perfil.com/politica/la-agenda-de-javier-milei-para-esta-semana-recibira-al-presidente-de-polonia-y-habra-reunion-de-la-mesa-politica-aK76w8u0pm3m",
+   "medio": "Perfil",
+   "fecha": "2026-11-22T21:57:05+00:00",
+   "cuando": "esta semana",
+   "que": "reunión",
+   "ejes": [
+    "politica"
+   ],
+   "argentina": true
+  },
   {
    "titulo": "Agresiones y retroceso en derechos, las denuncias en la Marcha del Orgullo",
    "url": "https://www.diarionorte.com/337087-agresiones-y-retroceso-en-derechos-las-denuncias-en-la-marcha-del-orgullo",
@@ -1699,30 +1783,6 @@
    "fecha": "2026-11-22T16:39:07+00:00",
    "cuando": "El sábado",
    "que": "Marcha",
-   "ejes": [
-    "politica"
-   ],
-   "argentina": true
-  },
-  {
-   "titulo": "¿Está atrasado el dólar? Un viejo debate en un escenario nuevo",
-   "url": "https://www.clarin.com/economia/atrasado-dolar-viejo-debate-escenario-nuevo_0_WIKtvoe7Bf.html",
-   "medio": "Clarín",
-   "fecha": "2026-11-22T14:33:17+00:00",
-   "cuando": "hoy",
-   "que": "debate",
-   "ejes": [
-    "economia"
-   ],
-   "argentina": true
-  },
-  {
-   "titulo": "Senado: con los votos asegurados, el Gobierno busca aprobar este jueves la suspensión de las PASO",
-   "url": "https://noticiasargentinas.com/politica/senado--con-los-votos-asegurados--el-gobierno-busca-aprobar-este-jueves-la-suspension-de-las-paso_a6b02285b2025a804a55ffb65",
-   "medio": "Noticias Argentinas",
-   "fecha": "2026-11-22T11:10:18+00:00",
-   "cuando": "este jueves",
-   "que": "sesión",
    "ejes": [
     "politica"
    ],
@@ -1742,36 +1802,17 @@
    "argentina": true
   },
   {
-   "titulo": "San Juan, Mendoza y Jujuy crearon la Región Minera del Cobre",
-   "url": "https://www.eldiarioweb.com/2026/11/san-juan-mendoza-y-jujuy-crearon-la-region-minera-del-cobre/",
-   "medio": "El Diario",
-   "fecha": "2026-11-21T12:28:00+00:00",
-   "cuando": "esta semana",
-   "que": "Cumbre",
+   "titulo": "Secretario general de la ONU expresa \"profunda frustración\" por fracaso de COP31",
+   "url": "https://www.dw.com/es/secretario-general-de-la-onu-expresa-profunda-frustración-por-fracaso-de-cop31/a-80015142?maca=spa-rss-sp-all-1122-xml-mrss",
+   "medio": "DW Español",
+   "fecha": "2026-11-22T19:23:00+00:00",
+   "cuando": "este domingo",
+   "que": "conferencia",
    "ejes": [
-    "internacional"
+    "internacional",
+    "mercosur"
    ],
-   "argentina": true
-  },
-  {
-   "titulo": "Descanso largo en marcha: por qué es feriado este lunes 23 de noviembre y qué fechas quedan en 2026",
-   "url": "https://www.rionegro.com.ar/servicios/descanso-largo-en-marcha-por-que-es-feriado-este-lunes-23-de-noviembre-y-que-fechas-quedan-en-2026-4808790/",
-   "medio": "Río Negro",
-   "fecha": "2026-11-22T16:32:46+00:00",
-   "cuando": "este lunes",
-   "que": "marcha",
-   "ejes": [],
-   "argentina": true
-  },
-  {
-   "titulo": "Examen Beca 18 de hoy domingo 22 de noviembre: ¿Cuándo se conocerán los resultados oficialmente?",
-   "url": "https://www.infobae.com/peru/2026/11/22/examen-beca-18-de-hoy-domingo-22-de-noviembre-cuando-se-conoceran-los-resultados-oficialmente/",
-   "medio": "Infobae",
-   "fecha": "2026-11-22T16:26:20+00:00",
-   "cuando": "hoy",
-   "que": "difundirá",
-   "ejes": [],
-   "argentina": true
+   "argentina": false
   },
   {
    "titulo": "La COP31 fracasa en Turquía por rechazo del texto final que omitía el abandono de los combustibles fósiles",
@@ -1788,18 +1829,6 @@
    "argentina": false
   },
   {
-   "titulo": "Sánchez reivindica la \"buena política frente a la mala educación\" en Murcia, donde se le declaró persona non grata",
-   "url": "https://www.europapress.es/nacional/noticia-sanchez-reivindica-buena-politica-frente-mala-educacion-murcia-donde-le-declaro-persona-no-grata-20261122133705.html",
-   "medio": "Europa Press",
-   "fecha": "2026-11-22T12:37:05+00:00",
-   "cuando": "este domingo",
-   "que": "elecciones",
-   "ejes": [
-    "politica"
-   ],
-   "argentina": false
-  },
-  {
    "titulo": "De Ficha Limpia a la nueva Boleta Única: los cinco cambios clave de la Reforma Electoral (además de las PASO)",
    "url": "https://www.clarin.com/politica/ficha-limpia-nueva-boleta-unica-cambios-clave-reforma-electoral-ademas-paso_0_XLMOogx3d2.html",
    "medio": "Clarín",
@@ -1812,16 +1841,13 @@
    "argentina": false
   },
   {
-   "titulo": "Elecciones generales 2026, en directo: resumen del debate ayer entre Sánchez y Feijóo y reacciones al cara a cara",
-   "url": "https://www.europapress.es/nacional/noticia-elecciones-generales-2026-directo-resumen-debate-sanchez-feijoo-reacciones-ultima-hora-campana-20261120083023.html",
-   "medio": "Europa Press",
-   "fecha": "2026-11-20T07:30:23+00:00",
-   "cuando": "este domingo",
-   "que": "Elecciones",
-   "ejes": [
-    "industria",
-    "politica"
-   ],
+   "titulo": "Cuba denuncia intentos en COP 31 por reducir financiación climática",
+   "url": "https://www.prensa-latina.cu/2026/11/22/cuba-denuncia-intentos-en-cop-31-por-reducir-financiacion-climatica/",
+   "medio": "Prensa Latina",
+   "fecha": "2026-11-22T22:54:26+00:00",
+   "cuando": "hoy",
+   "que": "sesión",
+   "ejes": [],
    "argentina": false
   },
   {
@@ -1837,40 +1863,34 @@
  ],
  "seguimiento": [
   {
-   "tema": "Acuerdo entre Kicillof y La Cámpora: Máximo Kirchner asumió al frente del Congreso del PJ bonaerense",
-   "desde": "2026-11-22T00:08:07+00:00",
-   "nuevas": 4,
+   "tema": "Investigan la muerte de una mujer de 92 años en Cipolletti y hay un detenido: cómo avanza la causa",
+   "desde": "2026-11-22T16:50:33+00:00",
+   "nuevas": 3,
    "notas": [
     {
-     "titulo": "Con Máximo al frente del Congreso, el PJ bonaerense empieza a discutir las reglas para 2027",
-     "url": "https://www.codigobaires.com.ar/2026-11-22/con-maximo-al-frente-del-congreso-el-pj-bonaerense-empieza-a-discutir-las-reglas-para-2027-252005/",
-     "medio": "Codigo Baires",
-     "fecha": "2026-11-22T08:04:00+00:00"
+     "titulo": "Investigan una muerte dudosa en Cipolletti, Río Negro",
+     "url": "https://www.pagina12.com.ar/2026/11/23/investigan-una-muerte-dudosa-en-cipolletti-rio-negro/",
+     "medio": "Página/12",
+     "fecha": "2026-11-23T00:00:22+00:00"
     },
     {
-     "titulo": "Máximo Kirchner fue elegido presidente del Congreso del PJ bonaerense tras un acuerdo con Kicillof",
-     "url": "https://www.sitioandino.com.ar/politica/maximo-kirchner-fue-elegido-presidente-del-congreso-del-pj-bonaerense-un-acuerdo-kicillof-n5734271",
-     "medio": "Sitio Andino",
-     "fecha": "2026-11-22T05:06:00+00:00"
+     "titulo": "Conmoción en Cipolletti: investigan la muerte violenta de una mujer de 92 años y uno de los dos detenidos es su nieto",
+     "url": "https://www.lanacion.com.ar/seguridad/conmocion-en-cipolletti-investigan-la-muerte-violenta-de-una-mujer-de-92-anos-y-uno-de-los-dos-nid22112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-22T23:57:26+00:00"
     },
     {
-     "titulo": "Máximo Kirchner presidirá el Congreso del PJ bonaerense tras un acuerdo con Kicillof",
-     "url": "https://prensamercosur.org/2026/11/22/maximo-kirchner-presidira-el-congreso-del-pj-bonaerense-tras-un-acuerdo-con-kicillof/",
-     "medio": "prensamercosur",
-     "fecha": "2026-11-22T00:38:00+00:00"
-    },
-    {
-     "titulo": "La Cámpora y Kicillof cerraron un acuerdo en medio de la interna: Máximo Kirchner asumió al frente del Congreso del PJ bonaerense",
-     "url": "https://neuquenpost.com/la-campora-y-kicillof-cerraron-un-acuerdo-en-medio-de-la-interna-maximo-kirchner-asumio-al-frente-del-congreso-del-pj-bonaerense/",
-     "medio": "neuquenpost",
-     "fecha": "2026-11-22T03:11:00+00:00"
+     "titulo": "Investigan la muerte de una mujer de 92 años en Cipolletti: hay dos hombres demorados",
+     "url": "https://noticiasargentinas.com/sociedad/investigan-la-muerte-de-una-mujer-de-92-anos-en-cipolletti--hay-dos-hombres-demorados_a6b0336664cb99a4fdb5c9269",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-22T18:50:04+00:00"
     }
    ]
   },
   {
    "tema": "Emiten alerta amarilla por tormentas para este miércoles en toda la provincia",
    "desde": "2026-11-20T17:30:17+00:00",
-   "nuevas": 2,
+   "nuevas": 3,
    "notas": [
     {
      "titulo": "Elevan a Naranja la alerta por tormentas fuertes para toda la provincia para el domingo",
@@ -1879,10 +1899,35 @@
      "fecha": "2026-11-22T00:26:00+00:00"
     },
     {
+     "titulo": "Hay alerta amarilla por tormentas para este domingo 22 de noviembre en Formosa: las zonas afectadas",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVHUtYVJQUlRuMm5OOWtTTW9jQlQ0bDBZRmlDV045QTJuOGg4Z2ltYnRDRU00d1doSmVNdWZISmRkQk9KRG51STVLc1g4VXlCcTVKcGQ1OVhHVWN5bmM1ZVF5WTZ6dFByNmtsYWl6TDVtQ2lUSVB0NXJQbHk5dVFFSDEzS1p4M0tlMzFKdXpSQzRMZnBYOG1OazY0amU5RkFqbUxVMkRicnNRVU8teW9UUzV4aUtmdFhnb0FqNlc1Zzg5NXZhSEJicmYtUElpS3p2S282Q3lPRW7SAewBQVVfeXFMUDlCMm9na3VnZ0cxT2VaZEZBclRCNEJyel9GUTY5RzNrdVQtbzhqNnVHNkNiYXFTRU1SSnQtc0ZqeXZVSm9UdHZnc24yTVVhc0lqS1dsUmRqWlh4WXJpeFVJa1FPWEdZRElwZ21EVGVDWkhEaElHd0FtUHQ5a19DZGV1eUtRaUdxSW85UjBuVnhuYms3SHI2WDZ1RWpoeHN5dEJqNDJmWWZ2Mk40b09WeTVXN1kzQnNNMEQ2QTFUTjZLNC1jTkhqLThnVzV4SmxTZlhlNmt5STlKYmxqdkxaV190MmFUeDNYWGV2RnU?oc=5",
+     "medio": "Formosa (prensa local)",
+     "fecha": "2026-11-22T10:30:53+00:00"
+    },
+    {
      "titulo": "Hay alerta amarilla por tormentas para este sábado 21 de noviembre en Formosa: las zonas afectadas",
      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZm8taTh2bEYyb18tT3h0QVpBMjY3VHpsbFpVT3RERWtFMnhiWVptd2JMN2lZb1ZOc0lrWGc5ekhLc2R5dDhPYWg0eXVOdHF3ZVFaZENnUkRDcFlhUlF4QkxYM1ZIaDVKWEtvRlJkS2RweXh6S25sTFJGMHAwVEpCUnZhMkhPVFBwUUtCbDBLUk4zMWtsekZoVV83Yk05OXVXMGxqZ01qa2tIR21nYXRuX3g3Mk5QRFprZ3h3RnczTm1GeXY1UmoyTEF6WlAwU01WRWlMTUJ0X0M?oc=5",
      "medio": "Formosa (prensa local)",
      "fecha": "2026-11-21T03:00:22+00:00"
+    }
+   ]
+  },
+  {
+   "tema": "Acuerdo entre Kicillof y La Cámpora: Máximo Kirchner asumió al frente del Congreso del PJ bonaerense",
+   "desde": "2026-11-22T00:08:07+00:00",
+   "nuevas": 2,
+   "notas": [
+    {
+     "titulo": "Máximo Kirchner presidirá el Congreso del PJ bonaerense tras un acuerdo con Kicillof",
+     "url": "https://prensamercosur.org/2026/11/22/maximo-kirchner-presidira-el-congreso-del-pj-bonaerense-tras-un-acuerdo-con-kicillof/",
+     "medio": "prensamercosur",
+     "fecha": "2026-11-22T00:38:00+00:00"
+    },
+    {
+     "titulo": "Máximo Kirchner fue elegido presidente del Congreso del PJ bonaerense tras un acuerdo con Kicillof",
+     "url": "https://www.sitioandino.com.ar/politica/maximo-kirchner-fue-elegido-presidente-del-congreso-del-pj-bonaerense-un-acuerdo-kicillof-n5734271",
+     "medio": "Sitio Andino",
+     "fecha": "2026-11-22T05:06:00+00:00"
     }
    ]
   },
@@ -1900,41 +1945,28 @@
    ]
   },
   {
-   "tema": "Jair Bolsonaro fue internado en Brasilia por fuertes dolores abdominales",
-   "desde": "2026-11-21T08:19:03+00:00",
+   "tema": "Drones ucranianos atacan carguero ruso en el golfo de Finlandia",
+   "desde": "2026-11-22T00:08:07+00:00",
    "nuevas": 1,
    "notas": [
     {
-     "titulo": "Bolsonaro es ingresado en cuidados intensivos tras dolores abdominales",
-     "url": "https://noticiaslatam.lat/20261121/bolsonaro-es-ingresado-en-cuidados-intensivos-tras-dolores-abdominales-1175982571.html",
-     "medio": "Sputnik Mundo",
-     "fecha": "2026-11-21T20:30:00+00:00"
+     "titulo": "Un carguero ruso sancionado sigue ardiendo un día después del ataque de un dron en el golfo de Finlandia",
+     "url": "https://elpais.com/internacional/2026-11-22/un-carguero-ruso-sancionado-sigue-ardiendo-un-dia-despues-del-ataque-de-un-dron-en-el-golfo-de-finlandia.html",
+     "medio": "El País · Internacional",
+     "fecha": "2026-11-22T16:50:21+00:00"
     }
    ]
   },
   {
-   "tema": "La Casa Blanca desplazó a su jefe de ciberseguridad tras la ola de fallos tecnológicos en Estados Unidos",
-   "desde": "2026-11-20T17:30:17+00:00",
+   "tema": "Formosa: un jugador murió y otro resultó herido tras la caída de un rayo durante un entrenamiento",
+   "desde": "2026-11-21T01:07:01+00:00",
    "nuevas": 1,
    "notas": [
     {
-     "titulo": "Trump destituye al jefe de ciberseguridad en medio de críticas por fallos tecnológicos",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQb0haa3RNNl9ySkpxMmFYQXBVTDJkRGFrVnRCbXJCdVFiWkRGUlFNVHNZcXp6YkdTWElaYTluLWhjd1NHYTk4SVI0MUdTTDRLdkQ0WHl5S0xfZlV0YlVXRGtQMkZRc2J1Rm9sRGdiblhKazNaSjhTSXl5NTBrcUhEaDNtNTlwTXNzSTJiNUZVX1FFcWV5cXNWVEZib09LVC1Oa2RpRjUwWFlrMmgyUXpLRkRYNEI?oc=5",
-     "medio": "El Sureño (Tierra del Fuego)",
-     "fecha": "2026-11-20T19:10:03+00:00"
-    }
-   ]
-  },
-  {
-   "tema": "El riesgo país de la Argentina cerró la jornada en 931 puntos básicos",
-   "desde": "2026-11-20T01:37:14+00:00",
-   "nuevas": 1,
-   "notas": [
-    {
-     "titulo": "El riesgo país superó los 1000 puntos",
-     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1yeVh5OW1wT2had1RMZUQwcTNjYWVjV0lfczhxaWdzNDNrM1pldldaV1ZrRnVHOXliLWswOXJjZXFGTVE4WEMtME9WQVVSTGZ3T3RteC0wRU5qUmhjX0U0dnFCTXdlUlFlOUhTQWFDTzh4XzQ?oc=5",
-     "medio": "El Sureño (Tierra del Fuego)",
-     "fecha": "2026-11-20T17:10:03+00:00"
+     "titulo": "Tragedia en Formosa: un futbolista murió tras ser alcanzado por un rayo en pleno entrenamiento",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSy1USi1uLVBVT3N3c0IzeWRnWDZGdG1fYmlYc2JQeDRRLUhlUXF6MFRiZnd2LUJjRkVnQjlWNVhCblZSbXo0VTU5bFhHOFEta1RRc2ktSjdrOThDUjJkazhSSngxWjcxZXNxQ2I3MG1ZWE1ZS0NfN1k3Z2ZRS3o4X2hTM3dvcFFZNGtKQ2k1eEZ0cVlRVW9WWlR2ZGlvdWhCaGdWRHVPTFo2TlRSN1hZWldwNDdWT0R2V01ha0p3?oc=5",
+     "medio": "Formosa (prensa local)",
+     "fecha": "2026-11-21T17:00:22+00:00"
     }
    ]
   }
