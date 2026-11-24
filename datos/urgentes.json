@@ -1,11 +1,11 @@
 {
- "generado": "2026-11-24T19:44:32+00:00",
+ "generado": "2026-11-24T20:23:24+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
    "titulo": "La actividad económica registró dos trimestres de caída y Argentina entró en recesión",
-   "n_medios": 9,
+   "n_medios": 8,
    "paises": [
     "Argentina"
    ],
@@ -56,11 +56,10 @@
   },
   {
    "titulo": "Trump ganó hasta 15 millones de dólares con las acciones de Nvidia tras el regreso de Jensen Huang",
-   "n_medios": 6,
+   "n_medios": 5,
    "paises": [
     "Argentina",
     "España",
-    "Estados Unidos",
     "Francia",
     "Reino Unido"
    ],
