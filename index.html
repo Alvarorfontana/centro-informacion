@@ -28,6 +28,8 @@
 .hero-mapa svg.mundo { max-height: 440px; }
 .hero-mapa svg .pa { fill: var(--tierra); opacity: .95; stroke: var(--borde-mapa); stroke-width: .3; }
 .hero-mapa svg.mundo .ar { stroke-width: .6; }
+
+.con-ia{background:#1D4ED8!important;color:#fff!important;border-color:#1D4ED8!important;text-decoration:none}
 </style>
 <style id="ajustes-telefono">@media(max-width:760px){aside.lateral{position:static!important;height:auto!important;max-height:none!important}}@media(max-width:560px){#nav{flex-wrap:wrap;overflow:visible;gap:6px}#nav h3{display:none}#nav a{flex:1 1 auto;justify-content:center;white-space:nowrap}}</style>
 <link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/iconos/icon-192.png"><link rel="apple-touch-icon" href="/iconos/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Central"><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){})})</script></head>
@@ -1478,7 +1480,7 @@ body { background: var(--papel); }
   var REGISTRO = {};
   function botonMesa(n) {
     REGISTRO[n.url] = n; var en = enMesa(n.url);
-    return '<button type="button" class="a-mesa' + (en ? ' en' : '') + '" data-mesa="' + esc(n.url) + '" style="margin-left:auto">' + (en ? '✓ En la mesa' : '+ A la mesa') + '</button>';
+    return '<button type="button" class="a-mesa' + (en ? ' en' : '') + '" data-mesa="' + esc(n.url) + '" style="margin-left:auto">' + (en ? '✓ En la mesa' : '+ A la mesa') + '</button>' + '<button type="button" class="a-mesa" data-ia-url="' + esc(n.url) + '">✨ IA</button>';
   }
   // Agregado: lo que se suma con "+ A la mesa" también entra a la Mesa de Redacción como nota para armar
   function aRedaccion(n) {
@@ -1498,6 +1500,12 @@ body { background: var(--papel); }
       db.notes.unshift(nota); localStorage.setItem(KEYR, JSON.stringify(db));
     } catch (err) {}
   }
+  // Agregado: "✨ IA" en una noticia la manda a la Mesa de Redacción y la abre ahí lista para editar con IA
+  document.addEventListener('click', function (ev) {
+    var b = ev.target.closest && ev.target.closest('[data-ia-url]'); if (!b) return;
+    var url = b.getAttribute('data-ia-url'), n = REGISTRO[url]; if (!n) return;
+    aRedaccion(n); location.href = 'mesa-redaccion-operativa.html?nota=' + encodeURIComponent('url:' + url);
+  });
   document.addEventListener('click', function (ev) {
     var b = ev.target.closest && ev.target.closest('[data-mesa]'); if (!b) return;
     var url = b.getAttribute('data-mesa');
@@ -2077,7 +2085,7 @@ body { background: var(--papel); }
       '<div>' + (baj ? '<p class="baj">' + esc(baj) + '</p>' : '') + '<p class="ini">' + esc(txt.slice(0, 260)) + (txt.length > 260 ? '…' : '') + '</p>' +
       '<small>' + pal + ' palabras · ' + (b.fuentes || []).length + ' fuentes' + (b.verificacion && b.verificacion.estado ? ' · verificación ' + esc(b.verificacion.estado) : '') + '</small></div></div>' +
       '<div class="age-acc rapida"><a class="btn primario grande" target="_blank" rel="noopener" data-al-diario="' + b.id + '" href="#">Mandar al diario ↗</a>' +
-      '<button type="button" class="btn" data-a-mesa="' + b.id + '">Editar antes</button></div>';
+      '<button type="button" class="btn" data-a-mesa="' + b.id + '">Editar antes</button>' + '<a class="btn primario con-ia" href="mesa-redaccion-operativa.html?nota=' + encodeURIComponent(b.id) + '">✨ Editar con IA</a>' + '</div>';
   }
   // ── Lo que ya salió en el diario: se lee su RSS (vía /api/diario) y se marca "Publicada" en el menú ──
   var PUBLICADAS = null;
@@ -2132,7 +2140,7 @@ body { background: var(--papel); }
         '<div class="bloque"><h5>Borrador' + (b.breve ? ' (breve: había poco material)' : '') + '</h5><div class="leyenda"><span><i style="background:var(--rojo-tinta)"></i>enlace a nota del diario</span><span><i style="background:#78aee8"></i>enlace a la fuente</span></div><div class="age-texto">' + htmlAgente(b.cuerpo_html) + '</div>' +
         (b.correccion ? '<small style="color:var(--tinta-3)">Corrector: ' + esc(b.correccion) + '</small>' : '') + '</div>'
         : '<div class="bloque"><p class="porque">Todavía sin borrador: falta la clave de IA o el redactor falló en este tema. Podés armarlo a mano con las fuentes de abajo.</p></div>';
-      var acc = '<div class="age-acc">' + (b.cuerpo_html ? '<button type="button" class="btn primario" data-a-mesa="' + b.id + '">Llevar a la Mesa para editar</button><a class="btn" target="_blank" rel="noopener" data-al-diario="' + b.id + '" href="#">Enviar al diario como borrador</a>' : '') +
+      var acc = '<div class="age-acc">' + (b.cuerpo_html ? '<button type="button" class="btn primario" data-a-mesa="' + b.id + '">Llevar a la Mesa para editar</button>' + '<a class="btn primario con-ia" href="mesa-redaccion-operativa.html?nota=' + encodeURIComponent(b.id) + '">✨ Editar con IA</a>' + '<a class="btn" target="_blank" rel="noopener" data-al-diario="' + b.id + '" href="#">Enviar al diario como borrador</a>' : '') +
         '<button type="button" class="btn" data-fuentes-mesa="' + b.id + '">Sumar las fuentes a la mesa</button></div>';
       var pub = enDiario([b.titulo_tema].concat(b.titulos || []));
       return '<article class="age-tema' + (pub ? ' publicada' : '') + '"><div class="cab">' + (pub ? '<a class="ya-pub" href="' + esc(pub.url) + '" target="_blank" rel="noopener">✓ Publicada en el diario ↗</a>' : '') + '<div class="meta"><span class="pill sec">' + esc(SEC_N[b.seccion] || b.seccion) + '</span>' + (b.region ? '<span class="pill">' + esc(REG_NOMBRES[b.region] || b.region) + '</span>' : '') + (b.region_mundo && b.seccion !== 'argentina' ? '<span class="pill">' + esc(b.region_mundo) + '</span>' : '') + ejes +
@@ -2264,7 +2272,7 @@ body { background: var(--papel); }
           '<span><span class="semaforo ' + esc(v.estado || '') + '"></span> ' + (v.estado ? 'verificación ' + esc(v.estado) : 'sin verificar') + '</span>' +
           '<span>' + (b.n_medios || 0) + (b.n_medios === 1 ? ' medio' : ' medios') + '</span></div>' +
           '<div class="acc">' + (b.cuerpo_html ? '<a class="si" target="_blank" rel="noopener" data-ed-aprobar="' + esc(b.id) + '" href="' + esc(ADMIN + '#centro=' + encodeURIComponent(JSON.stringify(reporteDe(b)))) + '">Aprobar y mandar al diario</a>' +
-            '<button type="button" data-ed-editar="' + esc(b.id) + '">Editar</button>' : '<button type="button" data-ed-fuentes="' + esc(b.id) + '">Armar con las fuentes</button>') +
+            '<button type="button" data-ed-editar="' + esc(b.id) + '">Editar</button>' + '<a class="btn primario con-ia" href="mesa-redaccion-operativa.html?nota=' + encodeURIComponent(b.id) + '">✨ Editar con IA</a>' : '<button type="button" data-ed-fuentes="' + esc(b.id) + '">Armar con las fuentes</button>') +
           '<button type="button" class="no" data-ed-descartar="' + esc(b.id) + '">Descartar</button></div></div></article>';
       }).join('') + '</section>';
     }).join('') + (des ? '<button type="button" class="ed-mostrar" id="ed-ver-desc">Mostrar las ' + des + ' descartadas</button>' : '');
@@ -2350,7 +2358,7 @@ body { background: var(--papel); }
       var vol = b.volanta || (b.ejes && b.ejes[0] && EJES_N[b.ejes[0]]) || SEC_N[b.seccion] || '';
       return '<div class="cn-p ' + est + '"><div class="v">' + esc(vol) + '</div><div class="t">' + esc((b.titulos || [])[0] || b.titulo_tema) + '</div>' +
         '<div class="f">✍ ' + esc(b.firma || 'Redacción') + ' · ' + esc(b.escalon || '') + (v.estado ? ' · ' + esc(v.estado) : '') + '</div><div class="b">' +
-        (b.cuerpo_html ? '<a class="si" target="_blank" rel="noopener" data-ed-aprobar="' + esc(b.id) + '" href="' + esc(ADMIN + '#centro=' + encodeURIComponent(JSON.stringify(reporteDe(b)))) + '">Aprobar</a><button type="button" data-ed-editar="' + esc(b.id) + '">Editar</button>'
+        (b.cuerpo_html ? '<a class="si" target="_blank" rel="noopener" data-ed-aprobar="' + esc(b.id) + '" href="' + esc(ADMIN + '#centro=' + encodeURIComponent(JSON.stringify(reporteDe(b)))) + '">Aprobar</a><button type="button" data-ed-editar="' + esc(b.id) + '">Editar</button>' + '<a class="btn primario con-ia" href="mesa-redaccion-operativa.html?nota=' + encodeURIComponent(b.id) + '">✨ Editar con IA</a>'
           : '<button type="button" data-ed-fuentes="' + esc(b.id) + '">Armar con las fuentes</button>') +
         '<button type="button" class="no" data-ed-descartar="' + esc(b.id) + '">Descartar</button></div></div>';
     }).join('');
