@@ -1,6 +1,109 @@
 {
- "generado": "2026-11-24T08:09:14+00:00",
+ "generado": "2026-11-24T19:33:50+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": []
+ "urgentes": [
+  {
+   "titulo": "La actividad económica registró dos trimestres de caída y Argentina entró en recesión",
+   "n_medios": 9,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "tema": "Economía",
+   "ejes": [
+    "economia",
+    "energia",
+    "estadisticas",
+    "fmi",
+    "industria",
+    "politica"
+   ],
+   "desde": "2026-11-24T19:33:50+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Cinco razones por las que la economía entró en recesión",
+     "url": "https://www.lanacion.com.ar/economia/cinco-razones-de-por-que-la-economia-podria-entrar-en-recesion-nid24112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-24T19:29:57+00:00"
+    },
+    {
+     "titulo": "La actividad económica registró dos trimestres de caída y Argentina entró en recesión",
+     "url": "https://www.infobae.com/economia/2026/11/24/la-actividad-economica-registro-dos-trimestres-de-caida-y-argentina-entro-en-recesion/",
+     "medio": "Infobae",
+     "fecha": "2026-11-24T19:28:48+00:00"
+    },
+    {
+     "titulo": "Cayó la actividad económica 1,2% en septiembre y se confirmó la recesión técnica",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQNkdSbkQxalA5emc2bVJDZEU1R3FCZkpLNVdRbGxySURHX2RfdFNzbGxXMGpQeWNqQlBFTGFWdmhfQzZ4b0l5c3UzNmdrZkZzOFZlaHBGVGpyRnY5U3pZN0lJel8tU3VvQkpWbF96T2hIUU5nTUo5Zjg1MDZmN1NNMElObGJiRGtQUC1sS1dFVlB0TFFINVo0VjlISldpYTd0RFBaSGsyb2tYZDAzckhrZnJ4aGlsbmRYNDIySHlybWE4YjNlYTN3?oc=5",
+     "medio": "La Arena (La Pampa)",
+     "fecha": "2026-11-24T19:22:38+00:00"
+    },
+    {
+     "titulo": "La economía entró en recesión técnica: sumó dos trimestres seguidos de caída pese a crecer 1,1% mensual en septiembre",
+     "url": "https://www.ambito.com/la-economia-entro-recesion-tecnica-sumo-dos-trimestres-seguidos-caida-pese-crecer-11-mensual-septiembre-n6348824",
+     "medio": "Ámbito",
+     "fecha": "2026-11-24T19:17:00+00:00"
+    },
+    {
+     "titulo": "Argentina entró en «recesión técnica»: el Indec informó que la actividad económica acumuló dos trimestres en caída",
+     "url": "https://www.rionegro.com.ar/economia/argentina-entro-en-recesion-tecnica-el-indec-informo-que-la-actividad-economica-acumulo-dos-trimestres-en-caida-4811740/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-24T19:13:20+00:00"
+    }
+   ]
+  },
+  {
+   "titulo": "Trump ganó hasta 15 millones de dólares con las acciones de Nvidia tras el regreso de Jensen Huang",
+   "n_medios": 6,
+   "paises": [
+    "Argentina",
+    "España",
+    "Estados Unidos",
+    "Francia",
+    "Reino Unido"
+   ],
+   "region": null,
+   "tema": "Geopolítica",
+   "ejes": [
+    "internacional",
+    "politica"
+   ],
+   "desde": "2026-11-24T19:33:50+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "RDI: Jensen Huang retornó a su rol como CEO de Nvidia y las acciones de la compañía crecieron un 31,5%",
+     "url": "https://perfil.com/mas-perfil/rdi-jensen-huang-retorno-a-su-rol-como-ceo-de-nvidia-y-las-acciones-de-la-compania-crecieron-un-315-a3Voe6V5moWo",
+     "medio": "Perfil",
+     "fecha": "2026-11-24T19:09:20+00:00"
+    },
+    {
+     "titulo": "Furia y consternación en el Congreso de EE UU por el regreso de Huang a Nvidia y el papel de Trump en él",
+     "url": "https://elpais.com/us/2026-11-24/furia-y-consternacion-en-el-congreso-de-ee-uu-por-el-regreso-de-huang-a-nvidia-y-el-papel-de-trump-en-el.html",
+     "medio": "El País · América",
+     "fecha": "2026-11-24T18:44:20+00:00"
+    },
+    {
+     "titulo": "Dudas y acusaciones contra Trump y Nvidia por regreso de Huang como CEO",
+     "url": "https://www.france24.com/es/video/20261124-dudas-y-acusaciones-contra-trump-y-nvidia-por-regreso-de-huang-como-ceo",
+     "medio": "France 24 Español",
+     "fecha": "2026-11-24T18:39:45+00:00"
+    },
+    {
+     "titulo": "Trump ganó hasta 15 millones de dólares con las acciones de Nvidia tras el regreso de Jensen Huang",
+     "url": "https://noticiasargentinas.com/internacionales/trump-gano-hasta-15-millones-de-dolares-con-las-acciones-de-nvidia-tras-el-regreso-de-jensen-huang_a6b05d907f5d9d625077a7a9a",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-24T18:38:13+00:00"
+    },
+    {
+     "titulo": "Las lecciones que el regreso de Jensen Huang a Nvidia le enseña a Xi Jinping sobre cómo tratar a Trump",
+     "url": "https://www.bbc.com/mundo/articles/cr930kp5eq12o?at_medium=RSS&at_campaign=rss",
+     "medio": "BBC Mundo",
+     "fecha": "2026-11-24T16:48:51+00:00"
+    }
+   ]
+  }
+ ]
 }
