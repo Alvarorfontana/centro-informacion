@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T20:23:24+00:00",
+ "generado": "2026-11-24T21:11:42+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
@@ -56,12 +56,11 @@
   },
   {
    "titulo": "Trump ganó hasta 15 millones de dólares con las acciones de Nvidia tras el regreso de Jensen Huang",
-   "n_medios": 5,
+   "n_medios": 4,
    "paises": [
     "Argentina",
     "España",
-    "Francia",
-    "Reino Unido"
+    "Francia"
    ],
    "region": null,
    "tema": "Geopolítica",
@@ -95,12 +94,6 @@
      "url": "https://noticiasargentinas.com/internacionales/trump-gano-hasta-15-millones-de-dolares-con-las-acciones-de-nvidia-tras-el-regreso-de-jensen-huang_a6b05d907f5d9d625077a7a9a",
      "medio": "Noticias Argentinas",
      "fecha": "2026-11-24T18:38:13+00:00"
-    },
-    {
-     "titulo": "Las lecciones que el regreso de Jensen Huang a Nvidia le enseña a Xi Jinping sobre cómo tratar a Trump",
-     "url": "https://www.bbc.com/mundo/articles/cr930kp5eq12o?at_medium=RSS&at_campaign=rss",
-     "medio": "BBC Mundo",
-     "fecha": "2026-11-24T16:48:51+00:00"
     }
    ]
   }
