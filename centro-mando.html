@@ -127,7 +127,8 @@ footer{margin-top:25px;border-top:1px solid var(--line);padding-top:12px;color:#
         <label for="instruction">Instrucción editorial</label><textarea id="instruction" required placeholder="Ej.: verificar declaraciones, contrastar fuentes y preparar un informe con enlaces originales…"></textarea>
         <button class="btn primary" type="submit">＋ CREAR ORDEN DE TRABAJO</button>
       </form>
-      <div class="queue"><div class="queue-head"><span>Cola de trabajo</span><span id="queueCount">0 ÓRDENES</span></div><div id="queueList"><div class="queue-item"><b>Sin órdenes cargadas</b><small>Las instrucciones creadas aparecerán aquí para revisión.</small></div></div></div>
+      <div class="queue"><div class="queue-head"><span>Notas pasadas a la mesa</span><span id="notasCount">0 NOTAS</span></div><div id="notasList"><div class="queue-item"><b>Leyendo notas…</b></div></div><a class="btn" href="mesa-redaccion-operativa.html" style="display:inline-block;margin:4px 0 14px">ABRIR MESA DE REDACCIÓN →</a>
+      <div class="queue-head"><span>Cola de trabajo</span><span id="queueCount">0 ÓRDENES</span></div><div id="queueList"><div class="queue-item"><b>Sin órdenes cargadas</b><small>Las instrucciones creadas aparecerán aquí para revisión.</small></div></div></div>
     </div>
   </section>
   <section class="section" id="actualidad">
@@ -179,6 +180,13 @@ let queue=[];try{queue=JSON.parse(localStorage.getItem("df_cig_queue")||"[]")}ca
 function renderQueue(){$("#queueCount").textContent=queue.length+" ÓRDENES";$("#queueList").innerHTML=queue.length?queue.slice().reverse().map((x,i)=>'<div class="queue-item"><b>'+escapeHTML(x.target)+'</b><small>'+escapeHTML(x.priority)+' · '+escapeHTML(x.when)+'</small><p style="margin:5px 0;color:#383D42;font-size:10px">'+escapeHTML(x.text)+'</p><span class="pending">● PENDIENTE DE APROBACIÓN</span></div>').join(""):'<div class="queue-item"><b>Sin órdenes cargadas</b><small>Las instrucciones creadas aparecerán aquí para revisión.</small></div>'}
 $("#commandForm").addEventListener("submit",e=>{e.preventDefault();const text=$("#instruction").value.trim();if(!text)return;queue.push({id:Date.now(),target:$("#target").value,priority:$("#priority").value,text,when:new Date().toLocaleString("es-AR")});try{localStorage.setItem("df_cig_queue",JSON.stringify(queue))}catch{}$("#instruction").value="";renderQueue();toast("Orden guardada como borrador. No se envió a ningún sistema externo.")});renderQueue();
 loadNews();
+// Agregado: muestra en la consola las notas que se pasaron con "+ A la mesa" y los borradores de la Mesa de Redacción (guardados en este navegador)
+function renderNotas(){let notas=[];try{const db=JSON.parse(localStorage.getItem("df_newsroom_v2")||"null");if(db&&Array.isArray(db.notes))notas=db.notes.slice()}catch{}
+try{const m=JSON.parse(localStorage.getItem("centro-mesa")||"[]")||[];m.forEach(x=>{if(x&&x.url&&!notas.some(n=>n.sourceId==="url:"+x.url))notas.push({title:x.titulo,section:x.tema||"",status:"En la mesa",updated:x.fecha||"",sources:[{medio:x.medio,url:x.url}]})})}catch{}
+notas.sort((a,b)=>String(b.updated||b.created||"").localeCompare(String(a.updated||a.created||"")));
+$("#notasCount").textContent=notas.length+" NOTAS";
+$("#notasList").innerHTML=notas.length?notas.slice(0,15).map(n=>{const s=(n.sources&&n.sources[0])||{};return '<div class="queue-item"><b>'+escapeHTML(n.title||"Nota sin título")+'</b><small>'+escapeHTML([n.section,s.medio].filter(Boolean).join(" · "))+'</small><br><span class="pending">● '+escapeHTML(n.status||"En edición")+'</span>'+(s.url?' <a href="'+escapeHTML(s.url)+'" target="_blank" rel="noopener" style="font-size:9px;color:var(--blue)">fuente ↗</a>':'')+'</div>'}).join("")+(notas.length>15?'<small style="color:var(--muted)">y '+(notas.length-15)+' más en la Mesa de Redacción</small>':''):'<div class="queue-item"><b>No hay notas en este navegador</b><small>Las notas se guardan en el aparato donde tocaste "+ A la mesa". Si las pasaste desde el teléfono, abrí la consola en el teléfono.</small></div>'}
+renderNotas();addEventListener("storage",renderNotas);addEventListener("focus",renderNotas);
 </script>
 </body>
 </html>
