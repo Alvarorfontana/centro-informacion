@@ -42,7 +42,7 @@
 /* Apariencia clara, de papel, con el rojo y el logo de EL DIARIO */
 :root {
   --papel: #F6F4EF; --superficie: #FFFFFF; --hundido: #EEEBE4; --tinta: #16181D; --tinta-2: #3F434A; --tinta-3: #6A6E75;
-  --linea: #DEDAD2; --rojo: #D0021B; --rojo-suave: #FBE6E8; --rojo-tinta: #B5121B; --brillo: transparent;
+  --linea: #DEDAD2; --rojo: #1D4ED8; --rojo-suave: #E3EBFB; --rojo-tinta: #1E40AF; --brillo: transparent;
   --v0: #6A6E75; --v1: #9A6200; --v2: #0E7A6B; --v3: #1F7A3D; --v0-f: #EEEBE4; --v1-f: #F8EDD6; --v2-f: #DCF1EC; --v3-f: #E1F1E5;
   --estatal: #6B3FA0; --estatal-f: #EFE7F8;
   --tierra: #D9D3C7; --mar: #EEF2F5; --borde-mapa: #FFFFFF;
@@ -586,12 +586,12 @@ body { background: var(--papel); }
 
 /* Central de noticias (tapa clara) */
 #v-central { max-width: none; }
-.cn { --p: #F6F4EF; --p2: #FBFAF7; --t: #16181D; --t2: #3F434A; --t3: #5B5F66; --l: #DEDAD2; --l2: #CFCAC0; --r: #B5121B;
+.cn { --p: #F6F4EF; --p2: #FBFAF7; --t: #16181D; --t2: #3F434A; --t3: #5B5F66; --l: #DEDAD2; --l2: #CFCAC0; --r: #1E40AF;
   background: var(--p); color: var(--t); margin: -24px -28px; min-height: calc(100vh - 60px); font-family: var(--ui); }
 .cn a { color: var(--t); text-decoration: none; } .cn a:hover { color: var(--r); }
 .cn-cab { background: var(--p2); border-bottom: 1px solid #D9D5CC; padding: 14px 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
 .cn-logo { display: flex; align-items: center; gap: 10px; font: 800 24px/1 Manrope, Inter, var(--ui); letter-spacing: -.02em; }
-.cn-cuad { width: 13px; height: 13px; border-radius: 3px; background: #d0021b; }
+.cn-cuad { width: 13px; height: 13px; border-radius: 3px; background: #1D4ED8; }
 .cn-sep { width: 1px; height: 26px; background: var(--l2); margin: 0 4px; }
 .cn-nombre { font-weight: 700; font-size: 17px; letter-spacing: -.01em; }
 .cn-buscar { margin-left: auto; display: flex; align-items: center; gap: 8px; border: 1px solid var(--l2); background: #fff; padding: 8px 12px; min-width: 240px; color: var(--t3); font-size: 13px; }
@@ -805,14 +805,15 @@ body { background: var(--papel); }
     <aside class="lateral" aria-label="Módulos">
       <div class="marca"><div class="nombre">EL DIARIO</div><small>Central de noticias</small><button type="button" class="btn-menu" id="btn-menu" aria-expanded="false" aria-controls="nav">☰ Secciones</button><button type="button" class="btn-instalar" id="btn-instalar" hidden>Instalar en el teléfono</button></div>
       <nav class="nav" id="nav">
-        <h3>Notas</h3>
+        <h3>1 · Hoy</h3>
         <a href="#agentes" data-vista="agentes" class="destacado">Notas listas para el diario <span class="cuenta" id="c-age">·</span></a>
-        <h3>En vivo</h3>
+        <a href="#edicion" data-vista="edicion">Edición del día <span class="cuenta" id="c-edi">·</span></a>
+        <a href="#central" data-vista="central">Central de noticias <span class="cuenta" id="c-cen">●</span></a>
+        <h3>2 · Noticias</h3>
         <a href="#portada" data-vista="portada">Portada federal <span class="cuenta">●</span></a>
         <a href="#cubierto" data-vista="cubierto">Lo más cubierto <span class="cuenta" id="c-cub"></span></a>
         <a href="#en-vivo" data-vista="en-vivo">Noticias en vivo <span class="cuenta" id="c-viv"></span></a>
         <a href="#regiones" data-vista="regiones">Regiones de Argentina <span class="cuenta">5</span></a>
-        <h3>Regiones y zonas</h3>
         <a href="#en-vivo" class="sub" data-filtro="region:norte-grande">Norte Grande <small>NEA y NOA</small><span class="cuenta" data-cuenta="region:norte-grande"></span></a>
         <a href="#en-vivo" class="sub" data-filtro="region:centro">Centro <small>Córdoba, Santa Fe, Entre Ríos</small><span class="cuenta" data-cuenta="region:centro"></span></a>
         <a href="#en-vivo" class="sub" data-filtro="region:cuyo">Cuyo <small>Mendoza, San Juan, San Luis</small><span class="cuenta" data-cuenta="region:cuyo"></span></a>
@@ -822,22 +823,19 @@ body { background: var(--papel); }
         <a href="#en-vivo" class="sub" data-filtro="zona:argentina">Argentina · nacional<span class="cuenta" data-cuenta="zona:argentina"></span></a>
         <a href="#en-vivo" class="sub" data-filtro="zona:mercosur">Mercosur y región<span class="cuenta" data-cuenta="zona:mercosur"></span></a>
         <a href="#en-vivo" class="sub" data-filtro="zona:mundo">Mundo<span class="cuenta" data-cuenta="zona:mundo"></span></a>
-        <h3>Redacción</h3>
-        <a href="#central" data-vista="central">Central de noticias <span class="cuenta" id="c-cen">●</span></a>
-        <a href="#edicion" data-vista="edicion">Edición del día <span class="cuenta" id="c-edi">·</span></a>
+        <h3>3 · Mesa</h3>
         <a href="#mesa" data-vista="mesa">Mesa de edición <span class="cuenta" id="c-mesa">0</span></a>
-        <a href="mesa-redaccion-operativa.html" class="ir-admin">Mesa operativa avanzada <span class="cuenta">↗</span></a>
-        <a href="vigia.html" class="ir-admin">Vigía de copias <span class="cuenta">↗</span></a>
+        <a href="mesa-redaccion-operativa.html" class="ir-admin">Mesa de Redacción · editar y mandar <span class="cuenta">↗</span></a>
         <a href="https://www.diariofederal.com.ar/admin/" target="_blank" rel="noopener" class="ir-admin">Administrador de noticias <span class="cuenta">↗</span></a>
-        <h3>Inteligencia editorial</h3>
+        <a href="vigia.html" class="ir-admin">Vigía de copias <span class="cuenta">↗</span></a>
+        <h3>4 · Investigación</h3>
         <a href="#expedientes" data-vista="expedientes">Expedientes <span class="cuenta" id="c-exp"></span></a>
         <a href="#cronologia" data-vista="cronologia">Cronología <span class="cuenta" id="c-cro"></span></a>
-        <h3>Inteligencia política</h3>
         <a href="#mapa" data-vista="mapa">Mapa <span class="cuenta">◎</span></a>
         <a href="#radar" data-vista="radar">Ramas de investigación <span class="cuenta">8</span></a>
-        <h3>Núcleo compartido</h3>
         <a href="#fuentes" data-vista="fuentes">Fuentes y agencias <span class="cuenta" id="c-fue"></span></a>
         <a href="#flujo" data-vista="flujo">Flujo y agentes <span class="cuenta">12</span></a>
+        <a href="centro-mando.html" class="ir-admin">Centro de mando <span class="cuenta">↗</span></a>
       </nav>
       <div class="resumen-lat">
         <div><span>Noticias reales</span><b id="r-viv">—</b></div>
@@ -2382,7 +2380,7 @@ document.getElementById('btn-menu').addEventListener('click',function(){abrirMen
 document.getElementById('nav').addEventListener('click',function(e){if(e.target.closest('a')&&window.innerWidth<=960){abrirMenu(false);setTimeout(function(){window.scrollTo({top:0})},60)}});
 /* En el teléfono el menú queda arriba del contenido: al tocar una sección se baja hasta ella */
 (function(){var b=document.createElement('button');b.type='button';b.textContent='☰ Secciones';b.setAttribute('aria-label','Abrir el menú de secciones');
-b.style.cssText='position:fixed;left:14px;bottom:18px;z-index:80;display:none;padding:10px 14px;border-radius:999px;border:1px solid #ff4d5e;background:#d0021b;color:#fff;font:700 14px system-ui;box-shadow:0 6px 18px rgba(0,0,0,.4)';
+b.style.cssText='position:fixed;left:14px;bottom:18px;z-index:80;display:none;padding:10px 14px;border-radius:999px;border:1px solid #5B8DEF;background:#1D4ED8;color:#fff;font:700 14px system-ui;box-shadow:0 6px 18px rgba(0,0,0,.4)';
 b.onclick=function(){window.scrollTo({top:0,behavior:'smooth'});abrirMenu(true)};document.body.appendChild(b);
 function ver(){b.style.display=(window.innerWidth<=960&&window.scrollY>300&&!document.body.classList.contains('menu-abierto'))?'block':'none'}window.addEventListener('scroll',ver,{passive:true});window.addEventListener('resize',ver);})();
 
