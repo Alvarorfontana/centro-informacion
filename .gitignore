@@ -4,3 +4,6 @@ __pycache__/
 # Claves locales (Gemini, WhatsApp, Telegram). GitHub Actions usa Secrets y Vercel sus
 # variables de entorno: este archivo nunca va al repo ni al deploy.
 secretos/
+
+# Copia regenerable del CSV de entrenamiento (el .csv sí va: se sube a Kaggle).
+datos/entrenamiento.jsonl
