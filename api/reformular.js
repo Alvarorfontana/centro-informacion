@@ -54,6 +54,34 @@ async function libre(prompt) {
   return texto ? { texto, ia: 'IA gratuita de respaldo' } : null;
 }
 
+// Respaldo con clave gratuita: Groq (console.groq.com) y OpenRouter (openrouter.ai), si están en Vercel.
+async function compatible(url, clave, modelos, prompt, nombre) {
+  for (const modelo of modelos) {
+    try {
+      const r = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + clave },
+        body: JSON.stringify({ model: modelo, temperature: 0.4, response_format: { type: 'json_object' }, messages: [{ role: 'user', content: prompt }] })
+      });
+      if (!r.ok) continue;
+      const d = await r.json();
+      const texto = (((d.choices || [])[0] || {}).message || {}).content || '';
+      if (texto) return { texto, ia: nombre };
+    } catch {}
+  }
+  return null;
+}
+
+// Qué IA está conectada (sin mostrar ninguna clave): lo usa la mesa para el cartelito de estado.
+function estadoIA() {
+  return {
+    gemini: !!process.env.GEMINI_API_KEY,
+    groq: !!process.env.GROQ_API_KEY,
+    openrouter: !!process.env.OPENROUTER_API_KEY,
+    respaldo_sin_clave: true
+  };
+}
+
 function leerJson(t) {
   const m = String(t).match(/\{[\s\S]*\}/);
   return JSON.parse(m ? m[0] : t);
@@ -61,7 +89,8 @@ function leerJson(t) {
 
 module.exports = async function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store');
-  if (req.method !== 'POST') { res.setHeader('Allow', 'POST'); return res.status(405).json({ ok: false, error: 'Método no permitido.' }); }
+  if (req.method === 'GET') return res.status(200).json({ ok: true, ia: estadoIA() });
+  if (req.method !== 'POST') { res.setHeader('Allow', 'GET, POST'); return res.status(405).json({ ok: false, error: 'Método no permitido.' }); }
   const origin = req.headers.origin;
   if (origin) { try { if (new URL(origin).host !== req.headers.host) return res.status(403).json({ ok: false, error: 'Origen no autorizado.' }); } catch { return res.status(403).json({ ok: false, error: 'Origen no válido.' }); } }
   // Clave de la mesa: si MESA_TOKEN está configurada en Vercel, el pedido tiene que traerla.
@@ -82,8 +111,10 @@ module.exports = async function handler(req, res) {
   const prompt = armarPrompt(n, estilo);
   let out = null;
   try { if (process.env.GEMINI_API_KEY) out = await gemini(prompt, process.env.GEMINI_API_KEY); } catch {}
+  try { if (!out && process.env.GROQ_API_KEY) out = await compatible('https://api.groq.com/openai/v1/chat/completions', process.env.GROQ_API_KEY, ['llama-3.3-70b-versatile', 'openai/gpt-oss-120b'], prompt, 'Groq'); } catch {}
+  try { if (!out && process.env.OPENROUTER_API_KEY) out = await compatible('https://openrouter.ai/api/v1/chat/completions', process.env.OPENROUTER_API_KEY, ['openrouter/free'], prompt, 'OpenRouter'); } catch {}
   try { if (!out) out = await libre(prompt); } catch {}
-  if (!out) return res.status(502).json({ ok: false, error: 'La IA no respondió. Probá de nuevo en un minuto.' });
+  if (!out) return res.status(502).json({ ok: false, error: process.env.GEMINI_API_KEY ? 'La IA no respondió. Probá de nuevo en un minuto.' : 'Gemini no está conectada (falta GEMINI_API_KEY en Vercel) y la IA de respaldo no respondió. Probá de nuevo en un minuto.' });
   try {
     const j = leerJson(out.texto);
     if (!j.cuerpo_html) throw new Error('sin texto');

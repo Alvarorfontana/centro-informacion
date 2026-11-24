@@ -2,6 +2,70 @@
   "_ayuda": "Agenda de la agencia: temas que se buscan a propósito cada hora, además de lo que aparece solo. 'palabras' sirve para marcar las notas que ya llegaron; 'consulta' (o la lista 'consultas') es la búsqueda en GDELT (medios argentinos). Para sumar un eje, copiá uno y cambiale id, nombre, palabras y consulta.",
   "ejes": [
     {
+      "id": "bolsillo",
+      "nombre": "Economía de la gente (bolsillo y microeconomía)",
+      "incluye": "Lo que la macro no ve: precios en góndola, canasta básica, tarifas, alquileres, salarios reales, jubilaciones, consumo y ventas, cierres de comercios y fábricas, despidos, deudas de las familias, mora, pymes y economías regionales",
+      "palabras": [
+        "canasta básica",
+        "góndola",
+        "tarifazo",
+        "tarifa de luz",
+        "tarifa de gas",
+        "facturas de luz",
+        "alquiler",
+        "alquileres",
+        "inquilinos",
+        "jubilados",
+        "jubilaciones",
+        "haber mínimo",
+        "bono a jubilados",
+        "salario mínimo",
+        "poder adquisitivo",
+        "salario real",
+        "ventas minoristas",
+        "cierre de comercios",
+        "persianas bajas",
+        "cierre de fábrica",
+        "cierra la planta",
+        "suspensiones",
+        "despidos",
+        "desempleo",
+        "desocupación",
+        "changas",
+        "informalidad",
+        "pobreza",
+        "indigencia",
+        "comedores",
+        "endeudamiento",
+        "tarjetas de crédito",
+        "deudas de las familias",
+        "pymes",
+        "economías regionales",
+        "cuota alimentaria",
+        "prepagas",
+        "precios de los alimentos",
+        "suba de precios",
+        "aumento de precios",
+        "ventas cayeron",
+        "caída del consumo",
+        "consumo masivo",
+        "cayó el consumo",
+        "tarifas de luz",
+        "tarifas de gas",
+        "boleto de colectivo",
+        "aumento del colectivo",
+        "llegar a fin de mes",
+        "fin de mes",
+        "cierre de comercios",
+        "comercios cerrados",
+        "ventas minoristas pyme",
+        "morosidad",
+        "mora en tarjetas"
+      ],
+      "consulta": "(\"canasta basica\" OR jubilados OR alquileres OR \"ventas minoristas\" OR despidos OR tarifas OR \"cierre de\" OR pymes) sourcecountry:AR",
+      "prioridad": 0
+    },
+    {
       "id": "politica",
       "nombre": "Política nacional",
       "incluye": "Gobierno y Milei, peronismo y Kicillof, Congreso y elecciones, gobernadores y provincias, justicia y Corte",
@@ -80,7 +144,8 @@
         "(Senado OR Diputados OR PASO OR \"reforma electoral\" OR \"boleta unica\") sourcecountry:AR",
         "(gobernador OR gobernadores OR legislatura OR coparticipacion) sourcecountry:AR",
         "(\"Corte Suprema\" OR \"Comodoro Py\" OR \"Consejo de la Magistratura\") sourcecountry:AR"
-      ]
+      ],
+      "prioridad": 1
     },
     {
       "id": "pj",
@@ -132,7 +197,8 @@
         "(\"Partido Justicialista\" OR justicialismo OR \"PJ bonaerense\" OR \"PJ nacional\" OR \"consejo del PJ\" OR \"congreso del PJ\") sourcecountry:AR",
         "(peronismo OR peronista OR \"interna peronista\" OR \"bloque peronista\" OR \"Union por la Patria\" OR \"Fuerza Patria\") sourcecountry:AR",
         "(\"Dia de la Lealtad\" OR \"acto peronista\" OR \"Cristina Kirchner\" OR Kicillof OR \"La Campora\" OR Quintela) sourcecountry:AR"
-      ]
+      ],
+      "prioridad": 1
     },
     {
       "id": "local",
@@ -150,7 +216,8 @@
         "Ciudad de Buenos Aires",
         "Legislatura porteña"
       ],
-      "consulta": "(intendente OR \"Concejo Deliberante\" OR conurbano OR \"Vicente Lopez\" OR \"San Isidro\") sourcecountry:AR"
+      "consulta": "(intendente OR \"Concejo Deliberante\" OR conurbano OR \"Vicente Lopez\" OR \"San Isidro\") sourcecountry:AR",
+      "prioridad": 2
     },
     {
       "id": "economia",
@@ -165,9 +232,19 @@
         "BCRA",
         "superávit",
         "tarifas",
-        "salarios"
+        "salarios",
+        "riesgo país",
+        "bonos",
+        "deuda en dólares",
+        "recesión",
+        "actividad económica",
+        "EMAE",
+        "PBI",
+        "Presupuesto 2027",
+        "Furiase"
       ],
-      "consulta": "(inflacion OR Caputo OR \"Banco Central\" OR reservas OR dolar) sourcecountry:AR"
+      "consulta": "(inflacion OR Caputo OR \"Banco Central\" OR reservas OR dolar) sourcecountry:AR",
+      "prioridad": 0
     },
     {
       "id": "estadisticas",
@@ -183,7 +260,8 @@
         "canasta básica",
         "IPC"
       ],
-      "consulta": "(INDEC OR pobreza OR desocupacion OR EMAE OR \"canasta basica\") sourcecountry:AR"
+      "consulta": "(INDEC OR pobreza OR desocupacion OR EMAE OR \"canasta basica\") sourcecountry:AR",
+      "prioridad": 2
     },
     {
       "id": "industria",
@@ -229,7 +307,8 @@
         "(CGT OR paritarias OR \"reforma laboral\" OR sindicato OR despidos) sourcecountry:AR",
         "(industria OR UIA OR \"capacidad instalada\" OR pymes OR automotriz OR metalurgica) sourcecountry:AR",
         "(empleo OR suspensiones OR \"puestos de trabajo\" OR cierre de fabrica) sourcecountry:AR"
-      ]
+      ],
+      "prioridad": 1
     },
     {
       "id": "fmi",
@@ -256,7 +335,8 @@
       "consultas": [
         "(FMI OR \"Fondo Monetario\" OR \"riesgo pais\" OR bonistas) sourcecountry:AR",
         "(\"deuda externa\" OR vencimientos OR \"Club de Paris\" OR Bonares OR reestructuracion) sourcecountry:AR"
-      ]
+      ],
+      "prioridad": 2
     },
     {
       "id": "agro",
@@ -272,7 +352,8 @@
         "agroexportación",
         "sequía"
       ],
-      "consulta": "(retenciones OR soja OR cosecha OR \"Sociedad Rural\") sourcecountry:AR"
+      "consulta": "(retenciones OR soja OR cosecha OR \"Sociedad Rural\") sourcecountry:AR",
+      "prioridad": 2
     },
     {
       "id": "energia",
@@ -290,7 +371,8 @@
         "electricidad",
         "tarifas de luz"
       ],
-      "consulta": "(YPF OR \"Vaca Muerta\" OR combustibles OR nafta OR litio) sourcecountry:AR"
+      "consulta": "(YPF OR \"Vaca Muerta\" OR combustibles OR nafta OR litio) sourcecountry:AR",
+      "prioridad": 2
     },
     {
       "id": "economia-global",
@@ -317,7 +399,8 @@
       ],
       "consultas": [
         "(\"mercados emergentes\" OR \"Reserva Federal\" OR \"Wall Street\" OR \"economia mundial\" OR commodities) sourcelang:spanish"
-      ]
+      ],
+      "prioridad": 3
     },
     {
       "id": "internacional",
@@ -371,7 +454,8 @@
         "(Trump OR \"Casa Blanca\" OR \"Estados Unidos\") Argentina sourcelang:spanish",
         "(China OR \"Xi Jinping\" OR Pekin) Argentina sourcelang:spanish",
         "(ONU OR G20 OR \"Union Europea\" OR \"Consejo de Seguridad\" OR sanciones) sourcelang:spanish"
-      ]
+      ],
+      "prioridad": 4
     },
     {
       "id": "mercosur",
@@ -386,7 +470,8 @@
         "arancel",
         "acuerdo comercial"
       ],
-      "consulta": "(Mercosur OR Parlasur OR \"acuerdo Mercosur\") sourcelang:spanish"
+      "consulta": "(Mercosur OR Parlasur OR \"acuerdo Mercosur\") sourcelang:spanish",
+      "prioridad": 3
     },
     {
       "id": "brasil",
@@ -401,7 +486,8 @@
         "Haddad",
         "real brasileño"
       ],
-      "consulta": "(Lula OR Bolsonaro OR Brasil OR Petrobras) sourcelang:spanish"
+      "consulta": "(Lula OR Bolsonaro OR Brasil OR Petrobras) sourcelang:spanish",
+      "prioridad": 3
     },
     {
       "id": "latinoamerica",
@@ -425,7 +511,8 @@
         "Orsi",
         "Celac"
       ],
-      "consulta": "(Venezuela OR Bolivia OR Chile OR Colombia OR Mexico OR Peru OR \"America Latina\") sourcelang:spanish"
+      "consulta": "(Venezuela OR Bolivia OR Chile OR Colombia OR Mexico OR Peru OR \"America Latina\") sourcelang:spanish",
+      "prioridad": 3
     },
     {
       "id": "migracion",
@@ -444,7 +531,9 @@
         "residencia precaria",
         "extranjeros"
       ],
-      "consulta": "(migrantes OR inmigrantes OR migracion OR refugiados OR deportaciones) sourcelang:spanish"
+      "consulta": "(migrantes OR inmigrantes OR migracion OR refugiados OR deportaciones) sourcelang:spanish",
+      "prioridad": 3
     }
-  ]
+  ],
+  "_prioridades": "Prioridad del diario (0 = eje central). 0: economía de la gente (bolsillo) y política económica. 1: industria y empleo, PJ y política nacional. 2: FMI y deuda, estadísticas, energía, campo, política local. 3: economía global, Mercosur, Brasil, Latinoamérica, migración. 4: conflictos internacionales lejanos. El jefe de redacción ordena con esta escala y cada edición lleva sí o sí un mínimo de economía, de bolsillo y de PJ (agentes/config.json → minimos)."
 }

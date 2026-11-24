@@ -37,7 +37,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 function reformular(){const n=current();if(!n)return;const btn=$('iaReformular'),est=$('iaEstado');const pedido=$('iaPedido').value.trim();saveNote();const m=current();btn.disabled=true;btn.textContent='Reformulando…';est.textContent='La IA está trabajando, tarda unos segundos.';
 fetchMesa('/api/reformular',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({volanta:m.volanta||'',titulo:m.title||'',bajada:m.summary||'',cuerpo:m.body||'',instruccion:pedido})}).then(r=>r.json().then(j=>({ok:r.ok,j}))).then(({ok,j})=>{if(!ok||!j.ok)throw new Error(j.error||'No se pudo reformular.');snapshot(m);Object.assign(m,{volanta:j.volanta||m.volanta,title:j.titulo||m.title,summary:j.bajada||m.summary,body:cleanHtml(j.cuerpo_html),updated:new Date().toISOString(),updatedBy:'Reformulada con '+j.ia,localEdited:true});persist();render();toast('Reformulada con '+j.ia+' · la anterior quedó en el historial')}).catch(e=>{const b=$('iaReformular'),t=$('iaEstado');if(b){b.disabled=false;b.textContent='✨ Reformular esta nota'}if(t)t.textContent=e.message||'No se pudo reformular.';toast(e.message||'No se pudo reformular')})}
 function toast(s){$('toast').textContent=s;$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',2200)}
-function persist(){try{localStorage.setItem(KEY,JSON.stringify(db));$('saveState').textContent='Guardado en este navegador · '+new Date().toLocaleTimeString('es-AR',{hourCycle:'h23'})}catch(e){toast('No hay espacio suficiente. Exportá un respaldo.');}}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(db));$('saveState').textContent='Guardado en este navegador · '+new Date().toLocaleTimeString('es-AR',{hourCycle:'h23'})}catch(e){if(compactar()){try{localStorage.setItem(KEY,JSON.stringify(db));toast('Mesa compactada: se recortó el historial viejo para hacer lugar a notas nuevas.');return}catch(e2){}}toast('No hay espacio suficiente. Exportá un respaldo.');}}
 function load(){try{const x=JSON.parse(localStorage.getItem(KEY)||'null');if(x&&Array.isArray(x.notes)&&Array.isArray(x.assets))db=x}catch{};render()}
 function current(){return db.notes.find(n=>n.id===selected)}
 function snapshot(n){n.versions=n.versions||[];n.versions.unshift({at:new Date().toISOString(),title:n.title,summary:n.summary,body:n.body,by:n.updatedBy||'Editor local'});n.versions=n.versions.slice(0,30)}
@@ -113,4 +113,18 @@ async function marcarPublicadas(){try{const r=await fetch('/api/diario',{cache:'
 load();syncAgents().finally(()=>{marcarPublicadas();abrirNotaPedida()});setInterval(marcarPublicadas,5*60*1000);
 // Agregado: si llega ?nota=ID desde la Central, abre esa nota y deja listo el cuadro de IA
 function abrirNotaPedida(){const id=new URLSearchParams(location.search).get('nota');if(!id)return;const n=db.notes.find(x=>x.sourceId===id||x.id===id);if(!n){toast('No encontré esa nota en la mesa todavía. Tocá "Sincronizar agentes".');return}selected=n.id;render();setTimeout(()=>{const b=$('irIA')||$('iaPedido');if(b)b.scrollIntoView({behavior:'smooth',block:'center'});toast('Nota abierta: escribí qué querés y tocá Reformular')},300);history.replaceState(null,'',location.pathname)}
+
+// Agregado: hacer lugar para más notas. El navegador guarda ~5 MB; si se llena, se recortan solo las versiones
+// viejas (quedan las 5 últimas de cada nota) y las fotos subidas a la biblioteca pasan a guardarse aparte del texto.
+function compactar(){let tocado=false;for(const n of db.notes){if((n.versions||[]).length>5){n.versions=n.versions.slice(0,5);tocado=true}}
+ if(JSON.stringify(db).length>4e6){for(const n of db.notes){if((n.versions||[]).length>1){n.versions=n.versions.slice(0,1);tocado=true}}}return tocado}
+// Agregado: cartel con la IA que está conectada a la mesa (Gemini, Groq, OpenRouter o el respaldo sin clave).
+let estadoIA=null;
+fetch('/api/reformular',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{if(d&&d.ia){estadoIA=d.ia;pintarEstadoIA()}}).catch(()=>{});
+function pintarEstadoIA(){const el=document.getElementById('iaEstado');if(!el||!estadoIA||el.dataset.ia)return;el.dataset.ia='1';
+ const on=[estadoIA.gemini&&'Gemini',estadoIA.groq&&'Groq',estadoIA.openrouter&&'OpenRouter'].filter(Boolean);
+ const b=document.createElement('div');b.style.cssText='margin-top:6px;padding:6px 8px;border-radius:3px;font:12px/1.4 system-ui;'+(on.length?'background:#E7F3EC;color:#1F5E45':'background:#FBEFD9;color:#7A4E0F');
+ b.textContent=on.length?('IA conectada: '+on.join(' + ')+'.'):'Gemini no está conectada: la mesa usa una IA de respaldo, más lenta y que a veces no responde. Para conectarla hay que cargar la clave GEMINI_API_KEY en Vercel (Settings → Environment Variables).';
+ el.after(b)}
+new MutationObserver(()=>pintarEstadoIA()).observe(document.getElementById('editor'),{childList:true});
 </script></body></html>
