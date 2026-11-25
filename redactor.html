@@ -147,7 +147,7 @@ function pintar(){
   var c=$('chat'); c.scrollTop=c.scrollHeight;
 }
 
-function preguntar(){
+function preguntar(aMesa){
   var envio=charla.filter(function(m){return !m.pensando}).map(function(m){return {rol:m.rol,texto:m.texto}});
   charla.push({rol:'ia',pensando:true}); pintar(); $('enviar').disabled=true;
   var pedir=function(t){return fetch('/api/charla',{method:'POST',headers:{'Content-Type':'application/json','X-Mesa-Token':t},body:JSON.stringify({mensajes:envio})})};
@@ -158,6 +158,7 @@ function preguntar(){
     charla.pop();
     if(!x.ok||!x.j.ok) throw new Error((x.j&&x.j.error)||'La IA no respondió.');
     charla.push({rol:'ia',texto:x.j.texto,ia:x.j.ia}); guardar(); pintar();
+    if(aMesa){var k=charla.length-1;if(ultimaNota()===k)mandarAMesa(k);else toast('No armó una nota completa todavía. Pedile la nota y después «mandala a la Mesa».')}
   }).catch(function(e){
     if(charla.length&&charla[charla.length-1].pensando)charla.pop();
     pintar(); toast(e.message||'No se pudo hablar con la IA. Probá de nuevo.');
@@ -166,7 +167,62 @@ function preguntar(){
 
 function enviar(texto){
   texto=String(texto||'').trim(); if(!texto)return;
-  charla.push({rol:'yo',texto:texto}); guardar(); $('txt').value=''; ajustar(); preguntar();
+  var aMesa=pideMesa(texto), previa=ultimaNota();
+  charla.push({rol:'yo',texto:texto}); guardar(); $('txt').value=''; ajustar();
+  // Arreglo: si le pedís que la mande a la Mesa y la nota ya está escrita, la manda sola (corregida y con foto)
+  if(aMesa&&previa>=0&&texto.length<260){pintar();mandarAMesa(previa);return}
+  preguntar(aMesa);
+}
+// ¿El pedido es mandar/pasar/llevar la nota a la Mesa?
+function pideMesa(t){return /\b(mand|pas|llev|envi|sub|carg|dej|pon)[a-záéíóú]*\b[^.\n]{0,60}\bmesa\b/i.test(t)||/\ba la mesa\b/i.test(t)}
+// Última respuesta de la IA que es una nota (tiene TÍTULO o es larga)
+function ultimaNota(){for(var k=charla.length-1;k>=0;k--){var m=charla[k];if(m.rol==='ia'&&!m.local&&!m.pensando&&(/T[IÍ]TULO\s*:/i.test(m.texto)||m.texto.length>600))return k}return -1}
+function limpiarHtml(h){var d=new DOMParser().parseFromString('<div>'+String(h||'')+'</div>','text/html');d.querySelectorAll('script,style,iframe,object').forEach(function(x){x.remove()});d.querySelectorAll('*').forEach(function(el){[].slice.call(el.attributes).forEach(function(a){if(/^on/i.test(a.name)||(a.name==='href'&&/^\s*javascript:/i.test(a.value)))el.removeAttribute(a.name)})});return d.body.firstChild.innerHTML}
+function firmaPara(sec){sec=String(sec||'').toLowerCase();if(sec.indexOf('econom')>=0)return 'Ramiro De la Puente';if(/argentina|pol[ií]tica|internacional|opini/.test(sec))return 'Emilio Lahitte';return 'Redacción Federal'}
+// Manda una respuesta a la Mesa pasando por el mismo ordenador de «Mi nota terminada»:
+// corrige, ordena volanta/título/copete/texto/fuentes y le pone foto. Si eso falla, la manda igual tal cual.
+var mandando=false;
+function mandarAMesa(i){
+  if(mandando)return; i=+i; var m=charla[i]; if(!m)return;
+  var reemplazar=!!editando; mandando=true;
+  toast('Mandando a la Mesa: corrijo, ordeno y busco foto…');
+  document.querySelectorAll('.acciones button').forEach(function(b){b.disabled=true});
+  var base=aNota(m.texto);
+  var listo=function(n){mandando=false;if(reemplazar)guardarReemplazo(n);else guardarNueva(n)};
+  if(m.texto.length<120){listo(base);return}
+  postApi('/api/ordenar',{texto:m.texto,pedido:''}).then(function(x){
+    var j=x.j||{}; if(!x.ok||!j.ok)throw new Error(j.error||'');
+    var fotos=j.fotos||[], sec=j.seccion||base.section;
+    base.title=j.titulo||base.title; base.summary=j.bajada||base.summary; base.volanta=j.volanta||base.volanta;
+    if(j.cuerpo_html)base.body=limpiarHtml(j.cuerpo_html);
+    base.section=sec; base.author=j.firma||firmaPara(sec); base.sources=j.fuentes||[]; base.tags=j.etiquetas||[];
+    base.altTitles=j.titulos_alternativos||[]; base.correcciones=j.correcciones||[]; base.photos=fotos;
+    base.image=fotos[0]?fotos[0].url:''; base.caption=fotos[0]?fotos[0].credito:''; base.status='En edición';
+    base.updatedBy='Redactor IA · corregida con '+(j.ia||'IA');
+    listo(base);
+  }).catch(function(){toast('No pude ordenarla con la IA: la mando igual, revisá la foto en la Mesa');base.author=firmaPara(base.section);setTimeout(function(){listo(base)},900)});
+}
+function guardarNueva(n){
+  var db=leer(MESA,null); if(!db||!Array.isArray(db.notes))db={notes:[],assets:[]}; if(!Array.isArray(db.assets))db.assets=[];
+  db.notes.unshift(n);
+  try{localStorage.setItem(MESA,JSON.stringify(db))}catch(err){pintar();toast('No hay lugar en la Mesa. Exportá un respaldo allá.');return}
+  location.href='mesa-redaccion-operativa.html?nota='+encodeURIComponent(n.id);
+}
+function guardarReemplazo(nueva){
+  var db=leer(MESA,null), n=db&&Array.isArray(db.notes)?db.notes.find(function(x){return x.id===editando.id}):null;
+  if(!n){toast('Esa nota ya no está en la Mesa. La llevo como nota nueva.');editando=null;marcarEditando();return guardarNueva(nueva)}
+  n.versions=n.versions||[]; n.versions.unshift({at:new Date().toISOString(),title:n.title,summary:n.summary,body:n.body,by:n.updatedBy||'Editor local'}); n.versions=n.versions.slice(0,30);
+  n.title=nueva.title; n.summary=nueva.summary||n.summary; if(nueva.volanta)n.volanta=nueva.volanta; n.body=nueva.body;
+  // La foto que ya tenía no se toca; si no tenía, se le pone la que se encontró
+  if(!n.image&&nueva.image){n.image=nueva.image;n.caption=nueva.caption}
+  if(nueva.photos&&nueva.photos.length)n.photos=nueva.photos;
+  if(nueva.sources&&nueva.sources.length)n.sources=nueva.sources;
+  if(nueva.correcciones)n.correcciones=nueva.correcciones;
+  if(n.status==='Borrador IA')n.status='En edición';
+  n.updated=new Date().toISOString(); n.updatedBy=nueva.updatedBy||'Redactor IA'; n.localEdited=true;
+  try{localStorage.setItem(MESA,JSON.stringify(db))}catch(err){pintar();toast('No hay lugar en la Mesa. Exportá un respaldo allá.');return}
+  var id=n.id; editando=null; marcarEditando();
+  location.href='mesa-redaccion-operativa.html?nota='+encodeURIComponent(id);
 }
 
 // Convierte la respuesta en una nota de la Mesa
@@ -261,8 +317,8 @@ $('hilo').addEventListener('click',function(e){
   if(b.id==='traerIntro')return;
   if(b.parentNode&&b.parentNode.id==='ideas'){$('txt').value=b.textContent;ajustar();$('txt').focus();return}
   var i;
-  if((i=b.getAttribute('data-devolver'))!==null){devolver(i);return}
-  if((i=b.getAttribute('data-mesa'))!==null){llevarNueva(i);return}
+  if((i=b.getAttribute('data-devolver'))!==null){mandarAMesa(i);return}
+  if((i=b.getAttribute('data-mesa'))!==null){var ed=editando;editando=null;mandarAMesa(i);editando=ed;return}
   if((i=b.getAttribute('data-copiar'))!==null){
     var t=charla[+i].texto;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){toast('Copiado')},function(){toast('No se pudo copiar')});return;
   }

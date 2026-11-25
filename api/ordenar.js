@@ -97,7 +97,17 @@ function leerRotulos(texto) {
     if (clave) { actual = clave; encontrados++; partes[clave] = (partes[clave] ? partes[clave] + '\n' : '') + m[2]; continue; }
     if (actual) partes[actual] = (partes[actual] || '') + '\n' + linea;
   }
-  if (encontrados < 2 || !(partes.titulo && partes.cuerpo)) return null;
+  // Arreglo: formato del Redactor IA (VOLANTA / TÍTULO / BAJADA y después el texto, sin rótulo "Texto:")
+  if (encontrados >= 1 && partes.titulo && !partes.cuerpo) {
+    for (const k of ['bajada', 'titulo', 'volanta']) {
+      if (!partes[k]) continue;
+      const corte = partes[k].trim().split(/\n\s*\n/);
+      if (corte.length > 1) { partes[k] = corte.shift(); partes.cuerpo = corte.join('\n\n'); }
+      else if (k === 'bajada' || k === 'titulo') { const l = partes[k].trim().split('\n'); if (l.length > 1) { partes[k] = l.shift(); partes.cuerpo = l.join('\n\n'); } }
+      break;
+    }
+  }
+  if (encontrados < 1 || !(partes.titulo && partes.cuerpo)) return null;
   for (const k in partes) partes[k] = partes[k].trim();
   return {
     volanta: partes.volanta, titulo: partes.titulo, bajada: partes.bajada, cuerpo: partes.cuerpo,
@@ -286,7 +296,7 @@ function leerJson(t) {
 
 // Si ninguna IA responde: volanta y título = primeras líneas cortas, copete = la que sigue, el resto es el texto.
 function ordenBasico(texto) {
-  const lineas = texto.split(/\n+/).map(l => l.trim()).filter(Boolean);
+  const lineas = texto.split(/\n+/).map(l => l.trim().replace(/^[*_#\s]*(volanta|t[ií]tulo|bajada|copete|texto|cuerpo)[*_\s]*:[*_\s]*/i, '')).filter(Boolean);
   let volanta = '', titulo = '', bajada = '';
   if (lineas.length > 3 && lineas[0].length <= 40 && !/[.:]$/.test(lineas[0]) && lineas[1].length <= 160 && !/\.$/.test(lineas[1])) volanta = lineas.shift();
   if (lineas.length > 1 && lineas[0].length <= 160 && !/\.$/.test(lineas[0])) titulo = lineas.shift().replace(/^#+\s*/, '');
@@ -393,6 +403,8 @@ async function ordenar(original, pedido) {
     if (!nota) { nota = ordenBasico(texto); ia = 'orden básico (sin IA)'; }
   }
 
+  if (modo) { const c = await corregir(nota); if (c) { Object.assign(nota, c.nota); ia += ' · corregida con ' + c.ia; } }
+
   const sep = separarFuentes(String(nota.cuerpo || ''));
   const fuentes = normalizarFuentes(nota.fuentes).concat(sep.fuentes);
   const cuerpo_html = aHtml(quitarCharla(sep.cuerpo));
@@ -425,6 +437,38 @@ async function ordenar(original, pedido) {
     correcciones: lista(nota.correcciones).slice(0, 20),
     fotos, busquedas
   };
+}
+
+// Corrige solo ortografía, tildes, tipeos y puntuación. No cambia palabras, datos, citas ni enlaces.
+// Si la IA no responde, o el texto cambió demasiado, se deja como estaba.
+async function corregir(nota) {
+  const original = { titulo: String(nota.titulo || ''), bajada: String(nota.bajada || ''), cuerpo: String(nota.cuerpo || '') };
+  if (original.cuerpo.length < 80 || original.cuerpo.length > 14000) return null;
+  const prompt = `Sos corrector de EL DIARIO (Argentina, español rioplatense). Corregí SOLO ortografía, tildes, tipeos, mayúsculas y puntuación de esta nota.
+No cambies palabras, datos, cifras, nombres, citas ni el orden. Los enlaces [texto](https://...) y los subtítulos que empiezan con ## quedan exactamente igual. Mantené los saltos de línea.
+Devolvé solo JSON: {"titulo":"...","bajada":"...","cuerpo":"...","correcciones":["qué corregiste, corto"]}
+
+NOTA:
+${JSON.stringify(original)}`;
+  const intentos = [];
+  if (process.env.GROQ_API_KEY) intentos.push(() => compatible('https://api.groq.com/openai/v1/chat/completions', process.env.GROQ_API_KEY, ['llama-3.3-70b-versatile'], prompt, 'Groq'));
+  if (process.env.GEMINI_API_KEY) intentos.push(() => gemini(prompt, process.env.GEMINI_API_KEY));
+  for (const intento of intentos) {
+    let out = null; try { out = await intento(); } catch {}
+    if (!out) continue;
+    let x = null; try { x = leerJson(out.texto); } catch {}
+    if (!x || !x.cuerpo) continue;
+    const parecido = (a, b) => { a = String(a || ''); b = String(b || ''); return Math.abs(a.length - b.length) <= Math.max(12, a.length * 0.08); };
+    const enlaces = t => (String(t).match(/\]\((https?:[^)\s]+)\)/g) || []).join(' ');
+    if (!parecido(original.cuerpo, x.cuerpo) || enlaces(original.cuerpo) !== enlaces(x.cuerpo)) continue;
+    const r = { cuerpo: x.cuerpo };
+    if (x.titulo && parecido(original.titulo, x.titulo)) r.titulo = x.titulo;
+    if (original.bajada && x.bajada && parecido(original.bajada, x.bajada)) r.bajada = x.bajada;
+    const hechas = (Array.isArray(x.correcciones) ? x.correcciones : []).map(String).filter(Boolean);
+    r.correcciones = [].concat(nota.correcciones || [], hechas.length ? hechas.map(c => 'Corregido: ' + c) : ['Ortografía revisada: sin errores.']);
+    return { nota: r, ia: out.ia };
+  }
+  return null;
 }
 
 module.exports._prueba = { ordenar, leerCodigo, leerRotulos, quitarCharla, ordenBasico, aHtml, separarFuentes, busquedasDesde, leerJson };

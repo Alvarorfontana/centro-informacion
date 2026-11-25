@@ -189,7 +189,7 @@ const FORMATO=['Entregame la nota en este formato exacto, en un bloque de códig
 '}'].join('\n');
 $('miFormato').onclick=()=>{const ok=()=>toast('Formato copiado: pegáselo a la IA junto con tu pedido');if(navigator.clipboard)navigator.clipboard.writeText(FORMATO).then(ok,()=>prompt('Copiá este formato:',FORMATO));else prompt('Copiá este formato:',FORMATO)};$('miCerrar').onclick=cerrar;f.addEventListener('click',e=>{if(e.target===f)cerrar()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&f.classList.contains('abierto'))cerrar()});
-$('miIr').onclick=()=>{const texto=$('miTexto').value.trim(),pedido=$('miPedido').value.trim(),firma=$('miFirma').value.trim()||'Redacción';
+const ordenarMiNota=()=>{const texto=$('miTexto').value.trim(),pedido=$('miPedido').value.trim(),firma=$('miFirma').value.trim()||'Redacción';
  if(texto.length<120){$('miEstado').textContent='Pegá la nota completa.';return}
  const b=$('miIr');b.disabled=true;b.textContent='Ordenando…';$('miEstado').textContent='Ordenando la nota y buscando fotos, tarda unos segundos.';
  fetchMesa('/api/ordenar',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({texto,pedido})}).then(r=>r.json().then(j=>({ok:r.ok,j}))).then(({ok,j})=>{if(!ok||!j.ok)throw new Error(j.error||'No se pudo ordenar.');
@@ -199,9 +199,13 @@ $('miIr').onclick=()=>{const texto=$('miTexto').value.trim(),pedido=$('miPedido'
   toast((j.fotos||[]).length?'Nota ordenada · elegí la foto en «Fuentes y verificación»':'Nota ordenada · no encontré fotos libres, pegá un enlace de foto');
   if(innerWidth<900){const e=$('editor');if(e)setTimeout(()=>e.scrollIntoView({behavior:'smooth'}),150)}})
  .catch(e=>{$('miEstado').textContent=e.message||'No se pudo ordenar.'}).finally(()=>{b.disabled=false;b.textContent='📄 Ordenar y buscar foto'})};
+$('miIr').onclick=ordenarMiNota;
 // Llegó con el botón Compartir del celular (Android): el service worker la guardó y acá se abre lista para ordenar
 if(new URLSearchParams(location.search).get('compartido')&&window.caches){caches.open('compartido').then(c=>c.match('/compartido-pendiente').then(r=>r?r.json().then(d=>{c.delete('/compartido-pendiente');history.replaceState(null,'',location.pathname);
  const partes=[d.titulo,d.texto,d.enlace].map(x=>String(x||'').trim()).filter(Boolean);const t=[...new Set(partes)].join('\n\n');
- if(t)abrir(t);toast('Nota recibida: revisala y tocá «Ordenar y buscar foto»')}):null)).catch(()=>{})}
+ if(!t)return;abrir(t);
+ // Arreglo: ya no hay que apretar nada. Si llegó la nota entera, se ordena, se corrige y se le busca foto sola.
+ if(t.length>=120){toast('Nota recibida: la ordeno y le busco foto');ordenarMiNota()}
+ else $('miEstado').textContent=/^https?:\/\//.test(t)?'Llegó solo un enlace, no el texto. En la app de la IA tocá «Copiar» sobre la nota y pegala acá.':'Llegó muy poco texto. Pegá la nota completa.'}):null)).catch(()=>{})}
 })();
 </script></body></html>
