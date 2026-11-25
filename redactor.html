@@ -44,6 +44,28 @@ header{background:var(--barra);border-bottom:1px solid var(--linea);padding:12px
 .pie{max-width:820px;margin:6px auto 0;display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--tinta-3)}
 .pie button{background:none;border:0;color:var(--tinta-3);text-decoration:underline;cursor:pointer;font-size:12px;padding:0}
 .toast{position:fixed;left:50%;bottom:110px;transform:translateX(-50%);background:var(--tinta);color:#fff;padding:9px 14px;border-radius:6px;font-size:13px;display:none;z-index:9}
+.mic.ocupado{opacity:.6;cursor:wait}
+.traer-mesa{background:#fff;border:1px solid var(--azul);color:var(--azul-tinta);border-radius:8px;padding:9px 14px;font-weight:800;font-size:14px;cursor:pointer;margin:4px 0 14px}
+.pie .traer-link{font-weight:800;color:var(--azul-tinta)}
+.editando{max-width:820px;margin:0 auto 8px;display:none;align-items:center;gap:10px;background:var(--azul-suave);border:1px solid #C9D7F5;border-radius:8px;padding:8px 12px;font-size:13px}
+.editando.on{display:flex}
+.editando b{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.editando button{background:none;border:0;color:var(--tinta-3);text-decoration:underline;cursor:pointer;font-size:12px;padding:0}
+.rapidas{max-width:820px;margin:0 auto 8px;display:none;flex-wrap:wrap;gap:6px}
+.rapidas.on{display:flex}
+.rapidas button{background:#fff;border:1px solid var(--linea);border-radius:16px;padding:5px 11px;font-size:12px;cursor:pointer}
+.modal-fondo{position:fixed;inset:0;background:rgba(22,24,29,.45);display:none;align-items:flex-start;justify-content:center;padding:6vh 12px;z-index:20;overflow:auto}
+.modal-fondo.on{display:flex}
+.modal{background:var(--barra);border:1px solid var(--linea);border-radius:10px;width:min(620px,100%);padding:18px 18px 14px;box-shadow:0 18px 50px rgba(0,0,0,.18)}
+.modal h2{font:600 24px "Newsreader",Georgia,serif;margin:0 0 4px}
+.modal p{margin:0 0 12px;color:var(--tinta-3);font-size:13px}
+.modal input{width:100%;border:1px solid #CFCAC0;border-radius:8px;padding:10px 12px;background:#fff;margin-bottom:8px}
+.lista-notas{max-height:55vh;overflow:auto;border-top:1px solid var(--linea)}
+.lista-notas button{display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--linea);padding:11px 4px;cursor:pointer}
+.lista-notas button:hover{background:#fff}
+.lista-notas b{display:block;font-size:14px;line-height:1.35}
+.lista-notas small{color:var(--tinta-3);font-size:11px}
+.modal .cerrar{float:right;background:none;border:0;font-size:20px;cursor:pointer;color:var(--tinta-3)}
 @media(max-width:640px){header{padding:10px 14px}.intro h1{font-size:27px}.msj.yo .burbuja{max-width:92%}}
 </style>
 <link rel="stylesheet" href="marca.css">
@@ -59,6 +81,7 @@ header{background:var(--barra);border-bottom:1px solid var(--linea);padding:12px
     <div class="intro" id="intro">
       <h1>¿Qué querés que escriba?</h1>
       <p>Pedile lo que necesites, escribiendo o hablando con el micrófono 🎤. Cuando te arme una nota, la llevás a la Mesa de Redacción con un toque.</p>
+      <button type="button" class="traer-mesa" id="traerIntro">📥 Traer una nota de la Mesa para trabajarla</button>
       <div class="ideas" id="ideas">
         <button type="button">Escribime una nota sobre la suba de la nafta, con estos datos: </button>
         <button type="button">Dame 5 títulos posibles para esta nota: </button>
@@ -71,13 +94,28 @@ header{background:var(--barra);border-bottom:1px solid var(--linea);padding:12px
 </main>
 
 <div class="caja">
+  <div class="editando" id="editando"><span>✏️</span><b id="editandoTit"></b><button type="button" id="soltar">Soltar nota</button></div>
+  <div class="rapidas" id="rapidas">
+    <button type="button">Hacela más corta, hasta 500 palabras</button>
+    <button type="button">Mejorá el título y la bajada</button>
+    <button type="button">Ajustala al estilo del diario</button>
+    <button type="button">Sumale contexto y explicá mejor los datos</button>
+    <button type="button">Contala desde el bolsillo de la gente</button>
+  </div>
   <form id="form" autocomplete="off">
     <button type="button" class="boton mic" id="mic" title="Hablar en vez de escribir" aria-label="Hablar">🎤</button>
     <textarea id="txt" rows="1" placeholder="Escribile a la IA… (Enter para enviar, Shift+Enter para otra línea)"></textarea>
     <button type="submit" class="boton enviar" id="enviar">Enviar</button>
   </form>
-  <div class="pie"><span id="estado">IA: comprobando…</span><button type="button" id="nueva">Empezar charla nueva</button></div>
+  <div class="pie"><span id="estado">IA: comprobando…</span><span><button type="button" class="traer-link" id="traerPie">📥 Traer nota de la Mesa</button> · <button type="button" id="nueva">Empezar charla nueva</button></span></div>
 </div>
+<div class="modal-fondo" id="modalMesa" role="dialog" aria-modal="true" aria-labelledby="modalTit"><div class="modal">
+  <button type="button" class="cerrar" id="modalCerrar" aria-label="Cerrar">✕</button>
+  <h2 id="modalTit">Traer una nota de la Mesa</h2>
+  <p>Elegí la nota. Se carga entera acá y le pedís los cambios a la IA, escribiendo o con el micrófono. Al final la devolvés a la Mesa con un toque.</p>
+  <input id="buscarNota" placeholder="Buscar por título o sección…">
+  <div class="lista-notas" id="listaNotas"></div>
+</div></div>
 <div class="toast" id="toast"></div>
 
 <script>
@@ -99,8 +137,10 @@ function pintar(){
     if(m.rol==='yo'){d.innerHTML='<div class="burbuja">'+esc(m.texto)+'</div>'}
     else if(m.pensando){d.innerHTML='<div class="burbuja"><div class="quien">Redactor IA</div><span class="pensando">Escribiendo…</span></div>'}
     else{
-      d.innerHTML='<div class="burbuja"><div class="quien">Redactor IA'+(m.ia?' · '+esc(m.ia):'')+'</div>'+esc(m.texto)+
-        '<div class="acciones"><button type="button" class="mesa" data-mesa="'+i+'">📝 Llevar a la Mesa</button><button type="button" data-copiar="'+i+'">Copiar</button><button type="button" data-otra="'+i+'">Otra versión</button></div></div>';
+      var acc=m.local?'':(editando?
+        '<div class="acciones"><button type="button" class="mesa" data-devolver="'+i+'">📝 Devolver a la Mesa (reemplaza la nota)</button><button type="button" data-mesa="'+i+'">Llevar como nota nueva</button><button type="button" data-copiar="'+i+'">Copiar</button><button type="button" data-otra="'+i+'">Otra versión</button></div>':
+        '<div class="acciones"><button type="button" class="mesa" data-mesa="'+i+'">📝 Llevar a la Mesa</button><button type="button" data-copiar="'+i+'">Copiar</button><button type="button" data-otra="'+i+'">Otra versión</button></div>');
+      d.innerHTML='<div class="burbuja"><div class="quien">Redactor IA'+(m.ia?' · '+esc(m.ia):'')+'</div>'+esc(m.texto)+acc+'</div>';
     }
     h.appendChild(d);
   });
@@ -139,24 +179,90 @@ function aNota(texto){
   });
   var parrafos=cuerpo.join('\n').split(/\n\s*\n/).map(function(p){return p.trim()}).filter(Boolean);
   if(!t){t=(parrafos[0]||'Nota del Redactor IA').slice(0,110);}
-  var html=parrafos.map(function(p){return '<p>'+esc(p).replace(/\n/g,'<br>')+'</p>'}).join('');
+  var html=parrafos.map(function(p){return '<p>'+enlaces(esc(p)).replace(/\n/g,'<br>')+'</p>'}).join('');
   var id='DF-'+Date.now().toString(36).toUpperCase()+'-'+Math.random().toString(36).slice(2,6).toUpperCase();
   var ahora=new Date().toISOString();
-  return {id:id,title:t,summary:b,volanta:v,body:html,section:'Argentina',author:'Redacción',status:'Borrador IA',assignee:'',due:'',image:'',caption:'',tags:[],sources:[],versions:[],created:ahora,updated:ahora,updatedBy:'Redactor IA',localEdited:true};
+  return {id:id,title:t,summary:enlacesFuera(b),volanta:v,body:html,section:'Argentina',author:'Redacción',status:'Borrador IA',assignee:'',due:'',image:'',caption:'',tags:[],sources:[],versions:[],created:ahora,updated:ahora,updatedBy:'Redactor IA',localEdited:true};
+}
+
+// Enlaces: [texto](https://…) ⇄ <a href>, para que la nota no pierda sus hipervínculos al pasar por la IA
+function enlaces(h){return String(h).replace(/\[([^\]\n]+)\]\((https?:\/\/[^\s)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>')}
+function enlacesFuera(t){return String(t||'').replace(/\[([^\]\n]+)\]\((https?:\/\/[^\s)]+)\)/g,'$1')}
+function htmlATexto(html){
+  var doc=new DOMParser().parseFromString('<div>'+String(html||'')+'</div>','text/html');
+  doc.querySelectorAll('a[href]').forEach(function(a){var u=a.getAttribute('href');if(/^https?:\/\//i.test(u))a.replaceWith('['+a.textContent+']('+u+')')});
+  doc.querySelectorAll('br').forEach(function(x){x.replaceWith('\n')});
+  var partes=[];
+  doc.body.firstChild.querySelectorAll('p,h2,h3,h4,li,blockquote').forEach(function(el){
+    if(el.querySelector('p,li'))return;
+    var t=el.textContent.trim(); if(!t)return;
+    if(/^H[234]$/.test(el.tagName))t='## '+t; else if(el.tagName==='LI')t='- '+t; else if(el.tagName==='BLOCKQUOTE')t='"'+t+'"';
+    partes.push(t);
+  });
+  if(!partes.length){var s=doc.body.textContent.trim();if(s)partes=s.split(/\n\s*\n/)}
+  return partes.join('\n\n');
+}
+
+// ===== Nota traída de la Mesa =====
+var EDIT='df_redactor_editando', editando=leer(EDIT,null);
+function notasMesa(){var db=leer(MESA,null);return db&&Array.isArray(db.notes)?db.notes:[]}
+function marcarEditando(){
+  $('editando').classList.toggle('on',!!editando); $('rapidas').classList.toggle('on',!!editando);
+  if(editando)$('editandoTit').textContent='Trabajando la nota: '+editando.title;
+  try{editando?localStorage.setItem(EDIT,JSON.stringify(editando)):localStorage.removeItem(EDIT)}catch(e){}
+}
+function cargarNota(n){
+  if(charla.length&&!confirm('Para trabajar esta nota se empieza una charla nueva. ¿Seguimos?'))return;
+  var texto=(n.volanta?'VOLANTA: '+n.volanta+'\n':'')+'TÍTULO: '+(n.title||'')+'\n'+(n.summary?'BAJADA: '+n.summary+'\n':'')+'\n'+htmlATexto(n.body);
+  charla=[
+    {rol:'yo',texto:'Te paso esta nota de la Mesa para trabajarla. Quiero hacerle cambios:\n\n'+texto},
+    {rol:'ia',local:true,ia:'listo',texto:'Ya tengo la nota «'+(n.title||'sin título')+'». Decime qué cambio querés: más corta, otro título, más contexto, otro enfoque… Podés escribirlo o decírmelo con el micrófono 🎤. Cuando te guste, tocá «Devolver a la Mesa» y la reemplazo allá (la versión anterior queda guardada en el historial).'}
+  ];
+  editando={id:n.id,title:n.title||'Sin título'}; marcarEditando(); guardar(); pintar(); cerrarModal(); $('txt').focus();
+}
+function abrirModal(){$('buscarNota').value='';listar();$('modalMesa').classList.add('on');setTimeout(function(){$('buscarNota').focus()},50)}
+function cerrarModal(){$('modalMesa').classList.remove('on')}
+function listar(){
+  var q=$('buscarNota').value.toLowerCase();
+  var ns=notasMesa().filter(function(n){return n.status!=='Archivada'&&((n.title||'')+' '+(n.section||'')+' '+(n.status||'')).toLowerCase().indexOf(q)>=0}).slice(0,80);
+  $('listaNotas').innerHTML=ns.map(function(n){return '<button type="button" data-cargar="'+esc(n.id)+'"><b>'+esc(n.title||'Sin título')+'</b><small>'+esc(n.section||'')+' · '+esc(n.status||'')+' · '+esc(n.author||'')+'</small></button>'}).join('')||
+    '<p style="padding:14px 4px">'+(notasMesa().length?'No hay notas con esa búsqueda.':'La Mesa todavía no tiene notas en este teléfono. Abrí la <a href="mesa-redaccion-operativa.html">Mesa de Redacción</a> y tocá «Sincronizar agentes».')+'</p>';
+}
+$('listaNotas').addEventListener('click',function(e){var b=e.target.closest('[data-cargar]');if(!b)return;var n=notasMesa().find(function(x){return x.id===b.getAttribute('data-cargar')});if(n)cargarNota(n)});
+$('buscarNota').addEventListener('input',listar);
+$('traerIntro').onclick=abrirModal; $('traerPie').onclick=abrirModal; $('modalCerrar').onclick=cerrarModal;
+$('modalMesa').addEventListener('click',function(e){if(e.target.id==='modalMesa')cerrarModal()});
+$('soltar').onclick=function(){editando=null;marcarEditando();pintar();toast('Listo, ya no estás editando esa nota')};
+$('rapidas').addEventListener('click',function(e){var b=e.target.closest('button');if(b)enviar(b.textContent)});
+function devolver(i){
+  var db=leer(MESA,null); if(!db||!Array.isArray(db.notes)){toast('No encuentro la Mesa en este teléfono.');return}
+  var n=db.notes.find(function(x){return x.id===editando.id});
+  if(!n){toast('Esa nota ya no está en la Mesa. La llevo como nota nueva.');return llevarNueva(i)}
+  var nueva=aNota(charla[+i].texto);
+  n.versions=n.versions||[]; n.versions.unshift({at:new Date().toISOString(),title:n.title,summary:n.summary,body:n.body,by:n.updatedBy||'Editor local'}); n.versions=n.versions.slice(0,30);
+  n.title=nueva.title; n.summary=nueva.summary||n.summary; if(nueva.volanta)n.volanta=nueva.volanta; n.body=nueva.body;
+  if(n.status==='Borrador IA')n.status='En edición';
+  n.updated=new Date().toISOString(); n.updatedBy='Redactor IA'; n.localEdited=true;
+  try{localStorage.setItem(MESA,JSON.stringify(db))}catch(err){toast('No hay lugar en la Mesa. Exportá un respaldo allá.');return}
+  var id=n.id; editando=null; marcarEditando();
+  location.href='mesa-redaccion-operativa.html?nota='+encodeURIComponent(id);
+}
+function llevarNueva(i){
+  var n=aNota(charla[+i].texto), db=leer(MESA,null);
+  if(!db||!Array.isArray(db.notes))db={notes:[],assets:[]};
+  if(!Array.isArray(db.assets))db.assets=[];
+  db.notes.unshift(n);
+  try{localStorage.setItem(MESA,JSON.stringify(db))}catch(err){toast('No hay lugar en la Mesa. Exportá un respaldo allá.');return}
+  location.href='mesa-redaccion-operativa.html?nota='+encodeURIComponent(n.id);
 }
 
 $('hilo').addEventListener('click',function(e){
   var b=e.target.closest('button'); if(!b)return;
+  if(b.id==='traerIntro')return;
   if(b.parentNode&&b.parentNode.id==='ideas'){$('txt').value=b.textContent;ajustar();$('txt').focus();return}
   var i;
-  if((i=b.getAttribute('data-mesa'))!==null){
-    var n=aNota(charla[+i].texto), db=leer(MESA,null);
-    if(!db||!Array.isArray(db.notes))db={notes:[],assets:[]};
-    if(!Array.isArray(db.assets))db.assets=[];
-    db.notes.unshift(n);
-    try{localStorage.setItem(MESA,JSON.stringify(db))}catch(err){toast('No hay lugar en la Mesa. Exportá un respaldo allá.');return}
-    location.href='mesa-redaccion-operativa.html?nota='+encodeURIComponent(n.id); return;
-  }
+  if((i=b.getAttribute('data-devolver'))!==null){devolver(i);return}
+  if((i=b.getAttribute('data-mesa'))!==null){llevarNueva(i);return}
   if((i=b.getAttribute('data-copiar'))!==null){
     var t=charla[+i].texto;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){toast('Copiado')},function(){toast('No se pudo copiar')});return;
   }
@@ -169,25 +275,80 @@ function ajustar(){var t=$('txt');t.style.height='auto';t.style.height=Math.min(
 $('txt').addEventListener('input',ajustar);
 $('nueva').onclick=function(){if(!charla.length||confirm('¿Borrar esta charla y empezar otra?')){charla=[];guardar();pintar()}};
 
-// Micrófono: dictado gratis del navegador (anda en Chrome y Edge)
+// Micrófono. En el teléfono graba el audio y lo pasa a texto en el servidor (Groq Whisper o Gemini, gratis).
+// Si no hay servidor para eso, usa el dictado del navegador (Chrome/Edge). Siempre avisa qué pasó.
 var Rec=window.SpeechRecognition||window.webkitSpeechRecognition, rec=null, oyendo=false;
-if(!Rec){$('mic').title='Tu navegador no permite dictar. Probá con Chrome.';$('mic').style.opacity=.45}
+var puedeGrabar=!!(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&window.MediaRecorder);
+var servidorAudio=false, grabador=null, trozos=[], flujo=null, tope=null;
+var esMovil=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+function micEstado(modo){var m=$('mic');m.classList.remove('oyendo','ocupado');m.disabled=false;
+  if(modo==='oyendo'){m.classList.add('oyendo');m.textContent='⏹'}else if(modo==='ocupado'){m.classList.add('ocupado');m.disabled=true;m.textContent='…'}else m.textContent='🎤'}
+function ponerTexto(s){var t=$('txt');t.value=(t.value?t.value.replace(/\s*$/,' '):'')+s;ajustar();t.focus()}
+function postApi(url,cuerpo){
+  var ir=function(t){return fetch(url,{method:'POST',headers:{'Content-Type':'application/json','X-Mesa-Token':t},body:JSON.stringify(cuerpo)})};
+  return ir(token()).then(function(r){
+    if(r.status===401&&r.headers.get('x-mesa-auth')){var t=prompt('Clave de la mesa:');if(t){try{localStorage.setItem(TOKEN,t)}catch(e){}return ir(t)}}
+    return r;
+  }).then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j}})});
+}
+function grabar(){
+  navigator.mediaDevices.getUserMedia({audio:true}).then(function(s){
+    flujo=s; trozos=[];
+    var tipos=['audio/webm;codecs=opus','audio/webm','audio/mp4','audio/ogg'], tipo='';
+    for(var k=0;k<tipos.length;k++){if(MediaRecorder.isTypeSupported&&MediaRecorder.isTypeSupported(tipos[k])){tipo=tipos[k];break}}
+    grabador=tipo?new MediaRecorder(s,{mimeType:tipo}):new MediaRecorder(s);
+    grabador.ondataavailable=function(e){if(e.data&&e.data.size)trozos.push(e.data)};
+    grabador.onstop=mandarAudio;
+    grabador.start(); oyendo=true; micEstado('oyendo'); toast('Te escucho… tocá ⏹ cuando termines');
+    tope=setTimeout(function(){if(oyendo)parar()},180000);
+  }).catch(function(err){
+    oyendo=false; micEstado();
+    if(err&&(err.name==='NotAllowedError'||err.name==='SecurityError'))toast('Dale permiso al micrófono: tocá el candado junto a la dirección y activá Micrófono.');
+    else if(err&&err.name==='NotFoundError')toast('No encuentro un micrófono en este equipo.');
+    else if(Rec){toast('Probando con el dictado del navegador…');dictar()}
+    else toast('No pude abrir el micrófono.');
+  });
+}
+function parar(){clearTimeout(tope);oyendo=false;if(grabador&&grabador.state!=='inactive')grabador.stop();else if(rec)rec.stop()}
+function mandarAudio(){
+  if(flujo)flujo.getTracks().forEach(function(t){t.stop()});
+  var blob=new Blob(trozos,{type:(grabador&&grabador.mimeType)||'audio/webm'});
+  if(blob.size<2000){micEstado();toast('No llegué a escucharte. Mantené tocado un poco más.');return}
+  micEstado('ocupado'); toast('Pasando tu audio a texto…');
+  var fr=new FileReader();
+  fr.onload=function(){
+    postApi('/api/transcribir',{audio:String(fr.result).split(',')[1]||'',tipo:blob.type}).then(function(x){
+      if(!x.ok||!x.j.ok)throw new Error((x.j&&x.j.error)||'No pude pasar el audio a texto.');
+      ponerTexto(x.j.texto); toast('Listo. Revisá el texto y tocá Enviar.');
+    }).catch(function(e){toast(e.message||'No pude pasar el audio a texto.')}).finally(function(){micEstado()});
+  };
+  fr.onerror=function(){micEstado();toast('No pude leer el audio grabado.')};
+  fr.readAsDataURL(blob);
+}
+function dictar(){
+  if(!Rec){toast('Este navegador no permite dictar. Probá con Chrome.');return}
+  rec=new Rec(); rec.lang='es-AR'; rec.interimResults=true; rec.continuous=!esMovil;
+  var base=$('txt').value?$('txt').value.replace(/\s*$/,' '):'', finales='';
+  rec.onresult=function(ev){var parcial='';for(var k=ev.resultIndex;k<ev.results.length;k++){var t=ev.results[k][0].transcript;if(ev.results[k].isFinal)finales+=t+' ';else parcial+=t}$('txt').value=base+finales+parcial;ajustar()};
+  rec.onerror=function(ev){var m={'not-allowed':'Dale permiso al micrófono en el navegador.','service-not-allowed':'El navegador no deja dictar acá. Abrila en Chrome.','no-speech':'No te escuché. Probá de nuevo.','audio-capture':'No encuentro el micrófono.','network':'El dictado necesita buena conexión a internet.'}[ev.error];if(m)toast(m)};
+  rec.onend=function(){oyendo=false;micEstado();$('txt').focus()};
+  try{rec.start();oyendo=true;micEstado('oyendo');toast('Te escucho… tocá ⏹ para terminar')}catch(e){micEstado();toast('No se pudo empezar el dictado. Probá de nuevo.')}
+}
 $('mic').onclick=function(){
-  if(!Rec){toast('Para hablarle usá Chrome o Edge.');return}
-  if(oyendo){rec.stop();return}
-  rec=new Rec(); rec.lang='es-AR'; rec.interimResults=true; rec.continuous=true;
-  var base=$('txt').value?$('txt').value.replace(/\s*$/,' '):'';
-  rec.onresult=function(ev){var s='';for(var k=0;k<ev.results.length;k++)s+=ev.results[k][0].transcript;$('txt').value=base+s;ajustar()};
-  rec.onerror=function(ev){if(ev.error==='not-allowed')toast('Dale permiso al micrófono en el navegador.')};
-  rec.onend=function(){oyendo=false;$('mic').classList.remove('oyendo');$('mic').textContent='🎤';$('txt').focus()};
-  rec.start(); oyendo=true; $('mic').classList.add('oyendo'); $('mic').textContent='⏹'; toast('Te escucho… tocá ⏹ para terminar');
+  if(oyendo){parar();return}
+  if(servidorAudio&&puedeGrabar)grabar(); else if(Rec)dictar(); else if(puedeGrabar)grabar();
+  else toast('Este navegador no deja usar el micrófono. Probá con Chrome.');
 };
+fetch('/api/transcribir',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(d){servidorAudio=!!(d&&d.disponible)}).catch(function(){});
+if(!Rec&&!puedeGrabar){$('mic').title='Este navegador no permite usar el micrófono. Probá con Chrome.';$('mic').style.opacity=.45}
 
 fetch('/api/charla',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(d){
   var ia=d&&d.ia; $('estado').textContent=!ia?'IA: sin conexión':ia.groq?'IA conectada: Groq':ia.gemini?'IA conectada: Gemini':ia.openrouter?'IA conectada: OpenRouter':'IA gratuita de respaldo (más lenta)';
 }).catch(function(){$('estado').textContent='IA: sin conexión'});
 
-charla=leer(CLAVE,[]).filter(function(m){return m&&!m.pensando}); pintar(); $('txt').focus();
+charla=leer(CLAVE,[]).filter(function(m){return m&&!m.pensando}); marcarEditando(); pintar(); $('txt').focus();
+var pedida=new URLSearchParams(location.search).get('nota');
+if(pedida){history.replaceState(null,'',location.pathname);var np=notasMesa().find(function(x){return x.id===pedida});if(np)cargarNota(np);else toast('No encontré esa nota en la Mesa.')}
 })();
 </script>
 </body>
