@@ -32,7 +32,7 @@ async function gemini(prompt, clave) {
       const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-goog-api-key': clave },
-        body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: prompt }] }], generationConfig: { temperature: 0.2, responseMimeType: 'application/json' } })
+        body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: prompt }] }], generationConfig: { temperature: 0.2, maxOutputTokens: 32768, responseMimeType: 'application/json' } })
       });
       if (!r.ok) continue;
       const d = await r.json();
@@ -60,7 +60,43 @@ async function compatible(url, clave, modelos, prompt, nombre, extra) {
   return null;
 }
 
-function leerJson(t) { const m = String(t).match(/\{[\s\S]*\}/); return JSON.parse(m ? m[0] : t); }
+// Lee el JSON de la IA aunque venga con ```json, texto alrededor o saltos de línea sin escapar.
+function leerJson(t) {
+  let s = String(t || '').replace(/^\uFEFF/, '').replace(/```(?:json)?/gi, '').trim();
+  const a = s.indexOf('{'), z = s.lastIndexOf('}');
+  if (a >= 0 && z > a) s = s.slice(a, z + 1);
+  try { return JSON.parse(s); } catch {}
+  // Reparar: escapar saltos de línea y tabulaciones que quedaron dentro de las comillas
+  let fuera = '', dentro = false, esc = false;
+  for (const c of s) {
+    if (dentro) {
+      if (esc) { esc = false; fuera += c; continue; }
+      if (c === '\\') { esc = true; fuera += c; continue; }
+      if (c === '"') { dentro = false; fuera += c; continue; }
+      if (c === '\n') { fuera += '\\n'; continue; }
+      if (c === '\r') continue;
+      if (c === '\t') { fuera += '\\t'; continue; }
+      fuera += c;
+    } else { if (c === '"') dentro = true; fuera += c; }
+  }
+  return JSON.parse(fuera.replace(/,\s*([}\]])/g, '$1'));
+}
+
+// Si ninguna IA devuelve algo legible, la mesa igual ordena lo básico: título, párrafos y enlaces.
+function ordenBasico(texto) {
+  const limpio = texto.replace(/\r/g, '').replace(/^\s*(-{3,}|\*{3,})\s*$/gm, '').replace(/\*\*(.+?)\*\*/g, '$1');
+  const bloques = limpio.split(/\n\s*\n/).map(b => b.replace(/\s*\n\s*/g, ' ').trim()).filter(Boolean);
+  let titulo = '';
+  if (bloques.length > 1 && bloques[0].length <= 140 && !/[.:]$/.test(bloques[0])) titulo = bloques.shift().replace(/^#+\s*/, '');
+  const esc = x => x.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const enlaces = x => esc(x)
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2">$1</a>')
+    .replace(/(^|[\s(])(https?:\/\/[^\s<)]+)/g, '$1<a href="$2">$2</a>');
+  const cuerpo = bloques.map(b => /^#+\s/.test(b) ? '<h3>' + enlaces(b.replace(/^#+\s*/, '')) + '</h3>' : '<p>' + enlaces(b) + '</p>').join('\n');
+  const nombres = Array.from(new Set((titulo + '. ' + bloques.slice(0, 2).join('. ')).match(/\b[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+(?:\s+(?:de\s+la\s+|de\s+|del\s+)?[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)+/g) || [])).slice(0, 3);
+  return { volanta: '', titulo, bajada: '', cuerpo_html: cuerpo, titulos_alternativos: [], seccion: '', etiquetas: [],
+    buscar_foto: nombres, correcciones: ['La IA no respondió bien: se ordenaron solo los párrafos. Revisá el título y la bajada.'] };
+}
 const sinEtiquetas = s => String(s || '').replace(/<[^>]+>/g, '').trim();
 
 // Fotos libres de Wikimedia Commons, con autor y licencia (mismo criterio que el agente de fotos).
@@ -100,16 +136,21 @@ module.exports = async function handler(req, res) {
   if (texto.length < 120) return res.status(400).json({ ok: false, error: 'Pegá la nota completa (es muy corta para ordenarla).' });
 
   const prompt = armarPrompt(texto, pedido);
-  let out = null;
-  if (process.env.GEMINI_API_KEY) out = await gemini(prompt, process.env.GEMINI_API_KEY);
-  if (!out && process.env.GROQ_API_KEY) out = await compatible('https://api.groq.com/openai/v1/chat/completions', process.env.GROQ_API_KEY, ['llama-3.3-70b-versatile', 'openai/gpt-oss-120b'], prompt, 'Groq');
-  if (!out && process.env.OPENROUTER_API_KEY) out = await compatible('https://openrouter.ai/api/v1/chat/completions', process.env.OPENROUTER_API_KEY, ['openrouter/free'], prompt, 'OpenRouter', { 'X-Title': 'Central de noticias' });
-  if (!out) out = await compatible('https://text.pollinations.ai/openai', 'libre', ['openai'], prompt, 'IA gratuita de respaldo');
-  if (!out) return res.status(502).json({ ok: false, error: 'La IA no respondió. Probá de nuevo en un minuto.' });
+  // Se prueba una IA tras otra: si una no responde o devuelve algo ilegible, pasa a la siguiente.
+  const intentos = [];
+  if (process.env.GEMINI_API_KEY) intentos.push(() => gemini(prompt, process.env.GEMINI_API_KEY));
+  if (process.env.GROQ_API_KEY) intentos.push(() => compatible('https://api.groq.com/openai/v1/chat/completions', process.env.GROQ_API_KEY, ['llama-3.3-70b-versatile', 'openai/gpt-oss-120b'], prompt, 'Groq'));
+  if (process.env.OPENROUTER_API_KEY) intentos.push(() => compatible('https://openrouter.ai/api/v1/chat/completions', process.env.OPENROUTER_API_KEY, ['openrouter/free'], prompt, 'OpenRouter', { 'X-Title': 'Central de noticias' }));
+  intentos.push(() => compatible('https://text.pollinations.ai/openai', 'libre', ['openai'], prompt, 'IA gratuita de respaldo'));
 
-  let j;
-  try { j = leerJson(out.texto); if (!j.cuerpo_html) throw new Error(); }
-  catch { return res.status(502).json({ ok: false, error: 'La IA devolvió algo que no se pudo leer. Probá de nuevo.' }); }
+  let j = null, ia = '';
+  for (const intento of intentos) {
+    let out = null;
+    try { out = await intento(); } catch {}
+    if (!out) continue;
+    try { const x = leerJson(out.texto); if (x && x.cuerpo_html) { j = x; ia = out.ia; break; } } catch {}
+  }
+  if (!j) { j = ordenBasico(texto); ia = 'Orden básico'; }
 
   // Fotos: hasta 6, sin repetir, a partir de las búsquedas que propuso la IA
   const busquedas = (Array.isArray(j.buscar_foto) ? j.buscar_foto : []).map(s => String(s).trim()).filter(Boolean).slice(0, 3);
@@ -118,7 +159,7 @@ module.exports = async function handler(req, res) {
   for (const l of listas) for (const f of l) if (!vistas.has(f.url) && fotos.length < 6) { vistas.add(f.url); fotos.push(f); }
 
   return res.status(200).json({
-    ok: true, ia: out.ia,
+    ok: true, ia,
     volanta: sinEtiquetas(j.volanta), titulo: sinEtiquetas(j.titulo), bajada: sinEtiquetas(j.bajada), cuerpo_html: String(j.cuerpo_html),
     titulos_alternativos: (j.titulos_alternativos || []).map(sinEtiquetas).filter(Boolean).slice(0, 4),
     seccion: sinEtiquetas(j.seccion), etiquetas: (j.etiquetas || []).map(sinEtiquetas).filter(Boolean).slice(0, 8),
