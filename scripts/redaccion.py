@@ -91,6 +91,16 @@ def leer(ruta, defecto=None):
 
 def instruccion(nombre, **campos):
     t = (AGENTES / "instrucciones" / f"{nombre}.md").read_text(encoding="utf-8")
+    # Guías editoriales (guias/): un resumen para quien redacta y otro para quien verifica.
+    extra = {"estilo": "guia-redaccion", "verificador": "guia-verificacion"}.get(nombre)
+    if extra:
+        g = AGENTES / "instrucciones" / f"{extra}.md"
+        if g.exists():
+            guia = g.read_text(encoding="utf-8").strip()
+            if nombre == "verificador" and "Respondé SOLO con JSON" in t:
+                t = t.replace("Respondé SOLO con JSON", guia + "\n\nRespondé SOLO con JSON", 1)
+            else:
+                t = t.rstrip() + "\n\n" + guia + "\n"
     for k, v in campos.items():
         t = t.replace("{" + k + "}", str(v))
     return t

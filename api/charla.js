@@ -85,6 +85,7 @@ module.exports = async function handler(req, res) {
 
   let estilo = '';
   try { const e = await fetch('https://' + req.headers.host + ESTILO_URL); if (e.ok) estilo = (await e.text()).slice(0, 4000); } catch {}
+  try { const g = await fetch('https://' + req.headers.host + '/agentes/instrucciones/guia-redaccion.md'); if (g.ok) estilo += '\n\n' + (await g.text()).slice(0, 2000); } catch {}
   const mensajes = [{ role: 'system', content: sistema(estilo) }, ...historial];
 
   let out = null;

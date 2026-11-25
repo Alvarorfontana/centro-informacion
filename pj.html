@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#F6F4EF">
+<title>Partido Justicialista · Central de noticias</title>
+<meta name="robots" content="noindex">
+<link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/iconos/icon-192.png">
+<style>
+:root{--papel:#F6F4EF;--barra:#FBFAF7;--tinta:#16181D;--tinta-2:#3F434A;--tinta-3:#5B5F66;--linea:#DEDAD2;--azul:#1D4ED8;--azul-tinta:#1E40AF;--azul-suave:#E3EBFB}
+*{box-sizing:border-box}
+body{margin:0;background:var(--papel);color:var(--tinta);font:14px/1.55 "Manrope",system-ui,sans-serif}
+button,input,select,textarea{font:inherit;color:inherit}
+header.cab{background:var(--barra);border-bottom:1px solid var(--linea);padding:12px 22px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;position:sticky;top:0;z-index:5}
+main{max-width:1180px;margin:0 auto;padding:24px 20px 60px}
+.tit h1{font:600 36px/1.1 "Newsreader",Georgia,serif;margin:0 0 6px}
+.tit p{color:var(--tinta-3);margin:0 0 18px;max-width:760px}
+.solapas{display:flex;gap:4px;border-bottom:1px solid var(--linea);margin-bottom:18px;overflow:auto}
+.solapas button{background:none;border:0;border-bottom:2px solid transparent;padding:10px 13px;font-weight:700;font-size:13px;color:var(--tinta-3);cursor:pointer;white-space:nowrap}
+.solapas button[aria-selected="true"]{color:var(--azul-tinta);border-bottom-color:var(--azul)}
+.panel[hidden]{display:none}
+.filtros{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.filtros button{background:#fff;border:1px solid var(--linea);border-radius:16px;padding:5px 12px;font-size:12px;font-weight:700;cursor:pointer}
+.filtros button[aria-pressed="true"]{background:var(--azul);border-color:var(--azul);color:#fff}
+.nota{background:#fff;border:1px solid var(--linea);padding:13px 15px;margin-bottom:8px;display:grid;grid-template-columns:1fr auto;gap:6px 14px;align-items:start}
+.nota a.t{font:600 18px/1.25 "Newsreader",Georgia,serif;color:var(--tinta);text-decoration:none}
+.nota a.t:hover{color:var(--azul-tinta)}
+.nota .m{font:11px "IBM Plex Mono",monospace;color:var(--tinta-3);letter-spacing:.04em}
+.nota p{margin:4px 0 0;color:var(--tinta-2);font-size:13px}
+.nota .sub{display:inline-block;font:10px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--azul-tinta);background:var(--azul-suave);padding:2px 6px;border-radius:3px;margin-right:6px}
+.btn{border:1px solid #CFCAC0;background:var(--papel);border-radius:4px;padding:6px 10px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap}
+.btn.az{background:var(--azul);border-color:var(--azul);color:#fff}
+.btn.chico{padding:3px 8px;font-size:11px}
+.vacio{color:var(--tinta-3);padding:30px 0;text-align:center}
+.grilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.ficha{background:#fff;border:1px solid var(--linea);padding:12px 14px}
+.ficha h3{font:600 16px "Newsreader",Georgia,serif;margin:0 0 8px}
+.ficha label{display:block;font:10px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--tinta-3);margin:8px 0 3px}
+.ficha input,.ficha textarea,.ficha select,.fila input,.fila select,.fila textarea{width:100%;border:1px solid #E1DDD5;background:var(--barra);border-radius:3px;padding:7px 8px}
+.ficha textarea{min-height:54px;resize:vertical}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--linea)}
+th{font:10px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--tinta-3);text-align:left;padding:9px 10px;border-bottom:1px solid var(--linea);background:var(--barra)}
+td{padding:6px 8px;border-bottom:1px solid #EEEBE4;vertical-align:top}
+td input,td select,td textarea{width:100%;border:1px solid transparent;background:transparent;padding:6px;border-radius:3px}
+td input:focus,td select:focus,td textarea:focus{border-color:#CFCAC0;background:var(--barra);outline:none}
+td textarea{min-height:34px;resize:vertical}
+.fijo td{color:var(--tinta-2)}
+.fijo .marca{font:10px "IBM Plex Mono",monospace;color:var(--azul-tinta)}
+.barra{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center;margin:0 0 12px}
+.barra h2{font:600 22px "Newsreader",Georgia,serif;margin:0}
+.ayuda{font-size:12px;color:var(--tinta-3);margin:0 0 12px}
+.pie{margin-top:26px;padding-top:14px;border-top:1px solid var(--linea);display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12px;color:var(--tinta-3)}
+.pie .esp{flex:1}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--tinta);color:#fff;padding:9px 14px;border-radius:6px;font-size:13px;display:none;z-index:9}
+@media(max-width:640px){.nota{grid-template-columns:1fr}.tit h1{font-size:28px}table{display:block;overflow:auto}}
+</style>
+<link rel="stylesheet" href="marca.css">
+</head>
+<body>
+<header class="cab">
+  <a class="marca-logo" href="index.html#central"><span class="marca-cuad" aria-hidden="true"></span>EL DIARIO<span class="marca-sep" aria-hidden="true"></span><span class="marca-nombre">Partido Justicialista</span></a>
+  <nav class="marca-nav" aria-label="Pantallas de la Central"><a href="index.html#central">Central</a><a href="index.html#edicion">Edición del día</a><a href="index.html#mapa">Mapa</a><a href="mesa-redaccion-operativa.html">Mesa de Redacción</a><a href="redactor.html">Redactor IA</a><a href="pj.html" aria-current="page">PJ</a><a href="centro-mando.html">Centro de mando</a><a href="vigia.html">Vigía de copias</a></nav>
+</header>
+
+<main>
+  <div class="tit">
+    <h1>Partido Justicialista</h1>
+    <p>Todo lo del PJ en un solo lugar: lo que publican los medios, la agenda partidaria, la estructura del partido, los legisladores y los candidatos. Las noticias se actualizan solas; el resto lo cargás y editás vos.</p>
+  </div>
+
+  <div class="solapas" role="tablist">
+    <button role="tab" data-p="noticias" aria-selected="true">Noticias</button>
+    <button role="tab" data-p="agenda" aria-selected="false">Agenda y actos</button>
+    <button role="tab" data-p="estructura" aria-selected="false">Consejos del partido</button>
+    <button role="tab" data-p="congreso" aria-selected="false">Diputados y senadores</button>
+    <button role="tab" data-p="candidatos" aria-selected="false">Candidatos 2027</button>
+    <button role="tab" data-p="apuntes" aria-selected="false">Apuntes</button>
+  </div>
+
+  <!-- NOTICIAS -->
+  <section class="panel" id="p-noticias">
+    <div class="filtros" id="filtros"></div>
+    <p class="ayuda" id="n-estado">Cargando noticias…</p>
+    <div id="n-lista"></div>
+  </section>
+
+  <!-- AGENDA -->
+  <section class="panel" id="p-agenda" hidden>
+    <div class="barra"><h2>Agenda y actos</h2><button class="btn az" data-agregar="agenda">+ Agregar acto o fecha</button></div>
+    <p class="ayuda">Congresos partidarios, actos, plenarios, cierres de listas, PASO. Las fechas históricas del peronismo ya están cargadas.</p>
+    <table><thead><tr><th style="width:130px">Fecha</th><th>Qué</th><th style="width:170px">Dónde</th><th>Notas</th><th style="width:40px"></th></tr></thead><tbody id="t-agenda"></tbody></table>
+  </section>
+
+  <!-- ESTRUCTURA -->
+  <section class="panel" id="p-estructura" hidden>
+    <div class="barra"><h2>Consejo Nacional</h2><button class="btn az" data-agregar="consejo">+ Agregar cargo</button></div>
+    <table><thead><tr><th style="width:220px">Cargo</th><th>Nombre</th><th style="width:170px">Provincia</th><th>Notas</th><th style="width:40px"></th></tr></thead><tbody id="t-consejo"></tbody></table>
+    <div class="barra" style="margin-top:26px"><h2>Consejos provinciales</h2></div>
+    <p class="ayuda">Uno por distrito. Cargá quién lo preside, si hay intervención, internas o elecciones partidarias.</p>
+    <div class="grilla" id="g-provincias"></div>
+  </section>
+
+  <!-- CONGRESO -->
+  <section class="panel" id="p-congreso" hidden>
+    <div class="grilla" id="g-bloques"></div>
+    <div class="barra" style="margin-top:26px"><h2>Legisladores a seguir</h2><button class="btn az" data-agregar="legisladores">+ Agregar legislador</button></div>
+    <table><thead><tr><th>Nombre</th><th style="width:120px">Cámara</th><th style="width:160px">Provincia</th><th style="width:160px">Bloque</th><th>Qué seguir</th><th style="width:40px"></th></tr></thead><tbody id="t-legisladores"></tbody></table>
+  </section>
+
+  <!-- CANDIDATOS -->
+  <section class="panel" id="p-candidatos" hidden>
+    <div class="barra"><h2>Candidatos a presidente</h2><button class="btn az" data-agregar="candidatos">+ Agregar candidato</button></div>
+    <p class="ayuda">Quiénes suenan, quiénes se lanzaron y quiénes se bajaron. Tocá "Noticias" en cada fila para ver lo último que se publicó sobre esa persona.</p>
+    <table><thead><tr><th>Nombre</th><th style="width:170px">Cargo actual</th><th style="width:150px">Provincia</th><th style="width:150px">Estado</th><th>Notas</th><th style="width:90px"></th></tr></thead><tbody id="t-candidatos"></tbody></table>
+  </section>
+
+  <!-- APUNTES -->
+  <section class="panel" id="p-apuntes" hidden>
+    <div class="barra"><h2>Apuntes y seguimiento</h2><button class="btn az" data-agregar="apuntes">+ Agregar apunte</button></div>
+    <p class="ayuda">Ideas de notas, datos sueltos, contactos, cosas para chequear.</p>
+    <table><thead><tr><th style="width:130px">Fecha</th><th>Apunte</th><th style="width:150px">Estado</th><th style="width:40px"></th></tr></thead><tbody id="t-apuntes"></tbody></table>
+  </section>
+
+  <div class="pie">
+    <span id="guardado">Lo que cargás se guarda en este navegador.</span><span class="esp"></span>
+    <button class="btn" id="exportar">Descargar respaldo</button>
+    <label class="btn" style="cursor:pointer">Cargar respaldo<input type="file" id="importar" accept="application/json" hidden></label>
+  </div>
+</main>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+var $=function(id){return document.getElementById(id)};
+var CLAVE='df_pj_gestor', MESA='df_newsroom_v2';
+function esc(t){var d=document.createElement('div');d.textContent=t==null?'':String(t);return d.innerHTML}
+function toast(t){var e=$('toast');e.textContent=t;e.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(function(){e.style.display='none'},2400)}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+
+var PROVINCIAS=['Buenos Aires','Ciudad de Buenos Aires','Catamarca','Chaco','Chubut','Córdoba','Corrientes','Entre Ríos','Formosa','Jujuy','La Pampa','La Rioja','Mendoza','Misiones','Neuquén','Río Negro','Salta','San Juan','San Luis','Santa Cruz','Santa Fe','Santiago del Estero','Tierra del Fuego','Tucumán'];
+var FIJAS=[['05-07','Natalicio de Eva Perón (1919)'],['07-01','Fallecimiento de Juan Domingo Perón (1974)'],['07-26','Fallecimiento de Eva Perón (1952)'],['10-08','Natalicio de Juan Domingo Perón (1895)'],['10-17','Día de la Lealtad Peronista (1945)'],['11-17','Día de la Militancia (regreso de Perón, 1972)']];
+var ESTADOS_CAND=['Suena','Se lanzó','En duda','Se bajó'];
+var ESTADOS_AP=['Pendiente','En curso','Hecho'];
+
+var G={agenda:[],consejo:[],provincias:{},bloques:{diputados:{},senado:{}},legisladores:[],candidatos:[],apuntes:[]};
+try{var x=JSON.parse(localStorage.getItem(CLAVE)||'null');if(x)G=Object.assign(G,x)}catch(e){}
+if(!G.consejo.length)G.consejo=['Presidente','Vicepresidente 1°','Vicepresidente 2°','Secretario general'].map(function(c){return {id:uid(),cargo:c,nombre:'',provincia:'',notas:''}});
+function guardar(){try{localStorage.setItem(CLAVE,JSON.stringify(G));$('guardado').textContent='Guardado en este navegador · '+new Date().toLocaleTimeString('es-AR',{hour:'2-digit',minute:'2-digit'})}catch(e){toast('No se pudo guardar')}}
+
+// ---------- Solapas ----------
+document.querySelectorAll('.solapas button').forEach(function(b){b.onclick=function(){
+  document.querySelectorAll('.solapas button').forEach(function(o){o.setAttribute('aria-selected',o===b)});
+  document.querySelectorAll('.panel').forEach(function(p){p.hidden=p.id!=='p-'+b.dataset.p});
+  history.replaceState(null,'','#'+b.dataset.p);
+}});
+var h=location.hash.slice(1);if(h){var bt=document.querySelector('.solapas [data-p="'+h+'"]');if(bt)bt.click()}
+
+// ---------- Noticias del eje PJ ----------
+var SUB=[
+  ['Internas y PASO',/\b(PASO|primarias|interna|internas|listas|candidatur|precandidat|boleta)\b/i],
+  ['Consejo y congreso',/\b(consejo|congreso del PJ|congreso partidario|plenario|conducci[oó]n|presidencia del PJ|autoridades|intervenci[oó]n)\b/i],
+  ['Diputados y Senado',/\b(diputad|senador|senadora|bloque|C[aá]mara|Senado|sesi[oó]n|legislador)/i],
+  ['Gobernadores e intendentes',/\b(gobernador|gobernadora|intendente|intendenta|Kicillof|Quintela|Jaldo|Zamora|Insfr[aá]n|Ziliotto|Sadir)\b/i],
+  ['Actos y fechas',/\b(acto|marcha|movilizaci|Lealtad|17 de octubre|Evita|Per[oó]n|militancia|aniversario|homenaje)\b/i],
+  ['Candidatos 2027',/\b(2027|candidat|presidencial|presidente de la Naci[oó]n)\b/i]
+];
+var NOTAS=[], filtro='';
+function subtemas(n){var t=(n.titulo||'')+' '+(n.resumen||'');return SUB.filter(function(s){return s[1].test(t)}).map(function(s){return s[0]})}
+function pintarFiltros(){
+  $('filtros').innerHTML=['Todo'].concat(SUB.map(function(s){return s[0]})).map(function(f){
+    var v=f==='Todo'?'':f;var c=v?NOTAS.filter(function(n){return n._sub.indexOf(v)>=0}).length:NOTAS.length;
+    return '<button type="button" data-f="'+esc(v)+'" aria-pressed="'+(filtro===v)+'">'+esc(f)+' · '+c+'</button>'}).join('');
+}
+function hace(iso){var m=(Date.now()-new Date(iso))/6e4;if(!(m>=0))return '';if(m<60)return 'hace '+Math.round(m)+' min';if(m<1440)return 'hace '+Math.round(m/60)+' h';return new Date(iso).toLocaleDateString('es-AR',{day:'numeric',month:'short'})}
+function pintarNotas(){
+  var L=NOTAS.filter(function(n){return !filtro||n._sub.indexOf(filtro)>=0});
+  $('n-lista').innerHTML=L.length?L.map(function(n,i){return '<article class="nota"><div>'+
+    (n._sub.length?n._sub.map(function(s){return '<span class="sub">'+esc(s)+'</span>'}).join(''):'')+
+    '<div><a class="t" href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(n.titulo)+'</a></div>'+
+    '<div class="m">'+esc(n.medio||'')+' · '+hace(n.fecha)+(n.region?' · '+esc(n.region.replace(/-/g,' ')):'')+'</div>'+
+    (n.resumen?'<p>'+esc(n.resumen)+'</p>':'')+'</div>'+
+    '<div><button class="btn az" data-mesa="'+NOTAS.indexOf(n)+'">+ A la mesa</button></div></article>'}).join(''):'<div class="vacio">No hay notas para este filtro.</div>';
+}
+var ESTADO='';
+$('filtros').addEventListener('click',function(e){var b=e.target.closest('[data-f]');if(!b)return;filtro=b.dataset.f;if(ESTADO)$('n-estado').textContent=ESTADO;pintarFiltros();pintarNotas()});
+$('n-lista').addEventListener('click',function(e){
+  var b=e.target.closest('[data-mesa]');if(!b)return;var n=NOTAS[+b.dataset.mesa];
+  var db=null;try{db=JSON.parse(localStorage.getItem(MESA)||'null')}catch(err){}
+  if(!db||!Array.isArray(db.notes))db={notes:[],assets:[]};if(!Array.isArray(db.assets))db.assets=[];
+  if(db.notes.some(function(x){return x.sourceUrl===n.url})){toast('Esa nota ya está en la mesa');return}
+  var ahora=new Date().toISOString();
+  db.notes.unshift({id:'DF-'+Date.now().toString(36).toUpperCase()+'-'+Math.random().toString(36).slice(2,6).toUpperCase(),title:n.titulo,summary:n.resumen||'',volanta:'Partido Justicialista',body:'<p>'+esc(n.resumen||'')+'</p><p><em>Material de '+esc(n.medio||'otro medio')+': reescribir con fuentes propias antes de publicar.</em></p>',section:'Política',author:'Emilio Lahitte',status:'En edición',assignee:'',due:'',image:n.imagen||'',caption:'',tags:['PJ'],sources:[{medio:n.medio||'',titulo:n.titulo,url:n.url,fecha:n.fecha}],sourceUrl:n.url,versions:[],created:ahora,updated:ahora,updatedBy:'Sector PJ',localEdited:true});
+  try{localStorage.setItem(MESA,JSON.stringify(db));toast('Nota sumada a la Mesa de Redacción')}catch(err){toast('No hay lugar en la Mesa. Exportá un respaldo allá.')}
+});
+fetch('datos/noticias.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){
+  var e=(d.ejes||{}).pj||{};NOTAS=(e.notas||[]).slice().sort(function(a,b){return new Date(b.fecha)-new Date(a.fecha)});
+  NOTAS.forEach(function(n){n._sub=subtemas(n)});
+  ESTADO=NOTAS.length?NOTAS.length+' notas sobre el PJ · actualizado '+hace(d.generado):'Todavía no hay notas del PJ en la última recolección.';$('n-estado').textContent=ESTADO;
+  pintarFiltros();pintarNotas();
+}).catch(function(){$('n-estado').textContent='No se pudieron leer las noticias. Probá recargar.'});
+
+// ---------- Tablas editables ----------
+var COLS={
+  agenda:[['fecha','date'],['que','text'],['donde','text'],['notas','area']],
+  consejo:[['cargo','text'],['nombre','text'],['provincia','prov'],['notas','area']],
+  legisladores:[['nombre','text'],['camara','sel:Diputados|Senado'],['provincia','prov'],['bloque','text'],['seguir','area']],
+  candidatos:[['nombre','text'],['cargo','text'],['provincia','prov'],['estado','sel:'+ESTADOS_CAND.join('|')],['notas','area']],
+  apuntes:[['fecha','date'],['texto','area'],['estado','sel:'+ESTADOS_AP.join('|')]]
+};
+function campo(tipo,v,lista,i,k){
+  var a=' data-l="'+lista+'" data-i="'+i+'" data-k="'+k+'"';
+  if(tipo==='area')return '<textarea'+a+' rows="1">'+esc(v)+'</textarea>';
+  if(tipo==='prov'||tipo.indexOf('sel:')===0){var ops=tipo==='prov'?PROVINCIAS:tipo.slice(4).split('|');return '<select'+a+'><option value="">—</option>'+ops.map(function(o){return '<option'+(o===v?' selected':'')+'>'+esc(o)+'</option>'}).join('')+'</select>'}
+  return '<input'+a+' type="'+tipo+'" value="'+esc(v)+'">';
+}
+function tabla(lista){
+  var filas=G[lista].map(function(r,i){return '<tr>'+COLS[lista].map(function(c){return '<td>'+campo(c[1],r[c[0]]||'',lista,i,c[0])+'</td>'}).join('')+
+    '<td style="white-space:nowrap">'+(lista==='candidatos'?'<button class="btn chico" data-buscar="'+i+'">Noticias</button> ':'')+'<button class="btn chico" title="Borrar" data-borrar="'+lista+'" data-i="'+i+'">✕</button></td></tr>'}).join('');
+  if(lista==='agenda'){
+    var anio=new Date().getFullYear(),hoy=new Date().toISOString().slice(5,10);
+    var fijas=FIJAS.slice().sort(function(a,b){return (a[0]<hoy)-(b[0]<hoy)||a[0].localeCompare(b[0])}).map(function(f){
+      var y=f[0]<hoy?anio+1:anio;var fe=new Date(y+'-'+f[0]+'T12:00:00');
+      return '<tr class="fijo"><td>'+fe.toLocaleDateString('es-AR',{day:'numeric',month:'long'})+'</td><td>'+esc(f[1])+'</td><td></td><td class="marca">Fecha histórica</td><td></td></tr>'}).join('');
+    filas=filas+fijas;
+  }
+  $('t-'+lista).innerHTML=filas||'<tr><td colspan="6" class="vacio">Todavía no cargaste nada. Tocá "+ Agregar".</td></tr>';
+}
+function ordenarAgenda(){G.agenda.sort(function(a,b){return (a.fecha||'9').localeCompare(b.fecha||'9')})}
+document.addEventListener('input',function(e){var t=e.target,l=t.dataset.l;if(!l)return;G[l][+t.dataset.i][t.dataset.k]=t.value;guardar()});
+document.addEventListener('change',function(e){var t=e.target;if(t.dataset.l==='agenda'&&t.dataset.k==='fecha'){ordenarAgenda();tabla('agenda')}});
+document.addEventListener('click',function(e){
+  var b=e.target.closest('button');if(!b)return;
+  if(b.dataset.agregar){var l=b.dataset.agregar,r={id:uid()};if(l==='apuntes')r.fecha=new Date().toISOString().slice(0,10);G[l].unshift(r);guardar();tabla(l);var f=document.querySelector('#t-'+l+' input,#t-'+l+' textarea');if(f)f.focus();return}
+  if(b.dataset.borrar){var l2=b.dataset.borrar;if(confirm('¿Borrar esta fila?')){G[l2].splice(+b.dataset.i,1);guardar();tabla(l2)}return}
+  if(b.dataset.buscar!=null){var nom=(G.candidatos[+b.dataset.buscar].nombre||'').trim();if(!nom){toast('Primero cargá el nombre');return}
+    var ap=nom.split(/\s+/).pop().toLowerCase();var hall=NOTAS.filter(function(n){return ((n.titulo||'')+' '+(n.resumen||'')).toLowerCase().indexOf(ap)>=0});
+    document.querySelector('.solapas [data-p="noticias"]').click();filtro='';pintarFiltros();
+    $('n-lista').innerHTML=hall.length?'':'<div class="vacio">No hay notas recientes sobre '+esc(nom)+'.</div>';
+    if(hall.length)pintarNotasLista(hall);
+  }
+});
+function pintarNotasLista(L){var orig=NOTAS;
+  $('n-lista').innerHTML=L.map(function(n){return '<article class="nota"><div><div><a class="t" href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(n.titulo)+'</a></div><div class="m">'+esc(n.medio||'')+' · '+hace(n.fecha)+'</div>'+(n.resumen?'<p>'+esc(n.resumen)+'</p>':'')+'</div><div><button class="btn az" data-mesa="'+orig.indexOf(n)+'">+ A la mesa</button></div></article>'}).join('');
+  $('n-estado').textContent=L.length+' notas que nombran a esa persona · tocá un filtro para volver';}
+
+// ---------- Provincias y bloques ----------
+function pintarProvincias(){
+  $('g-provincias').innerHTML=PROVINCIAS.map(function(p){var v=G.provincias[p]||{};
+    return '<div class="ficha"><h3>'+esc(p)+'</h3><label>Preside</label><input data-prov="'+esc(p)+'" data-k="preside" value="'+esc(v.preside||'')+'">'+
+      '<label>Situación</label><select data-prov="'+esc(p)+'" data-k="situacion">'+['','Normal','Intervenido','En internas','Elecciones partidarias','Acéfalo'].map(function(o){return '<option'+(o===(v.situacion||'')?' selected':'')+'>'+o+'</option>'}).join('')+'</select>'+
+      '<label>Notas</label><textarea data-prov="'+esc(p)+'" data-k="notas">'+esc(v.notas||'')+'</textarea></div>'}).join('');
+}
+function pintarBloques(){
+  $('g-bloques').innerHTML=[['diputados','Bloque en Diputados'],['senado','Bloque en el Senado']].map(function(b){var v=G.bloques[b[0]]||{};
+    return '<div class="ficha"><h3>'+b[1]+'</h3><label>Nombre del bloque</label><input data-bloque="'+b[0]+'" data-k="nombre" value="'+esc(v.nombre||'')+'">'+
+      '<label>Preside el bloque</label><input data-bloque="'+b[0]+'" data-k="preside" value="'+esc(v.preside||'')+'">'+
+      '<label>Bancas</label><input data-bloque="'+b[0]+'" data-k="bancas" type="number" min="0" value="'+esc(v.bancas||'')+'">'+
+      '<label>Notas</label><textarea data-bloque="'+b[0]+'" data-k="notas">'+esc(v.notas||'')+'</textarea></div>'}).join('');
+}
+document.addEventListener('input',function(e){var t=e.target;
+  if(t.dataset.prov){G.provincias[t.dataset.prov]=G.provincias[t.dataset.prov]||{};G.provincias[t.dataset.prov][t.dataset.k]=t.value;guardar()}
+  if(t.dataset.bloque){G.bloques[t.dataset.bloque]=G.bloques[t.dataset.bloque]||{};G.bloques[t.dataset.bloque][t.dataset.k]=t.value;guardar()}
+});
+
+// ---------- Respaldo ----------
+$('exportar').onclick=function(){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(G,null,2)],{type:'application/json'}));a.download='sector-pj-respaldo.json';a.click()};
+$('importar').onchange=function(){var f=this.files[0];if(!f)return;f.text().then(function(t){var x=JSON.parse(t);if(!x||!Array.isArray(x.agenda))throw 0;G=Object.assign(G,x);guardar();todo();toast('Respaldo cargado')}).catch(function(){toast('Ese archivo no es un respaldo del sector PJ')})};
+
+function todo(){ordenarAgenda();['agenda','consejo','legisladores','candidatos','apuntes'].forEach(tabla);pintarProvincias();pintarBloques()}
+todo();
+})();
+</script>
+</body>
+</html>

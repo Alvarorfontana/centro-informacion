@@ -170,6 +170,7 @@ module.exports = async function handler(req, res) {
   n.cuerpo = String(n.cuerpo).slice(0, 15000); n.instruccion = String(n.instruccion || '').slice(0, 400);
   let estilo = '';
   try { const e = await fetch('https://' + req.headers.host + ESTILO_URL); if (e.ok) estilo = (await e.text()).slice(0, 4000); } catch {}
+  try { const g = await fetch('https://' + req.headers.host + '/agentes/instrucciones/guia-redaccion.md'); if (g.ok) estilo += '\n\n' + (await g.text()).slice(0, 2000); } catch {}
   const prompt = armarPrompt(n, estilo);
   let out = null;
   try { if (process.env.GEMINI_API_KEY) out = await gemini(prompt, process.env.GEMINI_API_KEY); } catch {}
