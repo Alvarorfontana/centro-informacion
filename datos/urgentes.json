@@ -1,47 +1,6 @@
 {
- "generado": "2026-11-25T03:46:07+00:00",
+ "generado": "2026-11-25T04:53:56+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": [
-  {
-   "titulo": "El Consejo Directivo de Sociales de la UBA suspendió el homenaje a Santucho",
-   "n_medios": 4,
-   "paises": [
-    "Argentina"
-   ],
-   "region": null,
-   "tema": "General",
-   "ejes": [
-    "politica"
-   ],
-   "desde": "2026-11-25T03:46:07+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "No habrá homenaje a Santucho en Sociales",
-     "url": "https://www.pagina12.com.ar/2026/11/25/no-habra-homenaje-a-santucho-en-sociales/",
-     "medio": "Página/12",
-     "fecha": "2026-11-25T03:01:00+00:00"
-    },
-    {
-     "titulo": "La UBA dio marcha atrás y suspendió el polémico homenaje a Mario Santucho",
-     "url": "https://www.unoentrerios.com.ar/el-pais/la-uba-dio-marcha-atras-y-suspendio-el-polemico-homenaje-mario-santucho-n10294044.html",
-     "medio": "Uno Entre Ríos",
-     "fecha": "2026-11-25T02:02:56+00:00"
-    },
-    {
-     "titulo": "El rectorado de la UBA apoyó la decisión de suspender el homenaje a Santucho",
-     "url": "https://noticiasargentinas.com/politica/el-rectorado-de-la-uba-apoyo-la-decision-de-suspender-el-homenaje-a-santucho_a6b0637cce592be1ffadb659e",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-25T01:28:24+00:00"
-    },
-    {
-     "titulo": "El Consejo Directivo de Sociales de la UBA suspendió el homenaje a Santucho",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLVlWZlNqUkpQd1ZGMU9WZGw0UmlqRThKS0pUcHF6MDYycEVjSnItOENJM0FvTmZBVTA0M0ZkTzJrUUFrSFlMcl9US2JWNGNjVFZhaGRuX2sxWFd4MmxjV1ZGZ3ZCUHVVTGJxaEJhVWQ2bjJaWFVoMlRNY3NXU05JZXVSdUJ2dW5ybHdrcGU4VHNoTzZTZmlfQVlFRjY1WXRyS0RyU0c3dVpQTTZnVUlZNU5wVnFQVktlWWVySE9NcEg3UQ?oc=5",
-     "medio": "La Arena (La Pampa)",
-     "fecha": "2026-11-24T23:49:10+00:00"
-    }
-   ]
-  }
- ]
+ "urgentes": []
 }
