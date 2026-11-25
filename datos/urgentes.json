@@ -1,11 +1,11 @@
 {
- "generado": "2026-11-25T03:12:53+00:00",
+ "generado": "2026-11-25T03:46:07+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
-   "titulo": "La UBA dio marcha atrás y suspendió el polémico homenaje a Mario Santucho",
-   "n_medios": 6,
+   "titulo": "El Consejo Directivo de Sociales de la UBA suspendió el homenaje a Santucho",
+   "n_medios": 4,
    "paises": [
     "Argentina"
    ],
@@ -14,7 +14,7 @@
    "ejes": [
     "politica"
    ],
-   "desde": "2026-11-25T03:12:53+00:00",
+   "desde": "2026-11-25T03:46:07+00:00",
    "avisado": false,
    "notas": [
     {
@@ -40,12 +40,6 @@
      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLVlWZlNqUkpQd1ZGMU9WZGw0UmlqRThKS0pUcHF6MDYycEVjSnItOENJM0FvTmZBVTA0M0ZkTzJrUUFrSFlMcl9US2JWNGNjVFZhaGRuX2sxWFd4MmxjV1ZGZ3ZCUHVVTGJxaEJhVWQ2bjJaWFVoMlRNY3NXU05JZXVSdUJ2dW5ybHdrcGU4VHNoTzZTZmlfQVlFRjY1WXRyS0RyU0c3dVpQTTZnVUlZNU5wVnFQVktlWWVySE9NcEg3UQ?oc=5",
      "medio": "La Arena (La Pampa)",
      "fecha": "2026-11-24T23:49:10+00:00"
-    },
-    {
-     "titulo": "Tras un debate institucional, se canceló el homenaje a Mario Santucho en la UBA",
-     "url": "https://www.diarionorte.com/337218-tras-un-debate-institucional-se-cancelo-el-homenaje-a-mario-santucho-en-la-uba",
-     "medio": "Diario Norte (Chaco)",
-     "fecha": "2026-11-24T23:15:04+00:00"
     }
    ]
   }
