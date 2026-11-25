@@ -1,0 +1,28 @@
+name: SIAI neural engine tests
+
+on:
+  push:
+    branches:
+      - siai/motor-neuronal-inicial
+      - siai/motor-neuronal-v1
+    paths:
+      - "laboratorio_neuronal/**"
+      - ".github/workflows/siai-neural-tests.yml"
+  pull_request:
+    paths:
+      - "laboratorio_neuronal/**"
+      - ".github/workflows/siai-neural-tests.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probar motor neuronal (núcleo sin dependencias externas)
+        run: python -m unittest discover -s laboratorio_neuronal -p "test_*.py" -v
