@@ -38,7 +38,8 @@
 </div></div>
 <div class="traer-fondo" id="miFondo" role="dialog" aria-modal="true" aria-labelledby="miTit"><div class="traer">
 <h2 id="miTit">Mi nota terminada</h2>
-<p>Pegá la nota que ya escribiste (en ChatGPT, Claude, Gemini, DeepSeek, Kimi o a mano). La mesa <b>no la reescribe</b>: separa volanta, título y bajada, ordena los párrafos, corrige tipeos y te propone fotos libres con su crédito.</p>
+<p>Pegá la nota que ya escribiste (en ChatGPT, Claude, Gemini, DeepSeek, Kimi o a mano). La mesa <b>no la reescribe</b>: la ordena en <b>Volanta · Título · Copete · Texto · Fuentes</b>, saca la charla con la IA y busca fotos libres que tengan que ver con la nota.</p>
+<p style="font-size:.9em">Para que salga perfecta, pegala <b>con rótulos</b> (Volanta:, Título:, Copete:, Texto:, Fuentes:) o <b>en código</b> (Python, JSON o Markdown). Así se lee directo, sin IA. <button class="btn ghost" id="miFormato" type="button" style="padding:4px 10px;font-size:.9em">📋 Copiar formato para la IA</button></p>
 <label for="miTexto">Texto de la nota</label><textarea id="miTexto" placeholder="Pegá acá la nota completa…" style="min-height:220px"></textarea>
 <label for="miPedido">Algo más (opcional)</label><input id="miPedido" placeholder="Ej.: va en Economía, la foto que sea de Kicillof…">
 <label for="miFirma">Firma</label><input id="miFirma" value="Emilio Lahitte">
@@ -168,14 +169,32 @@ $('traerUrl').value='';$('traerTexto').value='';$('traerPedido').value='';cerrar
 (function(){const f=$('miFondo');if(!f)return;
 const abrir=(texto)=>{if(typeof texto==='string')$('miTexto').value=texto;$('miEstado').textContent='';f.classList.add('abierto');setTimeout(()=>$('miTexto').focus(),50)};
 const cerrar=()=>f.classList.remove('abierto');
-$('miNota').onclick=()=>abrir();$('miCerrar').onclick=cerrar;f.addEventListener('click',e=>{if(e.target===f)cerrar()});
+$('miNota').onclick=()=>abrir();
+// Plantilla que se le pasa a cualquier IA (de chat o de programación) para que entregue la nota lista para la mesa
+const FORMATO=['Entregame la nota en este formato exacto, en un bloque de código Python, sin texto antes ni después:','',
+'nota = {',
+'    "volanta": "Opinión",  # 1 a 4 palabras',
+'    "titulo": "Título en mayúscula y minúscula, hasta 90 caracteres",',
+'    "copete": "Una o dos oraciones que resumen la nota.",',
+'    "texto": """Primer párrafo con los enlaces así: [nombre de la fuente](https://...).',
+'',
+'## Subtítulo si hace falta',
+'',
+'Segundo párrafo.""",',
+'    "fuentes": [',
+'        {"titulo": "Nombre del medio o documento", "url": "https://..."},',
+'    ],',
+'    "seccion": "Argentina",  # Internacional, Argentina, Economía, Deportes, Cultura, Tecnología u Opinión',
+'    "etiquetas": ["tema 1", "tema 2"],',
+'}'].join('\n');
+$('miFormato').onclick=()=>{const ok=()=>toast('Formato copiado: pegáselo a la IA junto con tu pedido');if(navigator.clipboard)navigator.clipboard.writeText(FORMATO).then(ok,()=>prompt('Copiá este formato:',FORMATO));else prompt('Copiá este formato:',FORMATO)};$('miCerrar').onclick=cerrar;f.addEventListener('click',e=>{if(e.target===f)cerrar()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&f.classList.contains('abierto'))cerrar()});
 $('miIr').onclick=()=>{const texto=$('miTexto').value.trim(),pedido=$('miPedido').value.trim(),firma=$('miFirma').value.trim()||'Redacción';
  if(texto.length<120){$('miEstado').textContent='Pegá la nota completa.';return}
  const b=$('miIr');b.disabled=true;b.textContent='Ordenando…';$('miEstado').textContent='Ordenando la nota y buscando fotos, tarda unos segundos.';
  fetchMesa('/api/ordenar',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({texto,pedido})}).then(r=>r.json().then(j=>({ok:r.ok,j}))).then(({ok,j})=>{if(!ok||!j.ok)throw new Error(j.error||'No se pudo ordenar.');
-  makeNote({title:j.titulo||'Nota sin título',summary:j.bajada||'',body:cleanHtml(j.cuerpo_html),section:siteSection(j.seccion)||'Argentina',author:firma});
-  const n=current();if(n){const fotos=j.fotos||[];Object.assign(n,{volanta:j.volanta||'',tags:j.etiquetas||[],altTitles:j.titulos_alternativos||[],photos:fotos,correcciones:j.correcciones||[],image:fotos[0]?fotos[0].url:'',caption:fotos[0]?fotos[0].credito:'',status:'En edición',updatedBy:'Ordenada con '+j.ia,localEdited:true});persist();render()}
+  makeNote({title:j.titulo||'Nota sin título',summary:j.bajada||'',body:cleanHtml(j.cuerpo_html),section:siteSection(j.seccion)||'Argentina',author:j.firma||firma,sources:j.fuentes||[]});
+  const n=current();if(n){const fotos=j.fotos||[];Object.assign(n,{volanta:j.volanta||'',tags:j.etiquetas||[],altTitles:j.titulos_alternativos||[],photos:fotos,correcciones:j.correcciones||[],image:fotos[0]?fotos[0].url:'',caption:fotos[0]?fotos[0].credito:'',status:'En edición',updatedBy:'Ordenada con '+j.ia,sources:(j.fuentes||[]).length?j.fuentes:(n.sources||[]),localEdited:true});persist();render()}
   $('miTexto').value='';$('miPedido').value='';cerrar();
   toast((j.fotos||[]).length?'Nota ordenada · elegí la foto en «Fuentes y verificación»':'Nota ordenada · no encontré fotos libres, pegá un enlace de foto');
   if(innerWidth<900){const e=$('editor');if(e)setTimeout(()=>e.scrollIntoView({behavior:'smooth'}),150)}})
