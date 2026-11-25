@@ -1,7 +1,37 @@
 {
- "generado": "2026-11-25T18:52:16+00:00",
+ "generado": "2026-11-25T19:33:32+00:00",
  "ventana_horas": 24,
  "primicias": [
+  {
+   "titulo": "Rodolfo Hyland participó de una rueda de negocios organizada por CACIT y BNI Argentina en Tigre",
+   "region": "buenos-aires",
+   "tema": "General",
+   "ejes": [
+    "industria",
+    "local"
+   ],
+   "primer_medio": "Zona Norte Diario",
+   "primera_hora": "2026-11-25T16:07+00:00",
+   "medios_regionales": [
+    "Zona Norte Diario",
+    "InfoBAN (zona norte)"
+   ],
+   "notas": [
+    {
+     "titulo": "Rodolfo Hyland participó de una rueda de negocios organizada por CACIT y BNI Argentina en Tigre",
+     "url": "https://www.zonanortediario.com.ar/25/11/2026/rodolfo-hyland-participo-de-una-rueda-de-negocios-organizada-por-cacit-y-bni-argentina-en-tigre/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-25T16:07:41+00:00"
+    },
+    {
+     "titulo": "Rodolfo Hyland participó de una rueda de negocios para potenciar el desarrollo empresarial de Tigre",
+     "url": "https://www.infoban.com.ar/25/11/2026/rodolfo-hyland-participo-de-una-rueda-de-negocios-para-potenciar-el-desarrollo-empresarial-de-tigre/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-25T19:24:23+00:00"
+    }
+   ],
+   "avisado": false
+  },
   {
    "titulo": "Vicente López: Asamblea y reclamo en el Hospital Cetrángolo por el despido de una trabajadora",
    "region": "buenos-aires",
@@ -59,6 +89,33 @@
      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQU3NkcmlpVC15ak5kenYzdHJtVnhWUl9zVmRseWloQVd2cjhDM1gwaWw0OGRTdWVEM1ZLQl9UREZ2cTBXQUc5OUt4N2QtYUlQUFg4alJnUmJvYUZ0QUJYTUk5Rk5mNXFHTFAzZ1NXVldaMGJFdGFYZ1hSU3pQbE9jNEFLNmZVdHRxeFFQcm5KYTNZd0ZDc25iRDR4TjNKbWZMNHBVVDliRER3d1NOMnNMcHh5ajdtRS1uWHBITmxfV2pMUGlVbkE?oc=5",
      "medio": "Formosa (prensa local)",
      "fecha": "2026-11-25T12:27:45+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "DÍA INTERNACIONAL DE LA ELIMINACION DE LA VIOLENCIA CONTRA L",
+   "region": "norte-grande",
+   "tema": "General",
+   "ejes": [],
+   "primer_medio": "Nueva Rioja (La Rioja)",
+   "primera_hora": "2026-11-25T11:45+00:00",
+   "medios_regionales": [
+    "Nueva Rioja (La Rioja)",
+    "La Gaceta (Tucumán)"
+   ],
+   "notas": [
+    {
+     "titulo": "DÍA INTERNACIONAL DE LA ELIMINACION DE LA VIOLENCIA CONTRA L",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX25ITGpBWTF2WWprbmQycDdOd0Jrcm1VUUlIbC04RER4ckxiX0pRYlREXzJwUFRtVnViQzZaeU80SEdQWjNYdmRJc0lsMHV2QndfbFRSTDJSMnkyMkNKVWNORHhIY3oyczJuQ2FkZ2swM3loT2pkT3JvZlU0cGRwQ2VKOFVUZWppS3Mwc3JmZFJCbFljVUE?oc=5",
+     "medio": "Nueva Rioja (La Rioja)",
+     "fecha": "2026-11-25T11:45:54+00:00"
+    },
+    {
+     "titulo": "Día Internacional de la Eliminación de la Violencia contra la Mujer: solo tres de cada 10 argentinos tienen un alto nivel de concientización",
+     "url": "https://www.lagaceta.com.ar/nota/1164201/sociedad/dia-internacional-eliminacion-violencia-contra-mujer-solo-tres-cada-10-argentinos-tienen-alto-nivel-concientizacion.html",
+     "medio": "La Gaceta (Tucumán)",
+     "fecha": "2026-11-25T13:24:00+00:00"
     }
    ],
    "avisado": false
@@ -73,6 +130,36 @@
  ],
  "seguimiento": [
   {
+   "titulo": "Rodolfo Hyland participó de una rueda de negocios organizada por CACIT y BNI Argentina en Tigre",
+   "region": "buenos-aires",
+   "tema": "General",
+   "ejes": [
+    "industria",
+    "local"
+   ],
+   "primer_medio": "Zona Norte Diario",
+   "primera_hora": "2026-11-25T16:07+00:00",
+   "medios_regionales": [
+    "Zona Norte Diario",
+    "InfoBAN (zona norte)"
+   ],
+   "notas": [
+    {
+     "titulo": "Rodolfo Hyland participó de una rueda de negocios organizada por CACIT y BNI Argentina en Tigre",
+     "url": "https://www.zonanortediario.com.ar/25/11/2026/rodolfo-hyland-participo-de-una-rueda-de-negocios-organizada-por-cacit-y-bni-argentina-en-tigre/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-25T16:07:41+00:00"
+    },
+    {
+     "titulo": "Rodolfo Hyland participó de una rueda de negocios para potenciar el desarrollo empresarial de Tigre",
+     "url": "https://www.infoban.com.ar/25/11/2026/rodolfo-hyland-participo-de-una-rueda-de-negocios-para-potenciar-el-desarrollo-empresarial-de-tigre/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-25T19:24:23+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
    "titulo": "Vicente López: Asamblea y reclamo en el Hospital Cetrángolo por el despido de una trabajadora",
    "region": "buenos-aires",
    "tema": "General",
@@ -129,6 +216,33 @@
      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQU3NkcmlpVC15ak5kenYzdHJtVnhWUl9zVmRseWloQVd2cjhDM1gwaWw0OGRTdWVEM1ZLQl9UREZ2cTBXQUc5OUt4N2QtYUlQUFg4alJnUmJvYUZ0QUJYTUk5Rk5mNXFHTFAzZ1NXVldaMGJFdGFYZ1hSU3pQbE9jNEFLNmZVdHRxeFFQcm5KYTNZd0ZDc25iRDR4TjNKbWZMNHBVVDliRER3d1NOMnNMcHh5ajdtRS1uWHBITmxfV2pMUGlVbkE?oc=5",
      "medio": "Formosa (prensa local)",
      "fecha": "2026-11-25T12:27:45+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "DÍA INTERNACIONAL DE LA ELIMINACION DE LA VIOLENCIA CONTRA L",
+   "region": "norte-grande",
+   "tema": "General",
+   "ejes": [],
+   "primer_medio": "Nueva Rioja (La Rioja)",
+   "primera_hora": "2026-11-25T11:45+00:00",
+   "medios_regionales": [
+    "Nueva Rioja (La Rioja)",
+    "La Gaceta (Tucumán)"
+   ],
+   "notas": [
+    {
+     "titulo": "DÍA INTERNACIONAL DE LA ELIMINACION DE LA VIOLENCIA CONTRA L",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX25ITGpBWTF2WWprbmQycDdOd0Jrcm1VUUlIbC04RER4ckxiX0pRYlREXzJwUFRtVnViQzZaeU80SEdQWjNYdmRJc0lsMHV2QndfbFRSTDJSMnkyMkNKVWNORHhIY3oyczJuQ2FkZ2swM3loT2pkT3JvZlU0cGRwQ2VKOFVUZWppS3Mwc3JmZFJCbFljVUE?oc=5",
+     "medio": "Nueva Rioja (La Rioja)",
+     "fecha": "2026-11-25T11:45:54+00:00"
+    },
+    {
+     "titulo": "Día Internacional de la Eliminación de la Violencia contra la Mujer: solo tres de cada 10 argentinos tienen un alto nivel de concientización",
+     "url": "https://www.lagaceta.com.ar/nota/1164201/sociedad/dia-internacional-eliminacion-violencia-contra-mujer-solo-tres-cada-10-argentinos-tienen-alto-nivel-concientizacion.html",
+     "medio": "La Gaceta (Tucumán)",
+     "fecha": "2026-11-25T13:24:00+00:00"
     }
    ],
    "avisado": false

@@ -1,6 +1,49 @@
 {
- "generado": "2026-11-25T18:52:16+00:00",
+ "generado": "2026-11-25T19:33:32+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": []
+ "urgentes": [
+  {
+   "titulo": "Ejército de EE. UU. detona más de cuatro toneladas de explosivos de plomo en Iowa",
+   "n_medios": 4,
+   "paises": [
+    "Argentina",
+    "España",
+    "Francia"
+   ],
+   "region": null,
+   "tema": "General",
+   "ejes": [
+    "industria"
+   ],
+   "desde": "2026-11-25T19:33:32+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Entre el alivio y la preocupación, vecinos de Iowa aguardan controles tras la detonación de cinco toneladas de explosivo tóxico",
+     "url": "https://www.infobae.com/estados-unidos/2026/11/25/entre-el-alivio-y-la-preocupacion-vecinos-de-iowa-aguardan-controles-tras-la-detonacion-de-cinco-toneladas-de-explosivo-toxico/",
+     "medio": "Infobae",
+     "fecha": "2026-11-25T19:22:37+00:00"
+    },
+    {
+     "titulo": "Ejército de EE. UU. detona más de cuatro toneladas de explosivos de plomo en Iowa",
+     "url": "https://www.france24.com/es/video/20261125-ej%C3%A9rcito-de-ee-uu-detona-m%C3%A1s-de-cuatro-toneladas-de-explosivos-de-plomo-en-iowa",
+     "medio": "France 24 Español",
+     "fecha": "2026-11-25T19:01:36+00:00"
+    },
+    {
+     "titulo": "Recreación visual | Así fue la detonación de cinco toneladas de material explosivo en Iowa",
+     "url": "https://elpais.com/us/2026-11-25/recreacion-visual-asi-fue-la-detonacion-de-cinco-toneladas-de-material-explosivo-en-iowa.html",
+     "medio": "El País · América",
+     "fecha": "2026-11-25T18:00:48+00:00"
+    },
+    {
+     "titulo": "El Ejército de EE.UU. detona explosivos tóxicos en Iowa pese al temor a contaminación",
+     "url": "https://es.euronews.com/2026/11/25/el-ejercito-de-eeuu-detona-explosivos-toxicos-en-iowa-pese-al-temor-a-contaminacion",
+     "medio": "Euronews Español",
+     "fecha": "2026-11-25T17:57:14+00:00"
+    }
+   ]
+  }
+ ]
 }
