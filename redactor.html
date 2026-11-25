@@ -125,7 +125,7 @@ var CLAVE='df_redactor_charla', MESA='df_newsroom_v2', TOKEN='df_mesa_token';
 var charla=[];
 function leer(k,def){try{var v=localStorage.getItem(k);return v?JSON.parse(v):def}catch(e){return def}}
 function guardar(){try{localStorage.setItem(CLAVE,JSON.stringify(charla.slice(-40)))}catch(e){}}
-function toast(t){var e=$('toast');e.textContent=t;e.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(function(){e.style.display='none'},2600)}
+function toast(t){var e=$('toast');e.textContent=t;e.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(function(){e.style.display='none'},Math.max(2600,String(t).length*70))}
 function esc(t){var d=document.createElement('div');d.textContent=t==null?'':String(t);return d.innerHTML}
 function token(){try{return localStorage.getItem(TOKEN)||''}catch(e){return ''}}
 
@@ -291,6 +291,14 @@ function postApi(url,cuerpo){
     return r;
   }).then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j}})});
 }
+// Texto de ayuda para dar permiso al micrófono. Si la Central está instalada como app no hay barra de dirección,
+// así que se explica por los ajustes de Chrome con el nombre real del sitio (no figura como "diario federal").
+function ayudaMic(){
+  var sitio=location.hostname;
+  var app=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone;
+  if(app)return 'Falta el permiso del micrófono. Abrí Chrome → ⋮ → Configuración → Configuración de sitios → Micrófono y buscá «'+sitio+'». Si está bloqueado, ponelo en Permitir y volvé a abrir la app.';
+  return 'Falta el permiso del micrófono. Tocá el ícono a la izquierda de la dirección → Permisos → Micrófono → Permitir. En Chrome el sitio figura como «'+sitio+'».';
+}
 function grabar(){
   navigator.mediaDevices.getUserMedia({audio:true}).then(function(s){
     flujo=s; trozos=[];
@@ -303,7 +311,7 @@ function grabar(){
     tope=setTimeout(function(){if(oyendo)parar()},180000);
   }).catch(function(err){
     oyendo=false; micEstado();
-    if(err&&(err.name==='NotAllowedError'||err.name==='SecurityError'))toast('Dale permiso al micrófono: tocá el candado junto a la dirección y activá Micrófono.');
+    if(err&&(err.name==='NotAllowedError'||err.name==='SecurityError'))toast(ayudaMic());
     else if(err&&err.name==='NotFoundError')toast('No encuentro un micrófono en este equipo.');
     else if(Rec){toast('Probando con el dictado del navegador…');dictar()}
     else toast('No pude abrir el micrófono.');
@@ -330,7 +338,7 @@ function dictar(){
   rec=new Rec(); rec.lang='es-AR'; rec.interimResults=true; rec.continuous=!esMovil;
   var base=$('txt').value?$('txt').value.replace(/\s*$/,' '):'', finales='';
   rec.onresult=function(ev){var parcial='';for(var k=ev.resultIndex;k<ev.results.length;k++){var t=ev.results[k][0].transcript;if(ev.results[k].isFinal)finales+=t+' ';else parcial+=t}$('txt').value=base+finales+parcial;ajustar()};
-  rec.onerror=function(ev){var m={'not-allowed':'Dale permiso al micrófono en el navegador.','service-not-allowed':'El navegador no deja dictar acá. Abrila en Chrome.','no-speech':'No te escuché. Probá de nuevo.','audio-capture':'No encuentro el micrófono.','network':'El dictado necesita buena conexión a internet.'}[ev.error];if(m)toast(m)};
+  rec.onerror=function(ev){var m={'not-allowed':ayudaMic(),'service-not-allowed':'El navegador no deja dictar acá. Abrila en Chrome.','no-speech':'No te escuché. Probá de nuevo.','audio-capture':'No encuentro el micrófono.','network':'El dictado necesita buena conexión a internet.'}[ev.error];if(m)toast(m)};
   rec.onend=function(){oyendo=false;micEstado();$('txt').focus()};
   try{rec.start();oyendo=true;micEstado('oyendo');toast('Te escucho… tocá ⏹ para terminar')}catch(e){micEstado();toast('No se pudo empezar el dictado. Probá de nuevo.')}
 }
