@@ -45,6 +45,11 @@ jobs:
         env:
           PYTHONUNBUFFERED: '1'
         run: python scripts/urgentes.py
+      - name: Primicias regionales
+        continue-on-error: true
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: python scripts/primicias.py
       - name: Guardar
         if: always()
         run: |
@@ -52,6 +57,7 @@ jobs:
           git config user.name "Alvarorfontana"
           git config user.email "alvarorfontana@gmail.com"
           git add datos/noticias.json datos/urgentes.json 2>/dev/null || git add datos/noticias.json
+          git add datos/primicias.json 2>/dev/null || true
           if git diff --cached --quiet; then echo "Sin cambios."; exit 0; fi
           git commit -m "Noticias actualizadas"
           for i in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 5; done
