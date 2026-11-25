@@ -1,66 +1,7 @@
 {
- "generado": "2026-11-25T04:53:56+00:00",
+ "generado": "2026-11-25T08:09:14+00:00",
  "ventana_horas": 24,
  "primicias": [
-  {
-   "titulo": "La sobrina de Gildo Insfrán juró y asumió como ministra del Superior Tribunal de Justicia de Formosa",
-   "region": "norte-grande",
-   "tema": "General",
-   "ejes": [
-    "pj",
-    "politica"
-   ],
-   "primer_medio": "Formosa (prensa local)",
-   "primera_hora": "2026-11-24T23:16+00:00",
-   "medios_regionales": [
-    "Formosa (prensa local)",
-    "Diario Norte (Chaco)"
-   ],
-   "notas": [
-    {
-     "titulo": "La sobrina de Gildo Insfrán juró y asumió como ministra del Superior Tribunal de Justicia de Formosa",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPRFoxdGVhZlcxLTNUaUNxSGVLTnRWZkFfLXVxNVFKcWpMREx3VWM2Ml92bjhHbEtGNk5zWW81d0RBaU5FWl9tVmdTMjVNN1NobXNaY3FQdk9JT2ZxWVduLXowX2s3Vl9qcTBwSndiQVZpWWx6WWUtd3BER3AwRGZ4RWoteEtLQm1fM0FlX0hNQ0NOOGZXZlRZWHJWa3FfMThLNE9VQ1lweng1LVhyNTRCQ25aaDlvV19JMG1pRHJYWkRVRjlhSzlXNWJ3ZVFjVExnZVM0?oc=5",
-     "medio": "Formosa (prensa local)",
-     "fecha": "2026-11-24T23:16:05+00:00"
-    },
-    {
-     "titulo": "La doctora Grissel Insfrán prestó juramento y asumió como ministra del Superior Tribunal de Justicia",
-     "url": "https://www.diarionorte.com/337222-la-doctora-grissel-insfran-presto-juramento-y-asumio-como-ministra-del-superior-tribunal-de-justicia",
-     "medio": "Diario Norte (Chaco)",
-     "fecha": "2026-11-25T02:16:37+00:00"
-    }
-   ],
-   "avisado": false
-  },
-  {
-   "titulo": "Colombia: hombres armados toman decenas de rehenes en un supermercado de Cartagena",
-   "region": "patagonia",
-   "tema": "General",
-   "ejes": [
-    "latinoamerica"
-   ],
-   "primer_medio": "El Sureño (Tierra del Fuego)",
-   "primera_hora": "2026-11-24T21:38+00:00",
-   "medios_regionales": [
-    "El Sureño (Tierra del Fuego)",
-    "Río Negro"
-   ],
-   "notas": [
-    {
-     "titulo": "Colombia: hombres armados toman decenas de rehenes en un supermercado de Cartagena",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWUR1Ml96MmVHX1VPb1lOR0paemkzT09ROHZUd1NtSjY0RElJaExlZ0xXbWdTZHBhMGRDbEFJbzBZTERVb1V1eVBnTW1mUGwtTW5WY096N2lKeHZpWFBIOTdfVWtRdHlVRjBid2VLVy1ndzVwa2pnNDZEaFl2d0phNFZtRTBpUFM3NGdiNUwzeFZrS2VtSktBSGRUMzVScHJzazZBemFveGdrcGF5Umc?oc=5",
-     "medio": "El Sureño (Tierra del Fuego)",
-     "fecha": "2026-11-24T21:38:54+00:00"
-    },
-    {
-     "titulo": "Tensión en Cartagena: hombres armados mantienen rehenes en un supermercado tras un intento de robo",
-     "url": "https://www.rionegro.com.ar/mundo/tension-en-cartagena-hombres-armados-mantienen-rehenes-en-un-supermercado-tras-un-intento-de-robo-4812148/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-25T02:43:38+00:00"
-    }
-   ],
-   "avisado": false
-  },
   {
    "titulo": "FeBAMBA sentó en Paraguay los cimientos de su agenda internacional",
    "region": "buenos-aires",
@@ -151,6 +92,35 @@
    "avisado": false
   },
   {
+   "titulo": "Colombia: hombres armados toman decenas de rehenes en un supermercado de Cartagena",
+   "region": "patagonia",
+   "tema": "General",
+   "ejes": [
+    "latinoamerica"
+   ],
+   "primer_medio": "El Sureño (Tierra del Fuego)",
+   "primera_hora": "2026-11-24T15:45+00:00",
+   "medios_regionales": [
+    "El Sureño (Tierra del Fuego)",
+    "Río Negro"
+   ],
+   "notas": [
+    {
+     "titulo": "Colombia: hombres armados toman decenas de rehenes en un supermercado de Cartagena",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWUR1Ml96MmVHX1VPb1lOR0paemkzT09ROHZUd1NtSjY0RElJaExlZ0xXbWdTZHBhMGRDbEFJbzBZTERVb1V1eVBnTW1mUGwtTW5WY096N2lKeHZpWFBIOTdfVWtRdHlVRjBid2VLVy1ndzVwa2pnNDZEaFl2d0phNFZtRTBpUFM3NGdiNUwzeFZrS2VtSktBSGRUMzVScHJzazZBemFveGdrcGF5Umc?oc=5",
+     "medio": "El Sureño (Tierra del Fuego)",
+     "fecha": "2026-11-24T15:45:02+00:00"
+    },
+    {
+     "titulo": "Tensión en Cartagena: hombres armados mantienen rehenes en un supermercado tras un intento de robo",
+     "url": "https://www.rionegro.com.ar/mundo/tension-en-cartagena-hombres-armados-mantienen-rehenes-en-un-supermercado-tras-un-intento-de-robo-4812148/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-25T02:43:38+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
    "titulo": "Semana clave en el Congreso: Presupuesto 2027, reforma electoral y ludopatía, en el centro de la agenda",
    "region": "centro",
    "tema": "Política",
@@ -231,7 +201,7 @@
      "titulo": "Colombia: hombres armados toman decenas de rehenes en un supermercado de Cartagena",
      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWUR1Ml96MmVHX1VPb1lOR0paemkzT09ROHZUd1NtSjY0RElJaExlZ0xXbWdTZHBhMGRDbEFJbzBZTERVb1V1eVBnTW1mUGwtTW5WY096N2lKeHZpWFBIOTdfVWtRdHlVRjBid2VLVy1ndzVwa2pnNDZEaFl2d0phNFZtRTBpUFM3NGdiNUwzeFZrS2VtSktBSGRUMzVScHJzazZBemFveGdrcGF5Umc?oc=5",
      "medio": "El Sureño (Tierra del Fuego)",
-     "fecha": "2026-11-24T21:38:54+00:00"
+     "fecha": "2026-11-24T15:45:02+00:00"
     },
     {
      "titulo": "Tensión en Cartagena: hombres armados mantienen rehenes en un supermercado tras un intento de robo",
