@@ -1,99 +1,51 @@
 {
- "generado": "2026-11-24T21:11:42+00:00",
+ "generado": "2026-11-25T03:12:53+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
-   "titulo": "La actividad económica registró dos trimestres de caída y Argentina entró en recesión",
-   "n_medios": 8,
+   "titulo": "La UBA dio marcha atrás y suspendió el polémico homenaje a Mario Santucho",
+   "n_medios": 6,
    "paises": [
     "Argentina"
    ],
    "region": null,
-   "tema": "Economía",
+   "tema": "General",
    "ejes": [
-    "economia",
-    "energia",
-    "estadisticas",
-    "fmi",
-    "industria",
     "politica"
    ],
-   "desde": "2026-11-24T19:33:50+00:00",
+   "desde": "2026-11-25T03:12:53+00:00",
    "avisado": false,
    "notas": [
     {
-     "titulo": "Cinco razones por las que la economía entró en recesión",
-     "url": "https://www.lanacion.com.ar/economia/cinco-razones-de-por-que-la-economia-podria-entrar-en-recesion-nid24112026/",
-     "medio": "La Nación",
-     "fecha": "2026-11-24T19:29:57+00:00"
+     "titulo": "No habrá homenaje a Santucho en Sociales",
+     "url": "https://www.pagina12.com.ar/2026/11/25/no-habra-homenaje-a-santucho-en-sociales/",
+     "medio": "Página/12",
+     "fecha": "2026-11-25T03:01:00+00:00"
     },
     {
-     "titulo": "La actividad económica registró dos trimestres de caída y Argentina entró en recesión",
-     "url": "https://www.infobae.com/economia/2026/11/24/la-actividad-economica-registro-dos-trimestres-de-caida-y-argentina-entro-en-recesion/",
-     "medio": "Infobae",
-     "fecha": "2026-11-24T19:28:48+00:00"
+     "titulo": "La UBA dio marcha atrás y suspendió el polémico homenaje a Mario Santucho",
+     "url": "https://www.unoentrerios.com.ar/el-pais/la-uba-dio-marcha-atras-y-suspendio-el-polemico-homenaje-mario-santucho-n10294044.html",
+     "medio": "Uno Entre Ríos",
+     "fecha": "2026-11-25T02:02:56+00:00"
     },
     {
-     "titulo": "Cayó la actividad económica 1,2% en septiembre y se confirmó la recesión técnica",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQNkdSbkQxalA5emc2bVJDZEU1R3FCZkpLNVdRbGxySURHX2RfdFNzbGxXMGpQeWNqQlBFTGFWdmhfQzZ4b0l5c3UzNmdrZkZzOFZlaHBGVGpyRnY5U3pZN0lJel8tU3VvQkpWbF96T2hIUU5nTUo5Zjg1MDZmN1NNMElObGJiRGtQUC1sS1dFVlB0TFFINVo0VjlISldpYTd0RFBaSGsyb2tYZDAzckhrZnJ4aGlsbmRYNDIySHlybWE4YjNlYTN3?oc=5",
-     "medio": "La Arena (La Pampa)",
-     "fecha": "2026-11-24T19:22:38+00:00"
-    },
-    {
-     "titulo": "La economía entró en recesión técnica: sumó dos trimestres seguidos de caída pese a crecer 1,1% mensual en septiembre",
-     "url": "https://www.ambito.com/la-economia-entro-recesion-tecnica-sumo-dos-trimestres-seguidos-caida-pese-crecer-11-mensual-septiembre-n6348824",
-     "medio": "Ámbito",
-     "fecha": "2026-11-24T19:17:00+00:00"
-    },
-    {
-     "titulo": "Argentina entró en «recesión técnica»: el Indec informó que la actividad económica acumuló dos trimestres en caída",
-     "url": "https://www.rionegro.com.ar/economia/argentina-entro-en-recesion-tecnica-el-indec-informo-que-la-actividad-economica-acumulo-dos-trimestres-en-caida-4811740/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-24T19:13:20+00:00"
-    }
-   ]
-  },
-  {
-   "titulo": "Trump ganó hasta 15 millones de dólares con las acciones de Nvidia tras el regreso de Jensen Huang",
-   "n_medios": 4,
-   "paises": [
-    "Argentina",
-    "España",
-    "Francia"
-   ],
-   "region": null,
-   "tema": "Geopolítica",
-   "ejes": [
-    "internacional",
-    "politica"
-   ],
-   "desde": "2026-11-24T19:33:50+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "RDI: Jensen Huang retornó a su rol como CEO de Nvidia y las acciones de la compañía crecieron un 31,5%",
-     "url": "https://perfil.com/mas-perfil/rdi-jensen-huang-retorno-a-su-rol-como-ceo-de-nvidia-y-las-acciones-de-la-compania-crecieron-un-315-a3Voe6V5moWo",
-     "medio": "Perfil",
-     "fecha": "2026-11-24T19:09:20+00:00"
-    },
-    {
-     "titulo": "Furia y consternación en el Congreso de EE UU por el regreso de Huang a Nvidia y el papel de Trump en él",
-     "url": "https://elpais.com/us/2026-11-24/furia-y-consternacion-en-el-congreso-de-ee-uu-por-el-regreso-de-huang-a-nvidia-y-el-papel-de-trump-en-el.html",
-     "medio": "El País · América",
-     "fecha": "2026-11-24T18:44:20+00:00"
-    },
-    {
-     "titulo": "Dudas y acusaciones contra Trump y Nvidia por regreso de Huang como CEO",
-     "url": "https://www.france24.com/es/video/20261124-dudas-y-acusaciones-contra-trump-y-nvidia-por-regreso-de-huang-como-ceo",
-     "medio": "France 24 Español",
-     "fecha": "2026-11-24T18:39:45+00:00"
-    },
-    {
-     "titulo": "Trump ganó hasta 15 millones de dólares con las acciones de Nvidia tras el regreso de Jensen Huang",
-     "url": "https://noticiasargentinas.com/internacionales/trump-gano-hasta-15-millones-de-dolares-con-las-acciones-de-nvidia-tras-el-regreso-de-jensen-huang_a6b05d907f5d9d625077a7a9a",
+     "titulo": "El rectorado de la UBA apoyó la decisión de suspender el homenaje a Santucho",
+     "url": "https://noticiasargentinas.com/politica/el-rectorado-de-la-uba-apoyo-la-decision-de-suspender-el-homenaje-a-santucho_a6b0637cce592be1ffadb659e",
      "medio": "Noticias Argentinas",
-     "fecha": "2026-11-24T18:38:13+00:00"
+     "fecha": "2026-11-25T01:28:24+00:00"
+    },
+    {
+     "titulo": "El Consejo Directivo de Sociales de la UBA suspendió el homenaje a Santucho",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLVlWZlNqUkpQd1ZGMU9WZGw0UmlqRThKS0pUcHF6MDYycEVjSnItOENJM0FvTmZBVTA0M0ZkTzJrUUFrSFlMcl9US2JWNGNjVFZhaGRuX2sxWFd4MmxjV1ZGZ3ZCUHVVTGJxaEJhVWQ2bjJaWFVoMlRNY3NXU05JZXVSdUJ2dW5ybHdrcGU4VHNoTzZTZmlfQVlFRjY1WXRyS0RyU0c3dVpQTTZnVUlZNU5wVnFQVktlWWVySE9NcEg3UQ?oc=5",
+     "medio": "La Arena (La Pampa)",
+     "fecha": "2026-11-24T23:49:10+00:00"
+    },
+    {
+     "titulo": "Tras un debate institucional, se canceló el homenaje a Mario Santucho en la UBA",
+     "url": "https://www.diarionorte.com/337218-tras-un-debate-institucional-se-cancelo-el-homenaje-a-mario-santucho-en-la-uba",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-24T23:15:04+00:00"
     }
    ]
   }
