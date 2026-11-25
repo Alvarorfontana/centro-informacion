@@ -6,7 +6,7 @@
 <title>Vigía de copias · Central de noticias</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Manrope:wght@400;500;600;700&display=swap">
 <style>
-  :root { --tinta:#151515; --gris:#6b6b6b; --linea:#e4e4e4; --fondo:#fafaf8; }
+  :root { --tinta:#151515; --gris:#6b6b6b; --linea:#e4e4e4; --fondo:#F6F4EF; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--fondo); color:var(--tinta); font-family:Manrope, system-ui, sans-serif; }
   header { padding:18px 20px; border-bottom:1px solid var(--linea); background:#fff; display:flex; align-items:center; gap:12px; }
@@ -23,10 +23,14 @@
   .vacio { color:var(--gris); text-align:center; padding:40px 0; }
   h2 { font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--gris); margin:28px 0 10px; }
   li { font-size:14px; margin-bottom:6px; }
+  header { flex-wrap:wrap; background:#FBFAF7; border-bottom-color:#DEDAD2; }
+  header .marca-nav a { font-size:12px; }
 </style>
+<link rel="stylesheet" href="marca.css">
 </head>
 <body>
-<header><h1>Vigía de copias</h1><a href="index.html">← Central</a></header>
+<header><a class="marca-logo" href="index.html#central"><span class="marca-cuad" aria-hidden="true"></span>EL DIARIO<span class="marca-sep" aria-hidden="true"></span><span class="marca-nombre">Vigía de copias</span></a><nav class="marca-nav" aria-label="Pantallas de la Central"><a href="index.html#central">Central</a><a href="index.html#edicion">Edición del día</a><a href="index.html#mapa">Mapa</a><a href="mesa-redaccion-operativa.html">Mesa de Redacción</a><a href="centro-mando.html">Centro de mando</a><a href="vigia.html" aria-current="page">Vigía de copias</a></nav></header>
+<main style="padding-bottom:0"><h1>Vigía de copias</h1></main>
 <main>
   <div class="meta" id="meta">Cargando…</div>
   <div id="lista"></div>
