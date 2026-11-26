@@ -196,9 +196,12 @@
       "consultas": [
         "(\"Partido Justicialista\" OR justicialismo OR \"PJ bonaerense\" OR \"PJ nacional\" OR \"consejo del PJ\" OR \"congreso del PJ\") sourcecountry:AR",
         "(peronismo OR peronista OR \"interna peronista\" OR \"bloque peronista\" OR \"Union por la Patria\" OR \"Fuerza Patria\") sourcecountry:AR",
-        "(\"Dia de la Lealtad\" OR \"acto peronista\" OR \"Cristina Kirchner\" OR Kicillof OR \"La Campora\" OR Quintela) sourcecountry:AR"
+        "(\"Dia de la Lealtad\" OR \"acto peronista\" OR \"Cristina Kirchner\" OR Kicillof OR \"La Campora\" OR Quintela) sourcecountry:AR",
+        "Kicillof sourcecountry:AR",
+        "\"Cristina Kirchner\" sourcecountry:AR",
+        "\"Sergio Massa\" sourcecountry:AR"
       ],
-      "prioridad": 1
+      "prioridad": 0
     },
     {
       "id": "local",

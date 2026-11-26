@@ -189,7 +189,7 @@
     "_ayuda": "Notas que tiene que traer cada edición sí o sí, de cualquier sección, si hay material: id del eje → cantidad.",
     "economia": 2,
     "bolsillo": 2,
-    "pj": 1
+    "pj": 3
   },
   "bonus_prioridad": {
     "_ayuda": "Puntos que se suman al puntaje de un tema según la prioridad de su eje (datos/ejes.json).",
