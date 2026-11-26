@@ -1,68 +1,32 @@
 {
- "generado": "2026-11-26T04:09:06+00:00",
+ "generado": "2026-11-26T08:09:24+00:00",
  "ventana_horas": 24,
  "primicias": [
   {
-   "titulo": "Santilli defendió la gestión de Milei en el Senado: “No hubo estallido, hubo crecimiento”",
+   "titulo": "25N: mujeres marcharon en Posadas contra la violencia y reclamaron que no se naturalicen los femicidios",
    "region": "norte-grande",
-   "tema": "Política",
+   "tema": "General",
    "ejes": [
     "politica"
    ],
-   "primer_medio": "La Gaceta (Tucumán)",
-   "primera_hora": "2026-11-25T19:19+00:00",
+   "primer_medio": "El Territorio (Misiones)",
+   "primera_hora": "2026-11-25T21:42+00:00",
    "medios_regionales": [
-    "La Gaceta (Tucumán)",
-    "El Litoral (Corrientes)",
-    "Diario Norte (Chaco)"
+    "El Territorio (Misiones)",
+    "La Gaceta (Tucumán)"
    ],
    "notas": [
     {
-     "titulo": "Santilli defendió la gestión de Milei en el Senado: “No hubo estallido, hubo crecimiento”",
-     "url": "https://www.lagaceta.com.ar/nota/1164270/politica/santilli-defendio-gestion-milei-senado-no-hubo-estallido-hubo-crecimiento.html",
+     "titulo": "25N: mujeres marcharon en Posadas contra la violencia y reclamaron que no se naturalicen los femicidios",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNYlhRdEFPYTlwMEVWSlpVUG5lZTNzYV9BaU1WZmJsNzdMdUI0UXFjM01VY1BwTU1EZWl3T1Y2RkRYUW9kZUFrZFVaVXdoajA2akNmaEMzcWVjUVl4ZEVCNk54N0pEUU5BamxaTWFRYzkxSG9JSlF2VWdpUjFRVFZsYWJ3ZUFKQ0h6VWN6UjRtTmF0RGVlcmFwQklsLW1KTmxKV2loRDV6OFpnenNjR1JfZFQ3VDB3YVNaQVB5SmlSazM0MjB2Z2JoQUtjZlN3eHIzdnFoRXN0UHMyWVpDWGh0RmdwbUtFQzNlWHdoeXVvY0VUU2vSAfgBQVVfeXFMT2tueXBnalQ3S2FMaW53NFppQml4dDlXdkZYLUlCNFVfQTBwWkNoUkJ0MGVTdDNTZ3VyUmZoSjI1VmRVS1Y5R0F1eGhDSWYyQkw2ZkVxTzRNTlc2STRwUTl1VXlfQmZxaVZ5RDV1WnlpbFhFQktqWGZZNW1USEdrd3N1YVF2UEJBcVpNTTE3b2IwbEJUNk1oUUZjRUlLYWkzZHpqQnpwM1lkS2IwM0lfX2l3YlRYT3MwTVhvY0Z1eTlLbkNhVGJSOWY4YnNjWS1lUTExQjI3NlhnczFrY3lzTjByRE9FR3pJVHgyZllWME4zYTFIb1dTVXQ?oc=5",
+     "medio": "El Territorio (Misiones)",
+     "fecha": "2026-11-25T21:42:52+00:00"
+    },
+    {
+     "titulo": "Tucumán: mujeres marcharon contra la violencia",
+     "url": "https://www.lagaceta.com.ar/nota/1164301/sociedad/tucuman-mujeres-marcharon-contra-violencia.html",
      "medio": "La Gaceta (Tucumán)",
-     "fecha": "2026-11-25T19:19:00+00:00"
-    },
-    {
-     "titulo": "Santilli defendió la gestión de Milei en el Senado: “Sin orden ganaban los delicuentes”",
-     "url": "https://www.ellitoral.com.ar/nacional/2026-11-25-16-42-0-santilli-defendio-la-gestion-de-milei-en-el-senado-sin-orden-ganaban-los-delicuentes",
-     "medio": "El Litoral (Corrientes)",
-     "fecha": "2026-11-25T19:42:00+00:00"
-    },
-    {
-     "titulo": "Santilli: \"No hubo estallido, hubo crecimiento. Milei va por la reelección\"",
-     "url": "https://www.diarionorte.com/337296-santilli-no-hubo-estallido-hubo-crecimiento-milei-va-por-la-reeleccion",
-     "medio": "Diario Norte (Chaco)",
-     "fecha": "2026-11-26T00:46:22+00:00"
-    }
-   ],
-   "avisado": false
-  },
-  {
-   "titulo": "Nueva York prohibió los juguetes con IA que hablan con chicos",
-   "region": "norte-grande",
-   "tema": "Geopolítica",
-   "ejes": [
-    "internacional"
-   ],
-   "primer_medio": "Diario Norte (Chaco)",
-   "primera_hora": "2026-11-25T23:19+00:00",
-   "medios_regionales": [
-    "Diario Norte (Chaco)",
-    "Río Negro"
-   ],
-   "notas": [
-    {
-     "titulo": "Nueva York prohibió los juguetes con IA que hablan con chicos",
-     "url": "https://www.diarionorte.com/337281-nueva-york-prohibio-los-juguetes-con-ia-que-hablan-con-chicos",
-     "medio": "Diario Norte (Chaco)",
-     "fecha": "2026-11-25T23:19:52+00:00"
-    },
-    {
-     "titulo": "Estados Unidos prohíbe los juguetes con inteligencia artificial que hablan con los chicos: la situación en Argentina",
-     "url": "https://www.rionegro.com.ar/sociedad/estados-unidos-prohibe-los-juguetes-con-inteligencia-artificial-que-hablan-con-los-chicos-la-situacion-en-argentina-4813811/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-25T23:38:54+00:00"
+     "fecha": "2026-11-26T00:00:00+00:00"
     }
    ],
    "avisado": false
@@ -122,6 +86,35 @@
      "url": "https://www.infoban.com.ar/25/11/2026/rodolfo-hyland-participo-de-una-rueda-de-negocios-para-potenciar-el-desarrollo-empresarial-de-tigre/",
      "medio": "InfoBAN (zona norte)",
      "fecha": "2026-11-25T19:24:23+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Senado: inició el debate por la Ley contra la ludopatía",
+   "region": "norte-grande",
+   "tema": "Política",
+   "ejes": [
+    "politica"
+   ],
+   "primer_medio": "El Litoral (Corrientes)",
+   "primera_hora": "2026-11-25T14:54+00:00",
+   "medios_regionales": [
+    "El Litoral (Corrientes)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "Senado: inició el debate por la Ley contra la ludopatía",
+     "url": "https://www.ellitoral.com.ar/nacional/2026-11-25-11-54-0-senado-inicio-el-debate-por-la-ley-contra-la-ludopatia",
+     "medio": "El Litoral (Corrientes)",
+     "fecha": "2026-11-25T14:54:00+00:00"
+    },
+    {
+     "titulo": "El Senado debate hoy la suspensión de las PASO y la ley de ludopatía",
+     "url": "https://www.diarionorte.com/337295-el-senado-debate-hoy-la-suspension-de-las-paso-y-la-ley-de-ludopatia",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-26T07:00:04+00:00"
     }
    ],
    "avisado": false
@@ -165,6 +158,35 @@
    "avisado": false
   },
   {
+   "titulo": "25N: mujeres marcharon en Posadas contra la violencia y reclamaron que no se naturalicen los femicidios",
+   "region": "norte-grande",
+   "tema": "General",
+   "ejes": [
+    "politica"
+   ],
+   "primer_medio": "El Territorio (Misiones)",
+   "primera_hora": "2026-11-25T21:42+00:00",
+   "medios_regionales": [
+    "El Territorio (Misiones)",
+    "La Gaceta (Tucumán)"
+   ],
+   "notas": [
+    {
+     "titulo": "25N: mujeres marcharon en Posadas contra la violencia y reclamaron que no se naturalicen los femicidios",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNYlhRdEFPYTlwMEVWSlpVUG5lZTNzYV9BaU1WZmJsNzdMdUI0UXFjM01VY1BwTU1EZWl3T1Y2RkRYUW9kZUFrZFVaVXdoajA2akNmaEMzcWVjUVl4ZEVCNk54N0pEUU5BamxaTWFRYzkxSG9JSlF2VWdpUjFRVFZsYWJ3ZUFKQ0h6VWN6UjRtTmF0RGVlcmFwQklsLW1KTmxKV2loRDV6OFpnenNjR1JfZFQ3VDB3YVNaQVB5SmlSazM0MjB2Z2JoQUtjZlN3eHIzdnFoRXN0UHMyWVpDWGh0RmdwbUtFQzNlWHdoeXVvY0VUU2vSAfgBQVVfeXFMT2tueXBnalQ3S2FMaW53NFppQml4dDlXdkZYLUlCNFVfQTBwWkNoUkJ0MGVTdDNTZ3VyUmZoSjI1VmRVS1Y5R0F1eGhDSWYyQkw2ZkVxTzRNTlc2STRwUTl1VXlfQmZxaVZ5RDV1WnlpbFhFQktqWGZZNW1USEdrd3N1YVF2UEJBcVpNTTE3b2IwbEJUNk1oUUZjRUlLYWkzZHpqQnpwM1lkS2IwM0lfX2l3YlRYT3MwTVhvY0Z1eTlLbkNhVGJSOWY4YnNjWS1lUTExQjI3NlhnczFrY3lzTjByRE9FR3pJVHgyZllWME4zYTFIb1dTVXQ?oc=5",
+     "medio": "El Territorio (Misiones)",
+     "fecha": "2026-11-25T21:42:52+00:00"
+    },
+    {
+     "titulo": "Tucumán: mujeres marcharon contra la violencia",
+     "url": "https://www.lagaceta.com.ar/nota/1164301/sociedad/tucuman-mujeres-marcharon-contra-violencia.html",
+     "medio": "La Gaceta (Tucumán)",
+     "fecha": "2026-11-26T00:00:00+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
    "titulo": "Santilli defendió la gestión de Milei en el Senado: “No hubo estallido, hubo crecimiento”",
    "region": "norte-grande",
    "tema": "Política",
@@ -255,6 +277,35 @@
      "url": "https://www.infoban.com.ar/25/11/2026/rodolfo-hyland-participo-de-una-rueda-de-negocios-para-potenciar-el-desarrollo-empresarial-de-tigre/",
      "medio": "InfoBAN (zona norte)",
      "fecha": "2026-11-25T19:24:23+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Senado: inició el debate por la Ley contra la ludopatía",
+   "region": "norte-grande",
+   "tema": "Política",
+   "ejes": [
+    "politica"
+   ],
+   "primer_medio": "El Litoral (Corrientes)",
+   "primera_hora": "2026-11-25T14:54+00:00",
+   "medios_regionales": [
+    "El Litoral (Corrientes)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "Senado: inició el debate por la Ley contra la ludopatía",
+     "url": "https://www.ellitoral.com.ar/nacional/2026-11-25-11-54-0-senado-inicio-el-debate-por-la-ley-contra-la-ludopatia",
+     "medio": "El Litoral (Corrientes)",
+     "fecha": "2026-11-25T14:54:00+00:00"
+    },
+    {
+     "titulo": "El Senado debate hoy la suspensión de las PASO y la ley de ludopatía",
+     "url": "https://www.diarionorte.com/337295-el-senado-debate-hoy-la-suspension-de-las-paso-y-la-ley-de-ludopatia",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-26T07:00:04+00:00"
     }
    ],
    "avisado": false
