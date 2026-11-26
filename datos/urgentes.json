@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-26T18:40:37+00:00",
+ "generado": "2026-11-26T19:18:25+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
@@ -48,93 +48,6 @@
      "url": "https://www.rionegro.com.ar/politica/como-votaron-los-diputados-de-neuquen-rio-negro-y-la-patagonia-la-aprobacion-de-la-reforma-del-banco-central-4815157/",
      "medio": "Río Negro",
      "fecha": "2026-11-26T17:27:02+00:00"
-    }
-   ]
-  },
-  {
-   "titulo": "Dos técnicos italianos mueren en Kuwait tras ataque con drones",
-   "n_medios": 4,
-   "paises": [
-    "Alemania",
-    "Argentina",
-    "Cuba",
-    "España"
-   ],
-   "region": null,
-   "tema": "General",
-   "ejes": [
-    "internacional"
-   ],
-   "desde": "2026-11-26T18:40:37+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Dos técnicos italianos mueren en Kuwait tras ataque con drones",
-     "url": "https://www.prensa-latina.cu/2026/11/26/dos-tecnicos-italianos-mueren-en-kuwait-tras-ataque-con-drones/",
-     "medio": "Prensa Latina",
-     "fecha": "2026-11-26T18:20:46+00:00"
-    },
-    {
-     "titulo": "Dos italianos mueren en ataque iraní con drones en Kuwait",
-     "url": "https://www.dw.com/es/dos-italianos-mueren-en-ataque-iraní-con-drones-en-kuwait/a-80067924?maca=spa-rss-sp-all-1122-xml-mrss",
-     "medio": "DW Español",
-     "fecha": "2026-11-26T16:53:00+00:00"
-    },
-    {
-     "titulo": "Quiénes eran los dos técnicos italianos que murieron en Kuwait en un ataque iraní con drones",
-     "url": "https://www.infobae.com/america/mundo/2026/11/26/quienes-eran-los-dos-tecnicos-italianos-que-murieron-en-kuwait-en-un-ataque-irani-con-drones/",
-     "medio": "Infobae América",
-     "fecha": "2026-11-26T16:10:25+00:00"
-    },
-    {
-     "titulo": "Mueren dos técnicos italianos en Kuwait por los restos de drones iraníes derribados",
-     "url": "https://elpais.com/internacional/2026-11-26/mueren-dos-tecnicos-italianos-en-kuwait-por-los-restos-de-drones-iranies-derribados.html",
-     "medio": "El País · Internacional",
-     "fecha": "2026-11-26T14:57:00+00:00"
-    }
-   ]
-  },
-  {
-   "titulo": "El español Pablo Hernández de Cos sucederá a Christine Lagarde en el BCE",
-   "n_medios": 4,
-   "paises": [
-    "Alemania",
-    "Argentina",
-    "España"
-   ],
-   "region": null,
-   "tema": "Economía",
-   "ejes": [
-    "economia",
-    "fmi",
-    "politica"
-   ],
-   "desde": "2026-11-26T18:40:37+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "El español Pablo Hernández de Cos sucederá a Christine Lagarde en el BCE",
-     "url": "https://noticiasargentinas.com/internacionales/el-espanol-pablo-hernandez-de-cos-sucedera-a-christine-lagarde-en-el-bce_a6b0873e7272556b8ed7c9f9b",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-26T18:03:15+00:00"
-    },
-    {
-     "titulo": "El español Pablo Hernández de Cos será el sucesor de Christine Lagarde en el Banco Central Europeo",
-     "url": "https://www.ambito.com/finanzas/el-espanol-pablo-hernandez-cos-sera-el-sucesor-christine-lagarde-el-banco-central-europeo-n6349657",
-     "medio": "Ámbito",
-     "fecha": "2026-11-26T16:46:00+00:00"
-    },
-    {
-     "titulo": "Pablo Hernández de Cos, primer español que presidirá el BCE ante la crisis de deuda, la IA y la inflación",
-     "url": "https://www.europapress.es/economia/macroeconomia-00338/noticia-pablo-hernandez-cos-primer-espanol-presidira-bce-crisis-deuda-ia-inflacion-20261126162635.html",
-     "medio": "Europa Press",
-     "fecha": "2026-11-26T15:26:35+00:00"
-    },
-    {
-     "titulo": "El español Pablo Hernández de Cos sucederá a Lagarde en la presidencia del BCE",
-     "url": "https://www.dw.com/es/el-español-pablo-hernández-de-cos-sucederá-a-lagarde-en-la-presidencia-del-bce/a-80065324?maca=spa-rss-sp-all-1122-xml-mrss",
-     "medio": "DW Español",
-     "fecha": "2026-11-26T15:16:00+00:00"
     }
    ]
   }
