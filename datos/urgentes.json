@@ -1,48 +1,6 @@
 {
- "generado": "2026-11-26T02:30:42+00:00",
+ "generado": "2026-11-26T03:08:15+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
- "urgentes": [
-  {
-   "titulo": "Andy Taylor, enérgico guitarrista de Duran Duran, muere a los 65 años",
-   "n_medios": 4,
-   "paises": [
-    "Argentina",
-    "Estados Unidos",
-    "Italia",
-    "Reino Unido"
-   ],
-   "region": null,
-   "tema": "General",
-   "ejes": [],
-   "desde": "2026-11-26T02:30:42+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Andy Taylor, enérgico guitarrista de Duran Duran, muere a los 65 años",
-     "url": "https://www.nytimes.com/es/2026/11/25/espanol/cultura/andy-taylor-guitarrista-duran-muere.html",
-     "medio": "NYT en Español",
-     "fecha": "2026-11-26T01:44:26+00:00"
-    },
-    {
-     "titulo": "Murió Andy Taylor, exguitarrista de Duran Duran, a los 65 años",
-     "url": "https://www.rionegro.com.ar/cultura/murio-andy-taylor-exguitarrista-de-duran-duran-a-los-65-anos-4813880/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-26T00:21:34+00:00"
-    },
-    {
-     "titulo": "Muere a los 65 años el guitarrista de la banda de pop Duran Duran",
-     "url": "https://www.bbc.com/mundo/articles/cmwy8gjdgwy6o?at_medium=RSS&at_campaign=rss",
-     "medio": "BBC Mundo",
-     "fecha": "2026-11-25T23:24:27+00:00"
-    },
-    {
-     "titulo": "Morto Andy Taylor, ex chitarrista dei Duran Duran",
-     "url": "https://www.ansa.it/sito/notizie/cultura/2026/11/25/morto-andy-taylor-ex-chitarrista-dei-duran-duran-_af6007f1-1f71-4392-84ac-08b6060d3c63.html",
-     "medio": "ANSA Latina",
-     "fecha": "2026-11-25T23:03:24+00:00"
-    }
-   ]
-  }
- ]
+ "urgentes": []
 }
