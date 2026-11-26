@@ -1,120 +1,67 @@
 {
- "generado": "2026-11-26T08:09:24+00:00",
+ "generado": "2026-11-26T18:40:37+00:00",
  "ventana_horas": 24,
  "primicias": [
   {
-   "titulo": "25N: mujeres marcharon en Posadas contra la violencia y reclamaron que no se naturalicen los femicidios",
+   "titulo": "Fernández Codazzi declaró en el juicio por Loan: \"Laudelina me dijo que fue un accidente\"",
    "region": "norte-grande",
    "tema": "General",
    "ejes": [
-    "politica"
-   ],
-   "primer_medio": "El Territorio (Misiones)",
-   "primera_hora": "2026-11-25T21:42+00:00",
-   "medios_regionales": [
-    "El Territorio (Misiones)",
-    "La Gaceta (Tucumán)"
-   ],
-   "notas": [
-    {
-     "titulo": "25N: mujeres marcharon en Posadas contra la violencia y reclamaron que no se naturalicen los femicidios",
-     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNYlhRdEFPYTlwMEVWSlpVUG5lZTNzYV9BaU1WZmJsNzdMdUI0UXFjM01VY1BwTU1EZWl3T1Y2RkRYUW9kZUFrZFVaVXdoajA2akNmaEMzcWVjUVl4ZEVCNk54N0pEUU5BamxaTWFRYzkxSG9JSlF2VWdpUjFRVFZsYWJ3ZUFKQ0h6VWN6UjRtTmF0RGVlcmFwQklsLW1KTmxKV2loRDV6OFpnenNjR1JfZFQ3VDB3YVNaQVB5SmlSazM0MjB2Z2JoQUtjZlN3eHIzdnFoRXN0UHMyWVpDWGh0RmdwbUtFQzNlWHdoeXVvY0VUU2vSAfgBQVVfeXFMT2tueXBnalQ3S2FMaW53NFppQml4dDlXdkZYLUlCNFVfQTBwWkNoUkJ0MGVTdDNTZ3VyUmZoSjI1VmRVS1Y5R0F1eGhDSWYyQkw2ZkVxTzRNTlc2STRwUTl1VXlfQmZxaVZ5RDV1WnlpbFhFQktqWGZZNW1USEdrd3N1YVF2UEJBcVpNTTE3b2IwbEJUNk1oUUZjRUlLYWkzZHpqQnpwM1lkS2IwM0lfX2l3YlRYT3MwTVhvY0Z1eTlLbkNhVGJSOWY4YnNjWS1lUTExQjI3NlhnczFrY3lzTjByRE9FR3pJVHgyZllWME4zYTFIb1dTVXQ?oc=5",
-     "medio": "El Territorio (Misiones)",
-     "fecha": "2026-11-25T21:42:52+00:00"
-    },
-    {
-     "titulo": "Tucumán: mujeres marcharon contra la violencia",
-     "url": "https://www.lagaceta.com.ar/nota/1164301/sociedad/tucuman-mujeres-marcharon-contra-violencia.html",
-     "medio": "La Gaceta (Tucumán)",
-     "fecha": "2026-11-26T00:00:00+00:00"
-    }
-   ],
-   "avisado": false
-  },
-  {
-   "titulo": "Garín: un motociclista alcoholizado embistió a dos policías y fue detenido tras una persecución",
-   "region": "buenos-aires",
-   "tema": "General",
-   "ejes": [
-    "politica"
-   ],
-   "primer_medio": "Zona Norte Diario",
-   "primera_hora": "2026-11-25T19:15+00:00",
-   "medios_regionales": [
-    "Zona Norte Diario",
-    "InfoBAN (zona norte)"
-   ],
-   "notas": [
-    {
-     "titulo": "Garín: un motociclista alcoholizado embistió a dos policías y fue detenido tras una persecución",
-     "url": "https://www.zonanortediario.com.ar/25/11/2026/garin-un-motociclista-alcoholizado-embistio-a-dos-policias-y-fue-detenido-tras-una-persecucion/",
-     "medio": "Zona Norte Diario",
-     "fecha": "2026-11-25T19:15:12+00:00"
-    },
-    {
-     "titulo": "Motociclista embistió a dos policías para evadir un control en Garín y terminó detenido",
-     "url": "https://www.infoban.com.ar/25/11/2026/motociclista-embistio-a-dos-policias-para-evadir-un-control-en-garin-y-termino-detenido/",
-     "medio": "InfoBAN (zona norte)",
-     "fecha": "2026-11-25T20:40:04+00:00"
-    }
-   ],
-   "avisado": false
-  },
-  {
-   "titulo": "Rodolfo Hyland participó de una rueda de negocios organizada por CACIT y BNI Argentina en Tigre",
-   "region": "buenos-aires",
-   "tema": "General",
-   "ejes": [
-    "industria",
-    "local"
-   ],
-   "primer_medio": "Zona Norte Diario",
-   "primera_hora": "2026-11-25T16:07+00:00",
-   "medios_regionales": [
-    "Zona Norte Diario",
-    "InfoBAN (zona norte)"
-   ],
-   "notas": [
-    {
-     "titulo": "Rodolfo Hyland participó de una rueda de negocios organizada por CACIT y BNI Argentina en Tigre",
-     "url": "https://www.zonanortediario.com.ar/25/11/2026/rodolfo-hyland-participo-de-una-rueda-de-negocios-organizada-por-cacit-y-bni-argentina-en-tigre/",
-     "medio": "Zona Norte Diario",
-     "fecha": "2026-11-25T16:07:41+00:00"
-    },
-    {
-     "titulo": "Rodolfo Hyland participó de una rueda de negocios para potenciar el desarrollo empresarial de Tigre",
-     "url": "https://www.infoban.com.ar/25/11/2026/rodolfo-hyland-participo-de-una-rueda-de-negocios-para-potenciar-el-desarrollo-empresarial-de-tigre/",
-     "medio": "InfoBAN (zona norte)",
-     "fecha": "2026-11-25T19:24:23+00:00"
-    }
-   ],
-   "avisado": false
-  },
-  {
-   "titulo": "Senado: inició el debate por la Ley contra la ludopatía",
-   "region": "norte-grande",
-   "tema": "Política",
-   "ejes": [
-    "politica"
+    "mercosur"
    ],
    "primer_medio": "El Litoral (Corrientes)",
-   "primera_hora": "2026-11-25T14:54+00:00",
+   "primera_hora": "2026-11-26T12:12+00:00",
    "medios_regionales": [
     "El Litoral (Corrientes)",
     "Diario Norte (Chaco)"
    ],
    "notas": [
     {
-     "titulo": "Senado: inició el debate por la Ley contra la ludopatía",
-     "url": "https://www.ellitoral.com.ar/nacional/2026-11-25-11-54-0-senado-inicio-el-debate-por-la-ley-contra-la-ludopatia",
+     "titulo": "Fernández Codazzi declaró en el juicio por Loan: \"Laudelina me dijo que fue un accidente\"",
+     "url": "https://www.ellitoral.com.ar/policiales/2026-11-26-9-12-0-jose-fernandez-codazzi-declara-bajo-juramento-en-el-juicio-por-loan",
      "medio": "El Litoral (Corrientes)",
-     "fecha": "2026-11-25T14:54:00+00:00"
+     "fecha": "2026-11-26T12:12:00+00:00"
     },
     {
-     "titulo": "El Senado debate hoy la suspensión de las PASO y la ley de ludopatía",
-     "url": "https://www.diarionorte.com/337295-el-senado-debate-hoy-la-suspension-de-las-paso-y-la-ley-de-ludopatia",
+     "titulo": "Caso Loan: declara el exabogado de Laudelina tras las graves acusaciones por la hipótesis del accidente",
+     "url": "https://www.diarionorte.com/337315-caso-loan-declara-el-exabogado-de-laudelina-tras-las-graves-acusaciones-por-la-hipotesis-del-accidente",
      "medio": "Diario Norte (Chaco)",
-     "fecha": "2026-11-26T07:00:04+00:00"
+     "fecha": "2026-11-26T13:13:21+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Tragedia en Uruguay: una entrerriana murió ahogada en playa Chihuahua",
+   "region": "centro",
+   "tema": "General",
+   "ejes": [
+    "latinoamerica"
+   ],
+   "primer_medio": "Uno Entre Ríos",
+   "primera_hora": "2026-11-25T21:44+00:00",
+   "medios_regionales": [
+    "Uno Entre Ríos",
+    "La Gaceta (Tucumán)"
+   ],
+   "notas": [
+    {
+     "titulo": "Tragedia en Uruguay: una entrerriana murió ahogada en playa Chihuahua",
+     "url": "https://www.unoentrerios.com.ar/policiales/tragedia-uruguay-una-entrerriana-murio-ahogada-playa-chihuahua-n10294220.html",
+     "medio": "Uno Entre Ríos",
+     "fecha": "2026-11-25T21:44:00+00:00"
+    },
+    {
+     "titulo": "Una turista argentina de 36 años murió ahogada en una playa nudista: cómo ocurrió la tragedia",
+     "url": "https://www.lagaceta.com.ar/nota/1164360/seguridad/turista-argentina-36-anos-murio-ahogada-playa-nudista-como-ocurrio-tragedia.html",
+     "medio": "La Gaceta (Tucumán)",
+     "fecha": "2026-11-26T14:17:00+00:00"
+    },
+    {
+     "titulo": "Quién era Graciela Mayer, la turista argentina que murió ahogada en una playa de Punta del Este",
+     "url": "https://www.lagaceta.com.ar/nota/1164393/sociedad/quien-era-graciela-mayer-turista-argentina-murio-ahogada-playa-punta-este.html",
+     "medio": "La Gaceta (Tucumán)",
+     "fecha": "2026-11-26T15:34:00+00:00"
     }
    ],
    "avisado": false
@@ -122,12 +69,46 @@
  ],
  "quien_se_adelanta": [
   {
+   "medio": "El Litoral (Corrientes)",
+   "levantadas": 1,
+   "mediana_horas_de_ventaja": 23.8
+  },
+  {
    "medio": "Uno Entre Ríos",
    "levantadas": 1,
    "mediana_horas_de_ventaja": 32.7
   }
  ],
  "seguimiento": [
+  {
+   "titulo": "Fernández Codazzi declaró en el juicio por Loan: \"Laudelina me dijo que fue un accidente\"",
+   "region": "norte-grande",
+   "tema": "General",
+   "ejes": [
+    "mercosur"
+   ],
+   "primer_medio": "El Litoral (Corrientes)",
+   "primera_hora": "2026-11-26T12:12+00:00",
+   "medios_regionales": [
+    "El Litoral (Corrientes)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "Fernández Codazzi declaró en el juicio por Loan: \"Laudelina me dijo que fue un accidente\"",
+     "url": "https://www.ellitoral.com.ar/policiales/2026-11-26-9-12-0-jose-fernandez-codazzi-declara-bajo-juramento-en-el-juicio-por-loan",
+     "medio": "El Litoral (Corrientes)",
+     "fecha": "2026-11-26T12:12:00+00:00"
+    },
+    {
+     "titulo": "Caso Loan: declara el exabogado de Laudelina tras las graves acusaciones por la hipótesis del accidente",
+     "url": "https://www.diarionorte.com/337315-caso-loan-declara-el-exabogado-de-laudelina-tras-las-graves-acusaciones-por-la-hipotesis-del-accidente",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-26T13:13:21+00:00"
+    }
+   ],
+   "avisado": false
+  },
   {
    "titulo": "Nueva York prohibió los juguetes con IA que hablan con chicos",
    "region": "norte-grande",
@@ -153,6 +134,41 @@
      "url": "https://www.rionegro.com.ar/sociedad/estados-unidos-prohibe-los-juguetes-con-inteligencia-artificial-que-hablan-con-los-chicos-la-situacion-en-argentina-4813811/",
      "medio": "Río Negro",
      "fecha": "2026-11-25T23:38:54+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Tragedia en Uruguay: una entrerriana murió ahogada en playa Chihuahua",
+   "region": "centro",
+   "tema": "General",
+   "ejes": [
+    "latinoamerica"
+   ],
+   "primer_medio": "Uno Entre Ríos",
+   "primera_hora": "2026-11-25T21:44+00:00",
+   "medios_regionales": [
+    "Uno Entre Ríos",
+    "La Gaceta (Tucumán)"
+   ],
+   "notas": [
+    {
+     "titulo": "Tragedia en Uruguay: una entrerriana murió ahogada en playa Chihuahua",
+     "url": "https://www.unoentrerios.com.ar/policiales/tragedia-uruguay-una-entrerriana-murio-ahogada-playa-chihuahua-n10294220.html",
+     "medio": "Uno Entre Ríos",
+     "fecha": "2026-11-25T21:44:00+00:00"
+    },
+    {
+     "titulo": "Una turista argentina de 36 años murió ahogada en una playa nudista: cómo ocurrió la tragedia",
+     "url": "https://www.lagaceta.com.ar/nota/1164360/seguridad/turista-argentina-36-anos-murio-ahogada-playa-nudista-como-ocurrio-tragedia.html",
+     "medio": "La Gaceta (Tucumán)",
+     "fecha": "2026-11-26T14:17:00+00:00"
+    },
+    {
+     "titulo": "Quién era Graciela Mayer, la turista argentina que murió ahogada en una playa de Punta del Este",
+     "url": "https://www.lagaceta.com.ar/nota/1164393/sociedad/quien-era-graciela-mayer-turista-argentina-murio-ahogada-playa-punta-este.html",
+     "medio": "La Gaceta (Tucumán)",
+     "fecha": "2026-11-26T15:34:00+00:00"
     }
    ],
    "avisado": false
@@ -308,7 +324,13 @@
      "fecha": "2026-11-26T07:00:04+00:00"
     }
    ],
-   "avisado": false
+   "avisado": false,
+   "levantada": {
+    "medio": "Ámbito",
+    "url": "https://www.ambito.com/politica/diego-santilli-afirmo-que-el-gobierno-tiene-los-votos-la-suspension-las-paso-n6349626",
+    "fecha": "2026-11-26T14:40+00:00",
+    "horas_despues": 23.8
+   }
   },
   {
    "titulo": "Vicente López: Asamblea y reclamo en el Hospital Cetrángolo por el despido de una trabajadora",
