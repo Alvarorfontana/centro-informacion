@@ -1,7 +1,101 @@
 {
- "generado": "2026-11-25T20:28:47+00:00",
+ "generado": "2026-11-26T02:30:43+00:00",
  "ventana_horas": 24,
  "primicias": [
+  {
+   "titulo": "Santilli defendió la gestión de Milei en el Senado: “No hubo estallido, hubo crecimiento”",
+   "region": "norte-grande",
+   "tema": "Política",
+   "ejes": [
+    "politica"
+   ],
+   "primer_medio": "La Gaceta (Tucumán)",
+   "primera_hora": "2026-11-25T19:19+00:00",
+   "medios_regionales": [
+    "La Gaceta (Tucumán)",
+    "El Litoral (Corrientes)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "Santilli defendió la gestión de Milei en el Senado: “No hubo estallido, hubo crecimiento”",
+     "url": "https://www.lagaceta.com.ar/nota/1164270/politica/santilli-defendio-gestion-milei-senado-no-hubo-estallido-hubo-crecimiento.html",
+     "medio": "La Gaceta (Tucumán)",
+     "fecha": "2026-11-25T19:19:00+00:00"
+    },
+    {
+     "titulo": "Santilli defendió la gestión de Milei en el Senado: “Sin orden ganaban los delicuentes”",
+     "url": "https://www.ellitoral.com.ar/nacional/2026-11-25-16-42-0-santilli-defendio-la-gestion-de-milei-en-el-senado-sin-orden-ganaban-los-delicuentes",
+     "medio": "El Litoral (Corrientes)",
+     "fecha": "2026-11-25T19:42:00+00:00"
+    },
+    {
+     "titulo": "Santilli: \"No hubo estallido, hubo crecimiento. Milei va por la reelección\"",
+     "url": "https://www.diarionorte.com/337296-santilli-no-hubo-estallido-hubo-crecimiento-milei-va-por-la-reeleccion",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-26T00:46:22+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Nueva York prohibió los juguetes con IA que hablan con chicos",
+   "region": "norte-grande",
+   "tema": "Geopolítica",
+   "ejes": [
+    "internacional"
+   ],
+   "primer_medio": "Diario Norte (Chaco)",
+   "primera_hora": "2026-11-25T23:19+00:00",
+   "medios_regionales": [
+    "Diario Norte (Chaco)",
+    "Río Negro"
+   ],
+   "notas": [
+    {
+     "titulo": "Nueva York prohibió los juguetes con IA que hablan con chicos",
+     "url": "https://www.diarionorte.com/337281-nueva-york-prohibio-los-juguetes-con-ia-que-hablan-con-chicos",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-25T23:19:52+00:00"
+    },
+    {
+     "titulo": "Estados Unidos prohíbe los juguetes con inteligencia artificial que hablan con los chicos: la situación en Argentina",
+     "url": "https://www.rionegro.com.ar/sociedad/estados-unidos-prohibe-los-juguetes-con-inteligencia-artificial-que-hablan-con-los-chicos-la-situacion-en-argentina-4813811/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-25T23:38:54+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Garín: un motociclista alcoholizado embistió a dos policías y fue detenido tras una persecución",
+   "region": "buenos-aires",
+   "tema": "General",
+   "ejes": [
+    "politica"
+   ],
+   "primer_medio": "Zona Norte Diario",
+   "primera_hora": "2026-11-25T19:15+00:00",
+   "medios_regionales": [
+    "Zona Norte Diario",
+    "InfoBAN (zona norte)"
+   ],
+   "notas": [
+    {
+     "titulo": "Garín: un motociclista alcoholizado embistió a dos policías y fue detenido tras una persecución",
+     "url": "https://www.zonanortediario.com.ar/25/11/2026/garin-un-motociclista-alcoholizado-embistio-a-dos-policias-y-fue-detenido-tras-una-persecucion/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-25T19:15:12+00:00"
+    },
+    {
+     "titulo": "Motociclista embistió a dos policías para evadir un control en Garín y terminó detenido",
+     "url": "https://www.infoban.com.ar/25/11/2026/motociclista-embistio-a-dos-policias-para-evadir-un-control-en-garin-y-termino-detenido/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-25T20:40:04+00:00"
+    }
+   ],
+   "avisado": false
+  },
   {
    "titulo": "Rodolfo Hyland participó de una rueda de negocios organizada por CACIT y BNI Argentina en Tigre",
    "region": "buenos-aires",
@@ -31,94 +125,6 @@
     }
    ],
    "avisado": false
-  },
-  {
-   "titulo": "Vicente López: Asamblea y reclamo en el Hospital Cetrángolo por el despido de una trabajadora",
-   "region": "buenos-aires",
-   "tema": "General",
-   "ejes": [
-    "bolsillo",
-    "local"
-   ],
-   "primer_medio": "Zona Norte Diario",
-   "primera_hora": "2026-11-25T14:25+00:00",
-   "medios_regionales": [
-    "Zona Norte Diario",
-    "InfoBAN (zona norte)"
-   ],
-   "notas": [
-    {
-     "titulo": "Vicente López: Asamblea y reclamo en el Hospital Cetrángolo por el despido de una trabajadora",
-     "url": "https://www.zonanortediario.com.ar/25/11/2026/vicente-lopez-asamblea-y-reclamo-en-el-hospital-cetrangolo-por-el-despido-de-una-trabajadora/",
-     "medio": "Zona Norte Diario",
-     "fecha": "2026-11-25T14:25:36+00:00"
-    },
-    {
-     "titulo": "Asamblea y reclamo en el Hospital Cetrángolo por el despido de una trabajadora",
-     "url": "https://www.infoban.com.ar/25/11/2026/asamblea-y-reclamo-en-el-hospital-cetrangolo-por-el-despido-de-una-trabajadora/",
-     "medio": "InfoBAN (zona norte)",
-     "fecha": "2026-11-25T17:14:00+00:00"
-    }
-   ],
-   "avisado": false
-  },
-  {
-   "titulo": "Formosa sostiene obras de agua, salud y energía y anticipa una \"sorpresa\" por la Biosiderúrgica",
-   "region": "norte-grande",
-   "tema": "Energía",
-   "ejes": [
-    "economia",
-    "energia",
-    "latinoamerica"
-   ],
-   "primer_medio": "Diario Norte (Chaco)",
-   "primera_hora": "2026-11-25T12:26+00:00",
-   "medios_regionales": [
-    "Diario Norte (Chaco)",
-    "Formosa (prensa local)"
-   ],
-   "notas": [
-    {
-     "titulo": "Formosa sostiene obras de agua, salud y energía y anticipa una \"sorpresa\" por la Biosiderúrgica",
-     "url": "https://www.diarionorte.com/337238-formosa-sostiene-obras-de-agua-salud-y-energia-y-anticipa-una-sorpresa-por-la-biosiderurgica",
-     "medio": "Diario Norte (Chaco)",
-     "fecha": "2026-11-25T12:26:26+00:00"
-    },
-    {
-     "titulo": "Formosa sostiene obras de agua, salud y energía y anticipa una \"sorpresa\" por la Biosiderúrgica",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQU3NkcmlpVC15ak5kenYzdHJtVnhWUl9zVmRseWloQVd2cjhDM1gwaWw0OGRTdWVEM1ZLQl9UREZ2cTBXQUc5OUt4N2QtYUlQUFg4alJnUmJvYUZ0QUJYTUk5Rk5mNXFHTFAzZ1NXVldaMGJFdGFYZ1hSU3pQbE9jNEFLNmZVdHRxeFFQcm5KYTNZd0ZDc25iRDR4TjNKbWZMNHBVVDliRER3d1NOMnNMcHh5ajdtRS1uWHBITmxfV2pMUGlVbkE?oc=5",
-     "medio": "Formosa (prensa local)",
-     "fecha": "2026-11-25T12:27:45+00:00"
-    }
-   ],
-   "avisado": false
-  },
-  {
-   "titulo": "DÍA INTERNACIONAL DE LA ELIMINACION DE LA VIOLENCIA CONTRA L",
-   "region": "norte-grande",
-   "tema": "General",
-   "ejes": [],
-   "primer_medio": "Nueva Rioja (La Rioja)",
-   "primera_hora": "2026-11-25T11:45+00:00",
-   "medios_regionales": [
-    "Nueva Rioja (La Rioja)",
-    "La Gaceta (Tucumán)"
-   ],
-   "notas": [
-    {
-     "titulo": "DÍA INTERNACIONAL DE LA ELIMINACION DE LA VIOLENCIA CONTRA L",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX25ITGpBWTF2WWprbmQycDdOd0Jrcm1VUUlIbC04RER4ckxiX0pRYlREXzJwUFRtVnViQzZaeU80SEdQWjNYdmRJc0lsMHV2QndfbFRSTDJSMnkyMkNKVWNORHhIY3oyczJuQ2FkZ2swM3loT2pkT3JvZlU0cGRwQ2VKOFVUZWppS3Mwc3JmZFJCbFljVUE?oc=5",
-     "medio": "Nueva Rioja (La Rioja)",
-     "fecha": "2026-11-25T11:45:54+00:00"
-    },
-    {
-     "titulo": "Día Internacional de la Eliminación de la Violencia contra la Mujer: solo tres de cada 10 argentinos tienen un alto nivel de concientización",
-     "url": "https://www.lagaceta.com.ar/nota/1164201/sociedad/dia-internacional-eliminacion-violencia-contra-mujer-solo-tres-cada-10-argentinos-tienen-alto-nivel-concientizacion.html",
-     "medio": "La Gaceta (Tucumán)",
-     "fecha": "2026-11-25T13:24:00+00:00"
-    }
-   ],
-   "avisado": false
   }
  ],
  "quien_se_adelanta": [
@@ -129,6 +135,100 @@
   }
  ],
  "seguimiento": [
+  {
+   "titulo": "Nueva York prohibió los juguetes con IA que hablan con chicos",
+   "region": "norte-grande",
+   "tema": "Geopolítica",
+   "ejes": [
+    "internacional"
+   ],
+   "primer_medio": "Diario Norte (Chaco)",
+   "primera_hora": "2026-11-25T23:19+00:00",
+   "medios_regionales": [
+    "Diario Norte (Chaco)",
+    "Río Negro"
+   ],
+   "notas": [
+    {
+     "titulo": "Nueva York prohibió los juguetes con IA que hablan con chicos",
+     "url": "https://www.diarionorte.com/337281-nueva-york-prohibio-los-juguetes-con-ia-que-hablan-con-chicos",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-25T23:19:52+00:00"
+    },
+    {
+     "titulo": "Estados Unidos prohíbe los juguetes con inteligencia artificial que hablan con los chicos: la situación en Argentina",
+     "url": "https://www.rionegro.com.ar/sociedad/estados-unidos-prohibe-los-juguetes-con-inteligencia-artificial-que-hablan-con-los-chicos-la-situacion-en-argentina-4813811/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-25T23:38:54+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Santilli defendió la gestión de Milei en el Senado: “No hubo estallido, hubo crecimiento”",
+   "region": "norte-grande",
+   "tema": "Política",
+   "ejes": [
+    "politica"
+   ],
+   "primer_medio": "La Gaceta (Tucumán)",
+   "primera_hora": "2026-11-25T19:19+00:00",
+   "medios_regionales": [
+    "La Gaceta (Tucumán)",
+    "El Litoral (Corrientes)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "Santilli defendió la gestión de Milei en el Senado: “No hubo estallido, hubo crecimiento”",
+     "url": "https://www.lagaceta.com.ar/nota/1164270/politica/santilli-defendio-gestion-milei-senado-no-hubo-estallido-hubo-crecimiento.html",
+     "medio": "La Gaceta (Tucumán)",
+     "fecha": "2026-11-25T19:19:00+00:00"
+    },
+    {
+     "titulo": "Santilli defendió la gestión de Milei en el Senado: “Sin orden ganaban los delicuentes”",
+     "url": "https://www.ellitoral.com.ar/nacional/2026-11-25-16-42-0-santilli-defendio-la-gestion-de-milei-en-el-senado-sin-orden-ganaban-los-delicuentes",
+     "medio": "El Litoral (Corrientes)",
+     "fecha": "2026-11-25T19:42:00+00:00"
+    },
+    {
+     "titulo": "Santilli: \"No hubo estallido, hubo crecimiento. Milei va por la reelección\"",
+     "url": "https://www.diarionorte.com/337296-santilli-no-hubo-estallido-hubo-crecimiento-milei-va-por-la-reeleccion",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-26T00:46:22+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Garín: un motociclista alcoholizado embistió a dos policías y fue detenido tras una persecución",
+   "region": "buenos-aires",
+   "tema": "General",
+   "ejes": [
+    "politica"
+   ],
+   "primer_medio": "Zona Norte Diario",
+   "primera_hora": "2026-11-25T19:15+00:00",
+   "medios_regionales": [
+    "Zona Norte Diario",
+    "InfoBAN (zona norte)"
+   ],
+   "notas": [
+    {
+     "titulo": "Garín: un motociclista alcoholizado embistió a dos policías y fue detenido tras una persecución",
+     "url": "https://www.zonanortediario.com.ar/25/11/2026/garin-un-motociclista-alcoholizado-embistio-a-dos-policias-y-fue-detenido-tras-una-persecucion/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-25T19:15:12+00:00"
+    },
+    {
+     "titulo": "Motociclista embistió a dos policías para evadir un control en Garín y terminó detenido",
+     "url": "https://www.infoban.com.ar/25/11/2026/motociclista-embistio-a-dos-policias-para-evadir-un-control-en-garin-y-termino-detenido/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-25T20:40:04+00:00"
+    }
+   ],
+   "avisado": false
+  },
   {
    "titulo": "Rodolfo Hyland participó de una rueda de negocios organizada por CACIT y BNI Argentina en Tigre",
    "region": "buenos-aires",
