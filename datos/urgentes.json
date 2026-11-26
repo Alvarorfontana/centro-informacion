@@ -1,11 +1,11 @@
 {
- "generado": "2026-11-26T19:18:25+00:00",
+ "generado": "2026-11-26T19:33:49+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
    "titulo": "Diputados convirtió en ley la reforma de la carta orgánica del Banco Central",
-   "n_medios": 7,
+   "n_medios": 6,
    "paises": [
     "Argentina"
    ],
@@ -13,17 +13,23 @@
    "tema": "Política",
    "ejes": [
     "economia",
-    "fmi",
+    "latinoamerica",
     "politica"
    ],
    "desde": "2026-11-26T18:40:37+00:00",
    "avisado": false,
    "notas": [
     {
-     "titulo": "Seis claves para entender la nueva ley que reforma la Carta Orgánica del Banco Central",
-     "url": "https://www.infobae.com/economia/2026/11/26/seis-claves-para-entender-la-nueva-ley-que-reforma-la-carta-organica-del-banco-central/",
-     "medio": "Infobae",
-     "fecha": "2026-11-26T18:32:07+00:00"
+     "titulo": "Milei celebró la aprobación de la ley de reforma de la Carta Orgánica del BCRA",
+     "url": "https://noticiasargentinas.com/politica/milei-celebro-la-aprobacion-de-la-ley-de-reforma-de-la-carta-organica-del-bcra_a6b086a9a272556b8ed7bc841",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-26T19:01:00+00:00"
+    },
+    {
+     "titulo": "“Se terminó con más de 90 años de estafa”: Milei celebró la reforma de la Carta Orgánica del Banco Central",
+     "url": "https://www.rionegro.com.ar/politica/se-termino-con-mas-de-90-anos-de-estafa-milei-celebro-la-reforma-de-la-carta-organica-del-banco-central-4815367/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-26T18:41:12+00:00"
     },
     {
      "titulo": "Diputados sancionó la reforma del Banco Central y el Gobierno busca avanzar con el presupuesto 2027",
@@ -32,22 +38,16 @@
      "fecha": "2026-11-26T18:26:16+00:00"
     },
     {
-     "titulo": "Reforma del Banco Central: cuáles son las claves de nueva ley y cómo cambiarán las funciones de la entidad",
-     "url": "https://www.clarin.com/economia/reforma-banco-central-claves-nueva-ley-cambiaran-funciones-entidad_0_AEA3aGLI0c.html",
-     "medio": "Clarín",
-     "fecha": "2026-11-26T18:06:11+00:00"
+     "titulo": "Javier Milei celebró la reforma de la Carta Orgánica del BCRA y aseguró que se terminó la emisión para financiar el déficit",
+     "url": "https://www.ambito.com/politica/javier-milei-celebro-la-reforma-la-carta-organica-del-bcra-y-aseguro-que-se-termino-la-emision-financiar-el-deficit-n6349719",
+     "medio": "Ámbito",
+     "fecha": "2026-11-26T17:59:00+00:00"
     },
     {
      "titulo": "Diputados convirtió en ley la reforma de la carta orgánica del Banco Central",
      "url": "https://www.unoentrerios.com.ar/politica/diputados-convirtio-ley-la-reforma-la-carta-organica-del-banco-central-n10294353.html",
      "medio": "Uno Entre Ríos",
      "fecha": "2026-11-26T17:56:41+00:00"
-    },
-    {
-     "titulo": "Cómo votaron los diputados de Neuquén, Río Negro y la Patagonia la aprobación de la reforma del Banco Central",
-     "url": "https://www.rionegro.com.ar/politica/como-votaron-los-diputados-de-neuquen-rio-negro-y-la-patagonia-la-aprobacion-de-la-reforma-del-banco-central-4815157/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-26T17:27:02+00:00"
     }
    ]
   }

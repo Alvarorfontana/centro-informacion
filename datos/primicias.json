@@ -1,21 +1,28 @@
 {
- "generado": "2026-11-26T19:18:25+00:00",
+ "generado": "2026-11-26T19:33:49+00:00",
  "ventana_horas": 24,
  "primicias": [
   {
-   "titulo": "Fernández Codazzi declaró en el juicio por Loan: \"Laudelina me dijo que fue un accidente\"",
+   "titulo": "Caso Loan : este jueves declara el exabogado de Laudelina tras las graves acusaciones por la hipótesis del accidente",
    "region": "norte-grande",
    "tema": "General",
    "ejes": [
     "mercosur"
    ],
-   "primer_medio": "El Litoral (Corrientes)",
-   "primera_hora": "2026-11-26T12:12+00:00",
+   "primer_medio": "cronica.com.ar",
+   "primera_hora": "2026-11-26T05:45+00:00",
    "medios_regionales": [
+    "cronica.com.ar",
     "El Litoral (Corrientes)",
     "Diario Norte (Chaco)"
    ],
    "notas": [
+    {
+     "titulo": "Caso Loan : este jueves declara el exabogado de Laudelina tras las graves acusaciones por la hipótesis del accidente",
+     "url": "https://www.cronica.com.ar/policiales/caso-loan-este-jueves-declara-el-exabogado-de-laudelina-tras-las-graves-acusaciones-por-la-hipotesis-del-accidente/",
+     "medio": "cronica.com.ar",
+     "fecha": "2026-11-26T05:45:00+00:00"
+    },
     {
      "titulo": "Fernández Codazzi declaró en el juicio por Loan: \"Laudelina me dijo que fue un accidente\"",
      "url": "https://www.ellitoral.com.ar/policiales/2026-11-26-9-12-0-jose-fernandez-codazzi-declara-bajo-juramento-en-el-juicio-por-loan",
@@ -27,6 +34,38 @@
      "url": "https://www.diarionorte.com/337315-caso-loan-declara-el-exabogado-de-laudelina-tras-las-graves-acusaciones-por-la-hipotesis-del-accidente",
      "medio": "Diario Norte (Chaco)",
      "fecha": "2026-11-26T13:13:21+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Fernando Espinoza visitó una fábrica de Morón y cuestionó el impacto de las políticas de Milei en las PyMEs",
+   "region": "buenos-aires",
+   "tema": "Política",
+   "ejes": [
+    "bolsillo",
+    "industria",
+    "local",
+    "politica"
+   ],
+   "primer_medio": "Zona Norte Diario",
+   "primera_hora": "2026-11-26T18:18+00:00",
+   "medios_regionales": [
+    "Zona Norte Diario",
+    "InfoBAN (zona norte)"
+   ],
+   "notas": [
+    {
+     "titulo": "Fernando Espinoza visitó una fábrica de Morón y cuestionó el impacto de las políticas de Milei en las PyMEs",
+     "url": "https://www.zonanortediario.com.ar/26/11/2026/fernando-espinoza-visito-una-fabrica-de-moron-y-cuestiono-el-impacto-de-las-politicas-de-milei-en-las-pymes/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-26T18:18:36+00:00"
+    },
+    {
+     "titulo": "Fernando Espinoza recorrió Morón y alertó sobre la situación de las pymes bonaerenses",
+     "url": "https://www.infoban.com.ar/26/11/2026/fernando-espinoza-recorrio-moron-y-alerto-sobre-la-situacion-de-las-pymes-bonaerenses/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-26T18:43:53+00:00"
     }
    ],
    "avisado": false
@@ -65,9 +104,41 @@
     }
    ],
    "avisado": false
+  },
+  {
+   "titulo": "Uno de los hijos de Nanci Godoy fue condenado a 14 años de prisión por abuso de menores",
+   "region": "norte-grande",
+   "tema": "General",
+   "ejes": [],
+   "primer_medio": "El Litoral (Corrientes)",
+   "primera_hora": "2026-11-26T14:02+00:00",
+   "medios_regionales": [
+    "El Litoral (Corrientes)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "Uno de los hijos de Nanci Godoy fue condenado a 14 años de prisión por abuso de menores",
+     "url": "https://www.ellitoral.com.ar/policiales/2026-11-26-11-2-0-uno-de-los-hijos-de-nanci-godoy-fue-condenado-a-14-anos-de-prision-por-abuso-de-menores",
+     "medio": "El Litoral (Corrientes)",
+     "fecha": "2026-11-26T14:02:00+00:00"
+    },
+    {
+     "titulo": "Confirman 14 años de prisión para uno de los hijos de Nanci Godoy por abuso sexual",
+     "url": "https://www.diarionorte.com/337337-confirman-14-anos-de-prision-para-uno-de-los-hijos-de-nanci-godoy-por-abuso-sexual",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-26T17:41:39+00:00"
+    }
+   ],
+   "avisado": false
   }
  ],
  "quien_se_adelanta": [
+  {
+   "medio": "La Gaceta (Tucumán)",
+   "levantadas": 1,
+   "mediana_horas_de_ventaja": 24.1
+  },
   {
    "medio": "El Litoral (Corrientes)",
    "levantadas": 1,
@@ -80,6 +151,65 @@
   }
  ],
  "seguimiento": [
+  {
+   "titulo": "Fernando Espinoza visitó una fábrica de Morón y cuestionó el impacto de las políticas de Milei en las PyMEs",
+   "region": "buenos-aires",
+   "tema": "Política",
+   "ejes": [
+    "bolsillo",
+    "industria",
+    "local",
+    "politica"
+   ],
+   "primer_medio": "Zona Norte Diario",
+   "primera_hora": "2026-11-26T18:18+00:00",
+   "medios_regionales": [
+    "Zona Norte Diario",
+    "InfoBAN (zona norte)"
+   ],
+   "notas": [
+    {
+     "titulo": "Fernando Espinoza visitó una fábrica de Morón y cuestionó el impacto de las políticas de Milei en las PyMEs",
+     "url": "https://www.zonanortediario.com.ar/26/11/2026/fernando-espinoza-visito-una-fabrica-de-moron-y-cuestiono-el-impacto-de-las-politicas-de-milei-en-las-pymes/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-26T18:18:36+00:00"
+    },
+    {
+     "titulo": "Fernando Espinoza recorrió Morón y alertó sobre la situación de las pymes bonaerenses",
+     "url": "https://www.infoban.com.ar/26/11/2026/fernando-espinoza-recorrio-moron-y-alerto-sobre-la-situacion-de-las-pymes-bonaerenses/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-26T18:43:53+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Uno de los hijos de Nanci Godoy fue condenado a 14 años de prisión por abuso de menores",
+   "region": "norte-grande",
+   "tema": "General",
+   "ejes": [],
+   "primer_medio": "El Litoral (Corrientes)",
+   "primera_hora": "2026-11-26T14:02+00:00",
+   "medios_regionales": [
+    "El Litoral (Corrientes)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "Uno de los hijos de Nanci Godoy fue condenado a 14 años de prisión por abuso de menores",
+     "url": "https://www.ellitoral.com.ar/policiales/2026-11-26-11-2-0-uno-de-los-hijos-de-nanci-godoy-fue-condenado-a-14-anos-de-prision-por-abuso-de-menores",
+     "medio": "El Litoral (Corrientes)",
+     "fecha": "2026-11-26T14:02:00+00:00"
+    },
+    {
+     "titulo": "Confirman 14 años de prisión para uno de los hijos de Nanci Godoy por abuso sexual",
+     "url": "https://www.diarionorte.com/337337-confirman-14-anos-de-prision-para-uno-de-los-hijos-de-nanci-godoy-por-abuso-sexual",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-26T17:41:39+00:00"
+    }
+   ],
+   "avisado": false
+  },
   {
    "titulo": "Fernández Codazzi declaró en el juicio por Loan: \"Laudelina me dijo que fue un accidente\"",
    "region": "norte-grande",
@@ -94,6 +224,42 @@
     "Diario Norte (Chaco)"
    ],
    "notas": [
+    {
+     "titulo": "Fernández Codazzi declaró en el juicio por Loan: \"Laudelina me dijo que fue un accidente\"",
+     "url": "https://www.ellitoral.com.ar/policiales/2026-11-26-9-12-0-jose-fernandez-codazzi-declara-bajo-juramento-en-el-juicio-por-loan",
+     "medio": "El Litoral (Corrientes)",
+     "fecha": "2026-11-26T12:12:00+00:00"
+    },
+    {
+     "titulo": "Caso Loan: declara el exabogado de Laudelina tras las graves acusaciones por la hipótesis del accidente",
+     "url": "https://www.diarionorte.com/337315-caso-loan-declara-el-exabogado-de-laudelina-tras-las-graves-acusaciones-por-la-hipotesis-del-accidente",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-26T13:13:21+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Caso Loan : este jueves declara el exabogado de Laudelina tras las graves acusaciones por la hipótesis del accidente",
+   "region": "norte-grande",
+   "tema": "General",
+   "ejes": [
+    "mercosur"
+   ],
+   "primer_medio": "cronica.com.ar",
+   "primera_hora": "2026-11-26T05:45+00:00",
+   "medios_regionales": [
+    "cronica.com.ar",
+    "El Litoral (Corrientes)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "Caso Loan : este jueves declara el exabogado de Laudelina tras las graves acusaciones por la hipótesis del accidente",
+     "url": "https://www.cronica.com.ar/policiales/caso-loan-este-jueves-declara-el-exabogado-de-laudelina-tras-las-graves-acusaciones-por-la-hipotesis-del-accidente/",
+     "medio": "cronica.com.ar",
+     "fecha": "2026-11-26T05:45:00+00:00"
+    },
     {
      "titulo": "Fernández Codazzi declaró en el juicio por Loan: \"Laudelina me dijo que fue un accidente\"",
      "url": "https://www.ellitoral.com.ar/policiales/2026-11-26-9-12-0-jose-fernandez-codazzi-declara-bajo-juramento-en-el-juicio-por-loan",
@@ -236,7 +402,13 @@
      "fecha": "2026-11-26T00:46:22+00:00"
     }
    ],
-   "avisado": false
+   "avisado": false,
+   "levantada": {
+    "medio": "Página/12",
+    "url": "https://www.pagina12.com.ar/2026/11/26/diego-santilli-defendio-la-gestion-de-javier-milei-durante-su-extenso-informe-ante-el-senado/",
+    "fecha": "2026-11-26T19:25+00:00",
+    "horas_despues": 24.1
+   }
   },
   {
    "titulo": "Garín: un motociclista alcoholizado embistió a dos policías y fue detenido tras una persecución",
