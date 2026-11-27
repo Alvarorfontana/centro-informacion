@@ -1,0 +1,39 @@
+name: Mundo (a mano)
+
+# Solo se corre a mano, desde la pestaña Actions, para actualizar la pestaña Mundo sin esperar
+# a la recolección de la mañana o de la tarde (que ya la incluye). Tope de 7 minutos.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: recolectar
+  cancel-in-progress: false
+
+jobs:
+  mundo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar
+        run: pip install feedparser
+      - name: Mundo
+        env:
+          PYTHONUNBUFFERED: '1'
+          MUNDO_MINUTOS: '5'
+        run: python scripts/mundo.py
+      - name: Guardar
+        run: |
+          git config user.name "Alvarorfontana"
+          git config user.email "alvarorfontana@gmail.com"
+          git add datos/mundo.json
+          if git diff --cached --quiet; then echo "Sin cambios."; exit 0; fi
+          git commit -m "Mundo actualizado"
+          for i in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 5; done
+          exit 1

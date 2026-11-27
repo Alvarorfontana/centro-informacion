@@ -1,0 +1,6017 @@
+{
+ "_nota": "Fuentes RSS públicas tomadas del catálogo abierto de World Monitor (github.com/koala73/worldmonitor, shared/news-catalog.json). Solo nombre y dirección del RSS; el recolector lee título, enlace y fecha.",
+ "fuentes": [
+  {
+   "nombre": "BBC World",
+   "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+   "seccion": "Política mundial",
+   "idioma": ""
+  },
+  {
+   "nombre": "Guardian World",
+   "url": "https://www.theguardian.com/world/rss",
+   "seccion": "Política mundial",
+   "idioma": ""
+  },
+  {
+   "nombre": "AP News",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com%20%22World%20News%22%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Política mundial",
+   "idioma": ""
+  },
+  {
+   "nombre": "Reuters World",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com%20world%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Política mundial",
+   "idioma": ""
+  },
+  {
+   "nombre": "CNN World",
+   "url": "https://www.cnn.com/sitemap/news.xml",
+   "seccion": "Política mundial",
+   "idioma": ""
+  },
+  {
+   "nombre": "Trump - Truth Social",
+   "url": "https://trumpstruth.org/feed",
+   "seccion": "Política mundial",
+   "idioma": ""
+  },
+  {
+   "nombre": "New York Times World",
+   "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+   "seccion": "Política mundial",
+   "idioma": ""
+  },
+  {
+   "nombre": "Washington Post World",
+   "url": "https://feeds.washingtonpost.com/rss/world",
+   "seccion": "Política mundial",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Economist",
+   "url": "https://news.google.com/rss/search?q=site%3Aeconomist.com%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Política mundial",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Independent",
+   "url": "https://www.independent.co.uk/news/world/rss",
+   "seccion": "Política mundial",
+   "idioma": ""
+  },
+  {
+   "nombre": "Reuters US",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com%20US%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "NPR News",
+   "url": "https://feeds.npr.org/1001/rss.xml",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "PBS NewsHour",
+   "url": "https://www.pbs.org/newshour/feeds/rss/headlines",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "ABC News",
+   "url": "https://feeds.abcnews.com/abcnews/topstories",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "CBS News",
+   "url": "https://www.cbsnews.com/latest/rss/main",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "NBC News",
+   "url": "https://feeds.nbcnews.com/nbcnews/public/news",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Wall Street Journal",
+   "url": "https://feeds.content.dowjones.io/public/rss/RSSUSnews",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Politico",
+   "url": "https://rss.politico.com/politics-news.xml",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Hill",
+   "url": "https://thehill.com/news/feed",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Axios",
+   "url": "https://api.axios.com/feed/",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Fox News",
+   "url": "https://moxie.foxnews.com/google-publisher/us.xml",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "CBC News",
+   "url": "https://www.cbc.ca/webfeed/rss/rss-world",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Globe and Mail",
+   "url": "https://www.theglobeandmail.com/arc/outboundfeeds/rss/category/canada/?outputType=xml",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Global News",
+   "url": "https://globalnews.ca/feed/",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Toronto Star",
+   "url": "https://www.thestar.com/search/?f=rss&t=article&c=news/canada",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "National Post",
+   "url": "https://nationalpost.com/feed/",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Financial Post",
+   "url": "https://financialpost.com/feed/",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "iPolitics",
+   "url": "https://www.ipolitics.ca/feed",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Narwhal",
+   "url": "https://thenarwhal.ca/feed/",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Tyee",
+   "url": "https://thetyee.ca/rss2.xml",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Radio-Canada",
+   "url": "https://ici.radio-canada.ca/info/rss/info/en-continu",
+   "seccion": "Estados Unidos",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "La Presse",
+   "url": "https://www.lapresse.ca/actualites/rss",
+   "seccion": "Estados Unidos",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Le Devoir",
+   "url": "https://www.ledevoir.com/rss/manchettes.xml",
+   "seccion": "Estados Unidos",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "TVA Nouvelles",
+   "url": "https://www.tvanouvelles.ca/rss.xml",
+   "seccion": "Estados Unidos",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Vancouver Sun",
+   "url": "https://vancouversun.com/feed/",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Calgary Herald",
+   "url": "https://calgaryherald.com/feed/",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Winnipeg Free Press",
+   "url": "https://www.winnipegfreepress.com/feed",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Ottawa Citizen",
+   "url": "https://ottawacitizen.com/feed/",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Edmonton Journal",
+   "url": "https://edmontonjournal.com/feed/",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Maclean's",
+   "url": "https://macleans.ca/feed/",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Province",
+   "url": "https://theprovince.com/feed/",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "CTV News",
+   "url": "https://news.google.com/rss/search?q=site%3Actvnews.ca%20when%3A1d&hl=en-CA&gl=CA&ceid=CA:en",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "CP24",
+   "url": "https://news.google.com/rss/search?q=site%3Acp24.com%20when%3A1d&hl=en-CA&gl=CA&ceid=CA:en",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Montreal Gazette",
+   "url": "https://news.google.com/rss/search?q=site%3Amontrealgazette.com%20when%3A1d&hl=en-CA&gl=CA&ceid=CA:en",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "France 24",
+   "url": "https://www.france24.com/en/rss",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "EuroNews",
+   "url": "https://www.euronews.com/rss?format=xml",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Le Monde",
+   "url": "https://www.lemonde.fr/en/rss/une.xml",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "DW News",
+   "url": "https://rss.dw.com/xml/rss-en-all",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Telegraph",
+   "url": "https://www.telegraph.co.uk/rss.xml",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Interfax EN",
+   "url": "https://news.google.com/rss/search?q=site%3Ainterfax.com%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Tagesschau",
+   "url": "https://www.tagesschau.de/xml/rss2/",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Handelsblatt",
+   "url": "https://www.handelsblatt.com/contentexport/feed/schlagzeilen",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Welt",
+   "url": "https://www.welt.de/feeds/latest.rss",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Interfax RU",
+   "url": "https://www.interfax.ru/rss.asp",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "ANSA",
+   "url": "https://www.ansa.it/sito/ansait_rss.xml",
+   "seccion": "Europa",
+   "idioma": "it"
+  },
+  {
+   "nombre": "NOS Nieuws",
+   "url": "https://feeds.nos.nl/nosnieuwsalgemeen",
+   "seccion": "Europa",
+   "idioma": "nl"
+  },
+  {
+   "nombre": "SVT Nyheter",
+   "url": "https://www.svt.se/nyheter/rss.xml",
+   "seccion": "Europa",
+   "idioma": "sv"
+  },
+  {
+   "nombre": "Yle News",
+   "url": "https://yle.fi/rss/news",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "NRK",
+   "url": "https://www.nrk.no/nyheter/siste.rss",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Aftenposten",
+   "url": "https://www.aftenposten.no/rss",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "DR Nyheder",
+   "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Arctic Today",
+   "url": "https://news.google.com/rss/search?q=site%3Aarctictoday.com%20when%3A14d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Telex",
+   "url": "https://telex.hu/rss",
+   "seccion": "Europa",
+   "idioma": "hu"
+  },
+  {
+   "nombre": "Index.hu",
+   "url": "https://index.hu/24ora/rss",
+   "seccion": "Europa",
+   "idioma": "hu"
+  },
+  {
+   "nombre": "HVG",
+   "url": "https://hvg.hu/rss",
+   "seccion": "Europa",
+   "idioma": "hu"
+  },
+  {
+   "nombre": "444.hu",
+   "url": "https://444.hu/feed",
+   "seccion": "Europa",
+   "idioma": "hu"
+  },
+  {
+   "nombre": "24.hu",
+   "url": "https://24.hu/feed/",
+   "seccion": "Europa",
+   "idioma": "hu"
+  },
+  {
+   "nombre": "Híradó",
+   "url": "https://news.google.com/rss/search?q=site%3Ahirado.hu%20when%3A2d&hl=hu&gl=HU&ceid=HU:hu",
+   "seccion": "Europa",
+   "idioma": "hu"
+  },
+  {
+   "nombre": "Portfolio.hu",
+   "url": "https://portfolio.hu/rss/all.xml",
+   "seccion": "Europa",
+   "idioma": "hu"
+  },
+  {
+   "nombre": "ATV",
+   "url": "https://www.atv.hu/rss",
+   "seccion": "Europa",
+   "idioma": "hu"
+  },
+  {
+   "nombre": "Seznam Zprávy",
+   "url": "https://www.seznamzpravy.cz/rss",
+   "seccion": "Europa",
+   "idioma": "cs"
+  },
+  {
+   "nombre": "N1 Croatia",
+   "url": "https://n1info.hr/feed/",
+   "seccion": "Europa",
+   "idioma": "hr"
+  },
+  {
+   "nombre": "Index.hr",
+   "url": "https://www.index.hr/rss",
+   "seccion": "Europa",
+   "idioma": "hr"
+  },
+  {
+   "nombre": "Jutarnji list",
+   "url": "https://www.jutarnji.hr/feed",
+   "seccion": "Europa",
+   "idioma": "hr"
+  },
+  {
+   "nombre": "Balkan Insight",
+   "url": "https://balkaninsight.com/feed/",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Digi24",
+   "url": "https://www.digi24.ro/rss",
+   "seccion": "Europa",
+   "idioma": "ro"
+  },
+  {
+   "nombre": "HotNews",
+   "url": "https://www.hotnews.ro/rss",
+   "seccion": "Europa",
+   "idioma": "ro"
+  },
+  {
+   "nombre": "G4Media",
+   "url": "https://www.g4media.ro/feed/",
+   "seccion": "Europa",
+   "idioma": "ro"
+  },
+  {
+   "nombre": "Dnevnik",
+   "url": "https://www.dnevnik.bg/rss/",
+   "seccion": "Europa",
+   "idioma": "bg"
+  },
+  {
+   "nombre": "Kyiv Independent",
+   "url": "https://kyivindependent.com/news-archive/rss/",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Ukrinform",
+   "url": "https://www.ukrinform.net/rss/block-lastnews",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Suspilne",
+   "url": "https://news.google.com/rss/search?q=site%3Asuspilne.media%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Ukrainska Pravda EN",
+   "url": "https://news.google.com/rss/search?q=site%3Apravda.com.ua%2Feng%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "NV EN",
+   "url": "https://english.nv.ua/rss/all_english.xml",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Hromadske EN",
+   "url": "https://news.google.com/rss/search?q=site%3Ahromadske.ua%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Ukrainska Pravda",
+   "url": "https://news.google.com/rss/search?q=site%3Apravda.com.ua%20when%3A2d&hl=uk&gl=UA&ceid=UA:uk",
+   "seccion": "Europa",
+   "idioma": "uk"
+  },
+  {
+   "nombre": "Hromadske",
+   "url": "https://news.google.com/rss/search?q=site%3Ahromadske.ua%20when%3A3d&hl=uk&gl=UA&ceid=UA:uk",
+   "seccion": "Europa",
+   "idioma": "uk"
+  },
+  {
+   "nombre": "Bihus.Info",
+   "url": "https://news.google.com/rss/search?q=site%3Abihus.info%20when%3A7d&hl=uk&gl=UA&ceid=UA:uk",
+   "seccion": "Europa",
+   "idioma": "uk"
+  },
+  {
+   "nombre": "Slidstvo.Info",
+   "url": "https://news.google.com/rss/search?q=site%3Aslidstvo.info%20when%3A7d&hl=uk&gl=UA&ceid=UA:uk",
+   "seccion": "Europa",
+   "idioma": "uk"
+  },
+  {
+   "nombre": "ZN.UA",
+   "url": "https://news.google.com/rss/search?q=site%3Azn.ua%20when%3A3d&hl=uk&gl=UA&ceid=UA:uk",
+   "seccion": "Europa",
+   "idioma": "uk"
+  },
+  {
+   "nombre": "TVN24",
+   "url": "https://tvn24.pl/swiat.xml",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Rzeczpospolita",
+   "url": "https://www.rp.pl/rss_main",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Meduza",
+   "url": "https://meduza.io/rss/en/all",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Moscow Times",
+   "url": "https://www.themoscowtimes.com/rss/news",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Civil.ge",
+   "url": "https://civil.ge/feed/",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "OC Media",
+   "url": "https://oc-media.org/feed/",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "JAMnews",
+   "url": "https://jam-news.net/feed/",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Azertag",
+   "url": "https://news.google.com/rss/search?q=site%3Aazertag.az%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Armenpress",
+   "url": "https://news.google.com/rss/search?q=site%3Aarmenpress.am%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Zerkalo",
+   "url": "https://news.google.com/rss/search?q=site%3Azerkalo.io%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "NewsMaker",
+   "url": "https://newsmaker.md/feed",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "Ziarul de Gardă",
+   "url": "https://www.zdg.md/feed/",
+   "seccion": "Europa",
+   "idioma": "ro"
+  },
+  {
+   "nombre": "ERR News",
+   "url": "https://news.err.ee/rss",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "LRT English",
+   "url": "https://www.lrt.lt/en/news-in-english?rss",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "LSM English",
+   "url": "https://eng.lsm.lv/rss/",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Daily Sabah",
+   "url": "https://www.dailysabah.com/rss/home-page",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Hurriyet",
+   "url": "https://www.hurriyet.com.tr/rss/anasayfa",
+   "seccion": "Europa",
+   "idioma": "tr"
+  },
+  {
+   "nombre": "Polsat News",
+   "url": "https://www.polsatnews.pl/rss/wszystkie.xml",
+   "seccion": "Europa",
+   "idioma": "pl"
+  },
+  {
+   "nombre": "PAP",
+   "url": "https://news.google.com/rss/search?q=site%3Apap.pl%20when%3A2d&hl=pl&gl=PL&ceid=PL:pl",
+   "seccion": "Europa",
+   "idioma": "pl"
+  },
+  {
+   "nombre": "Gazeta Wyborcza",
+   "url": "https://news.google.com/rss/search?q=site%3Awyborcza.pl%20when%3A2d&hl=pl&gl=PL&ceid=PL:pl",
+   "seccion": "Europa",
+   "idioma": "pl"
+  },
+  {
+   "nombre": "Polityka",
+   "url": "https://news.google.com/rss/search?q=site%3Apolityka.pl%20when%3A2d&hl=pl&gl=PL&ceid=PL:pl",
+   "seccion": "Europa",
+   "idioma": "pl"
+  },
+  {
+   "nombre": "Onet",
+   "url": "https://news.google.com/rss/search?q=site%3Awiadomosci.onet.pl%20when%3A2d&hl=pl&gl=PL&ceid=PL:pl",
+   "seccion": "Europa",
+   "idioma": "pl"
+  },
+  {
+   "nombre": "OKO.press",
+   "url": "https://oko.press/feed",
+   "seccion": "Europa",
+   "idioma": "pl"
+  },
+  {
+   "nombre": "TVP Info",
+   "url": "https://news.google.com/rss/search?q=site%3Atvp.info%20when%3A2d&hl=pl&gl=PL&ceid=PL:pl",
+   "seccion": "Europa",
+   "idioma": "pl"
+  },
+  {
+   "nombre": "Kathimerini",
+   "url": "https://news.google.com/rss/search?q=site%3Akathimerini.gr%20when%3A2d&hl=el&gl=GR&ceid=GR:el",
+   "seccion": "Europa",
+   "idioma": "el"
+  },
+  {
+   "nombre": "Naftemporiki",
+   "url": "https://www.naftemporiki.gr/feed/",
+   "seccion": "Europa",
+   "idioma": "el"
+  },
+  {
+   "nombre": "in.gr",
+   "url": "https://www.in.gr/feed/",
+   "seccion": "Europa",
+   "idioma": "el"
+  },
+  {
+   "nombre": "iefimerida",
+   "url": "https://www.iefimerida.gr/rss.xml",
+   "seccion": "Europa",
+   "idioma": "el"
+  },
+  {
+   "nombre": "Proto Thema",
+   "url": "https://news.google.com/rss/search?q=site%3Aprotothema.gr%20when%3A2d&hl=el&gl=GR&ceid=GR:el",
+   "seccion": "Europa",
+   "idioma": "el"
+  },
+  {
+   "nombre": "ERT",
+   "url": "https://news.google.com/rss/search?q=site%3Aert.gr%20when%3A2d&hl=el&gl=GR&ceid=GR:el",
+   "seccion": "Europa",
+   "idioma": "el"
+  },
+  {
+   "nombre": "AMNA",
+   "url": "https://news.google.com/rss/search?q=site%3Aamna.gr%20when%3A2d&hl=el&gl=GR&ceid=GR:el",
+   "seccion": "Europa",
+   "idioma": "el"
+  },
+  {
+   "nombre": "Ta Nea",
+   "url": "https://www.tanea.gr/feed/",
+   "seccion": "Europa",
+   "idioma": "el"
+  },
+  {
+   "nombre": "Liberal GR",
+   "url": "https://news.google.com/rss/search?q=site%3Aliberal.gr%20when%3A2d&hl=el&gl=GR&ceid=GR:el",
+   "seccion": "Europa",
+   "idioma": "el"
+  },
+  {
+   "nombre": "CNN Greece",
+   "url": "https://news.google.com/rss/search?q=site%3Acnn.gr%20when%3A2d&hl=el&gl=GR&ceid=GR:el",
+   "seccion": "Europa",
+   "idioma": "el"
+  },
+  {
+   "nombre": "Sky News",
+   "url": "https://feeds.skynews.com/feeds/rss/home.xml",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "BBC UK",
+   "url": "https://feeds.bbci.co.uk/news/uk/rss.xml",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "BBC Northern Ireland",
+   "url": "https://feeds.bbci.co.uk/news/northern_ireland/rss.xml",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "BBC Middle East",
+   "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Al Jazeera",
+   "url": "https://www.aljazeera.com/xml/rss/all.xml",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Al Arabiya",
+   "url": "https://news.google.com/rss/search?q=site%3Aenglish.alarabiya.net%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Guardian ME",
+   "url": "https://www.theguardian.com/world/middleeast/rss",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "BBC Persian",
+   "url": "https://feeds.bbci.co.uk/persian/rss.xml",
+   "seccion": "Medio Oriente",
+   "idioma": "fa"
+  },
+  {
+   "nombre": "Iran International",
+   "url": "https://news.google.com/rss/search?q=site%3Airanintl.com%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Haaretz",
+   "url": "https://news.google.com/rss/search?q=site%3Ahaaretz.com%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Jerusalem Post",
+   "url": "https://www.jpost.com/rss/rssfeedsheadlines.aspx",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Ynetnews",
+   "url": "https://www.ynetnews.com/Integration/StoryRss3089.xml",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Arab News",
+   "url": "https://news.google.com/rss/search?q=site%3Aarabnews.com%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "The National",
+   "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Oman Observer",
+   "url": "https://www.omanobserver.om/rssFeed/1",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Asharq Business",
+   "url": "https://asharqbusiness.com/rss.xml",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Rudaw",
+   "url": "https://news.google.com/rss/search?q=site%3Arudaw.net%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Yemen Online",
+   "url": "https://news.google.com/rss/search?q=site%3Ayemenonline.info%20when%3A14d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Sana'a Center",
+   "url": "https://sanaacenter.org/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Syria Direct",
+   "url": "https://syriadirect.org/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Enab Baladi English",
+   "url": "https://news.google.com/rss/search?q=site%3Aenglish.enabbaladi.net%20when%3A14d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "+972 Magazine",
+   "url": "https://www.972mag.com/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "WAFA English",
+   "url": "https://news.google.com/rss/search?q=site%3Aenglish.wafa.ps%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Naharnet Lebanon",
+   "url": "https://www.naharnet.com/tags/lebanon/en/feed.atom",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "L'Orient Today",
+   "url": "https://news.google.com/rss/search?q=site%3Alorientlejour.com%20Lebanon%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Annahar",
+   "url": "https://news.google.com/rss/search?q=site%3Aannahar.com%2Flebanon%20when%3A7d&hl=ar&gl=LB&ceid=LB:ar",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Libya Herald",
+   "url": "https://libyaherald.com/rss.xml",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Egypt Independent",
+   "url": "https://www.egyptindependent.com/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Mada Masr",
+   "url": "https://news.google.com/rss/search?q=site%3Amadamasr.com%20when%3A30d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Times of Israel",
+   "url": "https://news.google.com/rss/search?q=site%3Atimesofisrael.com%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Middle East Eye",
+   "url": "https://news.google.com/rss/search?q=site%3Amiddleeasteye.net%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Hacker News",
+   "url": "https://hnrss.org/frontpage",
+   "seccion": "Tecnología",
+   "idioma": ""
+  },
+  {
+   "nombre": "Ars Technica",
+   "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+   "seccion": "Tecnología",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Verge",
+   "url": "https://www.theverge.com/rss/index.xml",
+   "seccion": "Tecnología",
+   "idioma": ""
+  },
+  {
+   "nombre": "MIT Tech Review",
+   "url": "https://www.technologyreview.com/feed/",
+   "seccion": "Tecnología",
+   "idioma": ""
+  },
+  {
+   "nombre": "MIT Tech Review",
+   "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+   "seccion": "Inteligencia artificial",
+   "idioma": ""
+  },
+  {
+   "nombre": "Wired",
+   "url": "https://www.wired.com/feed/rss",
+   "seccion": "Tecnología",
+   "idioma": ""
+  },
+  {
+   "nombre": "AI News",
+   "url": "https://news.google.com/rss/search?q=(OpenAI%20OR%20Anthropic%20OR%20Google%20AI%20OR%20%22large%20language%20model%22%20OR%20ChatGPT)%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Inteligencia artificial",
+   "idioma": ""
+  },
+  {
+   "nombre": "VentureBeat AI",
+   "url": "https://venturebeat.com/category/ai/feed/",
+   "seccion": "Inteligencia artificial",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Verge AI",
+   "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+   "seccion": "Inteligencia artificial",
+   "idioma": ""
+  },
+  {
+   "nombre": "ArXiv AI",
+   "url": "https://export.arxiv.org/rss/cs.AI",
+   "seccion": "Inteligencia artificial",
+   "idioma": ""
+  },
+  {
+   "nombre": "CNBC",
+   "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+   "seccion": "Finanzas",
+   "idioma": ""
+  },
+  {
+   "nombre": "MarketWatch",
+   "url": "https://news.google.com/rss/search?q=site%3Amarketwatch.com%20markets%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Finanzas",
+   "idioma": ""
+  },
+  {
+   "nombre": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/news/rssindex",
+   "seccion": "Finanzas",
+   "idioma": ""
+  },
+  {
+   "nombre": "Financial Times",
+   "url": "https://www.ft.com/rss/home",
+   "seccion": "Finanzas",
+   "idioma": ""
+  },
+  {
+   "nombre": "Reuters Business",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com%20business%20markets%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Finanzas",
+   "idioma": ""
+  },
+  {
+   "nombre": "Fox Business",
+   "url": "https://moxie.foxbusiness.com/google-publisher/latest.xml",
+   "seccion": "Finanzas",
+   "idioma": ""
+  },
+  {
+   "nombre": "Business Insider",
+   "url": "https://www.businessinsider.com/rss",
+   "seccion": "Finanzas",
+   "idioma": ""
+  },
+  {
+   "nombre": "GlobeNewswire",
+   "url": "https://www.globenewswire.com/RssFeed/subjectcode/22/feedTitle/GlobeNewswire",
+   "seccion": "Finanzas",
+   "idioma": ""
+  },
+  {
+   "nombre": "Business Wire",
+   "url": "https://feed.businesswire.com/rss/home/?rss=G1QFDERJXkJeGVtRWA==",
+   "seccion": "Finanzas",
+   "idioma": ""
+  },
+  {
+   "nombre": "PR Newswire",
+   "url": "https://news.google.com/rss/search?q=site%3Aprnewswire.com%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Finanzas",
+   "idioma": ""
+  },
+  {
+   "nombre": "Chainwire",
+   "url": "https://chainwire.org/feed/",
+   "seccion": "Finanzas",
+   "idioma": ""
+  },
+  {
+   "nombre": "Coinbase Blog",
+   "url": "https://news.google.com/rss/search?q=site%3Acoinbase.com%2Fblog%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Finanzas",
+   "idioma": ""
+  },
+  {
+   "nombre": "Binance Announcements",
+   "url": "https://news.google.com/rss/search?q=site%3Abinance.com%2Fen%2Fsupport%2Fannouncement%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Finanzas",
+   "idioma": ""
+  },
+  {
+   "nombre": "Jin10",
+   "url": "https://news.google.com/rss/search?q=site%3Ajin10.com%20when%3A1d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "seccion": "Finanzas",
+   "idioma": "zh"
+  },
+  {
+   "nombre": "Oil & Gas",
+   "url": "https://news.google.com/rss/search?q=(oil%20price%20OR%20OPEC%20OR%20%22natural%20gas%22%20OR%20pipeline%20OR%20LNG)%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Materias primas",
+   "idioma": ""
+  },
+  {
+   "nombre": "Gold & Metals",
+   "url": "https://news.google.com/rss/search?q=(%22gold%20price%22%20OR%20%22silver%20price%22%20OR%20%22precious%20metals%22%20OR%20%22copper%20price%22)%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Materias primas",
+   "idioma": ""
+  },
+  {
+   "nombre": "White House",
+   "url": "https://www.whitehouse.gov/briefings-statements/feed/",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "White House Actions",
+   "url": "https://www.whitehouse.gov/presidential-actions/feed/",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "State Dept",
+   "url": "https://news.google.com/rss/search?q=(site%3Astate.gov%20OR%20%22State%20Department%22)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Pentagon",
+   "url": "https://www.war.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Federal Reserve",
+   "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "SEC",
+   "url": "https://www.sec.gov/news/pressreleases.rss",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "U.S. Trade Representative",
+   "url": "https://ustr.gov/rss.xml",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "UN News",
+   "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "CISA",
+   "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "Treasury",
+   "url": "https://news.google.com/rss/search?q=site%3Atreasury.gov%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "DOJ",
+   "url": "https://news.google.com/rss/search?q=site%3Ajustice.gov%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "BBC Africa",
+   "url": "https://feeds.bbci.co.uk/news/world/africa/rss.xml",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Guardian Africa",
+   "url": "https://www.theguardian.com/world/africa/rss",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "France 24 Africa",
+   "url": "https://www.france24.com/en/africa/rss",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Africa News",
+   "url": "https://news.google.com/rss/search?q=(Africa%20OR%20Nigeria%20OR%20Kenya%20OR%20%22South%20Africa%22%20OR%20Ethiopia)%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Sahel Crisis",
+   "url": "https://news.google.com/rss/search?q=(Sahel%20OR%20Mali%20OR%20Niger%20OR%20%22Burkina%20Faso%22%20OR%20Wagner)%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "News24",
+   "url": "https://feeds.news24.com/articles/news24/TopStories/rss",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Africanews",
+   "url": "https://www.africanews.com/feed/",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Jeune Afrique",
+   "url": "https://www.jeuneafrique.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Premium Times",
+   "url": "https://www.premiumtimesng.com/feed",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Vanguard Nigeria",
+   "url": "https://www.vanguardngr.com/feed/",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Channels TV",
+   "url": "https://www.channelstv.com/feed/",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Daily Trust",
+   "url": "https://dailytrust.com/feed/",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "ThisDay",
+   "url": "https://www.thisdaylive.com/feed",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Radio Tamazuj",
+   "url": "https://www.radiotamazuj.org/en/feed",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Reporter Ethiopia",
+   "url": "https://www.thereporterethiopia.com/feed/",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Ethiopia Insight",
+   "url": "https://www.ethiopia-insight.com/feed/",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Dabanga Sudan",
+   "url": "https://www.dabangasudan.org/en/feed",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Hiiraan Online",
+   "url": "https://news.google.com/rss/search?q=site%3Ahiiraan.com%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Actualite.cd",
+   "url": "https://actualite.cd/feed",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Radio Okapi",
+   "url": "https://www.radiookapi.net/rss.xml",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "MyJoyOnline",
+   "url": "https://www.myjoyonline.com/feed/",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Citi Newsroom",
+   "url": "https://news.google.com/rss/search?q=site%3Acitinewsroom.com%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Le Quotidien",
+   "url": "https://lequotidien.sn/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "RFI Afrique",
+   "url": "https://www.rfi.fr/en/africa/rss",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Studio Tamani",
+   "url": "https://www.studiotamani.org/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "leFaso.net",
+   "url": "https://lefaso.net/spip.php?page=backend",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "ActuNiger",
+   "url": "https://news.google.com/rss/search?q=site%3Aactuniger.com%20Niger%20when%3A7d&hl=fr&gl=FR&ceid=FR:fr",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Aïr Info",
+   "url": "https://airinfoagadez.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Daily Nation",
+   "url": "https://nation.africa/kenya/rss.xml",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Guardian Post",
+   "url": "https://news.google.com/rss/search?q=site%3Atheguardianpostcameroon.com%20when%3A30d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "África",
+   "idioma": ""
+  },
+  {
+   "nombre": "Tchadinfos",
+   "url": "https://tchadinfos.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Alwihda Info",
+   "url": "https://www.alwihdainfo.com/rss/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Radio Ndeke Luka",
+   "url": "https://www.radiondekeluka.org/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "BBC Latin America",
+   "url": "https://feeds.bbci.co.uk/news/world/latin_america/rss.xml",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "Guardian Americas",
+   "url": "https://www.theguardian.com/world/americas/rss",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "Guardian Caribbean",
+   "url": "https://www.theguardian.com/world/caribbean/rss",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "France 24 LatAm",
+   "url": "https://www.france24.com/en/americas/rss",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "Mexico News Daily",
+   "url": "https://mexiconewsdaily.com/feed/",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "Primicias",
+   "url": "https://www.primicias.ec/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Infobae Americas",
+   "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "El Universo",
+   "url": "https://www.eluniverso.com/arc/outboundfeeds/rss/category/noticias/?outputType=xml",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Clarín",
+   "url": "https://www.clarin.com/rss/lo-ultimo/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "InSight Crime",
+   "url": "https://insightcrime.org/feed/",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "HaitiLibre English",
+   "url": "https://www.haitilibre.com/rss-flash-en.php",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "AyiboPost",
+   "url": "https://news.google.com/rss/search?q=site%3Aayibopost.com%20Haiti%20when%3A14d&hl=fr&gl=FR&ceid=FR:fr",
+   "seccion": "América Latina",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Caracas Chronicles",
+   "url": "https://www.caracaschronicles.com/feed/",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "Efecto Cocuyo",
+   "url": "https://efectococuyo.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Havana Times",
+   "url": "https://havanatimes.org/feed/",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "14ymedio",
+   "url": "https://www.14ymedio.com/rss/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "BBC Asia",
+   "url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Guardian Pacific",
+   "url": "https://www.theguardian.com/world/pacific-islands/rss",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "France 24 Asia Pacific",
+   "url": "https://www.france24.com/en/asia-pacific/rss",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Diplomat",
+   "url": "https://thediplomat.com/feed/",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Reuters Asia",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com%20(China%20OR%20Japan%20OR%20Taiwan%20OR%20Korea)%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Reuters India",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com%20India%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Japan Today",
+   "url": "https://japantoday.com/feed/atom",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Nikkei Asia",
+   "url": "https://news.google.com/rss/search?q=site%3Aasia.nikkei.com%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "CNA",
+   "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "NDTV",
+   "url": "https://feeds.feedburner.com/ndtvnews-top-stories",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "South China Morning Post",
+   "url": "https://news.google.com/rss/search?q=site%3Ascmp.com%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Hindu",
+   "url": "https://www.thehindu.com/feeder/default.rss",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Asia News",
+   "url": "https://news.google.com/rss/search?q=site%3Aasianews.it%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Xinhua",
+   "url": "https://news.google.com/rss/search?q=site%3Axinhuanet.com%20OR%20Xinhua%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Asahi Shimbun",
+   "url": "https://www.asahi.com/rss/asahi/newsheadlines.rdf",
+   "seccion": "Asia",
+   "idioma": "ja"
+  },
+  {
+   "nombre": "MIIT (China)",
+   "url": "https://api.worldmonitor.app/api/miit-news",
+   "seccion": "Asia",
+   "idioma": "zh"
+  },
+  {
+   "nombre": "MOFCOM (China)",
+   "url": "https://news.google.com/rss/search?q=site%3Amofcom.gov.cn%20when%3A7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "seccion": "Asia",
+   "idioma": "zh"
+  },
+  {
+   "nombre": "Bangkok Post",
+   "url": "https://news.google.com/rss/search?q=site%3Abangkokpost.com%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": "th"
+  },
+  {
+   "nombre": "VnExpress",
+   "url": "https://vnexpress.net/rss/tin-moi-nhat.rss",
+   "seccion": "Asia",
+   "idioma": "vi"
+  },
+  {
+   "nombre": "Yonhap News",
+   "url": "https://www.yonhapnewstv.co.kr/browse/feed/",
+   "seccion": "Asia",
+   "idioma": "ko"
+  },
+  {
+   "nombre": "BBC Hindi",
+   "url": "https://feeds.bbci.co.uk/hindi/rss.xml",
+   "seccion": "Asia",
+   "idioma": "hi"
+  },
+  {
+   "nombre": "Aaj Tak",
+   "url": "https://www.aajtak.in/rssfeeds/?id=home",
+   "seccion": "Asia",
+   "idioma": "hi"
+  },
+  {
+   "nombre": "NDTV India",
+   "url": "https://feeds.feedburner.com/ndtvkhabar-latest",
+   "seccion": "Asia",
+   "idioma": "hi"
+  },
+  {
+   "nombre": "Amar Ujala",
+   "url": "https://www.amarujala.com/rss/national.xml",
+   "seccion": "Asia",
+   "idioma": "hi"
+  },
+  {
+   "nombre": "Eurasianet",
+   "url": "https://eurasianet.org/rss",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "RFE/RL Central Asia",
+   "url": "https://news.google.com/rss/search?q=site%3Arferl.org%20Central%2BAsia%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Astana Times",
+   "url": "https://astanatimes.com/feed/",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Times of Central Asia",
+   "url": "https://timesca.com/feed/",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Focus Taiwan",
+   "url": "https://news.google.com/rss/search?q=site%3Afocustaiwan.tw%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Taipei Times",
+   "url": "https://news.google.com/rss/search?q=site%3Ataipeitimes.com%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Taiwan News",
+   "url": "https://news.google.com/rss/search?q=site%3Ataiwannews.com.tw%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Dawn",
+   "url": "https://www.dawn.com/feeds/home/",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Geo News",
+   "url": "https://news.google.com/rss/search?q=site%3Ageo.tv%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Jakarta Post",
+   "url": "https://news.google.com/rss/search?q=site%3Athejakartapost.com%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Rappler",
+   "url": "https://www.rappler.com/feed/",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Star (Malaysia)",
+   "url": "https://news.google.com/rss/search?q=site%3Athestar.com.my%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Irrawaddy",
+   "url": "https://www.irrawaddy.com/feed/",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Island Times (Palau)",
+   "url": "https://islandtimes.org/feed/",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Amu TV",
+   "url": "https://amu.tv/feed/",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Pajhwok Afghan News",
+   "url": "https://news.google.com/rss/search?q=site%3Apajhwok.com%20Afghanistan%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Daily Star",
+   "url": "https://news.google.com/rss/search?q=site%3Athedailystar.net%20when%3A14d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Dhaka Tribune",
+   "url": "https://news.google.com/rss/search?q=site%3Adhakatribune.com%20when%3A14d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Times of India",
+   "url": "https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Japan Times",
+   "url": "https://news.google.com/rss/search?q=site%3Ajapantimes.co.jp%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Reuters Energy",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com%20energy%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Energía",
+   "idioma": ""
+  },
+  {
+   "nombre": "Nuclear Energy",
+   "url": "https://news.google.com/rss/search?q=(%22nuclear%20energy%22%20OR%20%22nuclear%20power%22%20OR%20%22nuclear%20reactor%22)%20when%3A3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Energía",
+   "idioma": ""
+  },
+  {
+   "nombre": "Foreign Policy",
+   "url": "https://foreignpolicy.com/feed/",
+   "seccion": "Centros de estudio",
+   "idioma": ""
+  },
+  {
+   "nombre": "Atlantic Council",
+   "url": "https://www.atlanticcouncil.org/feed/",
+   "seccion": "Centros de estudio",
+   "idioma": ""
+  },
+  {
+   "nombre": "Foreign Affairs",
+   "url": "https://www.foreignaffairs.com/rss.xml",
+   "seccion": "Centros de estudio",
+   "idioma": ""
+  },
+  {
+   "nombre": "War on the Rocks",
+   "url": "https://warontherocks.com/feed/",
+   "seccion": "Centros de estudio",
+   "idioma": ""
+  },
+  {
+   "nombre": "CSIS",
+   "url": "https://www.csis.org/rss.xml",
+   "seccion": "Centros de estudio",
+   "idioma": ""
+  },
+  {
+   "nombre": "ISW",
+   "url": "https://news.google.com/rss/search?q=site%3Aunderstandingwar.org%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Centros de estudio",
+   "idioma": ""
+  },
+  {
+   "nombre": "CrisisWatch",
+   "url": "https://www.crisisgroup.org/rss",
+   "seccion": "Crisis",
+   "idioma": ""
+  },
+  {
+   "nombre": "IAEA",
+   "url": "https://www.iaea.org/feeds/topnews",
+   "seccion": "Crisis",
+   "idioma": ""
+  },
+  {
+   "nombre": "WHO",
+   "url": "https://www.who.int/rss-feeds/news-english.xml",
+   "seccion": "Crisis",
+   "idioma": ""
+  },
+  {
+   "nombre": "Reuters Science",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com%2Fscience%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Ciencia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Nature News",
+   "url": "https://www.nature.com/nature.rss",
+   "seccion": "Ciencia",
+   "idioma": ""
+  },
+  {
+   "nombre": "BBC Science",
+   "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+   "seccion": "Ciencia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Guardian Science",
+   "url": "https://www.theguardian.com/science/rss",
+   "seccion": "Ciencia",
+   "idioma": ""
+  },
+  {
+   "nombre": "ScienceDaily",
+   "url": "https://www.sciencedaily.com/rss/all.xml",
+   "seccion": "Ciencia",
+   "idioma": ""
+  },
+  {
+   "nombre": "El País",
+   "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+   "seccion": "Europa",
+   "idioma": "es"
+  },
+  {
+   "nombre": "El Mundo",
+   "url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
+   "seccion": "Europa",
+   "idioma": "es"
+  },
+  {
+   "nombre": "BBC Mundo",
+   "url": "https://www.bbc.com/mundo/index.xml",
+   "seccion": "Europa",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Bild",
+   "url": "https://www.bild.de/feed/alles.xml",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Der Spiegel",
+   "url": "https://www.spiegel.de/schlagzeilen/tops/index.rss",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Die Zeit",
+   "url": "https://newsfeed.zeit.de/index",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Corriere della Sera",
+   "url": "https://news.google.com/rss/search?q=site:corriere.it+when:1d&hl=it&gl=IT&ceid=IT:it",
+   "seccion": "Europa",
+   "idioma": "it"
+  },
+  {
+   "nombre": "Repubblica",
+   "url": "https://www.repubblica.it/rss/homepage/rss2.0.xml",
+   "seccion": "Europa",
+   "idioma": "it"
+  },
+  {
+   "nombre": "NRC",
+   "url": "https://www.nrc.nl/rss/",
+   "seccion": "Europa",
+   "idioma": "nl"
+  },
+  {
+   "nombre": "De Telegraaf",
+   "url": "https://news.google.com/rss/search?q=site:telegraaf.nl+when:1d&hl=nl&gl=NL&ceid=NL:nl",
+   "seccion": "Europa",
+   "idioma": "nl"
+  },
+  {
+   "nombre": "Dagens Nyheter",
+   "url": "https://www.dn.se/rss/",
+   "seccion": "Europa",
+   "idioma": "sv"
+  },
+  {
+   "nombre": "Svenska Dagbladet",
+   "url": "https://www.svd.se/feed/articles.rss",
+   "seccion": "Europa",
+   "idioma": "sv"
+  },
+  {
+   "nombre": "BBC Turkce",
+   "url": "https://feeds.bbci.co.uk/turkce/rss.xml",
+   "seccion": "Europa",
+   "idioma": "tr"
+  },
+  {
+   "nombre": "DW Turkish",
+   "url": "https://rss.dw.com/xml/rss-tur-all",
+   "seccion": "Europa",
+   "idioma": "tr"
+  },
+  {
+   "nombre": "BBC Russian",
+   "url": "https://feeds.bbci.co.uk/russian/rss.xml",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "Novaya Gazeta Europe",
+   "url": "https://novayagazeta.eu/feed/rss",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "TASS",
+   "url": "https://news.google.com/rss/search?q=site:tass.com+OR+TASS+Russia+when:1d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "RT",
+   "url": "https://rt-english.com/rss/",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "RT Russia",
+   "url": "https://rt-english.com/rss/russia/",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Fars News",
+   "url": "https://news.google.com/rss/search?q=site:farsnews.ir+when:2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "IRNA",
+   "url": "https://en.irna.ir/rss",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Mehr News",
+   "url": "https://en.mehrnews.com/rss",
+   "seccion": "Medio Oriente",
+   "idioma": ""
+  },
+  {
+   "nombre": "Asharq News",
+   "url": "https://asharq.com/snapchat/rss.xml",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "CDC",
+   "url": "https://news.google.com/rss/search?q=site:cdc.gov+OR+CDC+health+when:7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "FEMA",
+   "url": "https://news.google.com/rss/search?q=site:fema.gov+OR+FEMA+emergency+when:7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "DHS",
+   "url": "https://news.google.com/rss/search?q=site:dhs.gov+OR+\"Homeland+Security\"+when:3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Gobiernos",
+   "idioma": ""
+  },
+  {
+   "nombre": "RAND",
+   "url": "https://www.rand.org/pubs/articles.xml",
+   "seccion": "Centros de estudio",
+   "idioma": ""
+  },
+  {
+   "nombre": "Brookings",
+   "url": "https://news.google.com/rss/search?q=site:brookings.edu+when:7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Centros de estudio",
+   "idioma": ""
+  },
+  {
+   "nombre": "Carnegie",
+   "url": "https://news.google.com/rss/search?q=site:carnegieendowment.org+when:7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Centros de estudio",
+   "idioma": ""
+  },
+  {
+   "nombre": "Responsible Statecraft",
+   "url": "https://responsiblestatecraft.org/feed/",
+   "seccion": "Centros de estudio",
+   "idioma": ""
+  },
+  {
+   "nombre": "RUSI",
+   "url": "https://news.google.com/rss/search?q=site:rusi.org+when:3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Centros de estudio",
+   "idioma": ""
+  },
+  {
+   "nombre": "FPRI",
+   "url": "https://news.google.com/rss/search?q=site:fpri.org+when:7d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Centros de estudio",
+   "idioma": ""
+  },
+  {
+   "nombre": "Jamestown",
+   "url": "https://jamestown.org/feed/",
+   "seccion": "Centros de estudio",
+   "idioma": ""
+  },
+  {
+   "nombre": "UNHCR",
+   "url": "https://news.google.com/rss/search?q=site:unhcr.org+OR+UNHCR+refugees+when:3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Crisis",
+   "idioma": ""
+  },
+  {
+   "nombre": "BBC Afrique",
+   "url": "https://www.bbc.com/afrique/index.xml",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Latin America",
+   "url": "https://news.google.com/rss/search?q=(Brazil+OR+Mexico+OR+Argentina+OR+Venezuela+OR+Colombia+OR+Haiti)+when:2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "Reuters LatAm",
+   "url": "https://news.google.com/rss/search?q=site:reuters.com+(Brazil+OR+Mexico+OR+Argentina)+when:3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "O Globo",
+   "url": "https://news.google.com/rss/search?q=site:oglobo.globo.com+when:1d&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Folha de S.Paulo",
+   "url": "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Brasil Paralelo",
+   "url": "https://www.brasilparalelo.com.br/noticias/rss.xml",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "El Tiempo",
+   "url": "https://www.eltiempo.com/rss/mundo_latinoamerica.xml",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "La Silla Vacía",
+   "url": "https://www.lasillavacia.com/rss",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Mexico Security",
+   "url": "https://news.google.com/rss/search?q=(Mexico+cartel+OR+Mexico+violence+OR+Mexico+troops+OR+narco+Mexico)+when:2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "AP Mexico",
+   "url": "https://news.google.com/rss/search?q=site:apnews.com+Mexico+when:3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "Indian Express",
+   "url": "https://indianexpress.com/section/india/feed/",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "India News Network",
+   "url": "https://news.google.com/rss/search?q=India+diplomacy+foreign+policy+news+when:3d&hl=en&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Thai PBS",
+   "url": "https://news.google.com/rss/search?q=Thai+PBS+World+news+when:2d&hl=en&gl=US&ceid=US:en",
+   "seccion": "Asia",
+   "idioma": "th"
+  },
+  {
+   "nombre": "Tuoi Tre News",
+   "url": "https://news.tuoitre.vn/rss",
+   "seccion": "Asia",
+   "idioma": "vi"
+  },
+  {
+   "nombre": "Chosun Ilbo",
+   "url": "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml",
+   "seccion": "Asia",
+   "idioma": "ko"
+  },
+  {
+   "nombre": "ABC News Australia",
+   "url": "https://www.abc.net.au/news/feed/2942460/rss.xml",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Guardian Australia",
+   "url": "https://www.theguardian.com/australia-news/rss",
+   "seccion": "Asia",
+   "idioma": ""
+  },
+  {
+   "nombre": "Mining & Resources",
+   "url": "https://news.google.com/rss/search?q=(lithium+OR+\"rare+earth\"+OR+cobalt+OR+mining)+when:3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Energía",
+   "idioma": ""
+  },
+  {
+   "nombre": "Agriculture",
+   "url": "https://news.google.com/rss/search?q=(wheat+OR+corn+OR+soybeans+OR+coffee+OR+sugar)+price+OR+commodity+when:3d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Materias primas",
+   "idioma": ""
+  },
+  {
+   "nombre": "Commodity Trading",
+   "url": "https://news.google.com/rss/search?q=(\"commodity%20trading\"%20OR%20\"commodity%20futures\"%20OR%20\"commodities%20trading\"%20OR%20NYMEX%20OR%20COMEX)%20when:2d&hl=en-US&gl=US&ceid=US:en",
+   "seccion": "Materias primas",
+   "idioma": ""
+  },
+  {
+   "nombre": "Deutschlandfunk",
+   "url": "https://www.deutschlandfunk.de/nachrichten-100.rss",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "ZDFheute",
+   "url": "https://www.zdfheute.de/rss/zdf/nachrichten",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Guardian Brazil",
+   "url": "https://www.theguardian.com/world/brazil/rss",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "Brazil Reports",
+   "url": "https://brazilreports.com/feed/",
+   "seccion": "América Latina",
+   "idioma": ""
+  },
+  {
+   "nombre": "G1 Política",
+   "url": "https://g1.globo.com/rss/g1/politica/",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "15min.lt",
+   "url": "https://news.google.com/rss/search?q=site%3Awww.15min.lt+when%3A7d&hl=lt&gl=US&ceid=US%3Alt",
+   "seccion": "Europa",
+   "idioma": "lt"
+  },
+  {
+   "nombre": "24.kg",
+   "url": "https://24.kg/rss/",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "2424.mg",
+   "url": "https://2424.mg/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "24ur.com",
+   "url": "https://www.24ur.com/rss",
+   "seccion": "Europa",
+   "idioma": "sl"
+  },
+  {
+   "nombre": "A Nação",
+   "url": "https://www.anacao.cv/feed/",
+   "seccion": "África",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "ABS TV Radio Antigua & Barbuda",
+   "url": "https://abstvradio.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "ABS-CBN News",
+   "url": "https://news.google.com/rss/search?q=site%3Aabs-cbn.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AHORAEG Guinea Ecuatorial",
+   "url": "https://ahoraeg.com/feed/",
+   "seccion": "África",
+   "idioma": "es"
+  },
+  {
+   "nombre": "ANTARA News",
+   "url": "https://www.antaranews.com/rss/terkini",
+   "seccion": "Asia",
+   "idioma": "id"
+  },
+  {
+   "nombre": "AP — Bahrain",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Bahrain%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Comoros",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Comoros%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Denmark",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Denmark%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Dominica",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Dominica%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — El Salvador",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22El+Salvador%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Equatorial Guinea",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Equatorial+Guinea%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Eritrea",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Eritrea%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Eswatini",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28Eswatini+OR+Swaziland%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Guinea-Bissau",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Guinea-Bissau%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Kiribati",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28Kiribati%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Liechtenstein",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Liechtenstein%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Marshall Islands",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Marshall+Islands%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Micronesia",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Federated+States+of+Micronesia%22+OR+Pohnpei+OR+Chuuk%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Montenegro",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Montenegro%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Myanmar (Burma)",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28Myanmar+OR+Burma%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Nauru",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Nauru%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — North Macedonia",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22North+Macedonia%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Palau",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Palau%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Panama",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+Panama+-Florida+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Paraguay",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Paraguay%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Seychelles",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Seychelles%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — St. Kitts & Nevis",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22St.+Kitts+%26+Nevis%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — St. Vincent & Grenadines",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22St.+Vincent+%26+Grenadines%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Suriname",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Suriname%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Tonga",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Tonga%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Trinidad & Tobago",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Trinidad+%26+Tobago%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Tuvalu",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Tuvalu%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Vanuatu",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Vanuatu%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Vatican City",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28Vatican%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "AP — Zambia",
+   "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+%28%22Zambia%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "ABC News Albania",
+   "url": "https://abcnews.al/feed/",
+   "seccion": "Europa",
+   "idioma": "sq"
+  },
+  {
+   "nombre": "Addis Fortune",
+   "url": "https://addisfortune.news/feed",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Addis Standard",
+   "url": "https://news.google.com/rss/search?q=site%3Aaddisstandard.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Agence Ivoirienne de Presse (AIP)",
+   "url": "https://www.aip.ci/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Agence de Presse Senegalaise (APS)",
+   "url": "https://aps.sn/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Agência de Notícias da Guiné (ANG)",
+   "url": "https://ang.gw/feed/",
+   "seccion": "África",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Ahram Online",
+   "url": "https://news.google.com/rss/search?q=site%3Aenglish.ahram.org.eg+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Akipress",
+   "url": "https://akipress.com/rss/",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Aktuality.sk",
+   "url": "https://www.aktuality.sk/rss/",
+   "seccion": "Europa",
+   "idioma": "sk"
+  },
+  {
+   "nombre": "Al Jazeera — Micronesia",
+   "url": "https://news.google.com/rss/search?q=site%3Aaljazeera.com+%28%22Federated+States+of+Micronesia%22+OR+Pohnpei+OR+Chuuk%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Al Mada Newspaper",
+   "url": "https://almadapaper.net/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Al Wasat",
+   "url": "https://news.google.com/rss/search?q=site%3Aalwasat.ly+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Al-Ayam (الأيام)",
+   "url": "https://news.google.com/rss/search?q=site%3Aalayyam.info+when%3A7d&hl=ar&gl=US&ceid=US%3Aar",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Al-Jumhuriya",
+   "url": "https://news.google.com/rss/search?q=site%3Aaljumhuriya.net+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Al-Quds Newspaper",
+   "url": "https://alquds.com/ar/rss",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Al-Roya",
+   "url": "https://alroya.om/rss",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Al-Sumaria",
+   "url": "https://www.alsumaria.tv/Rss/iraq-latest-news/ar",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Alakhbar",
+   "url": "https://www.alakhbar.info/latest/rss/",
+   "seccion": "África",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Algérie Presse Service",
+   "url": "https://news.google.com/rss/search?q=site%3Aaps.dz+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Amandala",
+   "url": "https://amandala.com.bz/news/category/general/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Ammon News",
+   "url": "https://ammonnews.net/rss.php?type=news&id=64",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Antigua News Room",
+   "url": "https://news.google.com/rss/search?q=site%3Aantiguanewsroom.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Antigua Observer",
+   "url": "https://antiguaobserver.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Antigua.news",
+   "url": "https://antigua.news/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Arab Times Kuwait",
+   "url": "https://news.google.com/rss/search?q=site%3Aarabtimesonline.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Asia-Plus",
+   "url": "https://asiaplus.news/feed/",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "Avesta",
+   "url": "https://avesta.tj/feed/",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "Awate.com",
+   "url": "https://awate.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Awoko",
+   "url": "https://news.google.com/rss/search?q=site%3Aawokonewspaper.sl+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Azadliq Radiosu (RFE/RL - Azerbaijan)",
+   "url": "https://www.azadliq.org/api/",
+   "seccion": "Europa",
+   "idioma": "az"
+  },
+  {
+   "nombre": "BBC Korean",
+   "url": "https://bbc.com/korean/feed/",
+   "seccion": "Asia",
+   "idioma": "ko"
+  },
+  {
+   "nombre": "BBC — Angola",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22Angola%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Barbados",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22Barbados%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Central African Republic",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22Central+African+Republic%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Comoros",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22Comoros%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Côte d’Ivoire",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22Ivory+Coast%22+OR+%22C%C3%B4te+d%E2%80%99Ivoire%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — El Salvador",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22El+Salvador%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Equatorial Guinea",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22Equatorial+Guinea%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Eswatini",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28Eswatini+OR+Swaziland%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Kiribati",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28Kiribati%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Laos",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22Laos%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Liechtenstein",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22Liechtenstein%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Micronesia",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22Federated+States+of+Micronesia%22+OR+Pohnpei+OR+Chuuk%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Nauru",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22Nauru%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Tonga",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22Tonga%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Tuvalu",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22Tuvalu%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Vanuatu",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28%22Vanuatu%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BBC — Vatican City",
+   "url": "https://news.google.com/rss/search?q=site%3Abbc.com+%28Vatican%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Bahrain Mirror",
+   "url": "https://bahrainmirror.com/rss.xml",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Barbados Today",
+   "url": "https://barbadostoday.bb/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Belsat TV",
+   "url": "https://belsat.eu/rss",
+   "seccion": "Europa",
+   "idioma": "be"
+  },
+  {
+   "nombre": "Bernama",
+   "url": "https://news.google.com/rss/search?q=site%3Abernama.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Bhutan Broadcasting Service",
+   "url": "https://www.bbs.bt/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "BioBioChile",
+   "url": "https://feeds.feedburner.com/radiobiobio/NNeJ",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "BirGün",
+   "url": "https://www.birgun.net/rss/home",
+   "seccion": "Medio Oriente",
+   "idioma": "tr"
+  },
+  {
+   "nombre": "Bondia",
+   "url": "https://www.bondia.ad/rss.xml",
+   "seccion": "Europa",
+   "idioma": "ca"
+  },
+  {
+   "nombre": "Borneo Bulletin",
+   "url": "https://news.google.com/rss/search?q=site%3Aborneobulletin.com.bn+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Brecha",
+   "url": "https://brecha.com.uy/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Burkina24",
+   "url": "https://burkina24.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Reuters — Bhutan",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Bhutan%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen-US",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Business Recorder",
+   "url": "https://news.google.com/rss/search?q=site%3Abrecorder.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "CNC3",
+   "url": "https://www.cnc3.co.tt/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "CNN Chile",
+   "url": "https://news.google.com/rss/search?q=site%3Awww.cnnchile.com+when%3A7d&hl=es&gl=US&ceid=US%3Aes",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "CRTV (Cameroon Radio Television)",
+   "url": "https://news.google.com/rss/search?q=site%3Acrtv.cm+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Caixin Global",
+   "url": "https://news.google.com/rss/search?q=site%3Acaixinglobal.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "CamboJA News",
+   "url": "https://www.camboja.net/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Caribbean Broadcasting Corporation (CBC)",
+   "url": "https://www.cbc.bb/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Carta de Moçambique",
+   "url": "https://cartamz.com/feed/",
+   "seccion": "África",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Catholic Radio Network",
+   "url": "https://catholicradionetwork.org/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Channel 5 Belize",
+   "url": "https://www.greaterbelize.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Chronicles of Turkmenistan",
+   "url": "https://www.hronikatm.com/feed/",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "Ciperchile",
+   "url": "https://www.ciperchile.cl/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Citizen TV",
+   "url": "https://citizen.digital/feed.xml",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "CivilNet",
+   "url": "https://news.google.com/rss/search?q=site%3Acivilnet.am+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "hy"
+  },
+  {
+   "nombre": "Club of Mozambique",
+   "url": "https://clubofmozambique.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Confidencial",
+   "url": "https://news.google.com/rss/search?q=site%3Aconfidencial.digital+when%3A7d&hl=es&gl=US&ceid=US%3Aes",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "CongoPage",
+   "url": "https://congopage.com/spip.php?page=backend",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Connection Ivoirienne",
+   "url": "https://connectionivoirienne.net/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Corbeau News Centrafrique",
+   "url": "https://corbeaunews-centrafrique.org/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Criterio.hn",
+   "url": "https://criterio.hn/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Cumhuriyet",
+   "url": "https://www.cumhuriyet.com.tr/rss",
+   "seccion": "Medio Oriente",
+   "idioma": "tr"
+  },
+  {
+   "nombre": "Cyprus Mail",
+   "url": "https://cyprus-mail.com/feed",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Cyprus News Agency",
+   "url": "https://news.google.com/rss/search?q=site%3Acna.org.cy+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "DBS TV St Lucia",
+   "url": "https://dbstvstlucia.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "DELFI Lithuania",
+   "url": "https://news.google.com/rss/search?q=site%3Adelfi.lt+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "lt"
+  },
+  {
+   "nombre": "Dagsavisen",
+   "url": "https://www.dagsavisen.no/?lab_viewport=rss",
+   "seccion": "Europa",
+   "idioma": "no"
+  },
+  {
+   "nombre": "Daily Maverick",
+   "url": "https://www.dailymaverick.co.za/dmrss/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Daily Mirror Sri Lanka",
+   "url": "https://news.google.com/rss/search?q=site%3Adailymirror.lk+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Daily NK",
+   "url": "https://www.dailynk.com/english/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Daily News",
+   "url": "https://dailynews.co.tz/category/tanzania/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Daily News Egypt",
+   "url": "https://www.dailynewsegypt.com/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Danas",
+   "url": "https://www.danas.rs/feed/",
+   "seccion": "Europa",
+   "idioma": "sr"
+  },
+  {
+   "nombre": "De Standaard",
+   "url": "https://standaard.be/rss/",
+   "seccion": "Europa",
+   "idioma": "nl"
+  },
+  {
+   "nombre": "De Ware Tijd",
+   "url": "https://dwtonline.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "nl"
+  },
+  {
+   "nombre": "De West",
+   "url": "https://dagbladdewest.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "nl"
+  },
+  {
+   "nombre": "Delfi Latvia",
+   "url": "https://delfi.lv/rss.xml",
+   "seccion": "Europa",
+   "idioma": "lv"
+  },
+  {
+   "nombre": "Delo",
+   "url": "https://www.delo.si/rss",
+   "seccion": "Europa",
+   "idioma": "sl"
+  },
+  {
+   "nombre": "Demerara Waves Online News",
+   "url": "https://demerarawaves.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Denník N",
+   "url": "https://dennikn.sk/feed/",
+   "seccion": "Europa",
+   "idioma": "sk"
+  },
+  {
+   "nombre": "Der Standard",
+   "url": "https://www.derstandard.at/rss",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Dhauru",
+   "url": "https://dhauru.com/feed",
+   "seccion": "Asia",
+   "idioma": "dv"
+  },
+  {
+   "nombre": "Diari d'Andorra",
+   "url": "https://www.diariandorra.ad/rss/home.xml",
+   "seccion": "Europa",
+   "idioma": "ca"
+  },
+  {
+   "nombre": "Diario Co Latino",
+   "url": "https://www.diariocolatino.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Diario Libre",
+   "url": "https://www.diariolibre.com/feed/portada.xml",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Diario de Cuba",
+   "url": "https://diariodecuba.com/rss.xml",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Die Presse",
+   "url": "https://www.diepresse.com/rss",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Diena",
+   "url": "https://www.diena.lv/rss/",
+   "seccion": "Europa",
+   "idioma": "lv"
+  },
+  {
+   "nombre": "Divergentes",
+   "url": "https://www.divergentes.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Doha News",
+   "url": "https://dohanews.co/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Dominica News Online",
+   "url": "https://news.google.com/rss/search?q=site%3Adominicanewsonline.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "EMTV Online",
+   "url": "https://news.google.com/rss/search?q=site%3Aemtv.com.pg+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "EVN Report",
+   "url": "https://evnreport.com/feed/",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "EconomyNext",
+   "url": "https://economynext.com/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "El Comercio",
+   "url": "https://www.elcomercio.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "El Comercio Peru",
+   "url": "https://elcomercio.pe/arcio/rss/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "El Deber",
+   "url": "https://eldeber.com.bo/feed",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "El Día",
+   "url": "https://eldia.com.do/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "El Espectador",
+   "url": "https://www.elespectador.com/arc/outboundfeeds/discover/?outputType=xml",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "El Faro",
+   "url": "https://news.google.com/rss/search?q=site%3Aelfaro.net+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "El Khabar",
+   "url": "https://news.google.com/rss/search?q=site%3Awww.elkhabar.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "El País Uruguay",
+   "url": "https://news.google.com/rss/search?q=site%3Aelpais.com.uy+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "El Periòdic d'Andorra",
+   "url": "https://elperiodic.ad/feed/",
+   "seccion": "Europa",
+   "idioma": "ca"
+  },
+  {
+   "nombre": "El Pitazo",
+   "url": "https://elpitazo.net/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Emonews",
+   "url": "https://emonewsdm.com/feed.xml",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Entekhab.ir",
+   "url": "https://www.entekhab.ir/fa/rss/allnews",
+   "seccion": "Medio Oriente",
+   "idioma": "fa"
+  },
+  {
+   "nombre": "Etilaat Roz",
+   "url": "https://www.etilaatroz.com/feed/",
+   "seccion": "Asia",
+   "idioma": "fa"
+  },
+  {
+   "nombre": "Euroradio",
+   "url": "https://news.google.com/rss/search?q=site%3Aeuroradio.fm+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "be"
+  },
+  {
+   "nombre": "Evrensel",
+   "url": "https://www.evrensel.net/rss/haber.xml",
+   "seccion": "Medio Oriente",
+   "idioma": "tr"
+  },
+  {
+   "nombre": "Expreso",
+   "url": "https://news.google.com/rss/search?q=site%3Awww.expreso.ec+when%3A7d&hl=es&gl=US&ceid=US%3Aes",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Express Tribune",
+   "url": "https://tribune.com.pk/feed/home",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Expresso",
+   "url": "https://rss.impresa.pt/feed/latest/expresso.rss?type=ARTICLE,VIDEO,GALLERY,STREAM,PLAYLIST,EVENT,NEWSLETTER&amp;limit=20&amp;pubsubhub=true",
+   "seccion": "Europa",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Expresso das Ilhas",
+   "url": "https://expressodasilhas.cv/rss",
+   "seccion": "África",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Eye Radio",
+   "url": "https://www.eyeradio.org/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Eyewitness News",
+   "url": "https://news.google.com/rss/search?q=site%3Aewnews.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "FBC News",
+   "url": "https://www.fbcnews.com.fj/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Falter",
+   "url": "https://www.falter.at/rss",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Fiji Sun",
+   "url": "https://news.google.com/rss/search?q=site%3Afijisun.com.fj+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Fiji Times",
+   "url": "https://news.google.com/rss/search?q=site%3Awww.fijitimes.com.fj+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Foroyaa",
+   "url": "https://news.google.com/rss/search?q=site%3Aforoyaa.net+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Franceinfo",
+   "url": "https://www.franceinfo.fr/titres.rss",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Reuters — Benin",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+Benin+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "FrontPage Africa",
+   "url": "https://frontpageafricaonline.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "GMA News",
+   "url": "https://data.gmanews.tv/gno/rss/news/feed.xml",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Gabon Actu",
+   "url": "https://gabonactu.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Gabonews",
+   "url": "https://gabonews.com/spip.php?page=backend",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Gabonreview",
+   "url": "https://www.gabonreview.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Garowe Online",
+   "url": "https://news.google.com/rss/search?q=site%3Agaroweonline.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Gazeta.uz",
+   "url": "https://www.gazeta.uz/oz/rss/",
+   "seccion": "Europa",
+   "idioma": "uz"
+  },
+  {
+   "nombre": "Ghana Business News",
+   "url": "https://www.ghanabusinessnews.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Giornale.sm",
+   "url": "https://giornalesm.com/feed/",
+   "seccion": "Europa",
+   "idioma": "it"
+  },
+  {
+   "nombre": "GoGo Mongolia",
+   "url": "https://news.google.com/rss/search?q=site%3Agogo.mn+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "mn"
+  },
+  {
+   "nombre": "Goobjoog News",
+   "url": "https://news.google.com/rss/search?q=site%3Agoobjoog.com+when%3A7d&hl=so&gl=US&ceid=US%3Aso",
+   "seccion": "África",
+   "idioma": "so"
+  },
+  {
+   "nombre": "Graphic Online",
+   "url": "https://news.google.com/rss/search?q=site%3Agraphic.com.gh+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Grenada Broadcasting Network (GBN)",
+   "url": "https://gbn.gd/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "GroundUp",
+   "url": "https://groundup.org.za/sitenews/rss/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Guardian — Angola",
+   "url": "https://news.google.com/rss/search?q=site%3Atheguardian.com+%28%22Angola%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Guardian — Barbados",
+   "url": "https://news.google.com/rss/search?q=site%3Atheguardian.com+%28%22Barbados%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Guardian — Bolivia",
+   "url": "https://news.google.com/rss/search?q=site%3Atheguardian.com+%28%22Bolivia%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Guardian — Kiribati",
+   "url": "https://news.google.com/rss/search?q=site%3Atheguardian.com+%28Kiribati%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Guardian — Laos",
+   "url": "https://news.google.com/rss/search?q=site%3Atheguardian.com+%28%22Laos%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Guardian — Liechtenstein",
+   "url": "https://news.google.com/rss/search?q=site%3Atheguardian.com+%28%22Liechtenstein%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Guardian — Marshall Islands",
+   "url": "https://news.google.com/rss/search?q=site%3Atheguardian.com+%28%22Marshall+Islands%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Guardian — Micronesia",
+   "url": "https://news.google.com/rss/search?q=site%3Atheguardian.com+%28%22Federated+States+of+Micronesia%22+OR+Pohnpei+OR+Chuuk%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Guardian — Nauru",
+   "url": "https://news.google.com/rss/search?q=site%3Atheguardian.com+%28%22Nauru%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Guardian — Palau",
+   "url": "https://news.google.com/rss/search?q=site%3Atheguardian.com+%28%22Palau%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Guardian — Tuvalu",
+   "url": "https://news.google.com/rss/search?q=site%3Atheguardian.com+%28%22Tuvalu%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Guinee7.com",
+   "url": "https://www.guinee7.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Guineematin.com",
+   "url": "https://guineematin.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Guinéenews.org",
+   "url": "https://news.google.com/rss/search?q=site%3Aguineenews.org+when%3A7d&hl=fr&gl=US&ceid=US%3Afr",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Gulf Daily News",
+   "url": "https://news.google.com/rss/search?q=site%3Agdnonline.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Gulf News",
+   "url": "https://gulfnews.com/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Gulf Times",
+   "url": "https://www.gulf-times.com/rssFeed/8",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Habari Za Comores",
+   "url": "https://www.habarizacomores.com/feeds/posts/default",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Hankyoreh",
+   "url": "https://news.google.com/rss/search?q=site%3Ahani.co.kr+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "ko"
+  },
+  {
+   "nombre": "Helsingin Sanomat",
+   "url": "https://www.hs.fi/rss/tuoreimmat.xml",
+   "seccion": "Europa",
+   "idioma": "fi"
+  },
+  {
+   "nombre": "Hespress",
+   "url": "https://www.hespress.com/feed",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Hetq",
+   "url": "https://hetq.am/hy/rss",
+   "seccion": "Europa",
+   "idioma": "hy"
+  },
+  {
+   "nombre": "Hospodářské noviny",
+   "url": "https://hn.cz/rss/headlines",
+   "seccion": "Europa",
+   "idioma": "cs"
+  },
+  {
+   "nombre": "Hoy",
+   "url": "https://hoy.com.do/rss/home.xml",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Hufvudstadsbladet",
+   "url": "https://www.hbl.fi/feed",
+   "seccion": "Europa",
+   "idioma": "sv"
+  },
+  {
+   "nombre": "IDL-Reporteros",
+   "url": "https://www.idl-reporteros.pe/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "ITV Tanzania",
+   "url": "https://news.google.com/rss/search?q=site%3Awww.itv.co.tz+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "sw"
+  },
+  {
+   "nombre": "Iceland Review",
+   "url": "https://www.icelandreview.com/feed/",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "IciLome",
+   "url": "https://icilome.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Il Post",
+   "url": "https://www.ilpost.it/feed",
+   "seccion": "Europa",
+   "idioma": "it"
+  },
+  {
+   "nombre": "Informburo.kz",
+   "url": "https://informburo.kz/rss/pubsubhubbub-feed.xml",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "Inforpress",
+   "url": "https://news.google.com/rss/search?q=site%3Ainforpress.cv+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Inkyfada",
+   "url": "https://inkyfada.com/fr/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Insajder",
+   "url": "https://insajder.net/feed.xml",
+   "seccion": "Europa",
+   "idioma": "sr"
+  },
+  {
+   "nombre": "Ir",
+   "url": "https://ir.lv/rss",
+   "seccion": "Europa",
+   "idioma": "lv"
+  },
+  {
+   "nombre": "Irish Independent",
+   "url": "https://www.independent.ie/rss/",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Island Sun",
+   "url": "https://theislandsun.com.sb/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Islands Business",
+   "url": "https://islandsbusiness.com/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Iwacu",
+   "url": "https://www.iwacu-burundi.org/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Jamaica Information Service (JIS)",
+   "url": "https://jis.gov.jm/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Jamaica Observer",
+   "url": "https://www.jamaicaobserver.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Japan Wire by Kyodo News",
+   "url": "https://english.kyodonews.net/list/feed/rss4kyodonews-fzone",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Jordan News",
+   "url": "https://www.jordannews.jo/rss",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Jornal Tropical",
+   "url": "https://www.jornaltropical.st/feed/",
+   "seccion": "África",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Journal de Brazza",
+   "url": "https://www.journaldebrazza.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Journal du Mali",
+   "url": "https://journaldumali.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Jyllands-Posten",
+   "url": "https://newsletter-proxy.aws.jyllands-posten.dk/v1/latestNewsRss/jyllands-posten.dk?count=10",
+   "seccion": "Europa",
+   "idioma": "da"
+  },
+  {
+   "nombre": "KRIK",
+   "url": "https://www.krik.rs/feed/",
+   "seccion": "Europa",
+   "idioma": "sr"
+  },
+  {
+   "nombre": "KT Press",
+   "url": "https://www.ktpress.rw/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Kaieteur News",
+   "url": "https://kaieteurnewsonline.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Kallxo",
+   "url": "https://kallxo.com/feed/",
+   "seccion": "Europa",
+   "idioma": "sq"
+  },
+  {
+   "nombre": "Khaleej Times",
+   "url": "https://www.khaleejtimes.com/api/v1/collections/top-section.rss",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Khaosod English",
+   "url": "https://news.google.com/rss/search?q=site%3Akhaosodenglish.com%20when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Kiripost",
+   "url": "https://news.google.com/rss/search?q=site%3Akiripost.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Klix.ba",
+   "url": "https://www.klix.ba/rss",
+   "seccion": "Europa",
+   "idioma": "bs"
+  },
+  {
+   "nombre": "Kloop.kg",
+   "url": "https://kloop.kg/feed/",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "Koha",
+   "url": "https://koha.net/rss/",
+   "seccion": "Europa",
+   "idioma": "sq"
+  },
+  {
+   "nombre": "Kompas",
+   "url": "https://news.google.com/rss/search?q=site%3Akompas.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "id"
+  },
+  {
+   "nombre": "Korea Times",
+   "url": "https://feed.koreatimes.co.kr/k/allnews.xml",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Kosovo 2.0",
+   "url": "https://news.google.com/rss/search?q=site%3Akosovotwopointzero.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "sq"
+  },
+  {
+   "nombre": "Kuensel",
+   "url": "https://kuenselonline.com/feed/posts",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Kun.uz",
+   "url": "https://kun.uz/news/rss?lang=uz",
+   "seccion": "Europa",
+   "idioma": "uz"
+  },
+  {
+   "nombre": "Kuwait News Agency",
+   "url": "https://news.google.com/rss/search?q=site%3Akuna.net.kw+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Kuwait Times",
+   "url": "https://news.google.com/rss/search?q=site%3Akuwaittimes.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "L'Express Mauritius",
+   "url": "https://news.google.com/rss/search?q=site%3Alexpress.mu+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "L'Express de Madagascar",
+   "url": "https://www.lexpress.mg/atom.xml",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "L'Union",
+   "url": "https://union.sonapresse.com/rss.xml",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "La Diaria",
+   "url": "https://ladiaria.com.uy/feeds/articulos/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "La Hora",
+   "url": "https://news.google.com/rss/search?q=site%3Alahora.gt+when%3A7d&hl=es&gl=US&ceid=US%3Aes",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "La Nación",
+   "url": "https://www.nacion.com/arc/outboundfeeds/rss/?outputType=xml",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "La Nación Argentina",
+   "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "La Nación Paraguay",
+   "url": "https://news.google.com/rss/search?q=site%3Alanacion.com.py+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "La Nation",
+   "url": "https://www.lanation.dj/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "La Nouvelle Tribune",
+   "url": "https://lanouvelletribune.info/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "La Prensa",
+   "url": "https://www.prensa.com/arc/outboundfeeds/rss/?outputType=xml",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "La Prensa Honduras",
+   "url": "https://news.google.com/rss/search?q=site%3Alaprensa.hn+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "La Prensa Nicaragua",
+   "url": "https://news.google.com/rss/search?q=site%3Alaprensani.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "La Presse de Tunisie",
+   "url": "https://www.lapresse.tn/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "La República Colombia",
+   "url": "https://www.larepublica.co/rss",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "La República Peru",
+   "url": "https://larepublica.pe/rss/home.xml",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "La Tercera",
+   "url": "https://www.latercera.com/arc/outboundfeeds/rss/?outputType=xml",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "La Voix de Djibouti",
+   "url": "https://lavoixdedjibouti.info/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Laotian Times",
+   "url": "https://laotiantimes.com/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Le Calame",
+   "url": "https://lecalame.info/rss.xml",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Le Desk",
+   "url": "https://ledesk.ma/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Le Défi Media Group",
+   "url": "https://defimedia.info/rss.xml",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Le Jour",
+   "url": "https://lejour.cm/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Le Mauricien",
+   "url": "https://news.google.com/rss/search?q=site%3Awww.lemauricien.com+when%3A7d&hl=fr&gl=US&ceid=US%3Afr",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Le Nouvelliste",
+   "url": "https://lenouvelliste.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Le Pays Tchad",
+   "url": "https://www.lepaystchad.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Le Potentiel",
+   "url": "https://lepotentiel.cd/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Reuters — Mali",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+Mali+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Le Sahel",
+   "url": "https://www.lesahel.org/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Le Soir",
+   "url": "https://lesoir.be/rss.xml",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Le Soleil",
+   "url": "https://lesoleil.sn/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Le Temps",
+   "url": "https://www.letemps.ch/articles.rss",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Les Dépêches de Brazzaville",
+   "url": "https://news.google.com/rss/search?q=site%3Aadiac-congo.com+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Lesotho Times",
+   "url": "https://lestimes.com/?feed=rss2",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Liberian Observer",
+   "url": "https://news.google.com/rss/search?q=site%3Aliberianobserver.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Libertas.sm",
+   "url": "https://news.google.com/rss/search?q=site%3Awww.libertas.sm+when%3A7d&hl=it&gl=US&ceid=US%3Ait",
+   "seccion": "Europa",
+   "idioma": "it"
+  },
+  {
+   "nombre": "Libération",
+   "url": "https://www.liberation.fr/arc/outboundfeeds/rss-all/?outputType=xml",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Liechtensteiner Vaterland",
+   "url": "https://news.google.com/rss/search?q=site%3Avaterland.li+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Linfodrome",
+   "url": "https://www.linfodrome.com/rss",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Los Tiempos",
+   "url": "https://news.google.com/rss/search?q=site%3Alostiempos.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Love FM",
+   "url": "https://lovefm.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Lusaka Times",
+   "url": "https://news.google.com/rss/search?q=site%3Alusakatimes.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Luxemburger Wort",
+   "url": "https://www.wort.lu/rss/",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Madagascar-Tribune.com",
+   "url": "https://www.madagascar-tribune.com/spip.php?page=backend",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Mail & Guardian",
+   "url": "https://mg.co.za/atom/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Makfax",
+   "url": "https://makfax.com.mk/feed/",
+   "seccion": "Europa",
+   "idioma": "mk"
+  },
+  {
+   "nombre": "Malagen",
+   "url": "https://malagen.org/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Malawi Nyasa Times",
+   "url": "https://www.nyasatimes.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Malawi24",
+   "url": "https://malawi24.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Malay Mail",
+   "url": "https://www.malaymail.com/feed/rss",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Malaysiakini",
+   "url": "https://www.malaysiakini.com/rss/en/news.rss",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Maldives Independent",
+   "url": "https://maldivesindependent.com/api/rss",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "MaltaToday",
+   "url": "https://news.google.com/rss/search?q=site%3Amaltatoday.com.mt+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Matangi Tonga",
+   "url": "https://matangitonga.to/rss.xml",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Matin Libre",
+   "url": "https://matinlibre.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Mediapool.bg",
+   "url": "https://www.mediapool.bg/rss",
+   "seccion": "Europa",
+   "idioma": "bg"
+  },
+  {
+   "nombre": "MercoPress",
+   "url": "https://en.mercopress.com/rss/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Meta.mk",
+   "url": "https://meta.mk/feed/",
+   "seccion": "Europa",
+   "idioma": "mk"
+  },
+  {
+   "nombre": "Meydan TV",
+   "url": "https://www.meydan.tv/az/feed/",
+   "seccion": "Europa",
+   "idioma": "az"
+  },
+  {
+   "nombre": "Midi Madagasikara",
+   "url": "https://midi-madagasikara.mg/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Mmegi",
+   "url": "https://news.google.com/rss/search?q=site%3Ammegi.bw+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Moldova 1",
+   "url": "https://news.google.com/rss/search?q=site%3Amoldova1.md+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "ro"
+  },
+  {
+   "nombre": "Monaco Life",
+   "url": "https://monacolife.net/feed/",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Monaco Tribune",
+   "url": "https://monaco-tribune.com/feed/",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Monaco-Matin",
+   "url": "https://www.nicematin.com/monaco/rss",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Montsame",
+   "url": "https://news.google.com/rss/search?q=site%3Amontsame.mn+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "mn"
+  },
+  {
+   "nombre": "Morocco World News",
+   "url": "https://news.google.com/rss/search?q=site%3Awww.moroccoworldnews.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Mosaique FM",
+   "url": "https://www.mosaiquefm.net/rss",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Mothership",
+   "url": "https://news.google.com/rss/search?q=site%3Amothership.sg+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Muscat Daily",
+   "url": "https://news.google.com/rss/search?q=site%3Awww.muscatdaily.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Myanmar Now",
+   "url": "https://www.myanmar-now.org/en/feed",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "N1 Bosna i Hercegovina",
+   "url": "https://n1info.ba/feed/",
+   "seccion": "Europa",
+   "idioma": "bs"
+  },
+  {
+   "nombre": "N1 Info",
+   "url": "https://n1info.rs/feed/",
+   "seccion": "Europa",
+   "idioma": "sr"
+  },
+  {
+   "nombre": "NBC Radio",
+   "url": "https://www.nbcsvg.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "NHK (日本放送協会)",
+   "url": "https://news.google.com/rss/search?q=site%3Awww3.nhk.or.jp+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "ja"
+  },
+  {
+   "nombre": "NK News",
+   "url": "https://www.nknews.org/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "NOW Grenada",
+   "url": "https://nowgrenada.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Namibia Economist",
+   "url": "https://economist.com.na/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Nasha Niva",
+   "url": "https://news.google.com/rss/search?q=site%3Anashaniva.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "be"
+  },
+  {
+   "nombre": "Nawaat",
+   "url": "https://nawaat.org/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Nepali Times",
+   "url": "https://nepalitimes.com/rss.xml",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Netgazeti",
+   "url": "https://netgazeti.ge/feed/",
+   "seccion": "Europa",
+   "idioma": "ka"
+  },
+  {
+   "nombre": "Neue Zürcher Zeitung",
+   "url": "https://www.nzz.ch/recent.rss",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "New Era",
+   "url": "https://neweralive.na/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "New Zealand Herald",
+   "url": "https://news.google.com/rss/search?q=site%3Anzherald.co.nz+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "News Diggers!",
+   "url": "https://diggers.news/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "News First Sri Lanka",
+   "url": "https://news.google.com/rss/search?q=site%3Anewsfirst.lk+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "News Room Guyana",
+   "url": "https://news.google.com/rss/search?q=site%3Anewsroom.gy+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "News.MN",
+   "url": "https://news.mn/en/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "NewsDay Zimbabwe",
+   "url": "https://newsday.co.zw/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Newsbook Malta",
+   "url": "https://news.google.com/rss/search?q=site%3Anewsbook.com.mt+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "mt"
+  },
+  {
+   "nombre": "Newsroom",
+   "url": "https://newsroom.co.nz/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Nicaragua Investiga",
+   "url": "https://nicaraguainvestiga.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Notícias do Norte",
+   "url": "https://noticiasdonorte.publ.cv/feed/",
+   "seccion": "África",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Novi list",
+   "url": "https://www.novilist.hr/feed/",
+   "seccion": "Europa",
+   "idioma": "hr"
+  },
+  {
+   "nombre": "O Democrata",
+   "url": "https://www.odemocratagb.com/?feed=rss2",
+   "seccion": "África",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "O País",
+   "url": "https://opais.co.mz/feed/",
+   "seccion": "África",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "ORF.at",
+   "url": "https://rss.orf.at/news.xml",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "ORTB Benin",
+   "url": "https://srtb.bj/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Observador",
+   "url": "https://observador.pt/feed/",
+   "seccion": "Europa",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Online Khabar",
+   "url": "https://www.onlinekhabar.com/feed",
+   "seccion": "Asia",
+   "idioma": "ne"
+  },
+  {
+   "nombre": "Oslobođenje",
+   "url": "https://www.oslobodjenje.ba/rss.xml",
+   "seccion": "Europa",
+   "idioma": "bs"
+  },
+  {
+   "nombre": "Palestine News Network",
+   "url": "https://english.pnn.ps/feed",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Papua New Guinea Post-Courier",
+   "url": "https://www.postcourier.com.pg/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Phileleftheros",
+   "url": "https://www.philenews.com/feed/",
+   "seccion": "Europa",
+   "idioma": "el"
+  },
+  {
+   "nombre": "Philippine Daily Inquirer",
+   "url": "https://www.inquirer.net/fullfeed",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Phnom Penh Post",
+   "url": "https://phnompenhpost.com/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Plaza Pública",
+   "url": "https://plazapublica.com.gt/rss",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Podrobno.uz",
+   "url": "https://podrobno.uz/rss/",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "Politis",
+   "url": "https://www.politis.com.cy/feed",
+   "seccion": "Europa",
+   "idioma": "el"
+  },
+  {
+   "nombre": "Postimees",
+   "url": "https://www.postimees.ee/rss",
+   "seccion": "Europa",
+   "idioma": "et"
+  },
+  {
+   "nombre": "Prachatai",
+   "url": "https://feeds.feedburner.com/prachatai",
+   "seccion": "Asia",
+   "idioma": "th"
+  },
+  {
+   "nombre": "Prensa Comunitaria",
+   "url": "https://prensacomunitaria.org/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "PressAfrik",
+   "url": "https://www.pressafrik.com/xml/syndication.rss",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Proceso Digital",
+   "url": "https://proceso.hn/feed/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Prothom Alo",
+   "url": "https://www.prothomalo.com/stories.rss",
+   "seccion": "Asia",
+   "idioma": "bn"
+  },
+  {
+   "nombre": "Public Eye",
+   "url": "https://publiceyenews.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Página/12",
+   "url": "https://www.pagina12.com.ar/arc/outboundfeeds/rss/portada/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "RNZ",
+   "url": "https://www.rnz.co.nz/rss/national.xml",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "RPP Noticias",
+   "url": "https://rpp.pe/rss",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "RTBF Info",
+   "url": "https://rss.rtbf.be/article/rss/highlight_rtbf_info.xml",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "RTL Luxembourg",
+   "url": "https://news.google.com/rss/search?q=site%3Artl.lu+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "RTL Nieuws",
+   "url": "https://www.rtl.nl/rss.xml",
+   "seccion": "Europa",
+   "idioma": "nl"
+  },
+  {
+   "nombre": "RTP Notícias",
+   "url": "https://www.rtp.pt/noticias/rss",
+   "seccion": "Europa",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "RTV Slovenija",
+   "url": "https://img.rtvslo.si/feeds/00.xml",
+   "seccion": "Europa",
+   "idioma": "sl"
+  },
+  {
+   "nombre": "RTVE Noticias",
+   "url": "https://news.google.com/rss/search?q=site%3Artve.es+when%3A7d&hl=es&gl=ES&ceid=ES%3Aes",
+   "seccion": "Europa",
+   "idioma": "es"
+  },
+  {
+   "nombre": "RTÉ News",
+   "url": "https://rte.ie/feeds/rss/?index=/news/",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Radio Azatlyk",
+   "url": "https://azathabar.com/api/",
+   "seccion": "Europa",
+   "idioma": "tk"
+  },
+  {
+   "nombre": "Radio Azattyk",
+   "url": "https://www.azattyk.org/api/",
+   "seccion": "Europa",
+   "idioma": "ky"
+  },
+  {
+   "nombre": "Radio Azattyq",
+   "url": "https://azattyq.org/api/",
+   "seccion": "Europa",
+   "idioma": "kk"
+  },
+  {
+   "nombre": "Radio Ergo",
+   "url": "https://radioergo.org/feed/",
+   "seccion": "África",
+   "idioma": "so"
+  },
+  {
+   "nombre": "Radio Jamaica News",
+   "url": "https://news.google.com/rss/search?q=site%3Aradiojamaicanewsonline.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Radio Ozodi",
+   "url": "https://ozodi.org/api/",
+   "seccion": "Europa",
+   "idioma": "tg"
+  },
+  {
+   "nombre": "Radio Prague International",
+   "url": "https://news.google.com/rss/search?q=site%3Aenglish.radio.cz+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "RTD Djibouti",
+   "url": "https://rtd.dj/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Recorder",
+   "url": "https://recorder.ro/feed/",
+   "seccion": "Europa",
+   "idioma": "ro"
+  },
+  {
+   "nombre": "Reforma",
+   "url": "https://www.reforma.com/rss/portada.xml",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Reporter.al",
+   "url": "https://www.reporter.al/feed/",
+   "seccion": "Europa",
+   "idioma": "sq"
+  },
+  {
+   "nombre": "Reuters — Algeria",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Algeria%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Andorra",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Andorra%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Angola",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Angola%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Bahrain",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Bahrain%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Bolivia",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Bolivia%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Botswana",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Botswana%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Brunei",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Brunei%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Bulgaria",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Bulgaria%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Burkina Faso",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Burkina+Faso%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Burundi",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Burundi%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Cameroon",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Cameroon%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Central African Republic",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Central+African+Republic%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Chad",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+Chad+%28Africa+OR+%22N%E2%80%99Djamena%22+OR+Deby%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Comoros",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Comoros%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Congo - Brazzaville",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Congo-Brazzaville%22+OR+Brazzaville%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Congo - Kinshasa",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Democratic+Republic+of+Congo%22+OR+%22DR+Congo%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Costa Rica",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Costa+Rica%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Cuba",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Cuba%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Denmark",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Denmark%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Djibouti",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Djibouti%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Dominica",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Dominica%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Dominican Republic",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Dominican+Republic%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Equatorial Guinea",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Equatorial+Guinea%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Eritrea",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Eritrea%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Estonia",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Estonia%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Grenada",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Grenada%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Guatemala",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Guatemala%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Guinea",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28Guinea+OR+Conakry%29+-%22Papua+New+Guinea%22+-%22Equatorial+Guinea%22+-%22Guinea-Bissau%22+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Guinea-Bissau",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Guinea-Bissau%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Guyana",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Guyana%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Honduras",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Honduras%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Iceland",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Iceland%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Jordan",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+Jordan+%28Amman+OR+Abdullah+OR+Hashemite%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Kiribati",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28Kiribati%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Kuwait",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Kuwait%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Laos",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Laos%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Lesotho",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Lesotho%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Liberia",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Liberia%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Libya",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Libya%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Maldives",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Maldives%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Marshall Islands",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Marshall+Islands%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Mauritania",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Mauritania%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Mauritius",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Mauritius%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Mexico",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Mexico%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Monaco",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Monaco%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Montenegro",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Montenegro%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Myanmar (Burma)",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28Myanmar+OR+Burma%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Namibia",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Namibia%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Nauru",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Nauru%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — North Korea",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22North+Korea%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Palau",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Palau%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Palestinian Territories",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28Palestine+OR+Palestinian%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Panama",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+Panama+-Florida+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Papua New Guinea",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Papua+New+Guinea%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Paraguay",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Paraguay%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Portugal",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Portugal%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Rwanda",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Rwanda%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Samoa",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Samoa%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Saudi Arabia",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Saudi+Arabia%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Seychelles",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Seychelles%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Sierra Leone",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Sierra+Leone%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — St. Kitts & Nevis",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22St.+Kitts+%26+Nevis%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Sudan",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Sudan%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Timor-Leste",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22East+Timor%22+OR+%22Timor-Leste%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Togo",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Togo%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Tonga",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Tonga%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Tuvalu",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Tuvalu%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — United Arab Emirates",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22United+Arab+Emirates%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Vatican City",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28Vatican%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Yemen",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Yemen%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Zambia",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Zambia%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Reuters — Zimbabwe",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com+%28%22Zimbabwe%22%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Rukhshana Media",
+   "url": "https://rukhshana.com/feed/",
+   "seccion": "Asia",
+   "idioma": "fa"
+  },
+  {
+   "nombre": "RÚV (Ríkisútvarpið)",
+   "url": "https://www.ruv.is/rss/frettir",
+   "seccion": "Europa",
+   "idioma": "is"
+  },
+  {
+   "nombre": "Rádio Nacional de Angola (RNA)",
+   "url": "https://rna.ao/rna.ao/feed/",
+   "seccion": "África",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Rádio Somos Todos Primos (RSTP)",
+   "url": "https://rstp.st/feed/",
+   "seccion": "África",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "SBS News",
+   "url": "https://news.google.com/rss/search?q=site%3Awww.sbs.com.au+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "SIBC",
+   "url": "https://sibconline.com.sb/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "SOS Médias Burundi",
+   "url": "https://news.google.com/rss/search?q=site%3Awww.sosmediasburundi.org+when%3A7d&hl=fr&gl=US&ceid=US%3Afr",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "STP-Press",
+   "url": "https://www.stp-press.st/feed/",
+   "seccion": "África",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Sahara Medias",
+   "url": "https://saharamedias.net/feed/",
+   "seccion": "África",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Sahelien.com",
+   "url": "https://sahelien.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Samoa Global News",
+   "url": "https://samoaglobalnews.com/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Samoa Observer",
+   "url": "https://news.google.com/rss/search?q=site%3Asamoaobserver.ws+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "San Marino Fixing",
+   "url": "https://news.google.com/rss/search?q=site%3Asanmarinofixing.com+when%3A7d&hl=it&gl=US&ceid=US%3Ait",
+   "seccion": "Europa",
+   "idioma": "it"
+  },
+  {
+   "nombre": "San Marino RTV",
+   "url": "https://sanmarinortv.sm/rss.xml",
+   "seccion": "Europa",
+   "idioma": "it"
+  },
+  {
+   "nombre": "Saudi Gazette",
+   "url": "https://news.google.com/rss/search?q=site%3Asaudigazette.com.sa+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Schweizer Radio und Fernsehen (SRF)",
+   "url": "https://www.srf.ch/news/bnf/rss/1646",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Scroll.in",
+   "url": "https://feeds.feedburner.com/ScrollinArticles.rss",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Setit",
+   "url": "https://setit.org/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Setopati",
+   "url": "https://news.google.com/rss/search?q=site%3Asetopati.com+when%3A7d&hl=ne&gl=US&ceid=US%3Ane",
+   "seccion": "Asia",
+   "idioma": "ne"
+  },
+  {
+   "nombre": "Seychelles Broadcasting Corporation",
+   "url": "https://www.sbc.sc/feed/",
+   "seccion": "África",
+   "idioma": "crs"
+  },
+  {
+   "nombre": "Seychelles Nation",
+   "url": "https://news.google.com/rss/search?q=site%3Anation.sc+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Shafaq News",
+   "url": "https://news.google.com/rss/search?q=site%3Ashafaq.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Shargh Daily",
+   "url": "https://www.sharghdaily.com/feeds/",
+   "seccion": "Medio Oriente",
+   "idioma": "fa"
+  },
+  {
+   "nombre": "Sixth Tone",
+   "url": "https://news.google.com/rss/search?q=site%3Asixthtone.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Sme",
+   "url": "https://www.sme.sk/rss",
+   "seccion": "Europa",
+   "idioma": "sk"
+  },
+  {
+   "nombre": "Solomon Star",
+   "url": "https://news.google.com/rss/search?q=site%3Asolomonstarnews.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Solomon Times",
+   "url": "https://www.solomontimes.com/rss/latest-news.xml",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "St Lucia Times",
+   "url": "https://stluciatimes.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "St Vincent Times",
+   "url": "https://www.stvincenttimes.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Straits Times",
+   "url": "https://www.straitstimes.com/news/singapore/rss.xml",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Studio Kalangou",
+   "url": "https://www.studiokalangou.org/feed",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Studio Yafa",
+   "url": "https://www.studioyafa.bf/feed",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Stuff NZ",
+   "url": "https://www.stuff.co.nz/rss",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Sudan Tribune",
+   "url": "https://sudantribune.net/feed",
+   "seccion": "África",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Sudan War Monitor",
+   "url": "https://sudanwarmonitor.com/feed",
+   "seccion": "África",
+   "idioma": "ar"
+  },
+  {
+   "nombre": "Sudans Post",
+   "url": "https://www.sudanspost.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Sun Online",
+   "url": "https://news.google.com/rss/search?q=site%3Asun.mv+when%3A7d&hl=dv&gl=US&ceid=US%3Adv",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Suriname Herald",
+   "url": "https://www.srherald.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "nl"
+  },
+  {
+   "nombre": "Sveriges Radio",
+   "url": "https://news.google.com/rss/search?q=site%3Asverigesradio.se+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "sv"
+  },
+  {
+   "nombre": "Swaziland News",
+   "url": "https://news.google.com/rss/search?q=site%3Aswazilandnews.co.za+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Sydney Morning Herald",
+   "url": "https://www.smh.com.au/rss/feed.xml",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "TA3",
+   "url": "https://www.ta3.com/rss/top-spravy",
+   "seccion": "Europa",
+   "idioma": "sk"
+  },
+  {
+   "nombre": "TSA Algérie (Tout Sur l'Algérie)",
+   "url": "https://www.tsa-algerie.com/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "TV 2",
+   "url": "https://news.google.com/rss/search?q=site%3Awww.tv2.no+when%3A7d&hl=no&gl=US&ceid=US%3Ano",
+   "seccion": "Europa",
+   "idioma": "no"
+  },
+  {
+   "nombre": "TV8",
+   "url": "https://tv8.md/feed",
+   "seccion": "Europa",
+   "idioma": "ro"
+  },
+  {
+   "nombre": "TVN Noticias",
+   "url": "https://www.tvn-2.com/rss/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Taarifa Rwanda",
+   "url": "https://taarifa.rw/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Tages-Anzeiger",
+   "url": "https://partner-feeds.publishing.tamedia.ch/rss/tagesanzeiger/",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Tal Cual",
+   "url": "https://talcualdigital.com/feed/atom/",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Talamua Online News",
+   "url": "https://talamua.com/?feed=rss2",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Tatoli",
+   "url": "https://tatoli.tl/feed/",
+   "seccion": "Asia",
+   "idioma": "tet"
+  },
+  {
+   "nombre": "TelQuel",
+   "url": "https://telquel.ma/feed",
+   "seccion": "Medio Oriente",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Guardian — Paraguay",
+   "url": "https://news.google.com/rss/search?q=site%3Atheguardian.com+Paraguay+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Telenoticias (Teletica)",
+   "url": "https://www.teletica.com/rss/feed",
+   "seccion": "América Latina",
+   "idioma": "es"
+  },
+  {
+   "nombre": "Tempo Indonesia",
+   "url": "https://news.google.com/rss/search?q=site%3Atempo.co+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "id"
+  },
+  {
+   "nombre": "Thanh Niên",
+   "url": "https://thanhnien.vn/rss/home.rss",
+   "seccion": "Asia",
+   "idioma": "vi"
+  },
+  {
+   "nombre": "The Bhutanese",
+   "url": "https://thebhutanese.bt/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Botswana Gazette",
+   "url": "https://www.thegazette.news/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Bruneian",
+   "url": "https://thebruneian.news/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Calabash Newspaper",
+   "url": "https://thecalabashnewspaper.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Cambodia Daily",
+   "url": "https://www.cambodiadaily.com/feed/",
+   "seccion": "Asia",
+   "idioma": "km"
+  },
+  {
+   "nombre": "The Chanzo",
+   "url": "https://thechanzo.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Citizen Tanzania",
+   "url": "https://www.thecitizen.co.tz/rss.xml",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Dili Weekly",
+   "url": "https://thediliweekly.com/feed/",
+   "seccion": "Asia",
+   "idioma": "tet"
+  },
+  {
+   "nombre": "The Financial Gazette",
+   "url": "https://fingaz.co.zw/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Gleaner",
+   "url": "https://news.google.com/rss/search?q=site%3Ajamaica-gleaner.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Haitian Times",
+   "url": "https://haitiantimes.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Independent (Uganda)",
+   "url": "https://www.independent.co.ug/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Insider",
+   "url": "https://theins.ru/feed",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "The Irish Times",
+   "url": "https://www.irishtimes.com/arc/outboundfeeds/rss/?outputType=xml",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Island",
+   "url": "https://island.lk/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Jordan Times",
+   "url": "https://news.google.com/rss/search?q=site%3Ajordantimes.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Kathmandu Post",
+   "url": "https://news.google.com/rss/search?q=site%3Akathmandupost.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Korea Herald",
+   "url": "https://www.koreaherald.com/rss/newsAll",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Libya Observer",
+   "url": "https://news.google.com/rss/search?q=site%3Alibyaobserver.ly+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Marshall Islands Journal",
+   "url": "https://marshallislandsjournal.com/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Monitor Uganda",
+   "url": "https://www.monitor.co.ug/rss.xml",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Namibian",
+   "url": "https://www.namibian.com.na/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Nassau Guardian",
+   "url": "https://news.google.com/rss/search?q=site%3Athenassauguardian.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Nation Malawi",
+   "url": "https://mwnation.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The National PNG",
+   "url": "https://news.google.com/rss/search?q=site%3Athenational.com.pg+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The New Dawn Liberia",
+   "url": "https://thenewdawnliberia.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The New Times Rwanda",
+   "url": "https://news.google.com/rss/search?q=site%3Anewtimes.co.rw+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Observer",
+   "url": "https://observer.ug/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Online Citizen",
+   "url": "https://theonlinecitizen.com/rss.xml",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Peninsula Qatar",
+   "url": "https://news.google.com/rss/search?q=site%3Athepeninsulaqatar.com+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Point",
+   "url": "https://thepoint.gm/posts/rss/xml",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Public Source",
+   "url": "https://thepublicsource.org/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Reporter",
+   "url": "https://public.twreporter.org/rss/twreporter-rss.xml",
+   "seccion": "Asia",
+   "idioma": "zh"
+  },
+  {
+   "nombre": "The Reporter Lesotho",
+   "url": "https://www.thereporter.co.ls/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Reykjavík Grapevine",
+   "url": "https://grapevine.is/feed/",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The San Pedro Sun",
+   "url": "https://www.sanpedrosun.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Scoop",
+   "url": "https://thescoop.co/feed/",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Shift News",
+   "url": "https://theshiftnews.com/feed/",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Sierra Leone Telegraph",
+   "url": "https://www.thesierraleonetelegraph.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Sofia Globe",
+   "url": "https://feeds.feedburner.com/TheSofiaGlobe",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The St Lucia Star",
+   "url": "https://stluciastar.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The St. Kitts-Nevis Observer",
+   "url": "https://www.thestkittsnevisobserver.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Standard",
+   "url": "https://news.google.com/rss/search?q=site%3Astandard.gm+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Standard Kenya",
+   "url": "https://news.google.com/rss/search?q=site%3Astandardmedia.co.ke+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Star Kenya",
+   "url": "https://news.google.com/rss/search?q=site%3Athe-star.co.ke+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Syrian Observer",
+   "url": "https://syrianobserver.com/feed",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Tashkent Times",
+   "url": "https://news.google.com/rss/search?q=site%3Atashkenttimes.uz+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Tico Times",
+   "url": "https://ticotimes.net/feed",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Times Group Malawi",
+   "url": "https://times.mw/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Tribune",
+   "url": "https://www.tribune242.com/rss/headlines/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The UB Post",
+   "url": "https://news.google.com/rss/search?q=site%3Aubpost.mn+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Voice",
+   "url": "https://thevoicebw.com/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Voice of Saint Lucia",
+   "url": "https://thevoiceslu.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "The Zimbabwe Independent",
+   "url": "https://theindependent.co.zw/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "TheJournal.ie",
+   "url": "https://www.thejournal.ie/feed/rss/",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Times of Eswatini",
+   "url": "https://times.co.sz/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Times of Malta",
+   "url": "https://rss.timesofmalta.com/",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Times of Oman",
+   "url": "https://news.google.com/rss/search?q=site%3Atimesofoman.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Medio Oriente",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Timor Post",
+   "url": "https://timorpost.com/feed/",
+   "seccion": "Asia",
+   "idioma": "tet"
+  },
+  {
+   "nombre": "Tirana Times",
+   "url": "https://www.tiranatimes.com/feed/",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Togotopnews",
+   "url": "https://togotopnews.tg/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Togo‑Presse",
+   "url": "https://news.google.com/rss/search?q=site%3Atogopresse.tg+when%3A7d&hl=fr&gl=US&ceid=US%3Afr",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Trinidad Express",
+   "url": "https://news.google.com/rss/search?q=site%3Atrinidadexpress.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Trinidad Guardian",
+   "url": "https://news.google.com/rss/search?q=site%3Aguardian.co.tt+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Turan",
+   "url": "https://news.google.com/rss/search?q=site%3Aturan.az+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "az"
+  },
+  {
+   "nombre": "Turkmen.news",
+   "url": "https://turkmen.news/feed/",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "Turun Sanomat",
+   "url": "https://www.ts.fi/rss.xml",
+   "seccion": "Europa",
+   "idioma": "fi"
+  },
+  {
+   "nombre": "Téla Nón",
+   "url": "https://www.telanon.info/feed/",
+   "seccion": "África",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Uganda Radio Network (URN)",
+   "url": "https://ugandaradionetwork.com/s/tag/uganda/feed/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "VRT NWS",
+   "url": "https://news.google.com/rss/search?q=site%3Avrt.be+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "nl"
+  },
+  {
+   "nombre": "VBTC Vanuatu",
+   "url": "https://vbtc.vu/feed/",
+   "seccion": "Asia",
+   "idioma": "bi"
+  },
+  {
+   "nombre": "Vanuatu Daily Post",
+   "url": "https://news.google.com/rss/search?q=site%3Adailypost.vu+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Vatican News English",
+   "url": "https://www.vaticannews.va/en.rss.xml",
+   "seccion": "Europa",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Verslo žinios",
+   "url": "https://www.vz.lt/rss",
+   "seccion": "Europa",
+   "idioma": "lt"
+  },
+  {
+   "nombre": "Vietnam News",
+   "url": "https://vietnamnews.vn/rss/all-news.rss",
+   "seccion": "Asia",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Vijesti",
+   "url": "https://www.vijesti.me/rss",
+   "seccion": "Europa",
+   "idioma": "cnr"
+  },
+  {
+   "nombre": "Vlast.kz",
+   "url": "https://vlast.kz/feed/",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "WEE FM Radio Grenada",
+   "url": "https://www.weefmgrenada.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "WINNFM 98.9",
+   "url": "https://winnfm.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Woxx",
+   "url": "https://www.woxx.lu/feed/",
+   "seccion": "Europa",
+   "idioma": "de"
+  },
+  {
+   "nombre": "Yaga Burundi",
+   "url": "https://www.yaga-burundi.com/feed/",
+   "seccion": "África",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Your.tj",
+   "url": "https://your.tj/rss.xml",
+   "seccion": "Europa",
+   "idioma": "ru"
+  },
+  {
+   "nombre": "ZNS Bahamas",
+   "url": "https://znsbahamas.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Zitamar News",
+   "url": "https://www.zitamar.com/rss/",
+   "seccion": "África",
+   "idioma": "en"
+  },
+  {
+   "nombre": "bdnews24",
+   "url": "https://news.google.com/rss/search?q=site%3Abdnews24.com+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Asia",
+   "idioma": "bn"
+  },
+  {
+   "nombre": "de Volkskrant",
+   "url": "https://www.volkskrant.nl/voorpagina/rss.xml",
+   "seccion": "Europa",
+   "idioma": "nl"
+  },
+  {
+   "nombre": "elDiario.es",
+   "url": "https://www.eldiario.es/rss",
+   "seccion": "Europa",
+   "idioma": "es"
+  },
+  {
+   "nombre": "iWitness News",
+   "url": "https://www.iwnsvg.com/feed/",
+   "seccion": "América Latina",
+   "idioma": "en"
+  },
+  {
+   "nombre": "Äripäev",
+   "url": "https://www.aripaev.ee/rss",
+   "seccion": "Europa",
+   "idioma": "et"
+  },
+  {
+   "nombre": "ČT24",
+   "url": "https://ct24.ceskatelevize.cz/rss",
+   "seccion": "Europa",
+   "idioma": "cs"
+  },
+  {
+   "nombre": "Le Quotidien Luxembourg",
+   "url": "https://news.google.com/rss/search?q=site%3Alequotidien.lu+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "N1 Slovenia",
+   "url": "https://n1info.si/feed/",
+   "seccion": "Europa",
+   "idioma": "sl"
+  },
+  {
+   "nombre": "Matichon",
+   "url": "https://www.matichon.co.th/feed",
+   "seccion": "Asia",
+   "idioma": "th"
+  },
+  {
+   "nombre": "ProPublica",
+   "url": "https://www.propublica.org/feeds/propublica/main",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "The Atlantic",
+   "url": "https://www.theatlantic.com/feed/all/",
+   "seccion": "Estados Unidos",
+   "idioma": ""
+  },
+  {
+   "nombre": "NPR World",
+   "url": "https://feeds.npr.org/1004/rss.xml",
+   "seccion": "Política mundial",
+   "idioma": ""
+  },
+  {
+   "nombre": "BBC News",
+   "url": "https://feeds.bbci.co.uk/news/rss.xml",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Guardian UK",
+   "url": "https://www.theguardian.com/uk-news/rss",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "Channel 4 News",
+   "url": "https://www.channel4.com/news/feed",
+   "seccion": "Europa",
+   "idioma": ""
+  },
+  {
+   "nombre": "g1",
+   "url": "https://g1.globo.com/rss/g1/",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "g1 Mundo",
+   "url": "https://g1.globo.com/rss/g1/mundo/",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Folha Mundo",
+   "url": "https://feeds.folha.uol.com.br/mundo/rss091.xml",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Estadão Política",
+   "url": "https://www.estadao.com.br/arc/outboundfeeds/feeds/rss/sections/politica/",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Estadão Internacional",
+   "url": "https://www.estadao.com.br/arc/outboundfeeds/feeds/rss/sections/internacional/",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "BBC News Brasil",
+   "url": "https://feeds.bbci.co.uk/portuguese/rss.xml",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Nexo Jornal",
+   "url": "https://www.nexojornal.com.br/rss.xml",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "DW Brasil",
+   "url": "https://rss.dw.com/xml/rss-br-all",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "RFI Brasil",
+   "url": "https://www.rfi.fr/br/rss",
+   "seccion": "América Latina",
+   "idioma": "pt"
+  },
+  {
+   "nombre": "Le Monde à la une",
+   "url": "https://www.lemonde.fr/rss/une.xml",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Le Monde International",
+   "url": "https://www.lemonde.fr/international/rss_full.xml",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Le Figaro",
+   "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "L'Express",
+   "url": "https://www.lexpress.fr/arc/outboundfeeds/rss/alaune.xml",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Le Nouvel Obs",
+   "url": "https://www.nouvelobs.com/a-la-une/rss.xml",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "Courrier international",
+   "url": "https://www.courrierinternational.com/feed/all/rss.xml",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "France 24 Français",
+   "url": "https://www.france24.com/fr/rss",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "RFI",
+   "url": "https://www.rfi.fr/fr/rss",
+   "seccion": "Europa",
+   "idioma": "fr"
+  },
+  {
+   "nombre": "TV5Monde Info",
+   "url": "https://information.tv5monde.com/rss.xml",
+   "seccion": "Europa",
+   "idioma": "fr"
+  }
+ ]
+}
