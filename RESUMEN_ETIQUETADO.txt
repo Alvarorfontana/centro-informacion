@@ -1,0 +1,63 @@
+## 📊 Estado actual: etiquetado de temas
+
+### Datos duros (archivos generados)
+
+| Archivo | Para qué sirve | Estado |
+|---|---|---|
+| `scripts/notas.py` | utilidades compartidas (`limpiar`, `clave_nota`, `es_portugues`) | ✅ listo |
+| `scripts/etiquetar_temas.py` | etiqueta notas con IA gratis, guarda progreso, mide calidad | ✅ listo |
+| `datos/temas-ia.jsonl` | lista de etiquetas IA generadas | 56 líneas (muestras + examen) |
+| `docs/DATASET.md` | explicación completa del dataset y por qué el tema está "pendiente" | ✅ listo |
+| `docs/PLAN-IA.md` | sistema por capas, qué es realista y qué no | ✅ listo |
+| `docs/kaggle/entrenamiento.ipynb` | notebook listo para entrenar `alcance` (geográfico) | ✅ listo, 13 celdas validadas |
+
+### Lo que la IA logró (muestreo)
+
+Con **Pollinations gratis**, sobre 72 notas probadas:
+
+| Tema | Vecas |
+|---|---|
+| Economía | 4 |
+| Política | 3 |
+| Internacional | 1 |
+| Sociedad | 2 |
+| Energía y minería | 1 |
+| Justicia y seguridad | 2 |
+| Educación | 1 |
+
+**Calidad:** 64,6 % de coincidencia contra las 48 notas que ya tenían tema real. Eso es **mejor que adivinar al azar**, pero el modelo gratis se corta con `HTTP 402` (rate-limit), así que no se puede seguir etiquetando sin esperar.
+
+### Los problemas encontrados
+
+1. **Pollinations HTTP 402** — el modelo gratis tiene un límite de pedidos y se bloquea. Ya pasó en dos corridas distintas (30 y 24 notas). No hay forma de sortearlo sin clave API pagada.
+
+2. **La IA no distingue país vs tema.** Una nota sobre el presupuesto de España etiquetó "Economía"; una sobre una escuela en Chile etiquetó "Educación". Eso está bien para el tema, pero hay que tener clarito que **"Internacional" solo debe usarse para guerras, diplomacia, organismos internacionales (ONU, UE), cumbres**. Si la IA la usa para cualquier cosa extranjera, recrearemos el problema de "General".
+
+3. **Las "General" no son un tema.** Son el cajón de "no lo pude clasificar". Entrenar con ellas produce un modelo que dice "General" a todo, lo cual parece acierto pero no sirve para nada.
+
+### Qué quedó listo y no requiere más Kaggle
+
+| Tarea | Herramienta | Costo |
+|---|---|---|
+| **Clasificación geográfica (`alcance`)** | Ya lista: `entrenamiento.csv` → `docs/kaggle/entrenamiento.ipynb` | ✅ 0 horas Kaggle, 0 deploys |
+| **Etiquetado de tema** | Script listo, pero IA gratis se corta | ⛔ Aguardar o etiquetar a mano |
+| **Reentrenar modelo en Kaggle** | Notebook validado, falta abrir y correr | ⏳ Pending |
+| **Publicar en Vercel** | No gasta deploys: IA corre en Kaggle o GitHub Actions | ✅ 0 deploys |
+
+### Próximos pasos concretos
+
+**Opción A (rápido, sin Kaggle):**
+1. Ejecutar `python scripts/etiquetar_temas.py --todos` para intentar etiquetar las 563 notas "General".
+2. Si Pollinations se corta (HTTP 402), detener y etiquetar a mano unas **150-200 notas** con sección clara.
+3. Con ese lote "patrón de oro", volver a correr el script y comparar contra la línea de base.
+4. Si el modelo le gana a la línea de base (64,6 % actual), subir `modelo-final.zip` a un Release de GitHub y listo.
+5. El Centro de Información pasa a tener clasificación automática de tema.
+
+**Opción B (mantener Kaggle para después):**
+1. Entrenar `alcance` (geográfico) en Kaggle con el notebook listo: ya es valor real.
+2. Dejar tema para después, cuando haya presupuesto para clave API o se quiera etiquetar a mano.
+
+**Lo que NO se hace:**
+- No se entrena `tema` incluyendo `General`. Eso es un error.
+- No se gasta un deploy de Vercel.
+- No se paga por VPS o DigitalOcean.
