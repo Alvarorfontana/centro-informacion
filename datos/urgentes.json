@@ -1,55 +1,8 @@
 {
- "generado": "2026-11-27T02:26:54+00:00",
+ "generado": "2026-11-27T03:17:26+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
-  {
-   "titulo": "El Senado dio media sanción para suspender las PASO en 2027",
-   "n_medios": 6,
-   "paises": [
-    "Argentina"
-   ],
-   "region": null,
-   "tema": "Política",
-   "ejes": [
-    "mercosur",
-    "politica"
-   ],
-   "desde": "2026-11-27T02:26:54+00:00",
-   "avisado": false,
-   "notas": [
-    {
-     "titulo": "Javier Milei y sus medidas, EN VIVO: el Presidente se reunió con su par de Asunción y el Senado le dio media sanción a la suspensión de las PASO",
-     "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-presidente-apunto-contras-las-operetas-de-la-oposicion-y-dijo-nid26112026/",
-     "medio": "La Nación",
-     "fecha": "2026-11-27T02:13:17+00:00"
-    },
-    {
-     "titulo": "Senado, en vivo: tras la media sanción a la reforma electoral, los legisladores aprobaron por unanimidad la Ley de Ludopatía",
-     "url": "https://www.infobae.com/politica/2026/11/26/senado-en-vivo-las-ultimas-noticias-sobre-la-suspension-de-las-paso-y-la-ley-de-ludopatia/",
-     "medio": "Infobae",
-     "fecha": "2026-11-27T02:11:59+00:00"
-    },
-    {
-     "titulo": "PASO: qué senadores apoyaron la suspensión impulsada por el Gobierno",
-     "url": "https://noticiasargentinas.com/politica/paso--que-senadores-apoyaron-la-suspension-impulsada-por-el-gobierno_a6b08d059272556b8ed850d7d",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-27T01:34:00+00:00"
-    },
-    {
-     "titulo": "El Senado dio media sanción para suspender las PASO en 2027",
-     "url": "https://www.pagina12.com.ar/2026/11/27/el-senado-dio-media-sancion-para-suspender-las-paso-en-2027/",
-     "medio": "Página/12",
-     "fecha": "2026-11-27T01:15:00+00:00"
-    },
-    {
-     "titulo": "Uno por uno, cómo votó cada senador la media sanción a la reforma electoral",
-     "url": "https://www.diarionorte.com/337351-uno-por-uno-como-voto-cada-senador-la-media-sancion-a-la-reforma-electoral",
-     "medio": "Diario Norte (Chaco)",
-     "fecha": "2026-11-26T23:53:14+00:00"
-    }
-   ]
-  },
   {
    "titulo": "Banquero será ministro de Hacienda en nuevo mandato de Lula",
    "n_medios": 4,
@@ -91,6 +44,52 @@
      "url": "https://www.ellitoral.com.ar/internacional/2026-11-26-20-59-0-el-ministro-de-hacienda-de-lula-sera-un-poderoso-banquero-subio-la-bolsa-de-san-pablo",
      "medio": "El Litoral (Corrientes)",
      "fecha": "2026-11-26T23:59:00+00:00"
+    }
+   ]
+  },
+  {
+   "titulo": "El Senado dio media sanción para suspender las PASO en 2027",
+   "n_medios": 5,
+   "paises": [
+    "Argentina"
+   ],
+   "region": null,
+   "tema": "Política",
+   "ejes": [
+    "politica"
+   ],
+   "desde": "2026-11-27T02:26:54+00:00",
+   "avisado": false,
+   "notas": [
+    {
+     "titulo": "Javier Milei y sus medidas, EN VIVO: el Presidente se reunió con su par de Asunción y el Senado le dio media sanción a la suspensión de las PASO",
+     "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-presidente-apunto-contras-las-operetas-de-la-oposicion-y-dijo-nid26112026/",
+     "medio": "La Nación",
+     "fecha": "2026-11-27T02:13:17+00:00"
+    },
+    {
+     "titulo": "Senado, en vivo: tras la media sanción a la reforma electoral, los legisladores aprobaron por unanimidad la Ley de Ludopatía",
+     "url": "https://www.infobae.com/politica/2026/11/26/senado-en-vivo-las-ultimas-noticias-sobre-la-suspension-de-las-paso-y-la-ley-de-ludopatia/",
+     "medio": "Infobae",
+     "fecha": "2026-11-27T02:11:59+00:00"
+    },
+    {
+     "titulo": "PASO: qué senadores apoyaron la suspensión impulsada por el Gobierno",
+     "url": "https://noticiasargentinas.com/politica/paso--que-senadores-apoyaron-la-suspension-impulsada-por-el-gobierno_a6b08d059272556b8ed850d7d",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-27T01:34:00+00:00"
+    },
+    {
+     "titulo": "El Senado dio media sanción para suspender las PASO en 2027",
+     "url": "https://www.pagina12.com.ar/2026/11/27/el-senado-dio-media-sancion-para-suspender-las-paso-en-2027/",
+     "medio": "Página/12",
+     "fecha": "2026-11-27T01:15:00+00:00"
+    },
+    {
+     "titulo": "Uno por uno, cómo votó cada senador la media sanción a la reforma electoral",
+     "url": "https://www.diarionorte.com/337351-uno-por-uno-como-voto-cada-senador-la-media-sancion-a-la-reforma-electoral",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-26T23:53:14+00:00"
     }
    ]
   }
