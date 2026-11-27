@@ -1,46 +1,49 @@
 {
- "generado": "2026-11-27T08:09:13+00:00",
+ "generado": "2026-11-27T18:30:40+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
-   "titulo": "El Gobierno le dio media sanción al Presupuesto 2027 en Diputados, pero la oposición consiguió fondos para universidades",
-   "n_medios": 4,
+   "titulo": "Murió el empresario Jorge Born a los 92 años",
+   "n_medios": 5,
    "paises": [
     "Argentina"
    ],
    "region": null,
-   "tema": "Política",
-   "ejes": [
-    "economia",
-    "politica"
-   ],
-   "desde": "2026-11-27T08:09:13+00:00",
+   "tema": "General",
+   "ejes": [],
+   "desde": "2026-11-27T18:30:40+00:00",
    "avisado": false,
    "notas": [
     {
-     "titulo": "El Gobierno aprobó el Presupuesto en Diputados pero la oposición le impuso un fuerte aumento para las universidades",
-     "url": "https://www.infobae.com/politica/2026/11/27/el-gobierno-logro-aprobar-el-presupuesto-en-diputados-pero-tuvo-que-aumentar-los-fondos-para-las-universidades/",
+     "titulo": "Así contó Jorge Born su secuestro por parte de Montoneros",
+     "url": "https://www.infobae.com/economia/2026/11/27/asi-conto-jorge-born-su-secuestro-por-parte-de-montoneros/",
      "medio": "Infobae",
-     "fecha": "2026-11-27T07:44:37+00:00"
+     "fecha": "2026-11-27T18:24:11+00:00"
     },
     {
-     "titulo": "El Gobierno logró la media sanción del presupuesto 2027, pero la oposición le desarmó parte del proyecto y amplió los fondos universitarios",
-     "url": "https://www.lanacion.com.ar/politica/diputados-en-medio-de-intensas-negociaciones-el-gobierno-confia-en-obtener-la-media-sancion-del-nid26112026/",
+     "titulo": "Murió el empresario Jorge Born, víctima de un secuestro de Montoneros",
+     "url": "https://www.lanacion.com.ar/economia/murio-el-empresario-jorge-born-victima-de-un-secuestro-de-montoneros-nid27112026/",
      "medio": "La Nación",
-     "fecha": "2026-11-27T07:27:29+00:00"
+     "fecha": "2026-11-27T18:20:36+00:00"
     },
     {
-     "titulo": "Javier Milei consiguió la media sanción del Presupuesto 2027 en Diputados",
-     "url": "https://www.clarin.com/politica/javier-milei-consiguio-media-sancion-presupuesto-2027-diputados_0_Bc7eOsDA84.html",
-     "medio": "Clarín",
-     "fecha": "2026-11-27T06:23:19+00:00"
+     "titulo": "Murió Jorge Born a los 92 años: lideró Bunge y Born y fue secuestrado por Montoneros en 1974",
+     "url": "https://www.rionegro.com.ar/economia/jorge-born-murio-a-los-92-anos-el-empresario-de-bunge-y-born-4816835/",
+     "medio": "Río Negro",
+     "fecha": "2026-11-27T18:07:32+00:00"
     },
     {
-     "titulo": "El Gobierno le dio media sanción al Presupuesto 2027 en Diputados, pero la oposición consiguió fondos para universidades",
-     "url": "https://www.ambito.com/politica/el-gobierno-busca-revancha-diputados-e-intentara-aprobar-el-presupuesto-2027-nuevos-cambios-n6349417",
-     "medio": "Ámbito",
-     "fecha": "2026-11-27T06:12:00+00:00"
+     "titulo": "Murió el empresario Jorge Born a los 92 años",
+     "url": "https://noticiasargentinas.com/politica/murio-el-empresario-jorge-born-a-los-92-anos_a6b09bba2a19c06437a4b7f97",
+     "medio": "Noticias Argentinas",
+     "fecha": "2026-11-27T17:26:48+00:00"
+    },
+    {
+     "titulo": "Murió el empresario Jorge Born",
+     "url": "https://www.pagina12.com.ar/2026/11/27/murio-el-empresario-jorge-born/",
+     "medio": "Página/12",
+     "fecha": "2026-11-27T16:34:02+00:00"
     }
    ]
   }
