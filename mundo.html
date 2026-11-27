@@ -6,6 +6,7 @@
 <title>Mundo · Central de noticias</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Manrope:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
 <style>
   :root { --tinta:#e8eaed; --gris:#9aa0a6; --linea:#2c3038; --fondo:#0f1115; --panel:#16191f; --azul:#1d4ea8; --verde:#1f9d55; --rojo:#d93025; }
   * { box-sizing:border-box; }
@@ -101,15 +102,24 @@
 <div class="toast" id="toast"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0.22/leaflet-maplibre-gl.js"></script>
 <script>
 (function () {
   var esc = function (v) { return String(v == null ? '' : v).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
   var toastT; function toast(t) { var e = document.getElementById('toast'); e.textContent = t; e.style.display = 'block'; clearTimeout(toastT); toastT = setTimeout(function () { e.style.display = 'none'; }, 2200); }
   function hace(iso) { var m = Math.round((Date.now() - new Date(iso)) / 60000); if (isNaN(m)) return ''; if (m < 60) return 'hace ' + Math.max(m, 1) + ' min'; var h = Math.round(m / 60); return h < 48 ? 'hace ' + h + ' h' : 'hace ' + Math.round(h / 24) + ' días'; }
 
-  // ── Mapa oscuro (Leaflet + fondo gratuito de CARTO / OpenStreetMap) ──
-  var mapa = L.map('mapa', { worldCopyJump: true, zoomControl: true, minZoom: 2 }).setView([15, -10], 2);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 12, attribution: '© OpenStreetMap · © CARTO' }).addTo(mapa);
+  // ── Mapa oscuro: fondo gratuito y sin clave de OpenFreeMap (datos de OpenStreetMap) ──
+  // Si no carga, queda el mapa estándar de OpenStreetMap, también gratis y sin clave.
+  var mapa = L.map('mapa', { worldCopyJump: true, zoomControl: true, minZoom: 2, maxZoom: 12 }).setView([15, -10], 2);
+  var ATRIB = '<a href="https://openfreemap.org" target="_blank">OpenFreeMap</a> © OpenMapTiles · Datos de © OpenStreetMap';
+  function fondoOSM() { L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 12, attribution: '© OpenStreetMap' }).addTo(mapa); }
+  try {
+    if (!L.maplibreGL || !window.maplibregl) throw 0;
+    var fondo = L.maplibreGL({ style: 'https://tiles.openfreemap.org/styles/dark', attribution: ATRIB }).addTo(mapa);
+    fondo.getMaplibreMap().on('error', function (e) { if (!fondo._fallo && e && e.error && /style/i.test(String(e.error.message || ''))) { fondo._fallo = true; mapa.removeLayer(fondo); fondoOSM(); } });
+  } catch (e) { fondoOSM(); }
   var capas = { notas: L.layerGroup().addTo(mapa), sismos: L.layerGroup().addTo(mapa), desastres: L.layerGroup().addTo(mapa) };
 
   var DATOS = { notas: [], sismos: [], desastres: [] }, HORAS = 24, SECCION = '', PAIS = '';
