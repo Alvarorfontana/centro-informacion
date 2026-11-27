@@ -296,7 +296,7 @@ def desastres():
 # "Argentina en el mundo" y las que van al mapa; reusa lo ya traducido en la vuelta anterior.
 TRADUCIR_MAX = int(os.environ.get("MUNDO_TRADUCIR", "900"))
 TRADUCIR_SEG = float(os.environ.get("MUNDO_TRADUCIR_MINUTOS", "3")) * 60
-LOTE = 120
+LOTE = 30
 
 
 def parece_castellano(n):
@@ -329,7 +329,9 @@ def traducir(notas):
         sys.path.insert(0, str(RAIZ / "scripts"))
         from ia import IA
         conf = json.loads((RAIZ / "agentes" / "config.json").read_text(encoding="utf-8")).get("ia", {})
-        conf = dict(conf, pausa_segundos=2, espera_maxima_segundos=60)
+        # Lotes chicos y modelos livianos de Groq para no pasar el límite por minuto del plan gratis.
+        conf = dict(conf, pausa_segundos=7, espera_maxima_segundos=60,
+                    groq_modelos=["openai/gpt-oss-20b", "llama-3.1-8b-instant", "openai/gpt-oss-120b"])
         ia = IA(conf)
     except Exception as e:
         print("Traducción: sin IA disponible", e)
