@@ -8,13 +8,13 @@
 <style>
   :root { --tinta:#151515; --gris:#6b6b6b; --linea:#DEDAD2; --fondo:#F6F4EF; }
   * { box-sizing:border-box; }
-  html, body { height:100%; }
+  html, body { height:100%; } body { min-height:100dvh; }
   body { margin:0; background:var(--fondo); color:var(--tinta); font-family:Manrope, system-ui, sans-serif; display:flex; flex-direction:column; }
   header { padding:12px 20px; border-bottom:1px solid var(--linea); background:#FBFAF7; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
   header .marca-nav a { font-size:12px; }
   .barra { display:flex; align-items:center; gap:10px; padding:8px 20px; font-size:13px; color:var(--gris); background:#fff; border-bottom:1px solid var(--linea); flex-wrap:wrap; }
   .barra a.btn { margin-left:auto; background:#1d4ea8; color:#fff; text-decoration:none; padding:6px 12px; border-radius:8px; font-weight:600; }
-  .marco { flex:1; position:relative; min-height:70vh; }
+  .marco { flex:1 1 auto; position:relative; min-height:calc(100dvh - 120px); }
   iframe { position:absolute; inset:0; width:100%; height:100%; border:0; background:#0b0f14; }
 </style>
 <link rel="stylesheet" href="marca.css">
@@ -26,7 +26,7 @@
   <a class="btn" href="https://www.worldmonitor.app/dashboard?zoom=1.00&view=global&timeRange=7d&layers=iranAttacks%2Chotspots%2Cconflicts%2Cbases%2Cnuclear%2Cmilitary%2Cweather%2CcanadaAlerts%2Coutages%2Cnatural%2Cwaterways%2Ceconomic%2Csanctions" target="_blank" rel="noopener">Abrir tablero completo ↗</a>
 </div>
 <div class="marco">
-  <iframe src="https://www.worldmonitor.app/embed?layers=conflicts,protests,earthquakes,weather&amp;center=10,0&amp;zoom=1&amp;theme=dark&amp;variant=full" title="World Monitor" loading="lazy" allow="fullscreen; clipboard-write" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe src="https://www.worldmonitor.app/embed?layers=conflicts,protests,earthquakes,weather&amp;center=0,-20&amp;zoom=2&amp;theme=dark&amp;variant=full" title="World Monitor" loading="lazy" allow="fullscreen; clipboard-write" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 </body>
 </html>
