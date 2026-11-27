@@ -351,7 +351,7 @@ def traducir(notas):
                         n["titulo_es"] = tr.strip()[:240]
                         hechas += 1
         except Exception as e:
-            print("Traducción: falló un lote", str(e)[:160])
+            print("Traducción: falló un lote", str(e)[:900])
     print(f"Traducción: {hechas} títulos nuevos ({ia.usado or 'sin IA'}); {len(anterior)} ya estaban traducidos.")
     return hechas
 
