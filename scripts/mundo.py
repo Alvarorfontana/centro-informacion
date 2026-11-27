@@ -296,7 +296,7 @@ def desastres():
 # "Argentina en el mundo" y las que van al mapa; reusa lo ya traducido en la vuelta anterior.
 TRADUCIR_MAX = int(os.environ.get("MUNDO_TRADUCIR", "900"))
 TRADUCIR_SEG = float(os.environ.get("MUNDO_TRADUCIR_MINUTOS", "3")) * 60
-LOTE = 30
+LOTE = 40
 
 
 def parece_castellano(n):
@@ -333,6 +333,9 @@ def traducir(notas):
         conf = dict(conf, pausa_segundos=7, espera_maxima_segundos=60,
                     groq_modelos=["openai/gpt-oss-20b", "llama-3.1-8b-instant", "openai/gpt-oss-120b"])
         ia = IA(conf)
+        # Groq gratis se queda sin cupo por minuto con tantos títulos (y lo comparten los agentes de
+        # redacción): para traducir se usa Gemini si hay clave y, si no, Pollinations sin clave.
+        ia.groq = ""
     except Exception as e:
         print("Traducción: sin IA disponible", e)
         return 0
