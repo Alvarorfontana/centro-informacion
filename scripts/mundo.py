@@ -222,6 +222,8 @@ def leer_fuente(f, desde):
             continue
         n = {"titulo": titulo[:220], "enlace": enlace, "medio": f["nombre"], "seccion": f["seccion"],
              "fecha": (fecha or datetime.now(timezone.utc)).isoformat(timespec="minutes")}
+        if f.get("idioma"):
+            n["idioma"] = f["idioma"]
         if arg:
             n["argentina"] = True
         else:
@@ -289,6 +291,71 @@ def desastres():
     return out
 
 
+# Traducción al castellano de los títulos, con la IA gratuita que ya usa la Central (scripts/ia.py:
+# Gemini, Groq u OpenRouter si hay clave; si no, Pollinations sin clave). Primero las notas de
+# "Argentina en el mundo" y las que van al mapa; reusa lo ya traducido en la vuelta anterior.
+TRADUCIR_MAX = int(os.environ.get("MUNDO_TRADUCIR", "900"))
+TRADUCIR_SEG = float(os.environ.get("MUNDO_TRADUCIR_MINUTOS", "3")) * 60
+LOTE = 120
+
+
+def parece_castellano(n):
+    if n.get("idioma") == "es":
+        return True
+    if n.get("idioma"):
+        return False
+    t = plano(n["titulo"])
+    return len(re.findall(r" (el|la|los|las|del|que|con|para|por|una|en) ", t)) >= 2
+
+
+def traducir(notas):
+    try:
+        anterior = {x["enlace"]: x["titulo_es"] for x in json.loads((DATOS / "mundo.json").read_text(encoding="utf-8")).get("notas", []) if x.get("titulo_es")}
+    except Exception:
+        anterior = {}
+    pendientes = []
+    for n in notas:
+        if parece_castellano(n):
+            continue
+        if n["enlace"] in anterior:
+            n["titulo_es"] = anterior[n["enlace"]]
+        else:
+            pendientes.append(n)
+    pendientes.sort(key=lambda n: (not n.get("argentina"), "lat" not in n))
+    pendientes = pendientes[:TRADUCIR_MAX]
+    if not pendientes:
+        return 0
+    try:
+        sys.path.insert(0, str(RAIZ / "scripts"))
+        from ia import IA
+        conf = json.loads((RAIZ / "agentes" / "config.json").read_text(encoding="utf-8")).get("ia", {})
+        conf = dict(conf, pausa_segundos=2, espera_maxima_segundos=60)
+        ia = IA(conf)
+    except Exception as e:
+        print("Traducción: sin IA disponible", e)
+        return 0
+    hechas, inicio = 0, time.time()
+    for i in range(0, len(pendientes), LOTE):
+        if time.time() - inicio > TRADUCIR_SEG:
+            break
+        lote = pendientes[i:i + LOTE]
+        pedido = ("Traducí al castellano rioplatense neutro, estilo título periodístico, estos titulares de noticias. "
+                  "No agregues ni quites información. Devolvé SOLO un JSON con la forma {\"t\": [\"título 1\", \"título 2\", ...]} "
+                  "con la misma cantidad y el mismo orden.\n\n" + json.dumps([n["titulo"] for n in lote], ensure_ascii=False))
+        try:
+            r = ia.json(pedido)
+            t = r.get("t") if isinstance(r, dict) else r
+            if isinstance(t, list) and len(t) == len(lote):
+                for n, tr in zip(lote, t):
+                    if isinstance(tr, str) and tr.strip():
+                        n["titulo_es"] = tr.strip()[:240]
+                        hechas += 1
+        except Exception as e:
+            print("Traducción: falló un lote", str(e)[:160])
+    print(f"Traducción: {hechas} títulos nuevos ({ia.usado or 'sin IA'}); {len(anterior)} ya estaban traducidos.")
+    return hechas
+
+
 # Alertas por Telegram: sismos fuertes y desastres en Sudamérica (con el bot que ya usa la Central).
 REGION = {"lat": (-60, 13), "lon": (-92, -30)}
 PAISES_REGION = ["argentina", "chile", "uruguay", "paraguay", "bolivia", "brazil", "brasil", "peru", "ecuador", "colombia", "venezuela"]
@@ -320,7 +387,7 @@ def alertas(salida):
             continue
         if d.get("tipo") == "Sismo":  # los sismos ya salen por el USGS
             continue
-        if d.get("nivel") == "verde" and d.get("tipo") not in ("Volcán", "Inundación", "Incendio forestal"):
+        if d.get("nivel") not in ("naranja", "rojo"):
             continue
         clave = d.get("enlace") or f"{d.get('tipo')}{d.get('nombre')}"
         if clave not in enviados:
@@ -369,6 +436,7 @@ def main():
     arg = [n for n in unicas if n.get("argentina")]
     resto = [n for n in unicas if not n.get("argentina")][:max(TOPE_NOTAS - len(arg), 0)]
     unicas = sorted(arg + resto, key=lambda n: n["fecha"], reverse=True)
+    traducir(unicas)
     salida = {
         "actualizado": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "periodo_horas": HORAS,

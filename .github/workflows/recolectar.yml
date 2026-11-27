@@ -52,12 +52,14 @@ jobs:
         run: python scripts/primicias.py
       - name: Mundo (fuentes de World Monitor, sismos y desastres)
         continue-on-error: true
-        timeout-minutes: 7
+        timeout-minutes: 10
         env:
           PYTHONUNBUFFERED: '1'
           MUNDO_MINUTOS: '5'
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python scripts/mundo.py
       - name: Guardar
         if: always()

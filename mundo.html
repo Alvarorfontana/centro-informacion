@@ -86,6 +86,7 @@
   <section class="panel">
     <h3>Noticias en vivo <span class="vivo">● TV</span></h3>
     <div class="pestanas" id="canales"></div>
+    <div style="padding:6px 10px;font-size:11px;color:var(--gris)">Subtítulos en castellano: tocá ⚙ en el video → Subtítulos → Traducir automáticamente → Español.</div>
     <div class="video"><iframe id="tv" title="Canal de noticias en vivo" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
   </section>
   <section class="panel">
@@ -112,6 +113,9 @@
 (function () {
   var esc = function (v) { return String(v == null ? '' : v).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
   var toastT; function toast(t) { var e = document.getElementById('toast'); e.textContent = t; e.style.display = 'block'; clearTimeout(toastT); toastT = setTimeout(function () { e.style.display = 'none'; }, 2200); }
+  // Título en castellano si está traducido; el original queda al pasar el dedo o el mouse.
+  function tit(n) { return n.titulo_es ? '<span title="Original: ' + esc(n.titulo) + '">' + esc(n.titulo_es) + '</span>' : esc(n.titulo); }
+  function orig(n) { return n.titulo_es ? ' · <span title="' + esc(n.titulo) + '">traducido</span>' : ''; }
   function hace(iso) { var m = Math.round((Date.now() - new Date(iso)) / 60000); if (isNaN(m)) return ''; if (m < 60) return 'hace ' + Math.max(m, 1) + ' min'; var h = Math.round(m / 60); return h < 48 ? 'hace ' + h + ' h' : 'hace ' + Math.round(h / 24) + ' días'; }
 
   // ── Mapa oscuro: fondo gratuito y sin clave de OpenFreeMap (datos de OpenStreetMap) ──
@@ -139,7 +143,7 @@
     Object.keys(porPais).forEach(function (p) {
       var g = porPais[p], r = Math.min(6 + Math.sqrt(g.notas.length) * 3, 30);
       var html = '<div class="pop"><h4>' + esc(p) + ' · ' + g.notas.length + ' notas</h4>' + g.notas.slice(0, 12).map(function (n) {
-        return '<a href="' + esc(n.enlace) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '<br><small>' + esc(n.medio) + ' · ' + hace(n.fecha) + '</small></a>';
+        return '<a href="' + esc(n.enlace) + '" target="_blank" rel="noopener">' + tit(n) + '<br><small>' + esc(n.medio) + ' · ' + hace(n.fecha) + '</small></a>';
       }).join('') + '<a href="#" data-pais="' + esc(p) + '">Ver todas en la lista ↓</a></div>';
       L.circleMarker([g.lat, g.lon], { radius: r, color: '#f9a825', weight: 1, fillColor: '#f9a825', fillOpacity: .45 }).bindPopup(html).addTo(capas.notas);
     });
@@ -165,7 +169,7 @@
       if (!db || !Array.isArray(db.notes)) db = { notes: [], assets: (db && Array.isArray(db.assets)) ? db.assets : [] };
       var sid = 'url:' + n.enlace; if (db.notes.some(function (x) { return x.sourceId === sid; })) return;
       var ahora = new Date().toISOString();
-      db.notes.unshift({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 8), sourceId: sid, title: n.titulo, summary: '',
+      db.notes.unshift({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 8), sourceId: sid, title: n.titulo_es || n.titulo, summary: n.titulo_es ? 'Título original: ' + n.titulo : '',
         body: '<p>Fuente: <a href="' + esc(n.enlace) + '" target="_blank" rel="noopener">' + esc(n.medio) + '</a></p>', section: 'Internacional', author: 'Redacción',
         status: 'En edición', assignee: '', due: '', image: '', caption: '', volanta: '', tags: [n.seccion, n.pais].filter(Boolean),
         sources: [{ medio: n.medio, url: n.enlace, titulo: n.titulo, pais: n.pais || '', fecha: n.fecha }], photos: [], verification: null, agentMeta: {}, altTitles: [], versions: [],
@@ -179,7 +183,7 @@
     document.getElementById('c-notas').textContent = '● ' + VISIBLES.length + (PAIS ? ' · ' + PAIS + ' (tocá para quitar)' : '');
     document.getElementById('lista').innerHTML = VISIBLES.length ? VISIBLES.slice(0, 300).map(function (n, i) {
       var en = enMesa(n.enlace);
-      return '<div class="nota"><div><a href="' + esc(n.enlace) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '</a><div class="meta">' + esc(n.medio) + ' · ' + esc(n.seccion) + (n.pais ? ' · ' + esc(n.pais) : '') + ' · ' + hace(n.fecha) + '</div></div>' +
+      return '<div class="nota"><div><a href="' + esc(n.enlace) + '" target="_blank" rel="noopener">' + tit(n) + '</a><div class="meta">' + esc(n.medio) + orig(n) + ' · ' + esc(n.seccion) + (n.pais ? ' · ' + esc(n.pais) : '') + ' · ' + hace(n.fecha) + '</div></div>' +
         '<button class="a-mesa' + (en ? ' en' : '') + '" data-i="' + i + '">' + (en ? '✓ En la mesa' : '+ A la mesa') + '</button></div>';
     }).join('') : '<div class="vacio">No hay noticias para este filtro. Probá con un período más largo.</div>';
     listaArg();
@@ -190,13 +194,13 @@
     document.getElementById('c-arg').textContent = '● ' + ARG.length + ' notas de medios extranjeros';
     document.getElementById('lista-arg').innerHTML = ARG.length ? ARG.map(function (n, i) {
       var en = enMesa(n.enlace);
-      return '<div class="nota"><div><a href="' + esc(n.enlace) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '</a><div class="meta">' + esc(n.medio) + ' · ' + esc(n.seccion) + ' · ' + hace(n.fecha) + '</div></div>' +
+      return '<div class="nota"><div><a href="' + esc(n.enlace) + '" target="_blank" rel="noopener">' + tit(n) + '</a><div class="meta">' + esc(n.medio) + orig(n) + ' · ' + esc(n.seccion) + ' · ' + hace(n.fecha) + '</div></div>' +
         '<button class="a-mesa' + (en ? ' en' : '') + '" data-a="' + i + '">' + (en ? '✓ En la mesa' : '+ A la mesa') + '</button></div>';
     }).join('') : '<div class="vacio">En este período ningún medio extranjero habló de la Argentina. Probá con 48h o Todo.</div>';
   }
   function alternarMesa(n) {
     if (enMesa(n.enlace)) mesa = mesa.filter(function (m) { return m.url !== n.enlace; });
-    else { mesa.push({ titulo: n.titulo, resumen: '', url: n.enlace, medio: n.medio, pais: n.pais || '', fecha: n.fecha, zona: 'mundo', tema: n.seccion }); aRedaccion(n); toast('Sumada a la mesa (' + mesa.length + ')'); }
+    else { mesa.push({ titulo: n.titulo_es || n.titulo, resumen: n.titulo_es ? 'Título original: ' + n.titulo : '', url: n.enlace, medio: n.medio, pais: n.pais || '', fecha: n.fecha, zona: 'mundo', tema: n.seccion }); aRedaccion(n); toast('Sumada a la mesa (' + mesa.length + ')'); }
     try { localStorage.setItem('centro-mesa', JSON.stringify(mesa)); } catch (e) {}
     lista();
   }
@@ -256,7 +260,7 @@
     { n: 'France 24 Español', u: 'https://www.youtube.com/embed/live_stream?channel=UCUdOoVWuWmgo1wByzcsyKDQ' },
     { n: 'DW Español', u: 'https://www.youtube.com/embed/live_stream?channel=UCT4Jg8h03dD0iN3Pb5L0PMA' },
     { n: 'Bloomberg', u: 'https://www.youtube.com/embed/QB5BNdBFujE' },
-    { n: 'Sky News', u: 'https://www.youtube.com/embed/xDWQ3LkccY8' },
+    { n: 'Sky News', u: 'https://www.youtube.com/embed/live_stream?channel=UCoMdktPbSTixAyNGwb-UYkQ' },
     { n: 'Euronews', u: 'https://www.youtube.com/embed/pykpO5kQJ98' },
     { n: 'DW', u: 'https://www.youtube.com/embed/LuKwFajn37U' },
     { n: 'CNN', u: 'https://www.youtube.com/embed/GotlA1KKWoo' },
@@ -266,7 +270,7 @@
   ];
   var tv = document.getElementById('tv'), can = document.getElementById('canales');
   function ponerCanal(i) {
-    tv.src = CANALES[i].u + (CANALES[i].u.indexOf('?') > -1 ? '&' : '?') + 'autoplay=1&mute=1';
+    tv.src = CANALES[i].u + (CANALES[i].u.indexOf('?') > -1 ? '&' : '?') + 'autoplay=1&mute=1&hl=es&cc_load_policy=1&cc_lang_pref=es';
     can.querySelectorAll('button').forEach(function (b, j) { b.classList.toggle('on', j === i); });
     try { localStorage.setItem('mundo-canal', i); } catch (e) {}
   }
