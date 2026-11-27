@@ -1,39 +1,71 @@
 {
- "generado": "2026-11-26T20:10:53+00:00",
+ "generado": "2026-11-27T02:26:54+00:00",
  "ventana_horas": 24,
  "primicias": [
   {
-   "titulo": "Caso Loan : este jueves declara el exabogado de Laudelina tras las graves acusaciones por la hipótesis del accidente",
-   "region": "norte-grande",
+   "titulo": "Massa propuso incorporar la Inteligencia Artificial a una agenda de desarrollo productivo y empleo",
+   "region": "buenos-aires",
    "tema": "General",
    "ejes": [
-    "mercosur"
+    "industria",
+    "pj",
+    "politica"
    ],
-   "primer_medio": "cronica.com.ar",
-   "primera_hora": "2026-11-26T05:45+00:00",
+   "primer_medio": "Zona Norte Diario",
+   "primera_hora": "2026-11-26T19:26+00:00",
    "medios_regionales": [
-    "cronica.com.ar",
-    "El Litoral (Corrientes)",
-    "Diario Norte (Chaco)"
+    "Zona Norte Diario",
+    "InfoBAN (zona norte)"
    ],
    "notas": [
     {
-     "titulo": "Caso Loan : este jueves declara el exabogado de Laudelina tras las graves acusaciones por la hipótesis del accidente",
-     "url": "https://www.cronica.com.ar/policiales/caso-loan-este-jueves-declara-el-exabogado-de-laudelina-tras-las-graves-acusaciones-por-la-hipotesis-del-accidente/",
-     "medio": "cronica.com.ar",
-     "fecha": "2026-11-26T05:45:00+00:00"
+     "titulo": "Massa propuso incorporar la Inteligencia Artificial a una agenda de desarrollo productivo y empleo",
+     "url": "https://www.zonanortediario.com.ar/26/11/2026/massa-propuso-incorporar-la-inteligencia-artificial-a-una-agenda-de-desarrollo-productivo-y-empleo/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-26T19:26:42+00:00"
     },
     {
-     "titulo": "Fernández Codazzi declaró en el juicio por Loan: \"Laudelina me dijo que fue un accidente\"",
-     "url": "https://www.ellitoral.com.ar/policiales/2026-11-26-9-12-0-jose-fernandez-codazzi-declara-bajo-juramento-en-el-juicio-por-loan",
-     "medio": "El Litoral (Corrientes)",
-     "fecha": "2026-11-26T12:12:00+00:00"
+     "titulo": "Sergio Massa planteó en Córdoba una agenda de IA al servicio de la producción, el empleo y el desarrollo",
+     "url": "https://www.infoban.com.ar/26/11/2026/sergio-massa-planteo-en-cordoba-una-agenda-de-ia-al-servicio-de-la-produccion-el-empleo-y-el-desarrollo/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-26T19:33:47+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Escobar suspendió por 60 días las obras del centro de almacenamiento de energía de Genneia en Maschwitz",
+   "region": "buenos-aires",
+   "tema": "Energía",
+   "ejes": [
+    "energia",
+    "local",
+    "politica"
+   ],
+   "primer_medio": "Zona Norte Diario",
+   "primera_hora": "2026-11-26T19:15+00:00",
+   "medios_regionales": [
+    "Zona Norte Diario",
+    "InfoBAN (zona norte)"
+   ],
+   "notas": [
+    {
+     "titulo": "Escobar suspendió por 60 días las obras del centro de almacenamiento de energía de Genneia en Maschwitz",
+     "url": "https://www.zonanortediario.com.ar/26/11/2026/escobar-suspendio-por-60-dias-las-obras-del-centro-de-almacenamiento-de-energia-de-genneia-en-maschwitz/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-26T19:15:15+00:00"
     },
     {
-     "titulo": "Caso Loan: declara el exabogado de Laudelina tras las graves acusaciones por la hipótesis del accidente",
-     "url": "https://www.diarionorte.com/337315-caso-loan-declara-el-exabogado-de-laudelina-tras-las-graves-acusaciones-por-la-hipotesis-del-accidente",
-     "medio": "Diario Norte (Chaco)",
-     "fecha": "2026-11-26T13:13:21+00:00"
+     "titulo": "Genneia se pronunció tras la suspensión de las obras del centro de almacenamiento de energía en Maschwitz",
+     "url": "https://www.zonanortediario.com.ar/26/11/2026/genneia-se-pronuncio-tras-la-suspension-de-las-obras-del-centro-de-almacenamiento-de-energia-en-maschwitz/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-26T21:05:44+00:00"
+    },
+    {
+     "titulo": "Sujarchuk suspendió por 60 días las obras del centro de almacenamiento de energía en Ingeniero Maschwitz",
+     "url": "https://www.infoban.com.ar/26/11/2026/sujarchuk-suspendio-por-60-dias-las-obras-del-centro-de-almacenamiento-de-energia-en-ingeniero-maschwitz/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-26T22:15:10+00:00"
     }
    ],
    "avisado": false
@@ -71,63 +103,109 @@
    "avisado": false
   },
   {
-   "titulo": "Tragedia en Uruguay: una entrerriana murió ahogada en playa Chihuahua",
-   "region": "centro",
-   "tema": "General",
-   "ejes": [
-    "latinoamerica"
-   ],
-   "primer_medio": "Uno Entre Ríos",
-   "primera_hora": "2026-11-25T21:44+00:00",
+   "titulo": "Formosa fortalece la atención integral en la décima Jornada Provincial de Salud Mental",
+   "region": "norte-grande",
+   "tema": "Sociedad",
+   "ejes": [],
+   "primer_medio": "Diario Norte (Chaco)",
+   "primera_hora": "2026-11-26T21:42+00:00",
    "medios_regionales": [
-    "Uno Entre Ríos",
-    "La Gaceta (Tucumán)"
+    "Diario Norte (Chaco)",
+    "Formosa (prensa local)"
    ],
    "notas": [
     {
-     "titulo": "Tragedia en Uruguay: una entrerriana murió ahogada en playa Chihuahua",
-     "url": "https://www.unoentrerios.com.ar/policiales/tragedia-uruguay-una-entrerriana-murio-ahogada-playa-chihuahua-n10294220.html",
-     "medio": "Uno Entre Ríos",
-     "fecha": "2026-11-25T21:44:00+00:00"
+     "titulo": "Formosa fortalece la atención integral en la décima Jornada Provincial de Salud Mental",
+     "url": "https://www.diarionorte.com/337343-formosa-fortalece-la-atencion-integral-en-la-decima-jornada-provincial-de-salud-mental",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-26T21:42:25+00:00"
     },
     {
-     "titulo": "Una turista argentina de 36 años murió ahogada en una playa nudista: cómo ocurrió la tragedia",
-     "url": "https://www.lagaceta.com.ar/nota/1164360/seguridad/turista-argentina-36-anos-murio-ahogada-playa-nudista-como-ocurrio-tragedia.html",
-     "medio": "La Gaceta (Tucumán)",
-     "fecha": "2026-11-26T14:17:00+00:00"
-    },
-    {
-     "titulo": "Quién era Graciela Mayer, la turista argentina que murió ahogada en una playa de Punta del Este",
-     "url": "https://www.lagaceta.com.ar/nota/1164393/sociedad/quien-era-graciela-mayer-turista-argentina-murio-ahogada-playa-punta-este.html",
-     "medio": "La Gaceta (Tucumán)",
-     "fecha": "2026-11-26T15:34:00+00:00"
+     "titulo": "Formosa fortalece la atención integral en la décima Jornada Provincial de Salud Mental",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVjY4X2dwUVlCYzJZQm1NMmhPSEoxWUNKQmwyZ1o2cEZPaTNMWGpaR1FjYlJkTmYwblpMRDQyblRxelAwVmg0bjNpLTNzMzVJcEdKSVVfMV8wWEJ6cm5RUzNwV2E3QlNreHhNOFNSVHpRaURtS0F3Qkd6dlVSTmYtdV9DWVVPdXZaVUhJbnBqd3JGdzdNdjhhbEF3ODE3eUNsdEcxcXpBUGNaSURJR2d5eDBFT3FxNjR3NGljbWlR?oc=5",
+     "medio": "Formosa (prensa local)",
+     "fecha": "2026-11-26T21:43:51+00:00"
     }
    ],
    "avisado": false
   },
   {
-   "titulo": "Uno de los hijos de Nanci Godoy fue condenado a 14 años de prisión por abuso de menores",
+   "titulo": "Confirman 14 años de prisión para uno de los hijos de Nanci Godoy por abuso sexual",
    "region": "norte-grande",
    "tema": "General",
    "ejes": [],
-   "primer_medio": "El Litoral (Corrientes)",
-   "primera_hora": "2026-11-26T14:02+00:00",
+   "primer_medio": "Diario Norte (Chaco)",
+   "primera_hora": "2026-11-26T17:41+00:00",
    "medios_regionales": [
-    "El Litoral (Corrientes)",
-    "Diario Norte (Chaco)"
+    "Diario Norte (Chaco)",
+    "El Litoral (Corrientes)"
    ],
    "notas": [
-    {
-     "titulo": "Uno de los hijos de Nanci Godoy fue condenado a 14 años de prisión por abuso de menores",
-     "url": "https://www.ellitoral.com.ar/policiales/2026-11-26-11-2-0-uno-de-los-hijos-de-nanci-godoy-fue-condenado-a-14-anos-de-prision-por-abuso-de-menores",
-     "medio": "El Litoral (Corrientes)",
-     "fecha": "2026-11-26T14:02:00+00:00"
-    },
     {
      "titulo": "Confirman 14 años de prisión para uno de los hijos de Nanci Godoy por abuso sexual",
      "url": "https://www.diarionorte.com/337337-confirman-14-anos-de-prision-para-uno-de-los-hijos-de-nanci-godoy-por-abuso-sexual",
      "medio": "Diario Norte (Chaco)",
      "fecha": "2026-11-26T17:41:39+00:00"
+    },
+    {
+     "titulo": "Confirmaron la condena contra un exentrenador de Boca por abuso sexual",
+     "url": "https://www.ellitoral.com.ar/nacional/2026-11-26-21-1-0-confirmaron-la-condena-contra-un-exentrenador-de-boca-por-abuso-sexual",
+     "medio": "El Litoral (Corrientes)",
+     "fecha": "2026-11-27T00:01:00+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Formosa se prepara para vivir la Ruta del Café, una propuesta que fortalece el comercio local y la identidad formoseña",
+   "region": "norte-grande",
+   "tema": "General",
+   "ejes": [],
+   "primer_medio": "Formosa (prensa local)",
+   "primera_hora": "2026-11-26T13:35+00:00",
+   "medios_regionales": [
+    "Formosa (prensa local)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "Formosa se prepara para vivir la Ruta del Café, una propuesta que fortalece el comercio local y la identidad formoseña",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOckZsMjZteFltUGxnblBxQXpmbkM4TVJqNHJrTE1WdnFKRlVRY1VWRmQxbnJULWQ1VG15OUlzeDNzRVVVQjRWTU11eHVCUXk5dXF3RVo5ajVyUmZHWEhXN3R2cEpLVUltMVR4ZEF2UUV4TzhLZVNyYVBTWDBISHA2OXJiZGRKWUdvTHlZN3l6WWF5ZllIQnZIdUd0TTlfc3RQMFplTjJvUkJJekhkaTVTaVFETU96QzNtSGdrNWphcUJtX1RDMkpRNWRJNEc0MzBldHZaUTRFVHFGOFpQVThTVHpjRQ?oc=5",
+     "medio": "Formosa (prensa local)",
+     "fecha": "2026-11-26T13:35:21+00:00"
+    },
+    {
+     "titulo": "Formosa se prepara para la Ruta del Café, una apuesta al comercio y la identidad local",
+     "url": "https://www.diarionorte.com/337342-formosa-se-prepara-para-la-ruta-del-cafe-una-apuesta-al-comercio-y-la-identidad-local",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-26T21:42:26+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "La Red de Infarto de Misiones oficialmente nominada a los Martín Fierro de Salud",
+   "region": "norte-grande",
+   "tema": "Sociedad",
+   "ejes": [],
+   "primer_medio": "El Territorio (Misiones)",
+   "primera_hora": "2026-11-26T12:43+00:00",
+   "medios_regionales": [
+    "El Territorio (Misiones)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "La Red de Infarto de Misiones oficialmente nominada a los Martín Fierro de Salud",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQaUZuQ2xYMUkybWpNazlKZkpDaVVFRHZiZzY0anBwc2JSbDh4VXJFVG9HVDNaNUtJV2N5TDZ4Y3hZSHJnMGFHbFJpbE54d3lydXlCMk5uYzBOeDhvd1lGVGRTdjl3akZTQk40emozMkU3Nk9MT01zUWJ1N2wzNnpSRHpMV19yMjRkbTFDdDF5QVhQdGdWaVBvOUdqNXZZOWtub2p1bV9ua0NNOVB2Q0lILWJxR3NDV0xvTUl3TEh2QldDa09mRnRxa0xRSWp6RThES1pqTzRR0gHbAUFVX3lxTE15QTJBdWE3eFdtaEpteVgtWkdUWVlCdHdSbWdPMzlueVFhcFpxLWtrMXJwMEEzM05wY1FpQm5wa2JfS05fNlpBemJBTTRRdG5yNDdnaUJQN2FHSGJWMVJKSUctQmxIOTRVZFRiQ1BqY2hJenBYYlo0LVVCR3RITmxrUFUzVlZvRGZYcmp3Um1aaEZfaTdkTWc3eGU4bmRfN2pWWXpHbVdkTVU1akpPREpmSldqWU9MVWRjeDFHVm85RXFFajNXNDRxQTBuZEYwd3RfZHQ4akxBdTNCQQ?oc=5",
+     "medio": "El Territorio (Misiones)",
+     "fecha": "2026-11-26T12:43:42+00:00"
+    },
+    {
+     "titulo": "Cuenta regresiva para la entrega de los Martín Fierro de la Salud",
+     "url": "https://www.diarionorte.com/337352-cuenta-regresiva-para-la-entrega-de-los-martin-fierro-de-la-salud",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-27T00:14:08+00:00"
     }
    ],
    "avisado": false
@@ -152,6 +230,101 @@
  ],
  "seguimiento": [
   {
+   "titulo": "Formosa fortalece la atención integral en la décima Jornada Provincial de Salud Mental",
+   "region": "norte-grande",
+   "tema": "Sociedad",
+   "ejes": [],
+   "primer_medio": "Diario Norte (Chaco)",
+   "primera_hora": "2026-11-26T21:42+00:00",
+   "medios_regionales": [
+    "Diario Norte (Chaco)",
+    "Formosa (prensa local)"
+   ],
+   "notas": [
+    {
+     "titulo": "Formosa fortalece la atención integral en la décima Jornada Provincial de Salud Mental",
+     "url": "https://www.diarionorte.com/337343-formosa-fortalece-la-atencion-integral-en-la-decima-jornada-provincial-de-salud-mental",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-26T21:42:25+00:00"
+    },
+    {
+     "titulo": "Formosa fortalece la atención integral en la décima Jornada Provincial de Salud Mental",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVjY4X2dwUVlCYzJZQm1NMmhPSEoxWUNKQmwyZ1o2cEZPaTNMWGpaR1FjYlJkTmYwblpMRDQyblRxelAwVmg0bjNpLTNzMzVJcEdKSVVfMV8wWEJ6cm5RUzNwV2E3QlNreHhNOFNSVHpRaURtS0F3Qkd6dlVSTmYtdV9DWVVPdXZaVUhJbnBqd3JGdzdNdjhhbEF3ODE3eUNsdEcxcXpBUGNaSURJR2d5eDBFT3FxNjR3NGljbWlR?oc=5",
+     "medio": "Formosa (prensa local)",
+     "fecha": "2026-11-26T21:43:51+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Massa propuso incorporar la Inteligencia Artificial a una agenda de desarrollo productivo y empleo",
+   "region": "buenos-aires",
+   "tema": "General",
+   "ejes": [
+    "industria",
+    "pj",
+    "politica"
+   ],
+   "primer_medio": "Zona Norte Diario",
+   "primera_hora": "2026-11-26T19:26+00:00",
+   "medios_regionales": [
+    "Zona Norte Diario",
+    "InfoBAN (zona norte)"
+   ],
+   "notas": [
+    {
+     "titulo": "Massa propuso incorporar la Inteligencia Artificial a una agenda de desarrollo productivo y empleo",
+     "url": "https://www.zonanortediario.com.ar/26/11/2026/massa-propuso-incorporar-la-inteligencia-artificial-a-una-agenda-de-desarrollo-productivo-y-empleo/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-26T19:26:42+00:00"
+    },
+    {
+     "titulo": "Sergio Massa planteó en Córdoba una agenda de IA al servicio de la producción, el empleo y el desarrollo",
+     "url": "https://www.infoban.com.ar/26/11/2026/sergio-massa-planteo-en-cordoba-una-agenda-de-ia-al-servicio-de-la-produccion-el-empleo-y-el-desarrollo/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-26T19:33:47+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Escobar suspendió por 60 días las obras del centro de almacenamiento de energía de Genneia en Maschwitz",
+   "region": "buenos-aires",
+   "tema": "Energía",
+   "ejes": [
+    "energia",
+    "local",
+    "politica"
+   ],
+   "primer_medio": "Zona Norte Diario",
+   "primera_hora": "2026-11-26T19:15+00:00",
+   "medios_regionales": [
+    "Zona Norte Diario",
+    "InfoBAN (zona norte)"
+   ],
+   "notas": [
+    {
+     "titulo": "Escobar suspendió por 60 días las obras del centro de almacenamiento de energía de Genneia en Maschwitz",
+     "url": "https://www.zonanortediario.com.ar/26/11/2026/escobar-suspendio-por-60-dias-las-obras-del-centro-de-almacenamiento-de-energia-de-genneia-en-maschwitz/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-26T19:15:15+00:00"
+    },
+    {
+     "titulo": "Genneia se pronunció tras la suspensión de las obras del centro de almacenamiento de energía en Maschwitz",
+     "url": "https://www.zonanortediario.com.ar/26/11/2026/genneia-se-pronuncio-tras-la-suspension-de-las-obras-del-centro-de-almacenamiento-de-energia-en-maschwitz/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-26T21:05:44+00:00"
+    },
+    {
+     "titulo": "Sujarchuk suspendió por 60 días las obras del centro de almacenamiento de energía en Ingeniero Maschwitz",
+     "url": "https://www.infoban.com.ar/26/11/2026/sujarchuk-suspendio-por-60-dias-las-obras-del-centro-de-almacenamiento-de-energia-en-ingeniero-maschwitz/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-26T22:15:10+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
    "titulo": "Fernando Espinoza visitó una fábrica de Morón y cuestionó el impacto de las políticas de Milei en las PyMEs",
    "region": "buenos-aires",
    "tema": "Política",
@@ -191,21 +364,75 @@
    "primer_medio": "El Litoral (Corrientes)",
    "primera_hora": "2026-11-26T14:02+00:00",
    "medios_regionales": [
-    "El Litoral (Corrientes)",
-    "Diario Norte (Chaco)"
+    "Diario Norte (Chaco)",
+    "El Litoral (Corrientes)"
    ],
    "notas": [
-    {
-     "titulo": "Uno de los hijos de Nanci Godoy fue condenado a 14 años de prisión por abuso de menores",
-     "url": "https://www.ellitoral.com.ar/policiales/2026-11-26-11-2-0-uno-de-los-hijos-de-nanci-godoy-fue-condenado-a-14-anos-de-prision-por-abuso-de-menores",
-     "medio": "El Litoral (Corrientes)",
-     "fecha": "2026-11-26T14:02:00+00:00"
-    },
     {
      "titulo": "Confirman 14 años de prisión para uno de los hijos de Nanci Godoy por abuso sexual",
      "url": "https://www.diarionorte.com/337337-confirman-14-anos-de-prision-para-uno-de-los-hijos-de-nanci-godoy-por-abuso-sexual",
      "medio": "Diario Norte (Chaco)",
      "fecha": "2026-11-26T17:41:39+00:00"
+    },
+    {
+     "titulo": "Confirmaron la condena contra un exentrenador de Boca por abuso sexual",
+     "url": "https://www.ellitoral.com.ar/nacional/2026-11-26-21-1-0-confirmaron-la-condena-contra-un-exentrenador-de-boca-por-abuso-sexual",
+     "medio": "El Litoral (Corrientes)",
+     "fecha": "2026-11-27T00:01:00+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Formosa se prepara para vivir la Ruta del Café, una propuesta que fortalece el comercio local y la identidad formoseña",
+   "region": "norte-grande",
+   "tema": "General",
+   "ejes": [],
+   "primer_medio": "Formosa (prensa local)",
+   "primera_hora": "2026-11-26T13:35+00:00",
+   "medios_regionales": [
+    "Formosa (prensa local)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "Formosa se prepara para vivir la Ruta del Café, una propuesta que fortalece el comercio local y la identidad formoseña",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOckZsMjZteFltUGxnblBxQXpmbkM4TVJqNHJrTE1WdnFKRlVRY1VWRmQxbnJULWQ1VG15OUlzeDNzRVVVQjRWTU11eHVCUXk5dXF3RVo5ajVyUmZHWEhXN3R2cEpLVUltMVR4ZEF2UUV4TzhLZVNyYVBTWDBISHA2OXJiZGRKWUdvTHlZN3l6WWF5ZllIQnZIdUd0TTlfc3RQMFplTjJvUkJJekhkaTVTaVFETU96QzNtSGdrNWphcUJtX1RDMkpRNWRJNEc0MzBldHZaUTRFVHFGOFpQVThTVHpjRQ?oc=5",
+     "medio": "Formosa (prensa local)",
+     "fecha": "2026-11-26T13:35:21+00:00"
+    },
+    {
+     "titulo": "Formosa se prepara para la Ruta del Café, una apuesta al comercio y la identidad local",
+     "url": "https://www.diarionorte.com/337342-formosa-se-prepara-para-la-ruta-del-cafe-una-apuesta-al-comercio-y-la-identidad-local",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-26T21:42:26+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "La Red de Infarto de Misiones oficialmente nominada a los Martín Fierro de Salud",
+   "region": "norte-grande",
+   "tema": "Sociedad",
+   "ejes": [],
+   "primer_medio": "El Territorio (Misiones)",
+   "primera_hora": "2026-11-26T12:43+00:00",
+   "medios_regionales": [
+    "El Territorio (Misiones)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "La Red de Infarto de Misiones oficialmente nominada a los Martín Fierro de Salud",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQaUZuQ2xYMUkybWpNazlKZkpDaVVFRHZiZzY0anBwc2JSbDh4VXJFVG9HVDNaNUtJV2N5TDZ4Y3hZSHJnMGFHbFJpbE54d3lydXlCMk5uYzBOeDhvd1lGVGRTdjl3akZTQk40emozMkU3Nk9MT01zUWJ1N2wzNnpSRHpMV19yMjRkbTFDdDF5QVhQdGdWaVBvOUdqNXZZOWtub2p1bV9ua0NNOVB2Q0lILWJxR3NDV0xvTUl3TEh2QldDa09mRnRxa0xRSWp6RThES1pqTzRR0gHbAUFVX3lxTE15QTJBdWE3eFdtaEpteVgtWkdUWVlCdHdSbWdPMzlueVFhcFpxLWtrMXJwMEEzM05wY1FpQm5wa2JfS05fNlpBemJBTTRRdG5yNDdnaUJQN2FHSGJWMVJKSUctQmxIOTRVZFRiQ1BqY2hJenBYYlo0LVVCR3RITmxrUFUzVlZvRGZYcmp3Um1aaEZfaTdkTWc3eGU4bmRfN2pWWXpHbVdkTVU1akpPREpmSldqWU9MVWRjeDFHVm85RXFFajNXNDRxQTBuZEYwd3RfZHQ4akxBdTNCQQ?oc=5",
+     "medio": "El Territorio (Misiones)",
+     "fecha": "2026-11-26T12:43:42+00:00"
+    },
+    {
+     "titulo": "Cuenta regresiva para la entrega de los Martín Fierro de la Salud",
+     "url": "https://www.diarionorte.com/337352-cuenta-regresiva-para-la-entrega-de-los-martin-fierro-de-la-salud",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-27T00:14:08+00:00"
     }
    ],
    "avisado": false
