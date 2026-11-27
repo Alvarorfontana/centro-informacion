@@ -177,6 +177,18 @@ def ubicar(titulo):
     return mejor[1:] if mejor else None
 
 
+# "Argentina en el mundo": notas de medios extranjeros que hablan de la Argentina.
+ARG_LATIN = re.compile(r"(?<![a-z])(argentin\w*|milei|malvinas|falkland\w*|buenos aires|mercosu[rl]|kicillof|vaca muerta|ypf)(?![a-z])")
+ARG_OTROS = ["аргентин", "الأرجنتين", "阿根廷", "アルゼンチン", "아르헨티나", "αργεντιν", "ארגנטינה", "अर्जेंटीना", "ارژانتین", "arjantin"]
+
+
+def habla_de_argentina(titulo):
+    if ARG_LATIN.search(plano(titulo)):
+        return True
+    t = (titulo or "").lower()
+    return any(x in t for x in ARG_OTROS)
+
+
 def sin_tiempo():
     return (time.time() - INICIO) > PRESUPUESTO
 
@@ -194,8 +206,8 @@ def leer_fuente(f, desde):
         d = feedparser.parse(bajar(f["url"]))
     except Exception as e:
         return f, None, type(e).__name__
-    notas = []
-    for e in d.entries[:30]:
+    notas, comunes = [], 0
+    for e in d.entries[:40]:
         t = e.get("published_parsed") or e.get("updated_parsed")
         fecha = datetime(*t[:6], tzinfo=timezone.utc) if t else None
         if fecha and fecha < desde:
@@ -204,14 +216,20 @@ def leer_fuente(f, desde):
         enlace = e.get("link", "")
         if not titulo or not enlace:
             continue
+        arg = habla_de_argentina(titulo)
+        # Hasta 6 notas comunes por medio; las que hablan de la Argentina entran todas.
+        if not arg and comunes >= POR_FUENTE:
+            continue
         n = {"titulo": titulo[:220], "enlace": enlace, "medio": f["nombre"], "seccion": f["seccion"],
              "fecha": (fecha or datetime.now(timezone.utc)).isoformat(timespec="minutes")}
+        if arg:
+            n["argentina"] = True
+        else:
+            comunes += 1
         lugar = ubicar(titulo)
         if lugar:
             n["pais"], n["lat"], n["lon"] = lugar
         notas.append(n)
-        if len(notas) >= POR_FUENTE:
-            break
     return f, notas, "ok"
 
 
@@ -271,6 +289,63 @@ def desastres():
     return out
 
 
+# Alertas por Telegram: sismos fuertes y desastres en Sudamérica (con el bot que ya usa la Central).
+REGION = {"lat": (-60, 13), "lon": (-92, -30)}
+PAISES_REGION = ["argentina", "chile", "uruguay", "paraguay", "bolivia", "brazil", "brasil", "peru", "ecuador", "colombia", "venezuela"]
+MAG_MINIMA = 5.5
+
+
+def en_region(lat, lon):
+    return REGION["lat"][0] <= lat <= REGION["lat"][1] and REGION["lon"][0] <= lon <= REGION["lon"][1]
+
+
+def alertas(salida):
+    archivo = DATOS / "mundo-avisos.json"
+    primera_vez = not archivo.exists()
+    try:
+        enviados = json.loads(archivo.read_text(encoding="utf-8")) if not primera_vez else {}
+    except Exception:
+        enviados = {}
+    ahora = datetime.now(timezone.utc)
+    ventana = ahora - timedelta(hours=12 if primera_vez else 48)
+    nuevas = []
+    for s_ in salida["sismos"]:
+        if s_.get("magnitud") and s_["magnitud"] >= MAG_MINIMA and en_region(s_["lat"], s_["lon"]) and datetime.fromisoformat(s_["fecha"]) >= ventana:
+            clave = s_.get("enlace") or f"sismo{s_['lat']}{s_['lon']}{s_['fecha']}"
+            if clave not in enviados:
+                nuevas.append((clave, f"🌎 Sismo M{s_['magnitud']} · {s_['lugar']} ({s_['fecha'][:16].replace('T', ' ')} UTC)\n{s_.get('enlace', '')}"))
+    for d in salida["desastres"]:
+        pais = plano(d.get("pais", ""))
+        if not (en_region(d["lat"], d["lon"]) or any(p in pais for p in PAISES_REGION)):
+            continue
+        if d.get("tipo") == "Sismo":  # los sismos ya salen por el USGS
+            continue
+        if d.get("nivel") == "verde" and d.get("tipo") not in ("Volcán", "Inundación", "Incendio forestal"):
+            continue
+        clave = d.get("enlace") or f"{d.get('tipo')}{d.get('nombre')}"
+        if clave not in enviados:
+            nuevas.append((clave, f"⚠️ {d.get('tipo')} · alerta {d.get('nivel') or 's/d'} · {d.get('nombre')}{(' · ' + d['pais']) if d.get('pais') else ''}\n{d.get('enlace', '')}"))
+    if not nuevas:
+        print("Alertas: nada nuevo en la región.")
+        return
+    try:
+        sys.path.insert(0, str(RAIZ / "scripts"))
+        from avisar import telegram
+        texto = "Central · Mundo — alertas en la región\n\n" + "\n\n".join(t for _, t in nuevas[:10]) + "\n\nMapa: https://centro-informacion.vercel.app/mundo.html"
+        res = telegram(texto)
+        print("Alertas:", len(nuevas), "→", res)
+        if not res or not str(res).startswith("enviado"):
+            return
+    except Exception as e:
+        print("Alertas: no se pudo avisar", e)
+        return
+    for clave, _ in nuevas:
+        enviados[clave] = ahora.isoformat(timespec="minutes")
+    limite = (ahora - timedelta(days=10)).isoformat()
+    enviados = {k: v for k, v in enviados.items() if v >= limite}
+    archivo.write_text(json.dumps(enviados, ensure_ascii=False, indent=0), encoding="utf-8")
+
+
 def main():
     fuentes = json.loads((DATOS / "mundo-fuentes.json").read_text(encoding="utf-8"))["fuentes"]
     desde = datetime.now(timezone.utc) - timedelta(hours=HORAS)
@@ -291,7 +366,9 @@ def main():
             continue
         vistos.add(clave)
         unicas.append(n)
-    unicas = unicas[:TOPE_NOTAS]
+    arg = [n for n in unicas if n.get("argentina")]
+    resto = [n for n in unicas if not n.get("argentina")][:max(TOPE_NOTAS - len(arg), 0)]
+    unicas = sorted(arg + resto, key=lambda n: n["fecha"], reverse=True)
     salida = {
         "actualizado": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "periodo_horas": HORAS,
@@ -300,10 +377,12 @@ def main():
         "sismos": sismos(),
         "desastres": desastres(),
     }
+    salida["argentina"] = sum(1 for n in unicas if n.get("argentina"))
     (DATOS / "mundo.json").write_text(json.dumps(salida, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     ubicadas = sum(1 for n in unicas if "lat" in n)
     print(f"Mundo: {len(unicas)} notas ({ubicadas} en el mapa) de {ok} fuentes; {fallan} fallaron. "
-          f"{len(salida['sismos'])} sismos, {len(salida['desastres'])} desastres. {int(time.time() - INICIO)} s.")
+          f"{salida['argentina']} hablan de la Argentina. {len(salida['sismos'])} sismos, {len(salida['desastres'])} desastres. {int(time.time() - INICIO)} s.")
+    alertas(salida)
 
 
 if __name__ == "__main__":

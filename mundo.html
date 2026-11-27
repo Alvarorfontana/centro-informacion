@@ -93,6 +93,10 @@
     <div class="pestanas" id="zonas-cam"></div>
     <div class="camaras" id="camaras"></div>
   </section>
+  <section class="panel noticias" id="arg-panel">
+    <h3>🇦🇷 Argentina en el mundo <span class="vivo" id="c-arg"></span></h3>
+    <div class="lista" id="lista-arg" style="max-height:360px"><div class="vacio">Cargando…</div></div>
+  </section>
   <section class="panel noticias">
     <h3>Últimas noticias del mundo <span class="vivo" id="c-notas"></span></h3>
     <div class="filtros" id="secciones"></div>
@@ -178,14 +182,31 @@
       return '<div class="nota"><div><a href="' + esc(n.enlace) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '</a><div class="meta">' + esc(n.medio) + ' · ' + esc(n.seccion) + (n.pais ? ' · ' + esc(n.pais) : '') + ' · ' + hace(n.fecha) + '</div></div>' +
         '<button class="a-mesa' + (en ? ' en' : '') + '" data-i="' + i + '">' + (en ? '✓ En la mesa' : '+ A la mesa') + '</button></div>';
     }).join('') : '<div class="vacio">No hay noticias para este filtro. Probá con un período más largo.</div>';
+    listaArg();
   }
-  document.getElementById('lista').addEventListener('click', function (ev) {
-    var b = ev.target.closest('[data-i]'); if (!b) return;
-    var n = VISIBLES[+b.getAttribute('data-i')]; if (!n) return;
+  var ARG = [];
+  function listaArg() {
+    ARG = DATOS.notas.filter(function (n) { return n.argentina && dentro(n.fecha); });
+    document.getElementById('c-arg').textContent = '● ' + ARG.length + ' notas de medios extranjeros';
+    document.getElementById('lista-arg').innerHTML = ARG.length ? ARG.map(function (n, i) {
+      var en = enMesa(n.enlace);
+      return '<div class="nota"><div><a href="' + esc(n.enlace) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '</a><div class="meta">' + esc(n.medio) + ' · ' + esc(n.seccion) + ' · ' + hace(n.fecha) + '</div></div>' +
+        '<button class="a-mesa' + (en ? ' en' : '') + '" data-a="' + i + '">' + (en ? '✓ En la mesa' : '+ A la mesa') + '</button></div>';
+    }).join('') : '<div class="vacio">En este período ningún medio extranjero habló de la Argentina. Probá con 48h o Todo.</div>';
+  }
+  function alternarMesa(n) {
     if (enMesa(n.enlace)) mesa = mesa.filter(function (m) { return m.url !== n.enlace; });
     else { mesa.push({ titulo: n.titulo, resumen: '', url: n.enlace, medio: n.medio, pais: n.pais || '', fecha: n.fecha, zona: 'mundo', tema: n.seccion }); aRedaccion(n); toast('Sumada a la mesa (' + mesa.length + ')'); }
     try { localStorage.setItem('centro-mesa', JSON.stringify(mesa)); } catch (e) {}
     lista();
+  }
+  document.getElementById('lista-arg').addEventListener('click', function (ev) {
+    var b = ev.target.closest('[data-a]'); if (!b) return; var n = ARG[+b.getAttribute('data-a')]; if (n) alternarMesa(n);
+  });
+  document.getElementById('lista').addEventListener('click', function (ev) {
+    var b = ev.target.closest('[data-i]'); if (!b) return;
+    var n = VISIBLES[+b.getAttribute('data-i')]; if (!n) return;
+    alternarMesa(n);
   });
   document.getElementById('c-notas').addEventListener('click', function () { if (PAIS) { PAIS = ''; lista(); } });
   document.addEventListener('click', function (ev) {
