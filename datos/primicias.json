@@ -1,107 +1,7 @@
 {
- "generado": "2026-11-27T04:14:40+00:00",
+ "generado": "2026-11-27T08:09:13+00:00",
  "ventana_horas": 24,
  "primicias": [
-  {
-   "titulo": "Massa propuso incorporar la Inteligencia Artificial a una agenda de desarrollo productivo y empleo",
-   "region": "buenos-aires",
-   "tema": "General",
-   "ejes": [
-    "industria",
-    "pj",
-    "politica"
-   ],
-   "primer_medio": "Zona Norte Diario",
-   "primera_hora": "2026-11-26T19:26+00:00",
-   "medios_regionales": [
-    "Zona Norte Diario",
-    "InfoBAN (zona norte)"
-   ],
-   "notas": [
-    {
-     "titulo": "Massa propuso incorporar la Inteligencia Artificial a una agenda de desarrollo productivo y empleo",
-     "url": "https://www.zonanortediario.com.ar/26/11/2026/massa-propuso-incorporar-la-inteligencia-artificial-a-una-agenda-de-desarrollo-productivo-y-empleo/",
-     "medio": "Zona Norte Diario",
-     "fecha": "2026-11-26T19:26:42+00:00"
-    },
-    {
-     "titulo": "Sergio Massa planteó en Córdoba una agenda de IA al servicio de la producción, el empleo y el desarrollo",
-     "url": "https://www.infoban.com.ar/26/11/2026/sergio-massa-planteo-en-cordoba-una-agenda-de-ia-al-servicio-de-la-produccion-el-empleo-y-el-desarrollo/",
-     "medio": "InfoBAN (zona norte)",
-     "fecha": "2026-11-26T19:33:47+00:00"
-    }
-   ],
-   "avisado": false
-  },
-  {
-   "titulo": "Escobar suspendió por 60 días las obras del centro de almacenamiento de energía de Genneia en Maschwitz",
-   "region": "buenos-aires",
-   "tema": "Energía",
-   "ejes": [
-    "energia",
-    "local",
-    "politica"
-   ],
-   "primer_medio": "Zona Norte Diario",
-   "primera_hora": "2026-11-26T19:15+00:00",
-   "medios_regionales": [
-    "Zona Norte Diario",
-    "InfoBAN (zona norte)"
-   ],
-   "notas": [
-    {
-     "titulo": "Escobar suspendió por 60 días las obras del centro de almacenamiento de energía de Genneia en Maschwitz",
-     "url": "https://www.zonanortediario.com.ar/26/11/2026/escobar-suspendio-por-60-dias-las-obras-del-centro-de-almacenamiento-de-energia-de-genneia-en-maschwitz/",
-     "medio": "Zona Norte Diario",
-     "fecha": "2026-11-26T19:15:15+00:00"
-    },
-    {
-     "titulo": "Genneia se pronunció tras la suspensión de las obras del centro de almacenamiento de energía en Maschwitz",
-     "url": "https://www.zonanortediario.com.ar/26/11/2026/genneia-se-pronuncio-tras-la-suspension-de-las-obras-del-centro-de-almacenamiento-de-energia-en-maschwitz/",
-     "medio": "Zona Norte Diario",
-     "fecha": "2026-11-26T21:05:44+00:00"
-    },
-    {
-     "titulo": "Sujarchuk suspendió por 60 días las obras del centro de almacenamiento de energía en Ingeniero Maschwitz",
-     "url": "https://www.infoban.com.ar/26/11/2026/sujarchuk-suspendio-por-60-dias-las-obras-del-centro-de-almacenamiento-de-energia-en-ingeniero-maschwitz/",
-     "medio": "InfoBAN (zona norte)",
-     "fecha": "2026-11-26T22:15:10+00:00"
-    }
-   ],
-   "avisado": false
-  },
-  {
-   "titulo": "Fernando Espinoza visitó una fábrica de Morón y cuestionó el impacto de las políticas de Milei en las PyMEs",
-   "region": "buenos-aires",
-   "tema": "Política",
-   "ejes": [
-    "bolsillo",
-    "industria",
-    "local",
-    "politica"
-   ],
-   "primer_medio": "Zona Norte Diario",
-   "primera_hora": "2026-11-26T18:18+00:00",
-   "medios_regionales": [
-    "Zona Norte Diario",
-    "InfoBAN (zona norte)"
-   ],
-   "notas": [
-    {
-     "titulo": "Fernando Espinoza visitó una fábrica de Morón y cuestionó el impacto de las políticas de Milei en las PyMEs",
-     "url": "https://www.zonanortediario.com.ar/26/11/2026/fernando-espinoza-visito-una-fabrica-de-moron-y-cuestiono-el-impacto-de-las-politicas-de-milei-en-las-pymes/",
-     "medio": "Zona Norte Diario",
-     "fecha": "2026-11-26T18:18:36+00:00"
-    },
-    {
-     "titulo": "Fernando Espinoza recorrió Morón y alertó sobre la situación de las pymes bonaerenses",
-     "url": "https://www.infoban.com.ar/26/11/2026/fernando-espinoza-recorrio-moron-y-alerto-sobre-la-situacion-de-las-pymes-bonaerenses/",
-     "medio": "InfoBAN (zona norte)",
-     "fecha": "2026-11-26T18:43:53+00:00"
-    }
-   ],
-   "avisado": false
-  },
   {
    "titulo": "Formosa fortalece la atención integral en la décima Jornada Provincial de Salud Mental",
    "region": "norte-grande",
@@ -152,33 +52,6 @@
      "url": "https://www.ellitoral.com.ar/nacional/2026-11-26-21-1-0-confirmaron-la-condena-contra-un-exentrenador-de-boca-por-abuso-sexual",
      "medio": "El Litoral (Corrientes)",
      "fecha": "2026-11-27T00:01:00+00:00"
-    }
-   ],
-   "avisado": false
-  },
-  {
-   "titulo": "Formosa se prepara para vivir la Ruta del Café, una propuesta que fortalece el comercio local y la identidad formoseña",
-   "region": "norte-grande",
-   "tema": "General",
-   "ejes": [],
-   "primer_medio": "Formosa (prensa local)",
-   "primera_hora": "2026-11-26T13:35+00:00",
-   "medios_regionales": [
-    "Formosa (prensa local)",
-    "Diario Norte (Chaco)"
-   ],
-   "notas": [
-    {
-     "titulo": "Formosa se prepara para vivir la Ruta del Café, una propuesta que fortalece el comercio local y la identidad formoseña",
-     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOckZsMjZteFltUGxnblBxQXpmbkM4TVJqNHJrTE1WdnFKRlVRY1VWRmQxbnJULWQ1VG15OUlzeDNzRVVVQjRWTU11eHVCUXk5dXF3RVo5ajVyUmZHWEhXN3R2cEpLVUltMVR4ZEF2UUV4TzhLZVNyYVBTWDBISHA2OXJiZGRKWUdvTHlZN3l6WWF5ZllIQnZIdUd0TTlfc3RQMFplTjJvUkJJekhkaTVTaVFETU96QzNtSGdrNWphcUJtX1RDMkpRNWRJNEc0MzBldHZaUTRFVHFGOFpQVThTVHpjRQ?oc=5",
-     "medio": "Formosa (prensa local)",
-     "fecha": "2026-11-26T13:35:21+00:00"
-    },
-    {
-     "titulo": "Formosa se prepara para la Ruta del Café, una apuesta al comercio y la identidad local",
-     "url": "https://www.diarionorte.com/337342-formosa-se-prepara-para-la-ruta-del-cafe-una-apuesta-al-comercio-y-la-identidad-local",
-     "medio": "Diario Norte (Chaco)",
-     "fecha": "2026-11-26T21:42:26+00:00"
     }
    ],
    "avisado": false
