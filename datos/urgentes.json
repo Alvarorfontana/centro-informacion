@@ -1,11 +1,11 @@
 {
- "generado": "2026-11-27T19:12:37+00:00",
+ "generado": "2026-11-27T19:33:34+00:00",
  "ventana_horas": 4,
  "min_medios": 4,
  "urgentes": [
   {
-   "titulo": "Murió el empresario Jorge Born a los 92 años",
-   "n_medios": 5,
+   "titulo": "Murió a los 92 años el empresario Jorge Born",
+   "n_medios": 7,
    "paises": [
     "Argentina"
    ],
@@ -16,34 +16,34 @@
    "avisado": false,
    "notas": [
     {
-     "titulo": "Así contó Jorge Born su secuestro por parte de Montoneros",
-     "url": "https://www.infobae.com/economia/2026/11/27/asi-conto-jorge-born-su-secuestro-por-parte-de-montoneros/",
-     "medio": "Infobae",
-     "fecha": "2026-11-27T18:24:11+00:00"
+     "titulo": "Murio Jorge Born, creador de un imperio, ícono de los 90 y víctima de un histórico secuestro",
+     "url": "https://www.cronista.com/negocios/murio-jorge-born-creador-de-un-imperio-icono-de-los-90-y-victima-de-un-historico-secuestro/",
+     "medio": "El Cronista",
+     "fecha": "2026-11-27T19:22:20+00:00"
+    },
+    {
+     "titulo": "Murió Jorge Born, el heredero de Bunge y Born por el que Montoneros cobró el rescate más alto de la historia",
+     "url": "https://www.ambito.com/negocios/murio-jorge-born-el-heredero-bunge-y-born-el-que-montoneros-cobro-el-rescate-mas-alto-la-historia-n6350142",
+     "medio": "Ámbito",
+     "fecha": "2026-11-27T19:03:00+00:00"
     },
     {
      "titulo": "Murió el empresario Jorge Born, víctima de un secuestro de Montoneros",
      "url": "https://www.lanacion.com.ar/economia/murio-el-empresario-jorge-born-victima-de-un-secuestro-de-montoneros-nid27112026/",
      "medio": "La Nación",
-     "fecha": "2026-11-27T18:20:36+00:00"
+     "fecha": "2026-11-27T19:00:39+00:00"
+    },
+    {
+     "titulo": "Murió a los 92 años el empresario Jorge Born",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPb012N3NaQVdFbE5ZWkpENUdzR1BVWWRITVFVTGp5UE95Znh1a24tODNxMVRsV09FSjRXb2NyUVBKMlhMUjVHU3JZd0N4bWhCa2VJVzgyUVNQdExxOGJzN0xLSmd6dGNXbTlTQ0Y2eE9laFNqdWxFMmtGaDE4TDhveVNWbU4tSkQzU0ptcF9wQ1FNNXc0TUtTUA?oc=5",
+     "medio": "La Arena (La Pampa)",
+     "fecha": "2026-11-27T18:11:47+00:00"
     },
     {
      "titulo": "Murió Jorge Born a los 92 años: lideró Bunge y Born y fue secuestrado por Montoneros en 1974",
      "url": "https://www.rionegro.com.ar/economia/jorge-born-murio-a-los-92-anos-el-empresario-de-bunge-y-born-4816835/",
      "medio": "Río Negro",
      "fecha": "2026-11-27T18:07:32+00:00"
-    },
-    {
-     "titulo": "Murió el empresario Jorge Born a los 92 años",
-     "url": "https://noticiasargentinas.com/politica/murio-el-empresario-jorge-born-a-los-92-anos_a6b09bba2a19c06437a4b7f97",
-     "medio": "Noticias Argentinas",
-     "fecha": "2026-11-27T17:26:48+00:00"
-    },
-    {
-     "titulo": "Murió el empresario Jorge Born",
-     "url": "https://www.pagina12.com.ar/2026/11/27/murio-el-empresario-jorge-born/",
-     "medio": "Página/12",
-     "fecha": "2026-11-27T16:34:02+00:00"
     }
    ]
   }
