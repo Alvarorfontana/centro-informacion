@@ -39,7 +39,7 @@ PRESUPUESTO = float(os.environ.get("MUNDO_MINUTOS", "5")) * 60
 INICIO = time.time()
 HORAS = 36            # solo notas de las últimas 36 horas
 POR_FUENTE = 6        # hasta 6 notas por medio
-TOPE_NOTAS = 2500     # tope total para que el archivo no pese demasiado
+TOPE_NOTAS = 3000     # tope total para que el archivo no pese demasiado
 
 # País -> (nombre en castellano, lat, lon, [formas en que puede aparecer en un título]).
 PAISES = [
@@ -235,20 +235,39 @@ NIVEL = {"Green": "verde", "Orange": "naranja", "Red": "rojo"}
 
 
 def desastres():
-    try:
-        d = json.loads(bajar("https://www.gdacs.org/gdacsapi/api/events/geteventlist/MAP", 25))
-    except Exception as e:
-        print("GDACS: falló", e)
-        return []
     out = []
-    for x in d.get("features", []):
-        p, g = x.get("properties", {}), x.get("geometry", {})
-        if g.get("type") != "Point":
-            continue
-        out.append({"tipo": TIPOS_GDACS.get(p.get("eventtype"), p.get("eventtype", "")), "nombre": p.get("name") or p.get("eventname") or "",
-                    "pais": p.get("country", ""), "nivel": NIVEL.get(p.get("alertlevel"), p.get("alertlevel", "")),
-                    "lat": g["coordinates"][1], "lon": g["coordinates"][0],
-                    "desde": p.get("fromdate", ""), "enlace": (p.get("url") or {}).get("report", "") if isinstance(p.get("url"), dict) else ""})
+    try:
+        d = json.loads(bajar("https://www.gdacs.org/gdacsapi/api/events/geteventlist/MAP?eventlist=EQ;TC;FL;VO;DR;WF;TS", 25))
+        for x in d.get("features", []):
+            p, g = x.get("properties", {}), x.get("geometry", {})
+            if g.get("type") != "Point":
+                continue
+            u = p.get("url")
+            out.append({"tipo": TIPOS_GDACS.get(p.get("eventtype"), p.get("eventtype", "")), "nombre": p.get("name") or p.get("eventname") or "",
+                        "pais": p.get("country", ""), "nivel": NIVEL.get(p.get("alertlevel"), p.get("alertlevel", "")),
+                        "lat": g["coordinates"][1], "lon": g["coordinates"][0],
+                        "desde": p.get("fromdate", ""), "enlace": u.get("report", "") if isinstance(u, dict) else ""})
+        if out:
+            return out
+    except Exception as e:
+        print("GDACS (API): falló", e)
+    # Respaldo: el RSS público de GDACS, que trae la ubicación de cada evento.
+    try:
+        r = feedparser.parse(bajar("https://www.gdacs.org/xml/rss.xml", 25))
+        for e in r.entries:
+            lat, lon = e.get("geo_lat"), e.get("geo_long")
+            if not lat and e.get("where"):
+                try:
+                    lon, lat = e["where"]["coordinates"][:2]
+                except Exception:
+                    pass
+            if not lat:
+                continue
+            out.append({"tipo": TIPOS_GDACS.get(e.get("gdacs_eventtype", ""), e.get("gdacs_eventtype", "")), "nombre": e.get("title", ""),
+                        "pais": e.get("gdacs_country", ""), "nivel": NIVEL.get(e.get("gdacs_alertlevel", ""), e.get("gdacs_alertlevel", "")),
+                        "lat": float(lat), "lon": float(lon), "desde": e.get("gdacs_fromdate", ""), "enlace": e.get("link", "")})
+    except Exception as e:
+        print("GDACS (RSS): falló", e)
     return out
 
 
