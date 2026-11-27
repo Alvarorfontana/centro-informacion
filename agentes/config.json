@@ -1,12 +1,12 @@
 {
   "_ayuda": "Configuración de la redacción automática. Para apagar un agente, poné \"prendido\": false. Para cambiar cuántas notas se arman por región, tocá \"cupos\". Las instrucciones de cada agente están en agentes/instrucciones/.",
   "cupos": {
-    "argentina": 5,
+    "argentina": 9,
     "local": 2,
     "mercosur": 2,
-    "mundo": 3
+    "mundo": 2
   },
-  "candidatos_por_monitor": 12,
+  "candidatos_por_monitor": 24,
   "local": {
     "nombre": "Local",
     "palabras": [
@@ -184,5 +184,19 @@
       "ia": false,
       "prendido": true
     }
-  ]
+  ],
+  "minimos": {
+    "_ayuda": "Notas que tiene que traer cada edición sí o sí, de cualquier sección, si hay material: id del eje → cantidad.",
+    "economia": 2,
+    "bolsillo": 2,
+    "pj": 3
+  },
+  "bonus_prioridad": {
+    "_ayuda": "Puntos que se suman al puntaje de un tema según la prioridad de su eje (datos/ejes.json).",
+    "0": 10,
+    "1": 6,
+    "2": 3,
+    "3": 0,
+    "4": -3
+  }
 }

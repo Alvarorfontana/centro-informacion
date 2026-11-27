@@ -1,11 +1,17 @@
 name: Recolectar noticias
 
-# Dos veces por día (6:00 y 17:00 de Argentina) trae noticias reales de GDELT y de los RSS de datos/fuentes-rss.json
+# Dos veces por día (cerca de las 6:00 y las 17:00 de Argentina) trae noticias reales de GDELT y de los RSS de datos/fuentes-rss.json
 # y las guarda en datos/noticias.json, que es lo que muestra el Centro.
 on:
+  # GitHub atrasa mucho los horarios en punto (hoy la de las 17 salió a las 23). Por eso van en minutos
+  # sueltos y cada edición tiene una vuelta de respaldo una hora después, que no hace nada si la primera ya corrió.
   schedule:
-    - cron: '0 9 * * *'    # 6:00 de Argentina
-    - cron: '0 20 * * *'   # 17:00 de Argentina
+    - cron: '47 8 * * *'    # 5:47 de Argentina (edición de la mañana)
+    - cron: '47 9 * * *'    # 6:47, respaldo
+    - cron: '17 11 * * *'   # 8:17, segundo respaldo (el 18/11 GitHub no disparó ni la de 5:47 ni la de 6:47)
+    - cron: '47 19 * * *'   # 16:47 de Argentina (edición de la tarde)
+    - cron: '47 20 * * *'   # 17:47, respaldo
+    - cron: '17 22 * * *'   # 19:17, segundo respaldo
   workflow_dispatch:
 
 permissions:
@@ -32,12 +38,18 @@ jobs:
           # Tope de tiempo para las búsquedas: lo que no entra se corta y se guarda lo que hay.
           # Cada minuto de más se descuenta del cupo mensual de minutos de GitHub Actions.
           PRESUPUESTO_MINUTOS: '15'
+          SALTEAR_SI_RECIENTE: ${{ github.event_name == 'schedule' && '3' || '' }}
         run: python scripts/recolectar.py
       - name: Urgentes
         continue-on-error: true
         env:
           PYTHONUNBUFFERED: '1'
         run: python scripts/urgentes.py
+      - name: Primicias regionales
+        continue-on-error: true
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: python scripts/primicias.py
       - name: Guardar
         if: always()
         run: |
@@ -45,6 +57,7 @@ jobs:
           git config user.name "Alvarorfontana"
           git config user.email "alvarorfontana@gmail.com"
           git add datos/noticias.json datos/urgentes.json 2>/dev/null || git add datos/noticias.json
+          git add datos/primicias.json 2>/dev/null || true
           if git diff --cached --quiet; then echo "Sin cambios."; exit 0; fi
           git commit -m "Noticias actualizadas"
           for i in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 5; done

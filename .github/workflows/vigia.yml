@@ -1,0 +1,46 @@
+name: Vigía de copias
+
+# Una vez por semana (lunes cerca de las 10:20 de Argentina) busca si alguien copió notas de Diario Federal.
+# Usa la clave gratis GEMINI_API_KEY (búsqueda de Google incluida) y avisa por Telegram solo si hay algo nuevo.
+# Resultados en datos/vigia.json. Se puede correr a mano desde Actions → Vigía de copias → Run workflow.
+on:
+  schedule:
+    - cron: '23 13 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vigia
+  cancel-in-progress: false
+
+jobs:
+  vigia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar
+        run: pip install feedparser beautifulsoup4
+      - name: Buscar copias
+        env:
+          PYTHONUNBUFFERED: '1'
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          VIGIA_AVISAR_SIEMPRE: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
+        run: python scripts/vigia.py
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "Alvarorfontana"
+          git config user.email "alvarorfontana@gmail.com"
+          git add datos/vigia.json || true
+          if git diff --cached --quiet; then echo "Sin cambios."; exit 0; fi
+          git commit -m "Vigía de copias: revisión semanal"
+          for i in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 5; done
+          exit 1

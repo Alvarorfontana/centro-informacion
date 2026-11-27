@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vigía de copias · Central de noticias</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+  :root { --tinta:#151515; --gris:#6b6b6b; --linea:#e4e4e4; --fondo:#F6F4EF; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--fondo); color:var(--tinta); font-family:Manrope, system-ui, sans-serif; }
+  header { padding:18px 20px; border-bottom:1px solid var(--linea); background:#fff; display:flex; align-items:center; gap:12px; }
+  header a { color:var(--gris); text-decoration:none; font-size:14px; }
+  h1 { font-family:Newsreader, serif; font-size:26px; margin:0; flex:1; }
+  main { max-width:820px; margin:0 auto; padding:20px; }
+  .meta { color:var(--gris); font-size:14px; margin-bottom:18px; }
+  .item { background:#fff; border:1px solid var(--linea); border-radius:10px; padding:14px 16px; margin-bottom:12px; }
+  .chip { display:inline-block; font-size:12px; font-weight:700; padding:3px 8px; border-radius:20px; margin-right:6px; }
+  .copia { background:#E3EBFB; color:#a11; } .fragmento { background:#fff0d6; color:#8a5300; } .revisar { background:#e7eefc; color:#1d4ea8; }
+  .sitio { font-weight:700; }
+  .nota { font-family:Newsreader, serif; font-size:17px; margin:8px 0 4px; }
+  .item a { color:#1d6fb8; word-break:break-all; font-size:14px; }
+  .vacio { color:var(--gris); text-align:center; padding:40px 0; }
+  h2 { font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--gris); margin:28px 0 10px; }
+  li { font-size:14px; margin-bottom:6px; }
+  header { flex-wrap:wrap; background:#FBFAF7; border-bottom-color:#DEDAD2; }
+  header .marca-nav a { font-size:12px; }
+</style>
+<link rel="stylesheet" href="marca.css">
+</head>
+<body>
+<header><a class="marca-logo" href="index.html#central"><span class="marca-cuad" aria-hidden="true"></span>EL DIARIO<span class="marca-sep" aria-hidden="true"></span><span class="marca-nombre">Vigía de copias</span></a><nav class="marca-nav" aria-label="Pantallas de la Central"><a href="index.html#central">Central</a><a href="index.html#edicion">Edición del día</a><a href="index.html#mapa">Mapa</a><a href="mesa-redaccion-operativa.html">Mesa de Redacción</a><a href="redactor.html">Redactor IA</a><a href="pj.html">PJ</a><a href="centro-mando.html">Centro de mando</a><a href="vigia.html" aria-current="page">Vigía de copias</a></nav></header>
+<main style="padding-bottom:0"><h1>Vigía de copias</h1></main>
+<main>
+  <div class="meta" id="meta">Cargando…</div>
+  <div id="lista"></div>
+  <h2>Notas revisadas la última vez</h2>
+  <ul id="revisadas"></ul>
+</main>
+<script>
+  const etiquetas = { copia: 'Copia', fragmento: 'Fragmento', revisar: 'Revisar a mano' };
+  const esc = (t) => String(t ?? '').replace(/[&<>"]/g, (c) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
+  const fecha = (iso) => iso ? new Date(iso).toLocaleString('es-AR', { dateStyle:'medium', timeStyle:'short' }) : '';
+  fetch('datos/vigia.json?' + Date.now()).then((r) => r.ok ? r.json() : null).then((d) => {
+    if (!d) { document.getElementById('meta').textContent = 'Todavía no corrió la primera revisión. Corre los lunes a la mañana.'; return; }
+    document.getElementById('meta').textContent = 'Última revisión: ' + fecha(d.actualizado) + ' · ' + (d.revisadas || []).length + ' notas revisadas';
+    const hs = (d.hallazgos || []).slice().reverse();
+    document.getElementById('lista').innerHTML = hs.length ? hs.map((h) => `
+      <div class="item">
+        <span class="chip ${esc(h.estado)}">${esc(etiquetas[h.estado] || h.estado)}</span>
+        <span class="sitio">${esc(h.sitio)}</span>
+        <div class="nota">${esc(h.nota)}</div>
+        <div class="meta" style="margin:0 0 6px">${esc(h.detalle)} · ${esc(fecha(h.detectado))}</div>
+        <a href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.url)}</a>
+      </div>`).join('') : '<div class="vacio">Sin copias detectadas por ahora.</div>';
+    document.getElementById('revisadas').innerHTML = (d.revisadas || []).map((n) =>
+      `<li><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.titulo)}</a></li>`).join('');
+  }).catch(() => { document.getElementById('meta').textContent = 'No se pudo leer el vigía.'; });
+</script>
+</body>
+</html>

@@ -2,7 +2,7 @@
   "_ayuda": "Quién firma cada borrador. Se elige la primera firma cuyos ejes coincidan con los del tema; si ninguno coincide, la de la sección. Para sumar un periodista, agregalo con sus ejes. Las firmas tienen que existir en el diario (src/consts.ts) para que salgan con foto y bio.",
   "por_eje": [
     { "firma": "Ramiro De la Puente", "ejes": ["economia", "estadisticas", "fmi", "industria", "energia", "agro", "economia-global"] },
-    { "firma": "Emilio Lahitte", "ejes": ["politica", "migracion", "internacional", "mercosur", "brasil", "latinoamerica"] }
+    { "firma": "Emilio Lahitte", "ejes": ["politica", "pj", "migracion", "internacional", "mercosur", "brasil", "latinoamerica"] }
   ],
   "por_seccion": {
     "argentina": "Redacción Federal",

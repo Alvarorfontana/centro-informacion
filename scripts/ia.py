@@ -61,7 +61,7 @@ class IA:
         espera = (self.pausa if pausa is None else pausa) - (time.time() - self._ultima)
         if espera > 0:
             time.sleep(espera)
-        req = urllib.request.Request(url, data=json.dumps(cuerpo).encode(), headers={"Content-Type": "application/json", **cabeceras})
+        req = urllib.request.Request(url, data=json.dumps(cuerpo).encode(), headers={"Content-Type": "application/json", "User-Agent": "CentroInformacion-DiarioFederal/1.0", **cabeceras})
         try:
             with urllib.request.urlopen(req, timeout=self.espera) as r:
                 return json.loads(r.read().decode("utf-8"))
@@ -122,7 +122,12 @@ class IA:
                     self.usado = f"{prov} · {modelo}"
                     return leer_json(texto)
                 except urllib.error.HTTPError as e:
-                    errores.append(f"{prov} {modelo}: HTTP {e.code}")
+                    detalle = ""
+                    try:
+                        detalle = " " + e.read().decode("utf-8", "replace")[:120]
+                    except Exception:  # noqa: BLE001
+                        pass
+                    errores.append(f"{prov} {modelo}: HTTP {e.code}{detalle}")
                     if e.code in (429, 502, 503) and vuelta == 0:
                         time.sleep(30)  # límite por minuto: esperar y reintentar una vez
                         continue

@@ -4,6 +4,7 @@ si no está configurado, por WhatsApp con CallMeBot. Datos en secretos/claves.js
 """
 
 import json
+import os
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -23,9 +24,11 @@ def telegram(texto):
     try:
         todo = json.loads((RAIZ / "secretos" / "claves.json").read_text(encoding="utf-8"))
     except Exception:  # noqa: BLE001
-        return None
+        todo = {}
     t = todo.get("telegram") or {}
-    token, chat = str(t.get("token") or "").strip(), str(t.get("chat_id") or "").strip()
+    # En GitHub Actions el archivo de claves no existe: se usan los Secrets TELEGRAM_TOKEN y TELEGRAM_CHAT_ID
+    token = str(t.get("token") or os.environ.get("TELEGRAM_TOKEN") or "").strip()
+    chat = str(t.get("chat_id") or os.environ.get("TELEGRAM_CHAT_ID") or "").strip()
     if not token:
         return None
     base = f"https://api.telegram.org/bot{token}/"

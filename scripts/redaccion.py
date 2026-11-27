@@ -44,13 +44,16 @@ MARCAS_AR = re.compile(r"\b(argentin\w*|milei|kicillof|caputo|bullrich|villarrue
                        r"kirchner\w*|libertari\w*|anses|pami|afip|arca|dolar blue|cgt|uom|ypf|vaca muerta|malvinas|afa|"
                        r"corrientes|misiones|chaco|formosa|jujuy|salta|tucuman|catamarca|santiago del estero|la rioja|cordoba|santa fe|"
                        r"entre rios|rosario|mendoza|san juan|san luis|neuquen|rio negro|chubut|santa cruz|tierra del fuego|la pampa|"
-                       r"la plata|mar del plata|bahia blanca|conurbano)\b")
+                       r"la plata|mar del plata|bahia blanca|conurbano|campana|zarate|san nicolas|ramallo|baradero|pilar|escobar|tigre|san isidro|"
+                       r"vicente lopez|quilmes|avellaneda|lanus|lomas de zamora|la matanza|moron|merlo|moreno|tandil|olavarria|junin|pergamino|"
+                       r"necochea|lujan|ushuaia|rawson|comodoro rivadavia|bariloche|parana|posadas|resistencia|san salvador|ruta nacional|ruta provincial)\b")
+MARCAS_AR_FIRMES = re.compile(r"\b(argentin\w*|milei|kicillof|casa rosada|buenos aires|bonaerense\w*|campana|zarate|rosario|mar del plata|bahia blanca|la plata|vaca muerta|ypf)\b")
 MARCAS_MERCOSUR = re.compile(r"\b(mercosur|brasil\w*|lula|uruguay\w*|orsi|paraguay\w*|bolivia\w*|chile\w*|kast)\b")
 # Lo que el diario no cubre: deportes, farándula, estilo de vida, recetas (cine y cultura sí)
 DESCARTE = re.compile(r"\b(futbol|goleada|amistoso|gol|goles|hinchas?|liga profesional|copa libertadores|copa sudamericana|mundial de clubes|"
                       r"boca juniors|river plate|messi|scaloni|seleccion argentina de futbol|tenis|formula 1|f1|nba|boxeo|rugby|"
                       r"gran hermano|reality|farandula|famosos?|horoscopo|receta|recetas|look|outfit|influencer|tiktoker|"
-                      r"partido (?:de|ante|contra)|vs\.?|resultado del partido)\b")
+                      r"partido (?:de|ante|contra)|partido perdido|vs\.?|resultado del partido|dolar blue hoy|dolar hoy|a cuanto cotiza|cotizacion del dia|localia|campo de juego|river|boca|racing|independiente|san lorenzo|primera nacional|torneo|hincha|arbitro|dt)\b")
 # Portugués: la mesa escribe en castellano, así que un titular de medio brasileño no sirve
 # como candidato (el borrador saldría en portugués). Se detecta por letras que el castellano
 # no usa (ã, õ, ç) o por palabras que solo existen en portugués.
@@ -88,6 +91,16 @@ def leer(ruta, defecto=None):
 
 def instruccion(nombre, **campos):
     t = (AGENTES / "instrucciones" / f"{nombre}.md").read_text(encoding="utf-8")
+    # Guías editoriales (guias/): un resumen para quien redacta y otro para quien verifica.
+    extra = {"estilo": "guia-redaccion", "verificador": "guia-verificacion"}.get(nombre)
+    if extra:
+        g = AGENTES / "instrucciones" / f"{extra}.md"
+        if g.exists():
+            guia = g.read_text(encoding="utf-8").strip()
+            if nombre == "verificador" and "Respondé SOLO con JSON" in t:
+                t = t.replace("Respondé SOLO con JSON", guia + "\n\nRespondé SOLO con JSON", 1)
+            else:
+                t = t.rstrip() + "\n\n" + guia + "\n"
     for k, v in campos.items():
         t = t.replace("{" + k + "}", str(v))
     return t
@@ -156,10 +169,14 @@ def seccion_de(n, claves_local):
         if MARCAS_MERCOSUR.search(texto):
             return "mercosur"
         return "mundo"
+    # un medio de afuera que cuenta algo de la Argentina (sin las palabras genéricas como "senado" o "provincia")
+    if MARCAS_AR_FIRMES.search(texto):
+        return "argentina"
     return "mundo"
 
 
 def monitores(noticias, conf, reg):
+    cargar_prioridades(conf)
     claves_local = [sin_acentos(p) for p in conf["local"]["palabras"]]
     imagenes = {}
     por_seccion = {s: [] for s in SECCIONES}
@@ -168,8 +185,8 @@ def monitores(noticias, conf, reg):
             continue
         if es_portugues(n.get("titulo") or ""):
             continue
-        if not n.get("ejes"):  # datos viejos o RSS: se marcan los ejes acá también
-            n["ejes"] = REC.ejes_de((n.get("titulo") or "") + " " + (n.get("resumen") or ""))
+        # los ejes se recalculan siempre con la agenda vigente (así un eje nuevo, como "bolsillo", marca también lo ya recolectado)
+        n["ejes"] = sorted(set(n.get("ejes") or []) | set(REC.ejes_de((n.get("titulo") or "") + " " + (n.get("resumen") or ""))))
         n.setdefault("region_mundo", REC.PAIS_A_REGION.get(n.get("pais") or ""))
         if n.get("imagen"):
             imagenes[n["url"]] = n["imagen"]
@@ -182,6 +199,7 @@ def monitores(noticias, conf, reg):
         pass
     tope = conf.get("candidatos_por_monitor", 12)
     candidatos = []
+    AG.MAXIMO = 400  # se traen todos los grupos: el corte se hace después, con la prioridad del diario
     AG.MIN_MEDIOS = 1  # también entran los temas que cuenta un solo medio; el puntaje los deja más abajo
     for sec, notas in por_seccion.items():
         aid = MONITOR_DE[sec]
@@ -189,7 +207,10 @@ def monitores(noticias, conf, reg):
             continue
         reg.empezar(aid)
         try:
-            grupos = AG.agrupar(notas, ahora=ref)[:tope]
+            # primero se ordena con la prioridad del diario (economía, bolsillo, PJ…), después se corta al tope
+            grupos = AG.agrupar(notas, ahora=ref)
+            grupos.sort(key=lambda g: puntaje_editorial({**g, "seccion": sec}, PRIO, BONUS), reverse=True)
+            grupos = grupos[:tope]
             for g in grupos:
                 for x in g["notas"]:
                     x["imagen"] = imagenes.get(x["url"])
@@ -254,12 +275,80 @@ def editor_repetidos(menu, recientes, ia):
         return set()
 
 
+def prioridad_ejes():
+    """id del eje → prioridad (1 = lo más importante para el diario), desde datos/ejes.json."""
+    return {e["id"]: int(e.get("prioridad", 3)) for e in (leer(DATOS / "ejes.json", {}) or {}).get("ejes", [])}
+
+
+PRIO = {}
+BONUS = {}
+
+
+def cargar_prioridades(conf):
+    global PRIO, BONUS
+    PRIO = prioridad_ejes()
+    BONUS = {k: v for k, v in (conf.get("bonus_prioridad") or {}).items() if not k.startswith("_")}
+
+
+def puntaje_editorial(c, prio, bonus):
+    """Puntaje del monitor + bonus según el eje más prioritario que toca (economía, bolsillo, PJ… arriba; guerras lejanas abajo)."""
+    niveles = [prio.get(e, 3) for e in (c.get("ejes") or [])]
+    extra = bonus.get(str(min(niveles)), 0) if niveles else 0
+    if c.get("seccion") in ("mundo", "mercosur"):  # lo de afuera no sube por palabras de la agenda argentina
+        extra = min(extra, bonus.get("3", 0))
+    return (c.get("puntaje") or 0) + extra
+
+
+def asegurar_minimos(menu, limpios, conf, prio, tope):
+    """Cada edición trae sí o sí un mínimo de notas de los ejes centrales (agentes/config.json → minimos)."""
+    minimos = {k: int(v) for k, v in (conf.get("minimos") or {}).items() if not k.startswith("_")}
+    nombres_eje = {e["id"]: e["nombre"] for e in (leer(DATOS / "ejes.json", {}) or {}).get("ejes", [])}
+    sumados = 0
+    for eje, minimo in minimos.items():
+        while sum(1 for x in menu if eje in (x.get("ejes") or [])) < minimo:
+            c = next((c for c in limpios if c not in menu and eje in (c.get("ejes") or []) and c.get("seccion") in ("argentina", "local")
+                      and not any(mismo_hecho(c["titulo"], x["titulo"]) for x in menu)), None)
+            if not c:
+                break
+            if len(menu) >= tope:
+                # sale el tema menos prioritario que no cubra ningún mínimo
+                def nivel(x):
+                    return min([prio.get(e, 3) for e in (x.get("ejes") or [])] or [4])
+                candidatos_salir = [x for x in menu if not (set(x.get("ejes") or []) & set(minimos))]
+                if not candidatos_salir:
+                    break
+                menu.remove(max(candidatos_salir, key=lambda x: (nivel(x), -(x.get("puntaje") or 0))))
+            c.setdefault("por_que", f"Prioridad del diario: {nombres_eje.get(eje, eje)}.")
+            c.setdefault("prioridad", "alta")
+            menu.append(c)
+            sumados += 1
+    return sumados
+
+
 def jefe(candidatos, conf, ia, reg, historial):
+    menu, modo = _jefe(candidatos, conf, ia, reg, historial)
+    prio = prioridad_ejes()
+    total = sum(conf["cupos"].values())
+    try:
+        n = asegurar_minimos(menu, getattr(jefe, "limpios", []), conf, prio, total + 2)
+        if n:
+            print(f"Jefe: sumó {n} temas para cubrir los mínimos de economía, bolsillo y PJ", flush=True)
+    except Exception as e:  # noqa: BLE001
+        print(f"Jefe: no pudo revisar los mínimos ({e})", flush=True)
+    return menu, modo
+
+
+def _jefe(candidatos, conf, ia, reg, historial):
     cupos = conf["cupos"]
     recientes = [h["titulo"] for h in historial]
+    prio = prioridad_ejes()
+    bonus = {k: v for k, v in (conf.get("bonus_prioridad") or {}).items() if not k.startswith("_")}
+    for c in candidatos:
+        c["puntaje_editorial"] = puntaje_editorial(c, prio, bonus)
     # fuera los temas ya trabajados en los últimos días y los repetidos entre secciones
     limpios = []
-    for c in sorted(candidatos, key=lambda c: c["puntaje"], reverse=True):
+    jefe.limpios = limpios
+    for c in sorted(candidatos, key=lambda c: c["puntaje_editorial"], reverse=True):
         if DESCARTE.search(sin_acentos(c["titulo"])):
             continue
         if any(mismo_hecho(c["titulo"], t) for t in recientes):
@@ -287,9 +376,9 @@ def jefe(candidatos, conf, ia, reg, historial):
     nombres_eje = {e["id"]: e["nombre"] for e in (leer(DATOS / "ejes.json", {}) or {}).get("ejes", [])}
     lista = "\n".join(
         f"#{c['id']} [{SECCIONES[c['seccion']]}] {c['n_medios']} medios" +
-        (f" · agenda: {', '.join(nombres_eje.get(e, e) for e in c.get('ejes', []))}" if c.get("ejes") else "") + f" · {c['titulo']}" +
+        (f" · agenda: {', '.join(nombres_eje.get(e, e) + ' (prioridad ' + str(prio.get(e, 3)) + ')' for e in c.get('ejes', []))}" if c.get("ejes") else "") + f" · {c['titulo']}" +
         "".join(f"\n    - {n['medio']}: {n['titulo']}" for n in c["notas"][1:3])
-        for c in limpios[:45])
+        for c in limpios[:60])
     prompt = instruccion("jefe", cupos=", ".join(f"{SECCIONES[k]} {v}" for k, v in cupos.items())) + \
         ("\n\nYa se trabajaron estos temas en los últimos días, no los repitas:\n" + "\n".join("- " + t for t in recientes[-30:]) if recientes else "") + \
         "\n\nCANDIDATOS:\n" + lista
@@ -508,12 +597,27 @@ def titulador(html, ia):
     return tit, baj, (str(r.get("volanta") or "").strip()[:40])
 
 
+def bajada_de_respaldo(html):
+    """Si la IA no propuso bajada, se arma con las primeras oraciones del texto (hasta ~240 caracteres)."""
+    texto = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html or "")).strip()
+    oraciones = re.split(r"(?<=[.!?])\s+", texto)
+    salida = ""
+    for o in oraciones:
+        if salida and len(salida) + len(o) > 240:
+            break
+        salida = (salida + " " + o).strip()
+    return salida[:260]
+
+
 # ───────────────────────── 9 · fotos ─────────────────────────
 
 def nombres_propios(titulo):
-    pal = re.findall(r"\b[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+(?:\s+(?:de\s+)?[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+)*", titulo or "")
+    titulo = titulo or ""
+    pal = [(m.start(), m.group()) for m in re.finditer(r"\b[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+(?:\s+(?:de\s+)?[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+)*", titulo)]
     vacias = {"El", "La", "Los", "Las", "Un", "Una", "En", "Por", "Con", "Para", "Tras", "Qué", "Cómo", "Quién", "Sin", "Ante"}
-    return [p for p in pal if p not in vacias and len(p) > 3][:2]
+    # La primera palabra del título va con mayúscula aunque no sea un nombre ("Cerró una fábrica…"): si parece un verbo, no cuenta
+    verbo = re.compile(r"(ó|ió|aron|ieron|aba|ará|erá|irá|ía|an|en|ado|ido|ada|ida)$", re.I)
+    return [p for i, p in pal if p not in vacias and len(p) > 3 and not (i == 0 and " " not in p and verbo.search(p))][:2]
 
 
 def wikimedia(consulta, maximo=2):
@@ -526,6 +630,11 @@ def wikimedia(consulta, maximo=2):
         ii = (p.get("imageinfo") or [{}])[0]
         md = ii.get("extmetadata") or {}
         val = lambda k: re.sub(r"<[^>]+>", "", (md.get(k) or {}).get("value", "")).strip()  # noqa: E731
+        # Solo fotos que de verdad nombran lo buscado (en el nombre del archivo o en la descripción)
+        clave = re.sub(r"\W+", " ", consulta).lower().split()
+        texto = (p.get("title", "") + " " + val("ImageDescription")).lower()
+        if not clave or not all(c in texto for c in clave if len(c) > 2):
+            continue
         fotos.append({"url": ii.get("thumburl") or ii.get("url"), "pagina": ii.get("descriptionurl"),
                       "credito": f"Foto: {val('Artist') or 'autor en Wikimedia'} / Wikimedia Commons ({val('LicenseShortName') or 'licencia libre'})",
                       "descripcion": val("ImageDescription")[:200], "licencia": val("LicenseShortName"), "fuente": "Wikimedia Commons", "libre": True})
@@ -791,6 +900,8 @@ def main():
                 b["titulos"], b["bajadas"], b["volanta"] = t
         if not b["titulos"]:
             b["titulos"] = [tema["titulo"]]
+        if not b.get("bajadas") and b.get("cuerpo_html"):
+            b["bajadas"] = [bajada_de_respaldo(b["cuerpo_html"])]
 
         ph = correr("fotos", reg, ia, fotos, tema, fts)
         if ph is not None:

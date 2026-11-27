@@ -9,12 +9,53 @@
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "icons": [
-    { "src": "/iconos/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/iconos/icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "/iconos/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "/iconos/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/iconos/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/iconos/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ],
   "shortcuts": [
-    { "name": "Mesa de Redacción", "url": "/mesa-redaccion.html", "icons": [{ "src": "/iconos/icon-192.png", "sizes": "192x192" }] },
-    { "name": "Mesa operativa", "url": "/mesa-redaccion-operativa.html", "icons": [{ "src": "/iconos/icon-192.png", "sizes": "192x192" }] }
-  ]
+    {
+      "name": "Mesa de Redacción",
+      "url": "/mesa-redaccion.html",
+      "icons": [
+        {
+          "src": "/iconos/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Mesa operativa",
+      "url": "/mesa-redaccion-operativa.html",
+      "icons": [
+        {
+          "src": "/iconos/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/compartir",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "titulo",
+      "text": "texto",
+      "url": "enlace"
+    }
+  }
 }
