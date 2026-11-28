@@ -1,7 +1,131 @@
 {
- "generado": "2026-11-27T19:56:59+00:00",
+ "generado": "2026-11-28T02:14:47+00:00",
  "ventana_horas": 24,
- "primicias": [],
+ "primicias": [
+  {
+   "titulo": "➡️ El gobernador de la provincia de Formosa, el doctor Gildo Insfrán, designó, a través de la firma del Decreto N° 329/2026, a la doctora María Alejandra de Madariaga como la nueva secretaria Legal y Técnica, quien asume en esa función a partir de este m",
+   "region": "norte-grande",
+   "tema": "General",
+   "ejes": [
+    "politica"
+   ],
+   "primer_medio": "Formosa (prensa local)",
+   "primera_hora": "2026-11-27T17:00+00:00",
+   "medios_regionales": [
+    "Formosa (prensa local)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "➡️ El gobernador de la provincia de Formosa, el doctor Gildo Insfrán, designó, a través de la firma del Decreto N° 329/2026, a la doctora María Alejandra de Madariaga como la nueva secretaria Legal y Técnica, quien asume en esa función a partir de este m",
+     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1idVFsSVF6VFZXOHd6ZUV1WU5QSjlraF9LZF84VTFUSlVzaTZocWhBN3dEZE5oNTcwVmc1dndIVm5YUFVXWlVwVDlPRVpYQ1ZURXVma21n?oc=5",
+     "medio": "Formosa (prensa local)",
+     "fecha": "2026-11-27T17:00:47+00:00"
+    },
+    {
+     "titulo": "María Alejandra de Madariaga asumió en la Secretaría Legal y Técnica",
+     "url": "https://www.diarionorte.com/337391-maria-alejandra-de-madariaga-asumio-en-la-secretaria-legal-y-tecnica",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-27T21:39:14+00:00"
+    },
+    {
+     "titulo": "María Alejandra de Madariaga asumió como la nueva secretaria Legal y Técnica de la provincia de Formosa - Diario La Mañana",
+     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQZmFuRDZfdnlhTjRSMlVIZnZmYXQ2ZG52Q29VYURLXzVHYkl2QXpQald3anJ6UWN3V0thSWI5SHMza1lXRXB3c3NQU1NIdjRsYUtERHU4RkhJODZGRzJTdkZlc0tHWHdWWEJvall0QUJiSGNXSXR2Tjd5d2xSeUZUdWN5WDZfeUhXWlpocWpkWHNvTHZpRXVNOUlJUXpnS3BOLXV5dW9QN0VHNVdRY0dKRWY1dVNaMURjT0RVYi1qRVdmb0ZVdU9TTEpqM0NLdE5EVnkyQ3dtVzdpTzdWVS14MFdNV1NvZ1ItSkpWbDZB?oc=5",
+     "medio": "Formosa (prensa local)",
+     "fecha": "2026-11-27T23:02:49+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Kicillof se reunió con intendentes y entregó equipamiento para fortalecer la respuesta ante el fenómeno de El Niño",
+   "region": "buenos-aires",
+   "tema": "Política",
+   "ejes": [
+    "pj",
+    "politica"
+   ],
+   "primer_medio": "InfoBAN (zona norte)",
+   "primera_hora": "2026-11-27T16:37+00:00",
+   "medios_regionales": [
+    "InfoBAN (zona norte)",
+    "Zona Norte Diario"
+   ],
+   "notas": [
+    {
+     "titulo": "Kicillof se reunió con intendentes y entregó equipamiento para fortalecer la respuesta ante el fenómeno de El Niño",
+     "url": "https://www.infoban.com.ar/27/11/2026/kicillof-se-reunio-con-intendentes-y-entrego-equipamiento-para-fortalecer-la-respuesta-ante-el-fenomeno-de-el-nino/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-27T16:37:35+00:00"
+    },
+    {
+     "titulo": "El Niño: Kicillof reunió a intendentes y entregó equipamiento para prevenir y afrontar inundaciones",
+     "url": "https://www.zonanortediario.com.ar/27/11/2026/el-nino-kicillof-reunio-a-intendentes-y-entrego-equipamiento-para-prevenir-y-afrontar-inundaciones/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-27T17:04:48+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "San Isidro: una feria de arte, música en vivo y descuentos gastronómicos llega al Bajo este domingo",
+   "region": "buenos-aires",
+   "tema": "Energía",
+   "ejes": [
+    "local"
+   ],
+   "primer_medio": "Zona Norte Diario",
+   "primera_hora": "2026-11-27T16:08+00:00",
+   "medios_regionales": [
+    "Zona Norte Diario",
+    "InfoBAN (zona norte)"
+   ],
+   "notas": [
+    {
+     "titulo": "San Isidro: una feria de arte, música en vivo y descuentos gastronómicos llega al Bajo este domingo",
+     "url": "https://www.zonanortediario.com.ar/27/11/2026/san-isidro-una-feria-de-arte-musica-en-vivo-y-descuentos-gastronomicos-llega-al-bajo-este-domingo/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-27T16:08:00+00:00"
+    },
+    {
+     "titulo": "Arte y gastronomía se encuentran en el Bajo de San Isidro",
+     "url": "https://www.infoban.com.ar/27/11/2026/arte-y-gastronomia-se-encuentran-en-el-bajo-de-san-isidro/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-27T19:40:04+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Convierten en ley el proyecto que habilita a la Defensoría a intervenir ante el sobreendeudamiento",
+   "region": "buenos-aires",
+   "tema": "General",
+   "ejes": [
+    "politica"
+   ],
+   "primer_medio": "InfoBAN (zona norte)",
+   "primera_hora": "2026-11-27T15:50+00:00",
+   "medios_regionales": [
+    "InfoBAN (zona norte)",
+    "Zona Norte Diario"
+   ],
+   "notas": [
+    {
+     "titulo": "Convierten en ley el proyecto que habilita a la Defensoría a intervenir ante el sobreendeudamiento",
+     "url": "https://www.infoban.com.ar/27/11/2026/convierten-en-ley-el-proyecto-que-habilita-a-la-defensoria-a-intervenir-ante-el-sobreendeudamiento/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-27T15:50:17+00:00"
+    },
+    {
+     "titulo": "Convierten en ley el proyecto que habilita a la Defensoría a intervenir ante el sobreendeudamiento",
+     "url": "https://www.zonanortediario.com.ar/27/11/2026/convierten-en-ley-el-proyecto-que-habilita-a-la-defensoria-a-intervenir-ante-el-sobreendeudamiento/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-27T15:51:42+00:00"
+    }
+   ],
+   "avisado": false
+  }
+ ],
  "quien_se_adelanta": [
   {
    "medio": "La Gaceta (Tucumán)",
@@ -15,6 +139,129 @@
   }
  ],
  "seguimiento": [
+  {
+   "titulo": "➡️ El gobernador de la provincia de Formosa, el doctor Gildo Insfrán, designó, a través de la firma del Decreto N° 329/2026, a la doctora María Alejandra de Madariaga como la nueva secretaria Legal y Técnica, quien asume en esa función a partir de este m",
+   "region": "norte-grande",
+   "tema": "General",
+   "ejes": [
+    "politica"
+   ],
+   "primer_medio": "Formosa (prensa local)",
+   "primera_hora": "2026-11-27T17:00+00:00",
+   "medios_regionales": [
+    "Formosa (prensa local)",
+    "Diario Norte (Chaco)"
+   ],
+   "notas": [
+    {
+     "titulo": "➡️ El gobernador de la provincia de Formosa, el doctor Gildo Insfrán, designó, a través de la firma del Decreto N° 329/2026, a la doctora María Alejandra de Madariaga como la nueva secretaria Legal y Técnica, quien asume en esa función a partir de este m",
+     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1idVFsSVF6VFZXOHd6ZUV1WU5QSjlraF9LZF84VTFUSlVzaTZocWhBN3dEZE5oNTcwVmc1dndIVm5YUFVXWlVwVDlPRVpYQ1ZURXVma21n?oc=5",
+     "medio": "Formosa (prensa local)",
+     "fecha": "2026-11-27T17:00:47+00:00"
+    },
+    {
+     "titulo": "María Alejandra de Madariaga asumió en la Secretaría Legal y Técnica",
+     "url": "https://www.diarionorte.com/337391-maria-alejandra-de-madariaga-asumio-en-la-secretaria-legal-y-tecnica",
+     "medio": "Diario Norte (Chaco)",
+     "fecha": "2026-11-27T21:39:14+00:00"
+    },
+    {
+     "titulo": "María Alejandra de Madariaga asumió como la nueva secretaria Legal y Técnica de la provincia de Formosa - Diario La Mañana",
+     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQZmFuRDZfdnlhTjRSMlVIZnZmYXQ2ZG52Q29VYURLXzVHYkl2QXpQald3anJ6UWN3V0thSWI5SHMza1lXRXB3c3NQU1NIdjRsYUtERHU4RkhJODZGRzJTdkZlc0tHWHdWWEJvall0QUJiSGNXSXR2Tjd5d2xSeUZUdWN5WDZfeUhXWlpocWpkWHNvTHZpRXVNOUlJUXpnS3BOLXV5dW9QN0VHNVdRY0dKRWY1dVNaMURjT0RVYi1qRVdmb0ZVdU9TTEpqM0NLdE5EVnkyQ3dtVzdpTzdWVS14MFdNV1NvZ1ItSkpWbDZB?oc=5",
+     "medio": "Formosa (prensa local)",
+     "fecha": "2026-11-27T23:02:49+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Kicillof se reunió con intendentes y entregó equipamiento para fortalecer la respuesta ante el fenómeno de El Niño",
+   "region": "buenos-aires",
+   "tema": "Política",
+   "ejes": [
+    "pj",
+    "politica"
+   ],
+   "primer_medio": "InfoBAN (zona norte)",
+   "primera_hora": "2026-11-27T16:37+00:00",
+   "medios_regionales": [
+    "InfoBAN (zona norte)",
+    "Zona Norte Diario"
+   ],
+   "notas": [
+    {
+     "titulo": "Kicillof se reunió con intendentes y entregó equipamiento para fortalecer la respuesta ante el fenómeno de El Niño",
+     "url": "https://www.infoban.com.ar/27/11/2026/kicillof-se-reunio-con-intendentes-y-entrego-equipamiento-para-fortalecer-la-respuesta-ante-el-fenomeno-de-el-nino/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-27T16:37:35+00:00"
+    },
+    {
+     "titulo": "El Niño: Kicillof reunió a intendentes y entregó equipamiento para prevenir y afrontar inundaciones",
+     "url": "https://www.zonanortediario.com.ar/27/11/2026/el-nino-kicillof-reunio-a-intendentes-y-entrego-equipamiento-para-prevenir-y-afrontar-inundaciones/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-27T17:04:48+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "San Isidro: una feria de arte, música en vivo y descuentos gastronómicos llega al Bajo este domingo",
+   "region": "buenos-aires",
+   "tema": "Energía",
+   "ejes": [
+    "local"
+   ],
+   "primer_medio": "Zona Norte Diario",
+   "primera_hora": "2026-11-27T16:08+00:00",
+   "medios_regionales": [
+    "Zona Norte Diario",
+    "InfoBAN (zona norte)"
+   ],
+   "notas": [
+    {
+     "titulo": "San Isidro: una feria de arte, música en vivo y descuentos gastronómicos llega al Bajo este domingo",
+     "url": "https://www.zonanortediario.com.ar/27/11/2026/san-isidro-una-feria-de-arte-musica-en-vivo-y-descuentos-gastronomicos-llega-al-bajo-este-domingo/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-27T16:08:00+00:00"
+    },
+    {
+     "titulo": "Arte y gastronomía se encuentran en el Bajo de San Isidro",
+     "url": "https://www.infoban.com.ar/27/11/2026/arte-y-gastronomia-se-encuentran-en-el-bajo-de-san-isidro/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-27T19:40:04+00:00"
+    }
+   ],
+   "avisado": false
+  },
+  {
+   "titulo": "Convierten en ley el proyecto que habilita a la Defensoría a intervenir ante el sobreendeudamiento",
+   "region": "buenos-aires",
+   "tema": "General",
+   "ejes": [
+    "politica"
+   ],
+   "primer_medio": "InfoBAN (zona norte)",
+   "primera_hora": "2026-11-27T15:50+00:00",
+   "medios_regionales": [
+    "InfoBAN (zona norte)",
+    "Zona Norte Diario"
+   ],
+   "notas": [
+    {
+     "titulo": "Convierten en ley el proyecto que habilita a la Defensoría a intervenir ante el sobreendeudamiento",
+     "url": "https://www.infoban.com.ar/27/11/2026/convierten-en-ley-el-proyecto-que-habilita-a-la-defensoria-a-intervenir-ante-el-sobreendeudamiento/",
+     "medio": "InfoBAN (zona norte)",
+     "fecha": "2026-11-27T15:50:17+00:00"
+    },
+    {
+     "titulo": "Convierten en ley el proyecto que habilita a la Defensoría a intervenir ante el sobreendeudamiento",
+     "url": "https://www.zonanortediario.com.ar/27/11/2026/convierten-en-ley-el-proyecto-que-habilita-a-la-defensoria-a-intervenir-ante-el-sobreendeudamiento/",
+     "medio": "Zona Norte Diario",
+     "fecha": "2026-11-27T15:51:42+00:00"
+    }
+   ],
+   "avisado": false
+  },
   {
    "titulo": "Formosa fortalece la atención integral en la décima Jornada Provincial de Salud Mental",
    "region": "norte-grande",
@@ -601,94 +848,6 @@
      "url": "https://www.lagaceta.com.ar/nota/1164201/sociedad/dia-internacional-eliminacion-violencia-contra-mujer-solo-tres-cada-10-argentinos-tienen-alto-nivel-concientizacion.html",
      "medio": "La Gaceta (Tucumán)",
      "fecha": "2026-11-25T13:24:00+00:00"
-    }
-   ],
-   "avisado": false
-  },
-  {
-   "titulo": "La sobrina de Gildo Insfrán juró y asumió como ministra del Superior Tribunal de Justicia de Formosa",
-   "region": "norte-grande",
-   "tema": "General",
-   "ejes": [
-    "pj",
-    "politica"
-   ],
-   "primer_medio": "Formosa (prensa local)",
-   "primera_hora": "2026-11-24T23:16+00:00",
-   "medios_regionales": [
-    "Formosa (prensa local)",
-    "Diario Norte (Chaco)"
-   ],
-   "notas": [
-    {
-     "titulo": "La sobrina de Gildo Insfrán juró y asumió como ministra del Superior Tribunal de Justicia de Formosa",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPRFoxdGVhZlcxLTNUaUNxSGVLTnRWZkFfLXVxNVFKcWpMREx3VWM2Ml92bjhHbEtGNk5zWW81d0RBaU5FWl9tVmdTMjVNN1NobXNaY3FQdk9JT2ZxWVduLXowX2s3Vl9qcTBwSndiQVZpWWx6WWUtd3BER3AwRGZ4RWoteEtLQm1fM0FlX0hNQ0NOOGZXZlRZWHJWa3FfMThLNE9VQ1lweng1LVhyNTRCQ25aaDlvV19JMG1pRHJYWkRVRjlhSzlXNWJ3ZVFjVExnZVM0?oc=5",
-     "medio": "Formosa (prensa local)",
-     "fecha": "2026-11-24T23:16:05+00:00"
-    },
-    {
-     "titulo": "La doctora Grissel Insfrán prestó juramento y asumió como ministra del Superior Tribunal de Justicia",
-     "url": "https://www.diarionorte.com/337222-la-doctora-grissel-insfran-presto-juramento-y-asumio-como-ministra-del-superior-tribunal-de-justicia",
-     "medio": "Diario Norte (Chaco)",
-     "fecha": "2026-11-25T02:16:37+00:00"
-    }
-   ],
-   "avisado": false
-  },
-  {
-   "titulo": "Colombia: hombres armados toman decenas de rehenes en un supermercado de Cartagena",
-   "region": "patagonia",
-   "tema": "General",
-   "ejes": [
-    "latinoamerica"
-   ],
-   "primer_medio": "El Sureño (Tierra del Fuego)",
-   "primera_hora": "2026-11-24T21:38+00:00",
-   "medios_regionales": [
-    "El Sureño (Tierra del Fuego)",
-    "Río Negro"
-   ],
-   "notas": [
-    {
-     "titulo": "Colombia: hombres armados toman decenas de rehenes en un supermercado de Cartagena",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWUR1Ml96MmVHX1VPb1lOR0paemkzT09ROHZUd1NtSjY0RElJaExlZ0xXbWdTZHBhMGRDbEFJbzBZTERVb1V1eVBnTW1mUGwtTW5WY096N2lKeHZpWFBIOTdfVWtRdHlVRjBid2VLVy1ndzVwa2pnNDZEaFl2d0phNFZtRTBpUFM3NGdiNUwzeFZrS2VtSktBSGRUMzVScHJzazZBemFveGdrcGF5Umc?oc=5",
-     "medio": "El Sureño (Tierra del Fuego)",
-     "fecha": "2026-11-24T15:45:02+00:00"
-    },
-    {
-     "titulo": "Tensión en Cartagena: hombres armados mantienen rehenes en un supermercado tras un intento de robo",
-     "url": "https://www.rionegro.com.ar/mundo/tension-en-cartagena-hombres-armados-mantienen-rehenes-en-un-supermercado-tras-un-intento-de-robo-4812148/",
-     "medio": "Río Negro",
-     "fecha": "2026-11-25T02:43:38+00:00"
-    }
-   ],
-   "avisado": false
-  },
-  {
-   "titulo": "FeBAMBA sentó en Paraguay los cimientos de su agenda internacional",
-   "region": "buenos-aires",
-   "tema": "General",
-   "ejes": [
-    "latinoamerica"
-   ],
-   "primer_medio": "Zona Norte Diario",
-   "primera_hora": "2026-11-24T20:42+00:00",
-   "medios_regionales": [
-    "Zona Norte Diario",
-    "InfoBAN (zona norte)"
-   ],
-   "notas": [
-    {
-     "titulo": "FeBAMBA sentó en Paraguay los cimientos de su agenda internacional",
-     "url": "https://www.zonanortediario.com.ar/24/11/2026/con-eje-en-las-formativas-y-el-proyecto-francia-2031-febamba-sento-en-paraguay-los-cimientos-de-su-agenda-internacional/",
-     "medio": "Zona Norte Diario",
-     "fecha": "2026-11-24T20:42:26+00:00"
-    },
-    {
-     "titulo": "Hernán Lanía lidera la expansión de FeBAMBA con una poderosa agenda internacional que ya dio sus primeros frutos en Paraguay",
-     "url": "https://www.infoban.com.ar/24/11/2026/hernan-lania-lidera-la-expansion-de-febamba-con-una-poderosa-agenda-internacional-que-ya-dio-sus-primeros-frutos-en-paraguay/",
-     "medio": "InfoBAN (zona norte)",
-     "fecha": "2026-11-24T21:59:10+00:00"
     }
    ],
    "avisado": false
